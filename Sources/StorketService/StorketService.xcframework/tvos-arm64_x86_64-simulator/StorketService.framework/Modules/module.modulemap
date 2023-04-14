@@ -1,0 +1,4 @@
+framework module StorketService {
+  header "StorketService-Swift.h"
+  requires objc
+}
