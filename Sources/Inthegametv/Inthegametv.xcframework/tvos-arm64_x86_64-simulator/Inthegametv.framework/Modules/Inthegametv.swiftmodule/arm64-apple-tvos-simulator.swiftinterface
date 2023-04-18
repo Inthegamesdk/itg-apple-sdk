@@ -171,6 +171,9 @@ public enum LeaderboardSorting : Swift.String, Swift.Decodable {
   }
 }
 public struct AnalyticsInfo {
+  public let module: Swift.String
+  public let submodule: Swift.String?
+  public let sponsor: Swift.String?
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class PassthroughView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
