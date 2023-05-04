@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		QZJoVASW/wL/m1BK4vSw6QEjClI=
+		vWKtuEsopY5MW0WmWGKitvrOA3U=
 		</data>
 		<key>DebugView.nib</key>
 		<data>
@@ -190,11 +190,11 @@
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		9zy1M8j3IlPqdIt1BAGr9ewWIDI=
+		XjmFfMKpOdfnHaUhPAqNL04WaZM=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		bduucGUusmYyWcfkRwL2Sp0BirM=
+		XKjUJBG0YM3GbKBzZzYwuZfuI5A=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -210,7 +210,7 @@
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Xqk3s7hbNcGCXtuabHLX0AGhwCs=
+		qs4DA4hOMah6puyZU+xHVyTC81k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -255,7 +255,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			20Tm/dV8R3SbLGn17kWoZqV0AxCaKgjyQmg8B821nlU=
+			MDBC19KDIM90DCxu0/st5FphT8XX5cBVdGRVo7fJrj4=
 			</data>
 		</dict>
 		<key>DebugView.nib</key>
@@ -570,14 +570,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LTICErXz0WEvpUohL7eT6uowQZHqAHjL2h/2vvcv1b0=
+			0tzdIKRnR+QAK89qXlcGRrfpFwPwvHF5Wy/9qbjK5Jg=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gSRwyzrrNEAUZ4012VnDzbzLKIvMEGODbm89k4xDNlw=
+			QswBLk4ZlY0YvxAbjdh/cLux0IInLFLvC5Pms1cYfck=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -605,7 +605,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OwO13c6XI76sjn4WRKf2rIyW6+CMZWqsHs6Dn9uohGc=
+			9YRCXq3jrEAILwa/y1BKbo0glXluq6UrAsGQ9ND9DUI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

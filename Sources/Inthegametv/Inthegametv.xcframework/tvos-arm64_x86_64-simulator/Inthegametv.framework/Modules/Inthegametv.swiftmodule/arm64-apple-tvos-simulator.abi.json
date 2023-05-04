@@ -31335,1638 +31335,1645 @@
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 30650,
+      "offset": 30556,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
+      "kind": "BooleanLiteral",
+      "offset": 31132,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 31598,
+      "offset": 32080,
       "length": 20,
       "value": "\"show-close-forever\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 31658,
+      "offset": 32140,
       "length": 29,
       "value": "\"show-after-number-of-closes\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 31598,
+      "offset": 32080,
       "length": 20,
       "value": "\"show-close-forever\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 31658,
+      "offset": 32140,
       "length": 29,
       "value": "\"show-after-number-of-closes\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 32008,
+      "offset": 32490,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 32687,
+      "offset": 33169,
       "length": 14,
       "value": "\"text-average\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 32735,
+      "offset": 33217,
       "length": 21,
       "value": "\"text-average-number\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 32687,
+      "offset": 33169,
       "length": 14,
       "value": "\"text-average\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 32735,
+      "offset": 33217,
       "length": 21,
       "value": "\"text-average-number\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 32848,
+      "offset": 33330,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 33333,
+      "offset": 33815,
       "length": 11,
       "value": "\"full-icon\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 33369,
+      "offset": 33851,
       "length": 11,
       "value": "\"half-icon\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 33406,
+      "offset": 33888,
       "length": 12,
       "value": "\"empty-icon\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 33333,
+      "offset": 33815,
       "length": 11,
       "value": "\"full-icon\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 33369,
+      "offset": 33851,
       "length": 11,
       "value": "\"half-icon\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 33406,
+      "offset": 33888,
       "length": 12,
       "value": "\"empty-icon\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 33818,
+      "offset": 34300,
       "length": 12,
       "value": "\"focus-type\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 33818,
+      "offset": 34300,
       "length": 12,
       "value": "\"focus-type\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 33981,
+      "offset": 34463,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 34924,
+      "offset": 35406,
       "length": 14,
       "value": "\"coins-answer\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 34968,
+      "offset": 35450,
       "length": 16,
       "value": "\"correct-answer\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 35016,
+      "offset": 35498,
       "length": 18,
       "value": "\"incorrect-answer\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 35073,
+      "offset": 35555,
       "length": 27,
       "value": "\"correct-answer-response-1\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 35139,
+      "offset": 35621,
       "length": 27,
       "value": "\"correct-answer-response-2\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 35207,
+      "offset": 35689,
       "length": 29,
       "value": "\"incorrect-answer-response-1\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 35277,
+      "offset": 35759,
       "length": 29,
       "value": "\"incorrect-answer-response-2\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 34924,
+      "offset": 35406,
       "length": 14,
       "value": "\"coins-answer\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 34968,
+      "offset": 35450,
       "length": 16,
       "value": "\"correct-answer\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 35016,
+      "offset": 35498,
       "length": 18,
       "value": "\"incorrect-answer\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 35073,
+      "offset": 35555,
       "length": 27,
       "value": "\"correct-answer-response-1\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 35139,
+      "offset": 35621,
       "length": 27,
       "value": "\"correct-answer-response-2\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 35207,
+      "offset": 35689,
       "length": 29,
       "value": "\"incorrect-answer-response-1\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 35277,
+      "offset": 35759,
       "length": 29,
       "value": "\"incorrect-answer-response-2\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 35398,
+      "offset": 35880,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 36143,
+      "offset": 36625,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 37103,
+      "offset": 37585,
       "length": 17,
       "value": "\"selected-answer\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 37149,
+      "offset": 37631,
       "length": 15,
       "value": "\"other-answers\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 37192,
+      "offset": 37674,
       "length": 14,
       "value": "\"coins-answer\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 37233,
+      "offset": 37715,
       "length": 13,
       "value": "\"odds-answer\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 37274,
+      "offset": 37756,
       "length": 15,
       "value": "\"play-win-text\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 37319,
+      "offset": 37801,
       "length": 17,
       "value": "\"play-win-number\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 37368,
+      "offset": 37850,
       "length": 19,
       "value": "\"answer-response-1\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 37419,
+      "offset": 37901,
       "length": 19,
       "value": "\"answer-response-2\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 37103,
+      "offset": 37585,
       "length": 17,
       "value": "\"selected-answer\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 37149,
+      "offset": 37631,
       "length": 15,
       "value": "\"other-answers\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 37192,
+      "offset": 37674,
       "length": 14,
       "value": "\"coins-answer\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 37233,
+      "offset": 37715,
       "length": 13,
       "value": "\"odds-answer\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 37274,
+      "offset": 37756,
       "length": 15,
       "value": "\"play-win-text\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 37319,
+      "offset": 37801,
       "length": 17,
       "value": "\"play-win-number\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 37368,
+      "offset": 37850,
       "length": 19,
       "value": "\"answer-response-1\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 37419,
+      "offset": 37901,
       "length": 19,
       "value": "\"answer-response-2\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 37530,
+      "offset": 38012,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 38033,
+      "offset": 38515,
       "length": 10,
       "value": "\"arrow-up\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 38069,
+      "offset": 38551,
       "length": 12,
       "value": "\"arrow-down\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 38033,
+      "offset": 38515,
       "length": 10,
       "value": "\"arrow-up\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 38069,
+      "offset": 38551,
       "length": 12,
       "value": "\"arrow-down\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 38472,
+      "offset": 38954,
       "length": 10,
       "value": "\"main-bar\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 38506,
+      "offset": 38988,
       "length": 10,
       "value": "\"side-bar\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 38538,
+      "offset": 39020,
       "length": 8,
       "value": "\"pop-up\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 38472,
+      "offset": 38954,
       "length": 10,
       "value": "\"main-bar\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 38506,
+      "offset": 38988,
       "length": 10,
       "value": "\"side-bar\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 38538,
+      "offset": 39020,
       "length": 8,
       "value": "\"pop-up\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 39110,
+      "offset": 39592,
       "length": 17,
       "value": "\"special-buttons\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 39110,
+      "offset": 39592,
       "length": 17,
       "value": "\"special-buttons\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 39307,
+      "offset": 39789,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 41393,
+      "offset": 41875,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 42225,
+      "offset": 42707,
       "length": 15,
       "value": "\"resize-height\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 42268,
+      "offset": 42750,
       "length": 14,
       "value": "\"resize-width\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 42225,
+      "offset": 42707,
       "length": 15,
       "value": "\"resize-height\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 42268,
+      "offset": 42750,
       "length": 14,
       "value": "\"resize-width\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 42643,
+      "offset": 43125,
       "length": 18,
       "value": "\"background-color\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 42692,
+      "offset": 43174,
       "length": 26,
       "value": "\"background-color-opacity\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 42744,
+      "offset": 43226,
       "length": 12,
       "value": "\"text-align\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 42643,
+      "offset": 43125,
       "length": 18,
       "value": "\"background-color\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 42692,
+      "offset": 43174,
       "length": 26,
       "value": "\"background-color-opacity\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 42744,
+      "offset": 43226,
       "length": 12,
       "value": "\"text-align\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 42844,
+      "offset": 43326,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 43958,
+      "offset": 44440,
       "length": 17,
       "value": "\"special-buttons\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 43958,
+      "offset": 44440,
       "length": 17,
       "value": "\"special-buttons\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 44214,
+      "offset": 44696,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 46285,
+      "offset": 46767,
       "length": 12,
       "value": "\"my-account\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 46327,
+      "offset": 46809,
       "length": 16,
       "value": "\"my-leaderboard\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 46285,
+      "offset": 46767,
       "length": 12,
       "value": "\"my-account\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 46327,
+      "offset": 46809,
       "length": 16,
       "value": "\"my-leaderboard\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 46526,
+      "offset": 47008,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 46987,
+      "offset": 47469,
       "length": 16,
       "value": "\"username-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 47032,
+      "offset": 47514,
       "length": 15,
       "value": "\"username-name\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 47077,
+      "offset": 47559,
       "length": 16,
       "value": "\"expoints-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 47142,
+      "offset": 47624,
       "length": 13,
       "value": "\"coins-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 47209,
+      "offset": 47691,
       "length": 22,
       "value": "\"username-input-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 47263,
+      "offset": 47745,
       "length": 19,
       "value": "\"email-input-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 47318,
+      "offset": 47800,
       "length": 23,
       "value": "\"interactive-bar-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 47380,
+      "offset": 47862,
       "length": 27,
       "value": "\"interactive-bar-item-name\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 47448,
+      "offset": 47930,
       "length": 29,
       "value": "\"interactive-bar-item-toggle\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 47515,
+      "offset": 47997,
       "length": 25,
       "value": "\"mute-interactions-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 46987,
+      "offset": 47469,
       "length": 16,
       "value": "\"username-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 47032,
+      "offset": 47514,
       "length": 15,
       "value": "\"username-name\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 47077,
+      "offset": 47559,
       "length": 16,
       "value": "\"expoints-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 47142,
+      "offset": 47624,
       "length": 13,
       "value": "\"coins-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 47209,
+      "offset": 47691,
       "length": 22,
       "value": "\"username-input-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 47263,
+      "offset": 47745,
       "length": 19,
       "value": "\"email-input-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 47318,
+      "offset": 47800,
       "length": 23,
       "value": "\"interactive-bar-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 47380,
+      "offset": 47862,
       "length": 27,
       "value": "\"interactive-bar-item-name\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 47448,
+      "offset": 47930,
       "length": 29,
       "value": "\"interactive-bar-item-toggle\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 47515,
+      "offset": 47997,
       "length": 25,
       "value": "\"mute-interactions-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 48321,
+      "offset": 48737,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 49274,
+      "offset": 49758,
       "length": 15,
       "value": "\"background-on\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 49319,
+      "offset": 49803,
       "length": 16,
       "value": "\"background-off\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 49274,
+      "offset": 49758,
       "length": 15,
       "value": "\"background-on\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 49319,
+      "offset": 49803,
       "length": 16,
       "value": "\"background-off\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 49529,
+      "offset": 50013,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 49945,
+      "offset": 50429,
       "length": 16,
       "value": "\"username-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 49990,
+      "offset": 50474,
       "length": 15,
       "value": "\"username-name\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 50035,
+      "offset": 50519,
       "length": 16,
       "value": "\"expoints-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 50100,
+      "offset": 50584,
       "length": 13,
       "value": "\"coins-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 50166,
+      "offset": 50650,
       "length": 20,
       "value": "\"leaderboard-labels\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 50222,
+      "offset": 50706,
       "length": 23,
       "value": "\"leaderboard-card-rank\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 50281,
+      "offset": 50765,
       "length": 23,
       "value": "\"leaderboard-card-name\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 50342,
+      "offset": 50826,
       "length": 25,
       "value": "\"leaderboard-card-number\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 50392,
+      "offset": 50876,
       "length": 10,
       "value": "\"settings\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 49945,
+      "offset": 50429,
       "length": 16,
       "value": "\"username-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 49990,
+      "offset": 50474,
       "length": 15,
       "value": "\"username-name\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 50035,
+      "offset": 50519,
       "length": 16,
       "value": "\"expoints-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 50100,
+      "offset": 50584,
       "length": 13,
       "value": "\"coins-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 50166,
+      "offset": 50650,
       "length": 20,
       "value": "\"leaderboard-labels\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 50222,
+      "offset": 50706,
       "length": 23,
       "value": "\"leaderboard-card-rank\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 50281,
+      "offset": 50765,
       "length": 23,
       "value": "\"leaderboard-card-name\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 50342,
+      "offset": 50826,
       "length": 25,
       "value": "\"leaderboard-card-number\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 50392,
+      "offset": 50876,
       "length": 10,
       "value": "\"settings\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 51120,
+      "offset": 51544,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 51893,
+      "offset": 52385,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 52497,
+      "offset": 52989,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 52556,
+      "offset": 53048,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 52913,
+      "offset": 53405,
       "length": 19,
       "value": "\"highlight-leaders\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 52970,
+      "offset": 53462,
       "length": 27,
       "value": "\"highlight-user-if-leader \""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 52913,
+      "offset": 53405,
       "length": 19,
       "value": "\"highlight-leaders\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 52970,
+      "offset": 53462,
       "length": 27,
       "value": "\"highlight-user-if-leader \""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 53393,
+      "offset": 53885,
       "length": 13,
       "value": "\"first-place\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 53434,
+      "offset": 53926,
       "length": 14,
       "value": "\"second-place\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 53475,
+      "offset": 53967,
       "length": 13,
       "value": "\"third-place\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 53393,
+      "offset": 53885,
       "length": 13,
       "value": "\"first-place\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 53434,
+      "offset": 53926,
       "length": 14,
       "value": "\"second-place\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 53475,
+      "offset": 53967,
       "length": 13,
       "value": "\"third-place\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 53745,
+      "offset": 54237,
       "length": 12,
       "value": "\"text-color\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 53745,
+      "offset": 54237,
       "length": 12,
       "value": "\"text-color\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 54069,
+      "offset": 54561,
       "length": 23,
       "value": "\"seconds-before-reload\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 54069,
+      "offset": 54561,
       "length": 23,
       "value": "\"seconds-before-reload\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 54406,
+      "offset": 54898,
       "length": 15,
       "value": "\"show-all-tabs\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 54406,
+      "offset": 54898,
       "length": 15,
       "value": "\"show-all-tabs\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 55148,
+      "offset": 55640,
       "length": 12,
       "value": "\"show-coins\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 55189,
+      "offset": 55681,
       "length": 15,
       "value": "\"show-expoints\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 55229,
+      "offset": 55721,
       "length": 11,
       "value": "\"show-rank\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 55267,
+      "offset": 55759,
       "length": 13,
       "value": "\"freeze-user\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 55148,
+      "offset": 55640,
       "length": 12,
       "value": "\"show-coins\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 55189,
+      "offset": 55681,
       "length": 15,
       "value": "\"show-expoints\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 55229,
+      "offset": 55721,
       "length": 11,
       "value": "\"show-rank\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 55267,
+      "offset": 55759,
       "length": 13,
       "value": "\"freeze-user\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 55909,
+      "offset": 56401,
       "length": 13,
       "value": "\"show-labels\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 55947,
+      "offset": 56439,
       "length": 11,
       "value": "\"show-unit\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 55909,
+      "offset": 56401,
       "length": 13,
       "value": "\"show-labels\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 55947,
+      "offset": 56439,
       "length": 11,
       "value": "\"show-unit\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 56535,
+      "offset": 57027,
       "length": 14,
       "value": "\"progress-bar\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 56621,
+      "offset": 57113,
       "length": 16,
       "value": "\"border-focused\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 56535,
+      "offset": 57027,
       "length": 14,
       "value": "\"progress-bar\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 56621,
+      "offset": 57113,
       "length": 16,
       "value": "\"border-focused\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 56729,
+      "offset": 57221,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 58398,
+      "offset": 58890,
       "length": 18,
       "value": "\"not-enough-coins\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 58440,
+      "offset": 58932,
       "length": 10,
       "value": "\"level-up\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 58480,
+      "offset": 58972,
       "length": 16,
       "value": "\"correct-answer\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 58528,
+      "offset": 59020,
       "length": 18,
       "value": "\"incorrect-answer\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 58398,
+      "offset": 58890,
       "length": 18,
       "value": "\"not-enough-coins\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 58440,
+      "offset": 58932,
       "length": 10,
       "value": "\"level-up\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 58480,
+      "offset": 58972,
       "length": 16,
       "value": "\"correct-answer\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 58528,
+      "offset": 59020,
       "length": 18,
       "value": "\"incorrect-answer\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 59117,
+      "offset": 59609,
       "length": 13,
       "value": "\"user-answer\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 59117,
+      "offset": 59609,
       "length": 13,
       "value": "\"user-answer\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 59810,
+      "offset": 60302,
       "length": 13,
       "value": "\"user-answer\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 59858,
+      "offset": 60350,
       "length": 22,
       "value": "\"correct-answer-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 59916,
+      "offset": 60408,
       "length": 23,
       "value": "\"correct-answer-answer\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 59810,
+      "offset": 60302,
       "length": 13,
       "value": "\"user-answer\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 59858,
+      "offset": 60350,
       "length": 22,
       "value": "\"correct-answer-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 59916,
+      "offset": 60408,
       "length": 23,
       "value": "\"correct-answer-answer\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 60532,
+      "offset": 61024,
       "length": 13,
       "value": "\"coins-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 60573,
+      "offset": 61065,
       "length": 14,
       "value": "\"coins-number\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 60532,
+      "offset": 61024,
       "length": 13,
       "value": "\"coins-label\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 60573,
+      "offset": 61065,
       "length": 14,
       "value": "\"coins-number\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 61100,
+      "offset": 61592,
       "length": 14,
       "value": "\"coins-number\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 61100,
+      "offset": 61592,
       "length": 14,
       "value": "\"coins-number\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 61544,
+      "offset": 62036,
       "length": 18,
       "value": "\"background-color\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 61593,
+      "offset": 62085,
       "length": 26,
       "value": "\"background-color-opacity\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 61649,
+      "offset": 62141,
       "length": 25,
       "value": "\"background-color-bottom\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 61711,
+      "offset": 62203,
       "length": 33,
       "value": "\"background-color-bottom-opacity\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 61544,
+      "offset": 62036,
       "length": 18,
       "value": "\"background-color\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 61593,
+      "offset": 62085,
       "length": 26,
       "value": "\"background-color-opacity\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 61649,
+      "offset": 62141,
       "length": 25,
       "value": "\"background-color-bottom\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 61711,
+      "offset": 62203,
       "length": 33,
       "value": "\"background-color-bottom-opacity\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 62019,
+      "offset": 62511,
       "length": 20,
       "value": "\"show-menu-launcher\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 62019,
+      "offset": 62511,
       "length": 20,
       "value": "\"show-menu-launcher\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 62340,
+      "offset": 62832,
       "length": 17,
       "value": "\"content-flipper\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 62340,
+      "offset": 62832,
       "length": 17,
       "value": "\"content-flipper\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 62449,
+      "offset": 62941,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 63107,
+      "offset": 63599,
       "length": 14,
       "value": "\"progress-bar\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 63107,
+      "offset": 63599,
       "length": 14,
       "value": "\"progress-bar\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 63256,
+      "offset": 63748,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 63902,
+      "offset": 64394,
       "length": 24,
       "value": "\"justify-content-center\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 63902,
+      "offset": 64394,
       "length": 24,
       "value": "\"justify-content-center\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 64292,
+      "offset": 64784,
       "length": 12,
       "value": "\"text-color\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 64331,
+      "offset": 64823,
       "length": 13,
       "value": "\"font-family\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 64371,
+      "offset": 64863,
       "length": 13,
       "value": "\"font-weight\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 64438,
+      "offset": 64930,
       "length": 18,
       "value": "\"background-color\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 64292,
+      "offset": 64784,
       "length": 12,
       "value": "\"text-color\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 64331,
+      "offset": 64823,
       "length": 13,
       "value": "\"font-family\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 64371,
+      "offset": 64863,
       "length": 13,
       "value": "\"font-weight\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 64438,
+      "offset": 64930,
       "length": 18,
       "value": "\"background-color\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 64944,
+      "offset": 65436,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 65128,
+      "offset": 65620,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 65245,
+      "offset": 65737,
       "length": 9,
       "value": "\"#FFFFFF\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 65767,
+      "offset": 66259,
       "length": 4,
       "value": "\"0%\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 65805,
+      "offset": 66297,
       "length": 3,
       "value": "\"%\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "IntegerLiteral",
-      "offset": 65904,
+      "offset": 66396,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 65986,
+      "offset": 66478,
       "length": 14,
       "value": "\"border-color\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 66035,
+      "offset": 66527,
       "length": 22,
       "value": "\"border-color-opacity\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 66086,
+      "offset": 66578,
       "length": 15,
       "value": "\"border-radius\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 65986,
+      "offset": 66478,
       "length": 14,
       "value": "\"border-color\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 66035,
+      "offset": 66527,
       "length": 22,
       "value": "\"border-color-opacity\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 66086,
+      "offset": 66578,
       "length": 15,
       "value": "\"border-radius\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 66179,
+      "offset": 66671,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 66303,
+      "offset": 66795,
       "length": 9,
       "value": "\"#262626\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "FloatLiteral",
-      "offset": 66474,
+      "offset": 66966,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "StringLiteral",
-      "offset": 66620,
+      "offset": 67112,
       "length": 4,
       "value": "\"0%\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 67139,
+      "offset": 67631,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 68432,
+      "offset": 68924,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/OtherClasses\/DesignModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 69288,
+      "offset": 69780,
       "length": 5,
       "value": "false"
     },
@@ -33533,175 +33540,175 @@
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "StringLiteral",
-      "offset": 1560,
+      "offset": 1169,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1903,
+      "offset": 1512,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2021,
+      "offset": 1630,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2276,
+      "offset": 1885,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2325,
+      "offset": 1934,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2362,
+      "offset": 1971,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2448,
+      "offset": 2057,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2520,
+      "offset": 2129,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2530,
+      "offset": 2139,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2542,
+      "offset": 2151,
       "length": 3,
       "value": "-40"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2554,
+      "offset": 2163,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3304,
+      "offset": 2913,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3388,
+      "offset": 2997,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3571,
+      "offset": 3180,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3614,
+      "offset": 3223,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3770,
+      "offset": 3379,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3877,
+      "offset": 3486,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4274,
+      "offset": 3883,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4294,
+      "offset": 3903,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4392,
+      "offset": 4001,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4502,
+      "offset": 4111,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5075,
+      "offset": 4684,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "StringLiteral",
-      "offset": 5192,
+      "offset": 4801,
       "length": 6,
       "value": "\"Wiki\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5965,
+      "offset": 5574,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGWikiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6167,
+      "offset": 5776,
       "length": 1,
       "value": "1"
     },
