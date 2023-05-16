@@ -418,6 +418,14 @@ extension UIKit.UIColor {
     @objc get
     @objc set
   }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var topContentInset: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var bottomContentInset: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
   @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var focusedCornerRadius: CoreFoundation.CGFloat {
     @objc get
     @objc set

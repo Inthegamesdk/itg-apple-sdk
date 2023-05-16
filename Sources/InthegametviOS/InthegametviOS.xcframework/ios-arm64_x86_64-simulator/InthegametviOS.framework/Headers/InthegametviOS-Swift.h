@@ -304,6 +304,8 @@ SWIFT_CLASS("_TtC14InthegametviOS13FocusTvButton")
 @property (nonatomic) IBInspectable CGPoint gradientEndPoint;
 @property (nonatomic) IBInspectable CGFloat leftContentInset;
 @property (nonatomic) IBInspectable CGFloat rightContentInset;
+@property (nonatomic) IBInspectable CGFloat topContentInset;
+@property (nonatomic) IBInspectable CGFloat bottomContentInset;
 @property (nonatomic) IBInspectable CGFloat focusedCornerRadius;
 @property (nonatomic) IBInspectable CGFloat normalCornerRadius;
 @property (nonatomic, strong) IBInspectable UIColor * _Nonnull focusedBorderColor;
@@ -748,6 +750,8 @@ SWIFT_CLASS("_TtC14InthegametviOS13FocusTvButton")
 @property (nonatomic) IBInspectable CGPoint gradientEndPoint;
 @property (nonatomic) IBInspectable CGFloat leftContentInset;
 @property (nonatomic) IBInspectable CGFloat rightContentInset;
+@property (nonatomic) IBInspectable CGFloat topContentInset;
+@property (nonatomic) IBInspectable CGFloat bottomContentInset;
 @property (nonatomic) IBInspectable CGFloat focusedCornerRadius;
 @property (nonatomic) IBInspectable CGFloat normalCornerRadius;
 @property (nonatomic, strong) IBInspectable UIColor * _Nonnull focusedBorderColor;
