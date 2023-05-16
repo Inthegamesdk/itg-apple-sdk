@@ -190,15 +190,15 @@
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		p7os0CzRs+yHtBrxovEOyzIMGq0=
+		lp2ogA9tHeLsE1TWNIHLKinl9Zs=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		Lw+gdCeBlGtVLMehKPEPEb6+6sw=
+		cVZHfA+XYIlSnfFZNTnyvtkwP/c=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		wN6V8hIggFMdV8SeWjkE3nE/SuE=
+		MPLdzC+9ElFFdP8bmRAaM0GjYUc=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -218,7 +218,7 @@
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		wN6V8hIggFMdV8SeWjkE3nE/SuE=
+		MPLdzC+9ElFFdP8bmRAaM0GjYUc=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -594,21 +594,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iCS+tnj3tl0CIGB9dSS4+JaZZViC4T2sRMg7pMxmpOU=
+			GARJrTl+fBODEO1l9rWnTWndoyBl81DtW/wLze0Q850=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pc8i3C210PaGA6IbKyMbBMEvhDbYBZW6zdJRm263RWY=
+			VjxF4898CWZ0jlwhptR2DyPe0utue+ziPCo1ezIoWks=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AMPP01RkNh4iQQwORrLfJZA6dpQ4YVsMjFsqK+auGRk=
+			fRuXFokWkhSehr6g4XzVenPmg5TA64A7+W/3duR2pSo=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -643,7 +643,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AMPP01RkNh4iQQwORrLfJZA6dpQ4YVsMjFsqK+auGRk=
+			fRuXFokWkhSehr6g4XzVenPmg5TA64A7+W/3duR2pSo=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
