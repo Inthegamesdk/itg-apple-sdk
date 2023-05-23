@@ -354,17 +354,6 @@ SWIFT_CLASS("_TtC14InthegametviOS13ITGAnswerView")
 
 
 @protocol UIFocusEnvironment;
-
-SWIFT_CLASS("_TtC14InthegametviOS11ITGInfoView")
-@interface ITGInfoView : UIView
-@property (nonatomic, readonly, copy) NSArray<id <UIFocusEnvironment>> * _Nonnull preferredFocusEnvironments;
-- (void)removeFromSuperview;
-- (void)drawRect:(CGRect)rect;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 @class UIEvent;
 
 SWIFT_CLASS("_TtC14InthegametviOS14ITGOverlayView")
@@ -800,17 +789,6 @@ SWIFT_CLASS("_TtC14InthegametviOS13ITGAnswerView")
 
 
 @protocol UIFocusEnvironment;
-
-SWIFT_CLASS("_TtC14InthegametviOS11ITGInfoView")
-@interface ITGInfoView : UIView
-@property (nonatomic, readonly, copy) NSArray<id <UIFocusEnvironment>> * _Nonnull preferredFocusEnvironments;
-- (void)removeFromSuperview;
-- (void)drawRect:(CGRect)rect;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 @class UIEvent;
 
 SWIFT_CLASS("_TtC14InthegametviOS14ITGOverlayView")

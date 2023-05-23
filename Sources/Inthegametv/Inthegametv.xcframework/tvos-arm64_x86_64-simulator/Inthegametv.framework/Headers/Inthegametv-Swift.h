@@ -354,16 +354,6 @@ SWIFT_CLASS("_TtC11Inthegametv13ITGAnswerView")
 
 
 @protocol UIFocusEnvironment;
-
-SWIFT_CLASS("_TtC11Inthegametv11ITGInfoView")
-@interface ITGInfoView : UIView
-@property (nonatomic, readonly, copy) NSArray<id <UIFocusEnvironment>> * _Nonnull preferredFocusEnvironments;
-- (void)removeFromSuperview;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 @class UIEvent;
 
 SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
@@ -799,16 +789,6 @@ SWIFT_CLASS("_TtC11Inthegametv13ITGAnswerView")
 
 
 @protocol UIFocusEnvironment;
-
-SWIFT_CLASS("_TtC11Inthegametv11ITGInfoView")
-@interface ITGInfoView : UIView
-@property (nonatomic, readonly, copy) NSArray<id <UIFocusEnvironment>> * _Nonnull preferredFocusEnvironments;
-- (void)removeFromSuperview;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 @class UIEvent;
 
 SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")

@@ -297,16 +297,6 @@ public enum ITGContent {
 extension InthegametviOS.ITGOverlayView {
   @_Concurrency.MainActor(unsafe) public func menuShouldClose()
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ITGInfoView : UIKit.UIView, InthegametviOS.NibView {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open var preferredFocusEnvironments: [any UIKit.UIFocusEnvironment] {
-    @objc get
-  }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func removeFromSuperview()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ITGAnswerView : UIKit.UIView, InthegametviOS.NibView {
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var button: InthegametviOS.FocusTvButton!
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var secondaryButton: InthegametviOS.FocusTvButton!
