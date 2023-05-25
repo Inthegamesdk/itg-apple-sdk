@@ -354,6 +354,7 @@ SWIFT_CLASS("_TtC14InthegametviOS13ITGAnswerView")
 
 
 @protocol UIFocusEnvironment;
+@class UIWindow;
 @class UIEvent;
 
 SWIFT_CLASS("_TtC14InthegametviOS14ITGOverlayView")
@@ -362,6 +363,7 @@ SWIFT_CLASS("_TtC14InthegametviOS14ITGOverlayView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)didMoveToWindow;
+- (void)willMoveToWindow:(UIWindow * _Nullable)newWindow;
 - (void)didUpdateFocusInContext:(UIFocusUpdateContext * _Nonnull)context withAnimationCoordinator:(UIFocusAnimationCoordinator * _Nonnull)coordinator;
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 @end

@@ -262,6 +262,7 @@ public enum ITGContent {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToWindow()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func willMove(toWindow newWindow: UIKit.UIWindow?)
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) public func load(accountId: Swift.String, environment: InthegametviOS.ITGEnvironment, delegate: (any InthegametviOS.ITGOverlayDelegate)?, foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil, userRole: InthegametviOS.UserRole)
