@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		QZJoVASW/wL/m1BK4vSw6QEjClI=
+		vWKtuEsopY5MW0WmWGKitvrOA3U=
 		</data>
 		<key>DebugView.nib</key>
 		<data>
@@ -90,11 +90,11 @@
 		</data>
 		<key>ITGLeaderboardView.nib</key>
 		<data>
-		UAIAtJmGH/IGbvk+bsry1atsqd0=
+		PGQF22UrVdlyb9lqUEZgS0xneWU=
 		</data>
 		<key>ITGLeaderboardViewLandscape.nib</key>
 		<data>
-		quvMZS0CF2nO/sOn6Qt2uKa0cGk=
+		2aku8YDnazGhv2n9wZyzaSUQXg8=
 		</data>
 		<key>ITGMenuCollectionViewCell.nib</key>
 		<data>
@@ -190,15 +190,15 @@
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		E9wR4JxCT8bT7yYVKWVQfqpwqts=
+		nDyGiAOsFDhyH9sonB8ZzdOYlrw=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		UwRXZ4RYQy0y+vsSJ4lKN4bSYYk=
+		3U2vNpL0DvcPowB4CmluedbRTus=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		54lUiMW2zt2QlThwGaeUDryH+tQ=
+		Qlh38aT/80of508PvXjPq+qBiLk=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -214,11 +214,11 @@
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		i98t8n8T4lqaXYxboExawMj7RoQ=
+		R6tVGGGXPKmh39X2okc7OdyhZmE=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		54lUiMW2zt2QlThwGaeUDryH+tQ=
+		Qlh38aT/80of508PvXjPq+qBiLk=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -234,7 +234,7 @@
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		y6kOL0vUJ4UoyM+ANGsXoidRkwI=
+		cYdA8g5V7ZB4KE4YPy9shB3NHPE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -279,7 +279,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			20Tm/dV8R3SbLGn17kWoZqV0AxCaKgjyQmg8B821nlU=
+			MDBC19KDIM90DCxu0/st5FphT8XX5cBVdGRVo7fJrj4=
 			</data>
 		</dict>
 		<key>DebugView.nib</key>
@@ -426,14 +426,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Muq+pA8hgPMtY9s5/e0PB8gWnY9E9y5Xhvi2SUKxaog=
+			HkqwaEgWFgXtAHkZrwsOTLje/u6cNv48AfA/eHohWlI=
 			</data>
 		</dict>
 		<key>ITGLeaderboardViewLandscape.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PQ5Hc5FPNPpYz/ksP6dIWBHhoZ3TUKlKVJ27lSPXSsc=
+			K2683RlSevFOF6jxgtZCitlYim100eqCAuPqDXcfGco=
 			</data>
 		</dict>
 		<key>ITGMenuCollectionViewCell.nib</key>
@@ -594,21 +594,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NS2ZlglcJXeYAUg0jzfE3Uvw3Zjmeb6rmsXSzFfFWy0=
+			44S1mVAn7X3Vq9MxrF8HCzS2zhsmfzYe/eFBQcIkqm0=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			69eRpS8E/hIbDUZVMtFYlevTClWY9qxox5rc/4BRnTk=
+			zwD0EbcD/jWm+jBZ3IQ5QB0F9WxXlc+7SOwKM0Yo6mQ=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			i2nF3GS25QezrPIbbb4TAHprgSXtPjnSIe8M8a31Qv0=
+			I1qyPfm8OqGZ81s285NUQOyRP3bhRS7ct8oFu3ocDMQ=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -636,14 +636,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3lHpPiv4t2IRIuXMgAAsUpjVYGjbkGAJiL8zhqFu2dY=
+			i2IFJk1E3C5swSMiSTYHxkNKby7VWZOcxdUfVoOFTiY=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			i2nF3GS25QezrPIbbb4TAHprgSXtPjnSIe8M8a31Qv0=
+			I1qyPfm8OqGZ81s285NUQOyRP3bhRS7ct8oFu3ocDMQ=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -671,7 +671,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UpI9lBSmfHX09rVlYpmrW4ekPHDYdrgosyAiUl0fbYs=
+			II2H/2wbtd8BjUu4LtkwYEdPo/qPX+pI7Cw1SSbn3QA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
