@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/StorketService.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		SDLHzGt9YWCf3A3DuGvugLBmQ4c=
+		dZKziyTHw6zZU9GpzjTrnVzVLYQ=
 		</data>
 		<key>Modules/StorketService.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/StorketService.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		7gDwODKGXxf3W5qIYTVm8+IZx+I=
+		RJHHolGvHCX7IsaJDPWXM6JRJNI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -131,7 +131,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			phnz8W4MWmi+WQ6RRQRhtD5G4wC4nEqcJQMHyD7d2OQ=
+			GutWeveyrpw1+p8bSnFeMwGGP0HEHu2aaIyz9qJGihA=
 			</data>
 		</dict>
 		<key>Modules/StorketService.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
@@ -166,7 +166,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5wNQP7mrhXFMASg9A+QCd4s1X1iBurMowxlLHHNOtBo=
+			pPfafoDiFCSoXw073UXG/0FH1IvOH53B9QPHXYz5v2A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
