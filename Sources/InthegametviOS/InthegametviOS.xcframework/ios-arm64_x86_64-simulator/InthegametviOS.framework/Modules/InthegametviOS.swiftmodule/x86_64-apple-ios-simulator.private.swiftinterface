@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name InthegametviOS
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -315,6 +315,7 @@ extension InthegametviOS.ITGOverlayView {
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var secondaryImageLeadeingToMainImage: UIKit.NSLayoutConstraint?
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var secondaryImageVerticalCenterToMainImage: UIKit.NSLayoutConstraint?
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var pollPercentageLabelLeadingConstraint: UIKit.NSLayoutConstraint?
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var buttonVerticalCenterConstraint: UIKit.NSLayoutConstraint?
   @_Concurrency.MainActor(unsafe) public var animationDuration: Swift.Double
   @_Concurrency.MainActor(unsafe) public var pressedScale: CoreFoundation.CGFloat
   @_Concurrency.MainActor(unsafe) public var pressedAlpha: CoreFoundation.CGFloat
