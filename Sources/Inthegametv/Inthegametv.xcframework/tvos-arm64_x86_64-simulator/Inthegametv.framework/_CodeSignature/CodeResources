@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		4QUkadNd2C9ug/RMdDgi2fQOUHI=
+		3DOLc6aNpAHqfHJud5p8nckuOpc=
 		</data>
 		<key>DebugView.nib</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>ITGNotice.nib</key>
 		<data>
-		rM0/IspHzjyd/fpyL0+Z8MswtY8=
+		/fJ0DS2v5k8PQxW9JRy7ISvC4Qk=
 		</data>
 		<key>ITGPollView.nib</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		w1HB/ZrqvM+py2whVz40oRIgYCM=
+		LURmPZnyvago5X76VMeioIS9mNE=
 		</data>
 		<key>MainSlipView.nib</key>
 		<data>
@@ -134,15 +134,15 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/Project/arm64-apple-tvos-simulator.swiftsourceinfo</key>
 		<data>
-		LeD07ZLvjVKEeMXArCoQFN50W/4=
+		SkTEgXXNNe9txjf55zIziMvU9KA=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/Project/x86_64-apple-tvos-simulator.swiftsourceinfo</key>
 		<data>
-		7NeV9BYUpLWHn6DS/712T8KryIs=
+		NrAf9UXuEIPYLkp/jYcgtVGf85I=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		usxlyf2w451y2Az9+SnuW1KhZ/Y=
+		aDCYS4OPzYSzGfNJtDPnSJgtEJc=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -158,11 +158,11 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		CHNGaxSOCVf7Sc5DipbckS2MTnU=
+		2QKr3TtnD9zsWxlQMf0edXr6R7c=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		usxlyf2w451y2Az9+SnuW1KhZ/Y=
+		aDCYS4OPzYSzGfNJtDPnSJgtEJc=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -178,7 +178,7 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		L9MuyI4FiYUF4Hs+BO1m4wfUkos=
+		8Sr8rS0eL2POV6VY12SFH9wdLAc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -223,7 +223,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7sc0QUTfRrVYSaOAkCLp55uyy3MQSF4diSfymln7PhQ=
+			iDX/xocr5IyZl5DDT9Jf8qiYvXtfbXd/xOjdoWjRNHc=
 			</data>
 		</dict>
 		<key>DebugView.nib</key>
@@ -342,7 +342,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IHII1wnCRgFS7Cz8k5fRIJ/7wxI1NT1fIcvoSSuFu48=
+			yel6Z8qkmtRbXMA3RI3JhfI2yF543k62QAeetrI+gBY=
 			</data>
 		</dict>
 		<key>ITGPollView.nib</key>
@@ -440,21 +440,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SGApcMm0wPFxVfajuZAH5IFJO+KusGFNyER9UN5NBzw=
+			14U2/TbrikiyW/tOpcqfyEWGo7nujUj6FQ0q36CNPeg=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/Project/x86_64-apple-tvos-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TW0AwX41NVyPCBB2VS3iXiYT84LVBq4wXzjRQrkJDFY=
+			/rZ/x/kBxJW+43yTtWOls43mLZ95R0r+oH11dwt5uxk=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			efqaigU6aGQYexAbTBwyL4RSnagASV83l3hnLD4pqYg=
+			FiAZ3RHEPrhloFxHUkg9RuBZ7+PPosLhLevrqlsOfMk=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
@@ -482,14 +482,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DBtcdOHOKYksdTAeew4QMFuBIjco3Pgx77mHKK+SnAE=
+			xoyi8NDVbMuCLNlQn02bcYqNkMjEAolunaeDmZyAJqw=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			efqaigU6aGQYexAbTBwyL4RSnagASV83l3hnLD4pqYg=
+			FiAZ3RHEPrhloFxHUkg9RuBZ7+PPosLhLevrqlsOfMk=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
@@ -517,7 +517,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			H2XyOU/rQCkLZ38wo3Jg8ddKhPLLxf0SEQhFtyWtW6Q=
+			D+uXTry4gRMzdgpGmD0Ov0XrJOYPKE/JGaaEGAozlsk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -106,7 +106,7 @@
 		</data>
 		<key>ITGNotice.nib</key>
 		<data>
-		s/kLJvI4B8BWv2/50R89YYHuTuA=
+		ipd7f13z8e8PKxSar/PduBfoDq4=
 		</data>
 		<key>ITGPollView.nib</key>
 		<data>
@@ -182,7 +182,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GavqX68uhlTkolGpnQGZhBYl8RI=
+		FTQg6BmCNgfIFONzfAIT7Vl0XlI=
 		</data>
 		<key>MainSlipView.nib</key>
 		<data>
@@ -190,11 +190,11 @@
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		LeP9noN4BDARG4Xnk6muPBOr6eA=
+		3WI2cpesOYVl6SPzRkUtz3XI7kU=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		yd04M95DgoaUfEzshgeGd9qT8mU=
+		5gj/vKxuIYe4/gAkq7hCBLgBZao=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -210,7 +210,7 @@
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ClomShPWcnEKSNaPJDBvfC+TutY=
+		dtrD3ICdejFTgcZUXX03Ff2EkOA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -430,7 +430,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WtBFSWT7ywpAjleBrmThnqDVwcCg9GQ/Cxevo7hLar8=
+			AEoXJc169m90V22GIw0Ir6kXih6bXhatSmh4BKASsVw=
 			</data>
 		</dict>
 		<key>ITGPollView.nib</key>
@@ -570,14 +570,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gayZficRHuwbsQxa9ME7cGKfwQlYV+3fCF2We/6LR14=
+			EUYg+lxlVcUdFvDsJhAghU3csVaFWfs03+S/Tw8JCi0=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s1BAnkRIlbrLLMjkSsUIjAVPQAur1vgdnYe9P2Ja3hM=
+			cPwhGZWXQf8WYbCA17AhqkJBIN06g5G5gDMVgHU+xLY=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -605,7 +605,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HAwUf5jas+d+UTol9KoMW3MJRv/2BXIuZ/Mn/vHTA/4=
+			neHNTRTNH2dKg31Fpc7x5X6kUNmnR6tPazvsg8oCK7M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
