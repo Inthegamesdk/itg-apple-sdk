@@ -11,10 +11,12 @@ let package = Package(
     products: [
         .library(name: "Inthegametv", targets: ["Inthegametv", "StorketService"]),
         .library(name: "InthegametviOS", targets: ["InthegametviOS", "StorketService"]),
+        .library(name: "ITGAVPlayerAdapter", targets: ["ITGAVPlayerAdapter"])
     ],
     targets: [
         .binaryTarget(name: "Inthegametv", path: "Sources/Inthegametv/Inthegametv.xcframework"),
         .binaryTarget(name: "InthegametviOS", path: "Sources/InthegametviOS/InthegametviOS.xcframework"),
         .binaryTarget(name: "StorketService", path: "Sources/StorketService/StorketService.xcframework"),
+        .target(name: "ITGAVPlayerAdapter", path: "Sources/SupportingFiles/PlayerAdapters/ITGAVPlayerAdapter")
     ]
 )

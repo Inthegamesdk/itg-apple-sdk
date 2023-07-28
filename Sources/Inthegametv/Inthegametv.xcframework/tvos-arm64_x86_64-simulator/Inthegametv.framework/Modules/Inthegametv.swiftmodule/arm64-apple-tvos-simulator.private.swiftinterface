@@ -3,6 +3,7 @@
 // swift-module-flags: -target arm64-apple-tvos14.3-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Inthegametv
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
+import AVKit
 import CoreMedia
 import Foundation
 @_exported import Inthegametv
@@ -176,6 +177,7 @@ public struct AnalyticsInfo {
   public let sponsor: Swift.String?
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class PassthroughView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
@@ -194,7 +196,27 @@ public struct AnalyticsInfo {
 extension Inthegametv.ITGStorketHelper : StorketService.StorketDelegate {
   public func didReceive(messages: [StorketService.StorketMessage], storketType: StorketService.StorketType)
 }
+public protocol ITGPlayerAdapterDelegate : AnyObject {
+  func videoPlaying(_ time: Foundation.TimeInterval)
+  func videoPaused(_ time: Foundation.TimeInterval)
+  func videoControllsVisibilityChanged(_ isVisible: Swift.Bool)
+  func menuButtonAction()
+}
+public protocol ITGPlayerAdapter : AnyObject {
+  var delegate: (any Inthegametv.ITGPlayerAdapterDelegate)? { get set }
+  func setup()
+  func startVideo(_ url: Foundation.URL)
+  func getPlayerView() -> UIKit.UIView?
+  func getVideoResolution() -> CoreFoundation.CGSize
+  func isPlaying() -> Swift.Bool
+  func play()
+  func pause()
+  func seek(_ time: Foundation.TimeInterval)
+  func getCurrentTime() -> Foundation.TimeInterval
+  func isControlsVisible() -> Swift.Bool
+}
 public protocol ITGOverlayDelegate : AnyObject {
+  func overlayDidLoadChannelInfo(_ videoUrl: Swift.String?)
   func overlayRequestedVideoTime()
   func overlayRequestedPause()
   func overlayRequestedPlay()
@@ -205,20 +227,12 @@ public protocol ITGOverlayDelegate : AnyObject {
   func overlayResizeVideoHeight(activityHeight: CoreFoundation.CGFloat)
   func overlayResetVideoHeight()
   func overlayReceivedDeeplink(_ link: Swift.String)
-  func overlayRequestedVideoSeek(time: Swift.Double)
-  func overlayRequestedVideoResolution() -> Swift.String
+  func overlayRequestedVideoSeek(time: Foundation.TimeInterval)
+  func overlayRequestedVideoResolution() -> CoreFoundation.CGSize
   func overlayDidProcessAnalyticEvent(info: Inthegametv.AnalyticsInfo, type: Inthegametv.AnalyticsEventType)
   func userState(_ user: Inthegametv.User)
-}
-public enum ITGAnimationType {
-  case fromRight
-  case fromBottom
-  case fade
-  public static func == (a: Inthegametv.ITGAnimationType, b: Inthegametv.ITGAnimationType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
+  func overlayDidPresentContent(_ content: Inthegametv.ITGContent)
+  func overlayDidEndPresentingContent(_ content: Inthegametv.ITGContent)
 }
 public enum ITGContent {
   case slip
@@ -233,6 +247,7 @@ public enum ITGContent {
   }
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ITGOverlayView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public static var overlayVersion: Swift.String
   @_Concurrency.MainActor(unsafe) public class var reactCompatMode: Swift.Bool {
     get
     set
@@ -266,14 +281,14 @@ public enum ITGContent {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) public func load(accountId: Swift.String, environment: Inthegametv.ITGEnvironment, delegate: (any Inthegametv.ITGOverlayDelegate)?, foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil, userRole: Inthegametv.UserRole)
-  @_Concurrency.MainActor(unsafe) public func load(channelSlug: Swift.String, accountId: Swift.String, environment: Inthegametv.ITGEnvironment, delegate: (any Inthegametv.ITGOverlayDelegate)?, language: Swift.String = "en", foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil, userRole: Inthegametv.UserRole)
+  @_Concurrency.MainActor(unsafe) public func load(channelSlug: Swift.String, secondaryChannelSlug: Swift.String? = nil, accountId: Swift.String, environment: Inthegametv.ITGEnvironment, delegate: (any Inthegametv.ITGOverlayDelegate)?, language: Swift.String = "en", foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil, userRole: Inthegametv.UserRole)
   @_Concurrency.MainActor(unsafe) public func getLeaderboard(_ page: Swift.Int, limit: Swift.Int, period: Inthegametv.LeaderboardPeriod, leaderboardSorting: Inthegametv.LeaderboardSorting, leaderboardDisplayMode: Inthegametv.LeaderboardDisplayMode, completion: @escaping (Inthegametv.LeaderboardResponse?, (any Swift.Error)?) -> ())
   @_Concurrency.MainActor(unsafe) public func resetUser()
   @_Concurrency.MainActor(unsafe) public func closeInteractionIfNeeded() -> Swift.Bool
   @_Concurrency.MainActor(unsafe) public func isDisplayingInteraction() -> Swift.Bool
   @_Concurrency.MainActor(unsafe) public func isDisplayingSidebar() -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) public func videoPaused(time: Swift.Double)
-  @_Concurrency.MainActor(unsafe) public func videoPlaying(time: Swift.Double)
+  @_Concurrency.MainActor(unsafe) public func videoPaused(time: Foundation.TimeInterval)
+  @_Concurrency.MainActor(unsafe) public func videoPlaying(time: Foundation.TimeInterval)
   @_Concurrency.MainActor(unsafe) public func setLiveMode(enabled: Swift.Bool)
   @_Concurrency.MainActor(unsafe) public func openMenu()
   @_Concurrency.MainActor(unsafe) public func openAccount()
@@ -297,6 +312,41 @@ public enum ITGContent {
 }
 extension Inthegametv.ITGOverlayView {
   @_Concurrency.MainActor(unsafe) public func menuShouldClose()
+}
+@objc @_Concurrency.MainActor(unsafe) open class ITGPlayerViewController : UIKit.UIViewController, Inthegametv.ITGOverlayDelegate, Inthegametv.ITGPlayerAdapterDelegate {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredFocusedView: UIKit.UIView? {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) public init(channelSlug: Swift.String, secondaryChannelSlug: Swift.String? = nil, accountId: Swift.String, environment: Inthegametv.ITGEnvironment, language: Swift.String = "en", foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil, userRole: Inthegametv.UserRole = .user, playerAdapter: any Inthegametv.ITGPlayerAdapter, shouldResetOverlayUser: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) open func setupPlayer()
+  @_Concurrency.MainActor(unsafe) open func startVideo(_ url: Foundation.URL)
+  @_Concurrency.MainActor(unsafe) open func setupOverlay()
+  @objc @IBAction @_Concurrency.MainActor(unsafe) open func closeButtonPressed(_ sender: Any)
+  @objc @_Concurrency.MainActor(unsafe) open func remoteMenuButtonAction(recognizer: UIKit.UITapGestureRecognizer)
+  @_Concurrency.MainActor(unsafe) open func menuButtonAction()
+  @_Concurrency.MainActor(unsafe) open func videoPlaying(_ time: Foundation.TimeInterval)
+  @_Concurrency.MainActor(unsafe) open func videoPaused(_ time: Foundation.TimeInterval)
+  @_Concurrency.MainActor(unsafe) open func videoControllsVisibilityChanged(_ isVisible: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) open func overlayDidPresentContent(_ content: Inthegametv.ITGContent)
+  @_Concurrency.MainActor(unsafe) open func overlayDidEndPresentingContent(_ content: Inthegametv.ITGContent)
+  @_Concurrency.MainActor(unsafe) open func overlayDidLoadChannelInfo(_ videoUrl: Swift.String?)
+  @_Concurrency.MainActor(unsafe) open func userState(_ user: Inthegametv.User)
+  @_Concurrency.MainActor(unsafe) open func overlayDidProcessAnalyticEvent(info: Inthegametv.AnalyticsInfo, type: Inthegametv.AnalyticsEventType)
+  @_Concurrency.MainActor(unsafe) open func overlayRequestedVideoResolution() -> CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) open func overlayReceivedDeeplink(_ link: Swift.String)
+  @_Concurrency.MainActor(unsafe) open func overlayRequestedPause()
+  @_Concurrency.MainActor(unsafe) open func overlayRequestedPlay()
+  @_Concurrency.MainActor(unsafe) open func overlayRequestedFocus()
+  @_Concurrency.MainActor(unsafe) open func overlayReleasedFocus()
+  @_Concurrency.MainActor(unsafe) open func overlayResizeVideoHeight(activityHeight: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) open func overlayResetVideoHeight()
+  @_Concurrency.MainActor(unsafe) open func overlayResizeVideoWidth(activityWidth: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) open func overlayResetVideoWidth()
+  @_Concurrency.MainActor(unsafe) open func overlayRequestedVideoTime()
+  @_Concurrency.MainActor(unsafe) open func overlayRequestedVideoSeek(time: Foundation.TimeInterval)
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ITGAnswerView : UIKit.UIView, Inthegametv.NibView {
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var button: Inthegametv.FocusTvButton!
@@ -353,8 +403,9 @@ public struct ITGEnvironment {
   public let apiBaseURL: Swift.String
   public let imageBaseURL: Swift.String
   public let envName: Swift.String
+  public let storageURL: Swift.String
   public init(envName: Swift.String)
-  public init(apiBaseURL: Swift.String, imageBaseURL: Swift.String, envName: Swift.String)
+  public init(apiBaseURL: Swift.String, imageBaseURL: Swift.String, envName: Swift.String, storageURL: Swift.String)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ITGRatingAnswerView : UIKit.UIView, Inthegametv.NibView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
@@ -377,6 +428,9 @@ extension UIKit.UIImage {
 extension UIKit.UIColor {
   convenience public init?(hex: Swift.String)
   convenience public init?(hex: Swift.String, opacity: CoreFoundation.CGFloat)
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func constraintsFillSuperview(top: CoreFoundation.CGFloat? = 0, bottom: CoreFoundation.CGFloat? = 0, leading: CoreFoundation.CGFloat? = 0, trailing: CoreFoundation.CGFloat? = 0)
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class FocusTvButton : UIKit.UIButton {
   @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var normalFont: UIKit.UIFont {
@@ -500,8 +554,6 @@ extension Inthegametv.ModuleType : Swift.RawRepresentable {}
 extension Inthegametv.LeaderboardSorting : Swift.Equatable {}
 extension Inthegametv.LeaderboardSorting : Swift.Hashable {}
 extension Inthegametv.LeaderboardSorting : Swift.RawRepresentable {}
-extension Inthegametv.ITGAnimationType : Swift.Equatable {}
-extension Inthegametv.ITGAnimationType : Swift.Hashable {}
 extension Inthegametv.ITGContent : Swift.Equatable {}
 extension Inthegametv.ITGContent : Swift.Hashable {}
 extension Inthegametv.LeaderboardPeriod : Swift.Equatable {}

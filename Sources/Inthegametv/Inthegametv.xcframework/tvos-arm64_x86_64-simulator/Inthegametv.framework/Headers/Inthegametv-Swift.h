@@ -380,6 +380,19 @@ SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
 
 
 
+@class UITapGestureRecognizer;
+@class NSString;
+@class NSBundle;
+
+SWIFT_CLASS("_TtC11Inthegametv23ITGPlayerViewController")
+@interface ITGPlayerViewController : UIViewController
+@property (nonatomic, readonly, strong) UIView * _Nullable preferredFocusedView;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)viewDidLoad;
+- (IBAction)closeButtonPressed:(id _Nonnull)sender;
+- (void)remoteMenuButtonActionWithRecognizer:(UITapGestureRecognizer * _Nonnull)recognizer;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
 
 
 SWIFT_CLASS("_TtC11Inthegametv19ITGRatingAnswerView")
@@ -401,6 +414,7 @@ SWIFT_CLASS("_TtC11Inthegametv16ITGStorketHelper")
 
 SWIFT_CLASS("_TtC11Inthegametv15PassthroughView")
 @interface PassthroughView : UIView
+- (void)didUpdateFocusInContext:(UIFocusUpdateContext * _Nonnull)context withAnimationCoordinator:(UIFocusAnimationCoordinator * _Nonnull)coordinator;
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -816,6 +830,19 @@ SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
 
 
 
+@class UITapGestureRecognizer;
+@class NSString;
+@class NSBundle;
+
+SWIFT_CLASS("_TtC11Inthegametv23ITGPlayerViewController")
+@interface ITGPlayerViewController : UIViewController
+@property (nonatomic, readonly, strong) UIView * _Nullable preferredFocusedView;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)viewDidLoad;
+- (IBAction)closeButtonPressed:(id _Nonnull)sender;
+- (void)remoteMenuButtonActionWithRecognizer:(UITapGestureRecognizer * _Nonnull)recognizer;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
 
 
 SWIFT_CLASS("_TtC11Inthegametv19ITGRatingAnswerView")
@@ -837,6 +864,7 @@ SWIFT_CLASS("_TtC11Inthegametv16ITGStorketHelper")
 
 SWIFT_CLASS("_TtC11Inthegametv15PassthroughView")
 @interface PassthroughView : UIView
+- (void)didUpdateFocusInContext:(UIFocusUpdateContext * _Nonnull)context withAnimationCoordinator:(UIFocusAnimationCoordinator * _Nonnull)coordinator;
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
