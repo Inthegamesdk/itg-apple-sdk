@@ -1,16 +1,19 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target arm64-apple-tvos14.3-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Inthegametv
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import CoreMedia
+import DeveloperToolsSupport
 import Foundation
 @_exported import Inthegametv
 import StorketService
 import Swift
+import SwiftUI
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public enum ITGMenuItem : Swift.String, Swift.CaseIterable, Swift.Decodable {
   case account
   case leaderboard
@@ -195,6 +198,7 @@ extension Inthegametv.ITGStorketHelper : StorketService.StorketDelegate {
   public func didReceive(messages: [StorketService.StorketMessage], storketType: StorketService.StorketType)
 }
 public protocol ITGOverlayDelegate : AnyObject {
+  func overlayDidLoadChannelInfo(_ videoUrl: Swift.String?)
   func overlayRequestedVideoTime()
   func overlayRequestedPause()
   func overlayRequestedPlay()
@@ -209,6 +213,8 @@ public protocol ITGOverlayDelegate : AnyObject {
   func overlayRequestedVideoResolution() -> Swift.String
   func overlayDidProcessAnalyticEvent(info: Inthegametv.AnalyticsInfo, type: Inthegametv.AnalyticsEventType)
   func userState(_ user: Inthegametv.User)
+  func overlayDidPresentContent(_ content: Inthegametv.ITGContent)
+  func overlayDidEndPresentingContent(_ content: Inthegametv.ITGContent)
 }
 public enum ITGAnimationType {
   case fromRight
@@ -233,6 +239,7 @@ public enum ITGContent {
   }
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ITGOverlayView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public static var overlayVersion: Swift.String
   @_Concurrency.MainActor(unsafe) public class var reactCompatMode: Swift.Bool {
     get
     set

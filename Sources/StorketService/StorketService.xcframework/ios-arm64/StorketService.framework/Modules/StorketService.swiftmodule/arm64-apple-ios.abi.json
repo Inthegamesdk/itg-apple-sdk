@@ -1461,140 +1461,147 @@
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/Storket.swift",
       "kind": "IntegerLiteral",
-      "offset": 3125,
+      "offset": 3104,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/Storket.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3155,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/Storket.swift",
       "kind": "StringLiteral",
-      "offset": 3653,
+      "offset": 3683,
       "length": 8,
       "value": "\"__meta\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/Storket.swift",
       "kind": "StringLiteral",
-      "offset": 4482,
+      "offset": 4512,
       "length": 16,
       "value": "\"${channelSlug}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/Storket.swift",
       "kind": "StringLiteral",
-      "offset": 4549,
+      "offset": 4579,
       "length": 8,
       "value": "\"${key}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/Storket.swift",
       "kind": "IntegerLiteral",
-      "offset": 4621,
+      "offset": 4651,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/Storket.swift",
       "kind": "IntegerLiteral",
-      "offset": 4625,
+      "offset": 4655,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/Storket.swift",
       "kind": "StringLiteral",
-      "offset": 4956,
+      "offset": 4986,
       "length": 8,
       "value": "\"__data\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/Storket.swift",
       "kind": "StringLiteral",
-      "offset": 5149,
+      "offset": 5179,
       "length": 6,
       "value": "\"__id\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/Storket.swift",
       "kind": "StringLiteral",
-      "offset": 5171,
+      "offset": 5201,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/Storket.swift",
       "kind": "StringLiteral",
-      "offset": 5224,
+      "offset": 5254,
       "length": 12,
       "value": "\"__expireAt\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/Storket.swift",
       "kind": "IntegerLiteral",
-      "offset": 5251,
+      "offset": 5281,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/Storket.swift",
       "kind": "StringLiteral",
-      "offset": 5302,
+      "offset": 5332,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/Storket.swift",
       "kind": "StringLiteral",
-      "offset": 5376,
+      "offset": 5406,
       "length": 14,
       "value": "\"startingTime\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/Storket.swift",
       "kind": "IntegerLiteral",
-      "offset": 5406,
+      "offset": 5436,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/Storket.swift",
       "kind": "IntegerLiteral",
-      "offset": 5486,
+      "offset": 5516,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/Storket.swift",
       "kind": "IntegerLiteral",
-      "offset": 5547,
+      "offset": 5577,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/Storket.swift",
       "kind": "IntegerLiteral",
-      "offset": 5623,
+      "offset": 5653,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/Storket.swift",
       "kind": "IntegerLiteral",
-      "offset": 5647,
+      "offset": 5677,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/Storket.swift",
       "kind": "IntegerLiteral",
-      "offset": 6393,
+      "offset": 6423,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/Storket.swift",
       "kind": "IntegerLiteral",
-      "offset": 6558,
+      "offset": 6588,
       "length": 2,
       "value": "70"
     },
