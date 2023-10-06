@@ -19590,259 +19590,259 @@
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 13349,
+      "offset": 13372,
       "length": 14,
       "value": "\"startingTime\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 13377,
+      "offset": 13400,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "Array",
-      "offset": 13512,
+      "offset": 13535,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 14214,
+      "offset": 14237,
       "length": 9,
       "value": "\"product\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 14285,
+      "offset": 14308,
       "length": 22,
       "value": "\"closePostInteraction\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 14322,
+      "offset": 14345,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 14363,
+      "offset": 14386,
       "length": 12,
       "value": "\"timeToStay\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 14404,
+      "offset": 14427,
       "length": 12,
       "value": "\"timeToStay\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 14432,
+      "offset": 14455,
       "length": 4,
       "value": "\"30\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14441,
+      "offset": 14464,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 14486,
+      "offset": 14509,
       "length": 14,
       "value": "\"feedbackTime\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 14574,
+      "offset": 14597,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 14618,
+      "offset": 14641,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 14784,
+      "offset": 14807,
       "length": 14,
       "value": "\"startingTime\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14812,
+      "offset": 14835,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "Array",
-      "offset": 14946,
+      "offset": 14969,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 15634,
+      "offset": 15657,
       "length": 14,
       "value": "\"streamerInfo\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 15881,
+      "offset": 15904,
       "length": 7,
       "value": "\"polls\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "Array",
-      "offset": 16000,
+      "offset": 16023,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 16158,
+      "offset": 16181,
       "length": 9,
       "value": "\"ratings\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "Array",
-      "offset": 16281,
+      "offset": 16304,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 16441,
+      "offset": 16464,
       "length": 13,
       "value": "\"predictions\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "Array",
-      "offset": 16566,
+      "offset": 16589,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 17054,
+      "offset": 17077,
       "length": 6,
       "value": "\"poll\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 17114,
+      "offset": 17137,
       "length": 5,
       "value": "\"_id\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 17170,
+      "offset": 17193,
       "length": 5,
       "value": "\"$id\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 17394,
+      "offset": 17417,
       "length": 6,
       "value": "\"poll\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 17454,
+      "offset": 17477,
       "length": 5,
       "value": "\"_id\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 17510,
+      "offset": 17533,
       "length": 5,
       "value": "\"$id\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 17553,
+      "offset": 17576,
       "length": 8,
       "value": "\"answer\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 17613,
+      "offset": 17636,
       "length": 11,
       "value": "\"winAmount\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 18440,
+      "offset": 18463,
       "length": 10,
       "value": "\"userName\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 18488,
+      "offset": 18511,
       "length": 8,
       "value": "\"avatar\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 18535,
+      "offset": 18558,
       "length": 6,
       "value": "\"text\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 18582,
+      "offset": 18605,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 19023,
+      "offset": 19046,
       "length": 12,
       "value": "\"__sme_type\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Managers\/ITGStorketHelper.swift",
       "kind": "StringLiteral",
-      "offset": 19051,
+      "offset": 19074,
       "length": 7,
       "value": "\"stats\""
     },
@@ -21802,1715 +21802,1715 @@
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 35555,
+      "offset": 35484,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 35575,
+      "offset": 35504,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 35742,
+      "offset": 35671,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 35879,
+      "offset": 35808,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 35895,
+      "offset": 35824,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 36282,
+      "offset": 36211,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 36693,
+      "offset": 36622,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 37691,
+      "offset": 37620,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 37766,
+      "offset": 37695,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 37801,
+      "offset": 37730,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 38041,
+      "offset": 37970,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 38079,
+      "offset": 38008,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 38175,
+      "offset": 38104,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 38205,
+      "offset": 38134,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 38702,
+      "offset": 38631,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 38933,
+      "offset": 38862,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 39001,
+      "offset": 38930,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 39065,
+      "offset": 38994,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 39107,
+      "offset": 39036,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 39493,
+      "offset": 39422,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 40557,
+      "offset": 40486,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 40694,
+      "offset": 40623,
       "length": 4,
       "value": "\"30\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "FloatLiteral",
-      "offset": 40843,
+      "offset": 40772,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 41012,
+      "offset": 40941,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 41064,
+      "offset": 40993,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 41109,
+      "offset": 41038,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 41167,
+      "offset": 41096,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 41175,
+      "offset": 41104,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 41450,
+      "offset": 41379,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 41476,
+      "offset": 41405,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 41566,
+      "offset": 41495,
       "length": 52,
       "value": "\"ITG - Display interaction initiated: \""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 41611,
+      "offset": 41540,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 41617,
+      "offset": 41546,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 41944,
+      "offset": 41873,
       "length": 37,
       "value": "\"ITG - Interaction blocked or hidden\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 42050,
+      "offset": 41979,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 42151,
+      "offset": 42080,
       "length": 37,
       "value": "\"ITG - Interaction blocked or hidden\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 42316,
+      "offset": 42245,
       "length": 37,
       "value": "\"ITG - Interaction blocked or hidden\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 42500,
+      "offset": 42429,
       "length": 37,
       "value": "\"ITG - Interaction blocked or hidden\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "FloatLiteral",
-      "offset": 42851,
+      "offset": 42780,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 43260,
+      "offset": 43189,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 43372,
+      "offset": 43301,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 43976,
+      "offset": 43905,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 43983,
+      "offset": 43912,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 44103,
+      "offset": 44032,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 44671,
+      "offset": 44600,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 45921,
+      "offset": 45850,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 46051,
+      "offset": 45980,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 46341,
+      "offset": 46270,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 46619,
+      "offset": 46548,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 46896,
+      "offset": 46825,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 47166,
+      "offset": 47095,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 47259,
+      "offset": 47188,
       "length": 34,
       "value": "\"ITG - Showing interaction: \""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 47292,
+      "offset": 47221,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 47810,
+      "offset": 47739,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 48368,
+      "offset": 48297,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 50400,
+      "offset": 50329,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 50509,
+      "offset": 50438,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 50865,
+      "offset": 50794,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 51064,
+      "offset": 50993,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 51426,
+      "offset": 51355,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 52607,
+      "offset": 52536,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 52641,
+      "offset": 52570,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 52800,
+      "offset": 52729,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 52848,
+      "offset": 52777,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 52923,
+      "offset": 52852,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 53010,
+      "offset": 52939,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 53984,
+      "offset": 53913,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 55334,
+      "offset": 55263,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 55616,
+      "offset": 55545,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 55764,
+      "offset": 55693,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 55806,
+      "offset": 55735,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 55862,
+      "offset": 55791,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 55977,
+      "offset": 55906,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 56043,
+      "offset": 55972,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 56054,
+      "offset": 55983,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 56073,
+      "offset": 56002,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 56979,
+      "offset": 56908,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 57679,
+      "offset": 57608,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 57842,
+      "offset": 57771,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 57963,
+      "offset": 57892,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 58041,
+      "offset": 57970,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 58120,
+      "offset": 58049,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 58176,
+      "offset": 58105,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 58329,
+      "offset": 58258,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59048,
+      "offset": 58977,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59237,
+      "offset": 59166,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59362,
+      "offset": 59291,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59495,
+      "offset": 59424,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 59701,
+      "offset": 59630,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59841,
+      "offset": 59770,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59845,
+      "offset": 59774,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59902,
+      "offset": 59831,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60401,
+      "offset": 60511,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60405,
+      "offset": 60515,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60529,
+      "offset": 60639,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60740,
+      "offset": 60850,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60878,
+      "offset": 60988,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 61028,
+      "offset": 61138,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 61862,
+      "offset": 61972,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 62070,
+      "offset": 62180,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 62150,
+      "offset": 62260,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 62242,
+      "offset": 62352,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 62321,
+      "offset": 62431,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 64298,
+      "offset": 64408,
       "length": 11,
       "value": "\"iFrameUrl\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 64494,
+      "offset": 64604,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 65261,
+      "offset": 65371,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 65928,
+      "offset": 66038,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 65982,
+      "offset": 66092,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 66208,
+      "offset": 66318,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 66297,
+      "offset": 66407,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 66355,
+      "offset": 66465,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 67630,
+      "offset": 67740,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 68591,
+      "offset": 68701,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 68989,
+      "offset": 69099,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 69106,
+      "offset": 69216,
       "length": 11,
       "value": "\"iFrameUrl\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 69560,
+      "offset": 69670,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 70081,
+      "offset": 70191,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 70193,
+      "offset": 70303,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 71743,
+      "offset": 71853,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 72663,
+      "offset": 72773,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 82450,
+      "offset": 82560,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 82829,
+      "offset": 82939,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 82861,
+      "offset": 82971,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 82900,
+      "offset": 83010,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 82934,
+      "offset": 83044,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 83095,
+      "offset": 83205,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 83373,
+      "offset": 83483,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 83519,
+      "offset": 83629,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 83588,
+      "offset": 83698,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 83620,
+      "offset": 83730,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 83659,
+      "offset": 83769,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 83693,
+      "offset": 83803,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 83851,
+      "offset": 83961,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 84131,
+      "offset": 84241,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 84282,
+      "offset": 84392,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 84677,
+      "offset": 84787,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 84711,
+      "offset": 84821,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 84749,
+      "offset": 84859,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 84785,
+      "offset": 84895,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 84916,
+      "offset": 85026,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 85006,
+      "offset": 85116,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 85148,
+      "offset": 85258,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 85239,
+      "offset": 85349,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 85273,
+      "offset": 85383,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 85311,
+      "offset": 85421,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 85347,
+      "offset": 85457,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 85477,
+      "offset": 85587,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 85700,
+      "offset": 85810,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 85977,
+      "offset": 86087,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 86112,
+      "offset": 86222,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 86297,
+      "offset": 86407,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 86311,
+      "offset": 86421,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 86418,
+      "offset": 86528,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 86527,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 86674,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 86688,
+      "offset": 86637,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 86914,
+      "offset": 86784,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 86928,
+      "offset": 86798,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 87024,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 87038,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 87287,
+      "offset": 87397,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 87392,
+      "offset": 87502,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 87572,
+      "offset": 87682,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 87598,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "BooleanLiteral",
       "offset": 87708,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 87818,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 87766,
+      "offset": 87876,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 87823,
+      "offset": 87933,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 87881,
+      "offset": 87991,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 87940,
+      "offset": 88050,
       "length": 6,
       "value": "\"100%\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 88059,
+      "offset": 88169,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 88070,
+      "offset": 88180,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 88089,
+      "offset": 88199,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 88286,
+      "offset": 88396,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 88877,
+      "offset": 89139,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 89568,
+      "offset": 89830,
       "length": 59,
       "value": "\"ITG - Will answer quiz: \""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 89609,
+      "offset": 89871,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 89626,
+      "offset": 89888,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 89718,
+      "offset": 89980,
       "length": 26,
       "value": "\"ITG - Missing user token\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 90181,
+      "offset": 90443,
       "length": 58,
       "value": "\"ITG - Did answer quiz: \""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 90221,
+      "offset": 90483,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 90238,
+      "offset": 90500,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 90634,
+      "offset": 90896,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 90692,
+      "offset": 90954,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 91738,
+      "offset": 92000,
       "length": 80,
       "value": "\"ITG - Failed to answer quiz: \""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 91801,
+      "offset": 92063,
       "length": 15,
       "value": "\"unknown error\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 91817,
+      "offset": 92079,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 92104,
+      "offset": 92366,
       "length": 26,
       "value": "\"ITG - Missing user token\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 92548,
+      "offset": 92810,
       "length": 51,
       "value": "\"ITG - Did answer rating: \""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 92583,
+      "offset": 92845,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 92598,
+      "offset": 92860,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 92911,
+      "offset": 93173,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 93173,
+      "offset": 93435,
       "length": 11,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 93183,
+      "offset": 93445,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 93697,
+      "offset": 93959,
       "length": 82,
       "value": "\"ITG - Failed to answer rating: \""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 93762,
+      "offset": 94024,
       "length": 15,
       "value": "\"unknown error\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 93778,
+      "offset": 94040,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 94077,
+      "offset": 94339,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 94100,
+      "offset": 94362,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 94347,
+      "offset": 94609,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 94420,
+      "offset": 94682,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 94608,
+      "offset": 94870,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 94634,
+      "offset": 94896,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 94715,
+      "offset": 94977,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 94726,
+      "offset": 94988,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 94745,
+      "offset": 95007,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 95008,
+      "offset": 95270,
       "length": 26,
       "value": "\"ITG - Missing user token\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 95419,
+      "offset": 95681,
       "length": 58,
       "value": "\"ITG - Did answer poll\/prediction: \""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 95463,
+      "offset": 95725,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 95476,
+      "offset": 95738,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 95844,
+      "offset": 96106,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 96871,
+      "offset": 97133,
       "length": 91,
       "value": "\"ITG - Failed to answer poll\/prediction: \""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 96945,
+      "offset": 97207,
       "length": 15,
       "value": "\"unknown error\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 96961,
+      "offset": 97223,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 97686,
+      "offset": 98021,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 98329,
+      "offset": 98664,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 98989,
+      "offset": 99324,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 99322,
+      "offset": 99657,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 99750,
+      "offset": 100085,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 101795,
+      "offset": 102130,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 101835,
+      "offset": 102170,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 101861,
+      "offset": 102196,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 101930,
+      "offset": 102265,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 101992,
+      "offset": 102327,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 103395,
+      "offset": 103730,
       "length": 13,
       "value": "\"[foreignId]\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 103447,
+      "offset": 103782,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 104094,
+      "offset": 104429,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 104115,
+      "offset": 104450,
       "length": 59,
       "value": "\"An unexpected error occurred. Please try again next time.\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 104267,
+      "offset": 104602,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 104288,
+      "offset": 104623,
       "length": 59,
       "value": "\"An unexpected error occurred. Please try again next time.\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 104437,
+      "offset": 104772,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 104656,
+      "offset": 104991,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 104721,
+      "offset": 105056,
       "length": 3,
       "value": "403"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 104865,
+      "offset": 105200,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 104891,
+      "offset": 105226,
       "length": 21,
       "value": "\"Failed to send sms.\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 105474,
+      "offset": 105809,
       "length": 10,
       "value": "\"Products\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 105745,
+      "offset": 106080,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 106807,
+      "offset": 107142,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 107594,
+      "offset": 107929,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 107653,
+      "offset": 107988,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 107702,
+      "offset": 108037,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 108309,
+      "offset": 108644,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 108684,
+      "offset": 109019,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 109524,
+      "offset": 109859,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 109576,
+      "offset": 109911,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 111607,
+      "offset": 111926,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 112255,
+      "offset": 112574,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 112543,
+      "offset": 112862,
       "length": 5,
       "value": "false"
     },
@@ -29438,477 +29438,477 @@
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3174,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 3433,
+      "offset": 3462,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 3541,
+      "offset": 3570,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "StringLiteral",
-      "offset": 3582,
+      "offset": 3611,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 3717,
+      "offset": 3746,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 3797,
+      "offset": 3826,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 4229,
+      "offset": 4258,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 5656,
+      "offset": 5685,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 5956,
+      "offset": 5985,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 6175,
+      "offset": 6204,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 6190,
+      "offset": 6219,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 6274,
+      "offset": 6303,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 6362,
+      "offset": 6391,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 6431,
+      "offset": 6460,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 6445,
+      "offset": 6474,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 6617,
+      "offset": 6646,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 6631,
+      "offset": 6660,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 6718,
+      "offset": 6747,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 6809,
+      "offset": 6838,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 6881,
+      "offset": 6910,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 6895,
+      "offset": 6924,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 7063,
+      "offset": 7092,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 7078,
+      "offset": 7107,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 7165,
+      "offset": 7194,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 7254,
+      "offset": 7283,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 7323,
+      "offset": 7352,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 7337,
+      "offset": 7366,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 7510,
+      "offset": 7539,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 7524,
+      "offset": 7553,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 7612,
+      "offset": 7641,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 7702,
+      "offset": 7731,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 7772,
+      "offset": 7801,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 7786,
+      "offset": 7815,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 8442,
+      "offset": 8471,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 8496,
+      "offset": 8525,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 8540,
+      "offset": 8569,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 8666,
+      "offset": 8695,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 8736,
+      "offset": 8765,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 8784,
+      "offset": 8813,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 8816,
+      "offset": 8845,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 9644,
+      "offset": 9673,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 9948,
+      "offset": 9977,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 10226,
+      "offset": 10255,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "StringLiteral",
-      "offset": 10739,
+      "offset": 10768,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 11146,
+      "offset": 11175,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 11185,
+      "offset": 11214,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 11246,
+      "offset": 11275,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "StringLiteral",
-      "offset": 11276,
+      "offset": 11305,
       "length": 8,
       "value": "\"notice\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 11393,
+      "offset": 11422,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 11431,
+      "offset": 11460,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 11627,
+      "offset": 11656,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 11671,
+      "offset": 11700,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "StringLiteral",
-      "offset": 11710,
+      "offset": 11739,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "StringLiteral",
-      "offset": 11881,
+      "offset": 11910,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "StringLiteral",
-      "offset": 11925,
+      "offset": 11954,
       "length": 11,
       "value": "\"+\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "StringLiteral",
-      "offset": 11935,
+      "offset": 11964,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 12163,
+      "offset": 12192,
       "length": 2,
       "value": "92"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "StringLiteral",
-      "offset": 13018,
+      "offset": 13047,
       "length": 8,
       "value": "\"notice\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 13193,
+      "offset": 13222,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 13231,
+      "offset": 13260,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 13315,
+      "offset": 13344,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 13418,
+      "offset": 13447,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "FloatLiteral",
-      "offset": 13555,
+      "offset": 13584,
       "length": 4,
       "value": "1.25"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 13683,
+      "offset": 13712,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 13854,
+      "offset": 13883,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 13892,
+      "offset": 13921,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 13922,
+      "offset": 13951,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 13978,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
-      "kind": "BooleanLiteral",
-      "offset": 14023,
+      "offset": 14007,
       "length": 4,
       "value": "true"
     },
@@ -29922,191 +29922,177 @@
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 14142,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
-      "kind": "BooleanLiteral",
-      "offset": 14184,
+      "offset": 14154,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 14217,
+      "offset": 14230,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14263,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 14260,
+      "offset": 14306,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 14826,
+      "offset": 14872,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 14912,
+      "offset": 14958,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 14925,
+      "offset": 14971,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 15059,
+      "offset": 15105,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 15635,
+      "offset": 15682,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 15842,
+      "offset": 15889,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 16015,
+      "offset": 16062,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 16093,
+      "offset": 16140,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 16201,
+      "offset": 16248,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 16286,
+      "offset": 16333,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 16326,
+      "offset": 16373,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 16473,
+      "offset": 16520,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "StringLiteral",
-      "offset": 16680,
+      "offset": 16727,
       "length": 34,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "StringLiteral",
-      "offset": 16713,
+      "offset": 16760,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 16768,
+      "offset": 16815,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 16825,
+      "offset": 16872,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "StringLiteral",
-      "offset": 17021,
+      "offset": 17068,
       "length": 11,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "StringLiteral",
-      "offset": 17031,
+      "offset": 17078,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 17306,
+      "offset": 17353,
       "length": 3,
       "value": "-15"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 17312,
+      "offset": 17359,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "StringLiteral",
-      "offset": 17389,
+      "offset": 17436,
       "length": 30,
       "value": "\"+\""
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
-      "kind": "StringLiteral",
-      "offset": 17418,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
-      "kind": "StringLiteral",
-      "offset": 17450,
-      "length": 16,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
@@ -30117,253 +30103,267 @@
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
+      "kind": "StringLiteral",
+      "offset": 17497,
+      "length": 16,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
+      "kind": "StringLiteral",
+      "offset": 17512,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 17591,
+      "offset": 17638,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 17642,
+      "offset": 17689,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 18141,
+      "offset": 18188,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 18310,
+      "offset": 18357,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 18433,
+      "offset": 18480,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 18966,
+      "offset": 19013,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "StringLiteral",
-      "offset": 19382,
+      "offset": 19429,
       "length": 3,
       "value": "\"%\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "StringLiteral",
-      "offset": 19472,
+      "offset": 19519,
       "length": 3,
       "value": "\"%\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "StringLiteral",
-      "offset": 19483,
+      "offset": 19530,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 19489,
+      "offset": 19536,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "StringLiteral",
-      "offset": 19573,
+      "offset": 19620,
       "length": 4,
       "value": "\"px\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "StringLiteral",
-      "offset": 19585,
+      "offset": 19632,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 19929,
+      "offset": 19976,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 20276,
+      "offset": 20323,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 20509,
+      "offset": 20556,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 20736,
+      "offset": 20783,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 20969,
+      "offset": 21016,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 21079,
+      "offset": 21126,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 21094,
+      "offset": 21141,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 21183,
+      "offset": 21230,
       "length": 3,
       "value": "-40"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 21199,
+      "offset": 21246,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 21282,
+      "offset": 21329,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 21456,
+      "offset": 21503,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 21513,
+      "offset": 21560,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 21683,
+      "offset": 21730,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 22012,
+      "offset": 22059,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "FloatLiteral",
-      "offset": 22108,
+      "offset": 22155,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 22416,
+      "offset": 22463,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 22575,
+      "offset": 22622,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 22803,
+      "offset": 22850,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 23312,
+      "offset": 23359,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 23364,
+      "offset": 23411,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "BooleanLiteral",
-      "offset": 23596,
+      "offset": 23643,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 23916,
+      "offset": 23963,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "IntegerLiteral",
-      "offset": 24087,
+      "offset": 24134,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/ITGNotice.swift",
       "kind": "StringLiteral",
-      "offset": 27038,
+      "offset": 27085,
       "length": 6,
       "value": "\"Wiki\""
     },
@@ -37034,903 +37034,917 @@
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9088,
+      "offset": 9137,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9112,
+      "offset": 9161,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9568,
+      "offset": 9617,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "Array",
-      "offset": 9972,
+      "offset": 10021,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10576,
+      "offset": 10625,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10600,
+      "offset": 10649,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 11048,
+      "offset": 11097,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "Array",
-      "offset": 11510,
+      "offset": 11559,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 11849,
+      "offset": 11898,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 12243,
+      "offset": 12292,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 12267,
+      "offset": 12316,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 12715,
+      "offset": 12764,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "Array",
-      "offset": 13109,
+      "offset": 13158,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 13712,
+      "offset": 13761,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 13855,
+      "offset": 13904,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 14035,
+      "offset": 14084,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 14500,
+      "offset": 14549,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 14581,
+      "offset": 14630,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 14700,
+      "offset": 14749,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14818,
+      "offset": 14867,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14974,
+      "offset": 14972,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 15017,
+      "offset": 15093,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 15170,
+      "offset": 15136,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15289,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 15174,
+      "offset": 15293,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 15179,
+      "offset": 15298,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 15189,
+      "offset": 15308,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "Array",
-      "offset": 15201,
+      "offset": 15320,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 15232,
+      "offset": 15351,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 15420,
+      "offset": 15539,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 15486,
+      "offset": 15605,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 15860,
+      "offset": 15979,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 15923,
+      "offset": 16042,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 16039,
+      "offset": 16158,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16216,
+      "offset": 16335,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16220,
+      "offset": 16339,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16361,
+      "offset": 16480,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16540,
+      "offset": 16600,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16596,
+      "offset": 16739,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16795,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 16748,
+      "offset": 16947,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16834,
+      "offset": 17033,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 16899,
+      "offset": 17098,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17121,
+      "offset": 17320,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17169,
+      "offset": 17368,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17586,
+      "offset": 17785,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "Array",
-      "offset": 18760,
+      "offset": 18959,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "Array",
-      "offset": 18805,
+      "offset": 19004,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 18845,
+      "offset": 19044,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19051,
+      "offset": 19250,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19061,
+      "offset": 19260,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19124,
+      "offset": 19323,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "Array",
-      "offset": 19574,
+      "offset": 19773,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "Array",
-      "offset": 19871,
+      "offset": 20070,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 20168,
+      "offset": 20367,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "Array",
-      "offset": 20943,
+      "offset": 21142,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 21096,
+      "offset": 21295,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 21225,
+      "offset": 21424,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 21342,
+      "offset": 21541,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 21615,
+      "offset": 21814,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 21628,
+      "offset": 21827,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 22191,
+      "offset": 22390,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 22551,
+      "offset": 22750,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "FloatLiteral",
-      "offset": 23111,
+      "offset": 23310,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "FloatLiteral",
-      "offset": 23118,
+      "offset": 23317,
       "length": 4,
       "value": "32.0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 23197,
+      "offset": 23396,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 23201,
+      "offset": 23400,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 23513,
+      "offset": 23712,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 23563,
+      "offset": 23762,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24165,
+      "offset": 24364,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "FloatLiteral",
-      "offset": 24223,
+      "offset": 24422,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "FloatLiteral",
-      "offset": 24230,
+      "offset": 24429,
       "length": 4,
       "value": "32.0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 24250,
+      "offset": 24449,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24398,
+      "offset": 24597,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "FloatLiteral",
-      "offset": 24456,
+      "offset": 24655,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "FloatLiteral",
-      "offset": 24463,
+      "offset": 24662,
       "length": 4,
       "value": "32.0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 24483,
+      "offset": 24682,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 24607,
+      "offset": 24806,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24647,
+      "offset": 24846,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24652,
+      "offset": 24851,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24754,
+      "offset": 24953,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 24768,
+      "offset": 24967,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "FloatLiteral",
-      "offset": 24847,
+      "offset": 25046,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "FloatLiteral",
-      "offset": 24854,
+      "offset": 25053,
       "length": 4,
       "value": "32.0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 25689,
+      "offset": 25888,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 25791,
+      "offset": 25990,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 25851,
+      "offset": 26050,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 26530,
+      "offset": 26729,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 26869,
+      "offset": 27068,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 27093,
+      "offset": 27292,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "StringLiteral",
-      "offset": 27222,
+      "offset": 27421,
       "length": 6,
       "value": "\"null\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 27339,
+      "offset": 27538,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 27395,
+      "offset": 27594,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 27725,
+      "offset": 27924,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 27930,
+      "offset": 28129,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 28731,
+      "offset": 28930,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 28796,
+      "offset": 28995,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 28810,
+      "offset": 29009,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 28857,
+      "offset": 29056,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 28931,
+      "offset": 29130,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 29064,
+      "offset": 29263,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 29142,
+      "offset": 29341,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 29240,
+      "offset": 29439,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 29335,
+      "offset": 29534,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 29947,
+      "offset": 30146,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 29993,
+      "offset": 30192,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 30047,
+      "offset": 30246,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 30122,
+      "offset": 30321,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 30173,
+      "offset": 30372,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 30218,
+      "offset": 30417,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 30233,
+      "offset": 30432,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 30468,
+      "offset": 30667,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 30665,
+      "offset": 30864,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 30738,
+      "offset": 30937,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "Array",
-      "offset": 30817,
+      "offset": 31016,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 30975,
+      "offset": 31174,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 31089,
+      "offset": 31288,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 31132,
+      "offset": 31331,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 31203,
+      "offset": 31402,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 31247,
+      "offset": 31446,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 31662,
+      "offset": 31861,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 32413,
+      "offset": 32612,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 32427,
+      "offset": 32626,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 32578,
+      "offset": 32777,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 32743,
+      "offset": 32942,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "IntegerLiteral",
-      "offset": 32843,
+      "offset": 33042,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 32857,
+      "offset": 33056,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 32938,
+      "offset": 33137,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 32979,
+      "offset": 33178,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 33053,
+      "offset": 33252,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Inthegametv\/Inthegametv\/Views\/MainSlipView.swift",
       "kind": "BooleanLiteral",
-      "offset": 33094,
+      "offset": 33293,
       "length": 5,
       "value": "false"
     },

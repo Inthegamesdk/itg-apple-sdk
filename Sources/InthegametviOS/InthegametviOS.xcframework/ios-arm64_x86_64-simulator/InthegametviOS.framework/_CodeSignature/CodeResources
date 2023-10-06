@@ -26,11 +26,11 @@
 		</data>
 		<key>ITGAccountView.nib</key>
 		<data>
-		/SvJF83GPVw8WRVMToPO75WiMLk=
+		eZie9lBgwRq7YeJfoI3wRO80PyQ=
 		</data>
 		<key>ITGAccountViewLandscape.nib</key>
 		<data>
-		gGX30Vq5awktCu49tiWANC7u5H0=
+		fu1NvsfmRbQaPExuoE8hARvA634=
 		</data>
 		<key>ITGAnswerView.nib</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>ITGCheerChatMessageCell.nib</key>
 		<data>
-		V3Yg/7OG/oxw5rvVC35yXoN4fJU=
+		2f2N97Fk+P3T8safe1/i7iER22A=
 		</data>
 		<key>ITGCheerChatMessageCellLandscape.nib</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>ITGContentFlipper.nib</key>
 		<data>
-		bYeoeYHfC2OnVOsSVJUeNoxqA7g=
+		ZnN5wXhzN32dH5GVjY3hp4tNXWY=
 		</data>
 		<key>ITGInfoView.nib</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>ITGLeaderboardView.nib</key>
 		<data>
-		2MBz8o77oJC1em475HCzOY8aDhM=
+		vyspRyIJz60YQxN7s28lkK8ksoM=
 		</data>
 		<key>ITGLeaderboardViewLandscape.nib</key>
 		<data>
@@ -110,11 +110,11 @@
 		</data>
 		<key>ITGPollView.nib</key>
 		<data>
-		QLyjDO4oJ1IoO4x7hV83nlRBXVE=
+		mZKZKaZupWJqYNCVQr6HLDm7RB0=
 		</data>
 		<key>ITGPollViewLandscape.nib</key>
 		<data>
-		FCkypy6LSon0xbMpvsSvfu8vTiw=
+		kS04QN8KFGokr1dAo1KyrCnaxec=
 		</data>
 		<key>ITGProductView.nib</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>ITGProductViewLandscape.nib</key>
 		<data>
-		BXaqEt/JUKTVZ5A/MxWDPE0X9Zc=
+		/5/wEX6mvXy3Sqgpjsbw/xaB68g=
 		</data>
 		<key>ITGQuizView.nib</key>
 		<data>
@@ -146,11 +146,11 @@
 		</data>
 		<key>ITGShopProductTableViewCell.nib</key>
 		<data>
-		N/6YZCUC1xYSiqkHuyERDce+drk=
+		nXKMuePkIqXgQfHjtVEp0n8YyhY=
 		</data>
 		<key>ITGShopProductTableViewCellLandscape.nib</key>
 		<data>
-		eZmrxJpzKySkP7Re1Fka0QgOhzg=
+		783pG0R4lAL+KM0WJpdRQdj74lA=
 		</data>
 		<key>ITGShopView.nib</key>
 		<data>
@@ -182,7 +182,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+m1TgWvqhAYnvs1ynb+i/yT06ME=
+		4nXuxnQQGdjt9mqLsSXX3BcNdzk=
 		</data>
 		<key>MainSlipView.nib</key>
 		<data>
@@ -190,15 +190,15 @@
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		KvaDiDeMBIbDZEgt7CJlwq4/xzc=
+		SfG3cZAjIKYak5mk8NYHMdXUGiQ=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		pk+Yd1F/haFuMhzxpB1hWopHx+Y=
+		+RvXCA6Ih5DcwADSLdkMZdzkqjU=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		PZZCWsRyRGAL2VqwgZcIAimutz0=
+		evLz28sHuhufuHlGGOFw+UPU32k=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -218,7 +218,7 @@
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		PZZCWsRyRGAL2VqwgZcIAimutz0=
+		evLz28sHuhufuHlGGOFw+UPU32k=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -314,14 +314,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MAYqoscqoNOujTLezz3mCrglDtDsHQsV82uJB6eFgfU=
+			N5vg0KLy2jzZ3tQyjS9K6qOiivUbagh9VITIfqmrYdA=
 			</data>
 		</dict>
 		<key>ITGAccountViewLandscape.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c155cO6Vx3Z3XAjOVUhOUO8TymJgZOCdNyV7yyccMfE=
+			Q7+QQcF948iTmFdjnAxgEave7Plcv0nBOFLzcH3EQPA=
 			</data>
 		</dict>
 		<key>ITGAnswerView.nib</key>
@@ -349,7 +349,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yQppNvMy+Q+/HTH5NzHCiIFIf/k+STL7cn9a3FlhIZk=
+			X3uRz2T0tN5CejGUOJsf7cxSmHScsl0900Y6tsafawM=
 			</data>
 		</dict>
 		<key>ITGCheerChatMessageCellLandscape.nib</key>
@@ -391,7 +391,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nKR3c+jAELt/ws1jzY+wkH6XmksgOPeclhpEtdih4GY=
+			y54LUvoeglUB0VZUBiqwoBdM+V1ZOztij4j+v6NKMS4=
 			</data>
 		</dict>
 		<key>ITGInfoView.nib</key>
@@ -426,7 +426,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EKlZVgNmL8KiVUXD0sUGbbygszRefJsPn4ZkABMWrh8=
+			PaE8uBSk0Kzdfq+Y/svZQgL7rGLcID0zOJ/+7D+OZhE=
 			</data>
 		</dict>
 		<key>ITGLeaderboardViewLandscape.nib</key>
@@ -461,14 +461,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fPn8LGYxxVlubJXJeMo9ypJ806qAaRvFZ9r9icv9eoU=
+			aZ9DtsrWpve2crJBwBiOa+1CXJfLheFe6J+j5TTzStc=
 			</data>
 		</dict>
 		<key>ITGPollViewLandscape.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yERZ/9ez6XzrkxpoBK3DMorRzRilEeDwrfKtCl2tRVQ=
+			wAcQvJxp5YWpFy4LYVrZriy+hrejCecz/GMt5dMZduE=
 			</data>
 		</dict>
 		<key>ITGProductView.nib</key>
@@ -482,7 +482,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vMUheB41I3L//f+Tv9tgnjjnKL6ihsw/8HvCPIbrCiM=
+			DAmYMIVLv1PlBSk78LMRJU0HsMqIInuAxHBO5DAkDxw=
 			</data>
 		</dict>
 		<key>ITGQuizView.nib</key>
@@ -524,14 +524,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k/82kabkYUGUTyR6tL2d2zCV+fMoszLwecKF0n8apNU=
+			mVTg+t9gnMrgKHzPXWQgbdcttS4iWdy+yG4afjwGo8I=
 			</data>
 		</dict>
 		<key>ITGShopProductTableViewCellLandscape.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m5xYjjmqh+QEhAg5hRkCIJz+OnpOJQbLb9E2I/iUXK4=
+			uAEilgILQQxlYs/YycUlXy7N7ECiTC6UlT3E1AAtEAU=
 			</data>
 		</dict>
 		<key>ITGShopView.nib</key>
@@ -594,21 +594,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2/kACN4YfTcgoMdMTpKvhY760wNUJOdu4+0xxZ4/eDU=
+			o9/pJJrDDcLWqgPw5Urn1HXThBEXC5kHGox8KXiTeHU=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			d3I6PkfEh0SrSU8dD6N47Kt1eMqXb7opvEjmNsAVFBw=
+			swj2slf6cTIEU9ZZb9NllbvV9vjcQpXbqldwLVRoiMo=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MPAWyG22OzD213HA7uKMP889jz/KkmjlsMO7rx2sLDc=
+			lznqKxnMDKxsahG4ndE65CXaMwTfL5okKZ7WlUbb7Fw=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -643,7 +643,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MPAWyG22OzD213HA7uKMP889jz/KkmjlsMO7rx2sLDc=
+			lznqKxnMDKxsahG4ndE65CXaMwTfL5okKZ7WlUbb7Fw=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
