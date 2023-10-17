@@ -26,11 +26,11 @@
 		</data>
 		<key>ITGAccountView.nib</key>
 		<data>
-		grAPAeepavSRyvJVbDK+A2l3u50=
+		ytj4AHUuDLcQNJ1czzQ8oKHwJWk=
 		</data>
 		<key>ITGAccountViewLandscape.nib</key>
 		<data>
-		T6Pmyxagr9mucdx7QpRIrDnsD08=
+		fu1NvsfmRbQaPExuoE8hARvA634=
 		</data>
 		<key>ITGAnswerView.nib</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>ITGCloseViewLandscape.nib</key>
 		<data>
-		5gSqQo1Owv0Qhew7JjCvkc7iVV8=
+		gv/d6ZuhLSmLxtbBjfKwRWAVVyo=
 		</data>
 		<key>ITGContentFlipper.nib</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>ITGLeaderboardCollectionViewCellLandscape.nib</key>
 		<data>
-		3HzlCRRfMqGMH8TQcS05usLh574=
+		PG7ysZ/YenkhoI0HS/cwENgsjS0=
 		</data>
 		<key>ITGLeaderboardView.nib</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>ITGLeaderboardViewLandscape.nib</key>
 		<data>
-		FvMh6Ez4of6ldj9/ZV6XqXrVtXs=
+		Pc9v8oFxiat3YPwKkLlHr8WbX60=
 		</data>
 		<key>ITGMenuCollectionViewCell.nib</key>
 		<data>
@@ -110,11 +110,11 @@
 		</data>
 		<key>ITGPollView.nib</key>
 		<data>
-		AYJrdJwVykVMZygiJbA/JPXpg2w=
+		g4OgnSLDQGcX//PgItMFOALBIsU=
 		</data>
 		<key>ITGPollViewLandscape.nib</key>
 		<data>
-		q+Lln7nsUjJ/7BGvi/w/geyHkH0=
+		FCkypy6LSon0xbMpvsSvfu8vTiw=
 		</data>
 		<key>ITGProductView.nib</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>ITGQuizView.nib</key>
 		<data>
-		H4CL1PfVfinX5GuhbLbHFGxBNlo=
+		yk/e72HpfROmi4t27WpWuPCdtdg=
 		</data>
 		<key>ITGQuizViewLandscape.nib</key>
 		<data>
@@ -182,7 +182,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		d7mxZncJoKzysQfxfJ3L90PbbGM=
+		InLeAZXl3C/QrqaQkRvWzojx7NI=
 		</data>
 		<key>MainSlipView.nib</key>
 		<data>
@@ -190,11 +190,11 @@
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		Pckz+aY9D6PN9es9wCTRcvfeLe4=
+		p49HbYNrJByr0Db1lnFZVTVNrrE=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		BzumrTINDYFkeb1TOgBIW1BVOwI=
+		hhoUaXgAosye1mKuON2aLZMnIWU=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -290,14 +290,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			g1tmLosq0aQCUea1eJKRL/sTIp0IlBKr2ehFk5M83e8=
+			AIj+YTO5klqGnj5/Eu2zVWzqNu+NQo06ad+PF0pMpPI=
 			</data>
 		</dict>
 		<key>ITGAccountViewLandscape.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SM107AKcFMbbR1ssD8/36t9YyV5qMPvLxit4djJwUVs=
+			Q7+QQcF948iTmFdjnAxgEave7Plcv0nBOFLzcH3EQPA=
 			</data>
 		</dict>
 		<key>ITGAnswerView.nib</key>
@@ -360,7 +360,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			B0fmhMsVkeet0Hfhx55biDRjuagg4BO3+Tn4wt7aLAo=
+			cdJzIE8m99OiDnsA7gMM62TgFf4cgVrlxttzpNU+vAQ=
 			</data>
 		</dict>
 		<key>ITGContentFlipper.nib</key>
@@ -395,7 +395,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AOlQ9CALsf8M4TsIe5yPymd4q/emDk08Vv/qvxHXV1o=
+			WFE9L7+Z/ULSAEbkQ18rSZytGpr8DNgpUWnP3XnIf4U=
 			</data>
 		</dict>
 		<key>ITGLeaderboardView.nib</key>
@@ -409,7 +409,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vtOjL5JOUfCXRGtTJic8LOxafBREjGxHeg4ZChsy/TA=
+			5RoBs1+IPA2AE+X068/jlp2IrAvuuZVCOKYXa4uG3L4=
 			</data>
 		</dict>
 		<key>ITGMenuCollectionViewCell.nib</key>
@@ -437,14 +437,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			q1gMK72VeGhpqcWoA1pwSjx7sC4ZuQrM/GdFKuNFQoE=
+			Bv26Qz8SK52ZYqe/Ye1b73MCnqjViK9rSZo8Uc2r7Cs=
 			</data>
 		</dict>
 		<key>ITGPollViewLandscape.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1f/1WLQorvUijuJxGU1l1SZKze9coHtGQgHCqGlH9Oo=
+			yERZ/9ez6XzrkxpoBK3DMorRzRilEeDwrfKtCl2tRVQ=
 			</data>
 		</dict>
 		<key>ITGProductView.nib</key>
@@ -465,7 +465,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZpJoKFKWmQSU9bn2u78gqTa1/x+OJhZjCzN0/wqPDgE=
+			b6YyFJpGjERr3/7wHHXgrI3hstZLYpIhDSSd9B5dRdc=
 			</data>
 		</dict>
 		<key>ITGQuizViewLandscape.nib</key>
@@ -570,14 +570,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7ACD2WjZeDGSo3NfYH2tSbHjuOnuPCFxnvVEf2IEK9U=
+			/91wAZcSTFIK5JmrqaRUPzBoBmWkT8lA4LeZZFVKunU=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z8t7ficPMwGVdnf5pgBdV8Lfd9+YGa2m9VJD1KddWLI=
+			CXquTF4x083iQAPL0jVflkstRXk1008t5F9HXY22gdc=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
