@@ -1,7 +1,7 @@
 framework module Inthegametv {
   umbrella header "Inthegametv.h"
-
   export *
+
   module * { export * }
 }
 

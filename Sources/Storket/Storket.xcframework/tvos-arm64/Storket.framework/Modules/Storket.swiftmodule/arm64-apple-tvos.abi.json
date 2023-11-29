@@ -1,0 +1,1945 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Storket",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StorketError",
+        "printedName": "StorketError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "notFound",
+            "printedName": "notFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Storket.StorketError.Type) -> Storket.StorketError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorketError",
+                    "printedName": "Storket.StorketError",
+                    "usr": "s:7Storket0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Storket.StorketError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StorketError",
+                        "printedName": "Storket.StorketError",
+                        "usr": "s:7Storket0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7Storket0A5ErrorO8notFoundyA2CmF",
+            "mangledName": "$s7Storket0A5ErrorO8notFoundyA2CmF",
+            "moduleName": "Storket"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidJson",
+            "printedName": "invalidJson",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Storket.StorketError.Type) -> Storket.StorketError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorketError",
+                    "printedName": "Storket.StorketError",
+                    "usr": "s:7Storket0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Storket.StorketError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StorketError",
+                        "printedName": "Storket.StorketError",
+                        "usr": "s:7Storket0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7Storket0A5ErrorO11invalidJsonyA2CmF",
+            "mangledName": "$s7Storket0A5ErrorO11invalidJsonyA2CmF",
+            "moduleName": "Storket"
+          },
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Storket.StorketError.Type) -> Storket.StorketError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorketError",
+                    "printedName": "Storket.StorketError",
+                    "usr": "s:7Storket0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Storket.StorketError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StorketError",
+                        "printedName": "Storket.StorketError",
+                        "usr": "s:7Storket0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7Storket0A5ErrorO7unknownyA2CmF",
+            "mangledName": "$s7Storket0A5ErrorO7unknownyA2CmF",
+            "moduleName": "Storket"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorketError",
+                "printedName": "Storket.StorketError",
+                "usr": "s:7Storket0A5ErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorketError",
+                "printedName": "Storket.StorketError",
+                "usr": "s:7Storket0A5ErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Storket0A5ErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s7Storket0A5ErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "Storket",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Storket0A5ErrorO9hashValueSivp",
+            "mangledName": "$s7Storket0A5ErrorO9hashValueSivp",
+            "moduleName": "Storket",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Storket0A5ErrorO9hashValueSivg",
+                "mangledName": "$s7Storket0A5ErrorO9hashValueSivg",
+                "moduleName": "Storket",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Storket0A5ErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s7Storket0A5ErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "Storket",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7Storket0A5ErrorO",
+        "mangledName": "$s7Storket0A5ErrorO",
+        "moduleName": "Storket",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StorketDelegate",
+        "printedName": "StorketDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "didReceive",
+            "printedName": "didReceive(messages:storketType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Storket.StorketMessage]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorketMessage",
+                    "printedName": "Storket.StorketMessage",
+                    "usr": "s:7Storket0A7MessageV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorketType",
+                "printedName": "Storket.StorketType",
+                "usr": "s:7Storket0A4TypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Storket0A8DelegateP10didReceive8messages11storketTypeySayAA0A7MessageVG_AA0aG0OtF",
+            "mangledName": "$s7Storket0A8DelegateP10didReceive8messages11storketTypeySayAA0A7MessageVG_AA0aG0OtF",
+            "moduleName": "Storket",
+            "genericSig": "<τ_0_0 where τ_0_0 : Storket.StorketDelegate>",
+            "sugared_genericSig": "<Self where Self : Storket.StorketDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:7Storket0A8DelegateP",
+        "mangledName": "$s7Storket0A8DelegateP",
+        "moduleName": "Storket",
+        "genericSig": "<τ_0_0 : ObjectiveC.NSObject>",
+        "sugared_genericSig": "<Self : ObjectiveC.NSObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StorketType",
+        "printedName": "StorketType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "storket",
+            "printedName": "storket",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Storket.StorketType.Type) -> Storket.StorketType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorketType",
+                    "printedName": "Storket.StorketType",
+                    "usr": "s:7Storket0A4TypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Storket.StorketType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StorketType",
+                        "printedName": "Storket.StorketType",
+                        "usr": "s:7Storket0A4TypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7Storket0A4TypeO7storketyA2CmF",
+            "mangledName": "$s7Storket0A4TypeO7storketyA2CmF",
+            "moduleName": "Storket"
+          },
+          {
+            "kind": "Var",
+            "name": "chat",
+            "printedName": "chat",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Storket.StorketType.Type) -> Storket.StorketType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorketType",
+                    "printedName": "Storket.StorketType",
+                    "usr": "s:7Storket0A4TypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Storket.StorketType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StorketType",
+                        "printedName": "Storket.StorketType",
+                        "usr": "s:7Storket0A4TypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7Storket0A4TypeO4chatyA2CmF",
+            "mangledName": "$s7Storket0A4TypeO4chatyA2CmF",
+            "moduleName": "Storket"
+          },
+          {
+            "kind": "Var",
+            "name": "stats",
+            "printedName": "stats",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Storket.StorketType.Type) -> Storket.StorketType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorketType",
+                    "printedName": "Storket.StorketType",
+                    "usr": "s:7Storket0A4TypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Storket.StorketType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StorketType",
+                        "printedName": "Storket.StorketType",
+                        "usr": "s:7Storket0A4TypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7Storket0A4TypeO5statsyA2CmF",
+            "mangledName": "$s7Storket0A4TypeO5statsyA2CmF",
+            "moduleName": "Storket"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Storket.StorketType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorketType",
+                    "printedName": "Storket.StorketType",
+                    "usr": "s:7Storket0A4TypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7Storket0A4TypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s7Storket0A4TypeO8rawValueACSgSS_tcfc",
+            "moduleName": "Storket",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Storket0A4TypeO8rawValueSSvp",
+            "mangledName": "$s7Storket0A4TypeO8rawValueSSvp",
+            "moduleName": "Storket",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Storket0A4TypeO8rawValueSSvg",
+                "mangledName": "$s7Storket0A4TypeO8rawValueSSvg",
+                "moduleName": "Storket",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7Storket0A4TypeO",
+        "mangledName": "$s7Storket0A4TypeO",
+        "moduleName": "Storket",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StorketService",
+        "printedName": "StorketService",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "Storket.StorketDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Storket0A7ServiceC8delegateAA0A8Delegate_pSgvp",
+            "mangledName": "$s7Storket0A7ServiceC8delegateAA0A8Delegate_pSgvp",
+            "moduleName": "Storket",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Storket.StorketDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StorketDelegate",
+                        "printedName": "Storket.StorketDelegate",
+                        "usr": "s:7Storket0A8DelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Storket0A7ServiceC8delegateAA0A8Delegate_pSgvg",
+                "mangledName": "$s7Storket0A7ServiceC8delegateAA0A8Delegate_pSgvg",
+                "moduleName": "Storket",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Storket.StorketDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StorketDelegate",
+                        "printedName": "Storket.StorketDelegate",
+                        "usr": "s:7Storket0A8DelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Storket0A7ServiceC8delegateAA0A8Delegate_pSgvs",
+                "mangledName": "$s7Storket0A7ServiceC8delegateAA0A8Delegate_pSgvs",
+                "moduleName": "Storket",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Storket0A7ServiceC8delegateAA0A8Delegate_pSgvM",
+                "mangledName": "$s7Storket0A7ServiceC8delegateAA0A8Delegate_pSgvM",
+                "moduleName": "Storket",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "StorketService",
+                "printedName": "Storket.StorketService",
+                "usr": "s:7Storket0A7ServiceC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7Storket0A7ServiceCACycfc",
+            "mangledName": "$s7Storket0A7ServiceCACycfc",
+            "moduleName": "Storket",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(url:authKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Storket0A7ServiceC9configure3url7authKeyySS_SStF",
+            "mangledName": "$s7Storket0A7ServiceC9configure3url7authKeyySS_SStF",
+            "moduleName": "Storket",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connect",
+            "printedName": "connect(accountId:channelSlug:type:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorketType",
+                "printedName": "Storket.StorketType",
+                "usr": "s:7Storket0A4TypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Storket0A7ServiceC7connect9accountId11channelSlug4typeySS_SSAA0A4TypeOtF",
+            "mangledName": "$s7Storket0A7ServiceC7connect9accountId11channelSlug4typeySS_SSAA0A4TypeOtF",
+            "moduleName": "Storket",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Storket0A7ServiceC4stopyyF",
+            "mangledName": "$s7Storket0A7ServiceC4stopyyF",
+            "moduleName": "Storket",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "changeType",
+            "printedName": "changeType(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorketType",
+                "printedName": "Storket.StorketType",
+                "usr": "s:7Storket0A4TypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Storket0A7ServiceC10changeTypeyyAA0aD0OF",
+            "mangledName": "$s7Storket0A7ServiceC10changeTypeyyAA0aD0OF",
+            "moduleName": "Storket",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "currentType",
+            "printedName": "currentType()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "StorketType",
+                "printedName": "Storket.StorketType",
+                "usr": "s:7Storket0A4TypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Storket0A7ServiceC11currentTypeAA0aD0OyF",
+            "mangledName": "$s7Storket0A7ServiceC11currentTypeAA0aD0OyF",
+            "moduleName": "Storket",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7Storket0A7ServiceC",
+        "mangledName": "$s7Storket0A7ServiceC",
+        "moduleName": "Storket",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Storket",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Storket",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StorketMessage",
+        "printedName": "StorketMessage",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "content",
+            "printedName": "content",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Storket0A7MessageV7contentSDySSypGSgvp",
+            "mangledName": "$s7Storket0A7MessageV7contentSDySSypGSgvp",
+            "moduleName": "Storket",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Storket0A7MessageV7contentSDySSypGSgvg",
+                "mangledName": "$s7Storket0A7MessageV7contentSDySSypGSgvg",
+                "moduleName": "Storket",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Storket0A7MessageV7contentSDySSypGSgvs",
+                "mangledName": "$s7Storket0A7MessageV7contentSDySSypGSgvs",
+                "moduleName": "Storket",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Storket0A7MessageV7contentSDySSypGSgvM",
+                "mangledName": "$s7Storket0A7MessageV7contentSDySSypGSgvM",
+                "moduleName": "Storket",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timestamp",
+            "printedName": "timestamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Storket0A7MessageV9timestampSdvp",
+            "mangledName": "$s7Storket0A7MessageV9timestampSdvp",
+            "moduleName": "Storket",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Storket0A7MessageV9timestampSdvg",
+                "mangledName": "$s7Storket0A7MessageV9timestampSdvg",
+                "moduleName": "Storket",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Storket0A7MessageV9timestampSdvs",
+                "mangledName": "$s7Storket0A7MessageV9timestampSdvs",
+                "moduleName": "Storket",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Storket0A7MessageV9timestampSdvM",
+                "mangledName": "$s7Storket0A7MessageV9timestampSdvM",
+                "moduleName": "Storket",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Storket0A7MessageV2idSSvp",
+            "mangledName": "$s7Storket0A7MessageV2idSSvp",
+            "moduleName": "Storket",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Storket0A7MessageV2idSSvg",
+                "mangledName": "$s7Storket0A7MessageV2idSSvg",
+                "moduleName": "Storket",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Storket0A7MessageV2idSSvs",
+                "mangledName": "$s7Storket0A7MessageV2idSSvs",
+                "moduleName": "Storket",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Storket0A7MessageV2idSSvM",
+                "mangledName": "$s7Storket0A7MessageV2idSSvM",
+                "moduleName": "Storket",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expireAt",
+            "printedName": "expireAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Storket0A7MessageV8expireAts5Int64Vvp",
+            "mangledName": "$s7Storket0A7MessageV8expireAts5Int64Vvp",
+            "moduleName": "Storket",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Storket0A7MessageV8expireAts5Int64Vvg",
+                "mangledName": "$s7Storket0A7MessageV8expireAts5Int64Vvg",
+                "moduleName": "Storket",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Storket0A7MessageV8expireAts5Int64Vvs",
+                "mangledName": "$s7Storket0A7MessageV8expireAts5Int64Vvs",
+                "moduleName": "Storket",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Storket0A7MessageV8expireAts5Int64VvM",
+                "mangledName": "$s7Storket0A7MessageV8expireAts5Int64VvM",
+                "moduleName": "Storket",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delay",
+            "printedName": "delay",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Storket0A7MessageV5delaySdvp",
+            "mangledName": "$s7Storket0A7MessageV5delaySdvp",
+            "moduleName": "Storket",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Storket0A7MessageV5delaySdvg",
+                "mangledName": "$s7Storket0A7MessageV5delaySdvg",
+                "moduleName": "Storket",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Storket0A7MessageV5delaySdvs",
+                "mangledName": "$s7Storket0A7MessageV5delaySdvs",
+                "moduleName": "Storket",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Storket0A7MessageV5delaySdvM",
+                "mangledName": "$s7Storket0A7MessageV5delaySdvM",
+                "moduleName": "Storket",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7Storket0A7MessageV",
+        "mangledName": "$s7Storket0A7MessageV",
+        "moduleName": "Storket",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "StringLiteral",
+      "offset": 550,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "StringLiteral",
+      "offset": 587,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "StringLiteral",
+      "offset": 624,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "StringLiteral",
+      "offset": 663,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "StringLiteral",
+      "offset": 704,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 742,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 854,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "StringLiteral",
+      "offset": 921,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "StringLiteral",
+      "offset": 2081,
+      "length": 16,
+      "value": "\"${channelSlug}\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "StringLiteral",
+      "offset": 2143,
+      "length": 8,
+      "value": "\"${key}\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2216,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2883,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3002,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3014,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3107,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3158,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "StringLiteral",
+      "offset": 3686,
+      "length": 8,
+      "value": "\"__meta\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "StringLiteral",
+      "offset": 4515,
+      "length": 16,
+      "value": "\"${channelSlug}\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "StringLiteral",
+      "offset": 4582,
+      "length": 8,
+      "value": "\"${key}\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4654,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4658,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "StringLiteral",
+      "offset": 4989,
+      "length": 8,
+      "value": "\"__data\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "StringLiteral",
+      "offset": 5182,
+      "length": 6,
+      "value": "\"__id\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "StringLiteral",
+      "offset": 5204,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "StringLiteral",
+      "offset": 5257,
+      "length": 12,
+      "value": "\"__expireAt\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5284,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "StringLiteral",
+      "offset": 5335,
+      "length": 11,
+      "value": "\"timestamp\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "StringLiteral",
+      "offset": 5409,
+      "length": 14,
+      "value": "\"startingTime\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5439,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5519,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5580,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5656,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5680,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6426,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6591,
+      "length": 2,
+      "value": "70"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 232,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 258,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 284,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 311,
+      "length": 7,
+      "value": "\"PATCH\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 232,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 258,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 284,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 311,
+      "length": 7,
+      "value": "\"PATCH\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 458,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 544,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 573,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 636,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 666,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 697,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 821,
+      "length": 41,
+      "value": "\"EEE',' dd' 'MMM' 'yyyy HH':'mm':'ss zzz\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 909,
+      "length": 7,
+      "value": "\"en_US\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 1108,
+      "length": 3,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 1330,
+      "length": 11,
+      "value": "\"\/api\/init\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 1463,
+      "length": 11,
+      "value": "\"accountId\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 1526,
+      "length": 13,
+      "value": "\"channelSlug\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 1800,
+      "length": 11,
+      "value": "\"\/api\/ping\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 1929,
+      "length": 11,
+      "value": "\"accountId\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 1992,
+      "length": 13,
+      "value": "\"channelSlug\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2252,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2289,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2358,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 2831,
+      "length": 9,
+      "value": "\"${type}\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 2901,
+      "length": 15,
+      "value": "\"${storageIdx}\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 2924,
+      "length": 13,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 2936,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 2977,
+      "length": 12,
+      "value": "\"${blobIdx}\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 2997,
+      "length": 14,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 3010,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 3118,
+      "length": 4,
+      "value": "\"ts\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 3131,
+      "length": 33,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 3163,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 3300,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 3340,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 3830,
+      "length": 6,
+      "value": "\"Date\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 3928,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4102,
+      "length": 3,
+      "value": "404"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4288,
+      "length": 3,
+      "value": "404"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 6269,
+      "length": 3,
+      "value": "\"+\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 6280,
+      "length": 5,
+      "value": "\"%2B\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 6422,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 6462,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 6538,
+      "length": 9,
+      "value": "\"Bearer \""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 6577,
+      "length": 15,
+      "value": "\"Authorization\""
+    }
+  ]
+}

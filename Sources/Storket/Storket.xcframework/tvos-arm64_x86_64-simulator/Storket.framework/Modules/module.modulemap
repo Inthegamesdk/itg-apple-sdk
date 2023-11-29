@@ -1,0 +1,11 @@
+framework module Storket {
+  umbrella header "Storket.h"
+  export *
+
+  module * { export * }
+}
+
+module Storket.Swift {
+  header "Storket-Swift.h"
+  requires objc
+}

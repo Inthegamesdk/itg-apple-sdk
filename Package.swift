@@ -9,14 +9,14 @@ let package = Package(
         .iOS(.v14), .tvOS(.v14)
     ],
     products: [
-        .library(name: "Inthegametv", targets: ["Inthegametv", "StorketService"]),
-        .library(name: "InthegametviOS", targets: ["InthegametviOS", "StorketService"]),
-        .library(name: "ITGAVPlayerAdapter", targets: ["ITGAVPlayerAdapter"])
+        .library(name: "Inthegametv", targets: ["Inthegametv", "Storket"]),
+        .library(name: "InthegametviOS", targets: ["InthegametviOS", "Storket"]),
+        .library(name: "ITGPlayerViewController", targets: ["ITGPlayerViewController"]),
     ],
     targets: [
         .binaryTarget(name: "Inthegametv", path: "Sources/Inthegametv/Inthegametv.xcframework"),
         .binaryTarget(name: "InthegametviOS", path: "Sources/InthegametviOS/InthegametviOS.xcframework"),
-        .binaryTarget(name: "StorketService", path: "Sources/StorketService/StorketService.xcframework"),
-        .target(name: "ITGAVPlayerAdapter", path: "Sources/SupportingFiles/PlayerAdapters/ITGAVPlayerAdapter")
+        .binaryTarget(name: "Storket", path: "Sources/Storket/Storket.xcframework"),
+        .target(name: "ITGPlayerViewController", path: "Sources/SupportingFiles/PlayerControllerAndAdapters/", exclude: ["ITGKalturaPlayerAdapter.swift"]),
     ]
 )

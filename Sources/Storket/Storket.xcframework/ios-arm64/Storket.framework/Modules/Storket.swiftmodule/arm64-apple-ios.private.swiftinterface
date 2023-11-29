@@ -1,0 +1,55 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Storket
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+@_exported import Storket
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum StorketError : Swift.Error {
+  case notFound
+  case invalidJson
+  case unknown
+  public static func == (a: Storket.StorketError, b: Storket.StorketError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol StorketDelegate : ObjectiveC.NSObject {
+  func didReceive(messages: [Storket.StorketMessage], storketType: Storket.StorketType)
+}
+public enum StorketType : Swift.String {
+  case storket
+  case chat
+  case stats
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class StorketService {
+  weak public var delegate: (any Storket.StorketDelegate)?
+  public init()
+  public func configure(url: Swift.String, authKey: Swift.String)
+  public func connect(accountId: Swift.String, channelSlug: Swift.String, type: Storket.StorketType)
+  public func stop()
+  public func changeType(_ type: Storket.StorketType)
+  public func currentType() -> Storket.StorketType
+  @objc deinit
+}
+public struct StorketMessage {
+  public var content: [Swift.String : Any]?
+  public var timestamp: Swift.Double
+  public var id: Swift.String
+  public var expireAt: Swift.Int64
+  public var delay: Swift.Double
+}
+extension Storket.StorketError : Swift.Equatable {}
+extension Storket.StorketError : Swift.Hashable {}
+extension Storket.StorketType : Swift.Equatable {}
+extension Storket.StorketType : Swift.Hashable {}
+extension Storket.StorketType : Swift.RawRepresentable {}
