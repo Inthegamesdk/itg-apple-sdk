@@ -27,7 +27,7 @@ open class ITGKalturaPlayerAdapter: NSObject, ITGPlayerAdapter {
         setup()
     }
     
-    func dealloc() {
+    deinit {
         player.removeObserver(self, events: [PlayerEvent.playing, PlayerEvent.pause, PlayerEvent.ended, PlayerEvent.play.stopped])
         playerControlsVisibilityBlock = nil
     }

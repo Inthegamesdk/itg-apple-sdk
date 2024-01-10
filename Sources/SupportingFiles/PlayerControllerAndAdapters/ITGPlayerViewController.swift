@@ -51,10 +51,12 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     private var userEmail: String?
     private var userPhone: String?
     private var userRole: UserRole
+    private var useWebp: Bool = false
     private var shouldResetOverlayUser: Bool
     private var soundLevel: Float = 1
+    private var vars: [String: Any]? = nil
     
-    public init(channelSlug: String, secondaryChannelSlug: String? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, language: String = "en", foreignId: String? = nil, userName: String? = nil, userAvatar: String? = nil, userEmail: String? = nil, userPhone: String? = nil, userRole: UserRole = .user, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false) {
+    public init(channelSlug: String, secondaryChannelSlug: String? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, language: String = "en", foreignId: String? = nil, userName: String? = nil, userAvatar: String? = nil, userEmail: String? = nil, userPhone: String? = nil, userRole: UserRole = .user, useWebp: Bool = false, vars: [String: Any]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false) {
         self.channelSlug = channelSlug
         self.secondaryChannelSlug = secondaryChannelSlug
         self.accountId = accountId
@@ -68,6 +70,8 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         self.userPhone = userPhone
         self.shouldResetOverlayUser = shouldResetOverlayUser
         self.player = playerAdapter
+        self.useWebp = useWebp
+        self.vars = vars
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -88,7 +92,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         super.viewDidLoad()
         view.backgroundColor = .black
 #if os(tvOS)
-        configureRemoteMenuButtonHandler()
+        configureRemoteButtonsHandlers()
 #else
         NotificationCenter.default.addObserver(self, selector: #selector(orientationDidChange), name: UIDevice.orientationDidChangeNotification, object: nil)
         orientationDidChange()
@@ -151,7 +155,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         if shouldResetOverlayUser {
             overlayView?.resetUser()
         }
-        overlayView?.load(channelSlug: channelSlug, secondaryChannelSlug: secondaryChannelSlug, accountId: accountId, environment: environment, delegate: self, language: language!, foreignId: foreignId, userName: userName, userAvatar: userAvatar, userPhone: userPhone, userRole: userRole, videoView: player?.getPlayerView())
+        overlayView?.load(channelSlug: channelSlug, secondaryChannelSlug: secondaryChannelSlug, accountId: accountId, environment: environment, delegate: self, language: language!, foreignId: foreignId, userName: userName, userAvatar: userAvatar, userPhone: userPhone, userRole: userRole, videoView: player?.getPlayerView(), useWebp: useWebp, vars: vars)
         overlayView?.injectionDelay = nil
     }
     
@@ -173,17 +177,30 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         }
     }
     
+    @objc open func remotePlayPauseButtonAction(recognizer: UITapGestureRecognizer) {
+        overlayView?.closeAll()
+        if player?.isPlaying() == true {
+            player?.pause()
+        } else {
+            player?.play()
+        }
+    }
+    
     func removePlayer() {
         player?.pause()
         player?.getPlayerView()?.removeFromSuperview()
         player = nil
     }
     
-    private func configureRemoteMenuButtonHandler() {
+    private func configureRemoteButtonsHandlers() {
         let menuPressRecognizer = UITapGestureRecognizer()
         menuPressRecognizer.addTarget(self, action: #selector(remoteMenuButtonAction(recognizer:)))
         menuPressRecognizer.allowedPressTypes = [NSNumber(value: UIPress.PressType.menu.rawValue)]
         view.addGestureRecognizer(menuPressRecognizer)
+        let playPausePressRecognizer = UITapGestureRecognizer()
+        playPausePressRecognizer.addTarget(self, action: #selector(remotePlayPauseButtonAction(recognizer:)))
+        playPausePressRecognizer.allowedPressTypes = [NSNumber(value: UIPress.PressType.playPause.rawValue)]
+        view.addGestureRecognizer(playPausePressRecognizer)
     }
     
 #if os(iOS)

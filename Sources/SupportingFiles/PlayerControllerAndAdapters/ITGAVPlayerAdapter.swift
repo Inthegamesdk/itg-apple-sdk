@@ -31,7 +31,7 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
         setup()
     }
     
-    func dealloc() {
+    deinit {
         seekTimer?.invalidate()
         seekTimer = nil
         player.removeObserver(self, forKeyPath: #keyPath(AVPlayer.timeControlStatus))
