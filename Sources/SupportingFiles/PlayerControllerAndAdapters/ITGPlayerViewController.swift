@@ -155,7 +155,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         if shouldResetOverlayUser {
             overlayView?.resetUser()
         }
-        overlayView?.load(channelSlug: channelSlug, secondaryChannelSlug: secondaryChannelSlug, accountId: accountId, environment: environment, delegate: self, language: language!, foreignId: foreignId, userName: userName, userAvatar: userAvatar, userPhone: userPhone, userRole: userRole, videoView: player?.getPlayerView(), useWebp: useWebp, vars: vars)
+        overlayView?.load(channelSlug: channelSlug, secondaryChannelSlug: secondaryChannelSlug, accountId: accountId, environment: environment, delegate: self, language: language!, foreignId: foreignId, userName: userName, userAvatar: userAvatar, userPhone: userPhone, userRole: userRole, videoView: player!.getPlayerView()!, useWebp: useWebp, vars: vars)
         overlayView?.injectionDelay = nil
     }
     

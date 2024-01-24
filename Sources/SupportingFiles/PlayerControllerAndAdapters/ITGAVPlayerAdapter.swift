@@ -36,7 +36,9 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
         seekTimer = nil
         player.removeObserver(self, forKeyPath: #keyPath(AVPlayer.timeControlStatus))
         player.removeObserver(self, forKeyPath: #keyPath(AVPlayer.currentItem))
-        playerViewController?.children.first(where: { String(describing: type(of: $0)) == "AVMobileChromelessControlsViewController" })?.view.removeObserver(self, forKeyPath: #keyPath(UIView.isHidden))
+        if player.currentItem != nil {
+            playerViewController?.children.first(where: { String(describing: type(of: $0)) == "AVMobileChromelessControlsViewController" })?.view.removeObserver(self, forKeyPath: #keyPath(UIView.isHidden))
+        }
     }
     
     open func setup() {

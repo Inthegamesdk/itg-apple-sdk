@@ -116,7 +116,7 @@ public enum AnalyticsEventType : Swift.String, Swift.Codable {
   }
 }
 public enum AnalyticsParent : Swift.String, Swift.Codable {
-  case inject, clock, wiki, menu, poll, quiz, shop, sequence, product
+  case inject, clock, wiki, menu, poll, quiz, shop, sequence, product, app
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -124,7 +124,7 @@ public enum AnalyticsParent : Swift.String, Swift.Codable {
   }
 }
 public enum AnalyticsModule : Swift.String, Swift.Codable {
-  case quiz, poll, rating, wiki, product, shop, leaderboard, register, login, menu, stats, chat, account
+  case quiz, poll, rating, wiki, product, shop, leaderboard, register, login, menu, stats, chat, account, flexi
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -321,7 +321,7 @@ public enum ITGContent : Swift.String {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) public func load(accountId: Swift.String, environment: InthegametviOS.ITGEnvironment = ITGEnvironment.defaultEnvironment, delegate: (any InthegametviOS.ITGOverlayDelegate)? = nil, foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil, userEmail: Swift.String? = nil, userPhone: Swift.String? = nil, userRole: InthegametviOS.UserRole)
-  @_Concurrency.MainActor(unsafe) public func load(channelSlug: Swift.String, secondaryChannelSlug: Swift.String? = nil, accountId: Swift.String, environment: InthegametviOS.ITGEnvironment = ITGEnvironment.defaultEnvironment, delegate: (any InthegametviOS.ITGOverlayDelegate)?, language: Swift.String = "en", foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil, userEmail: Swift.String? = nil, userPhone: Swift.String? = nil, userRole: InthegametviOS.UserRole, videoView: UIKit.UIView?, useWebp: Swift.Bool = false, vars: [Swift.String : Any]? = nil)
+  @_Concurrency.MainActor(unsafe) public func load(channelSlug: Swift.String, secondaryChannelSlug: Swift.String? = nil, accountId: Swift.String, environment: InthegametviOS.ITGEnvironment = ITGEnvironment.defaultEnvironment, delegate: (any InthegametviOS.ITGOverlayDelegate)?, language: Swift.String = "en", foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil, userEmail: Swift.String? = nil, userPhone: Swift.String? = nil, userRole: InthegametviOS.UserRole, videoView: UIKit.UIView, useWebp: Swift.Bool = false, vars: [Swift.String : Any]? = nil)
   @_Concurrency.MainActor(unsafe) public func getLeaderboard(_ page: Swift.Int, limit: Swift.Int, period: InthegametviOS.LeaderboardPeriod, leaderboardSorting: InthegametviOS.LeaderboardSorting, leaderboardDisplayMode: InthegametviOS.LeaderboardDisplayMode, completion: @escaping (InthegametviOS.LeaderboardResponse?, (any Swift.Error)?) -> ())
   @_Concurrency.MainActor(unsafe) public func resetUser()
   @_Concurrency.MainActor(unsafe) public func closeInteractionIfNeeded() -> Swift.Bool
