@@ -41,7 +41,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     private var player: ITGPlayerAdapter?
     private var controllsVisible: Bool = false
     private var channelSlug: String
-    private var secondaryChannelSlug: String?
+    private var virtualChannels: [String]?
     private var accountId: String
     private var environment: ITGEnvironment
     private var language: String?
@@ -56,9 +56,9 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     private var soundLevel: Float = 1
     private var vars: [String: Any]? = nil
     
-    public init(channelSlug: String, secondaryChannelSlug: String? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, language: String = "en", foreignId: String? = nil, userName: String? = nil, userAvatar: String? = nil, userEmail: String? = nil, userPhone: String? = nil, userRole: UserRole = .user, useWebp: Bool = false, vars: [String: Any]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false) {
+    public init(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, language: String = "en", foreignId: String? = nil, userName: String? = nil, userAvatar: String? = nil, userEmail: String? = nil, userPhone: String? = nil, userRole: UserRole = .user, useWebp: Bool = false, vars: [String: Any]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false) {
         self.channelSlug = channelSlug
-        self.secondaryChannelSlug = secondaryChannelSlug
+        self.virtualChannels = virtualChannels
         self.accountId = accountId
         self.environment = environment
         self.language = language
@@ -155,7 +155,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         if shouldResetOverlayUser {
             overlayView?.resetUser()
         }
-        overlayView?.load(channelSlug: channelSlug, secondaryChannelSlug: secondaryChannelSlug, accountId: accountId, environment: environment, delegate: self, language: language!, foreignId: foreignId, userName: userName, userAvatar: userAvatar, userPhone: userPhone, userRole: userRole, videoView: player!.getPlayerView()!, useWebp: useWebp, vars: vars)
+        overlayView?.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: self, language: language!, foreignId: foreignId, userName: userName, userAvatar: userAvatar, userPhone: userPhone, userRole: userRole, videoView: player!.getPlayerView()!, useWebp: useWebp, vars: vars)
         overlayView?.injectionDelay = nil
     }
     
@@ -233,8 +233,8 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         overlayView?.videoPlaying(time: time)
     }
     
-    open func videoPaused(_ time: TimeInterval) {
-        overlayView?.videoPaused(time: time)
+    open func videoPaused(_ time: TimeInterval, userInitiated: Bool) {
+        overlayView?.videoPaused(time: time, userInitiated: userInitiated)
     }
     
     open func videoControllsVisibilityChanged(_ isVisible: Bool) {

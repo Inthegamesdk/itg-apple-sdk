@@ -363,17 +363,18 @@ public enum ITGContent : Swift.String {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) public func load(accountId: Swift.String, environment: Inthegametv.ITGEnvironment = ITGEnvironment.defaultEnvironment, delegate: (any Inthegametv.ITGOverlayDelegate)? = nil, foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil, userEmail: Swift.String? = nil, userPhone: Swift.String? = nil, userRole: Inthegametv.UserRole)
-  @_Concurrency.MainActor(unsafe) public func load(channelSlug: Swift.String, secondaryChannelSlug: Swift.String? = nil, accountId: Swift.String, environment: Inthegametv.ITGEnvironment = ITGEnvironment.defaultEnvironment, delegate: (any Inthegametv.ITGOverlayDelegate)?, language: Swift.String = "en", foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil, userEmail: Swift.String? = nil, userPhone: Swift.String? = nil, userRole: Inthegametv.UserRole, videoView: UIKit.UIView, useWebp: Swift.Bool = false, vars: [Swift.String : Any]? = nil)
+  @_Concurrency.MainActor(unsafe) public func load(channelSlug: Swift.String, virtualChannels: [Swift.String]? = [], accountId: Swift.String, environment: Inthegametv.ITGEnvironment = ITGEnvironment.defaultEnvironment, delegate: (any Inthegametv.ITGOverlayDelegate)?, language: Swift.String = "en", foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil, userEmail: Swift.String? = nil, userPhone: Swift.String? = nil, userRole: Inthegametv.UserRole, videoView: UIKit.UIView, useWebp: Swift.Bool = false, vars: [Swift.String : Any]? = nil)
   @_Concurrency.MainActor(unsafe) public func getLeaderboard(_ page: Swift.Int, limit: Swift.Int, period: Inthegametv.LeaderboardPeriod, leaderboardSorting: Inthegametv.LeaderboardSorting, leaderboardDisplayMode: Inthegametv.LeaderboardDisplayMode, completion: @escaping (Inthegametv.LeaderboardResponse?, (any Swift.Error)?) -> ())
   @_Concurrency.MainActor(unsafe) public func resetUser()
   @_Concurrency.MainActor(unsafe) public func closeInteractionIfNeeded() -> Swift.Bool
   @_Concurrency.MainActor(unsafe) public func isDisplayingInteraction() -> Swift.Bool
   @_Concurrency.MainActor(unsafe) public func isDisplayingSidebar() -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) public func videoPaused(time: Foundation.TimeInterval)
+  @_Concurrency.MainActor(unsafe) public func videoPaused(time: Foundation.TimeInterval, userInitiated: Swift.Bool = false, isSeeking: Swift.Bool = false)
   @_Concurrency.MainActor(unsafe) public func videoPlaying(time: Foundation.TimeInterval)
   @_Concurrency.MainActor(unsafe) public func setLiveMode(enabled: Swift.Bool)
   @_Concurrency.MainActor(unsafe) public func injectActivity(_ activity: [Swift.String : Any])
   @_Concurrency.MainActor(unsafe) public func injectFlexi(_ flexi: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func openFlexi(_ url: Foundation.URL)
   @_Concurrency.MainActor(unsafe) public func openMenu()
   @_Concurrency.MainActor(unsafe) public func openAccount()
   @_Concurrency.MainActor(unsafe) public func openLeaderboard()

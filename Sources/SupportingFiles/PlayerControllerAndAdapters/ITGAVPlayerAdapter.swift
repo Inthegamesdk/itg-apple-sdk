@@ -19,6 +19,7 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
     private var player: AVPlayer!
     private var playerViewController: AVPlayerViewController?
     private var seekTimer: Timer?
+    private var isSeeking: Bool = false
     
     public init(_ player: AVPlayer, playerViewController: AVPlayerViewController?, delegate: ITGPlayerAdapterDelegate? = nil) {
         self.player = player
@@ -72,6 +73,9 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
         playerViewController?.children.first(where: { String(describing: type(of: $0)) == "AVMobileChromelessControlsViewController" })?.view.addObserver(self, forKeyPath: #keyPath(UIView.isHidden), options: [.old, .new], context: nil)
         player.replaceCurrentItem(with: AVPlayerItem(asset: AVAsset(url: url)))
         player.play()
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemTimeJumped, object: player.currentItem, queue: OperationQueue.main) { [weak self] (notification) in
+            self?.isSeeking = true
+        }
     }
     
     open func play() {
@@ -123,9 +127,10 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
                 DispatchQueue.main.async { [weak self] in
                     guard let player = self?.player else { return }
                     let time = player.currentTime().seconds
-                    self?.delegate?.videoPaused(time)
+                    self?.delegate?.videoPaused(time, userInitiated: newStatus == .paused, isSeeking: self?.isSeeking == true)
                     if newStatus == .playing {
                         self?.delegate?.videoPlaying(time)
+                        self?.isSeeking = false
                     }
                 }
             }
@@ -133,14 +138,14 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
         if keyPath == #keyPath(AVPlayer.currentItem), let change = change, let newValue = change[NSKeyValueChangeKey.newKey] as? AVPlayerItem {
             NotificationCenter.default.addObserver(forName: AVPlayerItem.timeJumpedNotification, object: newValue, queue: OperationQueue.main) { [weak self]  (notification) in
                 guard let player = self?.player else { return }
-                self?.delegate?.videoPaused(player.currentTime().seconds)
+                self?.delegate?.videoPaused(player.currentTime().seconds, userInitiated: false, isSeeking: self?.isSeeking == true)
                 if player.timeControlStatus == .playing {
                     self?.seekTimer?.invalidate()
                     self?.seekTimer = Timer.scheduledTimer(withTimeInterval: 0.4, repeats: false, block: { (timer) in
                         self?.seekTimer = nil
                         if player.timeControlStatus == .playing {
-                            let time = player.currentTime().seconds
-                            self?.delegate?.videoPlaying(time)
+                            self?.delegate?.videoPlaying(player.currentTime().seconds)
+                            self?.isSeeking = false
                         }
                     })
                 }

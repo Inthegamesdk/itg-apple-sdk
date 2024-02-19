@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
     s.name         = "Inthegametv"
-    s.version      = "2.3.0"
+    s.version      = "2.4.0"
     s.summary      = "Inthegametv SDK for iOS and tvOS"
     s.description  = "Inthegametv SDK for iOS and tvOS"
     s.homepage     = "www.inthegame.io"
     s.license = { :type => "Commercial", :text => "See www.inthegame.io" }
     s.author       = { "Inthegame" => "itai@inthegame.io" }
-    s.source       = { :git => "https://github.com/Inthegamesdk/itg-apple-sdk.git", :tag => "2.3.0" }
+    s.source       = { :git => "https://github.com/Inthegamesdk/itg-apple-sdk.git", :tag => "2.4.0" }
     s.platform = :ios, :tvos
     s.ios.deployment_target  = '14.3'
     s.tvos.deployment_target  = '14.0'
