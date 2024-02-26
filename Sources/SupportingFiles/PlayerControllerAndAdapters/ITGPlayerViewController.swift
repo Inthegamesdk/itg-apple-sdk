@@ -233,8 +233,8 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         overlayView?.videoPlaying(time: time)
     }
     
-    open func videoPaused(_ time: TimeInterval, userInitiated: Bool) {
-        overlayView?.videoPaused(time: time, userInitiated: userInitiated)
+    open func videoPaused(_ time: TimeInterval, userInitiated: Bool, isSeeking: Bool) {
+        overlayView?.videoPaused(time: time, userInitiated: userInitiated, isSeeking: isSeeking)
     }
     
     open func videoControllsVisibilityChanged(_ isVisible: Bool) {
