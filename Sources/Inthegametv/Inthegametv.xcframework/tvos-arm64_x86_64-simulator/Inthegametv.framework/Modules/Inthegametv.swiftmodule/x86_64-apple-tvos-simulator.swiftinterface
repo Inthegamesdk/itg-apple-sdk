@@ -374,7 +374,7 @@ public enum ITGContent : Swift.String {
   @_Concurrency.MainActor(unsafe) public func setLiveMode(enabled: Swift.Bool)
   @_Concurrency.MainActor(unsafe) public func injectActivity(_ activity: [Swift.String : Any])
   @_Concurrency.MainActor(unsafe) public func injectFlexi(_ flexi: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func openFlexi(_ url: Foundation.URL)
+  @_Concurrency.MainActor(unsafe) public func injectFlexi(_ url: Foundation.URL)
   @_Concurrency.MainActor(unsafe) public func openMenu()
   @_Concurrency.MainActor(unsafe) public func openAccount()
   @_Concurrency.MainActor(unsafe) public func openLeaderboard()
@@ -393,7 +393,7 @@ public enum ITGContent : Swift.String {
   @_Concurrency.MainActor(unsafe) public func isMenuVisible() -> Swift.Bool
   @_Concurrency.MainActor(unsafe) public func currentContent() -> [Inthegametv.ITGContent]
   @_Concurrency.MainActor(unsafe) public func currentMenuPage() -> Inthegametv.ITGMenuItem?
-  @_Concurrency.MainActor(unsafe) public func closeAll()
+  @_Concurrency.MainActor(unsafe) public func closeAll(_ includingPauseAd: Swift.Bool = true)
 }
 extension Inthegametv.ITGOverlayView {
   @_Concurrency.MainActor(unsafe) public func menuShouldClose()

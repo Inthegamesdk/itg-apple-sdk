@@ -57,10 +57,10 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     private var vars: [String: Any]? = nil
     
     public init(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, language: String = "en", foreignId: String? = nil, userName: String? = nil, userAvatar: String? = nil, userEmail: String? = nil, userPhone: String? = nil, userRole: UserRole = .user, useWebp: Bool = false, vars: [String: Any]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false) {
-        self.channelSlug = channelSlug
+        self.channelSlug = "iosTestChannel"
         self.virtualChannels = virtualChannels
-        self.accountId = accountId
-        self.environment = environment
+        self.accountId = "65a903731ba72ca42032a4ae"
+        self.environment = ITGEnvironment.init(envName: "v2-3")
         self.language = language
         self.foreignId = foreignId
         self.userName = userName
