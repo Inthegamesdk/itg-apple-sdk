@@ -320,8 +320,8 @@ public enum ITGContent : Swift.String {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func willMove(toWindow newWindow: UIKit.UIWindow?)
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) public func load(accountId: Swift.String, environment: InthegametviOS.ITGEnvironment = ITGEnvironment.defaultEnvironment, delegate: (any InthegametviOS.ITGOverlayDelegate)? = nil, foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil, userEmail: Swift.String? = nil, userPhone: Swift.String? = nil, userRole: InthegametviOS.UserRole)
-  @_Concurrency.MainActor(unsafe) public func load(channelSlug: Swift.String, virtualChannels: [Swift.String]? = [], accountId: Swift.String, environment: InthegametviOS.ITGEnvironment = ITGEnvironment.defaultEnvironment, delegate: (any InthegametviOS.ITGOverlayDelegate)?, language: Swift.String = "en", foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil, userEmail: Swift.String? = nil, userPhone: Swift.String? = nil, userRole: InthegametviOS.UserRole, videoView: UIKit.UIView, useWebp: Swift.Bool = false, vars: [Swift.String : Any]? = nil)
+  @_Concurrency.MainActor(unsafe) public func load(accountId: Swift.String, environment: InthegametviOS.ITGEnvironment = ITGEnvironment.defaultEnvironment, delegate: (any InthegametviOS.ITGOverlayDelegate)? = nil, foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil, userEmail: Swift.String? = nil, userPhone: Swift.String? = nil, userRole: InthegametviOS.UserRole, enableLogs: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) public func load(channelSlug: Swift.String, virtualChannels: [Swift.String]? = [], accountId: Swift.String, environment: InthegametviOS.ITGEnvironment = ITGEnvironment.defaultEnvironment, delegate: (any InthegametviOS.ITGOverlayDelegate)?, language: Swift.String = "en", foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil, userEmail: Swift.String? = nil, userPhone: Swift.String? = nil, userRole: InthegametviOS.UserRole, videoView: UIKit.UIView, useWebp: Swift.Bool = false, vars: [Swift.String : Any]? = nil, enableLogs: Swift.Bool = false)
   @_Concurrency.MainActor(unsafe) public func getLeaderboard(_ page: Swift.Int, limit: Swift.Int, period: InthegametviOS.LeaderboardPeriod, leaderboardSorting: InthegametviOS.LeaderboardSorting, leaderboardDisplayMode: InthegametviOS.LeaderboardDisplayMode, completion: @escaping (InthegametviOS.LeaderboardResponse?, (any Swift.Error)?) -> ())
   @_Concurrency.MainActor(unsafe) public func resetUser()
   @_Concurrency.MainActor(unsafe) public func closeInteractionIfNeeded() -> Swift.Bool
@@ -351,7 +351,7 @@ public enum ITGContent : Swift.String {
   @_Concurrency.MainActor(unsafe) public func isMenuVisible() -> Swift.Bool
   @_Concurrency.MainActor(unsafe) public func currentContent() -> [InthegametviOS.ITGContent]
   @_Concurrency.MainActor(unsafe) public func currentMenuPage() -> InthegametviOS.ITGMenuItem?
-  @_Concurrency.MainActor(unsafe) public func closeAll(_ includingPauseAd: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) public func closeAll()
 }
 extension InthegametviOS.ITGOverlayView {
   @_Concurrency.MainActor(unsafe) public func menuShouldClose()
