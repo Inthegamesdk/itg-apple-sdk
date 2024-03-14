@@ -19,9 +19,8 @@ open class ITGKalturaPlayerAdapter: NSObject, ITGPlayerAdapter {
     
     weak public var delegate: ITGPlayerAdapterDelegate?
     private var player: KalturaPlayer!
-    private var playerControlsVisibilityBlock: (()->Bool)?
     
-    public init(_ player: KalturaPlayer, playerControlsVisibilityBlock: (()->Bool)?, delegate: ITGPlayerAdapterDelegate? = nil) {
+    public init(_ player: KalturaPlayer, delegate: ITGPlayerAdapterDelegate? = nil) {
         self.player = player
         super.init()
         setup()
@@ -29,7 +28,6 @@ open class ITGKalturaPlayerAdapter: NSObject, ITGPlayerAdapter {
     
     deinit {
         player.removeObserver(self, events: [PlayerEvent.playing, PlayerEvent.pause, PlayerEvent.ended, PlayerEvent.play.stopped])
-        playerControlsVisibilityBlock = nil
     }
     
     open func setup() {
