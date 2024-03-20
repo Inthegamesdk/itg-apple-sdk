@@ -303,6 +303,9 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     }
     
     open func overlayReleasedFocus() {
+        if player?.getPlayerView()?.deepSubviews().contains(where: { $0.isFocused }) == true {
+            return
+        }
         customPreferredFocusView = player?.getPlayerView()
         view.setNeedsFocusUpdate()
         view.updateFocusIfNeeded()

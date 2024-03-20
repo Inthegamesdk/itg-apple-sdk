@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target x86_64-apple-tvos14.3-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Inthegametv
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-tvos14.3-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Inthegametv
 import AVFoundation
 import AVKit
 import CommonCrypto
@@ -393,7 +392,7 @@ public enum ITGContent : Swift.String {
   @_Concurrency.MainActor(unsafe) public func isMenuVisible() -> Swift.Bool
   @_Concurrency.MainActor(unsafe) public func currentContent() -> [Inthegametv.ITGContent]
   @_Concurrency.MainActor(unsafe) public func currentMenuPage() -> Inthegametv.ITGMenuItem?
-  @_Concurrency.MainActor(unsafe) public func closeAll()
+  @_Concurrency.MainActor(unsafe) public func closeAll(_ includingPauseAds: Swift.Bool = false)
 }
 extension Inthegametv.ITGOverlayView {
   @_Concurrency.MainActor(unsafe) public func menuShouldClose()
@@ -501,6 +500,7 @@ extension UIKit.UIColor {
   convenience public init?(hex: Swift.String, opacity: CoreFoundation.CGFloat)
 }
 extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func deepSubviews() -> [UIKit.UIView]
   @_Concurrency.MainActor(unsafe) public func constraintsFillSuperview(top: CoreFoundation.CGFloat? = 0, bottom: CoreFoundation.CGFloat? = 0, leading: CoreFoundation.CGFloat? = 0, trailing: CoreFoundation.CGFloat? = 0, verticalToSafeArea: Swift.Bool = false, horizontalToSafeArea: Swift.Bool = false)
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class FocusTvButton : UIKit.UIButton {
