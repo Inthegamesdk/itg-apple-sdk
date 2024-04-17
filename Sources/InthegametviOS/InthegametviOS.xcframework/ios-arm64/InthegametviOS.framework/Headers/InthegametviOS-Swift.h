@@ -317,6 +317,7 @@ SWIFT_CLASS("_TtC14InthegametviOS19FocusObservableView")
 
 SWIFT_CLASS("_TtC14InthegametviOS13FocusTvButton")
 @interface FocusTvButton : UIButton
+@property (nonatomic) UISemanticContentAttribute semanticContentAttribute;
 @property (nonatomic, strong) IBInspectable UIFont * _Nonnull normalFont;
 @property (nonatomic, strong) IBInspectable UIFont * _Nonnull focusedFont;
 @property (nonatomic, strong) IBInspectable UIColor * _Nonnull focusedBackgroundColor;

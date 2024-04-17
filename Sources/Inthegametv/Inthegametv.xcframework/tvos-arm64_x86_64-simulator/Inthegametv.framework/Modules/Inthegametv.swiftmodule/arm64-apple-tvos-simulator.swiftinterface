@@ -434,8 +434,8 @@ extension Foundation.URL {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-public enum LeaderboardPeriod : Swift.String, Swift.CustomStringConvertible, Swift.CaseIterable {
-  case alltime
+public enum LeaderboardPeriod : Swift.String, Swift.CustomStringConvertible, Swift.CaseIterable, Swift.Codable {
+  case all
   case week
   case day
   public var description: Swift.String {
@@ -473,9 +473,9 @@ public struct ITGEnvironment {
   public let apiBaseURL: Swift.String
   public let imageBaseURL: Swift.String
   public let envName: Swift.String
-  public let storageURL: Swift.String
+  public let settingsURL: Swift.String
   public init(envName: Swift.String)
-  public init(apiBaseURL: Swift.String, imageBaseURL: Swift.String, envName: Swift.String, storageURL: Swift.String)
+  public init(apiBaseURL: Swift.String, imageBaseURL: Swift.String, envName: Swift.String, settingsURL: Swift.String)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ITGRatingAnswerView : UIKit.UIView, Inthegametv.NibView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
@@ -504,6 +504,10 @@ extension UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public func constraintsFillSuperview(top: CoreFoundation.CGFloat? = 0, bottom: CoreFoundation.CGFloat? = 0, leading: CoreFoundation.CGFloat? = 0, trailing: CoreFoundation.CGFloat? = 0, verticalToSafeArea: Swift.Bool = false, horizontalToSafeArea: Swift.Bool = false)
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class FocusTvButton : UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var semanticContentAttribute: UIKit.UISemanticContentAttribute {
+    @objc get
+    @objc set
+  }
   @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var normalFont: UIKit.UIFont {
     @objc get
     @objc set

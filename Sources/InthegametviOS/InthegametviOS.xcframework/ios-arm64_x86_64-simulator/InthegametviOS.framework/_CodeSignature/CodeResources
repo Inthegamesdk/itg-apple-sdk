@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/InthegametviOS-Swift.h</key>
 		<data>
-		8MZm1GBp1DHYUmd+vdb1yNGCLE4=
+		i9JcJWHa16moY1TvgYSSOnekZJs=
 		</data>
 		<key>ITGAccountImageCollectionViewCell.nib</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>ITGAccountView.nib</key>
 		<data>
-		CN9PeQ9kW+aaFxUi2MdwXda3L0U=
+		BSGAVVMSqe1Dj1pgrO2KQ1Opd3g=
 		</data>
 		<key>ITGAccountViewLandscape.nib</key>
 		<data>
@@ -182,7 +182,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rJ/QwDZ3EPj9co8HOukaI+jTU5U=
+		zivKFCUUFWqP8VdwdO2et05sF6c=
 		</data>
 		<key>MainSlipView.nib</key>
 		<data>
@@ -194,7 +194,7 @@
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		cnT67q0u+WlZvsk8AGjLGZ7xYfs=
+		8/aXRrefLq4u4c7LgHZ7skrrN1I=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -202,11 +202,11 @@
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		cnT67q0u+WlZvsk8AGjLGZ7xYfs=
+		8/aXRrefLq4u4c7LgHZ7skrrN1I=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IQZdkS1hF0diW63IeyETBeQq8No=
+		XXyVmvxmSBjsMf3xfACt1/AcXC0=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -214,7 +214,7 @@
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		349BEsk5y01ia+uko+OEfKWCEkw=
+		wyH7+O9zOo6V17X+U/hbxf/OX+g=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -222,11 +222,11 @@
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		349BEsk5y01ia+uko+OEfKWCEkw=
+		wyH7+O9zOo6V17X+U/hbxf/OX+g=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		cjZZBNG0HRu9hum8QVmEcxbmlOs=
+		HeADW/n15BRosj9BrgiGsFyLSlo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -272,7 +272,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			g16cGU/MdLhAoIuNI3zgsPksfyjmNylBc7nxC4olE1E=
+			+1ovGMwKVVVkBq6QBXhwTHclwSW1NSjT+wudKymKH8c=
 			</data>
 		</dict>
 		<key>ITGAccountImageCollectionViewCell.nib</key>
@@ -286,7 +286,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zPyfAduI031NfSfP2kREIpM0ne6rOInFuVxrbY0rxp4=
+			MjWaBJaQ1E7C/0lYyIYAL1UvfdWzJvb/ZW8DXobar80=
 			</data>
 		</dict>
 		<key>ITGAccountViewLandscape.nib</key>
@@ -573,7 +573,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XnTjj5Lh8i94iWkSXzstklSEhY3UiUxSlxpvq2HaJLM=
+			Kl73eblRyhWo+fkA2xpiJe6BEpOf65vJsmNLCIFpyIE=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -587,14 +587,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XnTjj5Lh8i94iWkSXzstklSEhY3UiUxSlxpvq2HaJLM=
+			Kl73eblRyhWo+fkA2xpiJe6BEpOf65vJsmNLCIFpyIE=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EY+Rx11s5mNraXY7nk+ohtPBtFwNQgV8c9gQZz/+FD4=
+			NezJrFJ8bXd5Vxh0SAq+gzZCrKVai9RGCyZqb7I86kM=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -608,7 +608,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4H8LhTVHdOayJy55ghdr06uzQ/Q4H9QGFrfKvu/RE8g=
+			5FM8sqe9UMqgrId+X51x5eVYMnB/p+jDt1SvF2sJMAE=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -622,14 +622,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4H8LhTVHdOayJy55ghdr06uzQ/Q4H9QGFrfKvu/RE8g=
+			5FM8sqe9UMqgrId+X51x5eVYMnB/p+jDt1SvF2sJMAE=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J/1vmXtqUlkrPTBY9DDbK2inqGnH2po55a3q80p6Sw0=
+			g2Pn/78zInySBbmWmPxA9GeB9beslt7z0TmdRiX3UYo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
