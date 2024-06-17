@@ -51,13 +51,12 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     private var userEmail: String?
     private var userPhone: String?
     private var userRole: UserRole
-    private var useWebp: Bool = false
     private var shouldResetOverlayUser: Bool
     private var soundLevel: Float = 1
     private var vars: [String: Any]? = nil
     private var enableLogs: Bool
     
-    public init(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, language: String = "en", foreignId: String? = nil, userName: String? = nil, userAvatar: String? = nil, userEmail: String? = nil, userPhone: String? = nil, userRole: UserRole = .user, useWebp: Bool = false, vars: [String: Any]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false, enableLogs: Bool = false) {
+    public init(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, language: String = "en", foreignId: String? = nil, userName: String? = nil, userAvatar: String? = nil, userEmail: String? = nil, userPhone: String? = nil, userRole: UserRole = .user, vars: [String: Any]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false, enableLogs: Bool = false) {
         self.channelSlug = channelSlug
         self.virtualChannels = virtualChannels
         self.accountId = accountId
@@ -71,7 +70,6 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         self.userPhone = userPhone
         self.shouldResetOverlayUser = shouldResetOverlayUser
         self.player = playerAdapter
-        self.useWebp = useWebp
         self.vars = vars
         self.enableLogs = enableLogs
         super.init(nibName: nil, bundle: nil)
@@ -157,7 +155,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         if shouldResetOverlayUser {
             overlayView?.resetUser()
         }
-        overlayView?.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: self, language: language!, foreignId: foreignId, userName: userName, userAvatar: userAvatar, userPhone: userPhone, userRole: userRole, videoView: player!.getPlayerView()!, useWebp: useWebp, vars: vars, enableLogs: enableLogs)
+        overlayView?.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: self, language: language!, foreignId: foreignId, userName: userName, userAvatar: userAvatar, userPhone: userPhone, userRole: userRole, videoView: player!.getPlayerView()!, vars: vars, enableLogs: enableLogs)
         overlayView?.injectionDelay = nil
     }
     

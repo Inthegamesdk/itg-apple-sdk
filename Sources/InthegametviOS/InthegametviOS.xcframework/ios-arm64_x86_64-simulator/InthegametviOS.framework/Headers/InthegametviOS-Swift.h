@@ -413,6 +413,8 @@ SWIFT_CLASS("_TtC14InthegametviOS14ITGOverlayView")
 
 
 
+
+
 SWIFT_CLASS("_TtC14InthegametviOS19ITGRatingAnswerView")
 @interface ITGRatingAnswerView : UIView
 - (void)awakeFromNib;
@@ -866,6 +868,8 @@ SWIFT_CLASS("_TtC14InthegametviOS14ITGOverlayView")
 - (void)didUpdateFocusInContext:(UIFocusUpdateContext * _Nonnull)context withAnimationCoordinator:(UIFocusAnimationCoordinator * _Nonnull)coordinator;
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 

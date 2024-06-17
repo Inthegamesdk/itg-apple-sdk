@@ -320,7 +320,7 @@ public enum ITGContent : Swift.String {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) public func load(accountId: Swift.String, environment: InthegametviOS.ITGEnvironment = ITGEnvironment.defaultEnvironment, delegate: (any InthegametviOS.ITGOverlayDelegate)? = nil, foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil, userEmail: Swift.String? = nil, userPhone: Swift.String? = nil, userRole: InthegametviOS.UserRole, enableLogs: Swift.Bool = false)
-  @_Concurrency.MainActor(unsafe) public func load(channelSlug: Swift.String, virtualChannels: [Swift.String]? = [], accountId: Swift.String, environment: InthegametviOS.ITGEnvironment = ITGEnvironment.defaultEnvironment, delegate: (any InthegametviOS.ITGOverlayDelegate)?, language: Swift.String = "en", foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil, userEmail: Swift.String? = nil, userPhone: Swift.String? = nil, userRole: InthegametviOS.UserRole, videoView: UIKit.UIView, useWebp: Swift.Bool = false, vars: [Swift.String : Any]? = nil, enableLogs: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) public func load(channelSlug: Swift.String, virtualChannels: [Swift.String]? = [], accountId: Swift.String, environment: InthegametviOS.ITGEnvironment = ITGEnvironment.defaultEnvironment, delegate: (any InthegametviOS.ITGOverlayDelegate)?, language: Swift.String = "en", foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil, userEmail: Swift.String? = nil, userPhone: Swift.String? = nil, userRole: InthegametviOS.UserRole, videoView: UIKit.UIView, vars: [Swift.String : Any]? = nil, enableLogs: Swift.Bool = false)
   @_Concurrency.MainActor(unsafe) public func getLeaderboard(_ page: Swift.Int, limit: Swift.Int, period: InthegametviOS.LeaderboardPeriod, leaderboardSorting: InthegametviOS.LeaderboardSorting, leaderboardDisplayMode: InthegametviOS.LeaderboardDisplayMode, completion: @escaping (InthegametviOS.LeaderboardResponse?, (any Swift.Error)?) -> ())
   @_Concurrency.MainActor(unsafe) public func resetUser()
   @_Concurrency.MainActor(unsafe) public func closeInteractionIfNeeded() -> Swift.Bool
@@ -339,6 +339,8 @@ public enum ITGContent : Swift.String {
   @_Concurrency.MainActor(unsafe) public func openChat()
   @_Concurrency.MainActor(unsafe) public func openStats()
   @_Concurrency.MainActor(unsafe) public func openExtension()
+  @_Concurrency.MainActor(unsafe) public func closeSlip()
+  @_Concurrency.MainActor(unsafe) public func closeNotifications()
   @_Concurrency.MainActor(unsafe) public func closeFlexi()
   @_Concurrency.MainActor(unsafe) public func closeMenu()
   @_Concurrency.MainActor(unsafe) public func closeAccount()
@@ -427,6 +429,32 @@ extension UIKit.UIColor {
 extension UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public func deepSubviews() -> [UIKit.UIView]
   @_Concurrency.MainActor(unsafe) public func constraintsFillSuperview(top: CoreFoundation.CGFloat? = 0, bottom: CoreFoundation.CGFloat? = 0, leading: CoreFoundation.CGFloat? = 0, trailing: CoreFoundation.CGFloat? = 0, verticalToSafeArea: Swift.Bool = false, horizontalToSafeArea: Swift.Bool = false)
+}
+public struct JSONCodingKeys : Swift.CodingKey {
+  public var stringValue: Swift.String
+  public init(stringValue: Swift.String)
+  public var intValue: Swift.Int?
+  public init?(intValue: Swift.Int)
+}
+extension Swift.KeyedDecodingContainer {
+  public func decode(_ type: Swift.Dictionary<Swift.String, Any>.Type, forKey key: K) throws -> Swift.Dictionary<Swift.String, Any>
+  public func decode(_ type: Swift.Array<Any>.Type, forKey key: K) throws -> Swift.Array<Any>
+  public func decode(_ type: Swift.Dictionary<Swift.String, Any>.Type) throws -> Swift.Dictionary<Swift.String, Any>
+}
+extension Swift.UnkeyedDecodingContainer {
+  public mutating func decode(_ type: Swift.Array<Any>.Type) throws -> Swift.Array<Any>
+  public mutating func decode(_ type: Swift.Dictionary<Swift.String, Any>.Type) throws -> Swift.Dictionary<Swift.String, Any>
+}
+extension Swift.KeyedEncodingContainerProtocol where Self.Key == InthegametviOS.JSONCodingKeys {
+  public mutating func encode(_ value: Swift.Dictionary<Swift.String, Any>) throws
+}
+extension Swift.KeyedEncodingContainerProtocol {
+  public mutating func encode(_ value: Swift.Dictionary<Swift.String, Any>?, forKey key: Self.Key) throws
+  public mutating func encode(_ value: Swift.Array<Any>?, forKey key: Self.Key) throws
+}
+extension Swift.UnkeyedEncodingContainer {
+  public mutating func encode(_ value: Swift.Array<Any>) throws
+  public mutating func encode(_ value: Swift.Dictionary<Swift.String, Any>) throws
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class FocusTvButton : UIKit.UIButton {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open var semanticContentAttribute: UIKit.UISemanticContentAttribute {

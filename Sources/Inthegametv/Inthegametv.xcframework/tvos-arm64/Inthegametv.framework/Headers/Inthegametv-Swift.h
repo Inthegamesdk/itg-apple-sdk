@@ -411,6 +411,8 @@ SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
 
 
 
+
+
 SWIFT_CLASS("_TtC11Inthegametv19ITGRatingAnswerView")
 @interface ITGRatingAnswerView : UIView
 - (void)awakeFromNib;
