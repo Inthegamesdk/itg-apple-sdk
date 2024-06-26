@@ -192,6 +192,7 @@ public struct AnalyticsInfo : Swift.Codable {
   public let parent: InthegametviOS.AnalyticsParent?
   public let parentId: Swift.String?
   public let campaignId: Swift.String?
+  public var flexiSubType: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
