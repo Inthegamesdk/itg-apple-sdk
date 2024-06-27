@@ -16,14 +16,31 @@ import InthegametviOS
 open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
     
     weak public var delegate: ITGPlayerAdapterDelegate?
-    private var player: AVPlayer!
+    var player: AVPlayer! {
+        didSet {
+            removeObserver(oldValue)
+            registerObservers()
+        }
+    }
     private var playerViewController: AVPlayerViewController?
+    private var playerView: UIView?
     private var seekTimer: Timer?
     private var isSeeking: Bool = false
     
-    public init(_ player: AVPlayer, playerViewController: AVPlayerViewController?, delegate: ITGPlayerAdapterDelegate? = nil) {
+    public init(_ player: AVPlayer, playerViewController: AVPlayerViewController, delegate: ITGPlayerAdapterDelegate? = nil) {
         self.player = player
         self.playerViewController = playerViewController
+        self.delegate = delegate
+        super.init()
+#if os(tvOS)
+        self.playerViewController?.delegate = self
+#endif
+        setup()
+    }
+    
+    public init(_ player: AVPlayer, playerView: UIView, delegate: ITGPlayerAdapterDelegate? = nil) {
+        self.player = player
+        self.playerView = playerView
         self.delegate = delegate
         super.init()
 #if os(tvOS)
@@ -35,22 +52,20 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
     deinit {
         seekTimer?.invalidate()
         seekTimer = nil
-        player.removeObserver(self, forKeyPath: #keyPath(AVPlayer.timeControlStatus))
-        player.removeObserver(self, forKeyPath: #keyPath(AVPlayer.currentItem))
-        if player.currentItem != nil {
-            playerViewController?.children.first(where: { String(describing: type(of: $0)) == "AVMobileChromelessControlsViewController" })?.view.removeObserver(self, forKeyPath: #keyPath(UIView.isHidden))
+        removeObserver(player)
+        if player.currentItem != nil, let playerViewController {
+            playerViewController.children.first(where: { String(describing: type(of: $0)) == "AVMobileChromelessControlsViewController" })?.view.removeObserver(self, forKeyPath: #keyPath(UIView.isHidden))
         }
     }
     
     open func setup() {
-        player?.addObserver(self, forKeyPath: #keyPath(AVPlayer.timeControlStatus), options: [.old, .new], context: nil)
-        player?.addObserver(self, forKeyPath: #keyPath(AVPlayer.currentItem), options: [.old, .new], context: nil)
+        registerObservers()
 #if os(tvOS)
-        if #available(tvOS 15.0, *) {
+        if #available(tvOS 15.0, *), let playerViewController {
             let action = UIAction(title: "Menu", image: UIImage(named: "menu")) { [weak self] _ in
                 self?.delegate?.menuButtonAction()
             }
-            playerViewController?.transportBarCustomMenuItems = [action]
+            playerViewController.transportBarCustomMenuItems = [action]
         }
 #endif
         playerViewController?.player = player
@@ -61,8 +76,20 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
         playerViewController?.videoGravity = .resizeAspect
     }
     
+    open func removeObserver(_ player: AVPlayer?) {
+        player?.removeObserver(self, forKeyPath: #keyPath(AVPlayer.timeControlStatus))
+        player?.removeObserver(self, forKeyPath: #keyPath(AVPlayer.currentItem))
+        NotificationCenter.default.removeObserver(self, name: AVPlayerItem.timeJumpedNotification, object: nil)
+    }
+    
+    open func registerObservers() {
+        player?.addObserver(self, forKeyPath: #keyPath(AVPlayer.timeControlStatus), options: [.old, .new], context: nil)
+        player?.addObserver(self, forKeyPath: #keyPath(AVPlayer.currentItem), options: [.old, .new], context: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(timeJumped), name: AVPlayerItem.timeJumpedNotification, object: nil)
+    }
+    
     open func getPlayerView() -> UIView? {
-        return playerViewController?.view
+        return playerViewController?.view ?? playerView
     }
     
     open func getVideoResolution() -> CGSize {
@@ -73,10 +100,7 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
         playerViewController?.children.first(where: { String(describing: type(of: $0)) == "AVMobileChromelessControlsViewController" })?.view.addObserver(self, forKeyPath: #keyPath(UIView.isHidden), options: [.old, .new], context: nil)
         player.replaceCurrentItem(with: AVPlayerItem(asset: AVAsset(url: url)))
         player.play()
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemTimeJumped, object: player.currentItem, queue: OperationQueue.main) { [weak self] (notification) in
-            self?.isSeeking = true
-        }
-    }
+   }
     
     open func play() {
         player.play()
@@ -112,7 +136,11 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
     }
     
     open func setVideoGravity(_ videoGravity: AVLayerVideoGravity) {
-        playerViewController?.videoGravity = videoGravity
+        if let playerViewController {
+            playerViewController.videoGravity = videoGravity
+        } else if let playerView, let playerLayer = (playerView.deepSubviews() + [playerView]).compactMap({ [$0.layer] + $0.layer.deepSublayers() }).flatMap({ $0 }).first(where: { $0 is AVPlayerLayer }) as? AVPlayerLayer {
+            playerLayer.videoGravity = videoGravity
+        }
     }
     
     open func setSoundLevel(_ soundLevel: Float) {
@@ -121,6 +149,13 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
     
     open func getSoundLevel() -> Float {
         return player.volume
+    }
+    
+    
+    @objc open func timeJumped(_ notification: NSNotification) {
+        if notification.object as? NSObject == player.currentItem {
+            isSeeking = true
+        }
     }
     
     open override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {

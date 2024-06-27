@@ -427,6 +427,9 @@ extension UIKit.UIColor {
   convenience public init?(hex: Swift.String)
   convenience public init?(hex: Swift.String, opacity: CoreFoundation.CGFloat)
 }
+extension QuartzCore.CALayer {
+  public func deepSublayers() -> [QuartzCore.CALayer]
+}
 extension UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public func deepSubviews() -> [UIKit.UIView]
   @_Concurrency.MainActor(unsafe) public func constraintsFillSuperview(top: CoreFoundation.CGFloat? = 0, bottom: CoreFoundation.CGFloat? = 0, leading: CoreFoundation.CGFloat? = 0, trailing: CoreFoundation.CGFloat? = 0, verticalToSafeArea: Swift.Bool = false, horizontalToSafeArea: Swift.Bool = false)
