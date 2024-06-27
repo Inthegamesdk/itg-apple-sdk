@@ -16,7 +16,7 @@ import InthegametviOS
 open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
     
     weak public var delegate: ITGPlayerAdapterDelegate?
-    var player: AVPlayer! {
+    public var player: AVPlayer! {
         didSet {
             removeObserver(oldValue)
             registerObservers()

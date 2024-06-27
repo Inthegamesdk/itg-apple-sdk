@@ -37,6 +37,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     public var overlayView: ITGOverlayView?
     public var autoBlock: ITGOverlayView.AutoBlockMode = .disabled
     public var autoBlockDisregard: Set<UIView> = []
+    public var shouldPlayChannelVideo: Bool = true
     private weak var customPreferredFocusView: UIView?
     private var player: ITGPlayerAdapter?
     private var controllsVisible: Bool = false
@@ -266,7 +267,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     }
         
     open func overlayDidLoadChannelInfo(_ videoUrl: String?) {
-        guard let videoUrl = videoUrl, let url =  URL(string: videoUrl) else { return }
+        guard shouldPlayChannelVideo, let videoUrl = videoUrl, let url =  URL(string: videoUrl) else { return }
         startVideo(url)
     }
     
