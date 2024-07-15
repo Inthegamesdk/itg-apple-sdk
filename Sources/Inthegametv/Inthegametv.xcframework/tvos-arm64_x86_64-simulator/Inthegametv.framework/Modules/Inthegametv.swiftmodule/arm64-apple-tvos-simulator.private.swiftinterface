@@ -41,29 +41,29 @@ extension Foundation.Data {
   }
 }
 public struct User : Swift.Codable {
-  public var name: Swift.String {
+  public var name: Swift.String? {
     get
   }
-  public var email: Swift.String {
+  public var email: Swift.String? {
     get
   }
   public var thumbnail: Swift.String? {
     get
   }
-  public let id: Swift.String
+  public let id: Swift.String?
   public var stats: [Inthegametv.UserChannelPoints]? {
     get
   }
   public var activities: [Inthegametv.UserActivity]? {
     get
   }
-  public var visibleActivities: Inthegametv.UserPermissions {
+  public var visibleActivities: Inthegametv.UserPermissions? {
     get
   }
-  public let createdAt: Foundation.Date
-  public let language: Swift.String
+  public let createdAt: Foundation.Date?
+  public let language: Swift.String?
   public let foreignId: Swift.String?
-  public let role: Inthegametv.UserRole
+  public let role: Inthegametv.UserRole?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -500,7 +500,7 @@ extension UIKit.UIImage {
 }
 extension UIKit.UIColor {
   convenience public init?(hex: Swift.String)
-  convenience public init?(hex: Swift.String, opacity: CoreFoundation.CGFloat)
+  convenience public init?(hex: Swift.String, opacity: Swift.Double?)
 }
 extension QuartzCore.CALayer {
   public func deepSublayers() -> [QuartzCore.CALayer]

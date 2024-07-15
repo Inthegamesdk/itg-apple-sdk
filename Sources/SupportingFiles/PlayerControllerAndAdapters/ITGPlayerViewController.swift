@@ -106,6 +106,12 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         player?.delegate = self
     }
     
+    open override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        parentFocusEnvironment?.setNeedsFocusUpdate()
+        parentFocusEnvironment?.updateFocusIfNeeded()
+    }
+    
 #if os(iOS)
     open override func viewLayoutMarginsDidChange() {
         super.viewLayoutMarginsDidChange()

@@ -34,29 +34,29 @@ public enum ITGMenuItem : Swift.String, Swift.CaseIterable, Swift.Decodable {
   }
 }
 public struct User : Swift.Codable {
-  public var name: Swift.String {
+  public var name: Swift.String? {
     get
   }
-  public var email: Swift.String {
+  public var email: Swift.String? {
     get
   }
   public var thumbnail: Swift.String? {
     get
   }
-  public let id: Swift.String
+  public let id: Swift.String?
   public var stats: [InthegametviOS.UserChannelPoints]? {
     get
   }
   public var activities: [InthegametviOS.UserActivity]? {
     get
   }
-  public var visibleActivities: InthegametviOS.UserPermissions {
+  public var visibleActivities: InthegametviOS.UserPermissions? {
     get
   }
-  public let createdAt: Foundation.Date
-  public let language: Swift.String
+  public let createdAt: Foundation.Date?
+  public let language: Swift.String?
   public let foreignId: Swift.String?
-  public let role: InthegametviOS.UserRole
+  public let role: InthegametviOS.UserRole?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -425,7 +425,7 @@ extension UIKit.UIImage {
 }
 extension UIKit.UIColor {
   convenience public init?(hex: Swift.String)
-  convenience public init?(hex: Swift.String, opacity: CoreFoundation.CGFloat)
+  convenience public init?(hex: Swift.String, opacity: Swift.Double?)
 }
 extension QuartzCore.CALayer {
   public func deepSublayers() -> [QuartzCore.CALayer]

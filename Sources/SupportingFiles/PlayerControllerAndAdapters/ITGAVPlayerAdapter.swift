@@ -104,6 +104,10 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
     
     open func play() {
         player.play()
+#if os(tvOS)
+        playerViewController?.showsPlaybackControls = true
+        delegate?.videoControllsVisibilityChanged(false)
+#endif
     }
     
     open func pause() {
