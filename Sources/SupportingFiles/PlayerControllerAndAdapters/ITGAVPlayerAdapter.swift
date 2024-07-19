@@ -26,6 +26,7 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
     private var playerView: UIView?
     private var seekTimer: Timer?
     private var isSeeking: Bool = false
+    private var timeJumpedTime: TimeInterval?
     
     public init(_ player: AVPlayer, playerViewController: AVPlayerViewController, delegate: ITGPlayerAdapterDelegate? = nil) {
         self.player = player
@@ -78,13 +79,11 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
     
     open func removeObserver(_ player: AVPlayer?) {
         player?.removeObserver(self, forKeyPath: #keyPath(AVPlayer.timeControlStatus))
-        player?.removeObserver(self, forKeyPath: #keyPath(AVPlayer.currentItem))
         NotificationCenter.default.removeObserver(self, name: AVPlayerItem.timeJumpedNotification, object: nil)
     }
     
     open func registerObservers() {
         player?.addObserver(self, forKeyPath: #keyPath(AVPlayer.timeControlStatus), options: [.old, .new], context: nil)
-        player?.addObserver(self, forKeyPath: #keyPath(AVPlayer.currentItem), options: [.old, .new], context: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(timeJumped), name: AVPlayerItem.timeJumpedNotification, object: nil)
     }
     
@@ -159,6 +158,19 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
     @objc open func timeJumped(_ notification: NSNotification) {
         if notification.object as? NSObject == player.currentItem {
             isSeeking = true
+            timeJumpedTime = player.currentTime().seconds
+            delegate?.videoPaused(player.currentTime().seconds, userInitiated: false, isSeeking: isSeeking == true)
+            if player.timeControlStatus == .playing {
+                seekTimer?.invalidate()
+                let player = player!
+                seekTimer = Timer.scheduledTimer(withTimeInterval: 0.4, repeats: false, block: { (timer) in
+                    self.seekTimer = nil
+                    if player == self.player, player.timeControlStatus == .playing {
+                        self.delegate?.videoPlaying(player.currentTime().seconds)
+                        self.isSeeking = false
+                    }
+                })
+            }
         }
     }
     
@@ -170,27 +182,11 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
                 DispatchQueue.main.async { [weak self] in
                     guard let player = self?.player else { return }
                     let time = player.currentTime().seconds
-                    self?.delegate?.videoPaused(time, userInitiated: newStatus == .paused, isSeeking: self?.isSeeking == true)
+                    self?.delegate?.videoPaused(time, userInitiated: newStatus == .paused, isSeeking: self?.isSeeking == true && self?.timeJumpedTime != time)
                     if newStatus == .playing {
                         self?.delegate?.videoPlaying(time)
                         self?.isSeeking = false
                     }
-                }
-            }
-        }
-        if keyPath == #keyPath(AVPlayer.currentItem), let change = change, let newValue = change[NSKeyValueChangeKey.newKey] as? AVPlayerItem {
-            NotificationCenter.default.addObserver(forName: AVPlayerItem.timeJumpedNotification, object: newValue, queue: OperationQueue.main) { [weak self]  (notification) in
-                guard let player = self?.player else { return }
-                self?.delegate?.videoPaused(player.currentTime().seconds, userInitiated: false, isSeeking: self?.isSeeking == true)
-                if player.timeControlStatus == .playing {
-                    self?.seekTimer?.invalidate()
-                    self?.seekTimer = Timer.scheduledTimer(withTimeInterval: 0.4, repeats: false, block: { (timer) in
-                        self?.seekTimer = nil
-                        if player.timeControlStatus == .playing {
-                            self?.delegate?.videoPlaying(player.currentTime().seconds)
-                            self?.isSeeking = false
-                        }
-                    })
                 }
             }
         }

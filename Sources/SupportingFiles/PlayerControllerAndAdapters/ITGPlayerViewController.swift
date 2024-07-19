@@ -26,8 +26,8 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         button.tintColor = .white
         return button
     }()
-    open override var preferredFocusedView: UIView? {
-        return customPreferredFocusView
+    open override var preferredFocusEnvironments: [any UIFocusEnvironment] {
+        return customPreferredFocusEnvironments ?? [view]
     }
 #if os(iOS)
     open override var prefersHomeIndicatorAutoHidden: Bool {
@@ -38,7 +38,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     public var autoBlock: ITGOverlayView.AutoBlockMode = .disabled
     public var autoBlockDisregard: Set<UIView> = []
     public var shouldPlayChannelVideo: Bool = true
-    private weak var customPreferredFocusView: UIView?
+    private var customPreferredFocusEnvironments: [any UIFocusEnvironment]?
     private var player: ITGPlayerAdapter?
     private var controllsVisible: Bool = false
     private var channelSlug: String
@@ -129,7 +129,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     
     open func setupPlayer() {
         if let playerView = player?.getPlayerView() {
-            customPreferredFocusView = playerView
+            customPreferredFocusEnvironments = playerView.preferredFocusEnvironments
         }
 #if os(iOS)
         orientationDidChange()
@@ -190,6 +190,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
             player?.pause()
         } else {
             player?.play()
+            moveFocusToPlayerView()
         }
     }
     
@@ -208,6 +209,15 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         playPausePressRecognizer.addTarget(self, action: #selector(remotePlayPauseButtonAction(recognizer:)))
         playPausePressRecognizer.allowedPressTypes = [NSNumber(value: UIPress.PressType.playPause.rawValue)]
         view.addGestureRecognizer(playPausePressRecognizer)
+    }
+    
+    private func moveFocusToPlayerView() {
+        if player?.getPlayerView()?.deepSubviews().contains(where: { $0.isFocused }) == true {
+            return
+        }
+        customPreferredFocusEnvironments = player?.getPlayerView()?.preferredFocusEnvironments
+        view.setNeedsFocusUpdate()
+        view.updateFocusIfNeeded()
     }
     
 #if os(iOS)
@@ -302,18 +312,13 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     }
     
     open func overlayRequestedFocus() {
-        customPreferredFocusView = overlayView
+        customPreferredFocusEnvironments = [overlayView!]
         view.setNeedsFocusUpdate()
         view.updateFocusIfNeeded()
     }
     
     open func overlayReleasedFocus() {
-        if player?.getPlayerView()?.deepSubviews().contains(where: { $0.isFocused }) == true {
-            return
-        }
-        customPreferredFocusView = player?.getPlayerView()
-        view.setNeedsFocusUpdate()
-        view.updateFocusIfNeeded()
+        moveFocusToPlayerView()
     }
     
     open func overlayResizeVideoHeight(activityHeight: CGFloat) {
