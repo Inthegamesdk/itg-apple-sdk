@@ -215,7 +215,11 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         if player?.getPlayerView()?.deepSubviews().contains(where: { $0.isFocused }) == true {
             return
         }
-        customPreferredFocusEnvironments = player?.getPlayerView()?.preferredFocusEnvironments
+        if let environments = player?.getPlayerView()?.preferredFocusEnvironments, !environments.isEmpty {
+            customPreferredFocusEnvironments = environments
+        } else {
+            customPreferredFocusEnvironments = player?.getPlayerView()?.deepSubviews().first(where:{ String(describing: type(of: $0)) == "_AVPlayerViewControllerContainerView" })?.preferredFocusEnvironments
+        }
         view.setNeedsFocusUpdate()
         view.updateFocusIfNeeded()
     }
@@ -285,6 +289,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     open func overlayDidLoadChannelInfo(_ videoUrl: String?) {
         guard shouldPlayChannelVideo, let videoUrl = videoUrl, let url =  URL(string: videoUrl) else { return }
         startVideo(url)
+        moveFocusToPlayerView()
     }
     
     open func userState(_ user: User) {
