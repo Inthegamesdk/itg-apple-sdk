@@ -38,7 +38,13 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     public var autoBlock: ITGOverlayView.AutoBlockMode = .disabled
     public var autoBlockDisregard: Set<UIView> = []
     public var shouldPlayChannelVideo: Bool = true
-    private var customPreferredFocusEnvironments: [any UIFocusEnvironment]?
+    private var customPreferredFocusEnvironments: [any UIFocusEnvironment]? {
+        didSet {
+            if customPreferredFocusEnvironments != nil && !didSetInitialFocus {
+                didSetInitialFocus = true
+            }
+        }
+    }
     private var player: ITGPlayerAdapter?
     private var controllsVisible: Bool = false
     private var channelSlug: String
@@ -56,6 +62,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     private var soundLevel: Float = 1
     private var vars: [String: Any]? = nil
     private var enableLogs: Bool
+    private var didSetInitialFocus = false
     
     public init(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, language: String = "en", foreignId: String? = nil, userName: String? = nil, userAvatar: String? = nil, userEmail: String? = nil, userPhone: String? = nil, userRole: UserRole = .user, vars: [String: Any]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false, enableLogs: Bool = false) {
         self.channelSlug = channelSlug
@@ -108,8 +115,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     
     open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        parentFocusEnvironment?.setNeedsFocusUpdate()
-        parentFocusEnvironment?.updateFocusIfNeeded()
+        moveFocusToPlayerView()
     }
     
 #if os(iOS)
@@ -128,14 +134,9 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     }
     
     open func setupPlayer() {
-        if let playerView = player?.getPlayerView() {
-            customPreferredFocusEnvironments = playerView.preferredFocusEnvironments
-        }
 #if os(iOS)
         orientationDidChange()
 #endif
-        view.setNeedsFocusUpdate()
-        view.updateFocusIfNeeded()
     }
     
     open func startVideo(_ url: URL) {
@@ -217,8 +218,10 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         }
         if let environments = player?.getPlayerView()?.preferredFocusEnvironments, !environments.isEmpty {
             customPreferredFocusEnvironments = environments
+        } else if let environments = player?.getPlayerView()?.deepSubviews().first(where:{ String(describing: type(of: $0)) == "_AVPlayerViewControllerContainerView" })?.preferredFocusEnvironments {
+            customPreferredFocusEnvironments = environments
         } else {
-            customPreferredFocusEnvironments = player?.getPlayerView()?.deepSubviews().first(where:{ String(describing: type(of: $0)) == "_AVPlayerViewControllerContainerView" })?.preferredFocusEnvironments
+            customPreferredFocusEnvironments = nil
         }
         view.setNeedsFocusUpdate()
         view.updateFocusIfNeeded()
@@ -252,6 +255,9 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     
     open func videoPlaying(_ time: TimeInterval) {
         overlayView?.videoPlaying(time: time)
+        if !didSetInitialFocus {
+            moveFocusToPlayerView()
+        }
     }
     
     open func videoPaused(_ time: TimeInterval, userInitiated: Bool, isSeeking: Bool) {
@@ -289,7 +295,6 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     open func overlayDidLoadChannelInfo(_ videoUrl: String?) {
         guard shouldPlayChannelVideo, let videoUrl = videoUrl, let url =  URL(string: videoUrl) else { return }
         startVideo(url)
-        moveFocusToPlayerView()
     }
     
     open func userState(_ user: User) {
@@ -324,22 +329,6 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     
     open func overlayReleasedFocus() {
         moveFocusToPlayerView()
-    }
-    
-    open func overlayResizeVideoHeight(activityHeight: CGFloat) {
-    
-    }
-    
-    open func overlayResetVideoHeight() {
-     
-    }
-    
-    open func overlayResizeVideoWidth(activityWidth: CGFloat) {
-
-    }
-    
-    open func overlayResetVideoWidth() {
-
     }
     
     open func overlayRequestedVideoTime() {

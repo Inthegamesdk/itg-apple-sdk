@@ -227,10 +227,6 @@ public protocol ITGOverlayDelegate : AnyObject {
   func overlayRequestedPlay()
   func overlayRequestedFocus()
   func overlayReleasedFocus()
-  func overlayResizeVideoWidth(activityWidth: CoreFoundation.CGFloat)
-  func overlayResetVideoWidth()
-  func overlayResizeVideoHeight(activityHeight: CoreFoundation.CGFloat)
-  func overlayResetVideoHeight()
   func overlayReceivedDeeplink(_ link: Swift.String)
   func overlayRequestedVideoSeek(time: Foundation.TimeInterval)
   func overlayRequestedVideoResolution() -> CoreFoundation.CGSize

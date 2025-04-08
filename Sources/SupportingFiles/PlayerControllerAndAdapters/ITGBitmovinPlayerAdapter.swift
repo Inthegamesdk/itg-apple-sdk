@@ -27,6 +27,7 @@ open class ITGBitmovinPlayerAdapter: NSObject, ITGPlayerAdapter {
     public init(_ player: Player, playerView: PlayerView, delegate: ITGPlayerAdapterDelegate? = nil) {
         self.player = player
         self.playerViewUIKit = playerView
+        self.delegate = delegate
         super.init()
         setup()
     }
@@ -35,6 +36,7 @@ open class ITGBitmovinPlayerAdapter: NSObject, ITGPlayerAdapter {
         self.player = player
         self.playerViewSwiftUI = playerView
         self.hostingController = UIHostingController(rootView: playerView)
+        self.delegate = delegate
         super.init()
         setup()
     }
@@ -42,6 +44,7 @@ open class ITGBitmovinPlayerAdapter: NSObject, ITGPlayerAdapter {
     public init(_ player: Player, playerViewController: AVPlayerViewController, delegate: ITGPlayerAdapterDelegate? = nil) {
         self.player = player
         self.playerViewController = playerViewController
+        self.delegate = delegate
         super.init()
         setup()
     }

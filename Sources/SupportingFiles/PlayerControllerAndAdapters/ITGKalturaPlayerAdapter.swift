@@ -22,6 +22,7 @@ open class ITGKalturaPlayerAdapter: NSObject, ITGPlayerAdapter {
     
     public init(_ player: KalturaPlayer, delegate: ITGPlayerAdapterDelegate? = nil) {
         self.player = player
+        self.delegate = delegate
         super.init()
         setup()
     }
