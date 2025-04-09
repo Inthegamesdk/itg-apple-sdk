@@ -7,6 +7,11 @@
 
 import MediastreamPlatformSDKAppleTV
 import AVKit
+#if os(tvOS)
+import Inthegametv
+#else
+import InthegametviOS
+#endif
 
 class ITGMediastreamPlatformPlayerAdapter: ITGPlayerAdapter {
     
