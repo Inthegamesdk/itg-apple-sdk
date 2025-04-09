@@ -14,6 +14,10 @@ import Inthegametv
 #else
 import InthegametviOS
 #endif
+#if canImport(ITGPlayerViewController)
+import ITGPlayerViewController
+#endif
+
 
 open class ITGKalturaPlayerAdapter: NSObject, ITGPlayerAdapter {
     
