@@ -12,11 +12,13 @@ let package = Package(
         .library(name: "Inthegametv", targets: ["Inthegametv", "Storket"]),
         .library(name: "InthegametviOS", targets: ["InthegametviOS", "Storket"]),
         .library(name: "ITGPlayerViewController", targets: ["ITGPlayerViewController"]),
+        .library(name: "ITGBitmovinPlayerAdapter", targets: ["ITGBitmovinPlayerAdapter"])
     ],
     targets: [
         .binaryTarget(name: "Inthegametv", path: "Sources/Inthegametv/Inthegametv.xcframework"),
         .binaryTarget(name: "InthegametviOS", path: "Sources/InthegametviOS/InthegametviOS.xcframework"),
         .binaryTarget(name: "Storket", path: "Sources/Storket/Storket.xcframework"),
         .target(name: "ITGPlayerViewController", path: "Sources/SupportingFiles/PlayerControllerAndAdapters/", exclude: ["ITGKalturaPlayerAdapter.swift", "ITGBitmovinPlayerAdapter.swift", "ITGMediastreamPlatformPlayerAdapter.swift"]),
+        .target(name: "ITGBitmovinPlayerAdapter", path: "Sources/SupportingFiles/PlayerControllerAndAdapters/", exclude: ["ITGKalturaPlayerAdapter.swift", "ITGPlayerViewController.swift", "ITGMediastreamPlatformPlayerAdapter.swift", "ITGAVPlayerAdapter.swift", "ITGPlayerAdapter.swift"]),
     ]
 )
