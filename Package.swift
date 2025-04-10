@@ -18,7 +18,7 @@ let package = Package(
         .binaryTarget(name: "Inthegametv", path: "Sources/Inthegametv/Inthegametv.xcframework"),
         .binaryTarget(name: "InthegametviOS", path: "Sources/InthegametviOS/InthegametviOS.xcframework"),
         .binaryTarget(name: "Storket", path: "Sources/Storket/Storket.xcframework"),
-        .target(name: "ITGPlayerViewController", path: "Sources/SupportingFiles/PlayerControllerAndAdapters/", exclude: ["ITGKalturaPlayerAdapter.swift", "ITGBitmovinPlayerAdapter.swift", "ITGMediastreamPlatformPlayerAdapter.swift"]),
-        .target(name: "ITGBitmovinPlayerAdapter", path: "Sources/SupportingFiles/PlayerControllerAndAdapters/", exclude: ["ITGKalturaPlayerAdapter.swift", "ITGPlayerViewController.swift", "ITGMediastreamPlatformPlayerAdapter.swift", "ITGAVPlayerAdapter.swift", "ITGPlayerAdapter.swift"]),
+        .target(name: "ITGPlayerViewController", path: "Sources/SupportingFiles/PlayerControllerAndAdapters/", sources: ["ITGAVPlayerAdapter.swift", "ITGPlayerAdapter.swift", "ITGPlayerViewController.swift"]),
+        .target(name: "ITGBitmovinPlayerAdapter", dependencies: ["ITGPlayerViewController"], path: "Sources/SupportingFiles/PlayerControllerAndAdapters/", sources: ["ITGBitmovinPlayerAdapter.swift"])
     ]
 )
