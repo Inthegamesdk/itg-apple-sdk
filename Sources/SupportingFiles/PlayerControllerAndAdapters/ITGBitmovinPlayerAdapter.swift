@@ -142,6 +142,10 @@ extension ITGBitmovinPlayerAdapter: PlayerListener {
         delegate?.videoPaused(getCurrentTime(), userInitiated: true, isSeeking: false)
     }
     
+    public func onPlaybackFinished(_ event: BitmovinPlayerCore.PlaybackFinishedEvent, player: any Player) {
+        delegate?.videoPaused(getCurrentTime(), userInitiated: false, isSeeking: false)
+    }
+    
     public func onSeeked(_ event: BitmovinPlayerCore.SeekedEvent, player: any Player) {
         if isPlaying() {
             delegate?.videoPlaying(getCurrentTime())

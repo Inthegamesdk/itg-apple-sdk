@@ -13,7 +13,6 @@ public protocol ITGPlayerAdapterDelegate: AnyObject {
     func videoPlaying(_ time: TimeInterval)
     func videoPaused(_ time: TimeInterval, userInitiated: Bool, isSeeking: Bool)
     func videoControllsVisibilityChanged(_ isVisible: Bool)
-    func menuButtonAction()
     
 }
 

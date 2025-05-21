@@ -43,7 +43,7 @@ open class ITGKalturaPlayerAdapter: NSObject, ITGPlayerAdapter {
                 case is PlayerEvent.Playing:
                     self.delegate?.videoPlaying(self.getCurrentTime())
                 default:
-                    self.delegate?.videoPaused(self.getCurrentTime(), userInitiated: self.player.currentState == .ready, isSeeking: false)
+                    self.delegate?.videoPaused(self.getCurrentTime(), userInitiated: self.player.currentState == .ready && !(event is PlayerEvent.Ended), isSeeking: false)
                 }
             }
         }

@@ -415,20 +415,6 @@ SWIFT_CLASS("_TtC14InthegametviOS14ITGOverlayView")
 
 
 
-
-
-
-
-
-SWIFT_CLASS("_TtC14InthegametviOS19ITGRatingAnswerView")
-@interface ITGRatingAnswerView : UIView
-- (void)awakeFromNib;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
 SWIFT_CLASS("_TtC14InthegametviOS16ITGStorketHelper")
 @interface ITGStorketHelper : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -454,8 +440,6 @@ SWIFT_CLASS("_TtC14InthegametviOS15SpriteImageView")
 - (nonnull instancetype)initWithImage:(UIImage * _Nullable)image SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithImage:(UIImage * _Nullable)image highlightedImage:(UIImage * _Nullable)highlightedImage SWIFT_UNAVAILABLE;
 @end
-
-
 
 
 
@@ -893,20 +877,6 @@ SWIFT_CLASS("_TtC14InthegametviOS14ITGOverlayView")
 
 
 
-
-
-
-
-
-SWIFT_CLASS("_TtC14InthegametviOS19ITGRatingAnswerView")
-@interface ITGRatingAnswerView : UIView
-- (void)awakeFromNib;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
 SWIFT_CLASS("_TtC14InthegametviOS16ITGStorketHelper")
 @interface ITGStorketHelper : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -932,8 +902,6 @@ SWIFT_CLASS("_TtC14InthegametviOS15SpriteImageView")
 - (nonnull instancetype)initWithImage:(UIImage * _Nullable)image SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithImage:(UIImage * _Nullable)image highlightedImage:(UIImage * _Nullable)highlightedImage SWIFT_UNAVAILABLE;
 @end
-
-
 
 
 

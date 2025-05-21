@@ -45,6 +45,9 @@ class ITGMediastreamPlatformPlayerAdapter: ITGPlayerAdapter {
                 self.delegate?.videoPaused(self.getCurrentTime(), userInitiated: false, isSeeking: false)
             }
         }
+        mdstrm.events.listenTo(eventName: "finish", action: {
+            self.delegate?.videoPaused(self.getCurrentTime(), userInitiated: false, isSeeking: false)
+        })
     }
     
     func startVideo(_ url: URL) {

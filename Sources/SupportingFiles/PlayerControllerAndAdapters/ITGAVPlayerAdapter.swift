@@ -61,14 +61,6 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
     
     open func setup() {
         registerObservers()
-#if os(tvOS)
-        if #available(tvOS 15.0, *), let playerViewController {
-            let action = UIAction(title: "Menu", image: UIImage(named: "menu")) { [weak self] _ in
-                self?.delegate?.menuButtonAction()
-            }
-            playerViewController.transportBarCustomMenuItems = [action]
-        }
-#endif
         playerViewController?.player = player
         playerViewController?.showsPlaybackControls = true
 #if os(tvOS)
@@ -182,7 +174,7 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
                 DispatchQueue.main.async { [weak self] in
                     guard let player = self?.player else { return }
                     let time = player.currentTime().seconds
-                    self?.delegate?.videoPaused(time, userInitiated: newStatus == .paused, isSeeking: self?.isSeeking == true && self?.timeJumpedTime != time)
+                    self?.delegate?.videoPaused(time, userInitiated: newStatus == .paused && self?.getCurrentTime() != self?.getVideoLength(), isSeeking: self?.isSeeking == true && self?.timeJumpedTime != time)
                     if newStatus == .playing {
                         self?.delegate?.videoPlaying(time)
                         self?.isSeeking = false

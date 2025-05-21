@@ -387,6 +387,8 @@ SWIFT_CLASS("_TtC11Inthegametv13ITGAnswerView")
 
 
 @protocol UIFocusEnvironment;
+@class UIPress;
+@class UIPressesEvent;
 @class UIEvent;
 
 SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
@@ -395,6 +397,7 @@ SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)didMoveToWindow;
+- (void)pressesBegan:(NSSet<UIPress *> * _Nonnull)presses withEvent:(UIPressesEvent * _Nullable)event;
 - (void)didUpdateFocusInContext:(UIFocusUpdateContext * _Nonnull)context withAnimationCoordinator:(UIFocusAnimationCoordinator * _Nonnull)coordinator;
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 @end
@@ -410,20 +413,6 @@ SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
 
 
 
-
-
-
-
-
-
-
-
-SWIFT_CLASS("_TtC11Inthegametv19ITGRatingAnswerView")
-@interface ITGRatingAnswerView : UIView
-- (void)awakeFromNib;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
 
 
 
@@ -452,8 +441,6 @@ SWIFT_CLASS("_TtC11Inthegametv15SpriteImageView")
 - (nonnull instancetype)initWithImage:(UIImage * _Nullable)image SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithImage:(UIImage * _Nullable)image highlightedImage:(UIImage * _Nullable)highlightedImage SWIFT_UNAVAILABLE;
 @end
-
-
 
 
 
@@ -864,6 +851,8 @@ SWIFT_CLASS("_TtC11Inthegametv13ITGAnswerView")
 
 
 @protocol UIFocusEnvironment;
+@class UIPress;
+@class UIPressesEvent;
 @class UIEvent;
 
 SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
@@ -872,6 +861,7 @@ SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)didMoveToWindow;
+- (void)pressesBegan:(NSSet<UIPress *> * _Nonnull)presses withEvent:(UIPressesEvent * _Nullable)event;
 - (void)didUpdateFocusInContext:(UIFocusUpdateContext * _Nonnull)context withAnimationCoordinator:(UIFocusAnimationCoordinator * _Nonnull)coordinator;
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 @end
@@ -887,20 +877,6 @@ SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
 
 
 
-
-
-
-
-
-
-
-
-SWIFT_CLASS("_TtC11Inthegametv19ITGRatingAnswerView")
-@interface ITGRatingAnswerView : UIView
-- (void)awakeFromNib;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
 
 
 
@@ -929,8 +905,6 @@ SWIFT_CLASS("_TtC11Inthegametv15SpriteImageView")
 - (nonnull instancetype)initWithImage:(UIImage * _Nullable)image SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithImage:(UIImage * _Nullable)image highlightedImage:(UIImage * _Nullable)highlightedImage SWIFT_UNAVAILABLE;
 @end
-
-
 
 
 

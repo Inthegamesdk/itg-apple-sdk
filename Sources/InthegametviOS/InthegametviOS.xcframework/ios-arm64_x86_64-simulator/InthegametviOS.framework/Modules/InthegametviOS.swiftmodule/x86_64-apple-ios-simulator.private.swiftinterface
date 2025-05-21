@@ -16,24 +16,6 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import libxml2
-public enum ITGMenuItem : Swift.String, Swift.CaseIterable, Swift.Decodable {
-  case account
-  case leaderboard
-  case shop
-  case chat
-  case stats
-  case `extension`
-  case debug
-  public init?(rawValue: Swift.String)
-  public typealias AllCases = [InthegametviOS.ITGMenuItem]
-  public typealias RawValue = Swift.String
-  nonisolated public static var allCases: [InthegametviOS.ITGMenuItem] {
-    get
-  }
-  public var rawValue: Swift.String {
-    get
-  }
-}
 public struct User : Swift.Codable {
   public var name: Swift.String? {
     get
@@ -89,15 +71,6 @@ public enum UserRole : Swift.String, Swift.Codable {
     get
   }
 }
-public enum LeaderboardDisplayMode : Swift.String, Swift.Codable {
-  case all
-  case registered
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
 public enum ChannelDirection : Swift.String, Swift.Codable {
   case ltr
   case rtl
@@ -116,7 +89,7 @@ public enum AnalyticsEventType : Swift.String, Swift.Codable {
   }
 }
 public enum AnalyticsParent : Swift.String, Swift.Codable {
-  case inject, clock, wiki, menu, poll, quiz, shop, sequence, product, app
+  case inject, clock, poll, quiz, sequence, app
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -124,7 +97,7 @@ public enum AnalyticsParent : Swift.String, Swift.Codable {
   }
 }
 public enum AnalyticsModule : Swift.String, Swift.Codable {
-  case quiz, poll, rating, wiki, product, shop, leaderboard, register, login, menu, stats, chat, account, flexi
+  case quiz, poll, register, login, flexi
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -133,17 +106,8 @@ public enum AnalyticsModule : Swift.String, Swift.Codable {
 }
 public enum ModuleType : Swift.String, Swift.Codable {
   case poll
-  case prediction
-  case rating
   case quiz
-  case wiki
-  case product
   case sequence
-  case account
-  case leaderboard
-  case shop
-  case chat
-  case stats
   case flexi
   case other
   public init?(rawValue: Swift.String)
@@ -153,38 +117,10 @@ public enum ModuleType : Swift.String, Swift.Codable {
   }
 }
 public struct UserPermissions : Swift.Codable {
-  public let rating: Swift.Bool
-  public let prediction: Swift.Bool
-  public let product: Swift.Bool
   public let quiz: Swift.Bool
   public let poll: Swift.Bool
-  public let wiki: Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
-}
-public struct LeaderboardResponse : Swift.Codable {
-  public var all: [InthegametviOS.LeaderboardItem]
-  public var myself: InthegametviOS.LeaderboardItem?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct LeaderboardItem : Swift.Codable {
-  public let rankingPosition: Swift.Int
-  public let userName: Swift.String
-  public let thumbnail: Swift.String?
-  public let totalCoins: Swift.Int?
-  public let totalExpoints: Swift.Int?
-  public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
-}
-public enum LeaderboardSorting : Swift.String, Swift.Decodable {
-  case expoints
-  case coins
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
 }
 public struct AnalyticsInfo : Swift.Codable {
   public let module: InthegametviOS.AnalyticsModule?
@@ -210,10 +146,6 @@ extension UIKit.UIDevice {
 @objc @_inheritsConvenienceInitializers public class ITGStorketHelper : ObjectiveC.NSObject {
   public func connect(accountId: Swift.String, channelSlug: Swift.String, environment: InthegametviOS.ITGEnvironment, token: Swift.String)
   public func stop()
-  public func connectChat(accountId: Swift.String, channelSlug: Swift.String, environment: InthegametviOS.ITGEnvironment, token: Swift.String)
-  public func stopChat()
-  public func connectStats(accountId: Swift.String, channelSlug: Swift.String, environment: InthegametviOS.ITGEnvironment, token: Swift.String)
-  public func stopStats()
   @objc override dynamic public init()
   @objc deinit
 }
@@ -242,10 +174,7 @@ public protocol ITGOverlayDelegate : AnyObject {
 }
 public enum ITGContent : Swift.String {
   case slip
-  case menu
-  case sidebar
   case popup
-  case notification
   case flexi
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
@@ -277,28 +206,13 @@ public enum ITGContent : Swift.String {
     get
     set
   }
-  @_Concurrency.MainActor @preconcurrency public var blockMenu: Swift.Bool {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public var blockNotifications: Swift.Bool {
-    get
-    set
-  }
   @_Concurrency.MainActor @preconcurrency public var blockSlip: Swift.Bool {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public var blockSidebar: Swift.Bool {
     get
     set
   }
   @_Concurrency.MainActor @preconcurrency public var injectionDelay: Swift.Int? {
     get
     set
-  }
-  @_Concurrency.MainActor @preconcurrency public var canOpenMenuFromRemote: Swift.Bool {
-    get
   }
   @_Concurrency.MainActor @preconcurrency public var adsMetadata: [Swift.Dictionary<Swift.String, Any>]? {
     get
@@ -317,43 +231,20 @@ public enum ITGContent : Swift.String {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func willMove(toWindow newWindow: UIKit.UIWindow?)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
-  @_Concurrency.MainActor @preconcurrency public func load(accountId: Swift.String, environment: InthegametviOS.ITGEnvironment = ITGEnvironment.defaultEnvironment, delegate: (any InthegametviOS.ITGOverlayDelegate)? = nil, foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil, userEmail: Swift.String? = nil, userPhone: Swift.String? = nil, userRole: InthegametviOS.UserRole, enableLogs: Swift.Bool = false)
   @_Concurrency.MainActor @preconcurrency public func load(channelSlug: Swift.String, virtualChannels: [Swift.String]? = [], accountId: Swift.String, environment: InthegametviOS.ITGEnvironment = ITGEnvironment.defaultEnvironment, delegate: (any InthegametviOS.ITGOverlayDelegate)?, language: Swift.String = "en", foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil, userEmail: Swift.String? = nil, userPhone: Swift.String? = nil, userRole: InthegametviOS.UserRole, videoView: UIKit.UIView, vars: [Swift.String : Any]? = nil, enableLogs: Swift.Bool = false)
-  @_Concurrency.MainActor @preconcurrency public func getLeaderboard(_ page: Swift.Int, limit: Swift.Int, period: InthegametviOS.LeaderboardPeriod, leaderboardSorting: InthegametviOS.LeaderboardSorting, leaderboardDisplayMode: InthegametviOS.LeaderboardDisplayMode, completion: @escaping (InthegametviOS.LeaderboardResponse?, (any Swift.Error)?) -> ())
   @_Concurrency.MainActor @preconcurrency public func resetUser()
   @_Concurrency.MainActor @preconcurrency public func closeInteractionIfNeeded() -> Swift.Bool
   @_Concurrency.MainActor @preconcurrency public func isDisplayingInteraction() -> Swift.Bool
-  @_Concurrency.MainActor @preconcurrency public func isDisplayingSidebar() -> Swift.Bool
   @_Concurrency.MainActor @preconcurrency public func videoPaused(time: Foundation.TimeInterval, userInitiated: Swift.Bool = false, isSeeking: Swift.Bool = false)
   @_Concurrency.MainActor @preconcurrency public func videoPlaying(time: Foundation.TimeInterval)
   @_Concurrency.MainActor @preconcurrency public func setLiveMode(enabled: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency public func injectActivity(_ activity: [Swift.String : Any])
   @_Concurrency.MainActor @preconcurrency public func injectFlexi(_ flexi: Swift.String)
   @_Concurrency.MainActor @preconcurrency public func injectFlexi(_ url: Foundation.URL)
-  @_Concurrency.MainActor @preconcurrency public func openMenu()
-  @_Concurrency.MainActor @preconcurrency public func openAccount()
-  @_Concurrency.MainActor @preconcurrency public func openLeaderboard()
-  @_Concurrency.MainActor @preconcurrency public func openShop()
-  @_Concurrency.MainActor @preconcurrency public func openChat()
-  @_Concurrency.MainActor @preconcurrency public func openStats()
-  @_Concurrency.MainActor @preconcurrency public func openExtension()
   @_Concurrency.MainActor @preconcurrency public func closeSlip()
-  @_Concurrency.MainActor @preconcurrency public func closeNotifications()
-  @_Concurrency.MainActor @preconcurrency public func closeFlexi()
-  @_Concurrency.MainActor @preconcurrency public func closeMenu()
-  @_Concurrency.MainActor @preconcurrency public func closeAccount()
-  @_Concurrency.MainActor @preconcurrency public func closeLeaderboard()
-  @_Concurrency.MainActor @preconcurrency public func closeShop()
-  @_Concurrency.MainActor @preconcurrency public func closeChat()
-  @_Concurrency.MainActor @preconcurrency public func closeStats()
-  @_Concurrency.MainActor @preconcurrency public func closeExtension()
-  @_Concurrency.MainActor @preconcurrency public func isMenuVisible() -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func closeFlexi(_ isUserInteraction: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency public func currentContent() -> [InthegametviOS.ITGContent]
-  @_Concurrency.MainActor @preconcurrency public func currentMenuPage() -> InthegametviOS.ITGMenuItem?
-  @_Concurrency.MainActor @preconcurrency public func closeAll(_ includingPauseAds: Swift.Bool = false)
-}
-extension InthegametviOS.ITGOverlayView {
-  @_Concurrency.MainActor @preconcurrency public func menuShouldClose()
+  @_Concurrency.MainActor @preconcurrency public func closeAll(_ includingPauseAds: Swift.Bool = false, isUserInteraction: Swift.Bool = false)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class ITGAnswerView : UIKit.UIView, InthegametviOS.NibView {
   @objc @IBOutlet @_Concurrency.MainActor @preconcurrency public var button: InthegametviOS.FocusTvButton!
@@ -401,12 +292,6 @@ public struct ITGEnvironment {
   public let settingsURL: Swift.String
   public init(envName: Swift.String)
   public init(apiBaseURL: Swift.String, imageBaseURL: Swift.String, envName: Swift.String, settingsURL: Swift.String)
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class ITGRatingAnswerView : UIKit.UIView, InthegametviOS.NibView {
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
 }
 public protocol NibView {
   static func nibName(_ isLandscapeiOS: Swift.Bool) -> Swift.String
@@ -563,35 +448,9 @@ prefix operator ^-^
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
 }
-public enum LeaderboardPeriod : Swift.String, Swift.CustomStringConvertible, Swift.CaseIterable, Swift.Codable {
-  case all
-  case week
-  case day
-  public var description: Swift.String {
-    get
-  }
-  public init?(rawValue: Swift.String)
-  public typealias AllCases = [InthegametviOS.LeaderboardPeriod]
-  public typealias RawValue = Swift.String
-  nonisolated public static var allCases: [InthegametviOS.LeaderboardPeriod] {
-    get
-  }
-  public var rawValue: Swift.String {
-    get
-  }
-}
-extension InthegametviOS.LeaderboardItem : Swift.Equatable {
-  public static func == (lhs: InthegametviOS.LeaderboardItem, rhs: InthegametviOS.LeaderboardItem) -> Swift.Bool
-}
-extension InthegametviOS.ITGMenuItem : Swift.Equatable {}
-extension InthegametviOS.ITGMenuItem : Swift.Hashable {}
-extension InthegametviOS.ITGMenuItem : Swift.RawRepresentable {}
 extension InthegametviOS.UserRole : Swift.Equatable {}
 extension InthegametviOS.UserRole : Swift.Hashable {}
 extension InthegametviOS.UserRole : Swift.RawRepresentable {}
-extension InthegametviOS.LeaderboardDisplayMode : Swift.Equatable {}
-extension InthegametviOS.LeaderboardDisplayMode : Swift.Hashable {}
-extension InthegametviOS.LeaderboardDisplayMode : Swift.RawRepresentable {}
 extension InthegametviOS.ChannelDirection : Swift.Equatable {}
 extension InthegametviOS.ChannelDirection : Swift.Hashable {}
 extension InthegametviOS.ChannelDirection : Swift.RawRepresentable {}
@@ -607,15 +466,9 @@ extension InthegametviOS.AnalyticsModule : Swift.RawRepresentable {}
 extension InthegametviOS.ModuleType : Swift.Equatable {}
 extension InthegametviOS.ModuleType : Swift.Hashable {}
 extension InthegametviOS.ModuleType : Swift.RawRepresentable {}
-extension InthegametviOS.LeaderboardSorting : Swift.Equatable {}
-extension InthegametviOS.LeaderboardSorting : Swift.Hashable {}
-extension InthegametviOS.LeaderboardSorting : Swift.RawRepresentable {}
 extension InthegametviOS.ITGContent : Swift.Equatable {}
 extension InthegametviOS.ITGContent : Swift.Hashable {}
 extension InthegametviOS.ITGContent : Swift.RawRepresentable {}
 extension InthegametviOS.ITGOverlayView.AutoBlockMode : Swift.Equatable {}
 extension InthegametviOS.ITGOverlayView.AutoBlockMode : Swift.Hashable {}
 extension InthegametviOS.ITGOverlayView.AutoBlockMode : Swift.RawRepresentable {}
-extension InthegametviOS.LeaderboardPeriod : Swift.Equatable {}
-extension InthegametviOS.LeaderboardPeriod : Swift.Hashable {}
-extension InthegametviOS.LeaderboardPeriod : Swift.RawRepresentable {}

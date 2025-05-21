@@ -235,23 +235,11 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         }
         if interfaceOrientation == .landscapeLeft || interfaceOrientation == .landscapeRight {
             overlayView?.constraintsFillSuperview(top: nil, leading: nil, trailing: nil)
-            if controllsVisible {
-                overlayView?.openMenu()
-            }
         } else {
             overlayView?.constraintsFillSuperview(top: nil, leading: nil, trailing: nil, verticalToSafeArea: true)
         }
     }
 #endif
-    
-    open func menuButtonAction() {
-        guard let overlay = overlayView, overlay.canOpenMenuFromRemote else { return }
-        if overlay.isMenuVisible() == true {
-            overlay.closeMenu()
-        } else {
-            overlay.openMenu()
-        }
-    }
     
     open func videoPlaying(_ time: TimeInterval) {
         overlayView?.videoPlaying(time: time)
@@ -265,17 +253,6 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     }
     
     open func videoControllsVisibilityChanged(_ isVisible: Bool) {
-#if os(iOS)
-        let interfaceOrientation = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.interfaceOrientation ?? view.window?.windowScene?.interfaceOrientation
-        if interfaceOrientation == .landscapeLeft || interfaceOrientation == .landscapeRight {
-            if isVisible {
-                overlayView?.openMenu()
-            } else {
-                overlayView?.closeMenu()
-            }
-        }
-        closeButton?.isHidden = !isVisible
-#endif
         controllsVisible = isVisible
 #if os(tvOS)
         if #available(tvOS 15.0, *) {
