@@ -11,9 +11,7 @@ Enter the Inthegametv SDK GitHub repository - ```https://github.com/Inthegamesdk
 
 Select the SDK version
 
-Select the tvOS or iOS version
-
-In your swift files: import Inthegametv or InthegametviOS module
+In your swift files: import Inthegametv 
 
 Package also contains ITGPlayerViewController which encapsulates player with overlay, and player adapters files that should be imported to corresponding targets if required. 
 
