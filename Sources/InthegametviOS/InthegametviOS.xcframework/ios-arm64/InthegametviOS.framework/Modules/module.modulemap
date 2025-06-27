@@ -1,0 +1,4 @@
+framework module InthegametviOS {
+  header "InthegametviOS-Swift.h"
+  requires objc
+}

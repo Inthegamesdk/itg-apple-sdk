@@ -6,15 +6,18 @@ import PackageDescription
 let package = Package(
     name: "Inthegametv",
     platforms: [
-       .tvOS(.v14)
+       .tvOS(.v14),
+       .iOS(.v14)
     ],
     products: [
+        .library(name: "InthegametviOS", targets: ["InthegametviOS", "Storket"]),
         .library(name: "Inthegametv", targets: ["Inthegametv", "Storket"]),
         .library(name: "ITGPlayerViewController", targets: ["ITGPlayerViewController"]),
         .library(name: "ITGBitmovinPlayerAdapter", targets: ["ITGBitmovinPlayerAdapter"])
     ],
     targets: [
         .binaryTarget(name: "Inthegametv", path: "Sources/Inthegametv/Inthegametv.xcframework"),
+        .binaryTarget(name: "InthegametviOS", path: "Sources/InthegametviOS/InthegametviOS.xcframework"),
         .binaryTarget(name: "Storket", path: "Sources/Storket/Storket.xcframework"),
         .target(name: "ITGPlayerViewController", path: "Sources/SupportingFiles/PlayerControllerAndAdapters/", sources: ["ITGAVPlayerAdapter.swift", "ITGPlayerAdapter.swift", "ITGPlayerViewController.swift"]),
         .target(name: "ITGBitmovinPlayerAdapter", dependencies: ["ITGPlayerViewController"], path: "Sources/SupportingFiles/PlayerControllerAndAdapters/", sources: ["ITGBitmovinPlayerAdapter.swift"])

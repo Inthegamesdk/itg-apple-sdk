@@ -16,7 +16,7 @@ import InthegametviOS
 
 open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPlayerAdapterDelegate {
     
-    lazy var closeButton: UIButton? = {
+    lazy var closeButton: UIButton = {
         let button = UIButton.init(type: .custom)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(closeButtonPressed), for: .touchUpInside)
@@ -51,31 +51,19 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     private var virtualChannels: [String]?
     private var accountId: String
     private var environment: ITGEnvironment
-    private var language: String?
     private var foreignId: String?
-    private var userName: String?
-    private var userAvatar: String?
-    private var userEmail: String?
-    private var userPhone: String?
-    private var userRole: UserRole
     private var shouldResetOverlayUser: Bool
     private var soundLevel: Float = 1
     private var vars: [String: Any]? = nil
     private var enableLogs: Bool
     private var didSetInitialFocus = false
     
-    public init(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, language: String = "en", foreignId: String? = nil, userName: String? = nil, userAvatar: String? = nil, userEmail: String? = nil, userPhone: String? = nil, userRole: UserRole = .user, vars: [String: Any]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false, enableLogs: Bool = false) {
+    public init(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, foreignId: String? = nil, vars: [String: Any]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false, enableLogs: Bool = false) {
         self.channelSlug = channelSlug
         self.virtualChannels = virtualChannels
         self.accountId = accountId
         self.environment = environment
-        self.language = language
         self.foreignId = foreignId
-        self.userName = userName
-        self.userAvatar = userAvatar
-        self.userRole = userRole
-        self.userEmail = userEmail
-        self.userPhone = userPhone
         self.shouldResetOverlayUser = shouldResetOverlayUser
         self.player = playerAdapter
         self.vars = vars
@@ -104,13 +92,16 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
 #else
         NotificationCenter.default.addObserver(self, selector: #selector(orientationDidChange), name: UIDevice.orientationDidChangeNotification, object: nil)
         orientationDidChange()
-        view.addSubview(closeButton!)
-        closeButton?.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 40).isActive = true
-        closeButton?.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8).isActive = true
+        view.addSubview(closeButton)
+        closeButton.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 8).isActive = true
+        closeButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8).isActive = true
 #endif
         setupOverlay()
         setupPlayer()
         player?.delegate = self
+#if os(iOS)
+        view.bringSubviewToFront(closeButton)
+#endif
     }
     
     open override func viewDidAppear(_ animated: Bool) {
@@ -127,6 +118,19 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     }
 #endif
     
+    open func reloadChannel(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, foreignId: String? = nil, vars: [String: Any]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false, enableLogs: Bool = false) {
+        self.channelSlug = channelSlug
+        self.virtualChannels = virtualChannels
+        self.accountId = accountId
+        self.environment = environment
+        self.foreignId = foreignId
+        self.shouldResetOverlayUser = shouldResetOverlayUser
+        self.player = playerAdapter
+        self.vars = vars
+        self.enableLogs = enableLogs
+        overlayView?.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: self, foreignId: foreignId, videoView: player!.getPlayerView()!, vars: vars, enableLogs: enableLogs)
+    }
+    
     open func toggleOverlayBlock(_ focusedItem: UIView?) {
         if autoBlock == .auto, let overlayView = self.overlayView, let playerView = player?.getPlayerView() {
             overlayView.autoBlockValue = focusedItem != nil && (focusedItem?.isDescendant(of: overlayView) != true || (focusedItem?.isDescendant(of: playerView) == true && controllsVisible) && !autoBlockDisregard.contains(where: { focusedItem?.isDescendant(of: $0) == true }))
@@ -140,7 +144,9 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     }
     
     open func startVideo(_ url: URL) {
-        closeButton?.isHidden = true
+#if os(iOS)
+        closeButton.isHidden = true
+#endif
         player?.startVideo(url)
         player?.play()
     }
@@ -163,8 +169,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         if shouldResetOverlayUser {
             overlayView?.resetUser()
         }
-        overlayView?.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: self, language: language!, foreignId: foreignId, userName: userName, userAvatar: userAvatar, userPhone: userPhone, userRole: userRole, videoView: player!.getPlayerView()!, vars: vars, enableLogs: enableLogs)
-        overlayView?.injectionDelay = nil
+        overlayView?.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: self, foreignId: foreignId, videoView: player!.getPlayerView()!, vars: vars, enableLogs: enableLogs)
     }
     
     @objc open func closeButtonPressed(_ sender: Any) {
@@ -258,6 +263,9 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         if #available(tvOS 15.0, *) {
             toggleOverlayBlock(view.window?.windowScene?.focusSystem?.focusedItem as? UIView)
         }
+#endif
+#if os(iOS)
+        closeButton.isHidden = !isVisible
 #endif
     }
     

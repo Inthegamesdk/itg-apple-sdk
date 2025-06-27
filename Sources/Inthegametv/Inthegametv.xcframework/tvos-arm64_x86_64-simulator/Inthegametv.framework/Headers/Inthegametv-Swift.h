@@ -354,45 +354,22 @@ SWIFT_CLASS("_TtC11Inthegametv13FocusTvButton")
 @end
 
 
+@class UIEvent;
 
-@class UIImageView;
-@class UILabel;
-@class NSLayoutConstraint;
-
-SWIFT_CLASS("_TtC11Inthegametv13ITGAnswerView")
-@interface ITGAnswerView : UIView
-@property (nonatomic, strong) IBOutlet FocusTvButton * _Null_unspecified button;
-@property (nonatomic, strong) IBOutlet FocusTvButton * _Null_unspecified secondaryButton;
-@property (nonatomic, strong) IBOutlet FocusTvButton * _Null_unspecified roundButton;
-@property (nonatomic, strong) IBOutlet UIImageView * _Nullable mainImageView;
-@property (nonatomic, strong) IBOutlet UIImageView * _Nullable secondaryImageView;
-@property (nonatomic, strong) IBOutlet UILabel * _Nullable pollPercentageLabel;
-@property (nonatomic, strong) IBOutlet UILabel * _Nullable coinsLabel;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable mainImageHeightConstraint;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable mainImageWidthConstraint;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable secondaryImageHeightConstraint;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable secondaryImageWidthConstraint;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable secondaryButtonBottom;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable secondaryImageTrailingToButton;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable secondaryImageLeadeingToMainImage;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable secondaryImageVerticalCenterToMainImage;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable pollPercentageLabelCenterMainImageConstaint;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable pollPercentageLabelBottomMainImageConstaint;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable buttonVerticalCenterConstraint;
+SWIFT_CLASS("_TtC11Inthegametv15PassthroughView")
+@interface PassthroughView : UIView
 - (void)didUpdateFocusInContext:(UIFocusUpdateContext * _Nonnull)context withAnimationCoordinator:(UIFocusAnimationCoordinator * _Nonnull)coordinator;
-- (void)awakeFromNib;
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
 @protocol UIFocusEnvironment;
 @class UIPress;
 @class UIPressesEvent;
-@class UIEvent;
 
 SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
-@interface ITGOverlayView : UIView
+@interface ITGOverlayView : PassthroughView
 @property (nonatomic, readonly, copy) NSArray<id <UIFocusEnvironment>> * _Nonnull preferredFocusEnvironments;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -410,37 +387,12 @@ SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
 
 
 
-
-
-
-
-
-
 SWIFT_CLASS("_TtC11Inthegametv16ITGStorketHelper")
 @interface ITGStorketHelper : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-
-
-SWIFT_CLASS("_TtC11Inthegametv15PassthroughView")
-@interface PassthroughView : UIView
-- (void)didUpdateFocusInContext:(UIFocusUpdateContext * _Nonnull)context withAnimationCoordinator:(UIFocusAnimationCoordinator * _Nonnull)coordinator;
-- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UIImage;
-
-SWIFT_CLASS("_TtC11Inthegametv15SpriteImageView")
-@interface SpriteImageView : UIImageView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image SWIFT_UNAVAILABLE;
-- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image highlightedImage:(UIImage * _Nullable)highlightedImage SWIFT_UNAVAILABLE;
-@end
 
 
 
@@ -818,45 +770,22 @@ SWIFT_CLASS("_TtC11Inthegametv13FocusTvButton")
 @end
 
 
+@class UIEvent;
 
-@class UIImageView;
-@class UILabel;
-@class NSLayoutConstraint;
-
-SWIFT_CLASS("_TtC11Inthegametv13ITGAnswerView")
-@interface ITGAnswerView : UIView
-@property (nonatomic, strong) IBOutlet FocusTvButton * _Null_unspecified button;
-@property (nonatomic, strong) IBOutlet FocusTvButton * _Null_unspecified secondaryButton;
-@property (nonatomic, strong) IBOutlet FocusTvButton * _Null_unspecified roundButton;
-@property (nonatomic, strong) IBOutlet UIImageView * _Nullable mainImageView;
-@property (nonatomic, strong) IBOutlet UIImageView * _Nullable secondaryImageView;
-@property (nonatomic, strong) IBOutlet UILabel * _Nullable pollPercentageLabel;
-@property (nonatomic, strong) IBOutlet UILabel * _Nullable coinsLabel;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable mainImageHeightConstraint;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable mainImageWidthConstraint;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable secondaryImageHeightConstraint;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable secondaryImageWidthConstraint;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable secondaryButtonBottom;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable secondaryImageTrailingToButton;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable secondaryImageLeadeingToMainImage;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable secondaryImageVerticalCenterToMainImage;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable pollPercentageLabelCenterMainImageConstaint;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable pollPercentageLabelBottomMainImageConstaint;
-@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable buttonVerticalCenterConstraint;
+SWIFT_CLASS("_TtC11Inthegametv15PassthroughView")
+@interface PassthroughView : UIView
 - (void)didUpdateFocusInContext:(UIFocusUpdateContext * _Nonnull)context withAnimationCoordinator:(UIFocusAnimationCoordinator * _Nonnull)coordinator;
-- (void)awakeFromNib;
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
 @protocol UIFocusEnvironment;
 @class UIPress;
 @class UIPressesEvent;
-@class UIEvent;
 
 SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
-@interface ITGOverlayView : UIView
+@interface ITGOverlayView : PassthroughView
 @property (nonatomic, readonly, copy) NSArray<id <UIFocusEnvironment>> * _Nonnull preferredFocusEnvironments;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -874,37 +803,12 @@ SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
 
 
 
-
-
-
-
-
-
 SWIFT_CLASS("_TtC11Inthegametv16ITGStorketHelper")
 @interface ITGStorketHelper : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-
-
-SWIFT_CLASS("_TtC11Inthegametv15PassthroughView")
-@interface PassthroughView : UIView
-- (void)didUpdateFocusInContext:(UIFocusUpdateContext * _Nonnull)context withAnimationCoordinator:(UIFocusAnimationCoordinator * _Nonnull)coordinator;
-- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UIImage;
-
-SWIFT_CLASS("_TtC11Inthegametv15SpriteImageView")
-@interface SpriteImageView : UIImageView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image SWIFT_UNAVAILABLE;
-- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image highlightedImage:(UIImage * _Nullable)highlightedImage SWIFT_UNAVAILABLE;
-@end
 
 
 

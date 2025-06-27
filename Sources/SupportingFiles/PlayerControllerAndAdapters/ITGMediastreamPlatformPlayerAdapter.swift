@@ -5,12 +5,13 @@
 //  Created by ilya khymych on 04.04.2025.
 //
 
-import MediastreamPlatformSDKAppleTV
 import AVKit
 #if os(tvOS)
 import Inthegametv
+import MediastreamPlatformSDKAppleTV
 #else
 import InthegametviOS
+import MediastreamPlatformSDKiOS
 #endif
 #if canImport(ITGPlayerViewController)
 import ITGPlayerViewController
