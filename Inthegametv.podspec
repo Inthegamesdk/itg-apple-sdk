@@ -7,8 +7,8 @@ Pod::Spec.new do |s|
     s.license = { :type => "Commercial", :text => "See www.inthegame.io" }
     s.author       = { "Inthegame" => "itai@inthegame.io" }
     s.source       = { :git => "https://github.com/Inthegamesdk/itg-apple-sdk.git", :tag => s.version.to_s }
--   s.platform = :ios, :tvos
--   s.ios.deployment_target  = '14.3'
+    s.platform = :ios, :tvos
+    s.ios.deployment_target  = '14.0'
     s.tvos.deployment_target  = '14.0'
     s.requires_arc = true
     s.ios.vendored_frameworks = "**/**/InthegametviOS.xcframework", "**/**/Storket.xcframework"
