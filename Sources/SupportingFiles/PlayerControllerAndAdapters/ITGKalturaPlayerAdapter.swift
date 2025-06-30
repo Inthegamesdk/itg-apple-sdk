@@ -9,15 +9,6 @@ import Foundation
 import KalturaPlayer
 import PlayKit
 import AVKit
-#if os(tvOS)
-import Inthegametv
-#else
-import InthegametviOS
-#endif
-#if canImport(ITGPlayerViewController)
-import ITGPlayerViewController
-#endif
-
 
 open class ITGKalturaPlayerAdapter: NSObject, ITGPlayerAdapter {
     

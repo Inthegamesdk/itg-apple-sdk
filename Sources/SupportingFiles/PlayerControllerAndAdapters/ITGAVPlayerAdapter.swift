@@ -7,11 +7,6 @@
 
 import Foundation
 import AVKit
-#if os(tvOS)
-import Inthegametv
-#else
-import InthegametviOS
-#endif
 
 open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
     
