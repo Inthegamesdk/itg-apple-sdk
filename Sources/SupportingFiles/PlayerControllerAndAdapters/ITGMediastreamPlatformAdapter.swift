@@ -18,7 +18,7 @@ import ITGPlayerViewController
 #endif
 
 
-class ITGMediastreamPlatformPlayerAdapter: ITGPlayerAdapter {
+class ITGMediastreamPlatformAdapter: ITGPlayerAdapter {
     
     weak public var delegate: ITGPlayerAdapterDelegate?
     var mdstrm: MediastreamPlatformSDK
