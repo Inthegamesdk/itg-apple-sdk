@@ -9,6 +9,10 @@ import SwiftUI
 import Foundation
 import AVKit
 import BitmovinPlayer
+#if canImport(ITGPlayerViewController)
+import ITGPlayerViewController
+#endif
+
 
 open class ITGBitmovinPlayerAdapter: NSObject, ITGPlayerAdapter {
     
@@ -44,7 +48,7 @@ open class ITGBitmovinPlayerAdapter: NSObject, ITGPlayerAdapter {
         setup()
     }
     
-    open func setup() {
+    public func setup() {
         player.add(listener: self)
         DispatchQueue.main.async {
             self.playerViewUIKit?.add(listener: self)
@@ -52,46 +56,46 @@ open class ITGBitmovinPlayerAdapter: NSObject, ITGPlayerAdapter {
     }
     
     
-    open func startVideo(_ url: URL) {
+    public func startVideo(_ url: URL) {
         player.load(sourceConfig: SourceConfig(url: url)!)
     }
     
-    open func getPlayerView() -> UIView? {
+    public func getPlayerView() -> UIView? {
         return playerViewUIKit ?? hostingController?.view ?? playerViewController?.view
     }
     
-    open func getVideoResolution() -> CGSize {
+    public func getVideoResolution() -> CGSize {
         if let playerView = getPlayerView() {
             return ((playerView.deepSubviews() + [playerView]).compactMap({ [$0.layer] + $0.layer.deepSublayers() }).flatMap({ $0 }).first(where: { $0 is AVPlayerLayer }) as? AVPlayerLayer)?.videoRect.size ?? .zero
         }
         return .zero
     }
     
-    open func isPlaying() -> Bool {
+    public func isPlaying() -> Bool {
         return player.isPlaying
     }
     
-    open func play() {
+    public func play() {
         player.play()
     }
     
-    open func pause() {
+    public func pause() {
         player.pause()
     }
     
-    open func seek(_ time: TimeInterval) {
+    public func seek(_ time: TimeInterval) {
         player.seek(time: time)
     }
     
-    open func getCurrentTime() -> TimeInterval {
+    public func getCurrentTime() -> TimeInterval {
         return player.currentTime
     }
     
-    open func getVideoLength() -> TimeInterval {
+    public func getVideoLength() -> TimeInterval {
         return player.duration
     }
     
-    open func setVideoGravity(_ videoGravity: AVLayerVideoGravity) {
+    public func setVideoGravity(_ videoGravity: AVLayerVideoGravity) {
         DispatchQueue.main.async {
             if let playerViewController = self.playerViewController {
                 playerViewController.videoGravity = videoGravity
@@ -114,11 +118,11 @@ open class ITGBitmovinPlayerAdapter: NSObject, ITGPlayerAdapter {
         }
     }
     
-    open func setSoundLevel(_ soundLevel: Float) {
+    public func setSoundLevel(_ soundLevel: Float) {
         player.volume = Int(soundLevel*100)
     }
     
-    open func getSoundLevel() -> Float {
+    public func getSoundLevel() -> Float {
         return Float(Double(player.volume)/100)
     }
     
@@ -126,19 +130,19 @@ open class ITGBitmovinPlayerAdapter: NSObject, ITGPlayerAdapter {
 
 extension ITGBitmovinPlayerAdapter: PlayerListener {
     
-    open func onPlaying(_ event: BitmovinPlayerCore.PlayingEvent, player: any Player) {
+    public func onPlaying(_ event: BitmovinPlayerCore.PlayingEvent, player: any Player) {
         delegate?.videoPlaying(getCurrentTime())
     }
     
-    open func onPaused(_ event: BitmovinPlayerCore.PausedEvent, player: any Player) {
+    public func onPaused(_ event: BitmovinPlayerCore.PausedEvent, player: any Player) {
         delegate?.videoPaused(getCurrentTime(), userInitiated: true, isSeeking: false)
     }
     
-    open func onPlaybackFinished(_ event: BitmovinPlayerCore.PlaybackFinishedEvent, player: any Player) {
+    public func onPlaybackFinished(_ event: BitmovinPlayerCore.PlaybackFinishedEvent, player: any Player) {
         delegate?.videoPaused(getCurrentTime(), userInitiated: false, isSeeking: false)
     }
     
-    open func onSeeked(_ event: BitmovinPlayerCore.SeekedEvent, player: any Player) {
+    public func onSeeked(_ event: BitmovinPlayerCore.SeekedEvent, player: any Player) {
         if isPlaying() {
             delegate?.videoPlaying(getCurrentTime())
         } else {
@@ -146,7 +150,7 @@ extension ITGBitmovinPlayerAdapter: PlayerListener {
         }
     }
 
-    open func onTimeShifted(_ event: BitmovinPlayerCore.TimeShiftedEvent, player: any Player) {
+    public func onTimeShifted(_ event: BitmovinPlayerCore.TimeShiftedEvent, player: any Player) {
         if isPlaying() {
             delegate?.videoPlaying(getCurrentTime())
         } else {
@@ -154,11 +158,11 @@ extension ITGBitmovinPlayerAdapter: PlayerListener {
         }
     }
     
-    open func onStallStarted(_ event: BitmovinPlayerCore.StallStartedEvent, player: any Player) {
+    public func onStallStarted(_ event: BitmovinPlayerCore.StallStartedEvent, player: any Player) {
         delegate?.videoPaused(getCurrentTime(), userInitiated: false, isSeeking: false)
     }
     
-    open func onStallEnded(_ event: BitmovinPlayerCore.StallEndedEvent, player: any Player) {
+    public func onStallEnded(_ event: BitmovinPlayerCore.StallEndedEvent, player: any Player) {
         if isPlaying() {
             delegate?.videoPlaying(getCurrentTime())
         } else {
@@ -170,11 +174,11 @@ extension ITGBitmovinPlayerAdapter: PlayerListener {
 
 extension ITGBitmovinPlayerAdapter: UserInterfaceListener {
     
-    open nonisolated func onControlsHide(_ event: ControlsHideEvent, view: PlayerView) {
+    public nonisolated func onControlsHide(_ event: ControlsHideEvent, view: PlayerView) {
         delegate?.videoControllsVisibilityChanged(false)
     }
     
-    open nonisolated func onControlsShow(_ event: ControlsShowEvent, view: PlayerView) {
+    public nonisolated func onControlsShow(_ event: ControlsShowEvent, view: PlayerView) {
         delegate?.videoControllsVisibilityChanged(true)
     }
     

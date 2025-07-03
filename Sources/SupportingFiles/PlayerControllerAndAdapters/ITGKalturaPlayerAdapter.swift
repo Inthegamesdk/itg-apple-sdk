@@ -9,6 +9,9 @@ import Foundation
 import KalturaPlayer
 import PlayKit
 import AVKit
+#if canImport(ITGPlayerViewController)
+import ITGPlayerViewController
+#endif
 
 open class ITGKalturaPlayerAdapter: NSObject, ITGPlayerAdapter {
     

@@ -6,13 +6,16 @@
 //
 
 import AVKit
-#if os(tvOS)
+#if os(tvOS) && canImport(MediastreamPlatformSDKAppleTV)
 import MediastreamPlatformSDKAppleTV
-#elseif os(iOS) 
+#elseif os(iOS) && canImport(MediastreamPlatformSDKiOS)
 import MediastreamPlatformSDKiOS
 #endif
+#if canImport(ITGPlayerViewController)
+import ITGPlayerViewController
+#endif
 
-open class ITGMediastreamPlatformAdapter: ITGPlayerAdapter {
+class ITGMediastreamPlatformAdapter: ITGPlayerAdapter {
     
     weak public var delegate: ITGPlayerAdapterDelegate?
     var mdstrm: MediastreamPlatformSDK
@@ -26,7 +29,7 @@ open class ITGMediastreamPlatformAdapter: ITGPlayerAdapter {
         mdstrm.events.removeListeners(eventNameToRemoveOrNil: nil)
     }
     
-    open func setup() {
+    func setup() {
         mdstrm.events.listenTo(eventName: "play") {
             self.delegate?.videoPlaying(self.getCurrentTime())
         }
@@ -45,15 +48,15 @@ open class ITGMediastreamPlatformAdapter: ITGPlayerAdapter {
         })
     }
     
-    open func startVideo(_ url: URL) {
+    func startVideo(_ url: URL) {
  
     }
     
-    open func getPlayerView() -> UIView? {
+    func getPlayerView() -> UIView? {
         mdstrm.view
     }
     
-    open func getVideoResolution() -> CGSize {
+    func getVideoResolution() -> CGSize {
         let resolution = mdstrm.getResolution()
         let components = resolution.split(separator: "x")
         if components.count == 2, let width = Double(components.first!), let height = Double(components.last!) {
@@ -63,31 +66,31 @@ open class ITGMediastreamPlatformAdapter: ITGPlayerAdapter {
         }
     }
     
-    open func isPlaying() -> Bool {
+    func isPlaying() -> Bool {
         mdstrm.checkIsPlaying()
     }
     
-    open func play() {
+    func play() {
         mdstrm.play()
     }
     
-    open func pause() {
+    func pause() {
         mdstrm.pause()
     }
     
-    open func seek(_ time: TimeInterval) {
+    func seek(_ time: TimeInterval) {
         mdstrm.seekTo(time)
     }
     
-    open func getCurrentTime() -> TimeInterval {
+    func getCurrentTime() -> TimeInterval {
         return Double(mdstrm.getCurrentTime()/1000)
     }
     
-    open func getVideoLength() -> TimeInterval {
+    func getVideoLength() -> TimeInterval {
         return Double(mdstrm.getDuration())
     }
     
-    open func setVideoGravity(_ videoGravity: AVLayerVideoGravity) {
+    func setVideoGravity(_ videoGravity: AVLayerVideoGravity) {
         if let playerViewController = mdstrm.playerViewController {
             playerViewController.videoGravity = videoGravity
         } else {
@@ -95,11 +98,11 @@ open class ITGMediastreamPlatformAdapter: ITGPlayerAdapter {
         }
     }
     
-    open func setSoundLevel(_ soundLevel: Float) {
+    func setSoundLevel(_ soundLevel: Float) {
         mdstrm.volume = Int(soundLevel*100)
     }
     
-    open func getSoundLevel() -> Float {
+    func getSoundLevel() -> Float {
         return Float(mdstrm.volume/100)
     }
     
