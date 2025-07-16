@@ -328,15 +328,6 @@ public struct UserActivity : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public enum ChannelDirection : Swift.String, Swift.Codable {
-  case ltr
-  case rtl
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
 public enum AnalyticsEventType : Swift.String, Swift.Codable {
   case view, engage, close, register, login
   public init?(rawValue: Swift.String)
@@ -462,9 +453,6 @@ public enum ITGContent : Swift.String {
   @_Concurrency.MainActor @preconcurrency public var adsMetadata: [Swift.Dictionary<Swift.String, Any>]? {
     get
     set
-  }
-  @_Concurrency.MainActor @preconcurrency public var direction: InthegametviOS.ChannelDirection? {
-    get
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public var preferredFocusEnvironments: [any UIKit.UIFocusEnvironment] {
     @objc get
@@ -657,9 +645,6 @@ extension Swift.UnkeyedEncodingContainer {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func sendActions(for controlEvents: UIKit.UIControl.Event)
   @objc deinit
 }
-extension InthegametviOS.ChannelDirection : Swift.Equatable {}
-extension InthegametviOS.ChannelDirection : Swift.Hashable {}
-extension InthegametviOS.ChannelDirection : Swift.RawRepresentable {}
 extension InthegametviOS.AnalyticsEventType : Swift.Equatable {}
 extension InthegametviOS.AnalyticsEventType : Swift.Hashable {}
 extension InthegametviOS.AnalyticsEventType : Swift.RawRepresentable {}
