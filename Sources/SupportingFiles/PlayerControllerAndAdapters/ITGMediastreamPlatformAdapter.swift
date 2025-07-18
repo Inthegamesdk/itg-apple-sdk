@@ -83,7 +83,7 @@ open class ITGMediastreamPlatformAdapter: ITGPlayerAdapter {
     }
     
     open func getCurrentTime() -> TimeInterval {
-        return Double(mdstrm.getCurrentTime()/1000)
+        return Double(mdstrm.getCurrentTime())/1000
     }
     
     open func getVideoLength() -> TimeInterval {
@@ -103,7 +103,7 @@ open class ITGMediastreamPlatformAdapter: ITGPlayerAdapter {
     }
     
     open func getSoundLevel() -> Float {
-        return Float(mdstrm.volume/100)
+        return Float(mdstrm.volume)/100
     }
     
 }
