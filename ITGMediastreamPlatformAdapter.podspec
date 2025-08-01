@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "ITGMediastreamPlatformAdapter"
-    s.version      = "2.6.25"
+    s.version      = "2.6.26"
     s.summary      = "Inthegametv adapter for MediastreamPlatform"
     s.description  = "Inthegametv adapter for MediastreamPlatform"
     s.homepage     = "www.inthegame.io"
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.platform = :ios, :tvos
     s.ios.deployment_target  = '14.0'
     s.tvos.deployment_target  = '14.0'
-    s.dependency 'Inthegametv', '~> 2.6.25'
+    s.dependency 'Inthegametv', '~> 2.6.26'
     s.ios.dependency 'MediastreamPlatformSDKxC', '~> 2.0.2'
     s.tvos.dependency 'MediastreamPlatformSDKAppleTV', '~> 0.3.5'
     s.source_files = '**/**/**/ITGMediastreamPlatformAdapter.swift', '**/**/**/ITGPlayerAdapter.swift', '**/**/**/ITGPlayerViewController.swift'
