@@ -16,16 +16,26 @@ import InthegametviOS
 
 open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPlayerAdapterDelegate {
     
-    lazy var closeButton: UIButton = {
+#if os(iOS)
+    public enum CloseButtonVisibilityMode: String {
+        
+        case always
+        case whilePlayerControlsVisible
+        case hidden
+        
+    }
+    
+    open lazy var closeButton: UIButton = {
         let button = UIButton.init(type: .custom)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(closeButtonPressed), for: .touchUpInside)
-        button.setImage(UIImage(named: "close"), for: .normal)
+        button.setImage(UIImage(named: "close", in: Bundle(for: ITGOverlayView.self), compatibleWith: nil), for: .normal)
         button.widthAnchor.constraint(equalToConstant: 40).isActive = true
         button.heightAnchor.constraint(equalToConstant: 40).isActive = true
         button.tintColor = .white
         return button
     }()
+#endif
     open override var preferredFocusEnvironments: [any UIFocusEnvironment] {
         return customPreferredFocusEnvironments ?? [view]
     }
@@ -33,6 +43,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     open override var prefersHomeIndicatorAutoHidden: Bool {
         return true
     }
+    public var closeButtonVisibilityMode: CloseButtonVisibilityMode = .whilePlayerControlsVisible
 #endif
     public var overlayView: ITGOverlayView?
     public var autoBlock: ITGOverlayView.AutoBlockMode = .disabled
@@ -75,6 +86,10 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         fatalError("init(coder:) has not been implemented")
     }
     
+    deinit {
+        removePlayer()
+    }
+    
     open override func loadView() {
         view = FocusObservableView()
 #if os(tvOS)
@@ -92,6 +107,9 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
 #else
         NotificationCenter.default.addObserver(self, selector: #selector(orientationDidChange), name: UIDevice.orientationDidChangeNotification, object: nil)
         orientationDidChange()
+        if closeButtonVisibilityMode == .hidden {
+            closeButton.isHidden = true
+        }
         view.addSubview(closeButton)
         closeButton.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 8).isActive = true
         closeButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8).isActive = true
@@ -145,7 +163,9 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     
     open func startVideo(_ url: URL) {
 #if os(iOS)
-        closeButton.isHidden = true
+        if closeButtonVisibilityMode != .always {
+            closeButton.isHidden = true
+        }
 #endif
         player?.startVideo(url)
         player?.play()
@@ -176,7 +196,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         if let navigationController {
             navigationController.popViewController(animated: true)
             removePlayer()
-        } else {
+        } else if let _ = presentingViewController {
             dismiss(animated: true) {
                 self.removePlayer()
             }
@@ -265,7 +285,9 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         }
 #endif
 #if os(iOS)
-        closeButton.isHidden = !isVisible
+        if closeButtonVisibilityMode == .whilePlayerControlsVisible {
+            closeButton.isHidden = !isVisible
+        }
 #endif
     }
     
