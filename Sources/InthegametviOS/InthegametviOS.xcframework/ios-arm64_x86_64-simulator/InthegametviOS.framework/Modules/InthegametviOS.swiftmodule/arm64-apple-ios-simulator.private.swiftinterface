@@ -412,15 +412,9 @@ public protocol ITGOverlayDelegate : AnyObject {
   func overlayRequestedVideoSoundLevel(_ soundLevel: Swift.Float)
   func overlayRequestedResetVideoSoundLevel()
 }
-public enum ITGContent : Swift.String {
-  case slip
-  case popup
-  case flexi
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
+public enum ITGContent {
+  case qrview
+  case flexi(interactive: Swift.Bool)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class ITGOverlayView : InthegametviOS.PassthroughView {
   public enum AutoBlockMode : Swift.String {
@@ -657,9 +651,6 @@ extension InthegametviOS.AnalyticsModule : Swift.RawRepresentable {}
 extension InthegametviOS.ModuleType : Swift.Equatable {}
 extension InthegametviOS.ModuleType : Swift.Hashable {}
 extension InthegametviOS.ModuleType : Swift.RawRepresentable {}
-extension InthegametviOS.ITGContent : Swift.Equatable {}
-extension InthegametviOS.ITGContent : Swift.Hashable {}
-extension InthegametviOS.ITGContent : Swift.RawRepresentable {}
 extension InthegametviOS.ITGOverlayView.AutoBlockMode : Swift.Equatable {}
 extension InthegametviOS.ITGOverlayView.AutoBlockMode : Swift.Hashable {}
 extension InthegametviOS.ITGOverlayView.AutoBlockMode : Swift.RawRepresentable {}

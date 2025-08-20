@@ -173,15 +173,9 @@ public protocol ITGOverlayDelegate : AnyObject {
   func overlayRequestedVideoSoundLevel(_ soundLevel: Swift.Float)
   func overlayRequestedResetVideoSoundLevel()
 }
-public enum ITGContent : Swift.String {
-  case slip
-  case popup
-  case flexi
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
+public enum ITGContent {
+  case qrview
+  case flexi(interactive: Swift.Bool)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class ITGOverlayView : Inthegametv.PassthroughView {
   public enum AutoBlockMode : Swift.String {
@@ -217,6 +211,9 @@ public enum ITGContent : Swift.String {
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public var preferredFocusEnvironments: [any UIKit.UIFocusEnvironment] {
     @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency public var hasFocus: Swift.Bool {
+    get
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
@@ -717,9 +714,6 @@ extension Inthegametv.WebPDecodingError : Swift.Hashable {}
 extension Inthegametv.WebPDecodingError : Swift.RawRepresentable {}
 extension Inthegametv.WebPScalingMode : Swift.Equatable {}
 extension Inthegametv.WebPScalingMode : Swift.Hashable {}
-extension Inthegametv.ITGContent : Swift.Equatable {}
-extension Inthegametv.ITGContent : Swift.Hashable {}
-extension Inthegametv.ITGContent : Swift.RawRepresentable {}
 extension Inthegametv.ITGOverlayView.AutoBlockMode : Swift.Equatable {}
 extension Inthegametv.ITGOverlayView.AutoBlockMode : Swift.Hashable {}
 extension Inthegametv.ITGOverlayView.AutoBlockMode : Swift.RawRepresentable {}

@@ -100,6 +100,7 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
         player?.pause()
 #if os(tvOS)
         playerViewController?.showsPlaybackControls = false
+        playerViewController?.showsPlaybackControls = true
         delegate?.videoControllsVisibilityChanged(false)
 #endif
     }

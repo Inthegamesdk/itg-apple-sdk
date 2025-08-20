@@ -121,7 +121,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         view.bringSubviewToFront(closeButton)
 #endif
     }
-    
+  
     open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         moveFocusToPlayerView()
@@ -204,20 +204,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     }
     
     @objc open func remoteMenuButtonAction(recognizer: UITapGestureRecognizer) {
-        let backButtonHandled = overlayView?.closeInteractionIfNeeded() ?? false
-        if !backButtonHandled {
-            closeButtonPressed(self)
-        }
-    }
-    
-    @objc open func remotePlayPauseButtonAction(recognizer: UITapGestureRecognizer) {
-        overlayView?.closeAll()
-        if player?.isPlaying() == true {
-            player?.pause()
-        } else {
-            player?.play()
-            moveFocusToPlayerView()
-        }
+        //adding gesture for menu button disables passing menu key event further up on responder chain
     }
     
     func removePlayer() {
@@ -226,15 +213,27 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         player = nil
     }
     
+#if os(tvOS)
+    open override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
+        for press in presses {
+            switch press.type {
+            case .menu:
+                let backButtonHandled = overlayView?.closeInteractionIfNeeded() ?? false
+                if !backButtonHandled {
+                    closeButtonPressed(self)
+                }
+            default:
+                super.pressesBegan(presses, with: event)
+            }
+        }
+    }
+#endif
+    
     private func configureRemoteButtonsHandlers() {
         let menuPressRecognizer = UITapGestureRecognizer()
         menuPressRecognizer.addTarget(self, action: #selector(remoteMenuButtonAction(recognizer:)))
         menuPressRecognizer.allowedPressTypes = [NSNumber(value: UIPress.PressType.menu.rawValue)]
         view.addGestureRecognizer(menuPressRecognizer)
-        let playPausePressRecognizer = UITapGestureRecognizer()
-        playPausePressRecognizer.addTarget(self, action: #selector(remotePlayPauseButtonAction(recognizer:)))
-        playPausePressRecognizer.allowedPressTypes = [NSNumber(value: UIPress.PressType.playPause.rawValue)]
-        view.addGestureRecognizer(playPausePressRecognizer)
     }
     
     private func moveFocusToPlayerView() {
