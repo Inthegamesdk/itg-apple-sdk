@@ -197,10 +197,6 @@ public enum ITGContent {
     get
     set
   }
-  @_Concurrency.MainActor @preconcurrency public var blockAll: Swift.Bool {
-    get
-    set
-  }
   @_Concurrency.MainActor @preconcurrency public var injectionDelay: Swift.Int? {
     get
     set
@@ -234,6 +230,7 @@ public enum ITGContent {
   @_Concurrency.MainActor @preconcurrency public func injectFlexi(_ url: Foundation.URL)
   @_Concurrency.MainActor @preconcurrency public func closeFlexi(_ isUserInteraction: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency public func currentContent() -> [Inthegametv.ITGContent]
+  @_Concurrency.MainActor @preconcurrency public func blockAll(_ block: Swift.Bool, includingPauseAds: Swift.Bool = false)
   @_Concurrency.MainActor @preconcurrency public func closeAll(_ includingPauseAds: Swift.Bool = false, isUserInteraction: Swift.Bool = false, animated: Swift.Bool = true)
 }
 extension Foundation.URL {
