@@ -371,4 +371,12 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         player?.setSoundLevel(soundLevel)
     }
     
+    open func overlayWillChangeVideoRect(_ rect: CGRect, animationDuration: TimeInterval) {
+
+    }
+    
+    open func overlayWillResetVideoRect(_ animationDuration: TimeInterval) {
+
+    }
+    
 }
