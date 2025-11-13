@@ -6,44 +6,65 @@
 //
 
 import AVKit
-#if os(tvOS) && canImport(MediastreamPlatformSDKAppleTV)
-import MediastreamPlatformSDKAppleTV
-#elseif os(iOS) && canImport(MediastreamPlatformSDKiOS)
-import MediastreamPlatformSDKiOS
-#endif
 #if canImport(ITGPlayerViewController)
 import ITGPlayerViewController
 #endif
 
+public protocol ITGMediastreamPlatform {
+    
+    var view: UIView! { get }
+    var playerLayer: AVPlayerLayer? { get }
+    var playerViewController: AVPlayerViewController? { get }
+    var volume: Int { get set }
+    func play()
+    func pause()
+    func getResolution() -> String
+    func checkIsPlaying() -> Bool
+    func seekTo(_ time: Double)
+    func getCurrentTime() -> Int64
+    func getDuration() -> Int
+    
+}
+
+public protocol ITGMediastreamPlatformEventManager {
+    
+    func listenTo(eventName: String, action: @escaping () -> ())
+    func listenTo(eventName: String, action: @escaping (Any?) -> ())
+    func removeListeners(eventNameToRemoveOrNil: String?)
+    
+}
+
 open class ITGMediastreamPlatformAdapter: ITGPlayerAdapter {
     
     weak public var delegate: ITGPlayerAdapterDelegate?
-    var mdstrm: MediastreamPlatformSDK
+    var mdstrm: ITGMediastreamPlatform
+    var eventsManger: ITGMediastreamPlatformEventManager
     
-    public init(_ mdstrm: MediastreamPlatformSDK, delegate: ITGPlayerAdapterDelegate? = nil) {
+    public init(_ mdstrm: ITGMediastreamPlatform, eventsManger: ITGMediastreamPlatformEventManager, delegate: ITGPlayerAdapterDelegate? = nil) {
         self.mdstrm = mdstrm
+        self.eventsManger = eventsManger
         setup()
     }
     
     deinit {
-        mdstrm.events.removeListeners(eventNameToRemoveOrNil: nil)
+        eventsManger.removeListeners(eventNameToRemoveOrNil: nil)
     }
     
     open func setup() {
-        mdstrm.events.listenTo(eventName: "play") {
+        eventsManger.listenTo(eventName: "play") {
             self.delegate?.videoPlaying(self.getCurrentTime())
         }
-        mdstrm.events.listenTo(eventName: "pause", action: {
+        eventsManger.listenTo(eventName: "pause", action: {
             self.delegate?.videoPaused(self.getCurrentTime(), userInitiated: true, isSeeking: false)
         })
-        mdstrm.events.listenTo(eventName: "seek") {
+        eventsManger.listenTo(eventName: "seek") {
             if self.isPlaying() {
                 self.delegate?.videoPlaying(self.getCurrentTime())
             } else {
                 self.delegate?.videoPaused(self.getCurrentTime(), userInitiated: false, isSeeking: false)
             }
         }
-        mdstrm.events.listenTo(eventName: "finish", action: {
+        eventsManger.listenTo(eventName: "finish", action: {
             self.delegate?.videoPaused(self.getCurrentTime(), userInitiated: false, isSeeking: false)
         })
     }
