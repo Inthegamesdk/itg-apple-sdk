@@ -235,42 +235,6 @@ public enum ITGContent {
   @_Concurrency.MainActor @preconcurrency public func blockAll(_ block: Swift.Bool, includingPauseAds: Swift.Bool = false)
   @_Concurrency.MainActor @preconcurrency public func closeAll(_ includingPauseAds: Swift.Bool = false, isUserInteraction: Swift.Bool = false, animated: Swift.Bool = true)
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class XMLElement : Inthegametv.XMLNode {
-  open var namespace: Swift.String? {
-    get
-  }
-  open var tag: Swift.String? {
-    get
-  }
-  open var attributes: [Swift.String : Swift.String] {
-    get
-  }
-  open func attr(_ name: Swift.String, namespace ns: Swift.String? = nil) -> Swift.String?
-  open var children: [Inthegametv.XMLElement] {
-    get
-  }
-  open func childNodes(ofTypes types: [Inthegametv.XMLNodeType]) -> [Inthegametv.XMLNode]
-  open func firstChild(tag: any Inthegametv.XMLCharsComparable, inNamespace ns: (any Inthegametv.XMLCharsComparable)? = nil) -> Inthegametv.XMLElement?
-  open func firstChild(staticTag tag: Swift.StaticString, inNamespace ns: Swift.StaticString? = nil) -> Inthegametv.XMLElement?
-  open func children(tag: any Inthegametv.XMLCharsComparable, inNamespace ns: (any Inthegametv.XMLCharsComparable)? = nil) -> [Inthegametv.XMLElement]
-  open func children(staticTag tag: Swift.StaticString, inNamespace ns: Swift.StaticString? = nil) -> [Inthegametv.XMLElement]
-  open var isBlank: Swift.Bool {
-    get
-  }
-  open var numberValue: Foundation.NSNumber? {
-    get
-  }
-  open var dateValue: Foundation.Date? {
-    get
-  }
-  open subscript(idx: Swift.Int) -> Inthegametv.XMLElement? {
-    get
-  }
-  open subscript(name: Swift.String) -> Swift.String? {
-    get
-  }
-  @objc deinit
-}
 public protocol Queryable {
   func xpath(_ xpath: Swift.String) -> Inthegametv.NodeSet
   func tryXPath(_ xpath: Swift.String) throws -> Inthegametv.NodeSet
@@ -513,6 +477,42 @@ public func == (lhs: Inthegametv.XMLDocument, rhs: Inthegametv.XMLDocument) -> S
 }
 @_hasMissingDesignatedInitializers open class XPathNodeSet : Inthegametv.NodeSet {
   public static let emptySet: Inthegametv.XPathNodeSet
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class XMLElement : Inthegametv.XMLNode {
+  open var namespace: Swift.String? {
+    get
+  }
+  open var tag: Swift.String? {
+    get
+  }
+  open var attributes: [Swift.String : Swift.String] {
+    get
+  }
+  open func attr(_ name: Swift.String, namespace ns: Swift.String? = nil) -> Swift.String?
+  open var children: [Inthegametv.XMLElement] {
+    get
+  }
+  open func childNodes(ofTypes types: [Inthegametv.XMLNodeType]) -> [Inthegametv.XMLNode]
+  open func firstChild(tag: any Inthegametv.XMLCharsComparable, inNamespace ns: (any Inthegametv.XMLCharsComparable)? = nil) -> Inthegametv.XMLElement?
+  open func firstChild(staticTag tag: Swift.StaticString, inNamespace ns: Swift.StaticString? = nil) -> Inthegametv.XMLElement?
+  open func children(tag: any Inthegametv.XMLCharsComparable, inNamespace ns: (any Inthegametv.XMLCharsComparable)? = nil) -> [Inthegametv.XMLElement]
+  open func children(staticTag tag: Swift.StaticString, inNamespace ns: Swift.StaticString? = nil) -> [Inthegametv.XMLElement]
+  open var isBlank: Swift.Bool {
+    get
+  }
+  open var numberValue: Foundation.NSNumber? {
+    get
+  }
+  open var dateValue: Foundation.Date? {
+    get
+  }
+  open subscript(idx: Swift.Int) -> Inthegametv.XMLElement? {
+    get
+  }
+  open subscript(name: Swift.String) -> Swift.String? {
+    get
+  }
   @objc deinit
 }
 extension Foundation.URL {

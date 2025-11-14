@@ -39,10 +39,12 @@ open class ITGMediastreamPlatformAdapter: ITGPlayerAdapter {
     weak public var delegate: ITGPlayerAdapterDelegate?
     var mdstrm: ITGMediastreamPlatform
     var eventsManger: ITGMediastreamPlatformEventManager
+    var view: UIView?
     
-    public init(_ mdstrm: ITGMediastreamPlatform, eventsManger: ITGMediastreamPlatformEventManager, delegate: ITGPlayerAdapterDelegate? = nil) {
+    public init(_ mdstrm: ITGMediastreamPlatform, eventsManger: ITGMediastreamPlatformEventManager, customVideoView: UIView? = nil, delegate: ITGPlayerAdapterDelegate? = nil) {
         self.mdstrm = mdstrm
         self.eventsManger = eventsManger
+        self.view = customVideoView
         setup()
     }
     
@@ -74,7 +76,7 @@ open class ITGMediastreamPlatformAdapter: ITGPlayerAdapter {
     }
     
     open func getPlayerView() -> UIView? {
-        mdstrm.view
+        return view ?? mdstrm.view
     }
     
     open func getVideoResolution() -> CGSize {
