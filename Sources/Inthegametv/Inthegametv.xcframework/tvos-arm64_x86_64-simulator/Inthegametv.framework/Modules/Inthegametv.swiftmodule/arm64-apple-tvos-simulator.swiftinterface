@@ -416,32 +416,6 @@ extension Swift.UnkeyedEncodingContainer {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func sendActions(for controlEvents: UIKit.UIControl.Event)
   @objc deinit
 }
-extension Inthegametv.XMLNode : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-  public var debugDescription: Swift.String {
-    get
-  }
-}
-extension Inthegametv.XMLDocument : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-  public var debugDescription: Swift.String {
-    get
-  }
-}
-public protocol XMLCharsComparable {
-  func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
-}
-extension Swift.String : Inthegametv.XMLCharsComparable {
-  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
-}
-extension Swift.StaticString : Inthegametv.XMLCharsComparable {
-  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
-}
-prefix operator ^-^
 public typealias XMLNodeType = libxml2.xmlElementType
 extension libxml2.xmlElementType {
   public static var Element: libxml2.xmlElementType {
@@ -696,6 +670,32 @@ public enum XMLError : Swift.Error {
   case parserFailure
   case xpathError(code: Swift.Int)
 }
+extension Inthegametv.XMLNode : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension Inthegametv.XMLDocument : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+public protocol XMLCharsComparable {
+  func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
+}
+extension Swift.String : Inthegametv.XMLCharsComparable {
+  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
+}
+extension Swift.StaticString : Inthegametv.XMLCharsComparable {
+  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
+}
+prefix operator ^-^
 extension Inthegametv.AnalyticsEventType : Swift.Equatable {}
 extension Inthegametv.AnalyticsEventType : Swift.Hashable {}
 extension Inthegametv.AnalyticsEventType : Swift.RawRepresentable {}
