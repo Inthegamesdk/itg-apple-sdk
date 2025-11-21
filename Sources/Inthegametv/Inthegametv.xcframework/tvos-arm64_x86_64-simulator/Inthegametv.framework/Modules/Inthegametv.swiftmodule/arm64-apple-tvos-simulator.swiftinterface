@@ -307,81 +307,39 @@ extension Inthegametv.XMLElement : Inthegametv.Queryable {
   public func firstChild(css: Swift.String) -> Inthegametv.XMLElement?
   public func eval(xpath: Swift.String) -> Inthegametv.XPathFunctionResult?
 }
-@_hasMissingDesignatedInitializers open class NodeSet : Swift.Collection {
-  public typealias Index = Swift.Int
-  public typealias IndexDistance = Swift.Int
-  open func next() -> Inthegametv.XMLElement?
-  open var count: Swift.Int {
-    get
-  }
-  open var first: Inthegametv.XMLElement? {
-    get
-  }
-  open var isEmpty: Swift.Bool {
-    get
-  }
-  open var startIndex: Inthegametv.NodeSet.Index {
-    get
-  }
-  open var endIndex: Inthegametv.NodeSet.Index {
-    get
-  }
-  open subscript(idx: Inthegametv.NodeSet.Index) -> Inthegametv.XMLElement {
-    get
-  }
-  open func index(after idx: Inthegametv.NodeSet.Index) -> Inthegametv.NodeSet.Index
-  public typealias Element = Inthegametv.XMLElement
-  public typealias Indices = Swift.DefaultIndices<Inthegametv.NodeSet>
-  public typealias Iterator = Swift.IndexingIterator<Inthegametv.NodeSet>
-  public typealias SubSequence = Swift.Slice<Inthegametv.NodeSet>
-  @objc deinit
+public enum XMLError : Swift.Error {
+  case noError
+  case libXMLError(code: Swift.Int, message: Swift.String)
+  case invalidData
+  case parserFailure
+  case xpathError(code: Swift.Int)
 }
-@_hasMissingDesignatedInitializers open class XPathNodeSet : Inthegametv.NodeSet {
-  public static let emptySet: Inthegametv.XPathNodeSet
-  @objc deinit
+extension Inthegametv.XMLNode : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
 }
-@_hasMissingDesignatedInitializers open class XMLDocument {
-  open var version: Swift.String? {
+extension Inthegametv.XMLDocument : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
+  public var description: Swift.String {
     get
   }
-  open var encoding: Swift.String.Encoding {
+  public var debugDescription: Swift.String {
     get
   }
-  open var root: Inthegametv.XMLElement? {
-    get
-  }
-  open var numberFormatter: Foundation.NumberFormatter {
-    get
-    set
-  }
-  open var dateFormatter: Foundation.DateFormatter {
-    get
-    set
-  }
-  convenience public init(string: Swift.String, encoding: Swift.String.Encoding = String.Encoding.utf8) throws
-  convenience public init(data: Foundation.Data) throws
-  convenience public init(cChars: [Swift.CChar]) throws
-  convenience public init(buffer: Swift.UnsafeBufferPointer<Swift.Int8>) throws
-  @objc deinit
-  open func definePrefix(_ prefix: Swift.String, forNamespace ns: Swift.String)
-  @available(*, deprecated, renamed: "definePrefix(_:forNamespace:)", message: "This API will be removed in version 4.")
-  open func definePrefix(_ prefix: Swift.String, defaultNamespace ns: Swift.String)
 }
-extension Inthegametv.XMLDocument : Swift.Equatable {
+public protocol XMLCharsComparable {
+  func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
 }
-public func == (lhs: Inthegametv.XMLDocument, rhs: Inthegametv.XMLDocument) -> Swift.Bool
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class HTMLDocument : Inthegametv.XMLDocument {
-  open var title: Swift.String? {
-    get
-  }
-  open var head: Inthegametv.XMLElement? {
-    get
-  }
-  open var body: Inthegametv.XMLElement? {
-    get
-  }
-  @objc deinit
+extension Swift.String : Inthegametv.XMLCharsComparable {
+  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
 }
+extension Swift.StaticString : Inthegametv.XMLCharsComparable {
+  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
+}
+prefix operator ^-^
 public typealias XMLNodeType = libxml2.xmlElementType
 extension libxml2.xmlElementType {
   public static var Element: libxml2.xmlElementType {
@@ -482,38 +440,80 @@ public func ~= (lhs: Inthegametv.XMLNodeType, rhs: Inthegametv.XMLNodeType) -> S
 extension Inthegametv.XMLNode : Swift.Equatable {
 }
 public func == (lhs: Inthegametv.XMLNode, rhs: Inthegametv.XMLNode) -> Swift.Bool
-extension Inthegametv.XMLNode : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
-  public var description: Swift.String {
+@_hasMissingDesignatedInitializers open class XMLDocument {
+  open var version: Swift.String? {
     get
   }
-  public var debugDescription: Swift.String {
+  open var encoding: Swift.String.Encoding {
     get
   }
-}
-extension Inthegametv.XMLDocument : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
-  public var description: Swift.String {
+  open var root: Inthegametv.XMLElement? {
     get
   }
-  public var debugDescription: Swift.String {
+  open var numberFormatter: Foundation.NumberFormatter {
+    get
+    set
+  }
+  open var dateFormatter: Foundation.DateFormatter {
+    get
+    set
+  }
+  convenience public init(string: Swift.String, encoding: Swift.String.Encoding = String.Encoding.utf8) throws
+  convenience public init(data: Foundation.Data) throws
+  convenience public init(cChars: [Swift.CChar]) throws
+  convenience public init(buffer: Swift.UnsafeBufferPointer<Swift.Int8>) throws
+  @objc deinit
+  open func definePrefix(_ prefix: Swift.String, forNamespace ns: Swift.String)
+  @available(*, deprecated, renamed: "definePrefix(_:forNamespace:)", message: "This API will be removed in version 4.")
+  open func definePrefix(_ prefix: Swift.String, defaultNamespace ns: Swift.String)
+}
+extension Inthegametv.XMLDocument : Swift.Equatable {
+}
+public func == (lhs: Inthegametv.XMLDocument, rhs: Inthegametv.XMLDocument) -> Swift.Bool
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class HTMLDocument : Inthegametv.XMLDocument {
+  open var title: Swift.String? {
     get
   }
+  open var head: Inthegametv.XMLElement? {
+    get
+  }
+  open var body: Inthegametv.XMLElement? {
+    get
+  }
+  @objc deinit
 }
-public protocol XMLCharsComparable {
-  func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
+@_hasMissingDesignatedInitializers open class NodeSet : Swift.Collection {
+  public typealias Index = Swift.Int
+  public typealias IndexDistance = Swift.Int
+  open func next() -> Inthegametv.XMLElement?
+  open var count: Swift.Int {
+    get
+  }
+  open var first: Inthegametv.XMLElement? {
+    get
+  }
+  open var isEmpty: Swift.Bool {
+    get
+  }
+  open var startIndex: Inthegametv.NodeSet.Index {
+    get
+  }
+  open var endIndex: Inthegametv.NodeSet.Index {
+    get
+  }
+  open subscript(idx: Inthegametv.NodeSet.Index) -> Inthegametv.XMLElement {
+    get
+  }
+  open func index(after idx: Inthegametv.NodeSet.Index) -> Inthegametv.NodeSet.Index
+  public typealias Element = Inthegametv.XMLElement
+  public typealias Indices = Swift.DefaultIndices<Inthegametv.NodeSet>
+  public typealias Iterator = Swift.IndexingIterator<Inthegametv.NodeSet>
+  public typealias SubSequence = Swift.Slice<Inthegametv.NodeSet>
+  @objc deinit
 }
-extension Swift.String : Inthegametv.XMLCharsComparable {
-  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
-}
-extension Swift.StaticString : Inthegametv.XMLCharsComparable {
-  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
-}
-prefix operator ^-^
-public enum XMLError : Swift.Error {
-  case noError
-  case libXMLError(code: Swift.Int, message: Swift.String)
-  case invalidData
-  case parserFailure
-  case xpathError(code: Swift.Int)
+@_hasMissingDesignatedInitializers open class XPathNodeSet : Inthegametv.NodeSet {
+  public static let emptySet: Inthegametv.XPathNodeSet
+  @objc deinit
 }
 extension Foundation.URL {
   public static var webpFileExtension: Swift.String {

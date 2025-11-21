@@ -30,7 +30,6 @@ public protocol ITGMediastreamPlatformEventManager {
     
     func listenTo(eventName: String, action: @escaping () -> ())
     func listenTo(eventName: String, action: @escaping (Any?) -> ())
-    func removeListeners(eventNameToRemoveOrNil: String?)
     
 }
 
@@ -48,26 +47,26 @@ open class ITGMediastreamPlatformAdapter: ITGPlayerAdapter {
         setup()
     }
     
-    deinit {
-        eventsManger.removeListeners(eventNameToRemoveOrNil: nil)
-    }
-    
     open func setup() {
-        eventsManger.listenTo(eventName: "play") {
-            self.delegate?.videoPlaying(self.getCurrentTime())
+        eventsManger.listenTo(eventName: "play") { [weak self] in
+            guard self != nil else { return }
+            self!.delegate?.videoPlaying(self!.getCurrentTime())
         }
-        eventsManger.listenTo(eventName: "pause", action: {
-            self.delegate?.videoPaused(self.getCurrentTime(), userInitiated: true, isSeeking: false)
+        eventsManger.listenTo(eventName: "pause", action: { [weak self] in
+            guard self != nil else { return }
+            self!.delegate?.videoPaused(self!.getCurrentTime(), userInitiated: true, isSeeking: false)
         })
-        eventsManger.listenTo(eventName: "seek") {
-            if self.isPlaying() {
-                self.delegate?.videoPlaying(self.getCurrentTime())
+        eventsManger.listenTo(eventName: "seek") { [weak self] in
+            guard self != nil else { return }
+            if self!.isPlaying() {
+                self!.delegate?.videoPlaying(self!.getCurrentTime())
             } else {
-                self.delegate?.videoPaused(self.getCurrentTime(), userInitiated: false, isSeeking: false)
+                self!.delegate?.videoPaused(self!.getCurrentTime(), userInitiated: false, isSeeking: false)
             }
         }
-        eventsManger.listenTo(eventName: "finish", action: {
-            self.delegate?.videoPaused(self.getCurrentTime(), userInitiated: false, isSeeking: false)
+        eventsManger.listenTo(eventName: "finish", action: { [weak self] in
+            guard self != nil else { return }
+            self!.delegate?.videoPaused(self!.getCurrentTime(), userInitiated: false, isSeeking: false)
         })
     }
     
