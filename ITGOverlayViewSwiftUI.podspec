@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
-    s.name         = "ITGMediastreamPlatformAdapter"
+    s.name         = "ITGOverlayViewSwiftUI"
     s.version      = "2.6.41"
-    s.summary      = "Inthegametv adapter for MediastreamPlatform"
-    s.description  = "Inthegametv adapter for MediastreamPlatform"
+    s.summary      = "ITGOverlayViewSwiftUI component for integration of Inthegametv SDK using SwiftUI"
+    s.description  = "ITGOverlayViewSwiftUI component for integration of Inthegametv SDK using SwiftUI"
     s.homepage     = "www.inthegame.io"
     s.license = { :type => "Commercial", :text => "See www.inthegame.io" }
     s.author       = { "Inthegame" => "itai@inthegame.io" }
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     s.ios.deployment_target  = '14.0'
     s.tvos.deployment_target  = '14.0'
     s.dependency 'Inthegametv', '~> 2.6.41'
-    s.source_files = '**/**/**/ITGMediastreamPlatformAdapter.swift', '**/**/**/ITGPlayerAdapter.swift', '**/**/**/ITGPlayerViewController.swift'
+    s.source_files = '**/**/**/ITGOverlayViewSwiftUI.swift'
     s.pod_target_xcconfig = {
         'ENABLE_USER_SCRIPT_SANDBOXING' => 'NO'
     }
