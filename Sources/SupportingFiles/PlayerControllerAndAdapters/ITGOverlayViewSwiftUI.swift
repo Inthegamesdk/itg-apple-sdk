@@ -59,7 +59,7 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
             && lhs.enableLogs == rhs.enableLogs
         }
         
-        init(overlayView: ITGOverlayView,
+        public init(overlayView: ITGOverlayView,
              channelSlug: String,
              uikitVideoView: UIView,
              virtualChannels: [String]? = nil,
@@ -264,7 +264,7 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
     private let overlayView = ITGOverlayView()
     private var uikitVideoView: UIView!
     
-    init(channelSlug: String, virtualChannels: [String]? = nil,
+    public init(channelSlug: String, virtualChannels: [String]? = nil,
          accountId: String, environment: ITGEnvironment, foreignId: String? = nil,
          videoView: any View, vars: [String : any Hashable]? = nil,
          enableLogs: Bool = false, onOverlayDidLoadChannelInfo: ((_: String?) -> Void)? = nil,

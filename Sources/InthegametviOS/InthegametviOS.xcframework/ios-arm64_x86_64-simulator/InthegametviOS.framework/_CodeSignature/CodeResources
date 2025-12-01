@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Xu3RAU0FgoS5iL0Hn7T7OAVK7ag=
+		vQSgB4DvORU3u7yaq1P1mk9sZWE=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		n20WCBg5/S0a8MDCmn4tgUwjBvM=
+		NH/aSbRkFiQWWJlNyPguRTn2YpE=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		zFo2WqVPJJExrho+MtqSvwPFHEc=
+		dlO0n0mwg5cjOhBXmXzJHDbHP58=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		n20WCBg5/S0a8MDCmn4tgUwjBvM=
+		NH/aSbRkFiQWWJlNyPguRTn2YpE=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OdJxS0twz3Et3MF8rH9x1bmL3kY=
+		jIcWAhsysMSPuU+yl6HSdGoezVw=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -46,19 +46,19 @@
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		8WTZj+Q9ulf9UTU4xo0o2/Dur1E=
+		smYKzu/RrNSJZl/SqQd+2qXo9rg=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		1SFiHaq2RNTcKfYXId3+HH/SRCE=
+		Awm7gRNspFVd3J3Qn+04vVMVaj8=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		8WTZj+Q9ulf9UTU4xo0o2/Dur1E=
+		smYKzu/RrNSJZl/SqQd+2qXo9rg=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Em1vyR7UNTx5Y8i28mGhKlQU2p0=
+		BYOoNVYds/BcA0UnG1bKUouZBew=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -99,28 +99,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DeOsLv/UJVulOO7dTBGPjrddXk3SAJ73e2vd4vW68Xs=
+			aqPm4CSuc3UiZ69NN8bz9LxDEGLoHCHDhzuaZegYUYs=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NCpIwKaR6vLps28snJqctPLKRbuXOMVoAVC1aByclwA=
+			za4pNUX8UfjEGjBTGpDZ1FHYp5we0lZbpt73nwy1I4U=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DeOsLv/UJVulOO7dTBGPjrddXk3SAJ73e2vd4vW68Xs=
+			aqPm4CSuc3UiZ69NN8bz9LxDEGLoHCHDhzuaZegYUYs=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/EfQVY4axS/ZG8tRCFjBTWx/1U9glD/5H/ZqwXPpR00=
+			Fr5EOiaSRs0ATpy4oPc0d1Q8lf3L2XWdM+Ic+oYyi80=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -134,28 +134,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7HO7CHEMK6tm+UTqRkXKFvOC4/tSm2k4pryf3Nypa0Q=
+			czmDz/oQ2UR/Ds6hW4z6vSUxiDxBQi9tglmwYPfss/0=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jiO4LdBb8eGXPWdQkT7Dj5kq7TRckwQSX0oVImjqYTk=
+			8FU/dGjUEpxbkfBUho9Lfhs5u3RThPvSx7/vBrr5icY=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7HO7CHEMK6tm+UTqRkXKFvOC4/tSm2k4pryf3Nypa0Q=
+			czmDz/oQ2UR/Ds6hW4z6vSUxiDxBQi9tglmwYPfss/0=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/tul3nHQ+V6qFhtzuX2nmixM1808BPei8VJNJNV4Mqs=
+			KQ1N5269nw/FaARXGsgB4QktwDtZhEEwRFqWpVyC58M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

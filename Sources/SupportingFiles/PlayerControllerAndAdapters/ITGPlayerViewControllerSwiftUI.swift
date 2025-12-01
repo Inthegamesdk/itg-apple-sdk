@@ -40,7 +40,7 @@ public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
             && lhs.playerAdapter === rhs.playerAdapter
         }
         
-        init(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment, foreignId: String? = nil, vars: [String : any Hashable]? = nil, enableLogs: Bool, playerAdapter: ITGPlayerAdapter) {
+        public init(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment, foreignId: String? = nil, vars: [String : any Hashable]? = nil, enableLogs: Bool, playerAdapter: ITGPlayerAdapter) {
             self.channelSlug = channelSlug
             self.virtualChannels = virtualChannels
             self.accountId = accountId
@@ -61,7 +61,24 @@ public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
     var vars: [String: any Hashable]? = nil
     var enableLogs: Bool = false
     var playerAdapter: ITGPlayerAdapter
-    var itgPlayerViewController: ITGPlayerViewController?
+    
+    public init(channelSlug: String,
+                virtualChannels: [String]? = nil,
+                accountId: String,
+                environment: ITGEnvironment,
+                foreignId: String? = nil,
+                vars: [String : any Hashable]? = nil,
+                enableLogs: Bool,
+                playerAdapter: ITGPlayerAdapter) {
+        self.channelSlug = channelSlug
+        self.virtualChannels = virtualChannels
+        self.accountId = accountId
+        self.environment = environment
+        self.foreignId = foreignId
+        self.vars = vars
+        self.enableLogs = enableLogs
+        self.playerAdapter = playerAdapter
+    }
     
     public func makeUIViewController(context: Context) -> ITGPlayerViewController {
         context.coordinator.itgPlayerViewController = ITGPlayerViewController(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, foreignId: foreignId, vars: vars, playerAdapter: playerAdapter, shouldResetOverlayUser: false, enableLogs: enableLogs)
