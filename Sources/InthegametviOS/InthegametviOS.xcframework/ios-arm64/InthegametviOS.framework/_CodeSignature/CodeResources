@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		tYYwWna8NwDEljkp80fsBJgoQxo=
+		OZmDhBlWqRbF5TPQsyvQ4tVE3H4=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		FGMZWs6mydF1RN2XwMQuaRGC9O8=
+		f59FqxYFXEfBLBgm0CVXcJzoSPw=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		3RcFZfKsrw3bizY9e9iYBMecubw=
+		9nKCbD5PJcTRqumTvPypDtRAyOk=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		FGMZWs6mydF1RN2XwMQuaRGC9O8=
+		f59FqxYFXEfBLBgm0CVXcJzoSPw=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		KWBq3HjIoc5FXueYqa2E2XKuIqU=
+		j9Psc4VzqCQyIKtdYy7P7+PtUrw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -79,28 +79,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LY1jlOHA3Ck8+EwkxOfviRQ/g/IthE0P1NubdNHuSYQ=
+			2KvSp94sk54igN0i3z6u5yx0oCMMf36MHax5AxzZm1k=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z7WwDsdNrQO0iEXv+IgKy0V+x62n5IbXARXi9fkeklo=
+			KwawA/ZoYjsFJRjl68DzmOI4EjFx0eHujVlyc0ai+7M=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LY1jlOHA3Ck8+EwkxOfviRQ/g/IthE0P1NubdNHuSYQ=
+			2KvSp94sk54igN0i3z6u5yx0oCMMf36MHax5AxzZm1k=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			INfOwi2Wy4baVcvlDfXF/YdX6Q+2f8zsG3+TS8yx+zY=
+			YpcXzZ/l83EH2HdhIQ8HLG1f78QMMrsqcOp5+aKT5bc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -15,9 +15,9 @@ import InthegametviOS
 #endif
 import AVKit
 
-struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
+public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
 
-    class Coordinator: Equatable {
+    public class Coordinator: Equatable {
         
         let channelSlug: String
         let virtualChannels: [String]?
@@ -29,7 +29,7 @@ struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
         let playerAdapter: ITGPlayerAdapter
         var itgPlayerViewController: ITGPlayerViewController? = nil
         
-        static func == (lhs: Coordinator, rhs: Coordinator) -> Bool {
+        public static func == (lhs: Coordinator, rhs: Coordinator) -> Bool {
             return lhs.channelSlug == rhs.channelSlug
             && lhs.virtualChannels == rhs.virtualChannels
             && lhs.accountId == rhs.accountId
@@ -63,17 +63,17 @@ struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
     var playerAdapter: ITGPlayerAdapter
     var itgPlayerViewController: ITGPlayerViewController?
     
-    func makeUIViewController(context: Context) -> ITGPlayerViewController {
+    public func makeUIViewController(context: Context) -> ITGPlayerViewController {
         context.coordinator.itgPlayerViewController = ITGPlayerViewController(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, foreignId: foreignId, vars: vars, playerAdapter: playerAdapter, shouldResetOverlayUser: false, enableLogs: enableLogs)
         context.coordinator.itgPlayerViewController?.shouldPlayChannelVideo = false
         return context.coordinator.itgPlayerViewController!
     }
 
-    func makeCoordinator() -> Coordinator {
+    public func makeCoordinator() -> Coordinator {
         return Coordinator(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, foreignId: foreignId, vars: vars, enableLogs: enableLogs, playerAdapter: playerAdapter)
     }
     
-    func updateUIViewController(_ uiViewController: ITGPlayerViewController, context: Context) {
+    public func updateUIViewController(_ uiViewController: ITGPlayerViewController, context: Context) {
         if context.coordinator != self.makeCoordinator() {
             context.coordinator.itgPlayerViewController?.reloadChannel(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, foreignId: foreignId, vars: vars, playerAdapter: playerAdapter, shouldResetOverlayUser: false, enableLogs: enableLogs)
         }

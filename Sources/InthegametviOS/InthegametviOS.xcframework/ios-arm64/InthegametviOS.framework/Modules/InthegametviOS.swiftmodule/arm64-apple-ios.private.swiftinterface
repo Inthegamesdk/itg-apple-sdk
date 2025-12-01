@@ -133,41 +133,12 @@ public struct AnalyticsInfo : Swift.Codable {
   public static let emptySet: InthegametviOS.XPathNodeSet
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class XMLElement : InthegametviOS.XMLNode {
-  open var namespace: Swift.String? {
-    get
-  }
-  open var tag: Swift.String? {
-    get
-  }
-  open var attributes: [Swift.String : Swift.String] {
-    get
-  }
-  open func attr(_ name: Swift.String, namespace ns: Swift.String? = nil) -> Swift.String?
-  open var children: [InthegametviOS.XMLElement] {
-    get
-  }
-  open func childNodes(ofTypes types: [InthegametviOS.XMLNodeType]) -> [InthegametviOS.XMLNode]
-  open func firstChild(tag: any InthegametviOS.XMLCharsComparable, inNamespace ns: (any InthegametviOS.XMLCharsComparable)? = nil) -> InthegametviOS.XMLElement?
-  open func firstChild(staticTag tag: Swift.StaticString, inNamespace ns: Swift.StaticString? = nil) -> InthegametviOS.XMLElement?
-  open func children(tag: any InthegametviOS.XMLCharsComparable, inNamespace ns: (any InthegametviOS.XMLCharsComparable)? = nil) -> [InthegametviOS.XMLElement]
-  open func children(staticTag tag: Swift.StaticString, inNamespace ns: Swift.StaticString? = nil) -> [InthegametviOS.XMLElement]
-  open var isBlank: Swift.Bool {
-    get
-  }
-  open var numberValue: Foundation.NSNumber? {
-    get
-  }
-  open var dateValue: Foundation.Date? {
-    get
-  }
-  open subscript(idx: Swift.Int) -> InthegametviOS.XMLElement? {
-    get
-  }
-  open subscript(name: Swift.String) -> Swift.String? {
-    get
-  }
-  @objc deinit
+public enum XMLError : Swift.Error {
+  case noError
+  case libXMLError(code: Swift.Int, message: Swift.String)
+  case invalidData
+  case parserFailure
+  case xpathError(code: Swift.Int)
 }
 public protocol Queryable {
   func xpath(_ xpath: Swift.String) -> InthegametviOS.NodeSet
@@ -205,13 +176,6 @@ extension InthegametviOS.XMLElement : InthegametviOS.Queryable {
   public func firstChild(css: Swift.String) -> InthegametviOS.XMLElement?
   public func eval(xpath: Swift.String) -> InthegametviOS.XPathFunctionResult?
 }
-public enum XMLError : Swift.Error {
-  case noError
-  case libXMLError(code: Swift.Int, message: Swift.String)
-  case invalidData
-  case parserFailure
-  case xpathError(code: Swift.Int)
-}
 extension InthegametviOS.XMLNode : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
   public var description: Swift.String {
     get
@@ -238,6 +202,48 @@ extension Swift.StaticString : InthegametviOS.XMLCharsComparable {
   public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
 }
 prefix operator ^-^
+@_hasMissingDesignatedInitializers open class XMLDocument {
+  open var version: Swift.String? {
+    get
+  }
+  open var encoding: Swift.String.Encoding {
+    get
+  }
+  open var root: InthegametviOS.XMLElement? {
+    get
+  }
+  open var numberFormatter: Foundation.NumberFormatter {
+    get
+    set
+  }
+  open var dateFormatter: Foundation.DateFormatter {
+    get
+    set
+  }
+  convenience public init(string: Swift.String, encoding: Swift.String.Encoding = String.Encoding.utf8) throws
+  convenience public init(data: Foundation.Data) throws
+  convenience public init(cChars: [Swift.CChar]) throws
+  convenience public init(buffer: Swift.UnsafeBufferPointer<Swift.Int8>) throws
+  @objc deinit
+  open func definePrefix(_ prefix: Swift.String, forNamespace ns: Swift.String)
+  @available(*, deprecated, renamed: "definePrefix(_:forNamespace:)", message: "This API will be removed in version 4.")
+  open func definePrefix(_ prefix: Swift.String, defaultNamespace ns: Swift.String)
+}
+extension InthegametviOS.XMLDocument : Swift.Equatable {
+}
+public func == (lhs: InthegametviOS.XMLDocument, rhs: InthegametviOS.XMLDocument) -> Swift.Bool
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class HTMLDocument : InthegametviOS.XMLDocument {
+  open var title: Swift.String? {
+    get
+  }
+  open var head: InthegametviOS.XMLElement? {
+    get
+  }
+  open var body: InthegametviOS.XMLElement? {
+    get
+  }
+  @objc deinit
+}
 public typealias XMLNodeType = libxml2.xmlElementType
 extension libxml2.xmlElementType {
   public static var Element: libxml2.xmlElementType {
@@ -338,44 +344,38 @@ public func ~= (lhs: InthegametviOS.XMLNodeType, rhs: InthegametviOS.XMLNodeType
 extension InthegametviOS.XMLNode : Swift.Equatable {
 }
 public func == (lhs: InthegametviOS.XMLNode, rhs: InthegametviOS.XMLNode) -> Swift.Bool
-@_hasMissingDesignatedInitializers open class XMLDocument {
-  open var version: Swift.String? {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class XMLElement : InthegametviOS.XMLNode {
+  open var namespace: Swift.String? {
     get
   }
-  open var encoding: Swift.String.Encoding {
+  open var tag: Swift.String? {
     get
   }
-  open var root: InthegametviOS.XMLElement? {
+  open var attributes: [Swift.String : Swift.String] {
     get
   }
-  open var numberFormatter: Foundation.NumberFormatter {
-    get
-    set
-  }
-  open var dateFormatter: Foundation.DateFormatter {
-    get
-    set
-  }
-  convenience public init(string: Swift.String, encoding: Swift.String.Encoding = String.Encoding.utf8) throws
-  convenience public init(data: Foundation.Data) throws
-  convenience public init(cChars: [Swift.CChar]) throws
-  convenience public init(buffer: Swift.UnsafeBufferPointer<Swift.Int8>) throws
-  @objc deinit
-  open func definePrefix(_ prefix: Swift.String, forNamespace ns: Swift.String)
-  @available(*, deprecated, renamed: "definePrefix(_:forNamespace:)", message: "This API will be removed in version 4.")
-  open func definePrefix(_ prefix: Swift.String, defaultNamespace ns: Swift.String)
-}
-extension InthegametviOS.XMLDocument : Swift.Equatable {
-}
-public func == (lhs: InthegametviOS.XMLDocument, rhs: InthegametviOS.XMLDocument) -> Swift.Bool
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class HTMLDocument : InthegametviOS.XMLDocument {
-  open var title: Swift.String? {
+  open func attr(_ name: Swift.String, namespace ns: Swift.String? = nil) -> Swift.String?
+  open var children: [InthegametviOS.XMLElement] {
     get
   }
-  open var head: InthegametviOS.XMLElement? {
+  open func childNodes(ofTypes types: [InthegametviOS.XMLNodeType]) -> [InthegametviOS.XMLNode]
+  open func firstChild(tag: any InthegametviOS.XMLCharsComparable, inNamespace ns: (any InthegametviOS.XMLCharsComparable)? = nil) -> InthegametviOS.XMLElement?
+  open func firstChild(staticTag tag: Swift.StaticString, inNamespace ns: Swift.StaticString? = nil) -> InthegametviOS.XMLElement?
+  open func children(tag: any InthegametviOS.XMLCharsComparable, inNamespace ns: (any InthegametviOS.XMLCharsComparable)? = nil) -> [InthegametviOS.XMLElement]
+  open func children(staticTag tag: Swift.StaticString, inNamespace ns: Swift.StaticString? = nil) -> [InthegametviOS.XMLElement]
+  open var isBlank: Swift.Bool {
     get
   }
-  open var body: InthegametviOS.XMLElement? {
+  open var numberValue: Foundation.NSNumber? {
+    get
+  }
+  open var dateValue: Foundation.Date? {
+    get
+  }
+  open subscript(idx: Swift.Int) -> InthegametviOS.XMLElement? {
+    get
+  }
+  open subscript(name: Swift.String) -> Swift.String? {
     get
   }
   @objc deinit

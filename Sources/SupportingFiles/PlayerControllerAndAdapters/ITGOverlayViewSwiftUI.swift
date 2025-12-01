@@ -13,9 +13,9 @@ import InthegametviOS
 #endif
 import AVKit
 
-struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
+public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
     
-    class Coordinator: ITGOverlayDelegate, Equatable {
+    public class Coordinator: ITGOverlayDelegate, Equatable {
         
         let overlayView: ITGOverlayView?
         let uikitVideoView: UIView
@@ -49,7 +49,7 @@ struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
         let onOverlayWillResetVideoRect: ((TimeInterval) -> Void)?        
         private var observation: NSKeyValueObservation?
         
-        static func == (lhs: Coordinator, rhs: Coordinator) -> Bool {
+        public static func == (lhs: Coordinator, rhs: Coordinator) -> Bool {
             return lhs.channelSlug == rhs.channelSlug
             && lhs.virtualChannels == rhs.virtualChannels
             && lhs.accountId == rhs.accountId
@@ -121,63 +121,63 @@ struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
             self.onOverlayWillResetVideoRect = onOverlayWillResetVideoRect
         }
         
-        func overlayDidLoadChannelInfo(_ videoUrl: String?) {
+        public func overlayDidLoadChannelInfo(_ videoUrl: String?) {
             onOverlayDidLoadChannelInfo?(videoUrl)
         }
         
-        func overlayRequestedVideoTime() {
+        public func overlayRequestedVideoTime() {
             onOverlayRequestedVideoTime()
         }
         
-        func overlayRequestedPause() {
+        public func overlayRequestedPause() {
             onOverlayRequestedPause()
         }
         
-        func overlayRequestedPlay() {
+        public func overlayRequestedPlay() {
             onOverlayRequestedPlay()
         }
         
-        func overlayRequestedFocus() {
+        public func overlayRequestedFocus() {
             onOverlayRequestedFocus()
         }
         
-        func overlayReleasedFocus() {
+        public func overlayReleasedFocus() {
             onOnOverlayReleasedFocus()
         }
         
-        func overlayReceivedDeeplink(_ link: String) {
+        public func overlayReceivedDeeplink(_ link: String) {
             onOverlayReceivedDeeplink?(link)
         }
         
-        func overlayRequestedVideoSeek(time: TimeInterval) {
+        public func overlayRequestedVideoSeek(time: TimeInterval) {
             onOverlayRequestedVideoSeek(time)
         }
         
-        func overlayRequestedVideoResolution() -> CGSize {
+        public func overlayRequestedVideoResolution() -> CGSize {
             return onOverlayRequestedVideoResolution?() ?? CGSize.zero
         }
         
-        func overlayDidProcessAnalyticEvent(info: AnalyticsInfo, type: AnalyticsEventType) {
+        public func overlayDidProcessAnalyticEvent(info: AnalyticsInfo, type: AnalyticsEventType) {
             onOverlayDidProcessAnalyticEvent?(info, type)
         }
         
-        func userState(_ user: User) {
+        public func userState(_ user: User) {
             onUserState?(user)
         }
         
-        func overlayDidPresentContent(_ content: ITGContent) {
+        public func overlayDidPresentContent(_ content: ITGContent) {
             onOverlayDidPresentContent?(content)
         }
         
-        func overlayDidEndPresentingContent(_ content: ITGContent) {
+        public func overlayDidEndPresentingContent(_ content: ITGContent) {
             onOverlayDidEndPresentingContent?(content)
         }
         
-        func overlayRequestedVideoLength() -> TimeInterval {
+        public func overlayRequestedVideoLength() -> TimeInterval {
             return onOverlayRequestedVideoLength?() ?? 0
         }
         
-        func overlayRequestedVideoGravity(_ videoGravity: AVLayerVideoGravity) {
+        public func overlayRequestedVideoGravity(_ videoGravity: AVLayerVideoGravity) {
             if onOverlayRequestedVideoGravity != nil {
                 onOverlayRequestedVideoGravity?(videoGravity)
             } else {
@@ -185,7 +185,7 @@ struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
             }
         }
         
-        func overlayRequestedResetVideoGravity() {
+        public func overlayRequestedResetVideoGravity() {
             if onOverlayRequestedResetVideoGravity != nil {
                 onOverlayRequestedResetVideoGravity?()
             } else {
@@ -193,19 +193,19 @@ struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
             }
         }
         
-        func overlayRequestedVideoSoundLevel(_ soundLevel: Float) {
+        public func overlayRequestedVideoSoundLevel(_ soundLevel: Float) {
             onOverlayRequestedVideoSoundLevel(soundLevel)
         }
         
-        func overlayRequestedResetVideoSoundLevel() {
+        public func overlayRequestedResetVideoSoundLevel() {
             onOverlayRequestedResetVideoSoundLevel()
         }
         
-        func overlayWillChangeVideoRect(_ rect: CGRect, animationDuration: TimeInterval) {
+        public func overlayWillChangeVideoRect(_ rect: CGRect, animationDuration: TimeInterval) {
             onOverlayWillChangeVideoRect?(rect, animationDuration)
         }
         
-        func overlayWillResetVideoRect(_ animationDuration: TimeInterval) {
+        public func overlayWillResetVideoRect(_ animationDuration: TimeInterval) {
             onOverlayWillResetVideoRect?(animationDuration)
         }
         
@@ -321,20 +321,20 @@ struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
         self.uikitVideoView = UIHostingController(rootView: self.videoView).view
     }
     
-    func makeUIView(context: Context) -> ITGOverlayView {
+    public func makeUIView(context: Context) -> ITGOverlayView {
         overlayView.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: context.coordinator, foreignId: foreignId, videoView: uikitVideoView, vars: vars, enableLogs: enableLogs)
         uikitVideoView.backgroundColor = .clear
         onOverlayCreated?(self)
         return overlayView
     }
     
-    func updateUIView(_ uiView: ITGOverlayView, context: Context) {
+    public func updateUIView(_ uiView: ITGOverlayView, context: Context) {
         if context.coordinator != self.makeCoordinator() {
             
         }
     }
     
-    func makeCoordinator() -> Coordinator {
+    public func makeCoordinator() -> Coordinator {
         return Coordinator(overlayView: overlayView,
                            channelSlug: channelSlug,
                            uikitVideoView: uikitVideoView,
@@ -367,11 +367,11 @@ struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
                            onOverlayWillResetVideoRect: onOverlayWillResetVideoRect)
     }
     
-    func videoPlaying(_ time: TimeInterval) {
+    public func videoPlaying(_ time: TimeInterval) {
         overlayView.videoPlaying(time: time)
     }
     
-    func videoPaused(_ time: TimeInterval) {
+    public func videoPaused(_ time: TimeInterval) {
         overlayView.videoPaused(time: time)
     }
     
