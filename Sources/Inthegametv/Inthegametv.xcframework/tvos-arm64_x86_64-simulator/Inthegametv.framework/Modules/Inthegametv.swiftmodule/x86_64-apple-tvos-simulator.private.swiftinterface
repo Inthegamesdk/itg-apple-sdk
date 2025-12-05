@@ -141,139 +141,18 @@ extension CoreGraphics.CGImage {
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-public enum XMLError : Swift.Error {
-  case noError
-  case libXMLError(code: Swift.Int, message: Swift.String)
-  case invalidData
-  case parserFailure
-  case xpathError(code: Swift.Int)
-}
-extension Inthegametv.XMLNode : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-  public var debugDescription: Swift.String {
-    get
-  }
-}
-extension Inthegametv.XMLDocument : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-  public var debugDescription: Swift.String {
-    get
-  }
-}
-public protocol XMLCharsComparable {
-  func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
-}
-extension Swift.String : Inthegametv.XMLCharsComparable {
-  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
-}
-extension Swift.StaticString : Inthegametv.XMLCharsComparable {
-  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
-}
-prefix operator ^-^
-public typealias XMLNodeType = libxml2.xmlElementType
-extension libxml2.xmlElementType {
-  public static var Element: libxml2.xmlElementType {
-    get
-  }
-  public static var Attribute: libxml2.xmlElementType {
-    get
-  }
-  public static var Text: libxml2.xmlElementType {
-    get
-  }
-  public static var CDataSection: libxml2.xmlElementType {
-    get
-  }
-  public static var EntityRef: libxml2.xmlElementType {
-    get
-  }
-  public static var Entity: libxml2.xmlElementType {
-    get
-  }
-  public static var Pi: libxml2.xmlElementType {
-    get
-  }
-  public static var Comment: libxml2.xmlElementType {
-    get
-  }
-  public static var Document: libxml2.xmlElementType {
-    get
-  }
-  public static var DocumentType: libxml2.xmlElementType {
-    get
-  }
-  public static var DocumentFrag: libxml2.xmlElementType {
-    get
-  }
-  public static var Notation: libxml2.xmlElementType {
-    get
-  }
-  public static var HtmlDocument: libxml2.xmlElementType {
-    get
-  }
-  public static var DTD: libxml2.xmlElementType {
-    get
-  }
-  public static var ElementDecl: libxml2.xmlElementType {
-    get
-  }
-  public static var AttributeDecl: libxml2.xmlElementType {
-    get
-  }
-  public static var EntityDecl: libxml2.xmlElementType {
-    get
-  }
-  public static var NamespaceDecl: libxml2.xmlElementType {
-    get
-  }
-  public static var XIncludeStart: libxml2.xmlElementType {
-    get
-  }
-  public static var XIncludeEnd: libxml2.xmlElementType {
-    get
-  }
-  public static var DocbDocument: libxml2.xmlElementType {
-    get
-  }
-}
-infix operator ~= : DefaultPrecedence
-public func ~= (lhs: Inthegametv.XMLNodeType, rhs: Inthegametv.XMLNodeType) -> Swift.Bool
-@_hasMissingDesignatedInitializers open class XMLNode {
-  unowned final public let document: Inthegametv.XMLDocument
-  open var type: Inthegametv.XMLNodeType {
-    get
-  }
-  open var lineNumber: Swift.Int {
-    get
-  }
-  open var parent: Inthegametv.XMLElement? {
-    get
-  }
-  open var previousSibling: Inthegametv.XMLElement? {
-    get
-  }
-  open var nextSibling: Inthegametv.XMLElement? {
-    get
-  }
-  open var isHTML: Swift.Bool {
-    get
-  }
-  open var stringValue: Swift.String {
-    get
-  }
-  open var rawXML: Swift.String {
-    get
-  }
-  open func toElement() -> Inthegametv.XMLElement?
+@objc @_inheritsConvenienceInitializers public class ITGStorketHelper : ObjectiveC.NSObject {
+  public func connect(accountId: Swift.String, channelSlug: Swift.String, environment: Inthegametv.ITGEnvironment, token: Swift.String)
+  public func stop()
+  @objc override dynamic public init()
   @objc deinit
 }
-extension Inthegametv.XMLNode : Swift.Equatable {
+extension Inthegametv.ITGStorketHelper : Storket.StorketDelegate {
+  public func didReceive(messages: [Storket.StorketMessage], storketType: Storket.StorketType)
 }
-public func == (lhs: Inthegametv.XMLNode, rhs: Inthegametv.XMLNode) -> Swift.Bool
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor @preconcurrency public static let modelName: Swift.String
+}
 @_hasMissingDesignatedInitializers open class XMLDocument {
   open var version: Swift.String? {
     get
@@ -421,18 +300,139 @@ extension Inthegametv.XMLElement : Inthegametv.Queryable {
   public func firstChild(css: Swift.String) -> Inthegametv.XMLElement?
   public func eval(xpath: Swift.String) -> Inthegametv.XPathFunctionResult?
 }
-@objc @_inheritsConvenienceInitializers public class ITGStorketHelper : ObjectiveC.NSObject {
-  public func connect(accountId: Swift.String, channelSlug: Swift.String, environment: Inthegametv.ITGEnvironment, token: Swift.String)
-  public func stop()
-  @objc override dynamic public init()
+public enum XMLError : Swift.Error {
+  case noError
+  case libXMLError(code: Swift.Int, message: Swift.String)
+  case invalidData
+  case parserFailure
+  case xpathError(code: Swift.Int)
+}
+extension Inthegametv.XMLNode : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension Inthegametv.XMLDocument : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+public protocol XMLCharsComparable {
+  func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
+}
+extension Swift.String : Inthegametv.XMLCharsComparable {
+  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
+}
+extension Swift.StaticString : Inthegametv.XMLCharsComparable {
+  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
+}
+prefix operator ^-^
+public typealias XMLNodeType = libxml2.xmlElementType
+extension libxml2.xmlElementType {
+  public static var Element: libxml2.xmlElementType {
+    get
+  }
+  public static var Attribute: libxml2.xmlElementType {
+    get
+  }
+  public static var Text: libxml2.xmlElementType {
+    get
+  }
+  public static var CDataSection: libxml2.xmlElementType {
+    get
+  }
+  public static var EntityRef: libxml2.xmlElementType {
+    get
+  }
+  public static var Entity: libxml2.xmlElementType {
+    get
+  }
+  public static var Pi: libxml2.xmlElementType {
+    get
+  }
+  public static var Comment: libxml2.xmlElementType {
+    get
+  }
+  public static var Document: libxml2.xmlElementType {
+    get
+  }
+  public static var DocumentType: libxml2.xmlElementType {
+    get
+  }
+  public static var DocumentFrag: libxml2.xmlElementType {
+    get
+  }
+  public static var Notation: libxml2.xmlElementType {
+    get
+  }
+  public static var HtmlDocument: libxml2.xmlElementType {
+    get
+  }
+  public static var DTD: libxml2.xmlElementType {
+    get
+  }
+  public static var ElementDecl: libxml2.xmlElementType {
+    get
+  }
+  public static var AttributeDecl: libxml2.xmlElementType {
+    get
+  }
+  public static var EntityDecl: libxml2.xmlElementType {
+    get
+  }
+  public static var NamespaceDecl: libxml2.xmlElementType {
+    get
+  }
+  public static var XIncludeStart: libxml2.xmlElementType {
+    get
+  }
+  public static var XIncludeEnd: libxml2.xmlElementType {
+    get
+  }
+  public static var DocbDocument: libxml2.xmlElementType {
+    get
+  }
+}
+infix operator ~= : DefaultPrecedence
+public func ~= (lhs: Inthegametv.XMLNodeType, rhs: Inthegametv.XMLNodeType) -> Swift.Bool
+@_hasMissingDesignatedInitializers open class XMLNode {
+  unowned final public let document: Inthegametv.XMLDocument
+  open var type: Inthegametv.XMLNodeType {
+    get
+  }
+  open var lineNumber: Swift.Int {
+    get
+  }
+  open var parent: Inthegametv.XMLElement? {
+    get
+  }
+  open var previousSibling: Inthegametv.XMLElement? {
+    get
+  }
+  open var nextSibling: Inthegametv.XMLElement? {
+    get
+  }
+  open var isHTML: Swift.Bool {
+    get
+  }
+  open var stringValue: Swift.String {
+    get
+  }
+  open var rawXML: Swift.String {
+    get
+  }
+  open func toElement() -> Inthegametv.XMLElement?
   @objc deinit
 }
-extension Inthegametv.ITGStorketHelper : Storket.StorketDelegate {
-  public func didReceive(messages: [Storket.StorketMessage], storketType: Storket.StorketType)
+extension Inthegametv.XMLNode : Swift.Equatable {
 }
-extension UIKit.UIDevice {
-  @_Concurrency.MainActor @preconcurrency public static let modelName: Swift.String
-}
+public func == (lhs: Inthegametv.XMLNode, rhs: Inthegametv.XMLNode) -> Swift.Bool
 public protocol ITGOverlayDelegate : AnyObject {
   func overlayDidLoadChannelInfo(_ videoUrl: Swift.String?)
   func overlayRequestedVideoTime()
