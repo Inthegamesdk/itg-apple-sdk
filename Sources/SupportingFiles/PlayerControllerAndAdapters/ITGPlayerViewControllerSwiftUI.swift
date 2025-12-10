@@ -16,7 +16,7 @@ import InthegametviOS
 import AVKit
 
 public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
-
+    
     public class Coordinator: Equatable {
         
         let channelSlug: String
@@ -28,6 +28,7 @@ public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
         let enableLogs: Bool
         let playerAdapter: ITGPlayerAdapter
         var itgPlayerViewController: ITGPlayerViewController? = nil
+        
         
         public static func == (lhs: Coordinator, rhs: Coordinator) -> Bool {
             return lhs.channelSlug == rhs.channelSlug
@@ -53,23 +54,29 @@ public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
         
     }
     
-    var channelSlug: String
-    var virtualChannels: [String]?
-    var accountId: String
-    var environment: ITGEnvironment
-    var foreignId: String? = nil
-    var vars: [String: any Hashable]? = nil
-    var enableLogs: Bool = false
-    var playerAdapter: ITGPlayerAdapter
+    let channelSlug: String
+    let virtualChannels: [String]?
+    let accountId: String
+    let environment: ITGEnvironment
+    let foreignId: String?
+    let vars: [String: any Hashable]?
+    let enableLogs: Bool
+    let playerAdapter: ITGPlayerAdapter
+    let blockAll: Bool
+    let shouldPlayChannelVideo: Bool
+    let closeButtonVisibilityMode: ITGPlayerViewController.CloseButtonVisibilityMode
     
     public init(channelSlug: String,
                 virtualChannels: [String]? = nil,
                 accountId: String,
-                environment: ITGEnvironment,
+                environment: ITGEnvironment = ITGEnvironment.defaultEnvironment,
                 foreignId: String? = nil,
                 vars: [String : any Hashable]? = nil,
-                enableLogs: Bool,
-                playerAdapter: ITGPlayerAdapter) {
+                enableLogs: Bool = false,
+                playerAdapter: ITGPlayerAdapter,
+                blockAll: Bool,
+                shouldPlayChannelVideo: Bool = false,
+                closeButtonVisibilityMode: ITGPlayerViewController.CloseButtonVisibilityMode = .hidden) {
         self.channelSlug = channelSlug
         self.virtualChannels = virtualChannels
         self.accountId = accountId
@@ -78,14 +85,20 @@ public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
         self.vars = vars
         self.enableLogs = enableLogs
         self.playerAdapter = playerAdapter
+        self.blockAll = blockAll
+        self.shouldPlayChannelVideo = shouldPlayChannelVideo
+        self.closeButtonVisibilityMode = closeButtonVisibilityMode
     }
     
     public func makeUIViewController(context: Context) -> ITGPlayerViewController {
         context.coordinator.itgPlayerViewController = ITGPlayerViewController(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, foreignId: foreignId, vars: vars, playerAdapter: playerAdapter, shouldResetOverlayUser: false, enableLogs: enableLogs)
-        context.coordinator.itgPlayerViewController?.shouldPlayChannelVideo = false
+        context.coordinator.itgPlayerViewController?.shouldPlayChannelVideo = shouldPlayChannelVideo
+#if os(iOS)
+        context.coordinator.itgPlayerViewController?.closeButtonVisibilityMode = closeButtonVisibilityMode
+#endif
         return context.coordinator.itgPlayerViewController!
     }
-
+    
     public func makeCoordinator() -> Coordinator {
         return Coordinator(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, foreignId: foreignId, vars: vars, enableLogs: enableLogs, playerAdapter: playerAdapter)
     }
@@ -94,6 +107,7 @@ public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
         if context.coordinator != self.makeCoordinator() {
             context.coordinator.itgPlayerViewController?.reloadChannel(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, foreignId: foreignId, vars: vars, playerAdapter: playerAdapter, shouldResetOverlayUser: false, enableLogs: enableLogs)
         }
+        context.coordinator.itgPlayerViewController?.overlayView?.blockAll(blockAll)
     }
     
 }

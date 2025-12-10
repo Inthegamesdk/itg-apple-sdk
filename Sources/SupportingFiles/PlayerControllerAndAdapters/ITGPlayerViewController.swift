@@ -16,7 +16,6 @@ import InthegametviOS
 
 open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPlayerAdapterDelegate {
     
-#if os(iOS)
     public enum CloseButtonVisibilityMode: String {
         
         case always
@@ -25,6 +24,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         
     }
     
+#if os(iOS)
     open lazy var closeButton: UIButton = {
         let button = UIButton.init(type: .custom)
         button.translatesAutoresizingMaskIntoConstraints = false

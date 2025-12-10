@@ -429,10 +429,6 @@ public enum ITGContent {
     }
   }
   @_Concurrency.MainActor @preconcurrency public static var overlayVersion: Swift.String
-  @_Concurrency.MainActor @preconcurrency public class var reactCompatMode: Swift.Bool {
-    get
-    set
-  }
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any InthegametviOS.ITGOverlayDelegate)?
   @_Concurrency.MainActor @preconcurrency public var autoBlockValue: Swift.Bool {
     get

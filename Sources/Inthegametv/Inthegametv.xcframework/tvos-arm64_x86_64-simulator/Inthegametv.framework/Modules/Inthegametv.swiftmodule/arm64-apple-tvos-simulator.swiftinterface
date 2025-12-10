@@ -141,60 +141,6 @@ extension CoreGraphics.CGImage {
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers public class ITGStorketHelper : ObjectiveC.NSObject {
-  public func connect(accountId: Swift.String, channelSlug: Swift.String, environment: Inthegametv.ITGEnvironment, token: Swift.String)
-  public func stop()
-  @objc override dynamic public init()
-  @objc deinit
-}
-extension Inthegametv.ITGStorketHelper : Storket.StorketDelegate {
-  public func didReceive(messages: [Storket.StorketMessage], storketType: Storket.StorketType)
-}
-extension UIKit.UIDevice {
-  @_Concurrency.MainActor @preconcurrency public static let modelName: Swift.String
-}
-@_hasMissingDesignatedInitializers open class XMLDocument {
-  open var version: Swift.String? {
-    get
-  }
-  open var encoding: Swift.String.Encoding {
-    get
-  }
-  open var root: Inthegametv.XMLElement? {
-    get
-  }
-  open var numberFormatter: Foundation.NumberFormatter {
-    get
-    set
-  }
-  open var dateFormatter: Foundation.DateFormatter {
-    get
-    set
-  }
-  convenience public init(string: Swift.String, encoding: Swift.String.Encoding = String.Encoding.utf8) throws
-  convenience public init(data: Foundation.Data) throws
-  convenience public init(cChars: [Swift.CChar]) throws
-  convenience public init(buffer: Swift.UnsafeBufferPointer<Swift.Int8>) throws
-  @objc deinit
-  open func definePrefix(_ prefix: Swift.String, forNamespace ns: Swift.String)
-  @available(*, deprecated, renamed: "definePrefix(_:forNamespace:)", message: "This API will be removed in version 4.")
-  open func definePrefix(_ prefix: Swift.String, defaultNamespace ns: Swift.String)
-}
-extension Inthegametv.XMLDocument : Swift.Equatable {
-}
-public func == (lhs: Inthegametv.XMLDocument, rhs: Inthegametv.XMLDocument) -> Swift.Bool
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class HTMLDocument : Inthegametv.XMLDocument {
-  open var title: Swift.String? {
-    get
-  }
-  open var head: Inthegametv.XMLElement? {
-    get
-  }
-  open var body: Inthegametv.XMLElement? {
-    get
-  }
-  @objc deinit
-}
 @_hasMissingDesignatedInitializers open class NodeSet : Swift.Collection {
   public typealias Index = Swift.Int
   public typealias IndexDistance = Swift.Int
@@ -433,6 +379,60 @@ public func ~= (lhs: Inthegametv.XMLNodeType, rhs: Inthegametv.XMLNodeType) -> S
 extension Inthegametv.XMLNode : Swift.Equatable {
 }
 public func == (lhs: Inthegametv.XMLNode, rhs: Inthegametv.XMLNode) -> Swift.Bool
+@_hasMissingDesignatedInitializers open class XMLDocument {
+  open var version: Swift.String? {
+    get
+  }
+  open var encoding: Swift.String.Encoding {
+    get
+  }
+  open var root: Inthegametv.XMLElement? {
+    get
+  }
+  open var numberFormatter: Foundation.NumberFormatter {
+    get
+    set
+  }
+  open var dateFormatter: Foundation.DateFormatter {
+    get
+    set
+  }
+  convenience public init(string: Swift.String, encoding: Swift.String.Encoding = String.Encoding.utf8) throws
+  convenience public init(data: Foundation.Data) throws
+  convenience public init(cChars: [Swift.CChar]) throws
+  convenience public init(buffer: Swift.UnsafeBufferPointer<Swift.Int8>) throws
+  @objc deinit
+  open func definePrefix(_ prefix: Swift.String, forNamespace ns: Swift.String)
+  @available(*, deprecated, renamed: "definePrefix(_:forNamespace:)", message: "This API will be removed in version 4.")
+  open func definePrefix(_ prefix: Swift.String, defaultNamespace ns: Swift.String)
+}
+extension Inthegametv.XMLDocument : Swift.Equatable {
+}
+public func == (lhs: Inthegametv.XMLDocument, rhs: Inthegametv.XMLDocument) -> Swift.Bool
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class HTMLDocument : Inthegametv.XMLDocument {
+  open var title: Swift.String? {
+    get
+  }
+  open var head: Inthegametv.XMLElement? {
+    get
+  }
+  open var body: Inthegametv.XMLElement? {
+    get
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class ITGStorketHelper : ObjectiveC.NSObject {
+  public func connect(accountId: Swift.String, channelSlug: Swift.String, environment: Inthegametv.ITGEnvironment, token: Swift.String)
+  public func stop()
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension Inthegametv.ITGStorketHelper : Storket.StorketDelegate {
+  public func didReceive(messages: [Storket.StorketMessage], storketType: Storket.StorketType)
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor @preconcurrency public static let modelName: Swift.String
+}
 public protocol ITGOverlayDelegate : AnyObject {
   func overlayDidLoadChannelInfo(_ videoUrl: Swift.String?)
   func overlayRequestedVideoTime()
@@ -470,10 +470,6 @@ public enum ITGContent {
     }
   }
   @_Concurrency.MainActor @preconcurrency public static var overlayVersion: Swift.String
-  @_Concurrency.MainActor @preconcurrency public class var reactCompatMode: Swift.Bool {
-    get
-    set
-  }
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any Inthegametv.ITGOverlayDelegate)?
   @_Concurrency.MainActor @preconcurrency public var autoBlockValue: Swift.Bool {
     get
