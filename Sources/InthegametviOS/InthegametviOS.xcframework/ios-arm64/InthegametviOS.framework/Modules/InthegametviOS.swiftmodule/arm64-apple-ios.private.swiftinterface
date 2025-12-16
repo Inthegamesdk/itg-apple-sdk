@@ -16,6 +16,265 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import libxml2
+public struct User : Swift.Codable {
+  public let id: Swift.String?
+  public var stats: [InthegametviOS.UserChannelPoints]? {
+    get
+  }
+  public var activities: [InthegametviOS.UserActivity]? {
+    get
+  }
+  public let createdAt: Foundation.Date?
+  public let foreignId: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UserChannelPoints : Swift.Codable {
+  public let channelSlug: Swift.String
+  public var coins: Swift.Int {
+    get
+  }
+  public var expoints: Swift.Int {
+    get
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UserActivity : Swift.Codable {
+  public let id: Swift.String
+  public let answer: Swift.String
+  public var correctAnswer: Swift.String?
+  public let channelSlug: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum AnalyticsEventType : Swift.String, Swift.Codable {
+  case view, engage, close, register, login
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum AnalyticsParent : Swift.String, Swift.Codable {
+  case inject, clock, sequence, app
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum AnalyticsModule : Swift.String, Swift.Codable {
+  case register, login, flexi
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ModuleType : Swift.String, Swift.Codable {
+  case sequence
+  case flexi
+  case other
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct AnalyticsInfo : Swift.Codable {
+  public let module: InthegametviOS.AnalyticsModule?
+  public let moduleId: Swift.String?
+  public let submodule: Swift.String?
+  public let parent: InthegametviOS.AnalyticsParent?
+  public let parentId: Swift.String?
+  public let campaignId: Swift.String?
+  public var flexiSubType: Swift.Int?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class PassthroughView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor @preconcurrency public static let modelName: Swift.String
+}
+@objc @_inheritsConvenienceInitializers public class ITGStorketHelper : ObjectiveC.NSObject {
+  public func connect(accountId: Swift.String, channelSlug: Swift.String, environment: InthegametviOS.ITGEnvironment, token: Swift.String)
+  public func stop()
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension InthegametviOS.ITGStorketHelper : Storket.StorketDelegate {
+  public func didReceive(messages: [Storket.StorketMessage], storketType: Storket.StorketType)
+}
+public protocol ITGOverlayDelegate : AnyObject {
+  func overlayDidLoadChannelInfo(_ videoUrl: Swift.String?)
+  func overlayRequestedVideoTime()
+  func overlayRequestedPause()
+  func overlayRequestedPlay()
+  func overlayRequestedFocus()
+  func overlayReleasedFocus()
+  func overlayReceivedDeeplink(_ link: Swift.String)
+  func overlayRequestedVideoSeek(time: Foundation.TimeInterval)
+  func overlayRequestedVideoResolution() -> CoreFoundation.CGSize
+  func overlayDidProcessAnalyticEvent(info: InthegametviOS.AnalyticsInfo, type: InthegametviOS.AnalyticsEventType)
+  func userState(_ user: InthegametviOS.User)
+  func overlayDidPresentContent(_ content: InthegametviOS.ITGContent)
+  func overlayDidEndPresentingContent(_ content: InthegametviOS.ITGContent)
+  func overlayRequestedVideoLength() -> Foundation.TimeInterval
+  func overlayRequestedVideoGravity(_ videoGravity: AVFoundation.AVLayerVideoGravity)
+  func overlayRequestedResetVideoGravity()
+  func overlayRequestedVideoSoundLevel(_ soundLevel: Swift.Float)
+  func overlayRequestedResetVideoSoundLevel()
+  func overlayWillChangeVideoRect(_ rect: CoreFoundation.CGRect, animationDuration: Foundation.TimeInterval)
+  func overlayWillResetVideoRect(_ animationDuration: Foundation.TimeInterval)
+}
+public enum ITGContent {
+  case qrview
+  case flexi(interactive: Swift.Bool)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class ITGOverlayView : InthegametviOS.PassthroughView {
+  public enum AutoBlockMode : Swift.String {
+    case auto
+    case disabled
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  @_Concurrency.MainActor @preconcurrency public static var overlayVersion: Swift.String
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any InthegametviOS.ITGOverlayDelegate)?
+  @_Concurrency.MainActor @preconcurrency public var autoBlockValue: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var injectionDelay: Swift.Int? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var adsMetadata: [Swift.Dictionary<Swift.String, Any>]? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var preferredFocusEnvironments: [any UIKit.UIFocusEnvironment] {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToWindow()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func willMove(toWindow newWindow: UIKit.UIWindow?)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func load(channelSlug: Swift.String, virtualChannels: [Swift.String]? = [], accountId: Swift.String, environment: InthegametviOS.ITGEnvironment = ITGEnvironment.defaultEnvironment, delegate: (any InthegametviOS.ITGOverlayDelegate)?, foreignId: Swift.String? = nil, videoView: UIKit.UIView, vars: [Swift.String : any Swift.Hashable]? = nil, enableLogs: Swift.Bool = false)
+  @_Concurrency.MainActor @preconcurrency public func resetUser()
+  @_Concurrency.MainActor @preconcurrency public func closeInteractionIfNeeded() -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func isDisplayingInteraction() -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func videoPaused(time: Foundation.TimeInterval, userInitiated: Swift.Bool = false, isSeeking: Swift.Bool = false)
+  @_Concurrency.MainActor @preconcurrency public func videoPlaying(time: Foundation.TimeInterval)
+  @_Concurrency.MainActor @preconcurrency public func setLiveMode(enabled: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func injectActivity(_ activity: [Swift.String : Any])
+  @_Concurrency.MainActor @preconcurrency public func injectFlexi(_ flexi: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public func injectFlexi(_ url: Foundation.URL)
+  @_Concurrency.MainActor @preconcurrency public func closeFlexi(_ isUserInteraction: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func currentContent() -> [InthegametviOS.ITGContent]
+  @_Concurrency.MainActor @preconcurrency public func blockAll(_ block: Swift.Bool, includingPauseAds: Swift.Bool = false)
+  @_Concurrency.MainActor @preconcurrency public func closeAll(_ includingPauseAds: Swift.Bool = false, isUserInteraction: Swift.Bool = false, animated: Swift.Bool = true)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class FocusObservableView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public var focusChangeObservationBlock: ((UIKit.UIView?) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct ITGEnvironment : Swift.Equatable {
+  public static var defaultEnvironment: InthegametviOS.ITGEnvironment {
+    get
+  }
+  public let apiBaseURL: Swift.String
+  public let imageBaseURL: Swift.String
+  public let envName: Swift.String
+  public let settingsURL: Swift.String
+  public static func == (lhs: InthegametviOS.ITGEnvironment, rhs: InthegametviOS.ITGEnvironment) -> Swift.Bool
+  public init(envName: Swift.String)
+  public init(apiBaseURL: Swift.String, imageBaseURL: Swift.String, envName: Swift.String, settingsURL: Swift.String)
+}
+public protocol Queryable {
+  func xpath(_ xpath: Swift.String) -> InthegametviOS.NodeSet
+  func tryXPath(_ xpath: Swift.String) throws -> InthegametviOS.NodeSet
+  func firstChild(xpath: Swift.String) -> InthegametviOS.XMLElement?
+  func css(_ css: Swift.String) -> InthegametviOS.NodeSet
+  func firstChild(css: Swift.String) -> InthegametviOS.XMLElement?
+  func eval(xpath: Swift.String) -> InthegametviOS.XPathFunctionResult?
+}
+@_hasMissingDesignatedInitializers open class XPathFunctionResult {
+  open var boolValue: Swift.Bool {
+    get
+  }
+  open var doubleValue: Swift.Double {
+    get
+  }
+  open var stringValue: Swift.String {
+    get
+  }
+  @objc deinit
+}
+extension InthegametviOS.XMLDocument : InthegametviOS.Queryable {
+  public func xpath(_ xpath: Swift.String) -> InthegametviOS.NodeSet
+  public func tryXPath(_ xpath: Swift.String) throws -> InthegametviOS.NodeSet
+  public func firstChild(xpath: Swift.String) -> InthegametviOS.XMLElement?
+  public func css(_ css: Swift.String) -> InthegametviOS.NodeSet
+  public func firstChild(css: Swift.String) -> InthegametviOS.XMLElement?
+  public func eval(xpath: Swift.String) -> InthegametviOS.XPathFunctionResult?
+}
+extension InthegametviOS.XMLElement : InthegametviOS.Queryable {
+  public func xpath(_ xpath: Swift.String) -> InthegametviOS.NodeSet
+  public func tryXPath(_ xpath: Swift.String) throws -> InthegametviOS.NodeSet
+  public func firstChild(xpath: Swift.String) -> InthegametviOS.XMLElement?
+  public func css(_ css: Swift.String) -> InthegametviOS.NodeSet
+  public func firstChild(css: Swift.String) -> InthegametviOS.XMLElement?
+  public func eval(xpath: Swift.String) -> InthegametviOS.XPathFunctionResult?
+}
+public enum XMLError : Swift.Error {
+  case noError
+  case libXMLError(code: Swift.Int, message: Swift.String)
+  case invalidData
+  case parserFailure
+  case xpathError(code: Swift.Int)
+}
+extension InthegametviOS.XMLNode : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension InthegametviOS.XMLDocument : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+public protocol XMLCharsComparable {
+  func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
+}
+extension Swift.String : InthegametviOS.XMLCharsComparable {
+  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
+}
+extension Swift.StaticString : InthegametviOS.XMLCharsComparable {
+  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
+}
+prefix operator ^-^
 public typealias XMLNodeType = libxml2.xmlElementType
 extension libxml2.xmlElementType {
   public static var Element: libxml2.xmlElementType {
@@ -226,265 +485,6 @@ public func == (lhs: InthegametviOS.XMLDocument, rhs: InthegametviOS.XMLDocument
     get
   }
   @objc deinit
-}
-public protocol Queryable {
-  func xpath(_ xpath: Swift.String) -> InthegametviOS.NodeSet
-  func tryXPath(_ xpath: Swift.String) throws -> InthegametviOS.NodeSet
-  func firstChild(xpath: Swift.String) -> InthegametviOS.XMLElement?
-  func css(_ css: Swift.String) -> InthegametviOS.NodeSet
-  func firstChild(css: Swift.String) -> InthegametviOS.XMLElement?
-  func eval(xpath: Swift.String) -> InthegametviOS.XPathFunctionResult?
-}
-@_hasMissingDesignatedInitializers open class XPathFunctionResult {
-  open var boolValue: Swift.Bool {
-    get
-  }
-  open var doubleValue: Swift.Double {
-    get
-  }
-  open var stringValue: Swift.String {
-    get
-  }
-  @objc deinit
-}
-extension InthegametviOS.XMLDocument : InthegametviOS.Queryable {
-  public func xpath(_ xpath: Swift.String) -> InthegametviOS.NodeSet
-  public func tryXPath(_ xpath: Swift.String) throws -> InthegametviOS.NodeSet
-  public func firstChild(xpath: Swift.String) -> InthegametviOS.XMLElement?
-  public func css(_ css: Swift.String) -> InthegametviOS.NodeSet
-  public func firstChild(css: Swift.String) -> InthegametviOS.XMLElement?
-  public func eval(xpath: Swift.String) -> InthegametviOS.XPathFunctionResult?
-}
-extension InthegametviOS.XMLElement : InthegametviOS.Queryable {
-  public func xpath(_ xpath: Swift.String) -> InthegametviOS.NodeSet
-  public func tryXPath(_ xpath: Swift.String) throws -> InthegametviOS.NodeSet
-  public func firstChild(xpath: Swift.String) -> InthegametviOS.XMLElement?
-  public func css(_ css: Swift.String) -> InthegametviOS.NodeSet
-  public func firstChild(css: Swift.String) -> InthegametviOS.XMLElement?
-  public func eval(xpath: Swift.String) -> InthegametviOS.XPathFunctionResult?
-}
-public enum XMLError : Swift.Error {
-  case noError
-  case libXMLError(code: Swift.Int, message: Swift.String)
-  case invalidData
-  case parserFailure
-  case xpathError(code: Swift.Int)
-}
-extension InthegametviOS.XMLNode : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-  public var debugDescription: Swift.String {
-    get
-  }
-}
-extension InthegametviOS.XMLDocument : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-  public var debugDescription: Swift.String {
-    get
-  }
-}
-public protocol XMLCharsComparable {
-  func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
-}
-extension Swift.String : InthegametviOS.XMLCharsComparable {
-  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
-}
-extension Swift.StaticString : InthegametviOS.XMLCharsComparable {
-  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
-}
-prefix operator ^-^
-public struct User : Swift.Codable {
-  public let id: Swift.String?
-  public var stats: [InthegametviOS.UserChannelPoints]? {
-    get
-  }
-  public var activities: [InthegametviOS.UserActivity]? {
-    get
-  }
-  public let createdAt: Foundation.Date?
-  public let foreignId: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct UserChannelPoints : Swift.Codable {
-  public let channelSlug: Swift.String
-  public var coins: Swift.Int {
-    get
-  }
-  public var expoints: Swift.Int {
-    get
-  }
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct UserActivity : Swift.Codable {
-  public let id: Swift.String
-  public let answer: Swift.String
-  public var correctAnswer: Swift.String?
-  public let channelSlug: Swift.String
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public enum AnalyticsEventType : Swift.String, Swift.Codable {
-  case view, engage, close, register, login
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public enum AnalyticsParent : Swift.String, Swift.Codable {
-  case inject, clock, sequence, app
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public enum AnalyticsModule : Swift.String, Swift.Codable {
-  case register, login, flexi
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public enum ModuleType : Swift.String, Swift.Codable {
-  case sequence
-  case flexi
-  case other
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public struct AnalyticsInfo : Swift.Codable {
-  public let module: InthegametviOS.AnalyticsModule?
-  public let moduleId: Swift.String?
-  public let submodule: Swift.String?
-  public let parent: InthegametviOS.AnalyticsParent?
-  public let parentId: Swift.String?
-  public let campaignId: Swift.String?
-  public var flexiSubType: Swift.Int?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class PassthroughView : UIKit.UIView {
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
-extension UIKit.UIDevice {
-  @_Concurrency.MainActor @preconcurrency public static let modelName: Swift.String
-}
-@objc @_inheritsConvenienceInitializers public class ITGStorketHelper : ObjectiveC.NSObject {
-  public func connect(accountId: Swift.String, channelSlug: Swift.String, environment: InthegametviOS.ITGEnvironment, token: Swift.String)
-  public func stop()
-  @objc override dynamic public init()
-  @objc deinit
-}
-extension InthegametviOS.ITGStorketHelper : Storket.StorketDelegate {
-  public func didReceive(messages: [Storket.StorketMessage], storketType: Storket.StorketType)
-}
-public protocol ITGOverlayDelegate : AnyObject {
-  func overlayDidLoadChannelInfo(_ videoUrl: Swift.String?)
-  func overlayRequestedVideoTime()
-  func overlayRequestedPause()
-  func overlayRequestedPlay()
-  func overlayRequestedFocus()
-  func overlayReleasedFocus()
-  func overlayReceivedDeeplink(_ link: Swift.String)
-  func overlayRequestedVideoSeek(time: Foundation.TimeInterval)
-  func overlayRequestedVideoResolution() -> CoreFoundation.CGSize
-  func overlayDidProcessAnalyticEvent(info: InthegametviOS.AnalyticsInfo, type: InthegametviOS.AnalyticsEventType)
-  func userState(_ user: InthegametviOS.User)
-  func overlayDidPresentContent(_ content: InthegametviOS.ITGContent)
-  func overlayDidEndPresentingContent(_ content: InthegametviOS.ITGContent)
-  func overlayRequestedVideoLength() -> Foundation.TimeInterval
-  func overlayRequestedVideoGravity(_ videoGravity: AVFoundation.AVLayerVideoGravity)
-  func overlayRequestedResetVideoGravity()
-  func overlayRequestedVideoSoundLevel(_ soundLevel: Swift.Float)
-  func overlayRequestedResetVideoSoundLevel()
-  func overlayWillChangeVideoRect(_ rect: CoreFoundation.CGRect, animationDuration: Foundation.TimeInterval)
-  func overlayWillResetVideoRect(_ animationDuration: Foundation.TimeInterval)
-}
-public enum ITGContent {
-  case qrview
-  case flexi(interactive: Swift.Bool)
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class ITGOverlayView : InthegametviOS.PassthroughView {
-  public enum AutoBlockMode : Swift.String {
-    case auto
-    case disabled
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  @_Concurrency.MainActor @preconcurrency public static var overlayVersion: Swift.String
-  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any InthegametviOS.ITGOverlayDelegate)?
-  @_Concurrency.MainActor @preconcurrency public var autoBlockValue: Swift.Bool {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public var injectionDelay: Swift.Int? {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public var adsMetadata: [Swift.Dictionary<Swift.String, Any>]? {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var preferredFocusEnvironments: [any UIKit.UIFocusEnvironment] {
-    @objc get
-  }
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToWindow()
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func willMove(toWindow newWindow: UIKit.UIWindow?)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
-  @_Concurrency.MainActor @preconcurrency public func load(channelSlug: Swift.String, virtualChannels: [Swift.String]? = [], accountId: Swift.String, environment: InthegametviOS.ITGEnvironment = ITGEnvironment.defaultEnvironment, delegate: (any InthegametviOS.ITGOverlayDelegate)?, foreignId: Swift.String? = nil, videoView: UIKit.UIView, vars: [Swift.String : any Swift.Hashable]? = nil, enableLogs: Swift.Bool = false)
-  @_Concurrency.MainActor @preconcurrency public func resetUser()
-  @_Concurrency.MainActor @preconcurrency public func closeInteractionIfNeeded() -> Swift.Bool
-  @_Concurrency.MainActor @preconcurrency public func isDisplayingInteraction() -> Swift.Bool
-  @_Concurrency.MainActor @preconcurrency public func videoPaused(time: Foundation.TimeInterval, userInitiated: Swift.Bool = false, isSeeking: Swift.Bool = false)
-  @_Concurrency.MainActor @preconcurrency public func videoPlaying(time: Foundation.TimeInterval)
-  @_Concurrency.MainActor @preconcurrency public func setLiveMode(enabled: Swift.Bool)
-  @_Concurrency.MainActor @preconcurrency public func injectActivity(_ activity: [Swift.String : Any])
-  @_Concurrency.MainActor @preconcurrency public func injectFlexi(_ flexi: Swift.String)
-  @_Concurrency.MainActor @preconcurrency public func injectFlexi(_ url: Foundation.URL)
-  @_Concurrency.MainActor @preconcurrency public func closeFlexi(_ isUserInteraction: Swift.Bool)
-  @_Concurrency.MainActor @preconcurrency public func currentContent() -> [InthegametviOS.ITGContent]
-  @_Concurrency.MainActor @preconcurrency public func blockAll(_ block: Swift.Bool, includingPauseAds: Swift.Bool = false)
-  @_Concurrency.MainActor @preconcurrency public func closeAll(_ includingPauseAds: Swift.Bool = false, isUserInteraction: Swift.Bool = false, animated: Swift.Bool = true)
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class FocusObservableView : UIKit.UIView {
-  @_Concurrency.MainActor @preconcurrency public var focusChangeObservationBlock: ((UIKit.UIView?) -> Swift.Void)?
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
-public struct ITGEnvironment : Swift.Equatable {
-  public static var defaultEnvironment: InthegametviOS.ITGEnvironment {
-    get
-  }
-  public let apiBaseURL: Swift.String
-  public let imageBaseURL: Swift.String
-  public let envName: Swift.String
-  public let settingsURL: Swift.String
-  public static func == (lhs: InthegametviOS.ITGEnvironment, rhs: InthegametviOS.ITGEnvironment) -> Swift.Bool
-  public init(envName: Swift.String)
-  public init(apiBaseURL: Swift.String, imageBaseURL: Swift.String, envName: Swift.String, settingsURL: Swift.String)
 }
 public protocol NibView {
   static func nibName(_ isLandscapeiOS: Swift.Bool) -> Swift.String

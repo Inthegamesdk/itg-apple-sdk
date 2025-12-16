@@ -15,20 +15,20 @@ import AVKit
 
 public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
     
-    public class Coordinator: ITGOverlayDelegate, Equatable {
+    public class Coordinator: ITGOverlayDelegate {
         
-        let overlayView: ITGOverlayView?
-        let uikitVideoView: UIView
-        let channelSlug: String
-        let virtualChannels: [String]?
-        let accountId: String
-        let environment: ITGEnvironment
-        let foreignId: String?
-        let videoView: Content
-        let vars: [String : any Hashable]?
-        let enableLogs: Bool
+        let overlayView: ITGOverlayView = ITGOverlayView()
+        var uikitVideoView: UIView
+        var channelSlug: String
+        var virtualChannels: [String]?
+        var accountId: String
+        var environment: ITGEnvironment
+        var foreignId: String?
+        var vars: [String : any Hashable]?
+        var enableLogs: Bool
+        var playerIsPlaying: Bool
         let onOverlayDidLoadChannelInfo: ((_ videoUrl: String?) -> Void)?
-        let onOverlayRequestedVideoTime: () -> Void
+        let onOverlayRequestedVideoTime: () -> TimeInterval
         let onOverlayRequestedPause: () -> Void
         let onOverlayRequestedPlay: () -> Void
         let onOverlayRequestedFocus: () -> Void
@@ -46,59 +46,47 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
         let onOverlayRequestedVideoSoundLevel: (Float) -> Void
         let onOverlayRequestedResetVideoSoundLevel: () -> Void
         let onOverlayWillChangeVideoRect: ((CGRect, TimeInterval) -> Void)?
-        let onOverlayWillResetVideoRect: ((TimeInterval) -> Void)?        
+        let onOverlayWillResetVideoRect: ((TimeInterval) -> Void)?
         private var observation: NSKeyValueObservation?
         
-        public static func == (lhs: Coordinator, rhs: Coordinator) -> Bool {
-            return lhs.channelSlug == rhs.channelSlug
-            && lhs.virtualChannels == rhs.virtualChannels
-            && lhs.accountId == rhs.accountId
-            && lhs.environment == rhs.environment
-            && lhs.foreignId == rhs.foreignId
-            && lhs.vars?.map({ item in return String(item.key.hashValue) + String(item.value.hashValue) }) == rhs.vars?.map({ item in return String(item.key.hashValue) + String(item.value.hashValue) })
-            && lhs.enableLogs == rhs.enableLogs
-        }
-        
-        public init(overlayView: ITGOverlayView,
-             channelSlug: String,
-             uikitVideoView: UIView,
-             virtualChannels: [String]? = nil,
-             accountId: String,
-             environment: ITGEnvironment,
-             foreignId: String? = nil,
-             videoView: Content,
-             vars: [String : any Hashable]? = nil,
-             enableLogs: Bool,
-             onOverlayDidLoadChannelInfo: ((_: String?) -> Void)? = nil,
-             onOverlayRequestedVideoTime: @escaping () -> Void,
-             onOverlayRequestedPause: @escaping () -> Void,
-             onOverlayRequestedPlay: @escaping () -> Void,
-             onOverlayRequestedFocus: @escaping () -> Void,
-             onOnOverlayReleasedFocus: @escaping () -> Void,
-             onOverlayReceivedDeeplink: ((String) -> Void)? = nil,
-             onOverlayRequestedVideoSeek: @escaping (TimeInterval) -> Void,
-             onOverlayRequestedVideoResolution: (() -> CGSize)? = nil,
-             onOverlayDidProcessAnalyticEvent: ((AnalyticsInfo, AnalyticsEventType) -> Void)? = nil,
-             onUserState: ((User) -> Void)? = nil,
-             onOverlayDidPresentContent: ((ITGContent) -> Void)? = nil,
-             onOverlayDidEndPresentingContent: ((ITGContent) -> Void)? = nil,
-             onOverlayRequestedVideoLength: (() -> TimeInterval)? = nil,
-             onOverlayRequestedVideoGravity: ((AVLayerVideoGravity) -> Void)? = nil,
-             onOverlayRequestedResetVideoGravity: (() -> Void)? = nil,
-             onOverlayRequestedVideoSoundLevel: @escaping (Float) -> Void,
-             onOverlayRequestedResetVideoSoundLevel: @escaping () -> Void,
-             onOverlayWillChangeVideoRect: ((CGRect, TimeInterval) -> Void)? = nil,
-             onOverlayWillResetVideoRect: ((TimeInterval) -> Void)? = nil) {
-            self.overlayView = overlayView
+        public init(channelSlug: String,
+                    uikitVideoView: UIView,
+                    virtualChannels: [String]? = nil,
+                    accountId: String,
+                    environment: ITGEnvironment,
+                    foreignId: String? = nil,
+                    vars: [String : any Hashable]? = nil,
+                    enableLogs: Bool,
+                    playerIsPlaying: Bool,
+                    onOverlayDidLoadChannelInfo: ((_: String?) -> Void)? = nil,
+                    onOverlayRequestedVideoTime: @escaping () -> TimeInterval,
+                    onOverlayRequestedPause: @escaping () -> Void,
+                    onOverlayRequestedPlay: @escaping () -> Void,
+                    onOverlayRequestedFocus: @escaping () -> Void,
+                    onOnOverlayReleasedFocus: @escaping () -> Void,
+                    onOverlayReceivedDeeplink: ((String) -> Void)? = nil,
+                    onOverlayRequestedVideoSeek: @escaping (TimeInterval) -> Void,
+                    onOverlayRequestedVideoResolution: (() -> CGSize)? = nil,
+                    onOverlayDidProcessAnalyticEvent: ((AnalyticsInfo, AnalyticsEventType) -> Void)? = nil,
+                    onUserState: ((User) -> Void)? = nil,
+                    onOverlayDidPresentContent: ((ITGContent) -> Void)? = nil,
+                    onOverlayDidEndPresentingContent: ((ITGContent) -> Void)? = nil,
+                    onOverlayRequestedVideoLength: (() -> TimeInterval)? = nil,
+                    onOverlayRequestedVideoGravity: ((AVLayerVideoGravity) -> Void)? = nil,
+                    onOverlayRequestedResetVideoGravity: (() -> Void)? = nil,
+                    onOverlayRequestedVideoSoundLevel: @escaping (Float) -> Void,
+                    onOverlayRequestedResetVideoSoundLevel: @escaping () -> Void,
+                    onOverlayWillChangeVideoRect: ((CGRect, TimeInterval) -> Void)? = nil,
+                    onOverlayWillResetVideoRect: ((TimeInterval) -> Void)? = nil) {
             self.uikitVideoView = uikitVideoView
             self.channelSlug = channelSlug
             self.virtualChannels = virtualChannels
             self.accountId = accountId
             self.environment = environment
             self.foreignId = foreignId
-            self.videoView = videoView
             self.vars = vars
             self.enableLogs = enableLogs
+            self.playerIsPlaying = playerIsPlaying
             self.onOverlayDidLoadChannelInfo = onOverlayDidLoadChannelInfo
             self.onOverlayRequestedVideoTime = onOverlayRequestedVideoTime
             self.onOverlayRequestedPause = onOverlayRequestedPause
@@ -126,7 +114,11 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
         }
         
         public func overlayRequestedVideoTime() {
-            onOverlayRequestedVideoTime()
+            if playerIsPlaying {
+                overlayView.videoPlaying(time: onOverlayRequestedVideoTime())
+            } else {
+                overlayView.videoPaused(time: onOverlayRequestedVideoTime())
+            }
         }
         
         public func overlayRequestedPause() {
@@ -240,8 +232,10 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
     var videoView: Content
     var vars: [String : any Hashable]? = nil
     var enableLogs: Bool = false
+    var blockAll: Bool
+    var playerIsPlaying: Bool
     var onOverlayDidLoadChannelInfo: ((_ videoUrl: String?) -> Void)?
-    var onOverlayRequestedVideoTime: () -> Void
+    var onOverlayRequestedVideoTime: () -> TimeInterval
     var onOverlayRequestedPause: () -> Void
     var onOverlayRequestedPlay: () -> Void
     var onOverlayRequestedFocus: () -> Void
@@ -260,35 +254,39 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
     var onOverlayRequestedResetVideoSoundLevel: () -> Void
     var onOverlayWillChangeVideoRect: ((CGRect, TimeInterval) -> Void)?
     var onOverlayWillResetVideoRect: ((TimeInterval) -> Void)?
-    var onOverlayCreated: ((ITGOverlayViewSwiftUI) -> Void)?
-    private let overlayView = ITGOverlayView()
-    private var uikitVideoView: UIView!
     
-    public init(channelSlug: String, virtualChannels: [String]? = nil,
-         accountId: String, environment: ITGEnvironment, foreignId: String? = nil,
-         videoView: any View, vars: [String : any Hashable]? = nil,
-         enableLogs: Bool = false, onOverlayDidLoadChannelInfo: ((_: String?) -> Void)? = nil,
-         onOverlayRequestedVideoTime: @escaping () -> Void,
-         onOverlayRequestedPause: @escaping () -> Void,
-         onOverlayRequestedPlay: @escaping () -> Void,
-         onOverlayRequestedFocus: @escaping () -> Void,
-         onOnOverlayReleasedFocus: @escaping () -> Void,
-         onOverlayReceivedDeeplink: ((String) -> Void)? = nil,
-         onOverlayRequestedVideoSeek: @escaping (TimeInterval) -> Void,
-         onOverlayRequestedVideoResolution: (() -> CGSize)? = nil,
-         onOverlayDidProcessAnalyticEvent: ((AnalyticsInfo, AnalyticsEventType) -> Void)? = nil,
-         onUserState: ((User) -> Void)? = nil,
-         onOverlayDidPresentContent: ((ITGContent) -> Void)? = nil,
-         onOverlayDidEndPresentingContent: ((ITGContent) -> Void)? = nil,
-         onOverlayRequestedVideoLength: (() -> TimeInterval)? = nil,
-         onOverlayRequestedVideoGravity: ((AVLayerVideoGravity) -> Void)? = nil,
-         onOverlayRequestedResetVideoGravity: (() -> Void)? = nil,
-         onOverlayRequestedVideoSoundLevel: @escaping (Float) -> Void,
-         onOverlayRequestedResetVideoSoundLevel: @escaping () -> Void,
-         onOverlayWillChangeVideoRect: ((CGRect, TimeInterval) -> Void)? = nil,
-         onOverlayWillResetVideoRect: ((TimeInterval) -> Void)? = nil,
-         onOverlayCreated: ((ITGOverlayViewSwiftUI) -> Void)? = nil,
-         uikitVideoView: UIView? = nil) {
+    public init(channelSlug: String,
+                virtualChannels: [String]? = nil,
+                accountId: String,
+                environment: ITGEnvironment,
+                foreignId: String? = nil,
+                videoView: any View,
+                vars: [String : any Hashable]? = nil,
+                enableLogs: Bool = false,
+                blockAll: Bool,
+                playerIsPlaying: Bool,
+                onOverlayDidLoadChannelInfo: ((_: String?) -> Void)? = nil,
+                onOverlayRequestedVideoTime: @escaping () -> TimeInterval,
+                onOverlayRequestedPause: @escaping () -> Void,
+                onOverlayRequestedPlay: @escaping () -> Void,
+                onOverlayRequestedFocus: @escaping () -> Void,
+                onOnOverlayReleasedFocus: @escaping () -> Void,
+                onOverlayReceivedDeeplink: ((String) -> Void)? = nil,
+                onOverlayRequestedVideoSeek: @escaping (TimeInterval) -> Void,
+                onOverlayRequestedVideoResolution: (() -> CGSize)? = nil,
+                onOverlayDidProcessAnalyticEvent: ((AnalyticsInfo, AnalyticsEventType) -> Void)? = nil,
+                onUserState: ((User) -> Void)? = nil,
+                onOverlayDidPresentContent: ((ITGContent) -> Void)? = nil,
+                onOverlayDidEndPresentingContent: ((ITGContent) -> Void)? = nil,
+                onOverlayRequestedVideoLength: (() -> TimeInterval)? = nil,
+                onOverlayRequestedVideoGravity: ((AVLayerVideoGravity) -> Void)? = nil,
+                onOverlayRequestedResetVideoGravity: (() -> Void)? = nil,
+                onOverlayRequestedVideoSoundLevel: @escaping (Float) -> Void,
+                onOverlayRequestedResetVideoSoundLevel: @escaping () -> Void,
+                onOverlayWillChangeVideoRect: ((CGRect, TimeInterval) -> Void)? = nil,
+                onOverlayWillResetVideoRect: ((TimeInterval) -> Void)? = nil,
+                onOverlayCreated: ((ITGOverlayViewSwiftUI) -> Void)? = nil,
+                uikitVideoView: UIView? = nil) {
         self.channelSlug = channelSlug
         self.virtualChannels = virtualChannels
         self.accountId = accountId
@@ -297,6 +295,8 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
         self.videoView = videoView as! Content
         self.vars = vars
         self.enableLogs = enableLogs
+        self.blockAll = blockAll
+        self.playerIsPlaying = playerIsPlaying
         self.onOverlayDidLoadChannelInfo = onOverlayDidLoadChannelInfo
         self.onOverlayRequestedVideoTime = onOverlayRequestedVideoTime
         self.onOverlayRequestedPause = onOverlayRequestedPause
@@ -317,34 +317,49 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
         self.onOverlayRequestedResetVideoSoundLevel = onOverlayRequestedResetVideoSoundLevel
         self.onOverlayWillChangeVideoRect = onOverlayWillChangeVideoRect
         self.onOverlayWillResetVideoRect = onOverlayWillResetVideoRect
-        self.onOverlayCreated = onOverlayCreated
-        self.uikitVideoView = UIHostingController(rootView: self.videoView).view
     }
-    
+
     public func makeUIView(context: Context) -> ITGOverlayView {
-        overlayView.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: context.coordinator, foreignId: foreignId, videoView: uikitVideoView, vars: vars, enableLogs: enableLogs)
-        uikitVideoView.backgroundColor = .clear
-        onOverlayCreated?(self)
-        return overlayView
+        context.coordinator.uikitVideoView.backgroundColor = .clear
+        context.coordinator.overlayView.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: context.coordinator, foreignId: foreignId, videoView: context.coordinator.uikitVideoView, vars: vars, enableLogs: enableLogs)
+        return context.coordinator.overlayView
     }
-    
+
     public func updateUIView(_ uiView: ITGOverlayView, context: Context) {
-        if context.coordinator != self.makeCoordinator() {
-            
+        if context.coordinator.channelSlug != channelSlug
+            || context.coordinator.virtualChannels != virtualChannels
+            || context.coordinator.accountId != accountId
+            || context.coordinator.environment != environment
+            || context.coordinator.foreignId != foreignId
+            || context.coordinator.vars?.map({ item in return String(item.key.hashValue) + String(item.value.hashValue) }) != vars?.map({ item in return String(item.key.hashValue) + String(item.value.hashValue) }) {
+            context.coordinator.uikitVideoView = UIHostingController(rootView: self.videoView).view
+            context.coordinator.overlayView.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: context.coordinator, foreignId: foreignId, videoView: context.coordinator.uikitVideoView, vars: vars, enableLogs: enableLogs)
+            context.coordinator.channelSlug = channelSlug
+            context.coordinator.virtualChannels = virtualChannels
+            context.coordinator.accountId = accountId
+            context.coordinator.environment = environment
+            context.coordinator.foreignId = foreignId
+            context.coordinator.vars = vars
+        }
+        context.coordinator.overlayView.blockAll(blockAll, includingPauseAds: true)
+        context.coordinator.playerIsPlaying = playerIsPlaying
+        if playerIsPlaying {
+            context.coordinator.overlayView.videoPlaying(time: onOverlayRequestedVideoTime())
+        } else {
+            context.coordinator.overlayView.videoPaused(time: onOverlayRequestedVideoTime())
         }
     }
     
     public func makeCoordinator() -> Coordinator {
-        return Coordinator(overlayView: overlayView,
-                           channelSlug: channelSlug,
-                           uikitVideoView: uikitVideoView,
+        return Coordinator(channelSlug: channelSlug,
+                           uikitVideoView: UIHostingController(rootView: self.videoView).view,
                            virtualChannels: virtualChannels,
                            accountId: accountId,
                            environment: environment,
                            foreignId: foreignId,
-                           videoView: videoView,
                            vars: vars,
                            enableLogs: enableLogs,
+                           playerIsPlaying: playerIsPlaying,
                            onOverlayDidLoadChannelInfo: onOverlayDidLoadChannelInfo,
                            onOverlayRequestedVideoTime: onOverlayRequestedVideoTime,
                            onOverlayRequestedPause: onOverlayRequestedPause,
@@ -365,14 +380,6 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
                            onOverlayRequestedResetVideoSoundLevel: onOverlayRequestedPlay,
                            onOverlayWillChangeVideoRect: onOverlayWillChangeVideoRect,
                            onOverlayWillResetVideoRect: onOverlayWillResetVideoRect)
-    }
-    
-    public func videoPlaying(_ time: TimeInterval) {
-        overlayView.videoPlaying(time: time)
-    }
-    
-    public func videoPaused(_ time: TimeInterval) {
-        overlayView.videoPaused(time: time)
     }
     
 }

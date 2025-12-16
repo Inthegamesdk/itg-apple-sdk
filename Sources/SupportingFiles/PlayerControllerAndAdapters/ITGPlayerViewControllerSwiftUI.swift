@@ -17,29 +17,17 @@ import AVKit
 
 public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
     
-    public class Coordinator: Equatable {
+    public class Coordinator {
         
-        let channelSlug: String
-        let virtualChannels: [String]?
-        let accountId: String
-        let environment: ITGEnvironment
-        let foreignId: String?
-        let vars: [String: any Hashable]?
+        var channelSlug: String
+        var virtualChannels: [String]?
+        var accountId: String
+        var environment: ITGEnvironment
+        var foreignId: String?
+        var vars: [String: any Hashable]?
         let enableLogs: Bool
         let playerAdapter: ITGPlayerAdapter
         var itgPlayerViewController: ITGPlayerViewController? = nil
-        
-        
-        public static func == (lhs: Coordinator, rhs: Coordinator) -> Bool {
-            return lhs.channelSlug == rhs.channelSlug
-            && lhs.virtualChannels == rhs.virtualChannels
-            && lhs.accountId == rhs.accountId
-            && lhs.environment == rhs.environment
-            && lhs.foreignId == rhs.foreignId
-            && lhs.vars?.map({ item in return String(item.key.hashValue) + String(item.value.hashValue) }) == rhs.vars?.map({ item in return String(item.key.hashValue) + String(item.value.hashValue) })
-            && lhs.enableLogs == rhs.enableLogs
-            && lhs.playerAdapter === rhs.playerAdapter
-        }
         
         public init(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment, foreignId: String? = nil, vars: [String : any Hashable]? = nil, enableLogs: Bool, playerAdapter: ITGPlayerAdapter) {
             self.channelSlug = channelSlug
@@ -96,6 +84,7 @@ public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
 #if os(iOS)
         context.coordinator.itgPlayerViewController?.closeButtonVisibilityMode = closeButtonVisibilityMode
 #endif
+        context.coordinator.itgPlayerViewController?.overlayView?.blockAll(blockAll, includingPauseAds: true)
         return context.coordinator.itgPlayerViewController!
     }
     
@@ -104,10 +93,21 @@ public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
     }
     
     public func updateUIViewController(_ uiViewController: ITGPlayerViewController, context: Context) {
-        if context.coordinator != self.makeCoordinator() {
-            context.coordinator.itgPlayerViewController?.reloadChannel(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, foreignId: foreignId, vars: vars, playerAdapter: playerAdapter, shouldResetOverlayUser: false, enableLogs: enableLogs)
+        if context.coordinator.channelSlug != channelSlug
+            || context.coordinator.virtualChannels != virtualChannels
+            || context.coordinator.accountId != accountId
+            || context.coordinator.environment != environment
+            || context.coordinator.foreignId != foreignId
+            || context.coordinator.vars?.map({ item in return String(item.key.hashValue) + String(item.value.hashValue) }) != vars?.map({ item in return String(item.key.hashValue) + String(item.value.hashValue) }) {
+            context.coordinator.itgPlayerViewController?.reloadChannel(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, foreignId: foreignId, vars: vars, playerAdapter: playerAdapter, enableLogs: enableLogs)
+            context.coordinator.channelSlug = channelSlug
+            context.coordinator.virtualChannels = virtualChannels
+            context.coordinator.accountId = accountId
+            context.coordinator.environment = environment
+            context.coordinator.foreignId = foreignId
+            context.coordinator.vars = vars
         }
-        context.coordinator.itgPlayerViewController?.overlayView?.blockAll(blockAll)
+        context.coordinator.itgPlayerViewController?.overlayView?.blockAll(blockAll, includingPauseAds: true)
     }
     
 }

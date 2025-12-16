@@ -207,7 +207,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         //adding gesture for menu button disables passing menu key event further up on responder chain
     }
     
-    func removePlayer() {
+    open func removePlayer() {
         player?.pause()
         player?.getPlayerView()?.removeFromSuperview()
         player = nil

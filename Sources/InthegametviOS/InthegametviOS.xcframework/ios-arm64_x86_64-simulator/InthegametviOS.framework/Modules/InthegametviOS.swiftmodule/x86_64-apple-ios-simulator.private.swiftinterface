@@ -16,116 +16,6 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import libxml2
-public struct User : Swift.Codable {
-  public let id: Swift.String?
-  public var stats: [InthegametviOS.UserChannelPoints]? {
-    get
-  }
-  public var activities: [InthegametviOS.UserActivity]? {
-    get
-  }
-  public let createdAt: Foundation.Date?
-  public let foreignId: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct UserChannelPoints : Swift.Codable {
-  public let channelSlug: Swift.String
-  public var coins: Swift.Int {
-    get
-  }
-  public var expoints: Swift.Int {
-    get
-  }
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct UserActivity : Swift.Codable {
-  public let id: Swift.String
-  public let answer: Swift.String
-  public var correctAnswer: Swift.String?
-  public let channelSlug: Swift.String
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public enum AnalyticsEventType : Swift.String, Swift.Codable {
-  case view, engage, close, register, login
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public enum AnalyticsParent : Swift.String, Swift.Codable {
-  case inject, clock, sequence, app
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public enum AnalyticsModule : Swift.String, Swift.Codable {
-  case register, login, flexi
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public enum ModuleType : Swift.String, Swift.Codable {
-  case sequence
-  case flexi
-  case other
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public struct AnalyticsInfo : Swift.Codable {
-  public let module: InthegametviOS.AnalyticsModule?
-  public let moduleId: Swift.String?
-  public let submodule: Swift.String?
-  public let parent: InthegametviOS.AnalyticsParent?
-  public let parentId: Swift.String?
-  public let campaignId: Swift.String?
-  public var flexiSubType: Swift.Int?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class PassthroughView : UIKit.UIView {
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
-extension InthegametviOS.XMLNode : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-  public var debugDescription: Swift.String {
-    get
-  }
-}
-extension InthegametviOS.XMLDocument : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-  public var debugDescription: Swift.String {
-    get
-  }
-}
-public protocol XMLCharsComparable {
-  func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
-}
-extension Swift.String : InthegametviOS.XMLCharsComparable {
-  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
-}
-extension Swift.StaticString : InthegametviOS.XMLCharsComparable {
-  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
-}
-prefix operator ^-^
 public typealias XMLNodeType = libxml2.xmlElementType
 extension libxml2.xmlElementType {
   public static var Element: libxml2.xmlElementType {
@@ -379,6 +269,116 @@ public enum XMLError : Swift.Error {
   case invalidData
   case parserFailure
   case xpathError(code: Swift.Int)
+}
+extension InthegametviOS.XMLNode : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension InthegametviOS.XMLDocument : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+public protocol XMLCharsComparable {
+  func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
+}
+extension Swift.String : InthegametviOS.XMLCharsComparable {
+  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
+}
+extension Swift.StaticString : InthegametviOS.XMLCharsComparable {
+  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
+}
+prefix operator ^-^
+public struct User : Swift.Codable {
+  public let id: Swift.String?
+  public var stats: [InthegametviOS.UserChannelPoints]? {
+    get
+  }
+  public var activities: [InthegametviOS.UserActivity]? {
+    get
+  }
+  public let createdAt: Foundation.Date?
+  public let foreignId: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UserChannelPoints : Swift.Codable {
+  public let channelSlug: Swift.String
+  public var coins: Swift.Int {
+    get
+  }
+  public var expoints: Swift.Int {
+    get
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UserActivity : Swift.Codable {
+  public let id: Swift.String
+  public let answer: Swift.String
+  public var correctAnswer: Swift.String?
+  public let channelSlug: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum AnalyticsEventType : Swift.String, Swift.Codable {
+  case view, engage, close, register, login
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum AnalyticsParent : Swift.String, Swift.Codable {
+  case inject, clock, sequence, app
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum AnalyticsModule : Swift.String, Swift.Codable {
+  case register, login, flexi
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ModuleType : Swift.String, Swift.Codable {
+  case sequence
+  case flexi
+  case other
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct AnalyticsInfo : Swift.Codable {
+  public let module: InthegametviOS.AnalyticsModule?
+  public let moduleId: Swift.String?
+  public let submodule: Swift.String?
+  public let parent: InthegametviOS.AnalyticsParent?
+  public let parentId: Swift.String?
+  public let campaignId: Swift.String?
+  public var flexiSubType: Swift.Int?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class PassthroughView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
 extension UIKit.UIDevice {
   @_Concurrency.MainActor @preconcurrency public static let modelName: Swift.String
