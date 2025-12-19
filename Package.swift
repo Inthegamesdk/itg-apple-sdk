@@ -6,8 +6,8 @@ import PackageDescription
 let package = Package(
     name: "Inthegametv",
     platforms: [
-       .tvOS(.v14),
-       .iOS(.v14)
+       .tvOS(.v12),
+       .iOS(.v12)
     ],
     products: [
         .library(name: "InthegametviOS", targets: ["InthegametviOS", "Storket"]),
