@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		nnd1CSCm45w8f3PL6EQZKzp+zvQ=
+		wi2IgC6rkITiv8fAP7fMIEogOAA=
 		</data>
 		<key>Headers/Inthegametv.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3ovKX14+Q1WxvhwvWsPp90zdbTI=
+		UsE78TKLCEZPTxSKZbVKm6PV//A=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		1rB3ZwKNoMAW3GrNeoN3Zln2C08=
+		wniFJzl7OzWwxd1qDKSyhoTcrOo=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		J45XrNCDaqbeWtC8mrontjI9AmY=
+		6PsjWmbiQOk7QGkqIx6Du5C8vds=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		1rB3ZwKNoMAW3GrNeoN3Zln2C08=
+		wniFJzl7OzWwxd1qDKSyhoTcrOo=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		kfAKBS4Bl6eUMp2zn6k62NwK42Q=
+		/e8iCw0eQtFZKT0RK03c1OgwMGA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aGFfuJJWc/YEl7w0CTP9MGq70tHuAs/j2E6C6wOipWY=
+			X0b9Rss3hAdz/zq76o4CgmODH0pfNRlPDJhQXvoXMhg=
 			</data>
 		</dict>
 		<key>Headers/Inthegametv.h</key>
@@ -79,28 +79,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gwIEeHWQrDzUtvUC86/1yXKobzLbNfS5Dbnv+ko8xjg=
+			rhWdss1Fb/X2v0RoYlHM/nubr1ak3coYPXKWEagEHGI=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AWd4L29f6hFxBMCAsO7hf0CwigKd6zZPQlnTWTt1amM=
+			T7pUJmYKdbxTpmqIBt+Aa1mmGA/XmAFaNAcvE9iXBsc=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gwIEeHWQrDzUtvUC86/1yXKobzLbNfS5Dbnv+ko8xjg=
+			rhWdss1Fb/X2v0RoYlHM/nubr1ak3coYPXKWEagEHGI=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UvIjlB2+X+llbxjMdt6aj3EGBmpSBHUw6sZqLlrbEbM=
+			pboOo0juiqpnxP/hTlEwrWT2tV338pwZyGQ2g6J5/Ok=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -13,7 +13,7 @@ import BitmovinPlayer
 import ITGPlayerViewController
 #endif
 
-
+@available(iOS 14.0, tvOS 14.0, *)
 open class ITGBitmovinPlayerAdapter: NSObject, ITGPlayerAdapter {
     
     public var delegate: (any ITGPlayerAdapterDelegate)?
@@ -128,6 +128,7 @@ open class ITGBitmovinPlayerAdapter: NSObject, ITGPlayerAdapter {
     
 }
 
+@available(iOS 14.0, tvOS 14.0, *)
 extension ITGBitmovinPlayerAdapter: PlayerListener {
     
     open func onPlaying(_ event: BitmovinPlayerCore.PlayingEvent, player: any Player) {
@@ -172,6 +173,7 @@ extension ITGBitmovinPlayerAdapter: PlayerListener {
     
 }
 
+@available(iOS 14.0, tvOS 14.0, *)
 extension ITGBitmovinPlayerAdapter: UserInterfaceListener {
     
     open nonisolated func onControlsHide(_ event: ControlsHideEvent, view: PlayerView) {

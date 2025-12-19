@@ -177,7 +177,12 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         view.addSubview(overlayView!)
         view.sendSubviewToBack(overlayView!)
 #if os(iOS)
-        let interfaceOrientation = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.interfaceOrientation ?? view.window?.windowScene?.interfaceOrientation
+        let interfaceOrientation: UIInterfaceOrientation?
+        if #available(iOS 13.0, tvOS 13.0, *) {
+            interfaceOrientation = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.interfaceOrientation ?? view.window?.windowScene?.interfaceOrientation
+        } else {
+            interfaceOrientation = UIApplication.shared.statusBarOrientation
+        }
         if interfaceOrientation == .landscapeLeft || interfaceOrientation == .landscapeRight {
             overlayView?.constraintsFillSuperview()
         } else {
@@ -253,7 +258,12 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     
 #if os(iOS)
     @objc private func orientationDidChange() {
-        let interfaceOrientation = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.interfaceOrientation ?? view.window?.windowScene?.interfaceOrientation
+        let interfaceOrientation: UIInterfaceOrientation?
+        if #available(iOS 13.0, tvOS 13.0, *) {
+            interfaceOrientation = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.interfaceOrientation ?? view.window?.windowScene?.interfaceOrientation
+        } else {
+            interfaceOrientation = UIApplication.shared.statusBarOrientation
+        }
         if let constraint = view.constraints.first(where: { $0.firstItem as? ITGOverlayView == overlayView && $0.firstAttribute == .bottom }) {
             view.removeConstraint(constraint)
         }
