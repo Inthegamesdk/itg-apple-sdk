@@ -226,6 +226,7 @@ public enum ITGContent {
   @_Concurrency.MainActor @preconcurrency public func injectActivity(_ activity: [Swift.String : Any])
   @_Concurrency.MainActor @preconcurrency public func injectFlexi(_ flexi: Swift.String)
   @_Concurrency.MainActor @preconcurrency public func injectFlexi(_ url: Foundation.URL)
+  @_Concurrency.MainActor @preconcurrency public func scheduleFlexi(_ flexi: Swift.String, time: Foundation.TimeInterval)
   @_Concurrency.MainActor @preconcurrency public func closeFlexi(_ isUserInteraction: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency public func currentContent() -> [Inthegametv.ITGContent]
   @_Concurrency.MainActor @preconcurrency public func blockAll(_ block: Swift.Bool, includingPauseAds: Swift.Bool = false)

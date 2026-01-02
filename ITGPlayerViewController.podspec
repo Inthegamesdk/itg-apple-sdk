@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "ITGPlayerViewController"
-    s.version      = "2.6.48"
+    s.version      = "2.6.49"
     s.summary      = "ITGPlayerViewController component for quick integration of Inthegametv SDK"
     s.description  = "ITGPlayerViewController component for quick integration of Inthegametv SDK"
     s.homepage     = "www.inthegame.io"
@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
     s.platform = :ios, :tvos
     s.ios.deployment_target  = '12.0'
     s.tvos.deployment_target  = '12.0'
-    s.dependency 'Inthegametv', '~> 2.6.48'
-    s.source_files = '**/**/**/ITGAVPlayerAdapter.swift', '**/**/**/ITGPlayerAdapter.swift', '**/**/**/ITGPlayerViewController.swift'
+    s.dependency 'Inthegametv', '~> 2.6.49'
+    s.source_files = '**/**/ITGAVPlayerAdapter.swift', '**/**/ITGPlayerAdapter.swift', '**/**/ITGPlayerViewController.swift'
     s.pod_target_xcconfig = {
         'ENABLE_USER_SCRIPT_SANDBOXING' => 'NO'
     }
