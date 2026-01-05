@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name         = "ITGMediatailorPlugin"
     s.version      = "2.6.50"
-    s.summary      = "ITGMediatailorPlugin component for integration with Inthegametv SDK""
+    s.summary      = "ITGMediatailorPlugin component for integration with Inthegametv SDK"
     s.description  = "ITGMediatailorPlugin component for integration with Inthegametv SDK"
     s.homepage     = "www.inthegame.io"
     s.license = { :type => "Commercial", :text => "See www.inthegame.io" }
