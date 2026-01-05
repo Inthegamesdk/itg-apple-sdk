@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.platform = :ios, :tvos
     s.ios.deployment_target  = '13.0'
     s.tvos.deployment_target  = '13.0'
-    s.dependency 'ITGMediatailorPlugin', '~> 2.6.50'
+    s.dependency 'Inthegametv', '~> 2.6.50'
     s.source_files = '**/**/ITGMediatailorPlugin.swift'
     s.pod_target_xcconfig = {
         'ENABLE_USER_SCRIPT_SANDBOXING' => 'NO'
