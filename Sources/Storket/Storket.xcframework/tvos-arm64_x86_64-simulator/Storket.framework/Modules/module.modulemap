@@ -1,11 +1,11 @@
 framework module Storket {
   umbrella header "Storket.h"
-  export *
 
+  export *
   module * { export * }
 }
 
 module Storket.Swift {
-  header "Storket-Swift.h"
-  requires objc
+    header "Storket-Swift.h"
+    requires objc
 }

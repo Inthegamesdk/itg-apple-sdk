@@ -39,7 +39,7 @@ public class ITGMediatailorPlugin {
             if let url = URL(string: url) {
                 URLSession.shared.dataTask(with: URLRequest(url: url)) { [weak self] data, response, error in
                     DispatchQueue.main.async {
-                        if let data, let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+                        if let data = data, let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
                             self?.dataDelegate?.didReceiveTrackingData(json)
                             self?.parseData(json)
                         }
@@ -58,7 +58,7 @@ public class ITGMediatailorPlugin {
         let flexiString = removeCDATA(from: removeADataTag(from: flexi))
         if flexiString.isValidUrl(), let url = URL(string: flexiString) {
             URLSession.shared.dataTask(with: URLRequest(url: url)) { [weak self] data, response, error in
-                if let data, let flexiJson = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+                if let data = data, let flexiJson = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
                     self?.scheduleFlexi(flexiJson, time: time, availId: availId, duration: duration, trackingUrls: trackingUrls, errorUrls: errorUrls)
                 }
             }.resume()
@@ -70,17 +70,17 @@ public class ITGMediatailorPlugin {
     private func scheduleFlexi(_ flexi: [String: Any], time: Double, availId: String, duration: Double?, trackingUrls: [String]?, errorUrls: [String]?) {
         var flexi = flexi
         var launch = flexi["launch"] as? [String: Any] ?? [:]
-        if let duration, duration != 0 {
+        if let duration = duration, duration != 0 {
             launch["duration"] = "\(duration)"
         }
-        if let trackingUrls {
+        if let trackingUrls = trackingUrls {
             var analytics = launch["analytics"] as? [String: Any] ?? [:]
             var impressions = analytics["impressions"] as? [String] ?? []
             impressions.append(contentsOf: trackingUrls)
             analytics["impressions"] = impressions
             launch["analytics"] = analytics
         }
-        if let errorUrls {
+        if let errorUrls = errorUrls {
             var analytics = launch["analytics"] as? [String: Any] ?? [:]
             var errors = analytics["errors"] as? [String] ?? []
             errors.append(contentsOf: errorUrls)

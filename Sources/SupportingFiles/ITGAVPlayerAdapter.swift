@@ -49,7 +49,7 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
         seekTimer?.invalidate()
         seekTimer = nil
         removeObserver(player)
-        if player.currentItem != nil, let playerViewController {
+        if player.currentItem != nil, let playerViewController = playerViewController {
             playerViewController.children.first(where: { String(describing: type(of: $0)) == "AVMobileChromelessControlsViewController" })?.view.removeObserver(self, forKeyPath: #keyPath(UIView.isHidden))
         }
     }
@@ -127,9 +127,9 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
     }
     
     open func setVideoGravity(_ videoGravity: AVLayerVideoGravity) {
-        if let playerViewController {
+        if let playerViewController = playerViewController {
             playerViewController.videoGravity = videoGravity
-        } else if let playerView, let playerLayer = (playerView.deepSubviews() + [playerView]).compactMap({ [$0.layer] + $0.layer.deepSublayers() }).flatMap({ $0 }).first(where: { $0 is AVPlayerLayer }) as? AVPlayerLayer {
+        } else if let playerView = playerView, let playerLayer = (playerView.deepSubviews() + [playerView]).compactMap({ [$0.layer] + $0.layer.deepSublayers() }).flatMap({ $0 }).first(where: { $0 is AVPlayerLayer }) as? AVPlayerLayer {
             playerLayer.videoGravity = videoGravity
         }
     }

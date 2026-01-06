@@ -15,6 +15,7 @@ import InthegametviOS
 #endif
 import AVKit
 
+@available(iOS 13.0, tvOS 13.0, *)
 public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
     
     public class Coordinator {
@@ -24,12 +25,12 @@ public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
         var accountId: String
         var environment: ITGEnvironment
         var foreignId: String?
-        var vars: [String: any Hashable]?
+        var vars: [String: String]?
         let enableLogs: Bool
         let playerAdapter: ITGPlayerAdapter
         var itgPlayerViewController: ITGPlayerViewController? = nil
         
-        public init(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment, foreignId: String? = nil, vars: [String : any Hashable]? = nil, enableLogs: Bool, playerAdapter: ITGPlayerAdapter) {
+        public init(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment, foreignId: String? = nil, vars: [String : String]? = nil, enableLogs: Bool, playerAdapter: ITGPlayerAdapter) {
             self.channelSlug = channelSlug
             self.virtualChannels = virtualChannels
             self.accountId = accountId
@@ -47,7 +48,7 @@ public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
     let accountId: String
     let environment: ITGEnvironment
     let foreignId: String?
-    let vars: [String: any Hashable]?
+    let vars: [String: String]?
     let enableLogs: Bool
     let playerAdapter: ITGPlayerAdapter
     let blockAll: Bool
@@ -59,7 +60,7 @@ public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
                 accountId: String,
                 environment: ITGEnvironment = ITGEnvironment.defaultEnvironment,
                 foreignId: String? = nil,
-                vars: [String : any Hashable]? = nil,
+                vars: [String : String]? = nil,
                 enableLogs: Bool = false,
                 playerAdapter: ITGPlayerAdapter,
                 blockAll: Bool,

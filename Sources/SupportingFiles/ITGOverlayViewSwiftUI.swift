@@ -25,7 +25,7 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
         var accountId: String
         var environment: ITGEnvironment
         var foreignId: String?
-        var vars: [String : any Hashable]?
+        var vars: [String : String]?
         var enableLogs: Bool
         var playerIsPlaying: Bool
         let onOverlayDidLoadChannelInfo: ((_ videoUrl: String?) -> Void)?
@@ -56,7 +56,7 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
                     accountId: String,
                     environment: ITGEnvironment,
                     foreignId: String? = nil,
-                    vars: [String : any Hashable]? = nil,
+                    vars: [String : String]? = nil,
                     enableLogs: Bool,
                     playerIsPlaying: Bool,
                     onOverlayDidLoadChannelInfo: ((_: String?) -> Void)? = nil,
@@ -231,7 +231,7 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
     var environment: ITGEnvironment
     var foreignId: String? = nil
     var videoView: Content
-    var vars: [String : any Hashable]? = nil
+    var vars: [String : String]? = nil
     var enableLogs: Bool = false
     var blockAll: Bool
     var playerIsPlaying: Bool
@@ -261,8 +261,8 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
                 accountId: String,
                 environment: ITGEnvironment,
                 foreignId: String? = nil,
-                videoView: any View,
-                vars: [String : any Hashable]? = nil,
+                videoView: Content,
+                vars: [String : String]? = nil,
                 enableLogs: Bool = false,
                 blockAll: Bool,
                 playerIsPlaying: Bool,
@@ -293,7 +293,7 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
         self.accountId = accountId
         self.environment = environment
         self.foreignId = foreignId
-        self.videoView = videoView as! Content
+        self.videoView = videoView
         self.vars = vars
         self.enableLogs = enableLogs
         self.blockAll = blockAll

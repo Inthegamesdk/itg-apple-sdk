@@ -84,7 +84,7 @@ open class ITGMediastreamPlatformAdapter: ITGPlayerAdapter {
         if components.count == 2, let width = Double(components.first!), let height = Double(components.last!) {
             return CGSize(width: width, height: height )
         } else {
-            return CGSizeZero
+            return CGSize.zero
         }
     }
     

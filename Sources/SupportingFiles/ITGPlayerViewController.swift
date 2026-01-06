@@ -65,11 +65,11 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     private var foreignId: String?
     private var shouldResetOverlayUser: Bool
     private var soundLevel: Float = 1
-    private var vars: [String: any Hashable]? = nil
+    private var vars: [String: String]? = nil
     private var enableLogs: Bool
     private var didSetInitialFocus = false
     
-    public init(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, foreignId: String? = nil, vars: [String: any Hashable]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false, enableLogs: Bool = false) {
+    public init(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, foreignId: String? = nil, vars: [String: String]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false, enableLogs: Bool = false) {
         self.channelSlug = channelSlug
         self.virtualChannels = virtualChannels
         self.accountId = accountId
@@ -136,7 +136,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     }
 #endif
     
-    open func reloadChannel(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, foreignId: String? = nil, vars: [String: any Hashable]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false, enableLogs: Bool = false) {
+    open func reloadChannel(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, foreignId: String? = nil, vars: [String: String]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false, enableLogs: Bool = false) {
         self.channelSlug = channelSlug
         self.virtualChannels = virtualChannels
         self.accountId = accountId
@@ -198,7 +198,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     }
     
     @objc open func closeButtonPressed(_ sender: Any) {
-        if let navigationController {
+        if let navigationController = navigationController {
             navigationController.popViewController(animated: true)
             removePlayer()
         } else if let _ = presentingViewController {
@@ -291,6 +291,8 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
 #if os(tvOS)
         if #available(tvOS 15.0, *) {
             toggleOverlayBlock(view.window?.windowScene?.focusSystem?.focusedItem as? UIView)
+        } else {
+            toggleOverlayBlock(UIScreen.main.focusedView)
         }
 #endif
 #if os(iOS)
