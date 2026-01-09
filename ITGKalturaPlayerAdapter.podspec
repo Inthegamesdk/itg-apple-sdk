@@ -8,9 +8,11 @@ Pod::Spec.new do |s|
     s.author       = { "Inthegame" => "itai@inthegame.io" }
     s.source       = { :git => "https://github.com/Inthegamesdk/itg-apple-sdk.git", :tag => s.version.to_s }
     s.platform = :ios, :tvos
-    s.ios.deployment_target  = '12.0'
-    s.tvos.deployment_target  = '12.0'
+    s.ios.deployment_target  = '15.0'
+    s.tvos.deployment_target  = '15.0'
     s.dependency 'Inthegametv', '~> 2.6.52'
+    s.dependency 'KalturaPlayer'
+    s.dependency 'KalturaPlayer/OTT'
     s.source_files = '**/**/ITGKalturaPlayerAdapter.swift', '**/**/ITGPlayerAdapter.swift', '**/**/ITGPlayerViewController.swift'
     s.pod_target_xcconfig = {
         'ENABLE_USER_SCRIPT_SANDBOXING' => 'NO'
