@@ -95,6 +95,42 @@ public struct AnalyticsInfo : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class XMLElement : Inthegametv.XMLNode {
+  open var namespace: Swift.String? {
+    get
+  }
+  open var tag: Swift.String? {
+    get
+  }
+  open var attributes: [Swift.String : Swift.String] {
+    get
+  }
+  open func attr(_ name: Swift.String, namespace ns: Swift.String? = nil) -> Swift.String?
+  open var children: [Inthegametv.XMLElement] {
+    get
+  }
+  open func childNodes(ofTypes types: [Inthegametv.XMLNodeType]) -> [Inthegametv.XMLNode]
+  open func firstChild(tag: Inthegametv.XMLCharsComparable, inNamespace ns: Inthegametv.XMLCharsComparable? = nil) -> Inthegametv.XMLElement?
+  open func firstChild(staticTag tag: Swift.StaticString, inNamespace ns: Swift.StaticString? = nil) -> Inthegametv.XMLElement?
+  open func children(tag: Inthegametv.XMLCharsComparable, inNamespace ns: Inthegametv.XMLCharsComparable? = nil) -> [Inthegametv.XMLElement]
+  open func children(staticTag tag: Swift.StaticString, inNamespace ns: Swift.StaticString? = nil) -> [Inthegametv.XMLElement]
+  open var isBlank: Swift.Bool {
+    get
+  }
+  open var numberValue: Foundation.NSNumber? {
+    get
+  }
+  open var dateValue: Foundation.Date? {
+    get
+  }
+  open subscript(idx: Swift.Int) -> Inthegametv.XMLElement? {
+    get
+  }
+  open subscript(name: Swift.String) -> Swift.String? {
+    get
+  }
+  @objc deinit
+}
 public enum WebPDecodingError : Swift.UInt32, Swift.Error {
   case none
   case outOfMemory
@@ -229,39 +265,32 @@ public func ~= (lhs: Inthegametv.XMLNodeType, rhs: Inthegametv.XMLNodeType) -> S
 extension Inthegametv.XMLNode : Swift.Equatable {
 }
 public func == (lhs: Inthegametv.XMLNode, rhs: Inthegametv.XMLNode) -> Swift.Bool
-@_hasMissingDesignatedInitializers open class NodeSet : Swift.Collection {
-  public typealias Index = Swift.Int
-  public typealias IndexDistance = Swift.Int
-  open func next() -> Inthegametv.XMLElement?
-  open var count: Swift.Int {
+extension Inthegametv.XMLNode : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
+  public var description: Swift.String {
     get
   }
-  open var first: Inthegametv.XMLElement? {
+  public var debugDescription: Swift.String {
     get
   }
-  open var isEmpty: Swift.Bool {
-    get
-  }
-  open var startIndex: Inthegametv.NodeSet.Index {
-    get
-  }
-  open var endIndex: Inthegametv.NodeSet.Index {
-    get
-  }
-  open subscript(idx: Inthegametv.NodeSet.Index) -> Inthegametv.XMLElement {
-    get
-  }
-  open func index(after idx: Inthegametv.NodeSet.Index) -> Inthegametv.NodeSet.Index
-  public typealias Element = Inthegametv.XMLElement
-  public typealias Indices = Swift.DefaultIndices<Inthegametv.NodeSet>
-  public typealias Iterator = Swift.IndexingIterator<Inthegametv.NodeSet>
-  public typealias SubSequence = Swift.Slice<Inthegametv.NodeSet>
-  @objc deinit
 }
-@_hasMissingDesignatedInitializers open class XPathNodeSet : Inthegametv.NodeSet {
-  public static let emptySet: Inthegametv.XPathNodeSet
-  @objc deinit
+extension Inthegametv.XMLDocument : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
 }
+public protocol XMLCharsComparable {
+  func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
+}
+extension Swift.String : Inthegametv.XMLCharsComparable {
+  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
+}
+extension Swift.StaticString : Inthegametv.XMLCharsComparable {
+  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
+}
+prefix operator ^-^
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class PassthroughView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func point(inside point: CoreGraphics.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
@@ -360,84 +389,6 @@ public enum ITGContent {
   @_Concurrency.MainActor(unsafe) public func blockAll(_ block: Swift.Bool, includingPauseAds: Swift.Bool = false)
   @_Concurrency.MainActor(unsafe) public func closeAll(_ includingPauseAds: Swift.Bool = false, isUserInteraction: Swift.Bool = false, animated: Swift.Bool = true)
 }
-@_hasMissingDesignatedInitializers open class XMLDocument {
-  open var version: Swift.String? {
-    get
-  }
-  open var encoding: Swift.String.Encoding {
-    get
-  }
-  open var root: Inthegametv.XMLElement? {
-    get
-  }
-  open var numberFormatter: Foundation.NumberFormatter {
-    get
-    set
-  }
-  open var dateFormatter: Foundation.DateFormatter {
-    get
-    set
-  }
-  convenience public init(string: Swift.String, encoding: Swift.String.Encoding = String.Encoding.utf8) throws
-  convenience public init(data: Foundation.Data) throws
-  convenience public init(cChars: [Swift.CChar]) throws
-  convenience public init(buffer: Swift.UnsafeBufferPointer<Swift.Int8>) throws
-  @objc deinit
-  open func definePrefix(_ prefix: Swift.String, forNamespace ns: Swift.String)
-  @available(*, deprecated, renamed: "definePrefix(_:forNamespace:)", message: "This API will be removed in version 4.")
-  open func definePrefix(_ prefix: Swift.String, defaultNamespace ns: Swift.String)
-}
-extension Inthegametv.XMLDocument : Swift.Equatable {
-}
-public func == (lhs: Inthegametv.XMLDocument, rhs: Inthegametv.XMLDocument) -> Swift.Bool
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class HTMLDocument : Inthegametv.XMLDocument {
-  open var title: Swift.String? {
-    get
-  }
-  open var head: Inthegametv.XMLElement? {
-    get
-  }
-  open var body: Inthegametv.XMLElement? {
-    get
-  }
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class XMLElement : Inthegametv.XMLNode {
-  open var namespace: Swift.String? {
-    get
-  }
-  open var tag: Swift.String? {
-    get
-  }
-  open var attributes: [Swift.String : Swift.String] {
-    get
-  }
-  open func attr(_ name: Swift.String, namespace ns: Swift.String? = nil) -> Swift.String?
-  open var children: [Inthegametv.XMLElement] {
-    get
-  }
-  open func childNodes(ofTypes types: [Inthegametv.XMLNodeType]) -> [Inthegametv.XMLNode]
-  open func firstChild(tag: Inthegametv.XMLCharsComparable, inNamespace ns: Inthegametv.XMLCharsComparable? = nil) -> Inthegametv.XMLElement?
-  open func firstChild(staticTag tag: Swift.StaticString, inNamespace ns: Swift.StaticString? = nil) -> Inthegametv.XMLElement?
-  open func children(tag: Inthegametv.XMLCharsComparable, inNamespace ns: Inthegametv.XMLCharsComparable? = nil) -> [Inthegametv.XMLElement]
-  open func children(staticTag tag: Swift.StaticString, inNamespace ns: Swift.StaticString? = nil) -> [Inthegametv.XMLElement]
-  open var isBlank: Swift.Bool {
-    get
-  }
-  open var numberValue: Foundation.NSNumber? {
-    get
-  }
-  open var dateValue: Foundation.Date? {
-    get
-  }
-  open subscript(idx: Swift.Int) -> Inthegametv.XMLElement? {
-    get
-  }
-  open subscript(name: Swift.String) -> Swift.String? {
-    get
-  }
-  @objc deinit
-}
 extension Foundation.URL {
   public static var webpFileExtension: Swift.String {
     get
@@ -483,12 +434,59 @@ extension Inthegametv.XMLElement : Inthegametv.Queryable {
   public func firstChild(css: Swift.String) -> Inthegametv.XMLElement?
   public func eval(xpath: Swift.String) -> Inthegametv.XPathFunctionResult?
 }
+@_hasMissingDesignatedInitializers open class XMLDocument {
+  open var version: Swift.String? {
+    get
+  }
+  open var encoding: Swift.String.Encoding {
+    get
+  }
+  open var root: Inthegametv.XMLElement? {
+    get
+  }
+  open var numberFormatter: Foundation.NumberFormatter {
+    get
+    set
+  }
+  open var dateFormatter: Foundation.DateFormatter {
+    get
+    set
+  }
+  convenience public init(string: Swift.String, encoding: Swift.String.Encoding = String.Encoding.utf8) throws
+  convenience public init(data: Foundation.Data) throws
+  convenience public init(cChars: [Swift.CChar]) throws
+  convenience public init(buffer: Swift.UnsafeBufferPointer<Swift.Int8>) throws
+  @objc deinit
+  open func definePrefix(_ prefix: Swift.String, forNamespace ns: Swift.String)
+  @available(*, deprecated, renamed: "definePrefix(_:forNamespace:)", message: "This API will be removed in version 4.")
+  open func definePrefix(_ prefix: Swift.String, defaultNamespace ns: Swift.String)
+}
+extension Inthegametv.XMLDocument : Swift.Equatable {
+}
+public func == (lhs: Inthegametv.XMLDocument, rhs: Inthegametv.XMLDocument) -> Swift.Bool
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class HTMLDocument : Inthegametv.XMLDocument {
+  open var title: Swift.String? {
+    get
+  }
+  open var head: Inthegametv.XMLElement? {
+    get
+  }
+  open var body: Inthegametv.XMLElement? {
+    get
+  }
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class FocusObservableView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public var focusChangeObservationBlock: ((UIKit.UIView?) -> Swift.Void)?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
+}
+extension UIKit.UIImage {
+  convenience public init?(webpData: Foundation.Data, scale: CoreGraphics.CGFloat? = 1.0, width: CoreGraphics.CGFloat? = nil, height: CoreGraphics.CGFloat? = nil, scalingMode: Inthegametv.WebPScalingMode = .aspectFit)
+  convenience public init?(contentsOfWebPFile url: Foundation.URL, scale: CoreGraphics.CGFloat? = 1.0, width: CoreGraphics.CGFloat? = nil, height: CoreGraphics.CGFloat? = nil, scalingMode: Inthegametv.WebPScalingMode = .aspectFit)
+  public static func webpNamed(_ name: Swift.String, bundle: Foundation.Bundle = Bundle.main) -> UIKit.UIImage?
 }
 public enum XMLError : Swift.Error {
   case noError
@@ -497,37 +495,6 @@ public enum XMLError : Swift.Error {
   case parserFailure
   case xpathError(code: Swift.Int)
 }
-extension UIKit.UIImage {
-  convenience public init?(webpData: Foundation.Data, scale: CoreGraphics.CGFloat? = 1.0, width: CoreGraphics.CGFloat? = nil, height: CoreGraphics.CGFloat? = nil, scalingMode: Inthegametv.WebPScalingMode = .aspectFit)
-  convenience public init?(contentsOfWebPFile url: Foundation.URL, scale: CoreGraphics.CGFloat? = 1.0, width: CoreGraphics.CGFloat? = nil, height: CoreGraphics.CGFloat? = nil, scalingMode: Inthegametv.WebPScalingMode = .aspectFit)
-  public static func webpNamed(_ name: Swift.String, bundle: Foundation.Bundle = Bundle.main) -> UIKit.UIImage?
-}
-extension Inthegametv.XMLNode : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-  public var debugDescription: Swift.String {
-    get
-  }
-}
-extension Inthegametv.XMLDocument : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-  public var debugDescription: Swift.String {
-    get
-  }
-}
-public protocol XMLCharsComparable {
-  func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
-}
-extension Swift.String : Inthegametv.XMLCharsComparable {
-  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
-}
-extension Swift.StaticString : Inthegametv.XMLCharsComparable {
-  public func caseInsensitivelyEqual(to other: Swift.UnsafePointer<libxml2.xmlChar>) -> Swift.Bool
-}
-prefix operator ^-^
 public struct ITGEnvironment : Swift.Equatable {
   public static var defaultEnvironment: Inthegametv.ITGEnvironment {
     get
@@ -588,6 +555,39 @@ extension Swift.KeyedEncodingContainerProtocol {
 extension Swift.UnkeyedEncodingContainer {
   public mutating func encode(_ value: Swift.Array<Any>) throws
   public mutating func encode(_ value: Swift.Dictionary<Swift.String, Any>) throws
+}
+@_hasMissingDesignatedInitializers open class NodeSet : Swift.Collection {
+  public typealias Index = Swift.Int
+  public typealias IndexDistance = Swift.Int
+  open func next() -> Inthegametv.XMLElement?
+  open var count: Swift.Int {
+    get
+  }
+  open var first: Inthegametv.XMLElement? {
+    get
+  }
+  open var isEmpty: Swift.Bool {
+    get
+  }
+  open var startIndex: Inthegametv.NodeSet.Index {
+    get
+  }
+  open var endIndex: Inthegametv.NodeSet.Index {
+    get
+  }
+  open subscript(idx: Inthegametv.NodeSet.Index) -> Inthegametv.XMLElement {
+    get
+  }
+  open func index(after idx: Inthegametv.NodeSet.Index) -> Inthegametv.NodeSet.Index
+  public typealias Element = Inthegametv.XMLElement
+  public typealias Indices = Swift.DefaultIndices<Inthegametv.NodeSet>
+  public typealias Iterator = Swift.IndexingIterator<Inthegametv.NodeSet>
+  public typealias SubSequence = Swift.Slice<Inthegametv.NodeSet>
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class XPathNodeSet : Inthegametv.NodeSet {
+  public static let emptySet: Inthegametv.XPathNodeSet
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class FocusTvButton : UIKit.UIButton {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open var semanticContentAttribute: UIKit.UISemanticContentAttribute {

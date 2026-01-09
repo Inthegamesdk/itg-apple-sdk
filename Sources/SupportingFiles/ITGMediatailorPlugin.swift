@@ -4,9 +4,9 @@
 //
 //  Created by ilya khymych on 24.12.2025.
 //
-#if canImport(Inthegametv) && os(tvOS)
+#if os(tvOS)
 import Inthegametv
-#elseif canImport(InthegametviOS)
+#else
 import InthegametviOS
 #endif
 import Foundation
