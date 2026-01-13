@@ -54,6 +54,7 @@ public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
     let blockAll: Bool
     let shouldPlayChannelVideo: Bool
     let closeButtonVisibilityMode: ITGPlayerViewController.CloseButtonVisibilityMode
+    let onCreated: ((ITGPlayerViewController) -> Void)?
     
     public init(channelSlug: String,
                 virtualChannels: [String]? = nil,
@@ -65,7 +66,8 @@ public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
                 playerAdapter: ITGPlayerAdapter,
                 blockAll: Bool,
                 shouldPlayChannelVideo: Bool = false,
-                closeButtonVisibilityMode: ITGPlayerViewController.CloseButtonVisibilityMode = .hidden) {
+                closeButtonVisibilityMode: ITGPlayerViewController.CloseButtonVisibilityMode = .hidden,
+                onCreated: ((ITGPlayerViewController) -> Void)?) {
         self.channelSlug = channelSlug
         self.virtualChannels = virtualChannels
         self.accountId = accountId
@@ -77,6 +79,7 @@ public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
         self.blockAll = blockAll
         self.shouldPlayChannelVideo = shouldPlayChannelVideo
         self.closeButtonVisibilityMode = closeButtonVisibilityMode
+        self.onCreated = onCreated
     }
     
     public func makeUIViewController(context: Context) -> ITGPlayerViewController {
@@ -86,6 +89,7 @@ public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
         context.coordinator.itgPlayerViewController?.closeButtonVisibilityMode = closeButtonVisibilityMode
 #endif
         context.coordinator.itgPlayerViewController?.overlayView?.blockAll(blockAll, includingPauseAds: true)
+        onCreated?(context.coordinator.itgPlayerViewController!)
         return context.coordinator.itgPlayerViewController!
     }
     

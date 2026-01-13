@@ -255,6 +255,7 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
     var onOverlayRequestedResetVideoSoundLevel: () -> Void
     var onOverlayWillChangeVideoRect: ((CGRect, TimeInterval) -> Void)?
     var onOverlayWillResetVideoRect: ((TimeInterval) -> Void)?
+    let onCreated: ((ITGOverlayView) -> Void)?
     
     public init(channelSlug: String,
                 virtualChannels: [String]? = nil,
@@ -287,7 +288,8 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
                 onOverlayWillChangeVideoRect: ((CGRect, TimeInterval) -> Void)? = nil,
                 onOverlayWillResetVideoRect: ((TimeInterval) -> Void)? = nil,
                 onOverlayCreated: ((ITGOverlayViewSwiftUI) -> Void)? = nil,
-                uikitVideoView: UIView? = nil) {
+                uikitVideoView: UIView? = nil,
+                onCreated: ((ITGOverlayView) -> Void)?) {
         self.channelSlug = channelSlug
         self.virtualChannels = virtualChannels
         self.accountId = accountId
@@ -318,11 +320,13 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
         self.onOverlayRequestedResetVideoSoundLevel = onOverlayRequestedResetVideoSoundLevel
         self.onOverlayWillChangeVideoRect = onOverlayWillChangeVideoRect
         self.onOverlayWillResetVideoRect = onOverlayWillResetVideoRect
+        self.onCreated = onCreated
     }
 
     public func makeUIView(context: Context) -> ITGOverlayView {
         context.coordinator.uikitVideoView.backgroundColor = .clear
         context.coordinator.overlayView.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: context.coordinator, foreignId: foreignId, videoView: context.coordinator.uikitVideoView, vars: vars, enableLogs: enableLogs)
+        onCreated?(context.coordinator.overlayView)
         return context.coordinator.overlayView
     }
 
