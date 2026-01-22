@@ -29,6 +29,11 @@ public class ITGMediatailorPlugin {
         idTimer?.invalidate()
     }
     
+    public init(dataDelegate: ITGMediatailorPluginDelegate?, flexiDelegate: ITGOverlayView) {
+        self.dataDelegate = dataDelegate
+        self.flexiDelegate = flexiDelegate
+    }
+    
     public func startMediaTailor(url: String, interval: Int) {
         updateTimer?.invalidate()
         idTimer = Timer.scheduledTimer(withTimeInterval: 60, repeats: true, block: { _ in
