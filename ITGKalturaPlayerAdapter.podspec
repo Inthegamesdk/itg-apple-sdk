@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "ITGKalturaPlayerAdapter"
-    s.version      = "2.6.53"
+    s.version      = "2.7.1"
     s.summary      = "Inthegametv adapter for Kaltura player"
     s.description  = "Inthegametv adapter for Kaltura player"
     s.homepage     = "www.inthegame.io"
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.platform = :ios, :tvos
     s.ios.deployment_target  = '15.0'
     s.tvos.deployment_target  = '15.0'
-    s.dependency 'Inthegametv', '~> 2.6.53'
+    s.dependency 'Inthegametv', '~> 2.7.1'
     s.dependency 'KalturaPlayer'
     s.dependency 'KalturaPlayer/OTT'
     s.source_files = '**/**/ITGKalturaPlayerAdapter.swift', '**/**/ITGPlayerAdapter.swift', '**/**/ITGPlayerViewController.swift'

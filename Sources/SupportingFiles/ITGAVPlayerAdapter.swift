@@ -1,12 +1,14 @@
 //
-//  AVPlayerAdapter.swift
 //  Inthegametv
-//
-//  Created by Daedalus on 26.07.2023.
 //
 
 import Foundation
 import AVKit
+#if os(tvOS)
+import Inthegametv
+#else
+import InthegametviOS
+#endif
 
 open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
     
@@ -49,7 +51,7 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
         seekTimer?.invalidate()
         seekTimer = nil
         removeObserver(player)
-        if player.currentItem != nil, let playerViewController = playerViewController {
+        if player.currentItem != nil, let playerViewController {
             playerViewController.children.first(where: { String(describing: type(of: $0)) == "AVMobileChromelessControlsViewController" })?.view.removeObserver(self, forKeyPath: #keyPath(UIView.isHidden))
         }
     }
@@ -127,11 +129,20 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
     }
     
     open func setVideoGravity(_ videoGravity: AVLayerVideoGravity) {
-        if let playerViewController = playerViewController {
+        if let playerViewController {
             playerViewController.videoGravity = videoGravity
-        } else if let playerView = playerView, let playerLayer = (playerView.deepSubviews() + [playerView]).compactMap({ [$0.layer] + $0.layer.deepSublayers() }).flatMap({ $0 }).first(where: { $0 is AVPlayerLayer }) as? AVPlayerLayer {
+        } else if let playerView, let playerLayer = (playerView.deepSubviews() + [playerView]).compactMap({ [$0.layer] + $0.layer.deepSublayers() }).flatMap({ $0 }).first(where: { $0 is AVPlayerLayer }) as? AVPlayerLayer {
             playerLayer.videoGravity = videoGravity
         }
+    }
+    
+    public func getVideoGravity() -> AVLayerVideoGravity? {
+        if let playerViewController {
+            return playerViewController.videoGravity
+        } else if let playerView, let playerLayer = (playerView.deepSubviews() + [playerView]).compactMap({ [$0.layer] + $0.layer.deepSublayers() }).flatMap({ $0 }).first(where: { $0 is AVPlayerLayer }) as? AVPlayerLayer {
+            return playerLayer.videoGravity
+        }
+        return nil
     }
     
     open func setSoundLevel(_ soundLevel: Float) {
@@ -166,11 +177,12 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
         if keyPath == #keyPath(AVPlayer.timeControlStatus), let change = change, let newValue = change[NSKeyValueChangeKey.newKey] as? Int, let oldValue = change[NSKeyValueChangeKey.oldKey] as? Int {
             let oldStatus = AVPlayer.TimeControlStatus(rawValue: oldValue)
             let newStatus = AVPlayer.TimeControlStatus(rawValue: newValue)
-            if newStatus != oldStatus {
+            if newStatus != oldStatus,
+                newStatus == .paused || newStatus == .playing {
                 DispatchQueue.main.async { [weak self] in
                     guard let player = self?.player else { return }
                     let time = player.currentTime().seconds
-                    self?.delegate?.videoPaused(time, userInitiated: newStatus == .paused && self?.getCurrentTime() != self?.getVideoLength(), isSeeking: self?.isSeeking == true && self?.timeJumpedTime != time)
+                    self?.delegate?.videoPaused(time, userInitiated: newStatus == .paused, isSeeking: self?.isSeeking == true && self?.timeJumpedTime != time)
                     if newStatus == .playing {
                         self?.delegate?.videoPlaying(time)
                         self?.isSeeking = false

@@ -1,0 +1,373 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-tvos15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Inthegametv
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import AVFoundation
+import AVKit
+import CommonCrypto
+import CoreGraphics
+import CoreMedia
+import DeveloperToolsSupport
+import Foundation
+@_exported import Inthegametv
+import Storket
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension Foundation.Data {
+  public var isWebP: Swift.Bool {
+    get
+  }
+}
+public struct User : Swift.Codable {
+  public var id: Swift.String?
+  public var foreignId: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LiveConfig : Swift.Codable {
+  public let start: Foundation.Date
+  public let duration: Swift.Double
+  public let url: Swift.String
+  public let interval: Swift.Double
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ChannelMeta : Swift.Codable {
+  public let name: Swift.String
+  public let streamUrl: Swift.String
+  public let image: Swift.String
+  public let extraSettings: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum CreativeType : Swift.String, Swift.Codable, Swift.CaseIterable {
+  case lband
+  case banner
+  case splitScreen
+  case quiz
+  case poll
+  case other
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [Inthegametv.CreativeType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [Inthegametv.CreativeType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum AnalyticsEventType : Swift.String, Swift.Codable {
+  case impression
+  case engage
+  case close
+  case open
+  case error
+  case noshow
+  case complete
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum AnalyticsParent : Swift.String, Swift.Codable {
+  case injection
+  case app
+  case player
+  case session
+  case pause
+  case absolute
+  case flexi
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct AnalyticsInfo : Swift.Codable {
+  public let moduleId: Swift.String?
+  public let moduleName: Swift.String?
+  public let parent: Inthegametv.AnalyticsParent?
+  public let parentId: Swift.String?
+  public let campaignId: Swift.String?
+  public var flexiType: Inthegametv.CreativeType?
+  public var meta: [Swift.String : Swift.String]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum WebPDecodingError : Swift.UInt32, Swift.Error {
+  case none
+  case outOfMemory
+  case invalidParam
+  case bitstreamError
+  case unsupportedFeature
+  case suspended
+  case userAbort
+  case notEnoughData
+  case invalidHeader
+  case initConfigFailed
+  case imageRenderFailed
+  public init?(rawValue: Swift.UInt32)
+  public typealias RawValue = Swift.UInt32
+  public var rawValue: Swift.UInt32 {
+    get
+  }
+}
+public enum WebPScalingMode {
+  case aspectFit
+  case aspectFill
+  case scale
+  public static func == (a: Inthegametv.WebPScalingMode, b: Inthegametv.WebPScalingMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension CoreGraphics.CGImage {
+  public static func sizeOfWebP(at url: Foundation.URL) -> CoreFoundation.CGSize?
+  public static func sizeOfWebP(with data: Foundation.Data) -> CoreFoundation.CGSize?
+  public static func webpImage(contentsOfFile url: Foundation.URL, width: CoreFoundation.CGFloat? = nil, height: CoreFoundation.CGFloat? = nil, scalingMode: Inthegametv.WebPScalingMode = .aspectFit) throws -> CoreGraphics.CGImage
+  public static func webpImage(data: Foundation.Data, width: CoreFoundation.CGFloat? = nil, height: CoreFoundation.CGFloat? = nil, scalingMode: Inthegametv.WebPScalingMode = .aspectFit) throws -> CoreGraphics.CGImage
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class PassthroughView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class ITGStorketHelper : ObjectiveC.NSObject {
+  public func connect(accountId: Swift.String, channelSlug: Swift.String, environment: Inthegametv.ITGEnvironment, config: Inthegametv.LiveConfig, token: Swift.String)
+  public func stop()
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension Inthegametv.ITGStorketHelper : Storket.StorketDelegate {
+  public func didReceive(messages: [Storket.StorketMessage])
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor @preconcurrency public static let modelName: Swift.String
+}
+public struct AdMetadata : Swift.Equatable, Swift.Decodable {
+  public let adTime: Foundation.TimeInterval
+  public let adDuration: Foundation.TimeInterval
+  public let adId: Swift.String
+  public static func == (lhs: Inthegametv.AdMetadata, rhs: Inthegametv.AdMetadata) -> Swift.Bool
+  public init(adTime: Foundation.TimeInterval, adDuration: Foundation.TimeInterval, adId: Swift.String)
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ITGVideoState : Swift.Equatable {
+  public let videoDuration: Foundation.TimeInterval
+  public let videoTime: Foundation.TimeInterval
+  public let videoStatus: Inthegametv.ITGPlayerState
+  public let visibleContent: Inthegametv.ITGClientAppContent
+  public let adMetadata: Inthegametv.AdMetadata?
+  public static func == (lhs: Inthegametv.ITGVideoState, rhs: Inthegametv.ITGVideoState) -> Swift.Bool
+  public init(videoDuration: Foundation.TimeInterval, videoTime: Foundation.TimeInterval, videoStatus: Inthegametv.ITGPlayerState, visibleContent: Inthegametv.ITGClientAppContent, adMetadata: Inthegametv.AdMetadata? = nil)
+}
+public enum ITGClientAppContent : Swift.String {
+  case ad
+  case content
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ITGPlayerState {
+  case playing
+  case paused
+  public static func == (a: Inthegametv.ITGPlayerState, b: Inthegametv.ITGPlayerState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol ITGOverlayDelegate : AnyObject {
+  func itgDidLoadChannelInfo(_ channelMeta: Inthegametv.ChannelMeta)
+  func itgRequestedVideoStateChange(_ state: Inthegametv.ITGPlayerState, timeStamp: Foundation.TimeInterval?)
+  func itgRequestedFocusUpdate(_ focusRequired: Swift.Bool)
+  func itgRequestedVideoRectChange(_ rect: CoreFoundation.CGRect?)
+  func itgReceivedDeeplink(_ link: Swift.String)
+  func itgDidProcessAnalyticEvent(info: Inthegametv.AnalyticsInfo, type: Inthegametv.AnalyticsEventType)
+  func itgDidUpdateUserState(_ user: Inthegametv.User)
+  func itgRequestedVideoSoundLevel(_ soundLevel: Swift.Float?)
+  func itgRequestVideoGravity(_ videoGravity: AVFoundation.AVLayerVideoGravity?)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class ITGOverlayView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public static var overlayVersion: Swift.String
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any Inthegametv.ITGOverlayDelegate)?
+  @_Concurrency.MainActor @preconcurrency public var imaPlugin: (any Inthegametv.ITGGoogleIMAPluginProtocol)?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var preferredFocusEnvironments: [any UIKit.UIFocusEnvironment] {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToSuperview()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func load(channelSlug: Swift.String, virtualChannels: [Swift.String]? = [], accountId: Swift.String, environment: Inthegametv.ITGEnvironment = ITGEnvironment.defaultEnvironment, delegate: (any Inthegametv.ITGOverlayDelegate)?, foreignId: Swift.String?, vars: [Swift.String : any Swift.Hashable]? = nil, adsMetadata: [Inthegametv.AdMetadata]? = nil, showLogs: Swift.Bool = false)
+  @_Concurrency.MainActor @preconcurrency public func mute(_ mute: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func block(_ block: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func resetUser()
+  @_Concurrency.MainActor @preconcurrency public func close(_ force: Swift.Bool = false) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func playerChangedState(_ state: Inthegametv.ITGVideoState, userInitiated: Swift.Bool = false, isSeeking: Swift.Bool = false)
+  @_Concurrency.MainActor @preconcurrency public func injectFlexiById(_ id: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public func injectFlexi(_ flexi: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public func injectFlexi(_ url: Foundation.URL)
+  @_Concurrency.MainActor @preconcurrency public func injectFlexi(_ flexis: [Swift.String])
+  @_Concurrency.MainActor @preconcurrency public func scheduleFlexi(_ flexis: [Swift.String], time: Foundation.TimeInterval)
+}
+extension Inthegametv.ITGOverlayView : Inthegametv.ITGGoogleIMAPluginDelegate {
+  @_Concurrency.MainActor @preconcurrency public func addDidFinish()
+  @_Concurrency.MainActor @preconcurrency public func adInfo(_ skippable: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func didFailedToLoadAd(_ error: Swift.String?)
+  @_Concurrency.MainActor @preconcurrency public func requestPause()
+  @_Concurrency.MainActor @preconcurrency public func requestResume()
+}
+extension Foundation.URL {
+  public static var webpFileExtension: Swift.String {
+    get
+  }
+  public var isWebP: Swift.Bool {
+    get
+  }
+  public func isWebP(ignoringFileExtension: Swift.Bool = false) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class SpriteImageView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class FocusObservableView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public var focusChangeObservationBlock: ((UIKit.UIView?) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol ITGGoogleIMAPluginProtocol : AnyObject {
+  func requestAd(_ url: Swift.String, videoView: UIKit.UIView, viewController: UIKit.UIViewController, delegate: any Inthegametv.ITGGoogleIMAPluginDelegate)
+}
+public protocol ITGGoogleIMAPluginDelegate : AnyObject {
+  func didFailedToLoadAd(_ error: Swift.String?)
+  func requestPause()
+  func requestResume()
+  func adInfo(_ skippable: Swift.Bool)
+  func addDidFinish()
+}
+public protocol ITGMediastreamPlatformAdapterDelegate : AnyObject {
+  var view: UIKit.UIView! { get }
+  var playerLayer: AVFoundation.AVPlayerLayer? { get }
+  var playerViewController: AVKit.AVPlayerViewController? { get }
+  var volume: Swift.Int { get set }
+  func play()
+  func pause()
+  func getResolution() -> Swift.String
+  func checkIsPlaying() -> Swift.Bool
+  func seekTo(_ time: Swift.Double)
+  func getCurrentTime() -> Swift.Int64
+  func getDuration() -> Swift.Int
+}
+public protocol ITGMediastreamPlatformAdapterEventManagerDelagate : AnyObject {
+  func listenTo(eventName: Swift.String, action: @escaping () -> ())
+  func listenTo(eventName: Swift.String, action: @escaping (Any?) -> ())
+}
+extension UIKit.UIImage {
+  convenience public init?(webpData: Foundation.Data, scale: CoreFoundation.CGFloat? = 1.0, width: CoreFoundation.CGFloat? = nil, height: CoreFoundation.CGFloat? = nil, scalingMode: Inthegametv.WebPScalingMode = .aspectFit)
+  convenience public init?(contentsOfWebPFile url: Foundation.URL, scale: CoreFoundation.CGFloat? = 1.0, width: CoreFoundation.CGFloat? = nil, height: CoreFoundation.CGFloat? = nil, scalingMode: Inthegametv.WebPScalingMode = .aspectFit)
+  public static func webpNamed(_ name: Swift.String, bundle: Foundation.Bundle = Bundle.main) -> UIKit.UIImage?
+}
+public struct ITGEnvironment : Swift.Equatable {
+  public static var defaultEnvironment: Inthegametv.ITGEnvironment {
+    get
+  }
+  public let apiBaseURL: Swift.String
+  public let imageBaseURL: Swift.String
+  public let envName: Swift.String
+  public let settingsURL: Swift.String
+  public static func == (lhs: Inthegametv.ITGEnvironment, rhs: Inthegametv.ITGEnvironment) -> Swift.Bool
+  public init(envName: Swift.String)
+  public init(apiBaseURL: Swift.String, imageBaseURL: Swift.String, envName: Swift.String, settingsURL: Swift.String)
+}
+extension Swift.Decodable {
+  public init(data: Foundation.Data, using decoder: Foundation.JSONDecoder = JSONDecoder()) throws
+}
+extension UIKit.UIImage {
+  public class func imageWithColor(_ color: UIKit.UIColor) -> UIKit.UIImage
+}
+extension UIKit.UIColor {
+  convenience public init?(hex: Swift.String)
+  convenience public init?(hex: Swift.String, opacity: Swift.Double?)
+}
+extension QuartzCore.CALayer {
+  public func deepSublayers() -> [QuartzCore.CALayer]
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public func deepSubviews() -> [UIKit.UIView]
+  @_Concurrency.MainActor @preconcurrency public func constraintsFillSuperview(top: CoreFoundation.CGFloat? = 0, bottom: CoreFoundation.CGFloat? = 0, leading: CoreFoundation.CGFloat? = 0, trailing: CoreFoundation.CGFloat? = 0, verticalToSafeArea: Swift.Bool = false, horizontalToSafeArea: Swift.Bool = false)
+}
+public struct JSONCodingKeys : Swift.CodingKey {
+  public var stringValue: Swift.String
+  public init(stringValue: Swift.String)
+  public var intValue: Swift.Int?
+  public init?(intValue: Swift.Int)
+}
+extension Swift.KeyedDecodingContainer {
+  public func decodeFlexiData(_ type: Swift.Dictionary<Swift.String, Any>.Type, forKey key: K) throws -> Swift.Dictionary<Swift.String, Any>
+  public func decodeFlexiData(_ type: Swift.Dictionary<Swift.String, Any>.Type) throws -> Swift.Dictionary<Swift.String, Any>
+  public func decode(_ type: Swift.Dictionary<Swift.String, Any>.Type, forKey key: K) throws -> Swift.Dictionary<Swift.String, Any>
+  public func decode(_ type: Swift.Array<Any>.Type, forKey key: K) throws -> Swift.Array<Any>
+  public func decode(_ type: Swift.Dictionary<Swift.String, Any>.Type) throws -> Swift.Dictionary<Swift.String, Any>
+}
+extension Swift.UnkeyedDecodingContainer {
+  public mutating func decode(_ type: Swift.Array<Any>.Type) throws -> Swift.Array<Any>
+  public mutating func decode(_ type: Swift.Dictionary<Swift.String, Any>.Type) throws -> Swift.Dictionary<Swift.String, Any>
+}
+extension Swift.KeyedEncodingContainerProtocol where Self.Key == Inthegametv.JSONCodingKeys {
+  public mutating func encode(_ value: Swift.Dictionary<Swift.String, Any>) throws
+}
+extension Swift.KeyedEncodingContainerProtocol {
+  public mutating func encode(_ value: Swift.Dictionary<Swift.String, Any>?, forKey key: Self.Key) throws
+  public mutating func encode(_ value: Swift.Array<Any>?, forKey key: Self.Key) throws
+}
+extension Swift.UnkeyedEncodingContainer {
+  public mutating func encode(_ value: Swift.Array<Any>) throws
+  public mutating func encode(_ value: Swift.Dictionary<Swift.String, Any>) throws
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency open class FocusTvButton : UIKit.UIButton {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var buttonType: UIKit.UIButton.ButtonType {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func sendActions(for controlEvents: UIKit.UIControl.Event)
+  @objc deinit
+}
+extension Inthegametv.CreativeType : Swift.Equatable {}
+extension Inthegametv.CreativeType : Swift.Hashable {}
+extension Inthegametv.CreativeType : Swift.RawRepresentable {}
+extension Inthegametv.AnalyticsEventType : Swift.Equatable {}
+extension Inthegametv.AnalyticsEventType : Swift.Hashable {}
+extension Inthegametv.AnalyticsEventType : Swift.RawRepresentable {}
+extension Inthegametv.AnalyticsParent : Swift.Equatable {}
+extension Inthegametv.AnalyticsParent : Swift.Hashable {}
+extension Inthegametv.AnalyticsParent : Swift.RawRepresentable {}
+extension Inthegametv.WebPDecodingError : Swift.Equatable {}
+extension Inthegametv.WebPDecodingError : Swift.Hashable {}
+extension Inthegametv.WebPDecodingError : Swift.RawRepresentable {}
+extension Inthegametv.WebPScalingMode : Swift.Equatable {}
+extension Inthegametv.WebPScalingMode : Swift.Hashable {}
+extension Inthegametv.ITGClientAppContent : Swift.Equatable {}
+extension Inthegametv.ITGClientAppContent : Swift.Hashable {}
+extension Inthegametv.ITGClientAppContent : Swift.RawRepresentable {}
+extension Inthegametv.ITGPlayerState : Swift.Equatable {}
+extension Inthegametv.ITGPlayerState : Swift.Hashable {}

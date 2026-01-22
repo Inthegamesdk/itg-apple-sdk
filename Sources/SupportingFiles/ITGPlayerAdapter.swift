@@ -1,8 +1,5 @@
 //
-//  ITGPlayerAdapter.swift
 //  Inthegametv
-//
-//  Created by Daedalus on 28.07.2023.
 //
 
 import UIKit
@@ -30,6 +27,7 @@ public protocol ITGPlayerAdapter: AnyObject {
     func getCurrentTime() -> TimeInterval
     func getVideoLength() -> TimeInterval
     func setVideoGravity(_ videoGravity: AVLayerVideoGravity)
+    func getVideoGravity() -> AVLayerVideoGravity?
     func setSoundLevel(_ soundLevel: Float)
     func getSoundLevel() -> Float
     

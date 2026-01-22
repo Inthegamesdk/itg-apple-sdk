@@ -1,46 +1,28 @@
 //
-//  ITG.swift
 //  Inthegametv
-//
-//  Created by ilya khymych on 04.04.2025.
 //
 
 import AVKit
-#if canImport(ITGPlayerViewController)
-import ITGPlayerViewController
+
+#if canImport(ITGIntergrationViewController)
+import ITGIntergrationViewController
 #endif
-
-public protocol ITGMediastreamPlatform {
-    
-    var view: UIView! { get }
-    var playerLayer: AVPlayerLayer? { get }
-    var playerViewController: AVPlayerViewController? { get }
-    var volume: Int { get set }
-    func play()
-    func pause()
-    func getResolution() -> String
-    func checkIsPlaying() -> Bool
-    func seekTo(_ time: Double)
-    func getCurrentTime() -> Int64
-    func getDuration() -> Int
-    
-}
-
-public protocol ITGMediastreamPlatformEventManager {
-    
-    func listenTo(eventName: String, action: @escaping () -> ())
-    func listenTo(eventName: String, action: @escaping (Any?) -> ())
-    
-}
+#if os(tvOS)
+import MediastreamPlatformSDKAppleTV
+import Inthegametv
+#else
+import MediastreamPlatformSDKiOS
+import InthegametviOS
+#endif
 
 open class ITGMediastreamPlatformAdapter: ITGPlayerAdapter {
     
     weak public var delegate: ITGPlayerAdapterDelegate?
-    var mdstrm: ITGMediastreamPlatform
-    var eventsManger: ITGMediastreamPlatformEventManager
+    var mdstrm: ITGMediastreamPlatformAdapterDelegate
+    var eventsManger: ITGMediastreamPlatformAdapterEventManagerDelagate
     var view: UIView?
     
-    public init(_ mdstrm: ITGMediastreamPlatform, eventsManger: ITGMediastreamPlatformEventManager, customVideoView: UIView? = nil, delegate: ITGPlayerAdapterDelegate? = nil) {
+    public init(_ mdstrm: ITGMediastreamPlatformAdapterDelegate, eventsManger: ITGMediastreamPlatformAdapterEventManagerDelagate, customVideoView: UIView? = nil, delegate: ITGPlayerAdapterDelegate? = nil) {
         self.mdstrm = mdstrm
         self.eventsManger = eventsManger
         self.view = customVideoView
@@ -84,7 +66,7 @@ open class ITGMediastreamPlatformAdapter: ITGPlayerAdapter {
         if components.count == 2, let width = Double(components.first!), let height = Double(components.last!) {
             return CGSize(width: width, height: height )
         } else {
-            return CGSize.zero
+            return CGSizeZero
         }
     }
     
@@ -120,6 +102,9 @@ open class ITGMediastreamPlatformAdapter: ITGPlayerAdapter {
         }
     }
     
+    open func getVideoGravity() -> AVLayerVideoGravity? {
+        return mdstrm.playerViewController?.videoGravity ?? mdstrm.playerLayer?.videoGravity 
+    }
     open func setSoundLevel(_ soundLevel: Float) {
         mdstrm.volume = Int(soundLevel*100)
     }

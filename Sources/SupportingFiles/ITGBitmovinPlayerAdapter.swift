@@ -1,19 +1,21 @@
 //
-//  Untitled.swift
 //  Inthegametv
-//
-//  Created by ilya khymych on 20.03.2025.
 //
 
 import SwiftUI
 import Foundation
 import AVKit
-#if canImport(ITGPlayerViewController)
-import ITGPlayerViewController
-#endif
 import BitmovinPlayer
+#if os(tvOS)
+import Inthegametv
+#else
+import InthegametviOS
+#endif
+#if canImport(ITGIntergrationViewController)
+import ITGIntergrationViewController
+#endif
 
-open class ITGBitmovinPlayerAdapter: NSObject, ITGPlayerAdapter {
+open class ITGBitmovinPlayerAdapter: NSObject, @preconcurrency ITGPlayerAdapter {
     
     public var delegate: (any ITGPlayerAdapterDelegate)?
     var player: Player!
@@ -113,6 +115,26 @@ open class ITGBitmovinPlayerAdapter: NSObject, ITGPlayerAdapter {
                     return
                 }
                 self.playerViewUIKit?.scalingMode = scalingMode
+            }
+        }
+    }
+        
+    @MainActor public func getVideoGravity() -> AVLayerVideoGravity? {
+        if let playerViewController = self.playerViewController {
+            return playerViewController.videoGravity
+        } else if let playerView = self.hostingController?.view {
+            return ((playerView.deepSubviews() + [playerView]).compactMap({ [$0.layer] + $0.layer.deepSublayers() }).flatMap({ $0 }).first(where: { $0 is AVPlayerLayer }) as? AVPlayerLayer)?.videoGravity
+        } else {
+            let scalingMode: ScalingMode
+            switch self.playerViewUIKit?.scalingMode {
+            case .fit:
+                return .resizeAspect
+            case .zoom:
+                return .resizeAspectFill
+            case .stretch:
+                return .resize
+            default:
+                return nil
             }
         }
     }

@@ -1,8 +1,5 @@
 //
-//  PlayerViewController.swift
-//  InthegameTVDemo
-//
-//  Created by Tiago Lira Pereira on 01/02/2021.
+//  Inthegametv
 //
 
 import UIKit
@@ -16,6 +13,7 @@ import InthegametviOS
 
 open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPlayerAdapterDelegate {
     
+#if os(iOS)
     public enum CloseButtonVisibilityMode: String {
         
         case always
@@ -24,7 +22,6 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         
     }
     
-#if os(iOS)
     open lazy var closeButton: UIButton = {
         let button = UIButton.init(type: .custom)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -46,16 +43,8 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     public var closeButtonVisibilityMode: CloseButtonVisibilityMode = .whilePlayerControlsVisible
 #endif
     public var overlayView: ITGOverlayView?
-    public var autoBlock: ITGOverlayView.AutoBlockMode = .disabled
-    public var autoBlockDisregard: Set<UIView> = []
     public var shouldPlayChannelVideo: Bool = true
-    private var customPreferredFocusEnvironments: [any UIFocusEnvironment]? {
-        didSet {
-            if customPreferredFocusEnvironments != nil && !didSetInitialFocus {
-                didSetInitialFocus = true
-            }
-        }
-    }
+    private var customPreferredFocusEnvironments: [any UIFocusEnvironment]?
     private var player: ITGPlayerAdapter?
     private var controllsVisible: Bool = false
     private var channelSlug: String
@@ -64,12 +53,12 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     private var environment: ITGEnvironment
     private var foreignId: String?
     private var shouldResetOverlayUser: Bool
-    private var soundLevel: Float = 1
-    private var vars: [String: String]? = nil
-    private var enableLogs: Bool
-    private var didSetInitialFocus = false
+    private var soundLevel: Float? = nil
+    private var vars: [String: any Hashable]? = nil
+    private var showLogs: Bool
+    private var originalVideoGravity: AVLayerVideoGravity?
     
-    public init(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, foreignId: String? = nil, vars: [String: String]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false, enableLogs: Bool = false) {
+    public init(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, foreignId: String? = nil, vars: [String: any Hashable]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false, showLogs: Bool = false) {
         self.channelSlug = channelSlug
         self.virtualChannels = virtualChannels
         self.accountId = accountId
@@ -78,7 +67,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         self.shouldResetOverlayUser = shouldResetOverlayUser
         self.player = playerAdapter
         self.vars = vars
-        self.enableLogs = enableLogs
+        self.showLogs = showLogs
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -88,15 +77,6 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     
     deinit {
         removePlayer()
-    }
-    
-    open override func loadView() {
-        view = FocusObservableView()
-#if os(tvOS)
-        (view as? FocusObservableView)?.focusChangeObservationBlock = { [weak self] focusedItem in
-            self?.toggleOverlayBlock(focusedItem)
-        }
-#endif
     }
     
     open override func viewDidLoad() {
@@ -121,10 +101,11 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         view.bringSubviewToFront(closeButton)
 #endif
     }
-  
+    
     open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        moveFocusToPlayerView()
+        parentFocusEnvironment?.setNeedsFocusUpdate()
+        parentFocusEnvironment?.updateFocusIfNeeded()
     }
     
 #if os(iOS)
@@ -136,7 +117,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     }
 #endif
     
-    open func reloadChannel(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, foreignId: String? = nil, vars: [String: String]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false, enableLogs: Bool = false) {
+    open func reloadChannel(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, foreignId: String? = nil, vars: [String: any Hashable]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false, showLogs: Bool = false) {
         self.channelSlug = channelSlug
         self.virtualChannels = virtualChannels
         self.accountId = accountId
@@ -145,20 +126,25 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         self.shouldResetOverlayUser = shouldResetOverlayUser
         self.player = playerAdapter
         self.vars = vars
-        self.enableLogs = enableLogs
-        overlayView?.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: self, foreignId: foreignId, videoView: player!.getPlayerView()!, vars: vars, enableLogs: enableLogs)
-    }
-    
-    open func toggleOverlayBlock(_ focusedItem: UIView?) {
-        if autoBlock == .auto, let overlayView = self.overlayView, let playerView = player?.getPlayerView() {
-            overlayView.autoBlockValue = focusedItem != nil && (focusedItem?.isDescendant(of: overlayView) != true || (focusedItem?.isDescendant(of: playerView) == true && controllsVisible) && !autoBlockDisregard.contains(where: { focusedItem?.isDescendant(of: $0) == true }))
+        self.showLogs = showLogs
+        if shouldResetOverlayUser {
+            overlayView?.resetUser()
         }
+        overlayView?.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: self, foreignId: foreignId, vars: vars, showLogs: showLogs)
     }
     
     open func setupPlayer() {
+        if let playerView = player?.getPlayerView() {
+            customPreferredFocusEnvironments = playerView.preferredFocusEnvironments
+            playerView.frame = view.bounds
+            view.addSubview(playerView)
+            view.bringSubviewToFront(overlayView!)
+        }
 #if os(iOS)
         orientationDidChange()
 #endif
+        view.setNeedsFocusUpdate()
+        view.updateFocusIfNeeded()
     }
     
     open func startVideo(_ url: URL) {
@@ -177,12 +163,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         view.addSubview(overlayView!)
         view.sendSubviewToBack(overlayView!)
 #if os(iOS)
-        let interfaceOrientation: UIInterfaceOrientation?
-        if #available(iOS 13.0, tvOS 13.0, *) {
-            interfaceOrientation = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.interfaceOrientation ?? view.window?.windowScene?.interfaceOrientation
-        } else {
-            interfaceOrientation = UIApplication.shared.statusBarOrientation
-        }
+        let interfaceOrientation = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.interfaceOrientation ?? view.window?.windowScene?.interfaceOrientation
         if interfaceOrientation == .landscapeLeft || interfaceOrientation == .landscapeRight {
             overlayView?.constraintsFillSuperview()
         } else {
@@ -194,11 +175,11 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         if shouldResetOverlayUser {
             overlayView?.resetUser()
         }
-        overlayView?.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: self, foreignId: foreignId, videoView: player!.getPlayerView()!, vars: vars, enableLogs: enableLogs)
+        overlayView?.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: self, foreignId: foreignId, vars: vars, showLogs: showLogs)
     }
     
     @objc open func closeButtonPressed(_ sender: Any) {
-        if let navigationController = navigationController {
+        if let navigationController {
             navigationController.popViewController(animated: true)
             removePlayer()
         } else if let _ = presentingViewController {
@@ -209,61 +190,61 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     }
     
     @objc open func remoteMenuButtonAction(recognizer: UITapGestureRecognizer) {
-        //adding gesture for menu button disables passing menu key event further up on responder chain
+        let backButtonHandled = overlayView?.close() ?? false
+        if !backButtonHandled {
+            closeButtonPressed(self)
+        }
     }
     
-    open func removePlayer() {
+    @objc open func remotePlayPauseButtonAction(recognizer: UITapGestureRecognizer) {
+        _ = overlayView?.close(true)
+        if player?.isPlaying() == true {
+            player?.pause()
+        } else {
+            player?.play()
+            moveFocusToPlayerView()
+        }
+    }
+    
+    @objc open func remoteSelectButtonAction(recognizer: UITapGestureRecognizer) {
+        if let overlayView, (view.window?.windowScene?.focusSystem?.focusedItem as? UIView)?.isDescendant(of: overlayView) != true {
+            _ = overlayView.close(true)
+        }
+    }
+    
+    func removePlayer() {
         player?.pause()
         player?.getPlayerView()?.removeFromSuperview()
         player = nil
     }
-    
-#if os(tvOS)
-    open override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
-        for press in presses {
-            switch press.type {
-            case .menu:
-                let backButtonHandled = overlayView?.closeInteractionIfNeeded() ?? false
-                if !backButtonHandled {
-                    closeButtonPressed(self)
-                }
-            default:
-                super.pressesBegan(presses, with: event)
-            }
-        }
-    }
-#endif
     
     private func configureRemoteButtonsHandlers() {
         let menuPressRecognizer = UITapGestureRecognizer()
         menuPressRecognizer.addTarget(self, action: #selector(remoteMenuButtonAction(recognizer:)))
         menuPressRecognizer.allowedPressTypes = [NSNumber(value: UIPress.PressType.menu.rawValue)]
         view.addGestureRecognizer(menuPressRecognizer)
+        let playpausePressRecognizer = UITapGestureRecognizer()
+        playpausePressRecognizer.addTarget(self, action: #selector(remotePlayPauseButtonAction(recognizer:)))
+        playpausePressRecognizer.allowedPressTypes = [NSNumber(value: UIPress.PressType.playPause.rawValue)]
+        view.addGestureRecognizer(playpausePressRecognizer)
+        let selectPressRecognizer = UITapGestureRecognizer()
+        selectPressRecognizer.addTarget(self, action: #selector(remoteSelectButtonAction(recognizer:)))
+        selectPressRecognizer.allowedPressTypes = [NSNumber(value: UIPress.PressType.select.rawValue)]
+        view.addGestureRecognizer(selectPressRecognizer)
     }
     
     private func moveFocusToPlayerView() {
         if player?.getPlayerView()?.deepSubviews().contains(where: { $0.isFocused }) == true {
             return
         }
-        if let environments = player?.getPlayerView()?.preferredFocusEnvironments, !environments.isEmpty {
-            customPreferredFocusEnvironments = environments
-        } else if let environments = player?.getPlayerView()?.deepSubviews().first(where:{ String(describing: type(of: $0)) == "_AVPlayerViewControllerContainerView" })?.preferredFocusEnvironments {
-            customPreferredFocusEnvironments = environments
-        } else {
-            customPreferredFocusEnvironments = nil
-        }
+        customPreferredFocusEnvironments = player?.getPlayerView()?.preferredFocusEnvironments
         view.setNeedsFocusUpdate()
         view.updateFocusIfNeeded()
     }
     
 #if os(iOS)
     @objc private func orientationDidChange() {
-        let interfaceOrientation: UIInterfaceOrientation?
-        if #available(iOS 13.0, tvOS 13.0, *) {
-            interfaceOrientation = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.interfaceOrientation ?? view.window?.windowScene?.interfaceOrientation
-        } else {
-            interfaceOrientation = UIApplication.shared.statusBarOrientation
-        }
+        let interfaceOrientation = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.interfaceOrientation ?? view.window?.windowScene?.interfaceOrientation
         if let constraint = view.constraints.first(where: { $0.firstItem as? ITGOverlayView == overlayView && $0.firstAttribute == .bottom }) {
             view.removeConstraint(constraint)
         }
@@ -276,25 +257,15 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
 #endif
     
     open func videoPlaying(_ time: TimeInterval) {
-        overlayView?.videoPlaying(time: time)
-        if !didSetInitialFocus {
-            moveFocusToPlayerView()
-        }
+        overlayView?.playerChangedState(videoState())
     }
     
     open func videoPaused(_ time: TimeInterval, userInitiated: Bool, isSeeking: Bool) {
-        overlayView?.videoPaused(time: time, userInitiated: userInitiated, isSeeking: isSeeking)
+        overlayView?.playerChangedState(videoState(), userInitiated: userInitiated, isSeeking: isSeeking)
     }
     
     open func videoControllsVisibilityChanged(_ isVisible: Bool) {
         controllsVisible = isVisible
-#if os(tvOS)
-        if #available(tvOS 15.0, *) {
-            toggleOverlayBlock(view.window?.windowScene?.focusSystem?.focusedItem as? UIView)
-        } else {
-            toggleOverlayBlock(UIScreen.main.focusedView)
-        }
-#endif
 #if os(iOS)
         if closeButtonVisibilityMode == .whilePlayerControlsVisible {
             closeButton.isHidden = !isVisible
@@ -302,93 +273,74 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
 #endif
     }
     
-    open func overlayDidPresentContent(_ content: ITGContent) {
-
+    open func videoState() -> ITGVideoState {
+        return ITGVideoState(videoDuration: player?.getVideoLength() ?? 0, videoTime: player?.getCurrentTime() ?? 0, videoStatus: player?.isPlaying() == true ? .playing :  .paused, visibleContent: .content, adMetadata: nil)
     }
-    
-    open func overlayDidEndPresentingContent(_ content: ITGContent) {
 
-    }
-        
-    open func overlayDidLoadChannelInfo(_ videoUrl: String?) {
-        guard shouldPlayChannelVideo, let videoUrl = videoUrl, let url =  URL(string: videoUrl) else { return }
+    open func itgDidLoadChannelInfo(_ channelMeta: ChannelMeta) {
+        guard shouldPlayChannelVideo, !channelMeta.streamUrl.isEmpty, let url =  URL(string: channelMeta.streamUrl) else { return }
         startVideo(url)
     }
     
-    open func userState(_ user: User) {
-        
-    }
-    
-    open func overlayDidProcessAnalyticEvent(info: AnalyticsInfo, type: AnalyticsEventType) {
-        
-    }
-    
-    open func overlayRequestedVideoResolution() -> CGSize {
-        return player?.getVideoResolution() ?? .zero
-    }
-    
-    open func overlayReceivedDeeplink(_ link: String) {
-        
-    }
-    
-    open func overlayRequestedPause() {
-        player?.pause()
-    }
-    
-    open func overlayRequestedPlay() {
-        player?.play()
-    }
-    
-    open func overlayRequestedFocus() {
-        customPreferredFocusEnvironments = [overlayView!]
-        view.setNeedsFocusUpdate()
-        view.updateFocusIfNeeded()
-    }
-    
-    open func overlayReleasedFocus() {
-        moveFocusToPlayerView()
-    }
-    
-    open func overlayRequestedVideoTime() {
-        guard let player = player else { return }
-        if player.isPlaying() {
-            overlayView?.videoPlaying(time: player.getCurrentTime())
+    open func itgRequestedVideoStateChange(_ state: ITGPlayerState, timeStamp: TimeInterval?) {
+        if let timeStamp {
+            player?.seek(timeStamp)
+        }
+        if state == .playing {
+            player?.play()
         } else {
-            overlayView?.videoPaused(time: player.getCurrentTime())
+            player?.pause()
         }
     }
     
-    open func overlayRequestedVideoSeek(time: TimeInterval) {
-        player?.seek(time)
+    open func itgRequestedFocusUpdate(_ focusRequired: Bool) {
+        if focusRequired {
+            customPreferredFocusEnvironments = [overlayView!]
+            view.setNeedsFocusUpdate()
+            view.updateFocusIfNeeded()
+        } else {
+            moveFocusToPlayerView()
+        }
     }
     
-    open func overlayRequestedVideoLength() -> TimeInterval {
-        return player?.getVideoLength() ?? 0
+    open func itgRequestedVideoRectChange(_ rect: CGRect?) {
+        player?.getPlayerView()?.frame = rect ?? view.bounds
     }
     
-    open func overlayRequestedVideoGravity(_ videoGravity: AVLayerVideoGravity) {
-        player?.setVideoGravity(videoGravity)
+    open func itgReceivedDeeplink(_ link: String) {
+        
     }
     
-    open func overlayRequestedResetVideoGravity() {
-        player?.setVideoGravity(.resizeAspect)
+    open func itgDidProcessAnalyticEvent(info: AnalyticsInfo, type: AnalyticsEventType) {
+        
     }
     
-    open func overlayRequestedVideoSoundLevel(_ soundLevel: Float) {
-        self.soundLevel = player?.getSoundLevel() ?? 1
-        player?.setSoundLevel(soundLevel)
+    open func itgDidUpdateUserState(_ user: User) {
+        
     }
     
-    open func overlayRequestedResetVideoSoundLevel() {
-        player?.setSoundLevel(soundLevel)
+    open func itgRequestedVideoSoundLevel(_ soundLevel: Float?) {
+        if let soundLevel {
+            if self.soundLevel == nil {
+                self.soundLevel = player?.getSoundLevel() ?? 1
+            }
+            player?.setSoundLevel(soundLevel)
+        } else if let soundLevel = self.soundLevel {
+            player?.setSoundLevel(soundLevel)
+            self.soundLevel = nil
+        }
     }
     
-    open func overlayWillChangeVideoRect(_ rect: CGRect, animationDuration: TimeInterval) {
-
-    }
-    
-    open func overlayWillResetVideoRect(_ animationDuration: TimeInterval) {
-
+    public func itgRequestVideoGravity(_ videoGravity: AVLayerVideoGravity?) {
+        if let videoGravity {
+            if originalVideoGravity == nil {
+                originalVideoGravity = player?.getVideoGravity()
+            }
+            player?.setVideoGravity(videoGravity)
+        } else if let originalVideoGravity {
+            player?.setVideoGravity(originalVideoGravity)
+            self.originalVideoGravity = nil
+        }
     }
     
 }

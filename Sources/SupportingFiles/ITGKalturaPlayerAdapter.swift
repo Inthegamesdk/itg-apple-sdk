@@ -1,16 +1,15 @@
 //
-//  File.swift
 //  Inthegametv
-//
-//  Created by Daedalus on 01.08.2023.
 //
 
 import Foundation
 import KalturaPlayer
 import PlayKit
 import AVKit
-#if canImport(ITGPlayerViewController)
-import ITGPlayerViewController
+#if os(tvOS)
+import Inthegametv
+#else
+import InthegametviOS
 #endif
 
 open class ITGKalturaPlayerAdapter: NSObject, ITGPlayerAdapter {
@@ -82,6 +81,17 @@ open class ITGKalturaPlayerAdapter: NSObject, ITGPlayerAdapter {
     
     open func setVideoGravity(_ videoGravity: AVLayerVideoGravity) {
         player.view?.contentMode = videoGravity == .resize ? .scaleToFill : .scaleAspectFit
+    }
+    
+    open func getVideoGravity() -> AVLayerVideoGravity? {
+        switch player.view?.contentMode {
+        case .scaleAspectFit:
+            return .resizeAspect
+        case .scaleAspectFill:
+            return .resizeAspectFill
+        default:
+            return .resize
+        }
     }
     
     open func setSoundLevel(_ soundLevel: Float) {

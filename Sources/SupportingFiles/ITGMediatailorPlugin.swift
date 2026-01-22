@@ -1,9 +1,7 @@
 //
-//  MediatailorPlugin.swift
 //  Inthegametv
 //
-//  Created by ilya khymych on 24.12.2025.
-//
+
 #if os(tvOS)
 import Inthegametv
 #else
@@ -24,6 +22,7 @@ public class ITGMediatailorPlugin {
     private var updateTimer: Timer?
     private var processedAvails: [(String, Date)] = []
     private var idTimer: Timer?
+    private var notifyDataDelegateOperation: (()->Void)?
     
     deinit {
         updateTimer?.invalidate()
@@ -39,8 +38,7 @@ public class ITGMediatailorPlugin {
             if let url = URL(string: url) {
                 URLSession.shared.dataTask(with: URLRequest(url: url)) { [weak self] data, response, error in
                     DispatchQueue.main.async {
-                        if let data = data, let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
-                            self?.dataDelegate?.didReceiveTrackingData(json)
+                        if let data, let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
                             self?.parseData(json)
                         }
                     }
@@ -54,58 +52,69 @@ public class ITGMediatailorPlugin {
         idTimer?.invalidate()
     }
     
-    private func processFlexi(_ flexi: String, time: Double, availId: String, duration: Double?, trackingUrls: [String]?, errorUrls: [String]?) {
+    private func processFlexi(_ flexi: String, duration: Double?, trackingUrls: [String]?, errorUrls: [String]?, completion: @escaping (String?)->Void) {
         let flexiString = removeCDATA(from: removeADataTag(from: flexi))
         if flexiString.isValidUrl(), let url = URL(string: flexiString) {
             URLSession.shared.dataTask(with: URLRequest(url: url)) { [weak self] data, response, error in
-                if let data = data, let flexiJson = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
-                    self?.scheduleFlexi(flexiJson, time: time, availId: availId, duration: duration, trackingUrls: trackingUrls, errorUrls: errorUrls)
+                if let data, let flexiJson = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any], let flexi = self?.decorateFlexi(flexiJson, duration: duration, trackingUrls: trackingUrls, errorUrls: errorUrls) {
+                    completion(flexi)
+                } else {
+                    completion(nil)
                 }
             }.resume()
-        } else if let flexiJson = try? JSONSerialization.jsonObject(with: flexiString.data(using: .utf8)!) as? [String: Any] {
-            scheduleFlexi(flexiJson, time: time, availId: availId, duration: duration, trackingUrls: trackingUrls, errorUrls: errorUrls)
+        } else if let flexiJson = try? JSONSerialization.jsonObject(with: flexiString.data(using: .utf8)!) as? [String: Any], let flexi = decorateFlexi(flexiJson, duration: duration, trackingUrls: trackingUrls, errorUrls: errorUrls) {
+            completion(flexi)
+        } else {
+            completion(nil)
         }
     }
     
-    private func scheduleFlexi(_ flexi: [String: Any], time: Double, availId: String, duration: Double?, trackingUrls: [String]?, errorUrls: [String]?) {
+    private func decorateFlexi(_ flexi: [String: Any], duration: Double?, trackingUrls: [String]?, errorUrls: [String]?) -> String? {
         var flexi = flexi
-        var launch = flexi["launch"] as? [String: Any] ?? [:]
-        if let duration = duration, duration != 0 {
-            launch["duration"] = "\(duration)"
+        var general = flexi["general"] as? [String: Any] ?? [:]
+        if let duration, duration != 0 {
+            general["duration"] = "\(duration)"
         }
-        if let trackingUrls = trackingUrls {
-            var analytics = launch["analytics"] as? [String: Any] ?? [:]
-            var impressions = analytics["impressions"] as? [String] ?? []
-            impressions.append(contentsOf: trackingUrls)
-            analytics["impressions"] = impressions
-            launch["analytics"] = analytics
+        if let trackingUrls {
+            var analytics = general["analytics"] as? [String: Any] ?? [:]
+            if !(analytics["impression"] is String) {
+                var impressions = analytics["impression"] as? [String] ?? []
+                impressions.append(contentsOf: trackingUrls)
+                analytics["impression"] = impressions
+                general["analytics"] = analytics
+            }
         }
-        if let errorUrls = errorUrls {
-            var analytics = launch["analytics"] as? [String: Any] ?? [:]
-            var errors = analytics["errors"] as? [String] ?? []
-            errors.append(contentsOf: errorUrls)
-            analytics["errors"] = errors
-            launch["analytics"] = analytics
+        if let errorUrls {
+            var analytics = general["analytics"] as? [String: Any] ?? [:]
+            if !(analytics["error"] is String) {
+                var errors = analytics["error"] as? [String] ?? []
+                errors.append(contentsOf: errorUrls)
+                analytics["error"] = errors
+                general["analytics"] = analytics
+            }
         }
-        flexi["launch"] = launch
-        if let flexiString = jsonToString(flexi) {
-            processedAvails.append((availId, Date()))
-            flexiDelegate?.scheduleFlexi(flexiString, time: time)
-        }
+        flexi["general"] = general
+        return jsonToString(flexi)
     }
     
-    private func parseAds(_ ads: [[String: Any]], time: Double, availId: String, duration: Double?) {
+    private func parseAds(_ ads: [[String: Any]], time: Double, availId: String, duration: Double?, dispatchGroup: DispatchGroup, completion: @escaping (String?)->Void) {
         for ad in ads {
             let trackingUrls = (ad["trackingEvents"] as? [[String: Any]])?.filter({ $0["eventType"] as? String == "impression" }).compactMap({ $0["beaconUrls"] as? [String] }).flatMap({ $0 })
             let errorUrls = (ad["trackingEvents"] as? [[String: Any]])?.filter({ $0["eventType"] as? String == "error" }).compactMap({ $0["beaconUrls"] as? [String] }).flatMap({ $0 })
             for ext in ad["extensions"] as? [[String: Any]] ?? [] {
-                if ext["type"] as? String == "inthegame_creative", let flexiString = ext["content"] as? String {
-                    processFlexi(flexiString, time: time, availId: availId, duration: duration, trackingUrls: trackingUrls, errorUrls: errorUrls)
+                if ext["type"] as? String == "inthegame_creative" {
+                    if let flexiString = ext["content"] as? String {
+                        dispatchGroup.enter()
+                        processFlexi(flexiString, duration: duration, trackingUrls: trackingUrls, errorUrls: errorUrls, completion: completion)
+                    }
                 }
             }
             for nonLinearAd in ad["nonLinearAdList"] as? [[String: Any]] ?? [] {
-                if nonLinearAd["staticResourceCreativeType"] as? String == "inthegame_creative", let flexiString = nonLinearAd["staticResource"] as? String {
-                    processFlexi(flexiString, time: time, availId: availId, duration: duration, trackingUrls: trackingUrls, errorUrls: errorUrls)
+                if nonLinearAd["staticResourceCreativeType"] as? String == "inthegame_creative" {
+                    if let flexiString = nonLinearAd["staticResource"] as? String {
+                        dispatchGroup.enter()
+                        processFlexi(flexiString, duration: duration, trackingUrls: trackingUrls, errorUrls: errorUrls, completion: completion)
+                    }
                 }
             }
         }
@@ -113,19 +122,39 @@ public class ITGMediatailorPlugin {
     
     private func parseAvails(_ avails: [[String: Any]]) {
         for avail in avails {
-            if let availId = avail["availId"] as? String, !processedAvails.contains(where: { $0.0 == availId }), let time = avail["startTimeInSeconds"] as? Double {
+            if let availId = avail["availId"] as? String, !processedAvails.contains(where: { $0.0 == availId }) {
+                var flexis: [String] = []
+                let dispatchGroup = DispatchGroup()
+                dispatchGroup.enter()
+                processedAvails.append((availId, Date()))
+                notifyDataDelegateOperation?()
+                notifyDataDelegateOperation = nil
+                let time = avail["startTimeInSeconds"] as? Double ?? 0
                 let duration = avail["durationInSeconds"] as? Double
+                let completion: (String?)->Void = { flexi in
+                    if let flexi {
+                        flexis.append(flexi)
+                    }
+                    dispatchGroup.leave()
+                }
                 if let ads = avail["ads"] as? [[String: Any]] {
-                    parseAds(ads, time: time, availId: availId, duration: duration)
+                    parseAds(ads, time: time, availId: availId, duration: duration, dispatchGroup: dispatchGroup, completion: completion)
                 }
                 if let ads = avail["nonLinearAdsList"] as? [[String: Any]] {
-                    parseAds(ads, time: time, availId: availId, duration: duration)
+                    parseAds(ads, time: time, availId: availId, duration: duration, dispatchGroup: dispatchGroup, completion: completion)
                 }
+                dispatchGroup.notify(queue: .main) { [weak self] in
+                    self?.flexiDelegate?.scheduleFlexi(flexis, time: time)
+                }
+                dispatchGroup.leave()
             }
         }
     }
     
     private func parseData(_ json: [String: Any]) {
+        notifyDataDelegateOperation = { [weak self] in
+            self?.dataDelegate?.didReceiveTrackingData(json)
+        }
         if let avails = json["avails"] as? [[String: Any]] {
             parseAvails(avails)
         }

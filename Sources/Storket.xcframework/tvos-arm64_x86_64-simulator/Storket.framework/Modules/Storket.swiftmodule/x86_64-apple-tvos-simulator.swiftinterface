@@ -1,0 +1,40 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-tvos15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Storket
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import Foundation
+@_exported import Storket
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum StorketError : Swift.Error {
+  case notFound
+  case invalidJson
+  case unknown
+  public static func == (a: Storket.StorketError, b: Storket.StorketError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol StorketDelegate : ObjectiveC.NSObject {
+  func didReceive(messages: [Storket.StorketMessage])
+}
+public class StorketService {
+  weak public var delegate: (any Storket.StorketDelegate)?
+  public init()
+  public func configure(url: Swift.String, authKey: Swift.String, start: Foundation.Date, duration: Swift.Double, interval: Swift.Double)
+  public func connect(accountId: Swift.String, channelSlug: Swift.String)
+  public func stop()
+  @objc deinit
+}
+public struct StorketMessage {
+  public var content: [Swift.String : Any]?
+  public var timestamp: Swift.Double
+  public var id: Swift.String
+  public var expireAt: Swift.Int64
+  public var delay: Swift.Double
+}
+extension Storket.StorketError : Swift.Equatable {}
+extension Storket.StorketError : Swift.Hashable {}
