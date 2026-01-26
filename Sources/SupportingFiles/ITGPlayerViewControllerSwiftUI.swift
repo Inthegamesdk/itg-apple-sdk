@@ -59,6 +59,7 @@ public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
     var vars: [String: any Hashable]? = nil
     var showLogs: Bool = false
     var playerAdapter: ITGPlayerAdapter
+    var onCreated: ((ITGPlayerViewController) -> Void)?
     
     public init(channelSlug: String,
                 virtualChannels: [String]? = nil,
@@ -66,8 +67,9 @@ public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
                 environment: ITGEnvironment,
                 foreignId: String? = nil,
                 vars: [String : any Hashable]? = nil,
-                showLogs: Bool,
-                playerAdapter: ITGPlayerAdapter) {
+                showLogs: Bool = false,
+                playerAdapter: ITGPlayerAdapter,
+                onCreated: ((ITGPlayerViewController) -> Void)? = nil) {
         self.channelSlug = channelSlug
         self.virtualChannels = virtualChannels
         self.accountId = accountId
@@ -76,11 +78,13 @@ public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
         self.vars = vars
         self.showLogs = showLogs
         self.playerAdapter = playerAdapter
+        self.onCreated = onCreated
     }
     
     public func makeUIViewController(context: Context) -> ITGPlayerViewController {
         context.coordinator.itgPlayerViewController = ITGPlayerViewController(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, foreignId: foreignId, vars: vars, playerAdapter: playerAdapter, shouldResetOverlayUser: false, showLogs: showLogs)
         context.coordinator.itgPlayerViewController?.shouldPlayChannelVideo = false
+        onCreated?(context.coordinator.itgPlayerViewController!)
         return context.coordinator.itgPlayerViewController!
     }
 

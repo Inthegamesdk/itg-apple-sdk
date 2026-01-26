@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "ITGOverlayViewSwiftUI"
-    s.version      = "2.7.2"
+    s.version      = "2.7.3"
     s.summary      = "ITGOverlayViewSwiftUI component for integration of Inthegametv SDK using SwiftUI"
     s.description  = "ITGOverlayViewSwiftUI component for integration of Inthegametv SDK using SwiftUI"
     s.homepage     = "www.inthegame.io"

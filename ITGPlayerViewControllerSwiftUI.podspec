@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "ITGPlayerViewControllerSwiftUI"
-    s.version      = "2.7.2"
+    s.version      = "2.7.3"
     s.summary      = "ITGPlayerViewControllerSwiftUI component for quick integration of Inthegametv SDK using SwiftUI"
     s.description  = "ITGPlayerViewControllerSwiftUI component for quick integration of Inthegametv SDK using SwiftUI"
     s.homepage     = "www.inthegame.io"

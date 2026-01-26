@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "ITGKalturaPlayerAdapter"
-    s.version      = "2.7.2"
+    s.version      = "2.7.3"
     s.summary      = "Inthegametv adapter for Kaltura player"
     s.description  = "Inthegametv adapter for Kaltura player"
     s.homepage     = "www.inthegame.io"

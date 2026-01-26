@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "ITGBitmovinPlayerAdapter"
-    s.version      = "2.7.2"
+    s.version      = "2.7.3"
     s.summary      = "Inthegametv adapter for Bitmovin player"
     s.description  = "Inthegametv adapter for Bitmovin player"
     s.homepage     = "www.inthegame.io"

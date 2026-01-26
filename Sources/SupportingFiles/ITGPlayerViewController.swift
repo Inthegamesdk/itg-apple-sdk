@@ -303,8 +303,30 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         }
     }
     
-    open func itgRequestedVideoRectChange(_ rect: CGRect?) {
-        player?.getPlayerView()?.frame = rect ?? view.bounds
+    open func itgRequestedVideoRectChange(_ rect: CGRect?, animationTime: TimeInterval) {
+        func animateVideoTransformation(_ layer: CALayer, duration: TimeInterval, transform: CATransform3D, removeOnCompletion: Bool) {
+            let animation = CABasicAnimation(keyPath: "transform")
+            animation.toValue = transform
+            if duration == 0 {
+                animation.fromValue = animation.toValue
+            } else {
+                animation.fromValue = layer.presentation()?.transform
+            }
+            animation.fillMode = CAMediaTimingFillMode.forwards
+            animation.isRemovedOnCompletion = removeOnCompletion
+            animation.duration = duration
+            layer.add(animation, forKey: "flexiVideoTransform")
+        }
+        if let rect {
+            if let videoView = player?.getPlayerView() {
+                let videoViewTransform = CGAffineTransform.identity.translatedBy(x: rect.origin.x-(view.bounds.width-rect.size.width)/2, y: rect.origin.y-(view.bounds.height-rect.size.height)/2).scaledBy(x: rect.size.width/view.bounds.width, y: rect.size.height/view.bounds.height)
+                animateVideoTransformation(videoView.layer, duration: animationTime, transform: CATransform3DMakeAffineTransform(videoViewTransform), removeOnCompletion: false)
+            }
+        } else {
+            if let videoView = player?.getPlayerView() {
+                animateVideoTransformation(videoView.layer, duration: animationTime, transform: CATransform3DIdentity, removeOnCompletion: true)
+           }
+        }
     }
     
     open func itgReceivedDeeplink(_ link: String) {
@@ -331,7 +353,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         }
     }
     
-    public func itgRequestVideoGravity(_ videoGravity: AVLayerVideoGravity?) {
+    public func itgRequestedVideoGravity(_ videoGravity: AVLayerVideoGravity?) {
         if let videoGravity {
             if originalVideoGravity == nil {
                 originalVideoGravity = player?.getVideoGravity()

@@ -25,12 +25,12 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
         let onItgDidLoadChannelInfo: ((ChannelMeta)->Void)?
         let onItgRequestedVideoStateChange: (ITGPlayerState, TimeInterval?)->Void
         let onItgRequestedFocusUpdate: (Bool)->Void
-        let onItgRequestedVideoRectChange: (CGRect?) -> Void
+        let onItgRequestedVideoRectChange: (CGRect?, TimeInterval) -> Void
         let onItgReceivedDeeplink: ((String)->Void)?
         let onItgDidProcessAnalyticEvent: ((AnalyticsInfo, AnalyticsEventType)->Void)?
         let onItgDidUpdateUserState: ((User)->Void)?
         let onItgRequestedVideoSoundLevel: (Float?)->Void
-        let onItgRequestVideoGravity: (AVLayerVideoGravity?)->Void
+        let onItgRequestedVideoGravity: (AVLayerVideoGravity?)->Void
         
         public static func == (lhs: Coordinator, rhs: Coordinator) -> Bool {
             return lhs.channelSlug == rhs.channelSlug
@@ -53,12 +53,12 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
                     onItgDidLoadChannelInfo: ((ChannelMeta) -> Void)?,
                     onItgRequestedVideoStateChange: @escaping (ITGPlayerState, TimeInterval?) -> Void,
                     onItgRequestedFocusUpdate: @escaping (Bool) -> Void,
-                    onItgRequestedVideoRectChange: @escaping (CGRect?) -> Void,
+                    onItgRequestedVideoRectChange: @escaping (CGRect?, TimeInterval) -> Void,
                     onItgReceivedDeeplink: ((String) -> Void)?,
                     onItgDidProcessAnalyticEvent: ((AnalyticsInfo, AnalyticsEventType) -> Void)?,
                     onItgDidUpdateUserState: ((User) -> Void)?,
                     onItgRequestedVideoSoundLevel: @escaping (Float?) -> Void,
-                    onItgRequestVideoGravity: @escaping (AVLayerVideoGravity?)->Void) {
+                    onItgRequestedVideoGravity: @escaping (AVLayerVideoGravity?)->Void) {
             self.overlayView = overlayView
             self.channelSlug = channelSlug
             self.virtualChannels = virtualChannels
@@ -75,7 +75,7 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
             self.onItgDidProcessAnalyticEvent = onItgDidProcessAnalyticEvent
             self.onItgDidUpdateUserState = onItgDidUpdateUserState
             self.onItgRequestedVideoSoundLevel = onItgRequestedVideoSoundLevel
-            self.onItgRequestVideoGravity = onItgRequestVideoGravity
+            self.onItgRequestedVideoGravity = onItgRequestedVideoGravity
         }
         
         public func itgDidLoadChannelInfo(_ channelMeta: ChannelMeta) {
@@ -90,8 +90,8 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
             onItgRequestedFocusUpdate(focusRequired)
         }
         
-        public func itgRequestedVideoRectChange(_ rect: CGRect?) {
-            onItgRequestedVideoRectChange(rect)
+        public func itgRequestedVideoRectChange(_ rect: CGRect?, animationTime: TimeInterval) {
+            onItgRequestedVideoRectChange(rect, animationTime)
         }
         
         public func itgReceivedDeeplink(_ link: String) {
@@ -110,8 +110,8 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
             onItgRequestedVideoSoundLevel(soundLevel)
         }
         
-        public func itgRequestVideoGravity(_ videoGravity: AVLayerVideoGravity?) {
-            onItgRequestVideoGravity(videoGravity)
+        public func itgRequestedVideoGravity(_ videoGravity: AVLayerVideoGravity?) {
+            onItgRequestedVideoGravity(videoGravity)
         }
         
     }
@@ -126,13 +126,13 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
     let onItgDidLoadChannelInfo: ((ChannelMeta)->Void)?
     let onItgRequestedVideoStateChange: (ITGPlayerState, TimeInterval?)->Void
     let onItgRequestedFocusUpdate: (Bool)->Void
-    let onItgRequestedVideoRectChange: ((CGRect?) -> Void)
+    let onItgRequestedVideoRectChange: ((CGRect?, TimeInterval) -> Void)
     let onItgReceivedDeeplink: ((String)->Void)?
     let onItgDidProcessAnalyticEvent: ((AnalyticsInfo, AnalyticsEventType)->Void)?
     let onItgDidUpdateUserState: ((User)->Void)?
     let onItgRequestedVideoSoundLevel: (Float?)->Void
-    let onItgRequestVideoGravity: (AVLayerVideoGravity?)->Void
-    let onItgOverlayCreated: ((ITGOverlayViewSwiftUI) -> Void)?
+    let onItgRequestedVideoGravity: (AVLayerVideoGravity?)->Void
+    let onItgOverlayCreated: ((ITGOverlayView) -> Void)?
     private let overlayView = ITGOverlayView()
     
     public init(channelSlug: String,
@@ -146,13 +146,13 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
                 onItgDidLoadChannelInfo: ((ChannelMeta) -> Void)?,
                 onItgRequestedVideoStateChange: @escaping (ITGPlayerState, TimeInterval?) -> Void,
                 onItgRequestedFocusUpdate: @escaping (Bool) -> Void,
-                onItgRequestedVideoRectChange: @escaping (CGRect?) -> Void,
+                onItgRequestedVideoRectChange: @escaping (CGRect?, TimeInterval) -> Void,
                 onItgReceivedDeeplink: ((String) -> Void)?,
                 onItgDidProcessAnalyticEvent: ((AnalyticsInfo, AnalyticsEventType) -> Void)?,
                 onItgDidUpdateUserState: ((User) -> Void)?,
                 onItgRequestedVideoSoundLevel: @escaping (Float?) -> Void,
-                onItgRequestVideoGravity: @escaping (AVLayerVideoGravity?)->Void,
-                onItgOverlayCreated: ((ITGOverlayViewSwiftUI) -> Void)? = nil) {
+                onItgRequestedVideoGravity: @escaping (AVLayerVideoGravity?)->Void,
+                onItgOverlayCreated: ((ITGOverlayView) -> Void)? = nil) {
         self.channelSlug = channelSlug
         self.virtualChannels = virtualChannels
         self.accountId = accountId
@@ -168,13 +168,13 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
         self.onItgDidProcessAnalyticEvent = onItgDidProcessAnalyticEvent
         self.onItgDidUpdateUserState = onItgDidUpdateUserState
         self.onItgRequestedVideoSoundLevel = onItgRequestedVideoSoundLevel
-        self.onItgRequestVideoGravity = onItgRequestVideoGravity
+        self.onItgRequestedVideoGravity = onItgRequestedVideoGravity
         self.onItgOverlayCreated = onItgOverlayCreated
     }
     
     public func makeUIView(context: Context) -> ITGOverlayView {
         overlayView.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: context.coordinator, foreignId: foreignId, vars: vars, showLogs: showLogs)
-        onItgOverlayCreated?(self)
+        onItgOverlayCreated?(overlayView)
         return overlayView
     }
     
@@ -201,7 +201,7 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
                            onItgDidProcessAnalyticEvent: onItgDidProcessAnalyticEvent,
                            onItgDidUpdateUserState: onItgDidUpdateUserState,
                            onItgRequestedVideoSoundLevel: onItgRequestedVideoSoundLevel,
-                           onItgRequestVideoGravity: onItgRequestVideoGravity)
+                           onItgRequestedVideoGravity: onItgRequestedVideoGravity)
     }
     
     public func playerChangedState(_ state: ITGVideoState, userInitiated: Bool = false, isSeeking: Bool = false) {

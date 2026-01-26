@@ -156,12 +156,12 @@ public protocol ITGOverlayDelegate : AnyObject {
   func itgDidLoadChannelInfo(_ channelMeta: InthegametviOS.ChannelMeta)
   func itgRequestedVideoStateChange(_ state: InthegametviOS.ITGPlayerState, timeStamp: Foundation.TimeInterval?)
   func itgRequestedFocusUpdate(_ focusRequired: Swift.Bool)
-  func itgRequestedVideoRectChange(_ rect: CoreFoundation.CGRect?)
+  func itgRequestedVideoRectChange(_ rect: CoreFoundation.CGRect?, animationTime: Foundation.TimeInterval)
   func itgReceivedDeeplink(_ link: Swift.String)
   func itgDidProcessAnalyticEvent(info: InthegametviOS.AnalyticsInfo, type: InthegametviOS.AnalyticsEventType)
   func itgDidUpdateUserState(_ user: InthegametviOS.User)
   func itgRequestedVideoSoundLevel(_ soundLevel: Swift.Float?)
-  func itgRequestVideoGravity(_ videoGravity: AVFoundation.AVLayerVideoGravity?)
+  func itgRequestedVideoGravity(_ videoGravity: AVFoundation.AVLayerVideoGravity?)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class ITGOverlayView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency public static var overlayVersion: Swift.String
