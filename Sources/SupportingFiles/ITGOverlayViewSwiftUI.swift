@@ -14,13 +14,13 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
     
     public class Coordinator: ITGOverlayDelegate, Equatable {
         
-        let overlayView: ITGOverlayView?
-        let channelSlug: String
-        let virtualChannels: [String]?
-        let accountId: String
-        let environment: ITGEnvironment
-        let foreignId: String?
-        let vars: [String : any Hashable]?
+        let overlayView: ITGOverlayView = ITGOverlayView()
+        var channelSlug: String
+        var virtualChannels: [String]?
+        var accountId: String
+        var environment: ITGEnvironment
+        var foreignId: String?
+        var vars: [String : any Hashable]?
         let showLogs: Bool
         let onItgDidLoadChannelInfo: ((ChannelMeta)->Void)?
         let onItgRequestedVideoStateChange: (ITGPlayerState, TimeInterval?)->Void
@@ -42,8 +42,7 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
             && lhs.showLogs == rhs.showLogs
         }
         
-        public init(overlayView: ITGOverlayView?,
-                    channelSlug: String,
+        public init(channelSlug: String,
                     virtualChannels: [String]?,
                     accountId: String,
                     environment: ITGEnvironment,
@@ -59,7 +58,6 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
                     onItgDidUpdateUserState: ((User) -> Void)?,
                     onItgRequestedVideoSoundLevel: @escaping (Float?) -> Void,
                     onItgRequestedVideoGravity: @escaping (AVLayerVideoGravity?)->Void) {
-            self.overlayView = overlayView
             self.channelSlug = channelSlug
             self.virtualChannels = virtualChannels
             self.accountId = accountId
@@ -133,7 +131,6 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
     let onItgRequestedVideoSoundLevel: (Float?)->Void
     let onItgRequestedVideoGravity: (AVLayerVideoGravity?)->Void
     let onItgOverlayCreated: ((ITGOverlayView) -> Void)?
-    private let overlayView = ITGOverlayView()
     
     public init(channelSlug: String,
                 virtualChannels: [String]? = nil,
@@ -173,20 +170,30 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
     }
     
     public func makeUIView(context: Context) -> ITGOverlayView {
-        overlayView.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: context.coordinator, foreignId: foreignId, vars: vars, showLogs: showLogs)
-        onItgOverlayCreated?(overlayView)
-        return overlayView
+        context.coordinator.overlayView.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: context.coordinator, foreignId: foreignId, vars: vars, showLogs: showLogs)
+        onItgOverlayCreated?(context.coordinator.overlayView)
+        return context.coordinator.overlayView
     }
     
     public func updateUIView(_ uiView: ITGOverlayView, context: Context) {
-        if context.coordinator != self.makeCoordinator() {
-            overlayView.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: context.coordinator, foreignId: foreignId, vars: vars, showLogs: showLogs)
+        if context.coordinator.channelSlug != channelSlug
+            || context.coordinator.virtualChannels != virtualChannels
+            || context.coordinator.accountId != accountId
+            || context.coordinator.environment != environment
+            || context.coordinator.foreignId != foreignId
+            || context.coordinator.vars?.map({ item in return String(item.key.hashValue) + String(item.value.hashValue) }) != vars?.map({ item in return String(item.key.hashValue) + String(item.value.hashValue) }) {
+            context.coordinator.overlayView.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: context.coordinator, foreignId: foreignId, vars: vars, showLogs: showLogs)
+            context.coordinator.channelSlug = channelSlug
+            context.coordinator.virtualChannels = virtualChannels
+            context.coordinator.accountId = accountId
+            context.coordinator.environment = environment
+            context.coordinator.foreignId = foreignId
+            context.coordinator.vars = vars
         }
     }
     
     public func makeCoordinator() -> Coordinator {
-        return Coordinator(overlayView: overlayView,
-                           channelSlug: channelSlug,
+        return Coordinator(channelSlug: channelSlug,
                            virtualChannels: virtualChannels,
                            accountId: accountId,
                            environment: environment,
@@ -202,10 +209,6 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
                            onItgDidUpdateUserState: onItgDidUpdateUserState,
                            onItgRequestedVideoSoundLevel: onItgRequestedVideoSoundLevel,
                            onItgRequestedVideoGravity: onItgRequestedVideoGravity)
-    }
-    
-    public func playerChangedState(_ state: ITGVideoState, userInitiated: Bool = false, isSeeking: Bool = false) {
-        overlayView.playerChangedState(state, userInitiated: userInitiated, isSeeking: isSeeking)
     }
     
 }

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "ITGGoogleIMAPlugin"
-    s.version      = "2.7.3"
+    s.version      = "2.7.4"
     s.summary      = "ITGGoogleIMAPlugin component for integration with Inthegametv SDK"
     s.description  = "ITGGoogleIMAPlugin component for integration with Inthegametv SDK"
     s.homepage     = "www.inthegame.io"
