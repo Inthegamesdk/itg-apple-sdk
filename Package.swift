@@ -17,6 +17,7 @@ let package = Package(
         .library(name: "ITGPlayerViewControllerSwiftUI", targets: ["ITGPlayerViewControllerSwiftUI"]),
         .library(name: "ITGOverlayViewSwiftUI", targets: ["ITGOverlayViewSwiftUI"]),
         .library(name: "ITGMediatailorPlugin", targets: ["ITGMediatailorPlugin"]),
+        .library(name: "ITGDatazoomPlugin", targets: ["ITGDatazoomPlugin"]),
         .library(name: "ITGGoogleIMAPlugin", targets: ["ITGGoogleIMAPlugin"])
     ],
     targets: [
