@@ -59,7 +59,7 @@ public class ITGMediatailorPlugin {
     
     private func processFlexi(_ flexi: String, duration: Double?, trackingUrls: [String]?, errorUrls: [String]?, completion: @escaping (String?)->Void) {
         let flexiString = removeCDATA(from: removeADataTag(from: flexi))
-        if flexiString.isValidUrl(), let url = URL(string: flexiString) {
+        if isValidUrl(flexiString), let url = URL(string: flexiString) {
             URLSession.shared.dataTask(with: URLRequest(url: url)) { [weak self] data, response, error in
                 if let data, let flexiJson = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any], let flexi = self?.decorateFlexi(flexiJson, duration: duration, trackingUrls: trackingUrls, errorUrls: errorUrls) {
                     completion(flexi)
@@ -185,17 +185,14 @@ public class ITGMediatailorPlugin {
         return String(data: data, encoding: .utf8)
     }
     
-}
-
-extension String {
-    
-    func isValidUrl() -> Bool {
-        guard !contains("..") else { return false }
+    private func isValidUrl(_ string: String) -> Bool {
+        guard !string.contains("..") else { return false }
         let head     = "((http|https)://)?([(w|W)]{3}+\\.)?"
         let tail     = "\\.+[A-Za-z]{2,3}+(\\.)?+(/(.)*)?"
         let urlRegEx = head+"+(.)+"+tail
         let urlTest = NSPredicate(format:"SELF MATCHES %@", urlRegEx)
-        return urlTest.evaluate(with: trimmingCharacters(in: .whitespaces))
+        return urlTest.evaluate(with: string.trimmingCharacters(in: .whitespaces))
     }
     
 }
+
