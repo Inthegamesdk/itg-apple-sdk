@@ -104,8 +104,10 @@ public class ITGMediatailorPlugin {
     
     private func parseAds(_ ads: [[String: Any]], time: Double, availId: String, duration: Double?, dispatchGroup: DispatchGroup, completion: @escaping (String?)->Void) {
         for ad in ads {
-            let trackingUrls = (ad["trackingEvents"] as? [[String: Any]])?.filter({ $0["eventType"] as? String == "impression" }).compactMap({ $0["beaconUrls"] as? [String] }).flatMap({ $0 })
-            let errorUrls = (ad["trackingEvents"] as? [[String: Any]])?.filter({ $0["eventType"] as? String == "error" }).compactMap({ $0["beaconUrls"] as? [String] }).flatMap({ $0 })
+            var trackingUrls = (ad["trackingEvents"] as? [[String: Any]])?.filter({ $0["eventType"] as? String == "impression" }).compactMap({ $0["beaconUrls"] as? [String] }).flatMap({ $0 })
+            var errorUrls = (ad["trackingEvents"] as? [[String: Any]])?.filter({ $0["eventType"] as? String == "error" }).compactMap({ $0["beaconUrls"] as? [String] }).flatMap({ $0 })
+            trackingUrls = trackingUrls?.filter({ removeCDATA(from: $0) != "www.example.com" && removeCDATA(from: $0 as String) != "https://www.example.com" })
+            errorUrls = errorUrls?.filter({ removeCDATA(from: $0) != "www.example.com" && removeCDATA(from: $0) != "https://www.example.com" })
             for ext in ad["extensions"] as? [[String: Any]] ?? [] {
                 if ext["type"] as? String == "inthegame_creative" {
                     if let flexiString = ext["content"] as? String {
