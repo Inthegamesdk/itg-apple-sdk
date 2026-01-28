@@ -60,7 +60,7 @@ public class ITGDatazoomPlugin: AdObserver {
                 if let data = try? JSONSerialization.data(withJSONObject: json, options: []) {
                     dispatchGroup.enter()
                     let jsonString = String(data: data, encoding: .utf8)!
-                    processFlexi(jsonString, duration: duration, trackingUrls: trackingUrls, errorUrls: errorUrls) { flexi in
+                    processFlexi(jsonString, duration: nil, trackingUrls: trackingUrls, errorUrls: errorUrls) { flexi in
                         if let flexi {
                             result.append(flexi)
                         }
@@ -99,7 +99,7 @@ public class ITGDatazoomPlugin: AdObserver {
     private func decorateFlexi(_ flexi: [String: Any], duration: Double?, trackingUrls: [String]?, errorUrls: [String]?) -> String? {
         var flexi = flexi
         var general = flexi["general"] as? [String: Any] ?? [:]
-        if let duration, duration != 0 {
+        if let duration, duration != 0, general["duration"] == nil {
             general["duration"] = "\(duration)"
         }
         if let trackingUrls {

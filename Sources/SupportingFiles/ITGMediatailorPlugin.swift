@@ -57,6 +57,38 @@ public class ITGMediatailorPlugin {
         idTimer?.invalidate()
     }
     
+    private func processFlexis(_ flexis: String, duration: Double?, trackingUrls: [String]?, errorUrls: [String]?, completion: @escaping ([String]?)->Void) {
+        let data = Data(flexis.utf8)
+        if let array = try? JSONSerialization.jsonObject(with: data) as? [[String: Any]] {
+            var result: [String] = []
+            let dispatchGroup = DispatchGroup()
+            dispatchGroup.enter()
+            dispatchGroup.notify(queue: .main, execute: {
+                completion(result)
+            })
+            for json in array {
+                if let data = try? JSONSerialization.data(withJSONObject: json, options: []) {
+                    dispatchGroup.enter()
+                    let jsonString = String(data: data, encoding: .utf8)!
+                    processFlexi(jsonString, duration: nil, trackingUrls: trackingUrls, errorUrls: errorUrls) { flexi in
+                        if let flexi {
+                            result.append(flexi)
+                        }
+                        dispatchGroup.leave()
+                    }
+                }
+            }
+            dispatchGroup.leave()
+        } else {
+            processFlexi(flexis, duration: duration, trackingUrls: trackingUrls, errorUrls: errorUrls) { flexi in
+                if let flexi {
+                    completion([flexi])
+                }
+                completion(nil)
+            }
+        }
+    }
+    
     private func processFlexi(_ flexi: String, duration: Double?, trackingUrls: [String]?, errorUrls: [String]?, completion: @escaping (String?)->Void) {
         let flexiString = removeCDATA(from: removeADataTag(from: flexi))
         if isValidUrl(flexiString), let url = URL(string: flexiString) {
@@ -77,7 +109,7 @@ public class ITGMediatailorPlugin {
     private func decorateFlexi(_ flexi: [String: Any], duration: Double?, trackingUrls: [String]?, errorUrls: [String]?) -> String? {
         var flexi = flexi
         var general = flexi["general"] as? [String: Any] ?? [:]
-        if let duration, duration != 0 {
+        if let duration, duration != 0, general["duration"] == nil {
             general["duration"] = "\(duration)"
         }
         if let trackingUrls {
@@ -102,7 +134,7 @@ public class ITGMediatailorPlugin {
         return jsonToString(flexi)
     }
     
-    private func parseAds(_ ads: [[String: Any]], time: Double, availId: String, duration: Double?, dispatchGroup: DispatchGroup, completion: @escaping (String?)->Void) {
+    private func parseAds(_ ads: [[String: Any]], time: Double, availId: String, duration: Double?, dispatchGroup: DispatchGroup, completion: @escaping ([String]?)->Void) {
         for ad in ads {
             var trackingUrls = (ad["trackingEvents"] as? [[String: Any]])?.filter({ $0["eventType"] as? String == "impression" }).compactMap({ $0["beaconUrls"] as? [String] }).flatMap({ $0 })
             var errorUrls = (ad["trackingEvents"] as? [[String: Any]])?.filter({ $0["eventType"] as? String == "error" }).compactMap({ $0["beaconUrls"] as? [String] }).flatMap({ $0 })
@@ -112,7 +144,7 @@ public class ITGMediatailorPlugin {
                 if ext["type"] as? String == "inthegame_creative" {
                     if let flexiString = ext["content"] as? String {
                         dispatchGroup.enter()
-                        processFlexi(flexiString, duration: duration, trackingUrls: trackingUrls, errorUrls: errorUrls, completion: completion)
+                        processFlexis(flexiString, duration: duration, trackingUrls: trackingUrls, errorUrls: errorUrls, completion: completion)
                     }
                 }
             }
@@ -120,7 +152,7 @@ public class ITGMediatailorPlugin {
                 if nonLinearAd["staticResourceCreativeType"] as? String == "inthegame_creative" {
                     if let flexiString = nonLinearAd["staticResource"] as? String {
                         dispatchGroup.enter()
-                        processFlexi(flexiString, duration: duration, trackingUrls: trackingUrls, errorUrls: errorUrls, completion: completion)
+                        processFlexis(flexiString, duration: duration, trackingUrls: trackingUrls, errorUrls: errorUrls, completion: completion)
                     }
                 }
             }
@@ -138,9 +170,9 @@ public class ITGMediatailorPlugin {
                 notifyDataDelegateOperation = nil
                 let time = avail["startTimeInSeconds"] as? Double ?? 0
                 let duration = avail["durationInSeconds"] as? Double
-                let completion: (String?)->Void = { flexi in
+                let completion: ([String]?)->Void = { flexi in
                     if let flexi {
-                        flexis.append(flexi)
+                        flexis.append(contentsOf: flexi)
                     }
                     dispatchGroup.leave()
                 }
