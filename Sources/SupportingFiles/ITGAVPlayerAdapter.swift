@@ -53,6 +53,7 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
         removeObserver(player)
         if player.currentItem != nil, let playerViewController {
             playerViewController.children.first(where: { String(describing: type(of: $0)) == "AVMobileChromelessControlsViewController" })?.view.removeObserver(self, forKeyPath: #keyPath(UIView.isHidden))
+            playerViewController.children.first(where: { String(describing: type(of: $0)) == "AVMobileGlassControlsViewController" })?.view.removeObserver(self, forKeyPath: #keyPath(UIView.isHidden))
         }
     }
     
@@ -86,6 +87,7 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
     
     open func startVideo(_ url: URL) {
         playerViewController?.children.first(where: { String(describing: type(of: $0)) == "AVMobileChromelessControlsViewController" })?.view.addObserver(self, forKeyPath: #keyPath(UIView.isHidden), options: [.old, .new], context: nil)
+        playerViewController?.children.first(where: { String(describing: type(of: $0)) == "AVMobileGlassControlsViewController" })?.view.addObserver(self, forKeyPath: #keyPath(UIView.isHidden), options: [.old, .new], context: nil)
         player.replaceCurrentItem(with: AVPlayerItem(asset: AVAsset(url: url)))
         player.play()
    }

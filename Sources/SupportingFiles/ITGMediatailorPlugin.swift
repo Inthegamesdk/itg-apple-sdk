@@ -83,8 +83,9 @@ public class ITGMediatailorPlugin {
             processFlexi(flexis, duration: duration, trackingUrls: trackingUrls, errorUrls: errorUrls) { flexi in
                 if let flexi {
                     completion([flexi])
+                } else {
+                    completion(nil)
                 }
-                completion(nil)
             }
         }
     }

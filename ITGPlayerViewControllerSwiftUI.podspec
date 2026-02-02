@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "ITGPlayerViewControllerSwiftUI"
-    s.version      = "2.7.9"
+    s.version      = "2.7.10"
     s.summary      = "ITGPlayerViewControllerSwiftUI component for quick integration of Inthegametv SDK using SwiftUI"
     s.description  = "ITGPlayerViewControllerSwiftUI component for quick integration of Inthegametv SDK using SwiftUI"
     s.homepage     = "www.inthegame.io"
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.platform = :ios, :tvos
     s.ios.deployment_target  = '15.0'
     s.tvos.deployment_target  = '15.0'
-    s.dependency 'ITGPlayerViewController', '~> 2.7.9'
+    s.dependency 'ITGPlayerViewController', '~> 2.7.10'
     s.source_files = '**/**/ITGPlayerViewControllerSwiftUI.swift'
     s.pod_target_xcconfig = {
         'ENABLE_USER_SCRIPT_SANDBOXING' => 'NO'
