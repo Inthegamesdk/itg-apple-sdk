@@ -10,26 +10,25 @@ import AVKit
 import ITGPlayerViewController
 #endif
 
-public protocol ITGMediastreamPlatform {
+@objc public protocol ITGMediastreamPlatform {
     
     var view: UIView! { get }
     var playerLayer: AVPlayerLayer? { get }
     var playerViewController: AVPlayerViewController? { get }
     var volume: Int { get set }
-    func play()
-    func pause()
-    func getResolution() -> String
-    func checkIsPlaying() -> Bool
-    func seekTo(_ time: Double)
-    func getCurrentTime() -> Int64
-    func getDuration() -> Int
+    @objc func play()
+    @objc func pause()
+    @objc func getResolution() -> String
+    @objc func checkIsPlaying() -> Bool
+    @objc func seekTo(_ time: Double)
+    @objc func getCurrentTime() -> Int64
+    @objc func getDuration() -> Int64
     
 }
 
-public protocol ITGMediastreamPlatformEventManager {
+@objc public protocol ITGMediastreamPlatformEventManager {
     
-    func listenTo(eventName: String, action: @escaping () -> ())
-    func listenTo(eventName: String, action: @escaping (Any?) -> ())
+    @objc func listenTo(eventName: String, action: @escaping () -> ())
     
 }
 

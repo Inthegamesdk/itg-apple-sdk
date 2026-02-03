@@ -113,7 +113,8 @@ public class ITGMediatailorPlugin {
     
     private func parseAvails(_ avails: [[String: Any]]) {
         for avail in avails {
-            if let availId = avail["availId"] as? String, !processedAvails.contains(where: { $0.0 == availId }), let time = avail["startTimeInSeconds"] as? Double {
+            if let availId = avail["availId"] as? String, !processedAvails.contains(where: { $0.0 == availId }) {
+                let time = avail["startTimeInSeconds"] as? Double ?? 0
                 let duration = avail["durationInSeconds"] as? Double
                 if let ads = avail["ads"] as? [[String: Any]] {
                     parseAds(ads, time: time, availId: availId, duration: duration)
