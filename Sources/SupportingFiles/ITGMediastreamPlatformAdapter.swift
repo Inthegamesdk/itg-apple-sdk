@@ -32,7 +32,7 @@ import ITGPlayerViewController
     
 }
 
-open class ITGMediastreamPlatformAdapter: ITGPlayerAdapter {
+open class ITGMediastreamAdapter: ITGPlayerAdapter {
     
     weak public var delegate: ITGPlayerAdapterDelegate?
     var mdstrm: ITGMediastreamPlatform
