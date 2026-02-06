@@ -86,7 +86,6 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         configureRemoteButtonsHandlers()
 #else
         NotificationCenter.default.addObserver(self, selector: #selector(orientationDidChange), name: UIDevice.orientationDidChangeNotification, object: nil)
-        orientationDidChange()
         if closeButtonVisibilityMode == .hidden {
             closeButton.isHidden = true
         }
@@ -99,6 +98,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         player?.delegate = self
 #if os(iOS)
         view.bringSubviewToFront(closeButton)
+        orientationDidChange()
 #endif
     }
     
@@ -136,8 +136,18 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     open func setupPlayer() {
         if let playerView = player?.getPlayerView() {
             customPreferredFocusEnvironments = playerView.preferredFocusEnvironments
-            playerView.frame = view.bounds
+            playerView.translatesAutoresizingMaskIntoConstraints = false
             view.addSubview(playerView)
+#if os(iOS)
+        let interfaceOrientation = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.interfaceOrientation ?? view.window?.windowScene?.interfaceOrientation
+        if interfaceOrientation == .landscapeLeft || interfaceOrientation == .landscapeRight {
+            playerView.constraintsFillSuperview()
+        } else {
+            playerView.constraintsFillSuperview(verticalToSafeArea: true)
+        }
+#else
+            playerView.constraintsFillSuperview()
+#endif
             view.bringSubviewToFront(overlayView!)
         }
 #if os(iOS)
@@ -245,13 +255,19 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
 #if os(iOS)
     @objc private func orientationDidChange() {
         let interfaceOrientation = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.interfaceOrientation ?? view.window?.windowScene?.interfaceOrientation
-        if let constraint = view.constraints.first(where: { $0.firstItem as? ITGOverlayView == overlayView && $0.firstAttribute == .bottom }) {
-            view.removeConstraint(constraint)
+        view.constraints.filter({ $0.firstItem is ITGOverlayView }).forEach {
+            view.removeConstraint($0)
         }
+        view.constraints.filter({ $0.firstItem as? UIView == player?.getPlayerView() }).forEach {
+            view.removeConstraint($0)
+        }
+        player?.getPlayerView()?.layer.removeAllAnimations()
         if interfaceOrientation == .landscapeLeft || interfaceOrientation == .landscapeRight {
-            overlayView?.constraintsFillSuperview(top: nil, leading: nil, trailing: nil)
+            overlayView?.constraintsFillSuperview()
+            player?.getPlayerView()?.constraintsFillSuperview()
         } else {
-            overlayView?.constraintsFillSuperview(top: nil, leading: nil, trailing: nil, verticalToSafeArea: true)
+            overlayView?.constraintsFillSuperview(verticalToSafeArea: true)
+            player?.getPlayerView()?.constraintsFillSuperview(verticalToSafeArea: true)
         }
     }
 #endif
@@ -318,8 +334,12 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
             layer.add(animation, forKey: "flexiVideoTransform")
         }
         if let rect {
-            if let videoView = player?.getPlayerView() {
-                let videoViewTransform = CGAffineTransform.identity.translatedBy(x: rect.origin.x-(view.bounds.width-rect.size.width)/2, y: rect.origin.y-(view.bounds.height-rect.size.height)/2).scaledBy(x: rect.size.width/view.bounds.width, y: rect.size.height/view.bounds.height)
+            if let videoView = player?.getPlayerView(), let overlayView {
+                let xScale = rect.size.width/overlayView.frame.size.width
+                let yScale = rect.size.height/overlayView.frame.size.height
+                let xTranslation = rect.origin.x + rect.width/2 - videoView.bounds.width/2
+                let yTranslation = rect.origin.y + rect.height/2 - videoView.bounds.height/2
+                let videoViewTransform = CGAffineTransform.identity.translatedBy(x: xTranslation, y: yTranslation).scaledBy(x: xScale, y: yScale)
                 animateVideoTransformation(videoView.layer, duration: animationTime, transform: CATransform3DMakeAffineTransform(videoViewTransform), removeOnCompletion: false)
             }
         } else {
