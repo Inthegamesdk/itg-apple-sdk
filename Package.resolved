@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "apple_dz_mediatailor_adapter",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitlab.com/datazoom/apple/libraries-release/apple_dz_mediatailor_adapter",
+      "state" : {
+        "revision" : "123b3970e156965734ec3a97675f4d81c299a63e",
+        "version" : "1.9.1"
+      }
+    }
+  ],
+  "version" : 2
+}
