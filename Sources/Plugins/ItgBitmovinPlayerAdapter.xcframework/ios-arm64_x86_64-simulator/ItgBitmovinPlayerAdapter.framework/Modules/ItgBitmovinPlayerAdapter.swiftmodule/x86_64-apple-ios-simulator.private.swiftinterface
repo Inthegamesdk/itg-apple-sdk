@@ -1,0 +1,62 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ItgBitmovinPlayerAdapter
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import AVKit
+import BitmovinPlayer
+import Foundation
+import InthegametviOS
+import ItgPlayerViewController
+import Swift
+import SwiftUI
+import _AVKit_SwiftUI
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @available(iOS 14.0, tvOS 14.0, *)
+open class ITGBitmovinPlayerAdapter : ObjectiveC.NSObject, @preconcurrency ItgPlayerViewController.ITGPlayerAdapter {
+  public var delegate: (any ItgPlayerViewController.ITGPlayerAdapterDelegate)?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(_ player: any BitmovinPlayerCore.Player, playerView: BitmovinPlayerCore.PlayerView, delegate: (any ItgPlayerViewController.ITGPlayerAdapterDelegate)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(_ player: any BitmovinPlayerCore.Player, playerView: BitmovinPlayerCore.VideoPlayerView, delegate: (any ItgPlayerViewController.ITGPlayerAdapterDelegate)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(_ player: any BitmovinPlayerCore.Player, playerViewController: AVKit.AVPlayerViewController, delegate: (any ItgPlayerViewController.ITGPlayerAdapterDelegate)? = nil)
+  #endif
+  open func setup()
+  open func startVideo(_ url: Foundation.URL)
+  #if compiler(>=5.3) && $NonescapableTypes
+  open func getPlayerView() -> UIKit.UIView?
+  #endif
+  open func getVideoResolution() -> CoreFoundation.CGSize
+  open func isPlaying() -> Swift.Bool
+  open func play()
+  open func pause()
+  open func seek(_ time: Foundation.TimeInterval)
+  open func getCurrentTime() -> Foundation.TimeInterval
+  open func getVideoLength() -> Foundation.TimeInterval
+  open func setVideoGravity(_ videoGravity: AVFoundation.AVLayerVideoGravity)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor public func getVideoGravity() -> AVFoundation.AVLayerVideoGravity?
+  #endif
+  open func setSoundLevel(_ soundLevel: Swift.Float)
+  open func getSoundLevel() -> Swift.Float
+  @objc deinit
+}
+@available(iOS 14.0, tvOS 14.0, *)
+extension ItgBitmovinPlayerAdapter.ITGBitmovinPlayerAdapter : BitmovinPlayerCore.PlayerListener {
+  @objc nonisolated dynamic open func onPlaying(_ event: BitmovinPlayerCore.PlayingEvent, player: any BitmovinPlayerCore.Player)
+  @objc nonisolated dynamic open func onPaused(_ event: BitmovinPlayerCore.PausedEvent, player: any BitmovinPlayerCore.Player)
+  @objc nonisolated dynamic open func onPlaybackFinished(_ event: BitmovinPlayerCore.PlaybackFinishedEvent, player: any BitmovinPlayerCore.Player)
+  @objc nonisolated dynamic open func onSeeked(_ event: BitmovinPlayerCore.SeekedEvent, player: any BitmovinPlayerCore.Player)
+  @objc nonisolated dynamic open func onTimeShifted(_ event: BitmovinPlayerCore.TimeShiftedEvent, player: any BitmovinPlayerCore.Player)
+  @objc nonisolated dynamic open func onStallStarted(_ event: BitmovinPlayerCore.StallStartedEvent, player: any BitmovinPlayerCore.Player)
+  @objc nonisolated dynamic open func onStallEnded(_ event: BitmovinPlayerCore.StallEndedEvent, player: any BitmovinPlayerCore.Player)
+}
+@available(iOS 14.0, tvOS 14.0, *)
+extension ItgBitmovinPlayerAdapter.ITGBitmovinPlayerAdapter : BitmovinPlayerCore.UserInterfaceListener {
+  @objc nonisolated dynamic open func onControlsHide(_ event: BitmovinPlayerCore.ControlsHideEvent, view: BitmovinPlayerCore.PlayerView)
+  @objc nonisolated dynamic open func onControlsShow(_ event: BitmovinPlayerCore.ControlsShowEvent, view: BitmovinPlayerCore.PlayerView)
+}

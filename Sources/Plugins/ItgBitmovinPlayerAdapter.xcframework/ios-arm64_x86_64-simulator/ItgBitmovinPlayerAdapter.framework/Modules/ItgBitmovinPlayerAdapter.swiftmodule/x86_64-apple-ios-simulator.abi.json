@@ -1,0 +1,1128 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "ItgBitmovinPlayerAdapter",
+    "printedName": "ItgBitmovinPlayerAdapter",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "ItgBitmovinPlayerAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ItgBitmovinPlayerAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "ItgBitmovinPlayerAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BitmovinPlayer",
+        "printedName": "BitmovinPlayer",
+        "declKind": "Import",
+        "moduleName": "ItgBitmovinPlayerAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "InthegametviOS",
+        "printedName": "InthegametviOS",
+        "declKind": "Import",
+        "moduleName": "ItgBitmovinPlayerAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "ItgPlayerViewController",
+        "printedName": "ItgPlayerViewController",
+        "declKind": "Import",
+        "moduleName": "ItgBitmovinPlayerAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ITGBitmovinPlayerAdapter",
+        "printedName": "ITGBitmovinPlayerAdapter",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any ItgPlayerViewController.ITGPlayerAdapterDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGPlayerAdapterDelegate",
+                    "printedName": "any ItgPlayerViewController.ITGPlayerAdapterDelegate",
+                    "usr": "s:23ItgPlayerViewController24ITGPlayerAdapterDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24ItgBitmovinPlayerAdapter011ITGBitmovincD0C8delegate0aC14ViewController09ITGPlayerD8Delegate_pSgvp",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C8delegate0aC14ViewController09ITGPlayerD8Delegate_pSgvp",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any ItgPlayerViewController.ITGPlayerAdapterDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGPlayerAdapterDelegate",
+                        "printedName": "any ItgPlayerViewController.ITGPlayerAdapterDelegate",
+                        "usr": "s:23ItgPlayerViewController24ITGPlayerAdapterDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24ItgBitmovinPlayerAdapter011ITGBitmovincD0C8delegate0aC14ViewController09ITGPlayerD8Delegate_pSgvg",
+                "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C8delegate0aC14ViewController09ITGPlayerD8Delegate_pSgvg",
+                "moduleName": "ItgBitmovinPlayerAdapter",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any ItgPlayerViewController.ITGPlayerAdapterDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGPlayerAdapterDelegate",
+                        "printedName": "any ItgPlayerViewController.ITGPlayerAdapterDelegate",
+                        "usr": "s:23ItgPlayerViewController24ITGPlayerAdapterDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24ItgBitmovinPlayerAdapter011ITGBitmovincD0C8delegate0aC14ViewController09ITGPlayerD8Delegate_pSgvs",
+                "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C8delegate0aC14ViewController09ITGPlayerD8Delegate_pSgvs",
+                "moduleName": "ItgBitmovinPlayerAdapter",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24ItgBitmovinPlayerAdapter011ITGBitmovincD0C8delegate0aC14ViewController09ITGPlayerD8Delegate_pSgvM",
+                "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C8delegate0aC14ViewController09ITGPlayerD8Delegate_pSgvM",
+                "moduleName": "ItgBitmovinPlayerAdapter",
+                "implicit": true,
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "declAttributes": [
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:playerView:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGBitmovinPlayerAdapter",
+                "printedName": "ItgBitmovinPlayerAdapter.ITGBitmovinPlayerAdapter",
+                "usr": "c:@M@ItgBitmovinPlayerAdapter@objc(cs)ITGBitmovinPlayerAdapter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Player",
+                "printedName": "any BitmovinPlayerCore.Player",
+                "usr": "c:objc(pl)BMPPlayer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PlayerView",
+                "printedName": "BitmovinPlayerCore.PlayerView",
+                "usr": "c:@M@BitmovinPlayerCore@objc(cs)BMPPlayerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any ItgPlayerViewController.ITGPlayerAdapterDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGPlayerAdapterDelegate",
+                    "printedName": "any ItgPlayerViewController.ITGPlayerAdapterDelegate",
+                    "usr": "s:23ItgPlayerViewController24ITGPlayerAdapterDelegateP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:24ItgBitmovinPlayerAdapter011ITGBitmovincD0C_10playerView8delegateACSo9BMPPlayer_p_0bC4Core0cG0C0acG10Controller09ITGPlayerD8Delegate_pSgtcfc",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C_10playerView8delegateACSo9BMPPlayer_p_0bC4Core0cG0C0acG10Controller09ITGPlayerD8Delegate_pSgtcfc",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:playerView:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGBitmovinPlayerAdapter",
+                "printedName": "ItgBitmovinPlayerAdapter.ITGBitmovinPlayerAdapter",
+                "usr": "c:@M@ItgBitmovinPlayerAdapter@objc(cs)ITGBitmovinPlayerAdapter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Player",
+                "printedName": "any BitmovinPlayerCore.Player",
+                "usr": "c:objc(pl)BMPPlayer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VideoPlayerView",
+                "printedName": "BitmovinPlayerCore.VideoPlayerView",
+                "usr": "s:18BitmovinPlayerCore05VideoB4ViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any ItgPlayerViewController.ITGPlayerAdapterDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGPlayerAdapterDelegate",
+                    "printedName": "any ItgPlayerViewController.ITGPlayerAdapterDelegate",
+                    "usr": "s:23ItgPlayerViewController24ITGPlayerAdapterDelegateP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:24ItgBitmovinPlayerAdapter011ITGBitmovincD0C_10playerView8delegateACSo9BMPPlayer_p_0bC4Core05VideocG0V0acG10Controller09ITGPlayerD8Delegate_pSgtcfc",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C_10playerView8delegateACSo9BMPPlayer_p_0bC4Core05VideocG0V0acG10Controller09ITGPlayerD8Delegate_pSgtcfc",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:playerViewController:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGBitmovinPlayerAdapter",
+                "printedName": "ItgBitmovinPlayerAdapter.ITGBitmovinPlayerAdapter",
+                "usr": "c:@M@ItgBitmovinPlayerAdapter@objc(cs)ITGBitmovinPlayerAdapter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Player",
+                "printedName": "any BitmovinPlayerCore.Player",
+                "usr": "c:objc(pl)BMPPlayer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVPlayerViewController",
+                "printedName": "AVKit.AVPlayerViewController",
+                "usr": "c:objc(cs)AVPlayerViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any ItgPlayerViewController.ITGPlayerAdapterDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGPlayerAdapterDelegate",
+                    "printedName": "any ItgPlayerViewController.ITGPlayerAdapterDelegate",
+                    "usr": "s:23ItgPlayerViewController24ITGPlayerAdapterDelegateP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:24ItgBitmovinPlayerAdapter011ITGBitmovincD0C_20playerViewController8delegateACSo9BMPPlayer_p_So08AVPlayergH0C0acgH009ITGPlayerD8Delegate_pSgtcfc",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C_20playerViewController8delegateACSo9BMPPlayer_p_So08AVPlayergH0C0acgH009ITGPlayerD8Delegate_pSgtcfc",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setup",
+            "printedName": "setup()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24ItgBitmovinPlayerAdapter011ITGBitmovincD0C5setupyyF",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C5setupyyF",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startVideo",
+            "printedName": "startVideo(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24ItgBitmovinPlayerAdapter011ITGBitmovincD0C10startVideoyy10Foundation3URLVF",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C10startVideoyy10Foundation3URLVF",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPlayerView",
+            "printedName": "getPlayerView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24ItgBitmovinPlayerAdapter011ITGBitmovincD0C03getC4ViewSo6UIViewCSgyF",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C03getC4ViewSo6UIViewCSgyF",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getVideoResolution",
+            "printedName": "getVideoResolution()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24ItgBitmovinPlayerAdapter011ITGBitmovincD0C18getVideoResolutionSo6CGSizeVyF",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C18getVideoResolutionSo6CGSizeVyF",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isPlaying",
+            "printedName": "isPlaying()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24ItgBitmovinPlayerAdapter011ITGBitmovincD0C9isPlayingSbyF",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C9isPlayingSbyF",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "play",
+            "printedName": "play()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24ItgBitmovinPlayerAdapter011ITGBitmovincD0C4playyyF",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C4playyyF",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pause",
+            "printedName": "pause()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24ItgBitmovinPlayerAdapter011ITGBitmovincD0C5pauseyyF",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C5pauseyyF",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "seek",
+            "printedName": "seek(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24ItgBitmovinPlayerAdapter011ITGBitmovincD0C4seekyySdF",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C4seekyySdF",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCurrentTime",
+            "printedName": "getCurrentTime()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24ItgBitmovinPlayerAdapter011ITGBitmovincD0C14getCurrentTimeSdyF",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C14getCurrentTimeSdyF",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getVideoLength",
+            "printedName": "getVideoLength()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24ItgBitmovinPlayerAdapter011ITGBitmovincD0C14getVideoLengthSdyF",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C14getVideoLengthSdyF",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setVideoGravity",
+            "printedName": "setVideoGravity(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVLayerVideoGravity",
+                "printedName": "AVFoundation.AVLayerVideoGravity",
+                "usr": "c:@T@AVLayerVideoGravity"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24ItgBitmovinPlayerAdapter011ITGBitmovincD0C15setVideoGravityyySo07AVLayergH0aF",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C15setVideoGravityyySo07AVLayergH0aF",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getVideoGravity",
+            "printedName": "getVideoGravity()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AVFoundation.AVLayerVideoGravity?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVLayerVideoGravity",
+                    "printedName": "AVFoundation.AVLayerVideoGravity",
+                    "usr": "c:@T@AVLayerVideoGravity"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24ItgBitmovinPlayerAdapter011ITGBitmovincD0C15getVideoGravitySo07AVLayergH0aSgyF",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C15getVideoGravitySo07AVLayergH0aSgyF",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setSoundLevel",
+            "printedName": "setSoundLevel(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24ItgBitmovinPlayerAdapter011ITGBitmovincD0C13setSoundLevelyySfF",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C13setSoundLevelyySfF",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSoundLevel",
+            "printedName": "getSoundLevel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24ItgBitmovinPlayerAdapter011ITGBitmovincD0C13getSoundLevelSfyF",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C13getSoundLevelSfyF",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGBitmovinPlayerAdapter",
+                "printedName": "ItgBitmovinPlayerAdapter.ITGBitmovinPlayerAdapter",
+                "usr": "c:@M@ItgBitmovinPlayerAdapter@objc(cs)ITGBitmovinPlayerAdapter"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ItgBitmovinPlayerAdapter@objc(cs)ITGBitmovinPlayerAdapter(im)init",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0CACycfc",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "onPlaying",
+            "printedName": "onPlaying(_:player:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PlayingEvent",
+                "printedName": "BitmovinPlayerCore.PlayingEvent",
+                "usr": "c:@M@BitmovinPlayerCore@objc(cs)BMPPlayingEvent"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Player",
+                "printedName": "any BitmovinPlayerCore.Player",
+                "usr": "c:objc(pl)BMPPlayer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ItgBitmovinPlayerAdapter@objc(cs)ITGBitmovinPlayerAdapter(im)onPlaying:player:",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C9onPlaying_6playery0bC4Core0G5EventC_So9BMPPlayer_ptF",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "isOpen": true,
+            "objc_name": "onPlaying:player:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Nonisolated",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onPaused",
+            "printedName": "onPaused(_:player:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PausedEvent",
+                "printedName": "BitmovinPlayerCore.PausedEvent",
+                "usr": "c:@M@BitmovinPlayerCore@objc(cs)BMPPausedEvent"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Player",
+                "printedName": "any BitmovinPlayerCore.Player",
+                "usr": "c:objc(pl)BMPPlayer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ItgBitmovinPlayerAdapter@objc(cs)ITGBitmovinPlayerAdapter(im)onPaused:player:",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C8onPaused_6playery0bC4Core0G5EventC_So9BMPPlayer_ptF",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "isOpen": true,
+            "objc_name": "onPaused:player:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Nonisolated",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onPlaybackFinished",
+            "printedName": "onPlaybackFinished(_:player:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PlaybackFinishedEvent",
+                "printedName": "BitmovinPlayerCore.PlaybackFinishedEvent",
+                "usr": "c:@M@BitmovinPlayerCore@objc(cs)BMPPlaybackFinishedEvent"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Player",
+                "printedName": "any BitmovinPlayerCore.Player",
+                "usr": "c:objc(pl)BMPPlayer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ItgBitmovinPlayerAdapter@objc(cs)ITGBitmovinPlayerAdapter(im)onPlaybackFinished:player:",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C18onPlaybackFinished_6playery0bC4Core0gH5EventC_So9BMPPlayer_ptF",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "isOpen": true,
+            "objc_name": "onPlaybackFinished:player:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Nonisolated",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSeeked",
+            "printedName": "onSeeked(_:player:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SeekedEvent",
+                "printedName": "BitmovinPlayerCore.SeekedEvent",
+                "usr": "c:@M@BitmovinPlayerCore@objc(cs)BMPSeekedEvent"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Player",
+                "printedName": "any BitmovinPlayerCore.Player",
+                "usr": "c:objc(pl)BMPPlayer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ItgBitmovinPlayerAdapter@objc(cs)ITGBitmovinPlayerAdapter(im)onSeeked:player:",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C8onSeeked_6playery0bC4Core0G5EventC_So9BMPPlayer_ptF",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "isOpen": true,
+            "objc_name": "onSeeked:player:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Nonisolated",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onTimeShifted",
+            "printedName": "onTimeShifted(_:player:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TimeShiftedEvent",
+                "printedName": "BitmovinPlayerCore.TimeShiftedEvent",
+                "usr": "c:@M@BitmovinPlayerCore@objc(cs)BMPTimeShiftedEvent"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Player",
+                "printedName": "any BitmovinPlayerCore.Player",
+                "usr": "c:objc(pl)BMPPlayer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ItgBitmovinPlayerAdapter@objc(cs)ITGBitmovinPlayerAdapter(im)onTimeShifted:player:",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C13onTimeShifted_6playery0bC4Core0gH5EventC_So9BMPPlayer_ptF",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "isOpen": true,
+            "objc_name": "onTimeShifted:player:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Nonisolated",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onStallStarted",
+            "printedName": "onStallStarted(_:player:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StallStartedEvent",
+                "printedName": "BitmovinPlayerCore.StallStartedEvent",
+                "usr": "c:@M@BitmovinPlayerCore@objc(cs)BMPStallStartedEvent"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Player",
+                "printedName": "any BitmovinPlayerCore.Player",
+                "usr": "c:objc(pl)BMPPlayer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ItgBitmovinPlayerAdapter@objc(cs)ITGBitmovinPlayerAdapter(im)onStallStarted:player:",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C14onStallStarted_6playery0bC4Core0gH5EventC_So9BMPPlayer_ptF",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "isOpen": true,
+            "objc_name": "onStallStarted:player:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Nonisolated",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onStallEnded",
+            "printedName": "onStallEnded(_:player:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StallEndedEvent",
+                "printedName": "BitmovinPlayerCore.StallEndedEvent",
+                "usr": "c:@M@BitmovinPlayerCore@objc(cs)BMPStallEndedEvent"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Player",
+                "printedName": "any BitmovinPlayerCore.Player",
+                "usr": "c:objc(pl)BMPPlayer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ItgBitmovinPlayerAdapter@objc(cs)ITGBitmovinPlayerAdapter(im)onStallEnded:player:",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C12onStallEnded_6playery0bC4Core0gH5EventC_So9BMPPlayer_ptF",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "isOpen": true,
+            "objc_name": "onStallEnded:player:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Nonisolated",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onControlsHide",
+            "printedName": "onControlsHide(_:view:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ControlsHideEvent",
+                "printedName": "BitmovinPlayerCore.ControlsHideEvent",
+                "usr": "c:@M@BitmovinPlayerCore@objc(cs)BMPControlsHideEvent"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PlayerView",
+                "printedName": "BitmovinPlayerCore.PlayerView",
+                "usr": "c:@M@BitmovinPlayerCore@objc(cs)BMPPlayerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ItgBitmovinPlayerAdapter@objc(cs)ITGBitmovinPlayerAdapter(im)onControlsHide:view:",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C14onControlsHide_4viewy0bC4Core0gH5EventC_AF0C4ViewCtF",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "isOpen": true,
+            "objc_name": "onControlsHide:view:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Nonisolated",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onControlsShow",
+            "printedName": "onControlsShow(_:view:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ControlsShowEvent",
+                "printedName": "BitmovinPlayerCore.ControlsShowEvent",
+                "usr": "c:@M@BitmovinPlayerCore@objc(cs)BMPControlsShowEvent"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PlayerView",
+                "printedName": "BitmovinPlayerCore.PlayerView",
+                "usr": "c:@M@BitmovinPlayerCore@objc(cs)BMPPlayerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ItgBitmovinPlayerAdapter@objc(cs)ITGBitmovinPlayerAdapter(im)onControlsShow:view:",
+            "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C14onControlsShow_4viewy0bC4Core0gH5EventC_AF0C4ViewCtF",
+            "moduleName": "ItgBitmovinPlayerAdapter",
+            "isOpen": true,
+            "objc_name": "onControlsShow:view:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Nonisolated",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ItgBitmovinPlayerAdapter@objc(cs)ITGBitmovinPlayerAdapter",
+        "mangledName": "$s24ItgBitmovinPlayerAdapter011ITGBitmovincD0C",
+        "moduleName": "ItgBitmovinPlayerAdapter",
+        "isOpen": true,
+        "intro_iOS": "14.0",
+        "intro_tvOS": "14.0",
+        "declAttributes": [
+          "AccessControl",
+          "Available",
+          "Available",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ITGPlayerAdapter",
+            "printedName": "ITGPlayerAdapter",
+            "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP",
+            "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "PlayerListener",
+            "printedName": "PlayerListener",
+            "usr": "c:@M@BitmovinPlayerCore@objc(pl)BMPPlayerListener",
+            "mangledName": "$s18BitmovinPlayerCore0B8ListenerP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

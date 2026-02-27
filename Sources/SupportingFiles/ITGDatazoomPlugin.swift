@@ -50,19 +50,19 @@ public class ITGDatazoomPlugin: AdObserver {
     private func processFlexis(_ flexis: String, duration: Double?, trackingUrls: [String]?, errorUrls: [String]?, completion: @escaping ([String]?)->Void) {
         let data = Data(flexis.utf8)
         if let array = try? JSONSerialization.jsonObject(with: data) as? [[String: Any]] {
-            var result: [String] = []
+            var result: [String?] = Array(repeating: nil, count: array.count)
             let dispatchGroup = DispatchGroup()
             dispatchGroup.enter()
             dispatchGroup.notify(queue: .main, execute: {
-                completion(result)
+                completion(result.compactMap({ $0 }))
             })
-            for json in array {
+            for (indx, json) in array.enumerated() {
                 if let data = try? JSONSerialization.data(withJSONObject: json, options: []) {
                     dispatchGroup.enter()
                     let jsonString = String(data: data, encoding: .utf8)!
                     processFlexi(jsonString, duration: nil, trackingUrls: trackingUrls, errorUrls: errorUrls) { flexi in
                         if let flexi {
-                            result.append(flexi)
+                            result.insert(flexi, at: indx)
                         }
                         dispatchGroup.leave()
                     }

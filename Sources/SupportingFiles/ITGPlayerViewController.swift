@@ -57,6 +57,9 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     private var vars: [String: any Hashable]? = nil
     private var showLogs: Bool
     private var originalVideoGravity: AVLayerVideoGravity?
+#if os(iOS)
+    private var previousOrientationLandscape: Bool?
+#endif
     
     public init(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, foreignId: String? = nil, vars: [String: any Hashable]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false, showLogs: Bool = false) {
         self.channelSlug = channelSlug
@@ -111,7 +114,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
 #if os(iOS)
     open override func viewLayoutMarginsDidChange() {
         super.viewLayoutMarginsDidChange()
-        if view.window == nil {
+        if view.window != nil {
             orientationDidChange()
         }
     }
@@ -139,12 +142,17 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
             playerView.translatesAutoresizingMaskIntoConstraints = false
             view.addSubview(playerView)
 #if os(iOS)
-        let interfaceOrientation = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.interfaceOrientation ?? view.window?.windowScene?.interfaceOrientation
-        if interfaceOrientation == .landscapeLeft || interfaceOrientation == .landscapeRight {
-            playerView.constraintsFillSuperview()
-        } else {
-            playerView.constraintsFillSuperview(verticalToSafeArea: true)
-        }
+            let interfaceOrientation: UIInterfaceOrientation?
+            if #available(tvOS 13.0, iOS 13.0, *) {
+                interfaceOrientation = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.interfaceOrientation
+            } else {
+                interfaceOrientation = UIApplication.shared.statusBarOrientation
+            }
+            if interfaceOrientation == .landscapeLeft || interfaceOrientation == .landscapeRight {
+                playerView.constraintsFillSuperview()
+            } else {
+                playerView.constraintsFillSuperview(verticalToSafeArea: true)
+            }
 #else
             playerView.constraintsFillSuperview()
 #endif
@@ -173,7 +181,12 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         view.addSubview(overlayView!)
         view.sendSubviewToBack(overlayView!)
 #if os(iOS)
-        let interfaceOrientation = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.interfaceOrientation ?? view.window?.windowScene?.interfaceOrientation
+        let interfaceOrientation: UIInterfaceOrientation?
+        if #available(tvOS 13.0, iOS 13.0, *) {
+            interfaceOrientation = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.interfaceOrientation
+        } else {
+            interfaceOrientation = UIApplication.shared.statusBarOrientation
+        }
         if interfaceOrientation == .landscapeLeft || interfaceOrientation == .landscapeRight {
             overlayView?.constraintsFillSuperview()
         } else {
@@ -217,7 +230,13 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     }
     
     @objc open func remoteSelectButtonAction(recognizer: UITapGestureRecognizer) {
-        if let overlayView, (view.window?.windowScene?.focusSystem?.focusedItem as? UIView)?.isDescendant(of: overlayView) != true {
+        let focusedItem: UIView?
+        if #available(tvOS 15.0, iOS 15.0, *) {
+            focusedItem = view.window?.windowScene?.focusSystem?.focusedItem as? UIView
+        } else {
+            focusedItem = UIScreen.main.focusedView
+        }
+        if let overlayView, focusedItem?.isDescendant(of: overlayView) != true {
             _ = overlayView.close(true)
         }
     }
@@ -254,21 +273,30 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     
 #if os(iOS)
     @objc private func orientationDidChange() {
-        let interfaceOrientation = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.interfaceOrientation ?? view.window?.windowScene?.interfaceOrientation
-        view.constraints.filter({ $0.firstItem is ITGOverlayView }).forEach {
-            view.removeConstraint($0)
-        }
-        view.constraints.filter({ $0.firstItem as? UIView == player?.getPlayerView() }).forEach {
-            view.removeConstraint($0)
-        }
-        player?.getPlayerView()?.layer.removeAllAnimations()
-        if interfaceOrientation == .landscapeLeft || interfaceOrientation == .landscapeRight {
-            overlayView?.constraintsFillSuperview()
-            player?.getPlayerView()?.constraintsFillSuperview()
+        let interfaceOrientation: UIInterfaceOrientation?
+        if #available(tvOS 13.0, iOS 13.0, *) {
+            interfaceOrientation = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.interfaceOrientation
         } else {
-            overlayView?.constraintsFillSuperview(verticalToSafeArea: true)
-            player?.getPlayerView()?.constraintsFillSuperview(verticalToSafeArea: true)
+            interfaceOrientation = UIApplication.shared.statusBarOrientation
         }
+        let isLandscapeOrientation = interfaceOrientation == .landscapeLeft || interfaceOrientation == .landscapeRight
+        if previousOrientationLandscape != isLandscapeOrientation {
+            view.constraints.filter({ $0.firstItem is ITGOverlayView }).forEach {
+                view.removeConstraint($0)
+            }
+            view.constraints.filter({ $0.firstItem as? UIView == player?.getPlayerView() }).forEach {
+                view.removeConstraint($0)
+            }
+            player?.getPlayerView()?.layer.removeAllAnimations()
+            if isLandscapeOrientation {
+                overlayView?.constraintsFillSuperview()
+                player?.getPlayerView()?.constraintsFillSuperview()
+            } else {
+                overlayView?.constraintsFillSuperview(verticalToSafeArea: true)
+                player?.getPlayerView()?.constraintsFillSuperview(verticalToSafeArea: true)
+            }
+        }
+        previousOrientationLandscape = isLandscapeOrientation
     }
 #endif
     
@@ -292,7 +320,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     open func videoState() -> ITGVideoState {
         return ITGVideoState(videoDuration: player?.getVideoLength() ?? 0, videoTime: player?.getCurrentTime() ?? 0, videoStatus: player?.isPlaying() == true ? .playing :  .paused, visibleContent: .content, adMetadata: nil)
     }
-
+    
     open func itgDidLoadChannelInfo(_ channelMeta: ChannelMeta) {
         guard shouldPlayChannelVideo, !channelMeta.streamUrl.isEmpty, let url =  URL(string: channelMeta.streamUrl) else { return }
         startVideo(url)
@@ -345,7 +373,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         } else {
             if let videoView = player?.getPlayerView() {
                 animateVideoTransformation(videoView.layer, duration: animationTime, transform: CATransform3DIdentity, removeOnCompletion: true)
-           }
+            }
         }
     }
     

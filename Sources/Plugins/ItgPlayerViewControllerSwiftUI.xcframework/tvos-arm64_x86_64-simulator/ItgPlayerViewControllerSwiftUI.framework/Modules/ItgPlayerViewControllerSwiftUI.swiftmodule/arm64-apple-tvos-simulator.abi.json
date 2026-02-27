@@ -1,0 +1,597 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "ItgPlayerViewControllerSwiftUI",
+    "printedName": "ItgPlayerViewControllerSwiftUI",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "ItgPlayerViewControllerSwiftUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ItgPlayerViewController",
+        "printedName": "ItgPlayerViewController",
+        "declKind": "Import",
+        "moduleName": "ItgPlayerViewControllerSwiftUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Inthegametv",
+        "printedName": "Inthegametv",
+        "declKind": "Import",
+        "moduleName": "ItgPlayerViewControllerSwiftUI"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "ItgPlayerViewControllerSwiftUI"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ITGPlayerViewControllerSwiftUI",
+        "printedName": "ITGPlayerViewControllerSwiftUI",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Coordinator",
+            "printedName": "Coordinator",
+            "children": [
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Coordinator",
+                    "printedName": "ItgPlayerViewControllerSwiftUI.ITGPlayerViewControllerSwiftUI.Coordinator",
+                    "usr": "s:30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11CoordinatorC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Coordinator",
+                    "printedName": "ItgPlayerViewControllerSwiftUI.ITGPlayerViewControllerSwiftUI.Coordinator",
+                    "usr": "s:30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11CoordinatorC"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11CoordinatorC2eeoiySbAE_AEtFZ",
+                "mangledName": "$s30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11CoordinatorC2eeoiySbAE_AEtFZ",
+                "moduleName": "ItgPlayerViewControllerSwiftUI",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(channelSlug:virtualChannels:accountId:environment:foreignId:vars:showLogs:playerAdapter:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Coordinator",
+                    "printedName": "ItgPlayerViewControllerSwiftUI.ITGPlayerViewControllerSwiftUI.Coordinator",
+                    "usr": "s:30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11CoordinatorC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGEnvironment",
+                    "printedName": "Inthegametv.ITGEnvironment",
+                    "usr": "s:11Inthegametv14ITGEnvironmentV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : any Swift.Hashable]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : any Swift.Hashable]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Hashable",
+                            "printedName": "any Swift.Hashable",
+                            "usr": "s:SH"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGPlayerAdapter",
+                    "printedName": "any ItgPlayerViewController.ITGPlayerAdapter",
+                    "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11CoordinatorC11channelSlug15virtualChannels9accountId11environment07foreignN04vars8showLogs13playerAdapterAESS_SaySSGSgSS11Inthegametv14ITGEnvironmentVSSSgSDySSSH_pGSgSb0abcD00gU0_ptcfc",
+                "mangledName": "$s30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11CoordinatorC11channelSlug15virtualChannels9accountId11environment07foreignN04vars8showLogs13playerAdapterAESS_SaySSGSgSS11Inthegametv14ITGEnvironmentVSSSgSDySSSH_pGSgSb0abcD00gU0_ptcfc",
+                "moduleName": "ItgPlayerViewControllerSwiftUI",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11CoordinatorC",
+            "mangledName": "$s30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11CoordinatorC",
+            "moduleName": "ItgPlayerViewControllerSwiftUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(channelSlug:virtualChannels:accountId:environment:foreignId:vars:showLogs:playerAdapter:onCreated:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGPlayerViewControllerSwiftUI",
+                "printedName": "ItgPlayerViewControllerSwiftUI.ITGPlayerViewControllerSwiftUI",
+                "usr": "s:30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGEnvironment",
+                "printedName": "Inthegametv.ITGEnvironment",
+                "usr": "s:11Inthegametv14ITGEnvironmentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : any Swift.Hashable]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : any Swift.Hashable]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Hashable",
+                        "printedName": "any Swift.Hashable",
+                        "usr": "s:SH"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGPlayerAdapter",
+                "printedName": "any ItgPlayerViewController.ITGPlayerAdapter",
+                "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((ItgPlayerViewController.ITGPlayerViewController) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ItgPlayerViewController.ITGPlayerViewController) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGPlayerViewController",
+                        "printedName": "ItgPlayerViewController.ITGPlayerViewController",
+                        "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGPlayerViewController"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11channelSlug15virtualChannels9accountId11environment07foreignM04vars8showLogs13playerAdapter9onCreatedACSS_SaySSGSgSS11Inthegametv14ITGEnvironmentVSSSgSDySSSH_pGSgSb0abcD00gT0_pyAU0gcD0CcSgtcfc",
+            "mangledName": "$s30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11channelSlug15virtualChannels9accountId11environment07foreignM04vars8showLogs13playerAdapter9onCreatedACSS_SaySSGSgSS11Inthegametv14ITGEnvironmentVSSSgSDySSSH_pGSgSb0abcD00gT0_pyAU0gcD0CcSgtcfc",
+            "moduleName": "ItgPlayerViewControllerSwiftUI",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "makeUIViewController",
+            "printedName": "makeUIViewController(context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGPlayerViewController",
+                "printedName": "ItgPlayerViewController.ITGPlayerViewController",
+                "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGPlayerViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewControllerRepresentableContext",
+                "printedName": "SwiftUI.UIViewControllerRepresentableContext<ItgPlayerViewControllerSwiftUI.ITGPlayerViewControllerSwiftUI>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGPlayerViewControllerSwiftUI",
+                    "printedName": "ItgPlayerViewControllerSwiftUI.ITGPlayerViewControllerSwiftUI",
+                    "usr": "s:30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V"
+                  }
+                ],
+                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V010makeUIViewD07context0abcD00gcD0C0eF00iD20RepresentableContextVyACG_tF",
+            "mangledName": "$s30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V010makeUIViewD07context0abcD00gcD0C0eF00iD20RepresentableContextVyACG_tF",
+            "moduleName": "ItgPlayerViewControllerSwiftUI",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeCoordinator",
+            "printedName": "makeCoordinator()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Coordinator",
+                "printedName": "ItgPlayerViewControllerSwiftUI.ITGPlayerViewControllerSwiftUI.Coordinator",
+                "usr": "s:30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11CoordinatorC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V15makeCoordinatorAC0I0CyF",
+            "mangledName": "$s30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V15makeCoordinatorAC0I0CyF",
+            "moduleName": "ItgPlayerViewControllerSwiftUI",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateUIViewController",
+            "printedName": "updateUIViewController(_:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGPlayerViewController",
+                "printedName": "ItgPlayerViewController.ITGPlayerViewController",
+                "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGPlayerViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewControllerRepresentableContext",
+                "printedName": "SwiftUI.UIViewControllerRepresentableContext<ItgPlayerViewControllerSwiftUI.ITGPlayerViewControllerSwiftUI>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGPlayerViewControllerSwiftUI",
+                    "printedName": "ItgPlayerViewControllerSwiftUI.ITGPlayerViewControllerSwiftUI",
+                    "usr": "s:30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V"
+                  }
+                ],
+                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V012updateUIViewD0_7contexty0abcD00gcD0C_0eF00iD20RepresentableContextVyACGtF",
+            "mangledName": "$s30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V012updateUIViewD0_7contexty0abcD00gcD0C_0eF00iD20RepresentableContextVyACGtF",
+            "moduleName": "ItgPlayerViewControllerSwiftUI",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V",
+        "mangledName": "$s30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V",
+        "moduleName": "ItgPlayerViewControllerSwiftUI",
+        "intro_iOS": "13.0",
+        "intro_tvOS": "13.0",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "Available",
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UIViewControllerRepresentable",
+            "printedName": "UIViewControllerRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UIViewControllerType",
+                "printedName": "UIViewControllerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGPlayerViewController",
+                    "printedName": "ItgPlayerViewController.ITGPlayerViewController",
+                    "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGPlayerViewController"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Coordinator",
+                "printedName": "Coordinator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Coordinator",
+                    "printedName": "ItgPlayerViewControllerSwiftUI.ITGPlayerViewControllerSwiftUI.Coordinator",
+                    "usr": "s:30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11CoordinatorC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI29UIViewControllerRepresentableP",
+            "mangledName": "$s7SwiftUI29UIViewControllerRepresentableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewControllerSwiftUI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2151,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewControllerSwiftUI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2554,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

@@ -11,10 +11,9 @@ import Inthegametv
 #else
 import InthegametviOS
 #endif
-#if canImport(ITGIntergrationViewController)
-import ITGIntergrationViewController
-#endif
+import ItgPlayerViewController
 
+@available(iOS 14.0, tvOS 14.0, *)
 open class ITGBitmovinPlayerAdapter: NSObject, @preconcurrency ITGPlayerAdapter {
     
     public var delegate: (any ITGPlayerAdapterDelegate)?
@@ -125,7 +124,6 @@ open class ITGBitmovinPlayerAdapter: NSObject, @preconcurrency ITGPlayerAdapter 
         } else if let playerView = self.hostingController?.view {
             return ((playerView.deepSubviews() + [playerView]).compactMap({ [$0.layer] + $0.layer.deepSublayers() }).flatMap({ $0 }).first(where: { $0 is AVPlayerLayer }) as? AVPlayerLayer)?.videoGravity
         } else {
-            let scalingMode: ScalingMode
             switch self.playerViewUIKit?.scalingMode {
             case .fit:
                 return .resizeAspect
@@ -149,6 +147,7 @@ open class ITGBitmovinPlayerAdapter: NSObject, @preconcurrency ITGPlayerAdapter 
     
 }
 
+@available(iOS 14.0, tvOS 14.0, *)
 extension ITGBitmovinPlayerAdapter: PlayerListener {
     
     open func onPlaying(_ event: BitmovinPlayerCore.PlayingEvent, player: any Player) {
@@ -193,6 +192,7 @@ extension ITGBitmovinPlayerAdapter: PlayerListener {
     
 }
 
+@available(iOS 14.0, tvOS 14.0, *)
 extension ITGBitmovinPlayerAdapter: UserInterfaceListener {
     
     open nonisolated func onControlsHide(_ event: ControlsHideEvent, view: PlayerView) {

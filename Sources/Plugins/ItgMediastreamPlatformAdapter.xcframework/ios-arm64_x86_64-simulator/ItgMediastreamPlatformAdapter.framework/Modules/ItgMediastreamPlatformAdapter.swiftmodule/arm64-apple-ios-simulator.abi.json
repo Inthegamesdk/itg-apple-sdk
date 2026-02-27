@@ -1,0 +1,1142 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "ItgMediastreamPlatformAdapter",
+    "printedName": "ItgMediastreamPlatformAdapter",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "ItgMediastreamPlatformAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "InthegametviOS",
+        "printedName": "InthegametviOS",
+        "declKind": "Import",
+        "moduleName": "ItgMediastreamPlatformAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "ItgPlayerViewController",
+        "printedName": "ItgPlayerViewController",
+        "declKind": "Import",
+        "moduleName": "ItgMediastreamPlatformAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ITGMediastreamPlatform",
+        "printedName": "ITGMediastreamPlatform",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "view",
+            "printedName": "view",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(py)view",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P4viewSo6UIViewCSgvp",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "UIKit.UIView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)view",
+                "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P4viewSo6UIViewCSgvg",
+                "moduleName": "ItgMediastreamPlatformAdapter",
+                "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+                "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "playerLayer",
+            "printedName": "playerLayer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AVFoundation.AVPlayerLayer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVPlayerLayer",
+                    "printedName": "AVFoundation.AVPlayerLayer",
+                    "usr": "c:objc(cs)AVPlayerLayer"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(py)playerLayer",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P11playerLayerSo08AVPlayerG0CSgvp",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AVFoundation.AVPlayerLayer?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPlayerLayer",
+                        "printedName": "AVFoundation.AVPlayerLayer",
+                        "usr": "c:objc(cs)AVPlayerLayer"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)playerLayer",
+                "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P11playerLayerSo08AVPlayerG0CSgvg",
+                "moduleName": "ItgMediastreamPlatformAdapter",
+                "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+                "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "playerViewController",
+            "printedName": "playerViewController",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AVKit.AVPlayerViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVPlayerViewController",
+                    "printedName": "AVKit.AVPlayerViewController",
+                    "usr": "c:objc(cs)AVPlayerViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(py)playerViewController",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P20playerViewControllerSo08AVPlayergH0CSgvp",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AVKit.AVPlayerViewController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPlayerViewController",
+                        "printedName": "AVKit.AVPlayerViewController",
+                        "usr": "c:objc(cs)AVPlayerViewController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)playerViewController",
+                "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P20playerViewControllerSo08AVPlayergH0CSgvg",
+                "moduleName": "ItgMediastreamPlatformAdapter",
+                "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+                "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "volume",
+            "printedName": "volume",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(py)volume",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P6volumeSivp",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)volume",
+                "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P6volumeSivg",
+                "moduleName": "ItgMediastreamPlatformAdapter",
+                "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+                "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)setVolume:",
+                "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P6volumeSivs",
+                "moduleName": "ItgMediastreamPlatformAdapter",
+                "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+                "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "play",
+            "printedName": "play()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)play",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P4playyyF",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+            "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pause",
+            "printedName": "pause()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)pause",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P5pauseyyF",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+            "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getResolution",
+            "printedName": "getResolution()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)getResolution",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P13getResolutionSSyF",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+            "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkIsPlaying",
+            "printedName": "checkIsPlaying()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)checkIsPlaying",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P14checkIsPlayingSbyF",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+            "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "seekTo",
+            "printedName": "seekTo(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)seekTo:",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P6seekToyySdF",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+            "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCurrentTime",
+            "printedName": "getCurrentTime()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)getCurrentTime",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P14getCurrentTimes5Int64VyF",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+            "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDuration",
+            "printedName": "getDuration()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)getDuration",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P11getDurations5Int64VyF",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+            "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform",
+        "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P",
+        "moduleName": "ItgMediastreamPlatformAdapter",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ITGMediastreamPlatformEventManager",
+        "printedName": "ITGMediastreamPlatformEventManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "listenTo",
+            "printedName": "listenTo(eventName:action:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatformEventManager(im)listenToEventName:action:",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC12EventManagerP8listenTo9eventName6actionySS_yyctF",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatformEventManager>",
+            "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatformEventManager>",
+            "protocolReq": true,
+            "objc_name": "listenToEventName:action:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatformEventManager",
+        "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC12EventManagerP",
+        "moduleName": "ItgMediastreamPlatformAdapter",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ITGMediastreamPlatformAdapter",
+        "printedName": "ITGMediastreamPlatformAdapter",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any ItgPlayerViewController.ITGPlayerAdapterDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C8delegate0A20PlayerViewController09ITGPlayerD8Delegate_pSgvp",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C8delegate0A20PlayerViewController09ITGPlayerD8Delegate_pSgvp",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ReferenceOwnership"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any ItgPlayerViewController.ITGPlayerAdapterDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGPlayerAdapterDelegate",
+                        "printedName": "any ItgPlayerViewController.ITGPlayerAdapterDelegate",
+                        "usr": "s:23ItgPlayerViewController24ITGPlayerAdapterDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C8delegate0A20PlayerViewController09ITGPlayerD8Delegate_pSgvg",
+                "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C8delegate0A20PlayerViewController09ITGPlayerD8Delegate_pSgvg",
+                "moduleName": "ItgMediastreamPlatformAdapter",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any ItgPlayerViewController.ITGPlayerAdapterDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGPlayerAdapterDelegate",
+                        "printedName": "any ItgPlayerViewController.ITGPlayerAdapterDelegate",
+                        "usr": "s:23ItgPlayerViewController24ITGPlayerAdapterDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C8delegate0A20PlayerViewController09ITGPlayerD8Delegate_pSgvs",
+                "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C8delegate0A20PlayerViewController09ITGPlayerD8Delegate_pSgvs",
+                "moduleName": "ItgMediastreamPlatformAdapter",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C8delegate0A20PlayerViewController09ITGPlayerD8Delegate_pSgvM",
+                "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C8delegate0A20PlayerViewController09ITGPlayerD8Delegate_pSgvM",
+                "moduleName": "ItgMediastreamPlatformAdapter",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:eventsManger:customVideoView:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGMediastreamPlatformAdapter",
+                "printedName": "ItgMediastreamPlatformAdapter.ITGMediastreamPlatformAdapter",
+                "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGMediastreamPlatform",
+                "printedName": "any ItgMediastreamPlatformAdapter.ITGMediastreamPlatform",
+                "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGMediastreamPlatformEventManager",
+                "printedName": "any ItgMediastreamPlatformAdapter.ITGMediastreamPlatformEventManager",
+                "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatformEventManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any ItgPlayerViewController.ITGPlayerAdapterDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGPlayerAdapterDelegate",
+                    "printedName": "any ItgPlayerViewController.ITGPlayerAdapterDelegate",
+                    "usr": "s:23ItgPlayerViewController24ITGPlayerAdapterDelegateP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C_12eventsManger15customVideoView8delegateAcA0eC0_p_AA0eC12EventManager_pSo6UIViewCSg0a6PlayerJ10Controller09ITGPlayerD8Delegate_pSgtcfc",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C_12eventsManger15customVideoView8delegateAcA0eC0_p_AA0eC12EventManager_pSo6UIViewCSg0a6PlayerJ10Controller09ITGPlayerD8Delegate_pSgtcfc",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setup",
+            "printedName": "setup()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C5setupyyF",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C5setupyyF",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startVideo",
+            "printedName": "startVideo(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C10startVideoyy10Foundation3URLVF",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C10startVideoyy10Foundation3URLVF",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPlayerView",
+            "printedName": "getPlayerView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C13getPlayerViewSo6UIViewCSgyF",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C13getPlayerViewSo6UIViewCSgyF",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getVideoResolution",
+            "printedName": "getVideoResolution()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C18getVideoResolutionSo6CGSizeVyF",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C18getVideoResolutionSo6CGSizeVyF",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isPlaying",
+            "printedName": "isPlaying()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C9isPlayingSbyF",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C9isPlayingSbyF",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "play",
+            "printedName": "play()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C4playyyF",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C4playyyF",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pause",
+            "printedName": "pause()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C5pauseyyF",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C5pauseyyF",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "seek",
+            "printedName": "seek(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C4seekyySdF",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C4seekyySdF",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCurrentTime",
+            "printedName": "getCurrentTime()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C14getCurrentTimeSdyF",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C14getCurrentTimeSdyF",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getVideoLength",
+            "printedName": "getVideoLength()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C14getVideoLengthSdyF",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C14getVideoLengthSdyF",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setVideoGravity",
+            "printedName": "setVideoGravity(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVLayerVideoGravity",
+                "printedName": "AVFoundation.AVLayerVideoGravity",
+                "usr": "c:@T@AVLayerVideoGravity"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C15setVideoGravityyySo07AVLayergH0aF",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C15setVideoGravityyySo07AVLayergH0aF",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getVideoGravity",
+            "printedName": "getVideoGravity()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AVFoundation.AVLayerVideoGravity?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVLayerVideoGravity",
+                    "printedName": "AVFoundation.AVLayerVideoGravity",
+                    "usr": "c:@T@AVLayerVideoGravity"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C15getVideoGravitySo07AVLayergH0aSgyF",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C15getVideoGravitySo07AVLayergH0aSgyF",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setSoundLevel",
+            "printedName": "setSoundLevel(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C13setSoundLevelyySfF",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C13setSoundLevelyySfF",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSoundLevel",
+            "printedName": "getSoundLevel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C13getSoundLevelSfyF",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C13getSoundLevelSfyF",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C",
+        "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamcD0C",
+        "moduleName": "ItgMediastreamPlatformAdapter",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ITGPlayerAdapter",
+            "printedName": "ITGPlayerAdapter",
+            "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP",
+            "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

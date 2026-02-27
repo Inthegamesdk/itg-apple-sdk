@@ -1,0 +1,3205 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "ItgPlayerViewController",
+    "printedName": "ItgPlayerViewController",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ItgPlayerViewController",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "ItgPlayerViewController"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "ItgPlayerViewController"
+      },
+      {
+        "kind": "Import",
+        "name": "Inthegametv",
+        "printedName": "Inthegametv",
+        "declKind": "Import",
+        "moduleName": "ItgPlayerViewController"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ITGPlayerViewController",
+        "printedName": "ITGPlayerViewController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "preferredFocusEnvironments",
+            "printedName": "preferredFocusEnvironments",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[any UIKit.UIFocusEnvironment]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIFocusEnvironment",
+                    "printedName": "any UIKit.UIFocusEnvironment",
+                    "usr": "c:objc(pl)UIFocusEnvironment"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGPlayerViewController(py)preferredFocusEnvironments",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C26preferredFocusEnvironmentsSaySo18UIFocusEnvironment_pGvp",
+            "moduleName": "ItgPlayerViewController",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "preferredFocusEnvironments",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[any UIKit.UIFocusEnvironment]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIFocusEnvironment",
+                        "printedName": "any UIKit.UIFocusEnvironment",
+                        "usr": "c:objc(pl)UIFocusEnvironment"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGPlayerViewController(im)preferredFocusEnvironments",
+                "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C26preferredFocusEnvironmentsSaySo18UIFocusEnvironment_pGvg",
+                "moduleName": "ItgPlayerViewController",
+                "overriding": true,
+                "isOpen": true,
+                "objc_name": "preferredFocusEnvironments",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "overlayView",
+            "printedName": "overlayView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Inthegametv.ITGOverlayView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGOverlayView",
+                    "printedName": "Inthegametv.ITGOverlayView",
+                    "usr": "c:@M@Inthegametv@objc(cs)ITGOverlayView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C07overlayC011Inthegametv010ITGOverlayC0CSgvp",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C07overlayC011Inthegametv010ITGOverlayC0CSgvp",
+            "moduleName": "ItgPlayerViewController",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Inthegametv.ITGOverlayView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGOverlayView",
+                        "printedName": "Inthegametv.ITGOverlayView",
+                        "usr": "c:@M@Inthegametv@objc(cs)ITGOverlayView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23ItgPlayerViewController09ITGPlayercD0C07overlayC011Inthegametv010ITGOverlayC0CSgvg",
+                "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C07overlayC011Inthegametv010ITGOverlayC0CSgvg",
+                "moduleName": "ItgPlayerViewController",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Inthegametv.ITGOverlayView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGOverlayView",
+                        "printedName": "Inthegametv.ITGOverlayView",
+                        "usr": "c:@M@Inthegametv@objc(cs)ITGOverlayView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23ItgPlayerViewController09ITGPlayercD0C07overlayC011Inthegametv010ITGOverlayC0CSgvs",
+                "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C07overlayC011Inthegametv010ITGOverlayC0CSgvs",
+                "moduleName": "ItgPlayerViewController",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23ItgPlayerViewController09ITGPlayercD0C07overlayC011Inthegametv010ITGOverlayC0CSgvM",
+                "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C07overlayC011Inthegametv010ITGOverlayC0CSgvM",
+                "moduleName": "ItgPlayerViewController",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shouldPlayChannelVideo",
+            "printedName": "shouldPlayChannelVideo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C22shouldPlayChannelVideoSbvp",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C22shouldPlayChannelVideoSbvp",
+            "moduleName": "ItgPlayerViewController",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23ItgPlayerViewController09ITGPlayercD0C22shouldPlayChannelVideoSbvg",
+                "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C22shouldPlayChannelVideoSbvg",
+                "moduleName": "ItgPlayerViewController",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23ItgPlayerViewController09ITGPlayercD0C22shouldPlayChannelVideoSbvs",
+                "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C22shouldPlayChannelVideoSbvs",
+                "moduleName": "ItgPlayerViewController",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23ItgPlayerViewController09ITGPlayercD0C22shouldPlayChannelVideoSbvM",
+                "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C22shouldPlayChannelVideoSbvM",
+                "moduleName": "ItgPlayerViewController",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(channelSlug:virtualChannels:accountId:environment:foreignId:vars:playerAdapter:shouldResetOverlayUser:showLogs:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGPlayerViewController",
+                "printedName": "ItgPlayerViewController.ITGPlayerViewController",
+                "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGPlayerViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGEnvironment",
+                "printedName": "Inthegametv.ITGEnvironment",
+                "hasDefaultArg": true,
+                "usr": "s:11Inthegametv14ITGEnvironmentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : any Swift.Hashable]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : any Swift.Hashable]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Hashable",
+                        "printedName": "any Swift.Hashable",
+                        "usr": "s:SH"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGPlayerAdapter",
+                "printedName": "any ItgPlayerViewController.ITGPlayerAdapter",
+                "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C11channelSlug15virtualChannels9accountId11environment07foreignK04vars13playerAdapter22shouldResetOverlayUser8showLogsACSS_SaySSGSgSS11Inthegametv14ITGEnvironmentVSSSgSDySSSH_pGSgAA0eP0_pS2btcfc",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C11channelSlug15virtualChannels9accountId11environment07foreignK04vars13playerAdapter22shouldResetOverlayUser8showLogsACSS_SaySSGSgSS11Inthegametv14ITGEnvironmentVSSSgSDySSSH_pGSgAA0eP0_pS2btcfc",
+            "moduleName": "ItgPlayerViewController",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ItgPlayerViewController.ITGPlayerViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGPlayerViewController",
+                    "printedName": "ItgPlayerViewController.ITGPlayerViewController",
+                    "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGPlayerViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGPlayerViewController(im)initWithCoder:",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "ItgPlayerViewController",
+            "overriding": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGPlayerViewController(im)viewDidLoad",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C11viewDidLoadyyF",
+            "moduleName": "ItgPlayerViewController",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidAppear",
+            "printedName": "viewDidAppear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGPlayerViewController(im)viewDidAppear:",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C13viewDidAppearyySbF",
+            "moduleName": "ItgPlayerViewController",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewDidAppear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reloadChannel",
+            "printedName": "reloadChannel(channelSlug:virtualChannels:accountId:environment:foreignId:vars:playerAdapter:shouldResetOverlayUser:showLogs:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGEnvironment",
+                "printedName": "Inthegametv.ITGEnvironment",
+                "hasDefaultArg": true,
+                "usr": "s:11Inthegametv14ITGEnvironmentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : any Swift.Hashable]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : any Swift.Hashable]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Hashable",
+                        "printedName": "any Swift.Hashable",
+                        "usr": "s:SH"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGPlayerAdapter",
+                "printedName": "any ItgPlayerViewController.ITGPlayerAdapter",
+                "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C13reloadChannel11channelSlug15virtualChannels9accountId11environment07foreignM04vars13playerAdapter22shouldResetOverlayUser8showLogsySS_SaySSGSgSS11Inthegametv14ITGEnvironmentVSSSgSDySSSH_pGSgAA0eR0_pS2btF",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C13reloadChannel11channelSlug15virtualChannels9accountId11environment07foreignM04vars13playerAdapter22shouldResetOverlayUser8showLogsySS_SaySSGSgSS11Inthegametv14ITGEnvironmentVSSSgSDySSSH_pGSgAA0eR0_pS2btF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setupPlayer",
+            "printedName": "setupPlayer()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C05setupB0yyF",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C05setupB0yyF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startVideo",
+            "printedName": "startVideo(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C10startVideoyy10Foundation3URLVF",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C10startVideoyy10Foundation3URLVF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setupOverlay",
+            "printedName": "setupOverlay()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C12setupOverlayyyF",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C12setupOverlayyyF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "closeButtonPressed",
+            "printedName": "closeButtonPressed(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGPlayerViewController(im)closeButtonPressed:",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C18closeButtonPressedyyypF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "remoteMenuButtonAction",
+            "printedName": "remoteMenuButtonAction(recognizer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITapGestureRecognizer",
+                "printedName": "UIKit.UITapGestureRecognizer",
+                "usr": "c:objc(cs)UITapGestureRecognizer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGPlayerViewController(im)remoteMenuButtonActionWithRecognizer:",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C22remoteMenuButtonAction10recognizerySo22UITapGestureRecognizerC_tF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "objc_name": "remoteMenuButtonActionWithRecognizer:",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "remotePlayPauseButtonAction",
+            "printedName": "remotePlayPauseButtonAction(recognizer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITapGestureRecognizer",
+                "printedName": "UIKit.UITapGestureRecognizer",
+                "usr": "c:objc(cs)UITapGestureRecognizer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGPlayerViewController(im)remotePlayPauseButtonActionWithRecognizer:",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C27remotePlayPauseButtonAction10recognizerySo22UITapGestureRecognizerC_tF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "objc_name": "remotePlayPauseButtonActionWithRecognizer:",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "remoteSelectButtonAction",
+            "printedName": "remoteSelectButtonAction(recognizer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITapGestureRecognizer",
+                "printedName": "UIKit.UITapGestureRecognizer",
+                "usr": "c:objc(cs)UITapGestureRecognizer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGPlayerViewController(im)remoteSelectButtonActionWithRecognizer:",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C24remoteSelectButtonAction10recognizerySo22UITapGestureRecognizerC_tF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "objc_name": "remoteSelectButtonActionWithRecognizer:",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "videoPlaying",
+            "printedName": "videoPlaying(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C12videoPlayingyySdF",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C12videoPlayingyySdF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "videoPaused",
+            "printedName": "videoPaused(_:userInitiated:isSeeking:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C11videoPaused_13userInitiated9isSeekingySd_S2btF",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C11videoPaused_13userInitiated9isSeekingySd_S2btF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "videoControllsVisibilityChanged",
+            "printedName": "videoControllsVisibilityChanged(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C31videoControllsVisibilityChangedyySbF",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C31videoControllsVisibilityChangedyySbF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "videoState",
+            "printedName": "videoState()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGVideoState",
+                "printedName": "Inthegametv.ITGVideoState",
+                "usr": "s:11Inthegametv13ITGVideoStateV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C10videoState11Inthegametv08ITGVideoG0VyF",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C10videoState11Inthegametv08ITGVideoG0VyF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "itgDidLoadChannelInfo",
+            "printedName": "itgDidLoadChannelInfo(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ChannelMeta",
+                "printedName": "Inthegametv.ChannelMeta",
+                "usr": "s:11Inthegametv11ChannelMetaV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C21itgDidLoadChannelInfoyy11Inthegametv0I4MetaVF",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C21itgDidLoadChannelInfoyy11Inthegametv0I4MetaVF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "itgRequestedVideoStateChange",
+            "printedName": "itgRequestedVideoStateChange(_:timeStamp:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGPlayerState",
+                "printedName": "Inthegametv.ITGPlayerState",
+                "usr": "s:11Inthegametv14ITGPlayerStateO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C28itgRequestedVideoStateChange_9timeStampy11Inthegametv0eI0O_SdSgtF",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C28itgRequestedVideoStateChange_9timeStampy11Inthegametv0eI0O_SdSgtF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "itgRequestedFocusUpdate",
+            "printedName": "itgRequestedFocusUpdate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C23itgRequestedFocusUpdateyySbF",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C23itgRequestedFocusUpdateyySbF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "itgRequestedVideoRectChange",
+            "printedName": "itgRequestedVideoRectChange(_:animationTime:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreFoundation.CGRect?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGRect",
+                    "printedName": "CoreFoundation.CGRect",
+                    "usr": "c:@S@CGRect"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C27itgRequestedVideoRectChange_13animationTimeySo6CGRectVSg_SdtF",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C27itgRequestedVideoRectChange_13animationTimeySo6CGRectVSg_SdtF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "itgReceivedDeeplink",
+            "printedName": "itgReceivedDeeplink(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C19itgReceivedDeeplinkyySSF",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C19itgReceivedDeeplinkyySSF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "itgDidProcessAnalyticEvent",
+            "printedName": "itgDidProcessAnalyticEvent(info:type:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsInfo",
+                "printedName": "Inthegametv.AnalyticsInfo",
+                "usr": "s:11Inthegametv13AnalyticsInfoV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsEventType",
+                "printedName": "Inthegametv.AnalyticsEventType",
+                "usr": "s:11Inthegametv18AnalyticsEventTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C26itgDidProcessAnalyticEvent4info4typey11Inthegametv13AnalyticsInfoV_AG0nJ4TypeOtF",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C26itgDidProcessAnalyticEvent4info4typey11Inthegametv13AnalyticsInfoV_AG0nJ4TypeOtF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "itgDidUpdateUserState",
+            "printedName": "itgDidUpdateUserState(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "User",
+                "printedName": "Inthegametv.User",
+                "usr": "s:11Inthegametv4UserV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C21itgDidUpdateUserStateyy11Inthegametv0I0VF",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C21itgDidUpdateUserStateyy11Inthegametv0I0VF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "itgRequestedVideoSoundLevel",
+            "printedName": "itgRequestedVideoSoundLevel(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C27itgRequestedVideoSoundLevelyySfSgF",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C27itgRequestedVideoSoundLevelyySfSgF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "itgRequestedVideoGravity",
+            "printedName": "itgRequestedVideoGravity(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AVFoundation.AVLayerVideoGravity?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVLayerVideoGravity",
+                    "printedName": "AVFoundation.AVLayerVideoGravity",
+                    "usr": "c:@T@AVLayerVideoGravity"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C24itgRequestedVideoGravityyySo07AVLayerhI0aSgF",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C24itgRequestedVideoGravityyySo07AVLayerhI0aSgF",
+            "moduleName": "ItgPlayerViewController",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGPlayerViewController",
+                "printedName": "ItgPlayerViewController.ITGPlayerViewController",
+                "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGPlayerViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGPlayerViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "ItgPlayerViewController",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGPlayerViewController",
+        "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C",
+        "moduleName": "ItgPlayerViewController",
+        "isOpen": true,
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ITGOverlayDelegate",
+            "printedName": "ITGOverlayDelegate",
+            "usr": "s:11Inthegametv18ITGOverlayDelegateP",
+            "mangledName": "$s11Inthegametv18ITGOverlayDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ITGPlayerAdapterDelegate",
+            "printedName": "ITGPlayerAdapterDelegate",
+            "usr": "s:23ItgPlayerViewController24ITGPlayerAdapterDelegateP",
+            "mangledName": "$s23ItgPlayerViewController24ITGPlayerAdapterDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ItgPlayerViewController",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "ItgPlayerViewController"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ITGPlayerAdapterDelegate",
+        "printedName": "ITGPlayerAdapterDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "videoPlaying",
+            "printedName": "videoPlaying(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController24ITGPlayerAdapterDelegateP12videoPlayingyySdF",
+            "mangledName": "$s23ItgPlayerViewController24ITGPlayerAdapterDelegateP12videoPlayingyySdF",
+            "moduleName": "ItgPlayerViewController",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgPlayerViewController.ITGPlayerAdapterDelegate>",
+            "sugared_genericSig": "<Self where Self : ItgPlayerViewController.ITGPlayerAdapterDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "videoPaused",
+            "printedName": "videoPaused(_:userInitiated:isSeeking:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController24ITGPlayerAdapterDelegateP11videoPaused_13userInitiated9isSeekingySd_S2btF",
+            "mangledName": "$s23ItgPlayerViewController24ITGPlayerAdapterDelegateP11videoPaused_13userInitiated9isSeekingySd_S2btF",
+            "moduleName": "ItgPlayerViewController",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgPlayerViewController.ITGPlayerAdapterDelegate>",
+            "sugared_genericSig": "<Self where Self : ItgPlayerViewController.ITGPlayerAdapterDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "videoControllsVisibilityChanged",
+            "printedName": "videoControllsVisibilityChanged(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController24ITGPlayerAdapterDelegateP31videoControllsVisibilityChangedyySbF",
+            "mangledName": "$s23ItgPlayerViewController24ITGPlayerAdapterDelegateP31videoControllsVisibilityChangedyySbF",
+            "moduleName": "ItgPlayerViewController",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgPlayerViewController.ITGPlayerAdapterDelegate>",
+            "sugared_genericSig": "<Self where Self : ItgPlayerViewController.ITGPlayerAdapterDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:23ItgPlayerViewController24ITGPlayerAdapterDelegateP",
+        "mangledName": "$s23ItgPlayerViewController24ITGPlayerAdapterDelegateP",
+        "moduleName": "ItgPlayerViewController",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ITGPlayerAdapter",
+        "printedName": "ITGPlayerAdapter",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any ItgPlayerViewController.ITGPlayerAdapterDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGPlayerAdapterDelegate",
+                    "printedName": "any ItgPlayerViewController.ITGPlayerAdapterDelegate",
+                    "usr": "s:23ItgPlayerViewController24ITGPlayerAdapterDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP8delegateAA0eF8Delegate_pSgvp",
+            "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP8delegateAA0eF8Delegate_pSgvp",
+            "moduleName": "ItgPlayerViewController",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any ItgPlayerViewController.ITGPlayerAdapterDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGPlayerAdapterDelegate",
+                        "printedName": "any ItgPlayerViewController.ITGPlayerAdapterDelegate",
+                        "usr": "s:23ItgPlayerViewController24ITGPlayerAdapterDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP8delegateAA0eF8Delegate_pSgvg",
+                "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP8delegateAA0eF8Delegate_pSgvg",
+                "moduleName": "ItgPlayerViewController",
+                "genericSig": "<τ_0_0 where τ_0_0 : ItgPlayerViewController.ITGPlayerAdapter>",
+                "sugared_genericSig": "<Self where Self : ItgPlayerViewController.ITGPlayerAdapter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any ItgPlayerViewController.ITGPlayerAdapterDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGPlayerAdapterDelegate",
+                        "printedName": "any ItgPlayerViewController.ITGPlayerAdapterDelegate",
+                        "usr": "s:23ItgPlayerViewController24ITGPlayerAdapterDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP8delegateAA0eF8Delegate_pSgvs",
+                "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP8delegateAA0eF8Delegate_pSgvs",
+                "moduleName": "ItgPlayerViewController",
+                "genericSig": "<τ_0_0 where τ_0_0 : ItgPlayerViewController.ITGPlayerAdapter>",
+                "sugared_genericSig": "<Self where Self : ItgPlayerViewController.ITGPlayerAdapter>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP8delegateAA0eF8Delegate_pSgvM",
+                "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP8delegateAA0eF8Delegate_pSgvM",
+                "moduleName": "ItgPlayerViewController",
+                "genericSig": "<τ_0_0 where τ_0_0 : ItgPlayerViewController.ITGPlayerAdapter>",
+                "sugared_genericSig": "<Self where Self : ItgPlayerViewController.ITGPlayerAdapter>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setup",
+            "printedName": "setup()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP5setupyyF",
+            "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP5setupyyF",
+            "moduleName": "ItgPlayerViewController",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgPlayerViewController.ITGPlayerAdapter>",
+            "sugared_genericSig": "<Self where Self : ItgPlayerViewController.ITGPlayerAdapter>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startVideo",
+            "printedName": "startVideo(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP10startVideoyy10Foundation3URLVF",
+            "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP10startVideoyy10Foundation3URLVF",
+            "moduleName": "ItgPlayerViewController",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgPlayerViewController.ITGPlayerAdapter>",
+            "sugared_genericSig": "<Self where Self : ItgPlayerViewController.ITGPlayerAdapter>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPlayerView",
+            "printedName": "getPlayerView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP03getbC0So6UIViewCSgyF",
+            "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP03getbC0So6UIViewCSgyF",
+            "moduleName": "ItgPlayerViewController",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgPlayerViewController.ITGPlayerAdapter>",
+            "sugared_genericSig": "<Self where Self : ItgPlayerViewController.ITGPlayerAdapter>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getVideoResolution",
+            "printedName": "getVideoResolution()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP18getVideoResolutionSo6CGSizeVyF",
+            "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP18getVideoResolutionSo6CGSizeVyF",
+            "moduleName": "ItgPlayerViewController",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgPlayerViewController.ITGPlayerAdapter>",
+            "sugared_genericSig": "<Self where Self : ItgPlayerViewController.ITGPlayerAdapter>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isPlaying",
+            "printedName": "isPlaying()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP9isPlayingSbyF",
+            "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP9isPlayingSbyF",
+            "moduleName": "ItgPlayerViewController",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgPlayerViewController.ITGPlayerAdapter>",
+            "sugared_genericSig": "<Self where Self : ItgPlayerViewController.ITGPlayerAdapter>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "play",
+            "printedName": "play()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP4playyyF",
+            "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP4playyyF",
+            "moduleName": "ItgPlayerViewController",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgPlayerViewController.ITGPlayerAdapter>",
+            "sugared_genericSig": "<Self where Self : ItgPlayerViewController.ITGPlayerAdapter>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pause",
+            "printedName": "pause()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP5pauseyyF",
+            "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP5pauseyyF",
+            "moduleName": "ItgPlayerViewController",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgPlayerViewController.ITGPlayerAdapter>",
+            "sugared_genericSig": "<Self where Self : ItgPlayerViewController.ITGPlayerAdapter>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "seek",
+            "printedName": "seek(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP4seekyySdF",
+            "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP4seekyySdF",
+            "moduleName": "ItgPlayerViewController",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgPlayerViewController.ITGPlayerAdapter>",
+            "sugared_genericSig": "<Self where Self : ItgPlayerViewController.ITGPlayerAdapter>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCurrentTime",
+            "printedName": "getCurrentTime()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP14getCurrentTimeSdyF",
+            "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP14getCurrentTimeSdyF",
+            "moduleName": "ItgPlayerViewController",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgPlayerViewController.ITGPlayerAdapter>",
+            "sugared_genericSig": "<Self where Self : ItgPlayerViewController.ITGPlayerAdapter>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getVideoLength",
+            "printedName": "getVideoLength()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP14getVideoLengthSdyF",
+            "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP14getVideoLengthSdyF",
+            "moduleName": "ItgPlayerViewController",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgPlayerViewController.ITGPlayerAdapter>",
+            "sugared_genericSig": "<Self where Self : ItgPlayerViewController.ITGPlayerAdapter>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setVideoGravity",
+            "printedName": "setVideoGravity(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVLayerVideoGravity",
+                "printedName": "AVFoundation.AVLayerVideoGravity",
+                "usr": "c:@T@AVLayerVideoGravity"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP15setVideoGravityyySo07AVLayerhI0aF",
+            "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP15setVideoGravityyySo07AVLayerhI0aF",
+            "moduleName": "ItgPlayerViewController",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgPlayerViewController.ITGPlayerAdapter>",
+            "sugared_genericSig": "<Self where Self : ItgPlayerViewController.ITGPlayerAdapter>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getVideoGravity",
+            "printedName": "getVideoGravity()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AVFoundation.AVLayerVideoGravity?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVLayerVideoGravity",
+                    "printedName": "AVFoundation.AVLayerVideoGravity",
+                    "usr": "c:@T@AVLayerVideoGravity"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP15getVideoGravitySo07AVLayerhI0aSgyF",
+            "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP15getVideoGravitySo07AVLayerhI0aSgyF",
+            "moduleName": "ItgPlayerViewController",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgPlayerViewController.ITGPlayerAdapter>",
+            "sugared_genericSig": "<Self where Self : ItgPlayerViewController.ITGPlayerAdapter>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setSoundLevel",
+            "printedName": "setSoundLevel(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP13setSoundLevelyySfF",
+            "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP13setSoundLevelyySfF",
+            "moduleName": "ItgPlayerViewController",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgPlayerViewController.ITGPlayerAdapter>",
+            "sugared_genericSig": "<Self where Self : ItgPlayerViewController.ITGPlayerAdapter>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSoundLevel",
+            "printedName": "getSoundLevel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP13getSoundLevelSfyF",
+            "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP13getSoundLevelSfyF",
+            "moduleName": "ItgPlayerViewController",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgPlayerViewController.ITGPlayerAdapter>",
+            "sugared_genericSig": "<Self where Self : ItgPlayerViewController.ITGPlayerAdapter>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP",
+        "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP",
+        "moduleName": "ItgPlayerViewController",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ItgPlayerViewController",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "ItgPlayerViewController"
+      },
+      {
+        "kind": "Import",
+        "name": "Inthegametv",
+        "printedName": "Inthegametv",
+        "declKind": "Import",
+        "moduleName": "ItgPlayerViewController"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ITGAVPlayerAdapter",
+        "printedName": "ITGAVPlayerAdapter",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any ItgPlayerViewController.ITGPlayerAdapterDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC8delegateAA09ITGPlayerF8Delegate_pSgvp",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC8delegateAA09ITGPlayerF8Delegate_pSgvp",
+            "moduleName": "ItgPlayerViewController",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ReferenceOwnership"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any ItgPlayerViewController.ITGPlayerAdapterDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGPlayerAdapterDelegate",
+                        "printedName": "any ItgPlayerViewController.ITGPlayerAdapterDelegate",
+                        "usr": "s:23ItgPlayerViewController24ITGPlayerAdapterDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC8delegateAA09ITGPlayerF8Delegate_pSgvg",
+                "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC8delegateAA09ITGPlayerF8Delegate_pSgvg",
+                "moduleName": "ItgPlayerViewController",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any ItgPlayerViewController.ITGPlayerAdapterDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGPlayerAdapterDelegate",
+                        "printedName": "any ItgPlayerViewController.ITGPlayerAdapterDelegate",
+                        "usr": "s:23ItgPlayerViewController24ITGPlayerAdapterDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC8delegateAA09ITGPlayerF8Delegate_pSgvs",
+                "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC8delegateAA09ITGPlayerF8Delegate_pSgvs",
+                "moduleName": "ItgPlayerViewController",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC8delegateAA09ITGPlayerF8Delegate_pSgvM",
+                "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC8delegateAA09ITGPlayerF8Delegate_pSgvM",
+                "moduleName": "ItgPlayerViewController",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "player",
+            "printedName": "player",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "AVFoundation.AVPlayer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVPlayer",
+                    "printedName": "AVFoundation.AVPlayer",
+                    "usr": "c:objc(cs)AVPlayer"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC6playerSo8AVPlayerCSgvp",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC6playerSo8AVPlayerCSgvp",
+            "moduleName": "ItgPlayerViewController",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "AVFoundation.AVPlayer?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPlayer",
+                        "printedName": "AVFoundation.AVPlayer",
+                        "usr": "c:objc(cs)AVPlayer"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC6playerSo8AVPlayerCSgvg",
+                "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC6playerSo8AVPlayerCSgvg",
+                "moduleName": "ItgPlayerViewController",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "AVFoundation.AVPlayer?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPlayer",
+                        "printedName": "AVFoundation.AVPlayer",
+                        "usr": "c:objc(cs)AVPlayer"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC6playerSo8AVPlayerCSgvs",
+                "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC6playerSo8AVPlayerCSgvs",
+                "moduleName": "ItgPlayerViewController",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC6playerSo8AVPlayerCSgvM",
+                "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC6playerSo8AVPlayerCSgvM",
+                "moduleName": "ItgPlayerViewController",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:playerViewController:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGAVPlayerAdapter",
+                "printedName": "ItgPlayerViewController.ITGAVPlayerAdapter",
+                "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGAVPlayerAdapter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVPlayer",
+                "printedName": "AVFoundation.AVPlayer",
+                "usr": "c:objc(cs)AVPlayer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVPlayerViewController",
+                "printedName": "AVKit.AVPlayerViewController",
+                "usr": "c:objc(cs)AVPlayerViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any ItgPlayerViewController.ITGPlayerAdapterDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGPlayerAdapterDelegate",
+                    "printedName": "any ItgPlayerViewController.ITGPlayerAdapterDelegate",
+                    "usr": "s:23ItgPlayerViewController24ITGPlayerAdapterDelegateP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC_06playercD08delegateACSo8AVPlayerC_So0icD0CAA09ITGPlayerF8Delegate_pSgtcfc",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC_06playercD08delegateACSo8AVPlayerC_So0icD0CAA09ITGPlayerF8Delegate_pSgtcfc",
+            "moduleName": "ItgPlayerViewController",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:playerView:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGAVPlayerAdapter",
+                "printedName": "ItgPlayerViewController.ITGAVPlayerAdapter",
+                "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGAVPlayerAdapter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVPlayer",
+                "printedName": "AVFoundation.AVPlayer",
+                "usr": "c:objc(cs)AVPlayer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any ItgPlayerViewController.ITGPlayerAdapterDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGPlayerAdapterDelegate",
+                    "printedName": "any ItgPlayerViewController.ITGPlayerAdapterDelegate",
+                    "usr": "s:23ItgPlayerViewController24ITGPlayerAdapterDelegateP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC_06playerC08delegateACSo8AVPlayerC_So6UIViewCAA09ITGPlayerF8Delegate_pSgtcfc",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC_06playerC08delegateACSo8AVPlayerC_So6UIViewCAA09ITGPlayerF8Delegate_pSgtcfc",
+            "moduleName": "ItgPlayerViewController",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setup",
+            "printedName": "setup()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC5setupyyF",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC5setupyyF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeObserver",
+            "printedName": "removeObserver(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AVFoundation.AVPlayer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVPlayer",
+                    "printedName": "AVFoundation.AVPlayer",
+                    "usr": "c:objc(cs)AVPlayer"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC14removeObserveryySo8AVPlayerCSgF",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC14removeObserveryySo8AVPlayerCSgF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "registerObservers",
+            "printedName": "registerObservers()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC17registerObserversyyF",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC17registerObserversyyF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPlayerView",
+            "printedName": "getPlayerView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC03getbC0So6UIViewCSgyF",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC03getbC0So6UIViewCSgyF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getVideoResolution",
+            "printedName": "getVideoResolution()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC18getVideoResolutionSo6CGSizeVyF",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC18getVideoResolutionSo6CGSizeVyF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startVideo",
+            "printedName": "startVideo(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC10startVideoyy10Foundation3URLVF",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC10startVideoyy10Foundation3URLVF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "play",
+            "printedName": "play()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC4playyyF",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC4playyyF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pause",
+            "printedName": "pause()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC5pauseyyF",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC5pauseyyF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isPlaying",
+            "printedName": "isPlaying()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC9isPlayingSbyF",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC9isPlayingSbyF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "seek",
+            "printedName": "seek(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC4seekyySdF",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC4seekyySdF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCurrentTime",
+            "printedName": "getCurrentTime()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC14getCurrentTimeSdyF",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC14getCurrentTimeSdyF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getVideoLength",
+            "printedName": "getVideoLength()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC14getVideoLengthSdyF",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC14getVideoLengthSdyF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setVideoGravity",
+            "printedName": "setVideoGravity(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVLayerVideoGravity",
+                "printedName": "AVFoundation.AVLayerVideoGravity",
+                "usr": "c:@T@AVLayerVideoGravity"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC15setVideoGravityyySo07AVLayerhI0aF",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC15setVideoGravityyySo07AVLayerhI0aF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getVideoGravity",
+            "printedName": "getVideoGravity()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AVFoundation.AVLayerVideoGravity?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVLayerVideoGravity",
+                    "printedName": "AVFoundation.AVLayerVideoGravity",
+                    "usr": "c:@T@AVLayerVideoGravity"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC15getVideoGravitySo07AVLayerhI0aSgyF",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC15getVideoGravitySo07AVLayerhI0aSgyF",
+            "moduleName": "ItgPlayerViewController",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setSoundLevel",
+            "printedName": "setSoundLevel(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC13setSoundLevelyySfF",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC13setSoundLevelyySfF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSoundLevel",
+            "printedName": "getSoundLevel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC13getSoundLevelSfyF",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC13getSoundLevelSfyF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "timeJumped",
+            "printedName": "timeJumped(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSNotification",
+                "printedName": "Foundation.NSNotification",
+                "usr": "c:objc(cs)NSNotification"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGAVPlayerAdapter(im)timeJumped:",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC10timeJumpedyySo14NSNotificationCF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "observeValue",
+            "printedName": "observeValue(forKeyPath:of:change:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Foundation.NSKeyValueChangeKey : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Foundation.NSKeyValueChangeKey : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSKeyValueChangeKey",
+                        "printedName": "Foundation.NSKeyValueChangeKey",
+                        "usr": "c:@T@NSKeyValueChangeKey"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.UnsafeMutableRawPointer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnsafeMutableRawPointer",
+                    "printedName": "Swift.UnsafeMutableRawPointer",
+                    "usr": "s:Sv"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGAVPlayerAdapter(im)observeValueForKeyPath:ofObject:change:context:",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC12observeValue10forKeyPath2of6change7contextySSSg_ypSgSDySo05NSKeyh6ChangeJ0aypGSgSvSgtF",
+            "moduleName": "ItgPlayerViewController",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "observeValueForKeyPath:ofObject:change:context:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGAVPlayerAdapter",
+                "printedName": "ItgPlayerViewController.ITGAVPlayerAdapter",
+                "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGAVPlayerAdapter"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGAVPlayerAdapter(im)init",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterCACycfc",
+            "moduleName": "ItgPlayerViewController",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "playerViewController",
+            "printedName": "playerViewController(_:willTransitionToVisibilityOfTransportBar:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVPlayerViewController",
+                "printedName": "AVKit.AVPlayerViewController",
+                "usr": "c:objc(cs)AVPlayerViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVPlayerViewControllerAnimationCoordinator",
+                "printedName": "any AVKit.AVPlayerViewControllerAnimationCoordinator",
+                "usr": "c:objc(pl)AVPlayerViewControllerAnimationCoordinator"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ItgPlayerViewController@objc(cs)ITGAVPlayerAdapter(im)playerViewController:willTransitionToVisibilityOfTransportBar:withAnimationCoordinator:",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC06playercD0_40willTransitionToVisibilityOfTransportBar4withySo08AVPlayercD0C_SbSo0pcD20AnimationCoordinator_ptF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "objc_name": "playerViewController:willTransitionToVisibilityOfTransportBar:withAnimationCoordinator:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ItgPlayerViewController@objc(cs)ITGAVPlayerAdapter",
+        "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC",
+        "moduleName": "ItgPlayerViewController",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ITGPlayerAdapter",
+            "printedName": "ITGPlayerAdapter",
+            "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP",
+            "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1445,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1609,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2393,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2417,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4578,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4602,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14888,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14915,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14980,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15008,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15326,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15560,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGAVPlayerAdapter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 546,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

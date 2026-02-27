@@ -1,0 +1,35 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-tvos13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ItgPlayerViewControllerSwiftUI
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import AVKit
+import Inthegametv
+import ItgPlayerViewController
+import Swift
+import SwiftUI
+import _AVKit_SwiftUI
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@available(iOS 13.0, tvOS 13.0, *)
+@_Concurrency.MainActor @preconcurrency public struct ITGPlayerViewControllerSwiftUI : SwiftUI.UIViewControllerRepresentable {
+  public class Coordinator : Swift.Equatable {
+    public static func == (lhs: ItgPlayerViewControllerSwiftUI.ITGPlayerViewControllerSwiftUI.Coordinator, rhs: ItgPlayerViewControllerSwiftUI.ITGPlayerViewControllerSwiftUI.Coordinator) -> Swift.Bool
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(channelSlug: Swift.String, virtualChannels: [Swift.String]? = nil, accountId: Swift.String, environment: Inthegametv.ITGEnvironment, foreignId: Swift.String? = nil, vars: [Swift.String : any Swift.Hashable]? = nil, showLogs: Swift.Bool, playerAdapter: any ItgPlayerViewController.ITGPlayerAdapter)
+    #endif
+    @objc deinit
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public init(channelSlug: Swift.String, virtualChannels: [Swift.String]? = nil, accountId: Swift.String, environment: Inthegametv.ITGEnvironment, foreignId: Swift.String? = nil, vars: [Swift.String : any Swift.Hashable]? = nil, showLogs: Swift.Bool = false, playerAdapter: any ItgPlayerViewController.ITGPlayerAdapter, onCreated: ((ItgPlayerViewController.ITGPlayerViewController) -> Swift.Void)? = nil)
+  #endif
+  @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: ItgPlayerViewControllerSwiftUI.ITGPlayerViewControllerSwiftUI.Context) -> ItgPlayerViewController.ITGPlayerViewController
+  @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> ItgPlayerViewControllerSwiftUI.ITGPlayerViewControllerSwiftUI.Coordinator
+  @_Concurrency.MainActor @preconcurrency public func updateUIViewController(_ uiViewController: ItgPlayerViewController.ITGPlayerViewController, context: ItgPlayerViewControllerSwiftUI.ITGPlayerViewControllerSwiftUI.Context)
+  @available(iOS 13.0, tvOS 13.0, *)
+  public typealias Body = Swift.Never
+  @available(iOS 13.0, tvOS 13.0, *)
+  public typealias UIViewControllerType = ItgPlayerViewController.ITGPlayerViewController
+}
+@available(iOS 13.0, tvOS 13.0, *)
+extension ItgPlayerViewControllerSwiftUI.ITGPlayerViewControllerSwiftUI : Swift.Sendable {}

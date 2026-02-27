@@ -1,0 +1,1486 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "ItgOverlayViewSwiftUI",
+    "printedName": "ItgOverlayViewSwiftUI",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "ItgOverlayViewSwiftUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "InthegametviOS",
+        "printedName": "InthegametviOS",
+        "declKind": "Import",
+        "moduleName": "ItgOverlayViewSwiftUI"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "ItgOverlayViewSwiftUI"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ITGOverlayViewSwiftUI",
+        "printedName": "ITGOverlayViewSwiftUI",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Coordinator",
+            "printedName": "Coordinator",
+            "children": [
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Coordinator",
+                    "printedName": "ItgOverlayViewSwiftUI.ITGOverlayViewSwiftUI<τ_0_0>.Coordinator",
+                    "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Coordinator",
+                    "printedName": "ItgOverlayViewSwiftUI.ITGOverlayViewSwiftUI<τ_0_0>.Coordinator",
+                    "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC2eeoiySbAEyx_G_AGtFZ",
+                "mangledName": "$s21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC2eeoiySbAEyx_G_AGtFZ",
+                "moduleName": "ItgOverlayViewSwiftUI",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(channelSlug:virtualChannels:accountId:environment:foreignId:vars:showLogs:onItgDidLoadChannelInfo:onItgRequestedVideoStateChange:onItgRequestedFocusUpdate:onItgRequestedVideoRectChange:onItgReceivedDeeplink:onItgDidProcessAnalyticEvent:onItgDidUpdateUserState:onItgRequestedVideoSoundLevel:onItgRequestedVideoGravity:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Coordinator",
+                    "printedName": "ItgOverlayViewSwiftUI.ITGOverlayViewSwiftUI<τ_0_0>.Coordinator",
+                    "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGEnvironment",
+                    "printedName": "InthegametviOS.ITGEnvironment",
+                    "usr": "s:14InthegametviOS14ITGEnvironmentV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : any Swift.Hashable]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : any Swift.Hashable]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Hashable",
+                            "printedName": "any Swift.Hashable",
+                            "usr": "s:SH"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((InthegametviOS.ChannelMeta) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(InthegametviOS.ChannelMeta) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ChannelMeta",
+                            "printedName": "InthegametviOS.ChannelMeta",
+                            "usr": "s:14InthegametviOS11ChannelMetaV"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(InthegametviOS.ITGPlayerState, Swift.Double?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(InthegametviOS.ITGPlayerState, Swift.Double?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ITGPlayerState",
+                            "printedName": "InthegametviOS.ITGPlayerState",
+                            "usr": "s:14InthegametviOS14ITGPlayerStateO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.Double?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Double",
+                                "printedName": "Swift.Double",
+                                "usr": "s:Sd"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CoreFoundation.CGRect?, Swift.Double) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(CoreFoundation.CGRect?, Swift.Double)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "CoreFoundation.CGRect?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "CGRect",
+                                "printedName": "CoreFoundation.CGRect",
+                                "usr": "c:@S@CGRect"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.String) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((InthegametviOS.AnalyticsInfo, InthegametviOS.AnalyticsEventType) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(InthegametviOS.AnalyticsInfo, InthegametviOS.AnalyticsEventType) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(InthegametviOS.AnalyticsInfo, InthegametviOS.AnalyticsEventType)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "AnalyticsInfo",
+                                "printedName": "InthegametviOS.AnalyticsInfo",
+                                "usr": "s:14InthegametviOS13AnalyticsInfoV"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "AnalyticsEventType",
+                                "printedName": "InthegametviOS.AnalyticsEventType",
+                                "usr": "s:14InthegametviOS18AnalyticsEventTypeO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((InthegametviOS.User) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(InthegametviOS.User) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "User",
+                            "printedName": "InthegametviOS.User",
+                            "usr": "s:14InthegametviOS4UserV"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Float?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Float?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Float",
+                            "printedName": "Swift.Float",
+                            "usr": "s:Sf"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AVFoundation.AVLayerVideoGravity?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "AVFoundation.AVLayerVideoGravity?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AVLayerVideoGravity",
+                            "printedName": "AVFoundation.AVLayerVideoGravity",
+                            "usr": "c:@T@AVLayerVideoGravity"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC11channelSlug15virtualChannels9accountId11environment07foreignM04vars8showLogs02onA18DidLoadChannelInfo0sA25RequestedVideoStateChange0saX11FocusUpdate0saxY10RectChange0sA16ReceivedDeeplink0saT20ProcessAnalyticEvent0sat10UpdateUserZ00saxY10SoundLevel0saxY7GravityAEyx_GSS_SaySSGSgSS14InthegametviOS14ITGEnvironmentVSSSgSDySSSH_pGSgSbyAY0V4MetaVcSgyAY09ITGPlayerZ0O_SdSgtcySbcySo6CGRectVSg_SdtcySScSgyAY09AnalyticsW0V_AY18AnalyticsEventTypeOtcSgyAY4UserVcSgySfSgcySo07AVLayerY7GravityaSgctcfc",
+                "mangledName": "$s21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC11channelSlug15virtualChannels9accountId11environment07foreignM04vars8showLogs02onA18DidLoadChannelInfo0sA25RequestedVideoStateChange0saX11FocusUpdate0saxY10RectChange0sA16ReceivedDeeplink0saT20ProcessAnalyticEvent0sat10UpdateUserZ00saxY10SoundLevel0saxY7GravityAEyx_GSS_SaySSGSgSS14InthegametviOS14ITGEnvironmentVSSSgSDySSSH_pGSgSbyAY0V4MetaVcSgyAY09ITGPlayerZ0O_SdSgtcySbcySo6CGRectVSg_SdtcySScSgyAY09AnalyticsW0V_AY18AnalyticsEventTypeOtcSgyAY4UserVcSgySfSgcySo07AVLayerY7GravityaSgctcfc",
+                "moduleName": "ItgOverlayViewSwiftUI",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "itgDidLoadChannelInfo",
+                "printedName": "itgDidLoadChannelInfo(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChannelMeta",
+                    "printedName": "InthegametviOS.ChannelMeta",
+                    "usr": "s:14InthegametviOS11ChannelMetaV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC21itgDidLoadChannelInfoyy14InthegametviOS0K4MetaVF",
+                "mangledName": "$s21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC21itgDidLoadChannelInfoyy14InthegametviOS0K4MetaVF",
+                "moduleName": "ItgOverlayViewSwiftUI",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "itgRequestedVideoStateChange",
+                "printedName": "itgRequestedVideoStateChange(_:timeStamp:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGPlayerState",
+                    "printedName": "InthegametviOS.ITGPlayerState",
+                    "usr": "s:14InthegametviOS14ITGPlayerStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC28itgRequestedVideoStateChange_9timeStampy14InthegametviOS09ITGPlayerK0O_SdSgtF",
+                "mangledName": "$s21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC28itgRequestedVideoStateChange_9timeStampy14InthegametviOS09ITGPlayerK0O_SdSgtF",
+                "moduleName": "ItgOverlayViewSwiftUI",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "itgRequestedFocusUpdate",
+                "printedName": "itgRequestedFocusUpdate(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC23itgRequestedFocusUpdateyySbF",
+                "mangledName": "$s21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC23itgRequestedFocusUpdateyySbF",
+                "moduleName": "ItgOverlayViewSwiftUI",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "itgRequestedVideoRectChange",
+                "printedName": "itgRequestedVideoRectChange(_:animationTime:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreFoundation.CGRect?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGRect",
+                        "printedName": "CoreFoundation.CGRect",
+                        "usr": "c:@S@CGRect"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC27itgRequestedVideoRectChange_13animationTimeySo6CGRectVSg_SdtF",
+                "mangledName": "$s21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC27itgRequestedVideoRectChange_13animationTimeySo6CGRectVSg_SdtF",
+                "moduleName": "ItgOverlayViewSwiftUI",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "itgReceivedDeeplink",
+                "printedName": "itgReceivedDeeplink(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC19itgReceivedDeeplinkyySSF",
+                "mangledName": "$s21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC19itgReceivedDeeplinkyySSF",
+                "moduleName": "ItgOverlayViewSwiftUI",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "itgDidProcessAnalyticEvent",
+                "printedName": "itgDidProcessAnalyticEvent(info:type:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnalyticsInfo",
+                    "printedName": "InthegametviOS.AnalyticsInfo",
+                    "usr": "s:14InthegametviOS13AnalyticsInfoV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnalyticsEventType",
+                    "printedName": "InthegametviOS.AnalyticsEventType",
+                    "usr": "s:14InthegametviOS18AnalyticsEventTypeO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC26itgDidProcessAnalyticEvent4info4typey14InthegametviOS13AnalyticsInfoV_AI0qL4TypeOtF",
+                "mangledName": "$s21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC26itgDidProcessAnalyticEvent4info4typey14InthegametviOS13AnalyticsInfoV_AI0qL4TypeOtF",
+                "moduleName": "ItgOverlayViewSwiftUI",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "itgDidUpdateUserState",
+                "printedName": "itgDidUpdateUserState(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "User",
+                    "printedName": "InthegametviOS.User",
+                    "usr": "s:14InthegametviOS4UserV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC21itgDidUpdateUserStateyy14InthegametviOS0K0VF",
+                "mangledName": "$s21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC21itgDidUpdateUserStateyy14InthegametviOS0K0VF",
+                "moduleName": "ItgOverlayViewSwiftUI",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "itgRequestedVideoSoundLevel",
+                "printedName": "itgRequestedVideoSoundLevel(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC27itgRequestedVideoSoundLevelyySfSgF",
+                "mangledName": "$s21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC27itgRequestedVideoSoundLevelyySfSgF",
+                "moduleName": "ItgOverlayViewSwiftUI",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "itgRequestedVideoGravity",
+                "printedName": "itgRequestedVideoGravity(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AVFoundation.AVLayerVideoGravity?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVLayerVideoGravity",
+                        "printedName": "AVFoundation.AVLayerVideoGravity",
+                        "usr": "c:@T@AVLayerVideoGravity"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC24itgRequestedVideoGravityyySo07AVLayerjK0aSgF",
+                "mangledName": "$s21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC24itgRequestedVideoGravityyySo07AVLayerjK0aSgF",
+                "moduleName": "ItgOverlayViewSwiftUI",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC",
+            "mangledName": "$s21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC",
+            "moduleName": "ItgOverlayViewSwiftUI",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "ITGOverlayDelegate",
+                "printedName": "ITGOverlayDelegate",
+                "usr": "s:14InthegametviOS18ITGOverlayDelegateP",
+                "mangledName": "$s14InthegametviOS18ITGOverlayDelegateP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(channelSlug:virtualChannels:accountId:environment:foreignId:vars:showLogs:onOverlayDidLoadChannelInfo:onItgDidLoadChannelInfo:onItgRequestedVideoStateChange:onItgRequestedFocusUpdate:onItgRequestedVideoRectChange:onItgReceivedDeeplink:onItgDidProcessAnalyticEvent:onItgDidUpdateUserState:onItgRequestedVideoSoundLevel:onItgRequestedVideoGravity:onItgOverlayCreated:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGOverlayViewSwiftUI",
+                "printedName": "ItgOverlayViewSwiftUI.ITGOverlayViewSwiftUI<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGEnvironment",
+                "printedName": "InthegametviOS.ITGEnvironment",
+                "usr": "s:14InthegametviOS14ITGEnvironmentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : any Swift.Hashable]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : any Swift.Hashable]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Hashable",
+                        "printedName": "any Swift.Hashable",
+                        "usr": "s:SH"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((InthegametviOS.ChannelMeta) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(InthegametviOS.ChannelMeta) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChannelMeta",
+                        "printedName": "InthegametviOS.ChannelMeta",
+                        "usr": "s:14InthegametviOS11ChannelMetaV"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(InthegametviOS.ITGPlayerState, Swift.Double?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(InthegametviOS.ITGPlayerState, Swift.Double?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGPlayerState",
+                        "printedName": "InthegametviOS.ITGPlayerState",
+                        "usr": "s:14InthegametviOS14ITGPlayerStateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Double?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreFoundation.CGRect?, Swift.Double) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(CoreFoundation.CGRect?, Swift.Double)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "CoreFoundation.CGRect?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGRect",
+                            "printedName": "CoreFoundation.CGRect",
+                            "usr": "c:@S@CGRect"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((InthegametviOS.AnalyticsInfo, InthegametviOS.AnalyticsEventType) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(InthegametviOS.AnalyticsInfo, InthegametviOS.AnalyticsEventType) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(InthegametviOS.AnalyticsInfo, InthegametviOS.AnalyticsEventType)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AnalyticsInfo",
+                            "printedName": "InthegametviOS.AnalyticsInfo",
+                            "usr": "s:14InthegametviOS13AnalyticsInfoV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AnalyticsEventType",
+                            "printedName": "InthegametviOS.AnalyticsEventType",
+                            "usr": "s:14InthegametviOS18AnalyticsEventTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((InthegametviOS.User) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(InthegametviOS.User) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "User",
+                        "printedName": "InthegametviOS.User",
+                        "usr": "s:14InthegametviOS4UserV"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Float?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AVFoundation.AVLayerVideoGravity?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AVFoundation.AVLayerVideoGravity?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVLayerVideoGravity",
+                        "printedName": "AVFoundation.AVLayerVideoGravity",
+                        "usr": "c:@T@AVLayerVideoGravity"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((InthegametviOS.ITGOverlayView) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(InthegametviOS.ITGOverlayView) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGOverlayView",
+                        "printedName": "InthegametviOS.ITGOverlayView",
+                        "usr": "c:@M@InthegametviOS@objc(cs)ITGOverlayView"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11channelSlug15virtualChannels9accountId11environment07foreignL04vars8showLogs02onB18DidLoadChannelInfo0rastuV00rA25RequestedVideoStateChange0raW11FocusUpdate0rawx4RectZ00rA16ReceivedDeeplink0raS20ProcessAnalyticEvent0ras10UpdateUserY00rawX10SoundLevel0rawX7Gravity0raB7CreatedACyxGSS_SaySSGSgSS14InthegametviOS14ITGEnvironmentVSSSgSDySSSH_pGSgSbyA0_cSgyAY0U4MetaVcSgyAY09ITGPlayerY0O_SdSgtcySbcySo6CGRectVSg_SdtcySScSgyAY09AnalyticsV0V_AY18AnalyticsEventTypeOtcSgyAY4UserVcSgySfSgcySo07AVLayerX7GravityaSgcyAY0fC0CcSgtcfc",
+            "mangledName": "$s21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11channelSlug15virtualChannels9accountId11environment07foreignL04vars8showLogs02onB18DidLoadChannelInfo0rastuV00rA25RequestedVideoStateChange0raW11FocusUpdate0rawx4RectZ00rA16ReceivedDeeplink0raS20ProcessAnalyticEvent0ras10UpdateUserY00rawX10SoundLevel0rawX7Gravity0raB7CreatedACyxGSS_SaySSGSgSS14InthegametviOS14ITGEnvironmentVSSSgSDySSSH_pGSgSbyA0_cSgyAY0U4MetaVcSgyAY09ITGPlayerY0O_SdSgtcySbcySo6CGRectVSg_SdtcySScSgyAY09AnalyticsV0V_AY18AnalyticsEventTypeOtcSgyAY4UserVcSgySfSgcySo07AVLayerX7GravityaSgcyAY0fC0CcSgtcfc",
+            "moduleName": "ItgOverlayViewSwiftUI",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "makeUIView",
+            "printedName": "makeUIView(context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGOverlayView",
+                "printedName": "InthegametviOS.ITGOverlayView",
+                "usr": "c:@M@InthegametviOS@objc(cs)ITGOverlayView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewRepresentableContext",
+                "printedName": "SwiftUI.UIViewRepresentableContext<ItgOverlayViewSwiftUI.ITGOverlayViewSwiftUI<τ_0_0>>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGOverlayViewSwiftUI",
+                    "printedName": "ItgOverlayViewSwiftUI.ITGOverlayViewSwiftUI<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V"
+                  }
+                ],
+                "usr": "s:7SwiftUI26UIViewRepresentableContextV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V10makeUIView7context14InthegametviOS0fC0C0dE00H20RepresentableContextVyACyxGG_tF",
+            "mangledName": "$s21ItgOverlayViewSwiftUI010ITGOverlaycdE0V10makeUIView7context14InthegametviOS0fC0C0dE00H20RepresentableContextVyACyxGG_tF",
+            "moduleName": "ItgOverlayViewSwiftUI",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateUIView",
+            "printedName": "updateUIView(_:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGOverlayView",
+                "printedName": "InthegametviOS.ITGOverlayView",
+                "usr": "c:@M@InthegametviOS@objc(cs)ITGOverlayView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewRepresentableContext",
+                "printedName": "SwiftUI.UIViewRepresentableContext<ItgOverlayViewSwiftUI.ITGOverlayViewSwiftUI<τ_0_0>>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGOverlayViewSwiftUI",
+                    "printedName": "ItgOverlayViewSwiftUI.ITGOverlayViewSwiftUI<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V"
+                  }
+                ],
+                "usr": "s:7SwiftUI26UIViewRepresentableContextV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V12updateUIView_7contexty14InthegametviOS0fC0C_0dE00H20RepresentableContextVyACyxGGtF",
+            "mangledName": "$s21ItgOverlayViewSwiftUI010ITGOverlaycdE0V12updateUIView_7contexty14InthegametviOS0fC0C_0dE00H20RepresentableContextVyACyxGGtF",
+            "moduleName": "ItgOverlayViewSwiftUI",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeCoordinator",
+            "printedName": "makeCoordinator()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Coordinator",
+                "printedName": "ItgOverlayViewSwiftUI.ITGOverlayViewSwiftUI<τ_0_0>.Coordinator",
+                "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V15makeCoordinatorAC0H0Cyx_GyF",
+            "mangledName": "$s21ItgOverlayViewSwiftUI010ITGOverlaycdE0V15makeCoordinatorAC0H0Cyx_GyF",
+            "moduleName": "ItgOverlayViewSwiftUI",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V",
+        "mangledName": "$s21ItgOverlayViewSwiftUI010ITGOverlaycdE0V",
+        "moduleName": "ItgOverlayViewSwiftUI",
+        "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+        "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+        "intro_iOS": "13.0",
+        "intro_tvOS": "13.0",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "Available",
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UIViewRepresentable",
+            "printedName": "UIViewRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UIViewType",
+                "printedName": "UIViewType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGOverlayView",
+                    "printedName": "InthegametviOS.ITGOverlayView",
+                    "usr": "c:@M@InthegametviOS@objc(cs)ITGOverlayView"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Coordinator",
+                "printedName": "Coordinator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Coordinator",
+                    "printedName": "ItgOverlayViewSwiftUI.ITGOverlayViewSwiftUI<τ_0_0>.Coordinator",
+                    "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI19UIViewRepresentableP",
+            "mangledName": "$s7SwiftUI19UIViewRepresentableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGOverlayViewSwiftUI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5387,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGOverlayViewSwiftUI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6306,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

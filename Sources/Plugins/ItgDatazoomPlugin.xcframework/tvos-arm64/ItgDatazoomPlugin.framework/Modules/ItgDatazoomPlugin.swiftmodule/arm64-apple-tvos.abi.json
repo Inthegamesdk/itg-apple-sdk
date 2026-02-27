@@ -1,0 +1,306 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "ItgDatazoomPlugin",
+    "printedName": "ItgDatazoomPlugin",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Inthegametv",
+        "printedName": "Inthegametv",
+        "declKind": "Import",
+        "moduleName": "ItgDatazoomPlugin"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ItgDatazoomPlugin"
+      },
+      {
+        "kind": "Import",
+        "name": "MediaTailorSDK",
+        "printedName": "MediaTailorSDK",
+        "declKind": "Import",
+        "moduleName": "ItgDatazoomPlugin"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ITGDatazoomPlugin",
+        "printedName": "ITGDatazoomPlugin",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "flexiDelegate",
+            "printedName": "flexiDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "Inthegametv.ITGOverlayView?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17ItgDatazoomPlugin011ITGDatazoomC0C13flexiDelegate11Inthegametv14ITGOverlayViewCSgvp",
+            "mangledName": "$s17ItgDatazoomPlugin011ITGDatazoomC0C13flexiDelegate11Inthegametv14ITGOverlayViewCSgvp",
+            "moduleName": "ItgDatazoomPlugin",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Inthegametv.ITGOverlayView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGOverlayView",
+                        "printedName": "Inthegametv.ITGOverlayView",
+                        "usr": "c:@M@Inthegametv@objc(cs)ITGOverlayView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17ItgDatazoomPlugin011ITGDatazoomC0C13flexiDelegate11Inthegametv14ITGOverlayViewCSgvg",
+                "mangledName": "$s17ItgDatazoomPlugin011ITGDatazoomC0C13flexiDelegate11Inthegametv14ITGOverlayViewCSgvg",
+                "moduleName": "ItgDatazoomPlugin",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Inthegametv.ITGOverlayView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGOverlayView",
+                        "printedName": "Inthegametv.ITGOverlayView",
+                        "usr": "c:@M@Inthegametv@objc(cs)ITGOverlayView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17ItgDatazoomPlugin011ITGDatazoomC0C13flexiDelegate11Inthegametv14ITGOverlayViewCSgvs",
+                "mangledName": "$s17ItgDatazoomPlugin011ITGDatazoomC0C13flexiDelegate11Inthegametv14ITGOverlayViewCSgvs",
+                "moduleName": "ItgDatazoomPlugin",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17ItgDatazoomPlugin011ITGDatazoomC0C13flexiDelegate11Inthegametv14ITGOverlayViewCSgvM",
+                "mangledName": "$s17ItgDatazoomPlugin011ITGDatazoomC0C13flexiDelegate11Inthegametv14ITGOverlayViewCSgvM",
+                "moduleName": "ItgDatazoomPlugin",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(flexiDelegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGDatazoomPlugin",
+                "printedName": "ItgDatazoomPlugin.ITGDatazoomPlugin",
+                "usr": "c:@M@ItgDatazoomPlugin@objc(cs)ITGDatazoomPlugin"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGOverlayView",
+                "printedName": "Inthegametv.ITGOverlayView",
+                "usr": "c:@M@Inthegametv@objc(cs)ITGOverlayView"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17ItgDatazoomPlugin011ITGDatazoomC0C13flexiDelegateAC11Inthegametv14ITGOverlayViewC_tcfc",
+            "mangledName": "$s17ItgDatazoomPlugin011ITGDatazoomC0C13flexiDelegateAC11Inthegametv14ITGOverlayViewC_tcfc",
+            "moduleName": "ItgDatazoomPlugin",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "onNewNonLinearAds",
+            "printedName": "onNewNonLinearAds(adData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NonLinearAdsData",
+                "printedName": "MediaTailorSDK.NonLinearAdsData",
+                "usr": "c:objc(cs)MTSDKNonLinearAdsData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ItgDatazoomPlugin@objc(cs)ITGDatazoomPlugin(im)onNewNonLinearAdsAdData:",
+            "mangledName": "$s17ItgDatazoomPlugin011ITGDatazoomC0C17onNewNonLinearAds6adDataySo08MTSDKNonhiK0C_tF",
+            "moduleName": "ItgDatazoomPlugin",
+            "overriding": true,
+            "objc_name": "onNewNonLinearAdsAdData:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGDatazoomPlugin",
+                "printedName": "ItgDatazoomPlugin.ITGDatazoomPlugin",
+                "usr": "c:@M@ItgDatazoomPlugin@objc(cs)ITGDatazoomPlugin"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ItgDatazoomPlugin@objc(cs)ITGDatazoomPlugin(im)init",
+            "mangledName": "$s17ItgDatazoomPlugin011ITGDatazoomC0CACycfc",
+            "moduleName": "ItgDatazoomPlugin",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ItgDatazoomPlugin@objc(cs)ITGDatazoomPlugin",
+        "mangledName": "$s17ItgDatazoomPlugin011ITGDatazoomC0C",
+        "moduleName": "ItgDatazoomPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)MTSDKAdObserver",
+        "superclassNames": [
+          "MediaTailorSDK.AdObserver",
+          "MediaTailorSDK.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

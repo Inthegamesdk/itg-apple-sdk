@@ -3,9 +3,7 @@
 //
 
 import SwiftUI
-#if canImport(ITGPlayerViewController)
-import ITGPlayerViewController
-#endif
+import ItgPlayerViewController
 #if os(tvOS)
 import Inthegametv
 #else
@@ -13,6 +11,7 @@ import InthegametviOS
 #endif
 import AVKit
 
+@available(iOS 13.0, tvOS 13.0, *)
 public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
 
     public class Coordinator: Equatable {

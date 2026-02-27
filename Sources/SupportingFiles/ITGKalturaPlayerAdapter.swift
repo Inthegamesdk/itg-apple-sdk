@@ -11,13 +11,15 @@ import Inthegametv
 #else
 import InthegametviOS
 #endif
+import ItgPlayerViewController
 
 open class ITGKalturaPlayerAdapter: NSObject, ITGPlayerAdapter {
     
     weak public var delegate: ITGPlayerAdapterDelegate?
     private var player: KalturaPlayer!
     
-    public init(_ player: KalturaPlayer, delegate: ITGPlayerAdapterDelegate? = nil) {
+    public init?(_ player: Any, delegate: ITGPlayerAdapterDelegate? = nil) {
+        guard let player = player as? KalturaPlayer else { return nil }
         self.player = player
         self.delegate = delegate
         super.init()

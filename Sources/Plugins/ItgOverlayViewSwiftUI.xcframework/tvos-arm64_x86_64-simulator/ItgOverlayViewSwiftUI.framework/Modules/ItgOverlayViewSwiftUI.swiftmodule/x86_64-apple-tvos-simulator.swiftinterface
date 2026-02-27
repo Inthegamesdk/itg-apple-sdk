@@ -1,0 +1,51 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target x86_64-apple-tvos13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ItgOverlayViewSwiftUI
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import AVKit
+import Inthegametv
+import Swift
+import SwiftUI
+import _AVKit_SwiftUI
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@available(iOS 13.0, tvOS 13.0, *)
+@_Concurrency.MainActor @preconcurrency public struct ITGOverlayViewSwiftUI<Content> : SwiftUI.UIViewRepresentable where Content : SwiftUICore.View {
+  public class Coordinator : Inthegametv.ITGOverlayDelegate, Swift.Equatable {
+    public static func == (lhs: ItgOverlayViewSwiftUI.ITGOverlayViewSwiftUI<Content>.Coordinator, rhs: ItgOverlayViewSwiftUI.ITGOverlayViewSwiftUI<Content>.Coordinator) -> Swift.Bool
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(channelSlug: Swift.String, virtualChannels: [Swift.String]?, accountId: Swift.String, environment: Inthegametv.ITGEnvironment, foreignId: Swift.String?, vars: [Swift.String : any Swift.Hashable]?, showLogs: Swift.Bool, onItgDidLoadChannelInfo: ((Inthegametv.ChannelMeta) -> Swift.Void)?, onItgRequestedVideoStateChange: @escaping (Inthegametv.ITGPlayerState, Foundation.TimeInterval?) -> Swift.Void, onItgRequestedFocusUpdate: @escaping (Swift.Bool) -> Swift.Void, onItgRequestedVideoRectChange: @escaping (CoreFoundation.CGRect?, Foundation.TimeInterval) -> Swift.Void, onItgReceivedDeeplink: ((Swift.String) -> Swift.Void)?, onItgDidProcessAnalyticEvent: ((Inthegametv.AnalyticsInfo, Inthegametv.AnalyticsEventType) -> Swift.Void)?, onItgDidUpdateUserState: ((Inthegametv.User) -> Swift.Void)?, onItgRequestedVideoSoundLevel: @escaping (Swift.Float?) -> Swift.Void, onItgRequestedVideoGravity: @escaping (AVFoundation.AVLayerVideoGravity?) -> Swift.Void)
+    #endif
+    public func itgDidLoadChannelInfo(_ channelMeta: Inthegametv.ChannelMeta)
+    #if compiler(>=5.3) && $NonescapableTypes
+    public func itgRequestedVideoStateChange(_ state: Inthegametv.ITGPlayerState, timeStamp: Foundation.TimeInterval?)
+    #endif
+    public func itgRequestedFocusUpdate(_ focusRequired: Swift.Bool)
+    #if compiler(>=5.3) && $NonescapableTypes
+    public func itgRequestedVideoRectChange(_ rect: CoreFoundation.CGRect?, animationTime: Foundation.TimeInterval)
+    #endif
+    public func itgReceivedDeeplink(_ link: Swift.String)
+    public func itgDidProcessAnalyticEvent(info: Inthegametv.AnalyticsInfo, type: Inthegametv.AnalyticsEventType)
+    public func itgDidUpdateUserState(_ user: Inthegametv.User)
+    #if compiler(>=5.3) && $NonescapableTypes
+    public func itgRequestedVideoSoundLevel(_ soundLevel: Swift.Float?)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public func itgRequestedVideoGravity(_ videoGravity: AVFoundation.AVLayerVideoGravity?)
+    #endif
+    @objc deinit
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public init(channelSlug: Swift.String, virtualChannels: [Swift.String]? = nil, accountId: Swift.String, environment: Inthegametv.ITGEnvironment, foreignId: Swift.String? = nil, vars: [Swift.String : any Swift.Hashable]? = nil, showLogs: Swift.Bool = false, onOverlayDidLoadChannelInfo: ((Swift.String?) -> Swift.Void)? = nil, onItgDidLoadChannelInfo: ((Inthegametv.ChannelMeta) -> Swift.Void)?, onItgRequestedVideoStateChange: @escaping (Inthegametv.ITGPlayerState, Foundation.TimeInterval?) -> Swift.Void, onItgRequestedFocusUpdate: @escaping (Swift.Bool) -> Swift.Void, onItgRequestedVideoRectChange: @escaping (CoreFoundation.CGRect?, Foundation.TimeInterval) -> Swift.Void, onItgReceivedDeeplink: ((Swift.String) -> Swift.Void)?, onItgDidProcessAnalyticEvent: ((Inthegametv.AnalyticsInfo, Inthegametv.AnalyticsEventType) -> Swift.Void)?, onItgDidUpdateUserState: ((Inthegametv.User) -> Swift.Void)?, onItgRequestedVideoSoundLevel: @escaping (Swift.Float?) -> Swift.Void, onItgRequestedVideoGravity: @escaping (AVFoundation.AVLayerVideoGravity?) -> Swift.Void, onItgOverlayCreated: ((Inthegametv.ITGOverlayView) -> Swift.Void)? = nil)
+  #endif
+  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: ItgOverlayViewSwiftUI.ITGOverlayViewSwiftUI<Content>.Context) -> Inthegametv.ITGOverlayView
+  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: Inthegametv.ITGOverlayView, context: ItgOverlayViewSwiftUI.ITGOverlayViewSwiftUI<Content>.Context)
+  @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> ItgOverlayViewSwiftUI.ITGOverlayViewSwiftUI<Content>.Coordinator
+  @available(iOS 13.0, tvOS 13.0, *)
+  public typealias Body = Swift.Never
+  @available(iOS 13.0, tvOS 13.0, *)
+  public typealias UIViewType = Inthegametv.ITGOverlayView
+}
+@available(iOS 13.0, tvOS 13.0, *)
+extension ItgOverlayViewSwiftUI.ITGOverlayViewSwiftUI : Swift.Sendable {}

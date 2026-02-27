@@ -4,80 +4,57 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/Storket-Swift.h</key>
-		<data>
-		CPbwvhD9JYo3uf2JNs7v4cj0KZA=
-		</data>
 		<key>Headers/Storket.h</key>
 		<data>
 		eYwd/EF/0vJYJRccO0eIrOZPgyw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fFxckacKyprAGTsnfQ9IwaIxP40=
-		</data>
-		<key>Modules/Storket.swiftmodule/Project/arm64-apple-tvos-simulator.swiftsourceinfo</key>
-		<data>
-		ngi/5qjOoQ0xMm75PbQppxnRW1Q=
-		</data>
-		<key>Modules/Storket.swiftmodule/Project/x86_64-apple-tvos-simulator.swiftsourceinfo</key>
-		<data>
-		7JdjxIGaDFpK8HVlnUZlHMQcwGs=
+		n4A8v3GnsnkwJtDotf8S/b1yfiA=
 		</data>
 		<key>Modules/Storket.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		LaNkc6Vz68pKMS5b4ylPF1/VVUg=
+		t3K6CTO6aJqpTBtrPpNPgS9diIM=
 		</data>
 		<key>Modules/Storket.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		7l/yqAGk7QjPBM6yy4SvWgv/wgA=
+		mpUL8zvm3ubCvceS0TTynk8doLE=
 		</data>
 		<key>Modules/Storket.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		c9b+TXCBr7/6d8X5Nn9RaLYCAvI=
+		/WaW7rRrEecLSxMzUtKW03kc4CE=
 		</data>
 		<key>Modules/Storket.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		7l/yqAGk7QjPBM6yy4SvWgv/wgA=
+		mpUL8zvm3ubCvceS0TTynk8doLE=
 		</data>
 		<key>Modules/Storket.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		OFw6bfsP/YJE7qlnXF87a2VMjeQ=
+		vV95H/exiZhnfNhI8eqA9ii57cw=
 		</data>
 		<key>Modules/Storket.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		LaNkc6Vz68pKMS5b4ylPF1/VVUg=
+		t3K6CTO6aJqpTBtrPpNPgS9diIM=
 		</data>
 		<key>Modules/Storket.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		kdit5OpDrPu9rr5Bw7B/Xd85v7o=
+		vHqfacl2+aenMCkNTnAAV/0RbcY=
 		</data>
 		<key>Modules/Storket.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		VloJ0VhXq4oXlzCtf/nG4NqmVKs=
+		Pa+tQ1/IEGja+a0w9wDOEOkGNak=
 		</data>
 		<key>Modules/Storket.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		kdit5OpDrPu9rr5Bw7B/Xd85v7o=
+		vHqfacl2+aenMCkNTnAAV/0RbcY=
 		</data>
 		<key>Modules/Storket.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		QOXgrMV2igWCi2pmFtmx4+CdMVc=
-		</data>
-		<key>Modules/module.modulemap</key>
-		<data>
-		jeExoQhbmfbtG+vTqBMvxnvXg7g=
+		i8L064jYMl8YN6MfU9/FdknYSw0=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/Storket-Swift.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			57+h0dpLzQ1TeKj1lMp3Dbn04IyQV5gFt6MT3fYUyLM=
-			</data>
-		</dict>
 		<key>Headers/Storket.h</key>
 		<dict>
 			<key>hash2</key>
@@ -85,95 +62,74 @@
 			IdbF4+0gaQehvvtCJKcBpifm13T53rrEU6LXCAb4FU0=
 			</data>
 		</dict>
-		<key>Modules/Storket.swiftmodule/Project/arm64-apple-tvos-simulator.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6SSdEJE2xlZBn5nRiOKI+5bEvvYX6VdOAA0Vup4l5RA=
-			</data>
-		</dict>
-		<key>Modules/Storket.swiftmodule/Project/x86_64-apple-tvos-simulator.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8jSCY5ki9cZIANMUsJNu297Bp7ZwS4yBdO81JNyPx7I=
-			</data>
-		</dict>
 		<key>Modules/Storket.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zA+A+NA49Ykoz9sQRgV0mS/3RyZ+f/LEjxmBXHB4GXo=
+			c6kZ+1OIMoOeseHEBXrPRsMxxpZ/H6tVF8iSCr8ypHA=
 			</data>
 		</dict>
 		<key>Modules/Storket.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+uU9b1zcP1FcVS2ygsG5rjMHNrtbJbb/wZMDmXX4psU=
+			4IavKoCZ4m/2biBGTNYAXLs6WWokdJeppewqfIZEnlI=
 			</data>
 		</dict>
 		<key>Modules/Storket.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CMuRwa+dDscPruEYhAh8EfTe/ur1wOu1MGGLtt81iwQ=
+			ZNwqAUogLb/4aVSoN7JTl9fa2ZcppO81jr6Eogw1uj0=
 			</data>
 		</dict>
 		<key>Modules/Storket.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+uU9b1zcP1FcVS2ygsG5rjMHNrtbJbb/wZMDmXX4psU=
+			4IavKoCZ4m/2biBGTNYAXLs6WWokdJeppewqfIZEnlI=
 			</data>
 		</dict>
 		<key>Modules/Storket.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DUg3XCfV35nwjCZHWNocH4mpYwm13DEExO43uVACVzU=
+			3lDX90PV+SFVMX8t1yh8+ROKX6nHd2J4ygDGAtmw09c=
 			</data>
 		</dict>
 		<key>Modules/Storket.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zA+A+NA49Ykoz9sQRgV0mS/3RyZ+f/LEjxmBXHB4GXo=
+			c6kZ+1OIMoOeseHEBXrPRsMxxpZ/H6tVF8iSCr8ypHA=
 			</data>
 		</dict>
 		<key>Modules/Storket.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AnhePyQCz7MUB+n9Jkysw6Xg5fjKnHPnHZ4XzLKa/8w=
+			VYIRdwzaKDg16p0LgojSj6+DrJ5LESPfpcjX/EF0k8Y=
 			</data>
 		</dict>
 		<key>Modules/Storket.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VKAHFZGP4DCMOK9PW0fUNFAxb93uIJ4WrwXq6wm8UDk=
+			ueKeqDNiTsWhsSauNPwmXg8bePyUHWkpKbCcJUOGevI=
 			</data>
 		</dict>
 		<key>Modules/Storket.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AnhePyQCz7MUB+n9Jkysw6Xg5fjKnHPnHZ4XzLKa/8w=
+			VYIRdwzaKDg16p0LgojSj6+DrJ5LESPfpcjX/EF0k8Y=
 			</data>
 		</dict>
 		<key>Modules/Storket.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sY7YUmUbreCpOe/QDUY0p74E34rzoZDn45owkfI7MbI=
-			</data>
-		</dict>
-		<key>Modules/module.modulemap</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			JSLDpyd7URS19PzpEP8g1kahKiXKZiSufXloMnU+bWg=
+			7/wES6axNbivNFxKAUvNAlYUNjhXZSPXhCNggcwH3/Q=
 			</data>
 		</dict>
 	</dict>

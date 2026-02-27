@@ -1,0 +1,434 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "ItgMediatailorPlugin",
+    "printedName": "ItgMediatailorPlugin",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "InthegametviOS",
+        "printedName": "InthegametviOS",
+        "declKind": "Import",
+        "moduleName": "ItgMediatailorPlugin"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ItgMediatailorPlugin"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ITGMediatailorPluginDelegate",
+        "printedName": "ITGMediatailorPluginDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "didReceiveTrackingData",
+            "printedName": "didReceiveTrackingData(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20ItgMediatailorPlugin014ITGMediatailorC8DelegateP22didReceiveTrackingDatayySDySSypGF",
+            "mangledName": "$s20ItgMediatailorPlugin014ITGMediatailorC8DelegateP22didReceiveTrackingDatayySDySSypGF",
+            "moduleName": "ItgMediatailorPlugin",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgMediatailorPlugin.ITGMediatailorPluginDelegate>",
+            "sugared_genericSig": "<Self where Self : ItgMediatailorPlugin.ITGMediatailorPluginDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:20ItgMediatailorPlugin014ITGMediatailorC8DelegateP",
+        "mangledName": "$s20ItgMediatailorPlugin014ITGMediatailorC8DelegateP",
+        "moduleName": "ItgMediatailorPlugin",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ITGMediatailorPlugin",
+        "printedName": "ITGMediatailorPlugin",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "dataDelegate",
+            "printedName": "dataDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any ItgMediatailorPlugin.ITGMediatailorPluginDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20ItgMediatailorPlugin014ITGMediatailorC0C12dataDelegateAA0dcF0_pSgvp",
+            "mangledName": "$s20ItgMediatailorPlugin014ITGMediatailorC0C12dataDelegateAA0dcF0_pSgvp",
+            "moduleName": "ItgMediatailorPlugin",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any ItgMediatailorPlugin.ITGMediatailorPluginDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGMediatailorPluginDelegate",
+                        "printedName": "any ItgMediatailorPlugin.ITGMediatailorPluginDelegate",
+                        "usr": "s:20ItgMediatailorPlugin014ITGMediatailorC8DelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20ItgMediatailorPlugin014ITGMediatailorC0C12dataDelegateAA0dcF0_pSgvg",
+                "mangledName": "$s20ItgMediatailorPlugin014ITGMediatailorC0C12dataDelegateAA0dcF0_pSgvg",
+                "moduleName": "ItgMediatailorPlugin",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any ItgMediatailorPlugin.ITGMediatailorPluginDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGMediatailorPluginDelegate",
+                        "printedName": "any ItgMediatailorPlugin.ITGMediatailorPluginDelegate",
+                        "usr": "s:20ItgMediatailorPlugin014ITGMediatailorC8DelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20ItgMediatailorPlugin014ITGMediatailorC0C12dataDelegateAA0dcF0_pSgvs",
+                "mangledName": "$s20ItgMediatailorPlugin014ITGMediatailorC0C12dataDelegateAA0dcF0_pSgvs",
+                "moduleName": "ItgMediatailorPlugin",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20ItgMediatailorPlugin014ITGMediatailorC0C12dataDelegateAA0dcF0_pSgvM",
+                "mangledName": "$s20ItgMediatailorPlugin014ITGMediatailorC0C12dataDelegateAA0dcF0_pSgvM",
+                "moduleName": "ItgMediatailorPlugin",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "flexiDelegate",
+            "printedName": "flexiDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "InthegametviOS.ITGOverlayView?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20ItgMediatailorPlugin014ITGMediatailorC0C13flexiDelegate14InthegametviOS14ITGOverlayViewCSgvp",
+            "mangledName": "$s20ItgMediatailorPlugin014ITGMediatailorC0C13flexiDelegate14InthegametviOS14ITGOverlayViewCSgvp",
+            "moduleName": "ItgMediatailorPlugin",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InthegametviOS.ITGOverlayView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGOverlayView",
+                        "printedName": "InthegametviOS.ITGOverlayView",
+                        "usr": "c:@M@InthegametviOS@objc(cs)ITGOverlayView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20ItgMediatailorPlugin014ITGMediatailorC0C13flexiDelegate14InthegametviOS14ITGOverlayViewCSgvg",
+                "mangledName": "$s20ItgMediatailorPlugin014ITGMediatailorC0C13flexiDelegate14InthegametviOS14ITGOverlayViewCSgvg",
+                "moduleName": "ItgMediatailorPlugin",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InthegametviOS.ITGOverlayView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGOverlayView",
+                        "printedName": "InthegametviOS.ITGOverlayView",
+                        "usr": "c:@M@InthegametviOS@objc(cs)ITGOverlayView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20ItgMediatailorPlugin014ITGMediatailorC0C13flexiDelegate14InthegametviOS14ITGOverlayViewCSgvs",
+                "mangledName": "$s20ItgMediatailorPlugin014ITGMediatailorC0C13flexiDelegate14InthegametviOS14ITGOverlayViewCSgvs",
+                "moduleName": "ItgMediatailorPlugin",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20ItgMediatailorPlugin014ITGMediatailorC0C13flexiDelegate14InthegametviOS14ITGOverlayViewCSgvM",
+                "mangledName": "$s20ItgMediatailorPlugin014ITGMediatailorC0C13flexiDelegate14InthegametviOS14ITGOverlayViewCSgvM",
+                "moduleName": "ItgMediatailorPlugin",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(dataDelegate:flexiDelegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGMediatailorPlugin",
+                "printedName": "ItgMediatailorPlugin.ITGMediatailorPlugin",
+                "usr": "s:20ItgMediatailorPlugin014ITGMediatailorC0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any ItgMediatailorPlugin.ITGMediatailorPluginDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGMediatailorPluginDelegate",
+                    "printedName": "any ItgMediatailorPlugin.ITGMediatailorPluginDelegate",
+                    "usr": "s:20ItgMediatailorPlugin014ITGMediatailorC8DelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGOverlayView",
+                "printedName": "InthegametviOS.ITGOverlayView",
+                "usr": "c:@M@InthegametviOS@objc(cs)ITGOverlayView"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20ItgMediatailorPlugin014ITGMediatailorC0C12dataDelegate05flexiF0AcA0dcF0_pSg_14InthegametviOS14ITGOverlayViewCtcfc",
+            "mangledName": "$s20ItgMediatailorPlugin014ITGMediatailorC0C12dataDelegate05flexiF0AcA0dcF0_pSg_14InthegametviOS14ITGOverlayViewCtcfc",
+            "moduleName": "ItgMediatailorPlugin",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "startMediaTailor",
+            "printedName": "startMediaTailor(url:interval:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20ItgMediatailorPlugin014ITGMediatailorC0C16startMediaTailor3url8intervalySS_SitF",
+            "mangledName": "$s20ItgMediatailorPlugin014ITGMediatailorC0C16startMediaTailor3url8intervalySS_SitF",
+            "moduleName": "ItgMediatailorPlugin",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopMediaTailor",
+            "printedName": "stopMediaTailor()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20ItgMediatailorPlugin014ITGMediatailorC0C15stopMediaTailoryyF",
+            "mangledName": "$s20ItgMediatailorPlugin014ITGMediatailorC0C15stopMediaTailoryyF",
+            "moduleName": "ItgMediatailorPlugin",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:20ItgMediatailorPlugin014ITGMediatailorC0C",
+        "mangledName": "$s20ItgMediatailorPlugin014ITGMediatailorC0C",
+        "moduleName": "ItgMediatailorPlugin",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGMediatailorPlugin.swift",
+      "kind": "Array",
+      "offset": 484,
+      "length": 2,
+      "value": "[]"
+    }
+  ]
+}

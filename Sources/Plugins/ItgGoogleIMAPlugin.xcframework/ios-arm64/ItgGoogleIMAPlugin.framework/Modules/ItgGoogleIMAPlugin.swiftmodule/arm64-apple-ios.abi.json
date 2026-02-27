@@ -1,0 +1,398 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "ItgGoogleIMAPlugin",
+    "printedName": "ItgGoogleIMAPlugin",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "InthegametviOS",
+        "printedName": "InthegametviOS",
+        "declKind": "Import",
+        "moduleName": "ItgGoogleIMAPlugin"
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleInteractiveMediaAds",
+        "printedName": "GoogleInteractiveMediaAds",
+        "declKind": "Import",
+        "moduleName": "ItgGoogleIMAPlugin"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ItgGoogleIMAPlugin"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ITGGoogleIMAPlugin",
+        "printedName": "ITGGoogleIMAPlugin",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "requestAd",
+            "printedName": "requestAd(_:videoView:viewController:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGGoogleIMAPluginDelegate",
+                "printedName": "any InthegametviOS.ITGGoogleIMAPluginDelegate",
+                "usr": "s:14InthegametviOS26ITGGoogleIMAPluginDelegateP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ItgGoogleIMAPlugin09ITGGoogleC0C9requestAd_9videoView14viewController8delegateySS_So6UIViewCSo0lJ0C14InthegametviOS0dC8Delegate_ptF",
+            "mangledName": "$s18ItgGoogleIMAPlugin09ITGGoogleC0C9requestAd_9videoView14viewController8delegateySS_So6UIViewCSo0lJ0C14InthegametviOS0dC8Delegate_ptF",
+            "moduleName": "ItgGoogleIMAPlugin",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGGoogleIMAPlugin",
+                "printedName": "ItgGoogleIMAPlugin.ITGGoogleIMAPlugin",
+                "usr": "c:@M@ItgGoogleIMAPlugin@objc(cs)ITGGoogleIMAPlugin"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ItgGoogleIMAPlugin@objc(cs)ITGGoogleIMAPlugin(im)init",
+            "mangledName": "$s18ItgGoogleIMAPlugin09ITGGoogleC0CACycfc",
+            "moduleName": "ItgGoogleIMAPlugin",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "adsLoader",
+            "printedName": "adsLoader(_:adsLoadedWith:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMAAdsLoader",
+                "printedName": "GoogleInteractiveMediaAds.IMAAdsLoader",
+                "usr": "c:objc(cs)IMAAdsLoader"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMAAdsLoadedData",
+                "printedName": "GoogleInteractiveMediaAds.IMAAdsLoadedData",
+                "usr": "c:objc(cs)IMAAdsLoadedData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ItgGoogleIMAPlugin@objc(cs)ITGGoogleIMAPlugin(im)adsLoader:adsLoadedWithData:",
+            "mangledName": "$s18ItgGoogleIMAPlugin09ITGGoogleC0C9adsLoader_0E10LoadedWithySo06IMAAdsF0C_So0iG4DataCtF",
+            "moduleName": "ItgGoogleIMAPlugin",
+            "objc_name": "adsLoader:adsLoadedWithData:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adsLoader",
+            "printedName": "adsLoader(_:failedWith:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMAAdsLoader",
+                "printedName": "GoogleInteractiveMediaAds.IMAAdsLoader",
+                "usr": "c:objc(cs)IMAAdsLoader"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMAAdLoadingErrorData",
+                "printedName": "GoogleInteractiveMediaAds.IMAAdLoadingErrorData",
+                "usr": "c:objc(cs)IMAAdLoadingErrorData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ItgGoogleIMAPlugin@objc(cs)ITGGoogleIMAPlugin(im)adsLoader:failedWithErrorData:",
+            "mangledName": "$s18ItgGoogleIMAPlugin09ITGGoogleC0C9adsLoader_10failedWithySo06IMAAdsF0C_So21IMAAdLoadingErrorDataCtF",
+            "moduleName": "ItgGoogleIMAPlugin",
+            "objc_name": "adsLoader:failedWithErrorData:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adsManager",
+            "printedName": "adsManager(_:didReceive:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMAAdsManager",
+                "printedName": "GoogleInteractiveMediaAds.IMAAdsManager",
+                "usr": "c:objc(cs)IMAAdsManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMAAdEvent",
+                "printedName": "GoogleInteractiveMediaAds.IMAAdEvent",
+                "usr": "c:objc(cs)IMAAdEvent"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ItgGoogleIMAPlugin@objc(cs)ITGGoogleIMAPlugin(im)adsManager:didReceiveAdEvent:",
+            "mangledName": "$s18ItgGoogleIMAPlugin09ITGGoogleC0C10adsManager_10didReceiveySo06IMAAdsF0C_So10IMAAdEventCtF",
+            "moduleName": "ItgGoogleIMAPlugin",
+            "objc_name": "adsManager:didReceiveAdEvent:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adsManager",
+            "printedName": "adsManager(_:didReceive:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMAAdsManager",
+                "printedName": "GoogleInteractiveMediaAds.IMAAdsManager",
+                "usr": "c:objc(cs)IMAAdsManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMAAdError",
+                "printedName": "GoogleInteractiveMediaAds.IMAAdError",
+                "usr": "c:objc(cs)IMAAdError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ItgGoogleIMAPlugin@objc(cs)ITGGoogleIMAPlugin(im)adsManager:didReceiveAdError:",
+            "mangledName": "$s18ItgGoogleIMAPlugin09ITGGoogleC0C10adsManager_10didReceiveySo06IMAAdsF0C_So10IMAAdErrorCtF",
+            "moduleName": "ItgGoogleIMAPlugin",
+            "objc_name": "adsManager:didReceiveAdError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adsManagerDidRequestContentPause",
+            "printedName": "adsManagerDidRequestContentPause(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMAAdsManager",
+                "printedName": "GoogleInteractiveMediaAds.IMAAdsManager",
+                "usr": "c:objc(cs)IMAAdsManager"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ItgGoogleIMAPlugin@objc(cs)ITGGoogleIMAPlugin(im)adsManagerDidRequestContentPause:",
+            "mangledName": "$s18ItgGoogleIMAPlugin09ITGGoogleC0C32adsManagerDidRequestContentPauseyySo06IMAAdsF0CF",
+            "moduleName": "ItgGoogleIMAPlugin",
+            "objc_name": "adsManagerDidRequestContentPause:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adsManagerDidRequestContentResume",
+            "printedName": "adsManagerDidRequestContentResume(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMAAdsManager",
+                "printedName": "GoogleInteractiveMediaAds.IMAAdsManager",
+                "usr": "c:objc(cs)IMAAdsManager"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ItgGoogleIMAPlugin@objc(cs)ITGGoogleIMAPlugin(im)adsManagerDidRequestContentResume:",
+            "mangledName": "$s18ItgGoogleIMAPlugin09ITGGoogleC0C33adsManagerDidRequestContentResumeyySo06IMAAdsF0CF",
+            "moduleName": "ItgGoogleIMAPlugin",
+            "objc_name": "adsManagerDidRequestContentResume:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ItgGoogleIMAPlugin@objc(cs)ITGGoogleIMAPlugin",
+        "mangledName": "$s18ItgGoogleIMAPlugin09ITGGoogleC0C",
+        "moduleName": "ItgGoogleIMAPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ITGGoogleIMAPluginProtocol",
+            "printedName": "ITGGoogleIMAPluginProtocol",
+            "usr": "s:14InthegametviOS26ITGGoogleIMAPluginProtocolP",
+            "mangledName": "$s14InthegametviOS26ITGGoogleIMAPluginProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

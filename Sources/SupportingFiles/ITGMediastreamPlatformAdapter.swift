@@ -4,25 +4,44 @@
 
 import AVKit
 
-#if canImport(ITGIntergrationViewController)
-import ITGIntergrationViewController
-#endif
 #if os(tvOS)
-import MediastreamPlatformSDKAppleTV
 import Inthegametv
 #else
-import MediastreamPlatformSDKiOS
 import InthegametviOS
 #endif
+import ItgPlayerViewController
+
+@objc public protocol ITGMediastreamPlatform {
+     
+    var view: UIView! { get }
+    var playerLayer: AVPlayerLayer? { get }
+    var playerViewController: AVPlayerViewController? { get }
+    var volume: Int { get set }
+    @objc func play()
+    @objc func pause()
+    @objc func getResolution() -> String
+    @objc func checkIsPlaying() -> Bool
+    @objc func seekTo(_ time: Double)
+    @objc func getCurrentTime() -> Int64
+    @objc func getDuration() -> Int64
+     
+ }
+ 
+@objc public protocol ITGMediastreamPlatformEventManager {
+    
+    @objc func listenTo(eventName: String, action: @escaping () -> ())
+    
+}
+
 
 open class ITGMediastreamPlatformAdapter: ITGPlayerAdapter {
     
     weak public var delegate: ITGPlayerAdapterDelegate?
-    var mdstrm: ITGMediastreamPlatformAdapterDelegate
-    var eventsManger: ITGMediastreamPlatformAdapterEventManagerDelagate
+    var mdstrm: ITGMediastreamPlatform
+    var eventsManger: ITGMediastreamPlatformEventManager
     var view: UIView?
     
-    public init(_ mdstrm: ITGMediastreamPlatformAdapterDelegate, eventsManger: ITGMediastreamPlatformAdapterEventManagerDelagate, customVideoView: UIView? = nil, delegate: ITGPlayerAdapterDelegate? = nil) {
+    public init(_ mdstrm: ITGMediastreamPlatform, eventsManger: ITGMediastreamPlatformEventManager, customVideoView: UIView? = nil, delegate: ITGPlayerAdapterDelegate? = nil) {
         self.mdstrm = mdstrm
         self.eventsManger = eventsManger
         self.view = customVideoView
