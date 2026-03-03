@@ -212,6 +212,8 @@ public protocol ITGOverlayDelegate : AnyObject {
   @_Concurrency.MainActor @preconcurrency public func resetUser()
   @_Concurrency.MainActor @preconcurrency public func close(_ force: Swift.Bool = false) -> Swift.Bool
   @_Concurrency.MainActor @preconcurrency public func playerChangedState(_ state: InthegametviOS.ITGVideoState, userInitiated: Swift.Bool = false, isSeeking: Swift.Bool = false)
+  @_Concurrency.MainActor @preconcurrency public func isPresentingContent() -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func injectCreativeUrl(_ url: Swift.String)
   @_Concurrency.MainActor @preconcurrency public func injectFlexiById(_ id: Swift.String)
   @_Concurrency.MainActor @preconcurrency public func injectFlexi(_ flexi: Swift.String)
   @_Concurrency.MainActor @preconcurrency public func injectFlexi(_ url: Foundation.URL)

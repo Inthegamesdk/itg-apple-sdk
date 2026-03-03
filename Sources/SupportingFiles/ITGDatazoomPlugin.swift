@@ -24,7 +24,7 @@ public class ITGDatazoomPlugin: AdObserver {
     public override func onNewNonLinearAds(adData: NonLinearAdsData) {
         if let availId = adData.availId, let ads = kotlinArrayToArray(adData.nonLinearAdList) {
             let duration = adData.duration
-            let time = adData.startDate
+            let time = adData.start
             var trackingImpressions: [String] = kotlinArrayToArray(adData.trackingEvents)?.filter({ $0.eventType == "impression" }).compactMap({ kotlinArrayToArray( $0.beaconUrls) }).flatMap({ $0 }) as? [String] ?? []
             var trackingErrors: [String] = kotlinArrayToArray(adData.trackingEvents)?.filter({ $0.eventType == "error" }).compactMap({ kotlinArrayToArray( $0.beaconUrls) }).flatMap({ $0 }) as? [String] ?? []
             trackingImpressions = trackingImpressions.filter({ removeCDATA(from: $0) != "www.example.com" && removeCDATA(from: $0 as String) != "https://www.example.com" })
