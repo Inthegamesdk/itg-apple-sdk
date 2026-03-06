@@ -208,7 +208,7 @@ public protocol ITGOverlayDelegate : AnyObject {
   @_Concurrency.MainActor @preconcurrency public func load(channelSlug: Swift.String, virtualChannels: [Swift.String]? = [], accountId: Swift.String, environment: InthegametviOS.ITGEnvironment = ITGEnvironment.defaultEnvironment, delegate: (any InthegametviOS.ITGOverlayDelegate)?, foreignId: Swift.String?, vars: [Swift.String : any Swift.Hashable]? = nil, adsMetadata: [InthegametviOS.AdMetadata]? = nil, showLogs: Swift.Bool = false)
   #endif
   @_Concurrency.MainActor @preconcurrency public func mute(_ mute: Swift.Bool)
-  @_Concurrency.MainActor @preconcurrency public func block(_ block: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func block(_ block: Swift.Bool, includePauseAd: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency public func resetUser()
   @_Concurrency.MainActor @preconcurrency public func close(_ force: Swift.Bool = false) -> Swift.Bool
   @_Concurrency.MainActor @preconcurrency public func playerChangedState(_ state: InthegametviOS.ITGVideoState, userInitiated: Swift.Bool = false, isSeeking: Swift.Bool = false)
