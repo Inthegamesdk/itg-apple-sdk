@@ -54,14 +54,14 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     private var foreignId: String?
     private var shouldResetOverlayUser: Bool
     private var soundLevel: Float? = nil
-    private var vars: [String: any Hashable]? = nil
+    private var vars: [String: Any]? = nil
     private var showLogs: Bool
     private var originalVideoGravity: AVLayerVideoGravity?
 #if os(iOS)
     private var previousOrientationLandscape: Bool?
 #endif
     
-    public init(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, foreignId: String? = nil, vars: [String: any Hashable]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false, showLogs: Bool = false) {
+    public init(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, foreignId: String? = nil, vars: [String: Any]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false, showLogs: Bool = false) {
         self.channelSlug = channelSlug
         self.virtualChannels = virtualChannels
         self.accountId = accountId
@@ -120,7 +120,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     }
 #endif
     
-    open func reloadChannel(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, foreignId: String? = nil, vars: [String: any Hashable]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false, showLogs: Bool = false) {
+    open func reloadChannel(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, foreignId: String? = nil, vars: [String: Any]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false, showLogs: Bool = false) {
         self.channelSlug = channelSlug
         self.virtualChannels = virtualChannels
         self.accountId = accountId
@@ -401,7 +401,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         }
     }
     
-    public func itgRequestedVideoGravity(_ videoGravity: AVLayerVideoGravity?) {
+    open func itgRequestedVideoGravity(_ videoGravity: AVLayerVideoGravity?) {
         if let videoGravity {
             if originalVideoGravity == nil {
                 originalVideoGravity = player?.getVideoGravity()
@@ -411,6 +411,14 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
             player?.setVideoGravity(originalVideoGravity)
             self.originalVideoGravity = nil
         }
+    }
+    
+    open func itgWillPresentAd(event: ITGAdEvent) {
+        
+    }
+    
+    open func itgDidFinishPresentingAd(event: ITGAdEvent) {
+        
     }
     
 }

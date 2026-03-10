@@ -9,27 +9,27 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc public protocol ITGMediastreamPlatform {
+public protocol ITGMediastreamPlatform {
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc var view: UIKit.UIView! { get }
+  var view: UIKit.UIView! { get }
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc var playerLayer: AVFoundation.AVPlayerLayer? { get }
+  var playerLayer: AVFoundation.AVPlayerLayer? { get }
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc var playerViewController: AVKit.AVPlayerViewController? { get }
+  var playerViewController: AVKit.AVPlayerViewController? { get }
   #endif
-  @objc var volume: Swift.Int { get set }
-  @objc func play()
-  @objc func pause()
-  @objc func getResolution() -> Swift.String
-  @objc func checkIsPlaying() -> Swift.Bool
-  @objc func seekTo(_ time: Swift.Double)
-  @objc func getCurrentTime() -> Swift.Int64
-  @objc func getDuration() -> Swift.Int64
+  var volume: Swift.Int { get set }
+  func play()
+  func pause()
+  func getResolution() -> Swift.String
+  func checkIsPlaying() -> Swift.Bool
+  func seekTo(_ time: Swift.Double)
+  func getCurrentTime() -> Swift.Int64
+  func getDuration() -> Swift.Int64
 }
-@objc public protocol ITGMediastreamPlatformEventManager {
-  @objc func listenTo(eventName: Swift.String, action: @escaping () -> ())
+public protocol ITGMediastreamPlatformEventManager {
+  func listenTo(eventName: Swift.String, action: @escaping () -> ())
 }
 open class ITGMediastreamPlatformAdapter : ItgPlayerViewController.ITGPlayerAdapter {
   weak public var delegate: (any ItgPlayerViewController.ITGPlayerAdapterDelegate)?

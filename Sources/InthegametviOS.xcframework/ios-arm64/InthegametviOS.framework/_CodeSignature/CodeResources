@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		D4fFoel3qbWFN8vzWhMO8G9NnSI=
+		g4xcprk87qbte42q9zX/Ipf6HFc=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		5Wq409ZcGukgax0/GiQI0R8XMUI=
+		3uk+C0cjwsIXZHKToMx6PGHxwzI=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		+Lxy4tpTPFGnhmIUHggMq1JkGms=
+		/7inOQLZpnRqEw0ozwlFnlMcnWI=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		+Lxy4tpTPFGnhmIUHggMq1JkGms=
+		/7inOQLZpnRqEw0ozwlFnlMcnWI=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		yGbwbEX6GWvX8X71SOuIXvROPzk=
+		mZ7ekwkWulg1986A6DOa5k1Z+w4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -72,14 +72,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+RlSFpO9CS1bmXW0HJ4OFlqjZvbRD+gb1/P3LUUP7Q8=
+			dXukm3HpZMVqzIDRo2NivoVfNAQcbTOtlMjBNJm97OY=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iKc7hY9sq2bTD1yO/Onwfh50zYW96qjSg4E+MwJbJgc=
+			aTGiWFghtLfIauOp9J6HM4yDYv4KAo4cmledi5Otr+0=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iKc7hY9sq2bTD1yO/Onwfh50zYW96qjSg4E+MwJbJgc=
+			aTGiWFghtLfIauOp9J6HM4yDYv4KAo4cmledi5Otr+0=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qQkhVL4S9/UET07+FbbuSg1tmpaXlMm6euU0rDb1YTQ=
+			Qed6DE8zUcCmFxcSmtVFWF1/Xo712w0mZV1j0oHvJak=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

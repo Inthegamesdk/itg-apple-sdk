@@ -32,6 +32,8 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
         let onItgDidUpdateUserState: ((User)->Void)?
         let onItgRequestedVideoSoundLevel: (Float?)->Void
         let onItgRequestedVideoGravity: (AVLayerVideoGravity?)->Void
+        let onItgWillPresentAd: (ITGAdEvent)->Void
+        let onItgDidFinishPresentingAd: (ITGAdEvent)->Void
         
         public static func == (lhs: Coordinator, rhs: Coordinator) -> Bool {
             return lhs.channelSlug == rhs.channelSlug
@@ -58,7 +60,9 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
                     onItgDidProcessAnalyticEvent: ((AnalyticsInfo, AnalyticsEventType) -> Void)?,
                     onItgDidUpdateUserState: ((User) -> Void)?,
                     onItgRequestedVideoSoundLevel: @escaping (Float?) -> Void,
-                    onItgRequestedVideoGravity: @escaping (AVLayerVideoGravity?)->Void) {
+                    onItgRequestedVideoGravity: @escaping (AVLayerVideoGravity?)->Void,
+                    onItgWillPresentAd: @escaping (ITGAdEvent)->Void,
+                    onItgDidFinishPresentingAd: @escaping (ITGAdEvent)->Void) {
             self.channelSlug = channelSlug
             self.virtualChannels = virtualChannels
             self.accountId = accountId
@@ -75,6 +79,8 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
             self.onItgDidUpdateUserState = onItgDidUpdateUserState
             self.onItgRequestedVideoSoundLevel = onItgRequestedVideoSoundLevel
             self.onItgRequestedVideoGravity = onItgRequestedVideoGravity
+            self.onItgWillPresentAd = onItgWillPresentAd
+            self.onItgDidFinishPresentingAd = onItgDidFinishPresentingAd
         }
         
         public func itgDidLoadChannelInfo(_ channelMeta: ChannelMeta) {
@@ -113,6 +119,14 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
             onItgRequestedVideoGravity(videoGravity)
         }
         
+        public func itgWillPresentAd(event: ITGAdEvent) {
+            onItgWillPresentAd(event)
+        }
+        
+        public func itgDidFinishPresentingAd(event: ITGAdEvent) {
+            onItgDidFinishPresentingAd(event)
+        }
+        
     }
     
     var channelSlug: String
@@ -132,6 +146,9 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
     let onItgRequestedVideoSoundLevel: (Float?)->Void
     let onItgRequestedVideoGravity: (AVLayerVideoGravity?)->Void
     let onItgOverlayCreated: ((ITGOverlayView) -> Void)?
+    let onItgWillPresentAd: (ITGAdEvent)->Void
+    let onItgDidFinishPresentingAd: (ITGAdEvent)->Void
+    
     
     public init(channelSlug: String,
                 virtualChannels: [String]? = nil,
@@ -150,6 +167,8 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
                 onItgDidUpdateUserState: ((User) -> Void)?,
                 onItgRequestedVideoSoundLevel: @escaping (Float?) -> Void,
                 onItgRequestedVideoGravity: @escaping (AVLayerVideoGravity?)->Void,
+                onItgWillPresentAd: @escaping (ITGAdEvent)->Void,
+                onItgDidFinishPresentingAd: @escaping (ITGAdEvent)->Void,
                 onItgOverlayCreated: ((ITGOverlayView) -> Void)? = nil) {
         self.channelSlug = channelSlug
         self.virtualChannels = virtualChannels
@@ -168,6 +187,8 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
         self.onItgRequestedVideoSoundLevel = onItgRequestedVideoSoundLevel
         self.onItgRequestedVideoGravity = onItgRequestedVideoGravity
         self.onItgOverlayCreated = onItgOverlayCreated
+        self.onItgWillPresentAd = onItgWillPresentAd
+        self.onItgDidFinishPresentingAd = onItgDidFinishPresentingAd
     }
     
     public func makeUIView(context: Context) -> ITGOverlayView {
@@ -209,7 +230,9 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
                            onItgDidProcessAnalyticEvent: onItgDidProcessAnalyticEvent,
                            onItgDidUpdateUserState: onItgDidUpdateUserState,
                            onItgRequestedVideoSoundLevel: onItgRequestedVideoSoundLevel,
-                           onItgRequestedVideoGravity: onItgRequestedVideoGravity)
+                           onItgRequestedVideoGravity: onItgRequestedVideoGravity,
+                           onItgWillPresentAd: onItgWillPresentAd,
+                           onItgDidFinishPresentingAd: onItgDidFinishPresentingAd)
     }
     
 }

@@ -6,15 +6,15 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		o7OUCBAY8nTMUvVvbJngcjTgUfk=
+		rfEPFjZggPiuo0JJ4G3MqzuYtUU=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		LTyocyxoYtOaSeem48p+18RmV1Q=
+		IKMCITsXxH6HAvAUBzXb0xU/RRg=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		gtYWa02YZcm+612ravJEOX0pEgs=
+		+InK/mhVXlTvDAdnBjFJUnsEe80=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		gtYWa02YZcm+612ravJEOX0pEgs=
+		+InK/mhVXlTvDAdnBjFJUnsEe80=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		yga1BbfF+eSIWsxNGjjJT1gQGdo=
+		a+qPLSmmBDfEosS61Mu14D7/e0E=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,14 +35,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G0hyuocjiUt2tNdKclHuVUzi5gkb6cfU1E6Zg9c2fxY=
+			O1t1tnO6Ax/6Uz271ABuhConKeZ5J1Vzoq9wW8hWuqA=
 			</data>
 		</dict>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eHJZTHtGUrySYTLHPD9lHI4DMU7Xti9MdJ/rxsdKhl8=
+			iwHOiS0/punaq/hG47V435QZlacBNdKQtER1xuw5OFA=
 			</data>
 		</dict>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -56,14 +56,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eHJZTHtGUrySYTLHPD9lHI4DMU7Xti9MdJ/rxsdKhl8=
+			iwHOiS0/punaq/hG47V435QZlacBNdKQtER1xuw5OFA=
 			</data>
 		</dict>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lPWSr8aqD8jLFyt8V7vz3KXRudK/pXIobgeHI1fsRAw=
+			wG1rLKSGXF1rmL8t3xSAS+YHR8wSlQh4TZgYb5CiSlI=
 			</data>
 		</dict>
 	</dict>

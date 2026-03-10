@@ -6,15 +6,15 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		BI4oDh94QMBZAKMlpGuSfpQZjNI=
+		lKW0VmyTInAaN0w1rWb8dm5O5D4=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-tvos.abi.json</key>
 		<data>
-		VUORIKrzcvXngf00qO3/bZHWbOE=
+		CgR7ZqH8XRYgM9FOFUqHEItBi1c=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<data>
-		6WZ4FNJ80d4M1z1sNyZ7Od588eI=
+		UwXrGmPxEn9i88PCvLkUnAH7V7g=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<data>
-		6WZ4FNJ80d4M1z1sNyZ7Od588eI=
+		UwXrGmPxEn9i88PCvLkUnAH7V7g=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<data>
-		8yu1+FrXSvz5ubyqnwtncllLbwo=
+		TnIsVRgl51oWf3eHcc8F6NBL0po=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,14 +35,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9klG+6Le5/PgQ/3jnpF2FsD5nw7MvoeMMMcJEiE23jU=
+			05+abLKLZlyKRJ4yfe9Sa3BgiwlxPFpxA9ia1/ozSBw=
 			</data>
 		</dict>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1441TYHTNZr4cyALNqPmu4cEXJaNO3WRwq00Uf+J578=
+			iTZ+MiYaEUpYOV9kjSoM+Xu5DQlaECB8OTeLU4rXT6o=
 			</data>
 		</dict>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-tvos.swiftdoc</key>
@@ -56,14 +56,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1441TYHTNZr4cyALNqPmu4cEXJaNO3WRwq00Uf+J578=
+			iTZ+MiYaEUpYOV9kjSoM+Xu5DQlaECB8OTeLU4rXT6o=
 			</data>
 		</dict>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AKJ9ALWZqubODZ0zp0GztvnLM7IFQv1Gl2cbbQWn79o=
+			EoflVxwTg98091znk9SqJDsEuPO5win3HiIoXer5tpA=
 			</data>
 		</dict>
 	</dict>

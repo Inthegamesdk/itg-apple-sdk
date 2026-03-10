@@ -54,13 +54,10 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(py)view",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamC0P4viewSo6UIViewCSgvp",
             "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P4viewSo6UIViewCSgvp",
             "moduleName": "ItgMediastreamPlatformAdapter",
             "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -83,15 +80,12 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)view",
+                "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamC0P4viewSo6UIViewCSgvg",
                 "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P4viewSo6UIViewCSgvg",
                 "moduleName": "ItgMediastreamPlatformAdapter",
                 "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
                 "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
                 "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
               }
@@ -118,13 +112,10 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(py)playerLayer",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamC0P11playerLayerSo08AVPlayerG0CSgvp",
             "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P11playerLayerSo08AVPlayerG0CSgvp",
             "moduleName": "ItgMediastreamPlatformAdapter",
             "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -147,15 +138,12 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)playerLayer",
+                "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamC0P11playerLayerSo08AVPlayerG0CSgvg",
                 "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P11playerLayerSo08AVPlayerG0CSgvg",
                 "moduleName": "ItgMediastreamPlatformAdapter",
                 "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
                 "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
                 "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
               }
@@ -182,13 +170,10 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(py)playerViewController",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamC0P20playerViewControllerSo08AVPlayergH0CSgvp",
             "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P20playerViewControllerSo08AVPlayergH0CSgvp",
             "moduleName": "ItgMediastreamPlatformAdapter",
             "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -211,15 +196,12 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)playerViewController",
+                "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamC0P20playerViewControllerSo08AVPlayergH0CSgvg",
                 "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P20playerViewControllerSo08AVPlayergH0CSgvg",
                 "moduleName": "ItgMediastreamPlatformAdapter",
                 "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
                 "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
                 "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
               }
@@ -238,13 +220,10 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(py)volume",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamC0P6volumeSivp",
             "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P6volumeSivp",
             "moduleName": "ItgMediastreamPlatformAdapter",
             "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -259,15 +238,12 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)volume",
+                "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamC0P6volumeSivg",
                 "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P6volumeSivg",
                 "moduleName": "ItgMediastreamPlatformAdapter",
                 "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
                 "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
                 "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
               },
@@ -289,17 +265,36 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)setVolume:",
+                "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamC0P6volumeSivs",
                 "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P6volumeSivs",
                 "moduleName": "ItgMediastreamPlatformAdapter",
                 "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
                 "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
                 "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamC0P6volumeSivM",
+                "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P6volumeSivM",
+                "moduleName": "ItgMediastreamPlatformAdapter",
+                "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+                "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -315,15 +310,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)play",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamC0P4playyyF",
             "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P4playyyF",
             "moduleName": "ItgMediastreamPlatformAdapter",
             "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
             "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
             "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -339,15 +331,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)pause",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamC0P5pauseyyF",
             "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P5pauseyyF",
             "moduleName": "ItgMediastreamPlatformAdapter",
             "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
             "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
             "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -364,15 +353,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)getResolution",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamC0P13getResolutionSSyF",
             "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P13getResolutionSSyF",
             "moduleName": "ItgMediastreamPlatformAdapter",
             "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
             "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
             "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -389,15 +375,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)checkIsPlaying",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamC0P14checkIsPlayingSbyF",
             "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P14checkIsPlayingSbyF",
             "moduleName": "ItgMediastreamPlatformAdapter",
             "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
             "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
             "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -419,15 +402,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)seekTo:",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamC0P6seekToyySdF",
             "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P6seekToyySdF",
             "moduleName": "ItgMediastreamPlatformAdapter",
             "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
             "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
             "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -444,15 +424,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)getCurrentTime",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamC0P14getCurrentTimes5Int64VyF",
             "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P14getCurrentTimes5Int64VyF",
             "moduleName": "ItgMediastreamPlatformAdapter",
             "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
             "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
             "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -469,28 +446,22 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform(im)getDuration",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamC0P11getDurations5Int64VyF",
             "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P11getDurations5Int64VyF",
             "moduleName": "ItgMediastreamPlatformAdapter",
             "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
             "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatform>",
             "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
-        "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform",
+        "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamC0P",
         "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC0P",
         "moduleName": "ItgMediastreamPlatformAdapter",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
-          "AccessControl",
-          "ObjC"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -549,29 +520,22 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatformEventManager(im)listenToEventName:action:",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamC12EventManagerP8listenTo9eventName6actionySS_yyctF",
             "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC12EventManagerP8listenTo9eventName6actionySS_yyctF",
             "moduleName": "ItgMediastreamPlatformAdapter",
             "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatformEventManager>",
             "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatformEventManager>",
             "protocolReq": true,
-            "objc_name": "listenToEventName:action:",
-            "declAttributes": [
-              "ObjC"
-            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
-        "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatformEventManager",
+        "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamC12EventManagerP",
         "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC12EventManagerP",
         "moduleName": "ItgMediastreamPlatformAdapter",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
-          "AccessControl",
-          "ObjC"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -713,13 +677,13 @@
                 "kind": "TypeNominal",
                 "name": "ITGMediastreamPlatform",
                 "printedName": "any ItgMediastreamPlatformAdapter.ITGMediastreamPlatform",
-                "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatform"
+                "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamC0P"
               },
               {
                 "kind": "TypeNominal",
                 "name": "ITGMediastreamPlatformEventManager",
                 "printedName": "any ItgMediastreamPlatformAdapter.ITGMediastreamPlatformEventManager",
-                "usr": "c:@M@ItgMediastreamPlatformAdapter@objc(pl)ITGMediastreamPlatformEventManager"
+                "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamC12EventManagerP"
               },
               {
                 "kind": "TypeNominal",

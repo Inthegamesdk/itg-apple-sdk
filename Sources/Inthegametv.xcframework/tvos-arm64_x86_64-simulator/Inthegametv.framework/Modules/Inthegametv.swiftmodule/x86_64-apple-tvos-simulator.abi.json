@@ -33,6 +33,1594 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "AdMetadata",
+        "printedName": "AdMetadata",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "adTime",
+            "printedName": "adTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Inthegametv10AdMetadataV6adTimeSdvp",
+            "mangledName": "$s11Inthegametv10AdMetadataV6adTimeSdvp",
+            "moduleName": "Inthegametv",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv10AdMetadataV6adTimeSdvg",
+                "mangledName": "$s11Inthegametv10AdMetadataV6adTimeSdvg",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adDuration",
+            "printedName": "adDuration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Inthegametv10AdMetadataV10adDurationSdvp",
+            "mangledName": "$s11Inthegametv10AdMetadataV10adDurationSdvp",
+            "moduleName": "Inthegametv",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv10AdMetadataV10adDurationSdvg",
+                "mangledName": "$s11Inthegametv10AdMetadataV10adDurationSdvg",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adId",
+            "printedName": "adId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Inthegametv10AdMetadataV4adIdSSvp",
+            "mangledName": "$s11Inthegametv10AdMetadataV4adIdSSvp",
+            "moduleName": "Inthegametv",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv10AdMetadataV4adIdSSvg",
+                "mangledName": "$s11Inthegametv10AdMetadataV4adIdSSvg",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdMetadata",
+                "printedName": "Inthegametv.AdMetadata",
+                "usr": "s:11Inthegametv10AdMetadataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdMetadata",
+                "printedName": "Inthegametv.AdMetadata",
+                "usr": "s:11Inthegametv10AdMetadataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Inthegametv10AdMetadataV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11Inthegametv10AdMetadataV2eeoiySbAC_ACtFZ",
+            "moduleName": "Inthegametv",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adTime:adDuration:adId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdMetadata",
+                "printedName": "Inthegametv.AdMetadata",
+                "usr": "s:11Inthegametv10AdMetadataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11Inthegametv10AdMetadataV6adTime0D8Duration0D2IdACSd_SdSStcfc",
+            "mangledName": "$s11Inthegametv10AdMetadataV6adTime0D8Duration0D2IdACSd_SdSStcfc",
+            "moduleName": "Inthegametv",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdMetadata",
+                "printedName": "Inthegametv.AdMetadata",
+                "usr": "s:11Inthegametv10AdMetadataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11Inthegametv10AdMetadataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11Inthegametv10AdMetadataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Inthegametv",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11Inthegametv10AdMetadataV",
+        "mangledName": "$s11Inthegametv10AdMetadataV",
+        "moduleName": "Inthegametv",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ITGVideoState",
+        "printedName": "ITGVideoState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "videoDuration",
+            "printedName": "videoDuration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Inthegametv13ITGVideoStateV13videoDurationSdvp",
+            "mangledName": "$s11Inthegametv13ITGVideoStateV13videoDurationSdvp",
+            "moduleName": "Inthegametv",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv13ITGVideoStateV13videoDurationSdvg",
+                "mangledName": "$s11Inthegametv13ITGVideoStateV13videoDurationSdvg",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "videoTime",
+            "printedName": "videoTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Inthegametv13ITGVideoStateV9videoTimeSdvp",
+            "mangledName": "$s11Inthegametv13ITGVideoStateV9videoTimeSdvp",
+            "moduleName": "Inthegametv",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv13ITGVideoStateV9videoTimeSdvg",
+                "mangledName": "$s11Inthegametv13ITGVideoStateV9videoTimeSdvg",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "videoStatus",
+            "printedName": "videoStatus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGPlayerState",
+                "printedName": "Inthegametv.ITGPlayerState",
+                "usr": "s:11Inthegametv14ITGPlayerStateO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Inthegametv13ITGVideoStateV11videoStatusAA09ITGPlayerC0Ovp",
+            "mangledName": "$s11Inthegametv13ITGVideoStateV11videoStatusAA09ITGPlayerC0Ovp",
+            "moduleName": "Inthegametv",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGPlayerState",
+                    "printedName": "Inthegametv.ITGPlayerState",
+                    "usr": "s:11Inthegametv14ITGPlayerStateO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv13ITGVideoStateV11videoStatusAA09ITGPlayerC0Ovg",
+                "mangledName": "$s11Inthegametv13ITGVideoStateV11videoStatusAA09ITGPlayerC0Ovg",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "visibleContent",
+            "printedName": "visibleContent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGClientAppContent",
+                "printedName": "Inthegametv.ITGClientAppContent",
+                "usr": "s:11Inthegametv19ITGClientAppContentO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Inthegametv13ITGVideoStateV14visibleContentAA012ITGClientAppE0Ovp",
+            "mangledName": "$s11Inthegametv13ITGVideoStateV14visibleContentAA012ITGClientAppE0Ovp",
+            "moduleName": "Inthegametv",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGClientAppContent",
+                    "printedName": "Inthegametv.ITGClientAppContent",
+                    "usr": "s:11Inthegametv19ITGClientAppContentO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv13ITGVideoStateV14visibleContentAA012ITGClientAppE0Ovg",
+                "mangledName": "$s11Inthegametv13ITGVideoStateV14visibleContentAA012ITGClientAppE0Ovg",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adMetadata",
+            "printedName": "adMetadata",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Inthegametv.AdMetadata?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdMetadata",
+                    "printedName": "Inthegametv.AdMetadata",
+                    "usr": "s:11Inthegametv10AdMetadataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Inthegametv13ITGVideoStateV10adMetadataAA02AdE0VSgvp",
+            "mangledName": "$s11Inthegametv13ITGVideoStateV10adMetadataAA02AdE0VSgvp",
+            "moduleName": "Inthegametv",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Inthegametv.AdMetadata?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdMetadata",
+                        "printedName": "Inthegametv.AdMetadata",
+                        "usr": "s:11Inthegametv10AdMetadataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv13ITGVideoStateV10adMetadataAA02AdE0VSgvg",
+                "mangledName": "$s11Inthegametv13ITGVideoStateV10adMetadataAA02AdE0VSgvg",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGVideoState",
+                "printedName": "Inthegametv.ITGVideoState",
+                "usr": "s:11Inthegametv13ITGVideoStateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGVideoState",
+                "printedName": "Inthegametv.ITGVideoState",
+                "usr": "s:11Inthegametv13ITGVideoStateV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Inthegametv13ITGVideoStateV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11Inthegametv13ITGVideoStateV2eeoiySbAC_ACtFZ",
+            "moduleName": "Inthegametv",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(videoDuration:videoTime:videoStatus:visibleContent:adMetadata:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ITGVideoState",
+                "printedName": "Inthegametv.ITGVideoState",
+                "usr": "s:11Inthegametv13ITGVideoStateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGPlayerState",
+                "printedName": "Inthegametv.ITGPlayerState",
+                "usr": "s:11Inthegametv14ITGPlayerStateO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGClientAppContent",
+                "printedName": "Inthegametv.ITGClientAppContent",
+                "usr": "s:11Inthegametv19ITGClientAppContentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Inthegametv.AdMetadata?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdMetadata",
+                    "printedName": "Inthegametv.AdMetadata",
+                    "usr": "s:11Inthegametv10AdMetadataV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11Inthegametv13ITGVideoStateV13videoDuration0D4Time0D6Status14visibleContent10adMetadataACSd_SdAA09ITGPlayerC0OAA012ITGClientAppI0OAA02AdK0VSgtcfc",
+            "mangledName": "$s11Inthegametv13ITGVideoStateV13videoDuration0D4Time0D6Status14visibleContent10adMetadataACSd_SdAA09ITGPlayerC0OAA012ITGClientAppI0OAA02AdK0VSgtcfc",
+            "moduleName": "Inthegametv",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11Inthegametv13ITGVideoStateV",
+        "mangledName": "$s11Inthegametv13ITGVideoStateV",
+        "moduleName": "Inthegametv",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ITGAdEvent",
+        "printedName": "ITGAdEvent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "duration",
+            "printedName": "duration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Inthegametv10ITGAdEventV8durationSdvp",
+            "mangledName": "$s11Inthegametv10ITGAdEventV8durationSdvp",
+            "moduleName": "Inthegametv",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv10ITGAdEventV8durationSdvg",
+                "mangledName": "$s11Inthegametv10ITGAdEventV8durationSdvg",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv10ITGAdEventV8durationSdvs",
+                "mangledName": "$s11Inthegametv10ITGAdEventV8durationSdvs",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv10ITGAdEventV8durationSdvM",
+                "mangledName": "$s11Inthegametv10ITGAdEventV8durationSdvM",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "videoRect",
+            "printedName": "videoRect",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreFoundation.CGRect?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGRect",
+                    "printedName": "CoreFoundation.CGRect",
+                    "usr": "c:@S@CGRect"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Inthegametv10ITGAdEventV9videoRectSo6CGRectVSgvp",
+            "mangledName": "$s11Inthegametv10ITGAdEventV9videoRectSo6CGRectVSgvp",
+            "moduleName": "Inthegametv",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreFoundation.CGRect?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGRect",
+                        "printedName": "CoreFoundation.CGRect",
+                        "usr": "c:@S@CGRect"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv10ITGAdEventV9videoRectSo6CGRectVSgvg",
+                "mangledName": "$s11Inthegametv10ITGAdEventV9videoRectSo6CGRectVSgvg",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreFoundation.CGRect?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGRect",
+                        "printedName": "CoreFoundation.CGRect",
+                        "usr": "c:@S@CGRect"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv10ITGAdEventV9videoRectSo6CGRectVSgvs",
+                "mangledName": "$s11Inthegametv10ITGAdEventV9videoRectSo6CGRectVSgvs",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv10ITGAdEventV9videoRectSo6CGRectVSgvM",
+                "mangledName": "$s11Inthegametv10ITGAdEventV9videoRectSo6CGRectVSgvM",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adType",
+            "printedName": "adType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CreativeType",
+                "printedName": "Inthegametv.CreativeType",
+                "usr": "s:11Inthegametv12CreativeTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Inthegametv10ITGAdEventV6adTypeAA08CreativeE0Ovp",
+            "mangledName": "$s11Inthegametv10ITGAdEventV6adTypeAA08CreativeE0Ovp",
+            "moduleName": "Inthegametv",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CreativeType",
+                    "printedName": "Inthegametv.CreativeType",
+                    "usr": "s:11Inthegametv12CreativeTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv10ITGAdEventV6adTypeAA08CreativeE0Ovg",
+                "mangledName": "$s11Inthegametv10ITGAdEventV6adTypeAA08CreativeE0Ovg",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CreativeType",
+                    "printedName": "Inthegametv.CreativeType",
+                    "usr": "s:11Inthegametv12CreativeTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv10ITGAdEventV6adTypeAA08CreativeE0Ovs",
+                "mangledName": "$s11Inthegametv10ITGAdEventV6adTypeAA08CreativeE0Ovs",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv10ITGAdEventV6adTypeAA08CreativeE0OvM",
+                "mangledName": "$s11Inthegametv10ITGAdEventV6adTypeAA08CreativeE0OvM",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isInteractive",
+            "printedName": "isInteractive",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Inthegametv10ITGAdEventV13isInteractiveSbvp",
+            "mangledName": "$s11Inthegametv10ITGAdEventV13isInteractiveSbvp",
+            "moduleName": "Inthegametv",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv10ITGAdEventV13isInteractiveSbvg",
+                "mangledName": "$s11Inthegametv10ITGAdEventV13isInteractiveSbvg",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv10ITGAdEventV13isInteractiveSbvs",
+                "mangledName": "$s11Inthegametv10ITGAdEventV13isInteractiveSbvs",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv10ITGAdEventV13isInteractiveSbvM",
+                "mangledName": "$s11Inthegametv10ITGAdEventV13isInteractiveSbvM",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "flexiObject",
+            "printedName": "flexiObject",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Inthegametv10ITGAdEventV11flexiObjectSDySSypGvp",
+            "mangledName": "$s11Inthegametv10ITGAdEventV11flexiObjectSDySSypGvp",
+            "moduleName": "Inthegametv",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv10ITGAdEventV11flexiObjectSDySSypGvg",
+                "mangledName": "$s11Inthegametv10ITGAdEventV11flexiObjectSDySSypGvg",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv10ITGAdEventV11flexiObjectSDySSypGvs",
+                "mangledName": "$s11Inthegametv10ITGAdEventV11flexiObjectSDySSypGvs",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv10ITGAdEventV11flexiObjectSDySSypGvM",
+                "mangledName": "$s11Inthegametv10ITGAdEventV11flexiObjectSDySSypGvM",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11Inthegametv10ITGAdEventV",
+        "mangledName": "$s11Inthegametv10ITGAdEventV",
+        "moduleName": "Inthegametv",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ITGClientAppContent",
+        "printedName": "ITGClientAppContent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "ad",
+            "printedName": "ad",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Inthegametv.ITGClientAppContent.Type) -> Inthegametv.ITGClientAppContent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGClientAppContent",
+                    "printedName": "Inthegametv.ITGClientAppContent",
+                    "usr": "s:11Inthegametv19ITGClientAppContentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Inthegametv.ITGClientAppContent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGClientAppContent",
+                        "printedName": "Inthegametv.ITGClientAppContent",
+                        "usr": "s:11Inthegametv19ITGClientAppContentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11Inthegametv19ITGClientAppContentO2adyA2CmF",
+            "mangledName": "$s11Inthegametv19ITGClientAppContentO2adyA2CmF",
+            "moduleName": "Inthegametv"
+          },
+          {
+            "kind": "Var",
+            "name": "content",
+            "printedName": "content",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Inthegametv.ITGClientAppContent.Type) -> Inthegametv.ITGClientAppContent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGClientAppContent",
+                    "printedName": "Inthegametv.ITGClientAppContent",
+                    "usr": "s:11Inthegametv19ITGClientAppContentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Inthegametv.ITGClientAppContent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGClientAppContent",
+                        "printedName": "Inthegametv.ITGClientAppContent",
+                        "usr": "s:11Inthegametv19ITGClientAppContentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11Inthegametv19ITGClientAppContentO7contentyA2CmF",
+            "mangledName": "$s11Inthegametv19ITGClientAppContentO7contentyA2CmF",
+            "moduleName": "Inthegametv"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Inthegametv.ITGClientAppContent?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGClientAppContent",
+                    "printedName": "Inthegametv.ITGClientAppContent",
+                    "usr": "s:11Inthegametv19ITGClientAppContentO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11Inthegametv19ITGClientAppContentO8rawValueACSgSS_tcfc",
+            "mangledName": "$s11Inthegametv19ITGClientAppContentO8rawValueACSgSS_tcfc",
+            "moduleName": "Inthegametv",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Inthegametv19ITGClientAppContentO8rawValueSSvp",
+            "mangledName": "$s11Inthegametv19ITGClientAppContentO8rawValueSSvp",
+            "moduleName": "Inthegametv",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv19ITGClientAppContentO8rawValueSSvg",
+                "mangledName": "$s11Inthegametv19ITGClientAppContentO8rawValueSSvg",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11Inthegametv19ITGClientAppContentO",
+        "mangledName": "$s11Inthegametv19ITGClientAppContentO",
+        "moduleName": "Inthegametv",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ITGPlayerState",
+        "printedName": "ITGPlayerState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "playing",
+            "printedName": "playing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Inthegametv.ITGPlayerState.Type) -> Inthegametv.ITGPlayerState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGPlayerState",
+                    "printedName": "Inthegametv.ITGPlayerState",
+                    "usr": "s:11Inthegametv14ITGPlayerStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Inthegametv.ITGPlayerState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGPlayerState",
+                        "printedName": "Inthegametv.ITGPlayerState",
+                        "usr": "s:11Inthegametv14ITGPlayerStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11Inthegametv14ITGPlayerStateO7playingyA2CmF",
+            "mangledName": "$s11Inthegametv14ITGPlayerStateO7playingyA2CmF",
+            "moduleName": "Inthegametv"
+          },
+          {
+            "kind": "Var",
+            "name": "paused",
+            "printedName": "paused",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Inthegametv.ITGPlayerState.Type) -> Inthegametv.ITGPlayerState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ITGPlayerState",
+                    "printedName": "Inthegametv.ITGPlayerState",
+                    "usr": "s:11Inthegametv14ITGPlayerStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Inthegametv.ITGPlayerState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ITGPlayerState",
+                        "printedName": "Inthegametv.ITGPlayerState",
+                        "usr": "s:11Inthegametv14ITGPlayerStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11Inthegametv14ITGPlayerStateO6pausedyA2CmF",
+            "mangledName": "$s11Inthegametv14ITGPlayerStateO6pausedyA2CmF",
+            "moduleName": "Inthegametv"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGPlayerState",
+                "printedName": "Inthegametv.ITGPlayerState",
+                "usr": "s:11Inthegametv14ITGPlayerStateO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGPlayerState",
+                "printedName": "Inthegametv.ITGPlayerState",
+                "usr": "s:11Inthegametv14ITGPlayerStateO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Inthegametv14ITGPlayerStateO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11Inthegametv14ITGPlayerStateO2eeoiySbAC_ACtFZ",
+            "moduleName": "Inthegametv",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Inthegametv14ITGPlayerStateO9hashValueSivp",
+            "mangledName": "$s11Inthegametv14ITGPlayerStateO9hashValueSivp",
+            "moduleName": "Inthegametv",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Inthegametv14ITGPlayerStateO9hashValueSivg",
+                "mangledName": "$s11Inthegametv14ITGPlayerStateO9hashValueSivg",
+                "moduleName": "Inthegametv",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Inthegametv14ITGPlayerStateO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s11Inthegametv14ITGPlayerStateO4hash4intoys6HasherVz_tF",
+            "moduleName": "Inthegametv",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11Inthegametv14ITGPlayerStateO",
+        "mangledName": "$s11Inthegametv14ITGPlayerStateO",
+        "moduleName": "Inthegametv",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "User",
         "printedName": "User",
         "children": [
@@ -313,8 +1901,7 @@
         "mangledName": "$s11Inthegametv4UserV",
         "moduleName": "Inthegametv",
         "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -4327,1075 +5914,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "AdMetadata",
-        "printedName": "AdMetadata",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "adTime",
-            "printedName": "adTime",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11Inthegametv10AdMetadataV6adTimeSdvp",
-            "mangledName": "$s11Inthegametv10AdMetadataV6adTimeSdvp",
-            "moduleName": "Inthegametv",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11Inthegametv10AdMetadataV6adTimeSdvg",
-                "mangledName": "$s11Inthegametv10AdMetadataV6adTimeSdvg",
-                "moduleName": "Inthegametv",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "adDuration",
-            "printedName": "adDuration",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11Inthegametv10AdMetadataV10adDurationSdvp",
-            "mangledName": "$s11Inthegametv10AdMetadataV10adDurationSdvp",
-            "moduleName": "Inthegametv",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11Inthegametv10AdMetadataV10adDurationSdvg",
-                "mangledName": "$s11Inthegametv10AdMetadataV10adDurationSdvg",
-                "moduleName": "Inthegametv",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "adId",
-            "printedName": "adId",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11Inthegametv10AdMetadataV4adIdSSvp",
-            "mangledName": "$s11Inthegametv10AdMetadataV4adIdSSvp",
-            "moduleName": "Inthegametv",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11Inthegametv10AdMetadataV4adIdSSvg",
-                "mangledName": "$s11Inthegametv10AdMetadataV4adIdSSvg",
-                "moduleName": "Inthegametv",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AdMetadata",
-                "printedName": "Inthegametv.AdMetadata",
-                "usr": "s:11Inthegametv10AdMetadataV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AdMetadata",
-                "printedName": "Inthegametv.AdMetadata",
-                "usr": "s:11Inthegametv10AdMetadataV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11Inthegametv10AdMetadataV2eeoiySbAC_ACtFZ",
-            "mangledName": "$s11Inthegametv10AdMetadataV2eeoiySbAC_ACtFZ",
-            "moduleName": "Inthegametv",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(adTime:adDuration:adId:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AdMetadata",
-                "printedName": "Inthegametv.AdMetadata",
-                "usr": "s:11Inthegametv10AdMetadataV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:11Inthegametv10AdMetadataV6adTime0D8Duration0D2IdACSd_SdSStcfc",
-            "mangledName": "$s11Inthegametv10AdMetadataV6adTime0D8Duration0D2IdACSd_SdSStcfc",
-            "moduleName": "Inthegametv",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AdMetadata",
-                "printedName": "Inthegametv.AdMetadata",
-                "usr": "s:11Inthegametv10AdMetadataV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:11Inthegametv10AdMetadataV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s11Inthegametv10AdMetadataV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "Inthegametv",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:11Inthegametv10AdMetadataV",
-        "mangledName": "$s11Inthegametv10AdMetadataV",
-        "moduleName": "Inthegametv",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "ITGVideoState",
-        "printedName": "ITGVideoState",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "videoDuration",
-            "printedName": "videoDuration",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11Inthegametv13ITGVideoStateV13videoDurationSdvp",
-            "mangledName": "$s11Inthegametv13ITGVideoStateV13videoDurationSdvp",
-            "moduleName": "Inthegametv",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11Inthegametv13ITGVideoStateV13videoDurationSdvg",
-                "mangledName": "$s11Inthegametv13ITGVideoStateV13videoDurationSdvg",
-                "moduleName": "Inthegametv",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "videoTime",
-            "printedName": "videoTime",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11Inthegametv13ITGVideoStateV9videoTimeSdvp",
-            "mangledName": "$s11Inthegametv13ITGVideoStateV9videoTimeSdvp",
-            "moduleName": "Inthegametv",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11Inthegametv13ITGVideoStateV9videoTimeSdvg",
-                "mangledName": "$s11Inthegametv13ITGVideoStateV9videoTimeSdvg",
-                "moduleName": "Inthegametv",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "videoStatus",
-            "printedName": "videoStatus",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ITGPlayerState",
-                "printedName": "Inthegametv.ITGPlayerState",
-                "usr": "s:11Inthegametv14ITGPlayerStateO"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11Inthegametv13ITGVideoStateV11videoStatusAA09ITGPlayerC0Ovp",
-            "mangledName": "$s11Inthegametv13ITGVideoStateV11videoStatusAA09ITGPlayerC0Ovp",
-            "moduleName": "Inthegametv",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ITGPlayerState",
-                    "printedName": "Inthegametv.ITGPlayerState",
-                    "usr": "s:11Inthegametv14ITGPlayerStateO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11Inthegametv13ITGVideoStateV11videoStatusAA09ITGPlayerC0Ovg",
-                "mangledName": "$s11Inthegametv13ITGVideoStateV11videoStatusAA09ITGPlayerC0Ovg",
-                "moduleName": "Inthegametv",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "visibleContent",
-            "printedName": "visibleContent",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ITGClientAppContent",
-                "printedName": "Inthegametv.ITGClientAppContent",
-                "usr": "s:11Inthegametv19ITGClientAppContentO"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11Inthegametv13ITGVideoStateV14visibleContentAA012ITGClientAppE0Ovp",
-            "mangledName": "$s11Inthegametv13ITGVideoStateV14visibleContentAA012ITGClientAppE0Ovp",
-            "moduleName": "Inthegametv",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ITGClientAppContent",
-                    "printedName": "Inthegametv.ITGClientAppContent",
-                    "usr": "s:11Inthegametv19ITGClientAppContentO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11Inthegametv13ITGVideoStateV14visibleContentAA012ITGClientAppE0Ovg",
-                "mangledName": "$s11Inthegametv13ITGVideoStateV14visibleContentAA012ITGClientAppE0Ovg",
-                "moduleName": "Inthegametv",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "adMetadata",
-            "printedName": "adMetadata",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Inthegametv.AdMetadata?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdMetadata",
-                    "printedName": "Inthegametv.AdMetadata",
-                    "usr": "s:11Inthegametv10AdMetadataV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11Inthegametv13ITGVideoStateV10adMetadataAA02AdE0VSgvp",
-            "mangledName": "$s11Inthegametv13ITGVideoStateV10adMetadataAA02AdE0VSgvp",
-            "moduleName": "Inthegametv",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Inthegametv.AdMetadata?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdMetadata",
-                        "printedName": "Inthegametv.AdMetadata",
-                        "usr": "s:11Inthegametv10AdMetadataV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11Inthegametv13ITGVideoStateV10adMetadataAA02AdE0VSgvg",
-                "mangledName": "$s11Inthegametv13ITGVideoStateV10adMetadataAA02AdE0VSgvg",
-                "moduleName": "Inthegametv",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ITGVideoState",
-                "printedName": "Inthegametv.ITGVideoState",
-                "usr": "s:11Inthegametv13ITGVideoStateV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ITGVideoState",
-                "printedName": "Inthegametv.ITGVideoState",
-                "usr": "s:11Inthegametv13ITGVideoStateV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11Inthegametv13ITGVideoStateV2eeoiySbAC_ACtFZ",
-            "mangledName": "$s11Inthegametv13ITGVideoStateV2eeoiySbAC_ACtFZ",
-            "moduleName": "Inthegametv",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(videoDuration:videoTime:videoStatus:visibleContent:adMetadata:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ITGVideoState",
-                "printedName": "Inthegametv.ITGVideoState",
-                "usr": "s:11Inthegametv13ITGVideoStateV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ITGPlayerState",
-                "printedName": "Inthegametv.ITGPlayerState",
-                "usr": "s:11Inthegametv14ITGPlayerStateO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ITGClientAppContent",
-                "printedName": "Inthegametv.ITGClientAppContent",
-                "usr": "s:11Inthegametv19ITGClientAppContentO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Inthegametv.AdMetadata?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdMetadata",
-                    "printedName": "Inthegametv.AdMetadata",
-                    "usr": "s:11Inthegametv10AdMetadataV"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:11Inthegametv13ITGVideoStateV13videoDuration0D4Time0D6Status14visibleContent10adMetadataACSd_SdAA09ITGPlayerC0OAA012ITGClientAppI0OAA02AdK0VSgtcfc",
-            "mangledName": "$s11Inthegametv13ITGVideoStateV13videoDuration0D4Time0D6Status14visibleContent10adMetadataACSd_SdAA09ITGPlayerC0OAA012ITGClientAppI0OAA02AdK0VSgtcfc",
-            "moduleName": "Inthegametv",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:11Inthegametv13ITGVideoStateV",
-        "mangledName": "$s11Inthegametv13ITGVideoStateV",
-        "moduleName": "Inthegametv",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "ITGClientAppContent",
-        "printedName": "ITGClientAppContent",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "ad",
-            "printedName": "ad",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Inthegametv.ITGClientAppContent.Type) -> Inthegametv.ITGClientAppContent",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ITGClientAppContent",
-                    "printedName": "Inthegametv.ITGClientAppContent",
-                    "usr": "s:11Inthegametv19ITGClientAppContentO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "Inthegametv.ITGClientAppContent.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ITGClientAppContent",
-                        "printedName": "Inthegametv.ITGClientAppContent",
-                        "usr": "s:11Inthegametv19ITGClientAppContentO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:11Inthegametv19ITGClientAppContentO2adyA2CmF",
-            "mangledName": "$s11Inthegametv19ITGClientAppContentO2adyA2CmF",
-            "moduleName": "Inthegametv"
-          },
-          {
-            "kind": "Var",
-            "name": "content",
-            "printedName": "content",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Inthegametv.ITGClientAppContent.Type) -> Inthegametv.ITGClientAppContent",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ITGClientAppContent",
-                    "printedName": "Inthegametv.ITGClientAppContent",
-                    "usr": "s:11Inthegametv19ITGClientAppContentO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "Inthegametv.ITGClientAppContent.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ITGClientAppContent",
-                        "printedName": "Inthegametv.ITGClientAppContent",
-                        "usr": "s:11Inthegametv19ITGClientAppContentO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:11Inthegametv19ITGClientAppContentO7contentyA2CmF",
-            "mangledName": "$s11Inthegametv19ITGClientAppContentO7contentyA2CmF",
-            "moduleName": "Inthegametv"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Inthegametv.ITGClientAppContent?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ITGClientAppContent",
-                    "printedName": "Inthegametv.ITGClientAppContent",
-                    "usr": "s:11Inthegametv19ITGClientAppContentO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:11Inthegametv19ITGClientAppContentO8rawValueACSgSS_tcfc",
-            "mangledName": "$s11Inthegametv19ITGClientAppContentO8rawValueACSgSS_tcfc",
-            "moduleName": "Inthegametv",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11Inthegametv19ITGClientAppContentO8rawValueSSvp",
-            "mangledName": "$s11Inthegametv19ITGClientAppContentO8rawValueSSvp",
-            "moduleName": "Inthegametv",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11Inthegametv19ITGClientAppContentO8rawValueSSvg",
-                "mangledName": "$s11Inthegametv19ITGClientAppContentO8rawValueSSvg",
-                "moduleName": "Inthegametv",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:11Inthegametv19ITGClientAppContentO",
-        "mangledName": "$s11Inthegametv19ITGClientAppContentO",
-        "moduleName": "Inthegametv",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "enumRawTypeName": "String",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "ITGPlayerState",
-        "printedName": "ITGPlayerState",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "playing",
-            "printedName": "playing",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Inthegametv.ITGPlayerState.Type) -> Inthegametv.ITGPlayerState",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ITGPlayerState",
-                    "printedName": "Inthegametv.ITGPlayerState",
-                    "usr": "s:11Inthegametv14ITGPlayerStateO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "Inthegametv.ITGPlayerState.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ITGPlayerState",
-                        "printedName": "Inthegametv.ITGPlayerState",
-                        "usr": "s:11Inthegametv14ITGPlayerStateO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:11Inthegametv14ITGPlayerStateO7playingyA2CmF",
-            "mangledName": "$s11Inthegametv14ITGPlayerStateO7playingyA2CmF",
-            "moduleName": "Inthegametv"
-          },
-          {
-            "kind": "Var",
-            "name": "paused",
-            "printedName": "paused",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Inthegametv.ITGPlayerState.Type) -> Inthegametv.ITGPlayerState",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ITGPlayerState",
-                    "printedName": "Inthegametv.ITGPlayerState",
-                    "usr": "s:11Inthegametv14ITGPlayerStateO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "Inthegametv.ITGPlayerState.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ITGPlayerState",
-                        "printedName": "Inthegametv.ITGPlayerState",
-                        "usr": "s:11Inthegametv14ITGPlayerStateO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:11Inthegametv14ITGPlayerStateO6pausedyA2CmF",
-            "mangledName": "$s11Inthegametv14ITGPlayerStateO6pausedyA2CmF",
-            "moduleName": "Inthegametv"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ITGPlayerState",
-                "printedName": "Inthegametv.ITGPlayerState",
-                "usr": "s:11Inthegametv14ITGPlayerStateO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ITGPlayerState",
-                "printedName": "Inthegametv.ITGPlayerState",
-                "usr": "s:11Inthegametv14ITGPlayerStateO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11Inthegametv14ITGPlayerStateO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s11Inthegametv14ITGPlayerStateO2eeoiySbAC_ACtFZ",
-            "moduleName": "Inthegametv",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11Inthegametv14ITGPlayerStateO9hashValueSivp",
-            "mangledName": "$s11Inthegametv14ITGPlayerStateO9hashValueSivp",
-            "moduleName": "Inthegametv",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11Inthegametv14ITGPlayerStateO9hashValueSivg",
-                "mangledName": "$s11Inthegametv14ITGPlayerStateO9hashValueSivg",
-                "moduleName": "Inthegametv",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11Inthegametv14ITGPlayerStateO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s11Inthegametv14ITGPlayerStateO4hash4intoys6HasherVz_tF",
-            "moduleName": "Inthegametv",
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:11Inthegametv14ITGPlayerStateO",
-        "mangledName": "$s11Inthegametv14ITGPlayerStateO",
-        "moduleName": "Inthegametv",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "ITGOverlayDelegate",
         "printedName": "ITGOverlayDelegate",
         "children": [
@@ -5685,6 +6203,60 @@
             "declKind": "Func",
             "usr": "s:11Inthegametv18ITGOverlayDelegateP24itgRequestedVideoGravityyySo07AVLayerfG0aSgF",
             "mangledName": "$s11Inthegametv18ITGOverlayDelegateP24itgRequestedVideoGravityyySo07AVLayerfG0aSgF",
+            "moduleName": "Inthegametv",
+            "genericSig": "<τ_0_0 where τ_0_0 : Inthegametv.ITGOverlayDelegate>",
+            "sugared_genericSig": "<Self where Self : Inthegametv.ITGOverlayDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "itgWillPresentAd",
+            "printedName": "itgWillPresentAd(event:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGAdEvent",
+                "printedName": "Inthegametv.ITGAdEvent",
+                "usr": "s:11Inthegametv10ITGAdEventV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Inthegametv18ITGOverlayDelegateP16itgWillPresentAd5eventyAA10ITGAdEventV_tF",
+            "mangledName": "$s11Inthegametv18ITGOverlayDelegateP16itgWillPresentAd5eventyAA10ITGAdEventV_tF",
+            "moduleName": "Inthegametv",
+            "genericSig": "<τ_0_0 where τ_0_0 : Inthegametv.ITGOverlayDelegate>",
+            "sugared_genericSig": "<Self where Self : Inthegametv.ITGOverlayDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "itgDidFinishPresentingAd",
+            "printedName": "itgDidFinishPresentingAd(event:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ITGAdEvent",
+                "printedName": "Inthegametv.ITGAdEvent",
+                "usr": "s:11Inthegametv10ITGAdEventV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Inthegametv18ITGOverlayDelegateP24itgDidFinishPresentingAd5eventyAA10ITGAdEventV_tF",
+            "mangledName": "$s11Inthegametv18ITGOverlayDelegateP24itgDidFinishPresentingAd5eventyAA10ITGAdEventV_tF",
             "moduleName": "Inthegametv",
             "genericSig": "<τ_0_0 where τ_0_0 : Inthegametv.ITGOverlayDelegate>",
             "sugared_genericSig": "<Self where Self : Inthegametv.ITGOverlayDelegate>",
@@ -6346,12 +6918,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : any Swift.Hashable]?",
+                "printedName": "[Swift.String : Any]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : any Swift.Hashable]",
+                    "printedName": "[Swift.String : Any]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -6361,9 +6933,8 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "Hashable",
-                        "printedName": "any Swift.Hashable",
-                        "usr": "s:SH"
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
                       }
                     ],
                     "usr": "s:SD"
@@ -6404,8 +6975,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11Inthegametv14ITGOverlayViewC4load11channelSlug15virtualChannels9accountId11environment8delegate07foreignJ04vars11adsMetadata8showLogsySS_SaySSGSgSSAA14ITGEnvironmentVAA0B8Delegate_pSgSSSgSDySSSH_pGSgSayAA02AdP0VGSgSbtF",
-            "mangledName": "$s11Inthegametv14ITGOverlayViewC4load11channelSlug15virtualChannels9accountId11environment8delegate07foreignJ04vars11adsMetadata8showLogsySS_SaySSGSgSSAA14ITGEnvironmentVAA0B8Delegate_pSgSSSgSDySSSH_pGSgSayAA02AdP0VGSgSbtF",
+            "usr": "s:11Inthegametv14ITGOverlayViewC4load11channelSlug15virtualChannels9accountId11environment8delegate07foreignJ04vars11adsMetadata8showLogsySS_SaySSGSgSSAA14ITGEnvironmentVAA0B8Delegate_pSgSSSgSDySSypGSgSayAA02AdP0VGSgSbtF",
+            "mangledName": "$s11Inthegametv14ITGOverlayViewC4load11channelSlug15virtualChannels9accountId11environment8delegate07foreignJ04vars11adsMetadata8showLogsySS_SaySSGSgSSAA14ITGEnvironmentVAA0B8Delegate_pSgSSSgSDySSypGSgSayAA02AdP0VGSgSbtF",
             "moduleName": "Inthegametv",
             "declAttributes": [
               "Preconcurrency",
@@ -12896,42 +13467,161 @@
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 2344,
+      "offset": 2584,
+      "length": 32,
+      "value": "\"{vars.internal.user.foreignId}\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 2635,
+      "length": 25,
+      "value": "\"{vars.internal.user.id}\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 2684,
+      "length": 30,
+      "value": "\"{vars.internal.video.length}\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 2736,
+      "length": 35,
+      "value": "\"{vars.internal.video.currentTime}\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 2795,
+      "length": 30,
+      "value": "\"{vars.internal.screen.width}\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 2850,
+      "length": 31,
+      "value": "\"{vars.internal.screen.height}\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 2905,
+      "length": 30,
+      "value": "\"{vars.internal.channel.name}\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 2959,
+      "length": 30,
+      "value": "\"{vars.internal.channel.slug}\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 3012,
+      "length": 29,
+      "value": "\"{vars.internal.sdk.version}\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 3059,
+      "length": 23,
+      "value": "\"{vars.internal.token}\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 3101,
+      "length": 15,
+      "value": "\"{screenWidth}\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 3136,
+      "length": 16,
+      "value": "\"{screenHeight}\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 3170,
+      "length": 9,
+      "value": "\"{width}\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 3198,
+      "length": 10,
+      "value": "\"{height}\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 3227,
+      "length": 10,
+      "value": "\"{device}\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 3260,
+      "length": 26,
+      "value": "\"{vars.flexi.campaignId} \""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 3310,
+      "length": 29,
+      "value": "\"{vars.internal.orientation}\""
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 5255,
       "length": 14,
       "value": "\"split_screen\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "BooleanLiteral",
-      "offset": 8779,
+      "offset": 11690,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 18760,
+      "offset": 21671,
       "length": 4,
       "value": "\"ok\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "Array",
-      "offset": 18869,
+      "offset": 21780,
       "length": 153,
       "value": "[\"16:9\", \"9:16\", \"4:3\", \"2:1\", \"1:1\", \"22:9\", \"9:22\", \"21:9\", \"9:21\", \"20:9\", \"9:20\", \"19:9\", \"9:19\", \"19.5:9\", \"9:19.5\", \"18:9\", \"9:18\", \"17:9\", \"9:17\"]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "Array",
-      "offset": 20728,
+      "offset": 23639,
       "length": 34,
       "value": "[\"SD\", \"HD\", \"FULLHD\", \"4K\", \"8K\"]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "Dictionary",
-      "offset": 20825,
+      "offset": 23736,
       "length": 271,
       "value": "[(\"SD\", \"720x480\"), (\"HD\", \"1280x720\"), (\"FULLHD\", \"1920x1080\"), (\"FHD\", \"1920x1080\"), (\"4K\", \"3840x2160\"), (\"8K\", \"7680x4320\")]"
     },
@@ -13560,337 +14250,218 @@
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 2074,
-      "length": 32,
-      "value": "\"{vars.internal.user.foreignId}\""
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 2125,
-      "length": 25,
-      "value": "\"{vars.internal.user.id}\""
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 2174,
-      "length": 30,
-      "value": "\"{vars.internal.video.length}\""
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 2226,
-      "length": 35,
-      "value": "\"{vars.internal.video.currentTime}\""
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 2285,
-      "length": 30,
-      "value": "\"{vars.internal.screen.width}\""
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 2340,
-      "length": 31,
-      "value": "\"{vars.internal.screen.height}\""
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 2395,
-      "length": 30,
-      "value": "\"{vars.internal.channel.name}\""
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 2449,
-      "length": 30,
-      "value": "\"{vars.internal.channel.slug}\""
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 2502,
-      "length": 29,
-      "value": "\"{vars.internal.sdk.version}\""
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 2549,
-      "length": 23,
-      "value": "\"{vars.internal.token}\""
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 2591,
-      "length": 15,
-      "value": "\"{screenWidth}\""
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 2626,
-      "length": 16,
-      "value": "\"{screenHeight}\""
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 2660,
-      "length": 9,
-      "value": "\"{width}\""
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 2688,
-      "length": 10,
-      "value": "\"{height}\""
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 2717,
-      "length": 10,
-      "value": "\"{device}\""
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 2750,
-      "length": 26,
-      "value": "\"{vars.flexi.campaignId} \""
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "StringLiteral",
-      "offset": 2800,
-      "length": 29,
-      "value": "\"{vars.internal.orientation}\""
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "FloatLiteral",
-      "offset": 3577,
+      "offset": 954,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3636,
+      "offset": 1013,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 3727,
+      "offset": 1104,
       "length": 176,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 3779,
+      "offset": 1156,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 3820,
+      "offset": 1197,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 3872,
+      "offset": 1249,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 3902,
+      "offset": 1279,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 4251,
+      "offset": 1628,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4387,
+      "offset": 1764,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4423,
+      "offset": 1800,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 5446,
+      "offset": 2823,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Dictionary",
-      "offset": 5606,
+      "offset": 2983,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 5659,
+      "offset": 3036,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 5821,
+      "offset": 3198,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 5879,
+      "offset": 3256,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 5929,
+      "offset": 3306,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6155,
+      "offset": 3523,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6169,
+      "offset": 3537,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 6366,
+      "offset": 3734,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 6416,
+      "offset": 3784,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 6466,
+      "offset": 3834,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 6519,
+      "offset": 3887,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 8190,
+      "offset": 5558,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8417,
+      "offset": 5776,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9894,
+      "offset": 7253,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10394,
+      "offset": 7753,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10419,
+      "offset": 7778,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 20345,
+      "offset": 17762,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 20369,
+      "offset": 17786,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 34829,
+      "offset": 32246,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 45715,
+      "offset": 43444,
       "length": 5,
       "value": "false"
     },
@@ -14247,28 +14818,28 @@
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/FlexiModels.swift",
       "kind": "StringLiteral",
-      "offset": 24141,
+      "offset": 24270,
       "length": 23,
       "value": "\"FlexiAutoCloseTrigger\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/FlexiModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 42089,
+      "offset": 42218,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/FlexiModels.swift",
       "kind": "StringLiteral",
-      "offset": 52907,
+      "offset": 53036,
       "length": 18,
       "value": "\"align-horizontal\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/FlexiModels.swift",
       "kind": "StringLiteral",
-      "offset": 52955,
+      "offset": 53084,
       "length": 16,
       "value": "\"align-vertical\""
     },

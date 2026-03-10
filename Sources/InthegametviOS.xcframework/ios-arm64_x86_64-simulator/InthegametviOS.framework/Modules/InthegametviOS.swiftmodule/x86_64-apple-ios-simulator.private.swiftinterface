@@ -16,6 +16,52 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public struct AdMetadata : Swift.Equatable, Swift.Decodable {
+  public let adTime: Foundation.TimeInterval
+  public let adDuration: Foundation.TimeInterval
+  public let adId: Swift.String
+  public static func == (lhs: InthegametviOS.AdMetadata, rhs: InthegametviOS.AdMetadata) -> Swift.Bool
+  public init(adTime: Foundation.TimeInterval, adDuration: Foundation.TimeInterval, adId: Swift.String)
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ITGVideoState : Swift.Equatable {
+  public let videoDuration: Foundation.TimeInterval
+  public let videoTime: Foundation.TimeInterval
+  public let videoStatus: InthegametviOS.ITGPlayerState
+  public let visibleContent: InthegametviOS.ITGClientAppContent
+  public let adMetadata: InthegametviOS.AdMetadata?
+  public static func == (lhs: InthegametviOS.ITGVideoState, rhs: InthegametviOS.ITGVideoState) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(videoDuration: Foundation.TimeInterval, videoTime: Foundation.TimeInterval, videoStatus: InthegametviOS.ITGPlayerState, visibleContent: InthegametviOS.ITGClientAppContent, adMetadata: InthegametviOS.AdMetadata? = nil)
+  #endif
+}
+public struct ITGAdEvent {
+  public var duration: Swift.Double
+  public var videoRect: CoreFoundation.CGRect?
+  public var adType: InthegametviOS.CreativeType
+  public var isInteractive: Swift.Bool
+  public var flexiObject: [Swift.String : Any]
+}
+public enum ITGClientAppContent : Swift.String {
+  case ad
+  case content
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ITGPlayerState {
+  case playing
+  case paused
+  public static func == (a: InthegametviOS.ITGPlayerState, b: InthegametviOS.ITGPlayerState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public struct User : Swift.Codable {
   public var id: Swift.String?
   public var foreignId: Swift.String?
@@ -130,45 +176,6 @@ extension UIKit.UIDevice {
 extension InthegametviOS.ITGStorketHelper : Storket.StorketDelegate {
   public func didReceive(messages: [Storket.StorketMessage])
 }
-public struct AdMetadata : Swift.Equatable, Swift.Decodable {
-  public let adTime: Foundation.TimeInterval
-  public let adDuration: Foundation.TimeInterval
-  public let adId: Swift.String
-  public static func == (lhs: InthegametviOS.AdMetadata, rhs: InthegametviOS.AdMetadata) -> Swift.Bool
-  public init(adTime: Foundation.TimeInterval, adDuration: Foundation.TimeInterval, adId: Swift.String)
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct ITGVideoState : Swift.Equatable {
-  public let videoDuration: Foundation.TimeInterval
-  public let videoTime: Foundation.TimeInterval
-  public let videoStatus: InthegametviOS.ITGPlayerState
-  public let visibleContent: InthegametviOS.ITGClientAppContent
-  public let adMetadata: InthegametviOS.AdMetadata?
-  public static func == (lhs: InthegametviOS.ITGVideoState, rhs: InthegametviOS.ITGVideoState) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(videoDuration: Foundation.TimeInterval, videoTime: Foundation.TimeInterval, videoStatus: InthegametviOS.ITGPlayerState, visibleContent: InthegametviOS.ITGClientAppContent, adMetadata: InthegametviOS.AdMetadata? = nil)
-  #endif
-}
-public enum ITGClientAppContent : Swift.String {
-  case ad
-  case content
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.String)
-  #endif
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public enum ITGPlayerState {
-  case playing
-  case paused
-  public static func == (a: InthegametviOS.ITGPlayerState, b: InthegametviOS.ITGPlayerState) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
 public protocol ITGOverlayDelegate : AnyObject {
   func itgDidLoadChannelInfo(_ channelMeta: InthegametviOS.ChannelMeta)
   #if compiler(>=5.3) && $NonescapableTypes
@@ -187,6 +194,8 @@ public protocol ITGOverlayDelegate : AnyObject {
   #if compiler(>=5.3) && $NonescapableTypes
   func itgRequestedVideoGravity(_ videoGravity: AVFoundation.AVLayerVideoGravity?)
   #endif
+  func itgWillPresentAd(event: InthegametviOS.ITGAdEvent)
+  func itgDidFinishPresentingAd(event: InthegametviOS.ITGAdEvent)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class ITGOverlayView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency public static var overlayVersion: Swift.String
@@ -205,7 +214,7 @@ public protocol ITGOverlayDelegate : AnyObject {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency public func load(channelSlug: Swift.String, virtualChannels: [Swift.String]? = [], accountId: Swift.String, environment: InthegametviOS.ITGEnvironment = ITGEnvironment.defaultEnvironment, delegate: (any InthegametviOS.ITGOverlayDelegate)?, foreignId: Swift.String?, vars: [Swift.String : any Swift.Hashable]? = nil, adsMetadata: [InthegametviOS.AdMetadata]? = nil, showLogs: Swift.Bool = false)
+  @_Concurrency.MainActor @preconcurrency public func load(channelSlug: Swift.String, virtualChannels: [Swift.String]? = [], accountId: Swift.String, environment: InthegametviOS.ITGEnvironment = ITGEnvironment.defaultEnvironment, delegate: (any InthegametviOS.ITGOverlayDelegate)?, foreignId: Swift.String?, vars: [Swift.String : Any]? = nil, adsMetadata: [InthegametviOS.AdMetadata]? = nil, showLogs: Swift.Bool = false)
   #endif
   @_Concurrency.MainActor @preconcurrency public func mute(_ mute: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency public func block(_ block: Swift.Bool, includePauseAd: Swift.Bool)
@@ -427,6 +436,11 @@ extension Foundation.URL {
   }
   public func isWebP(ignoringFileExtension: Swift.Bool = false) -> Swift.Bool
 }
+extension InthegametviOS.ITGClientAppContent : Swift.Equatable {}
+extension InthegametviOS.ITGClientAppContent : Swift.Hashable {}
+extension InthegametviOS.ITGClientAppContent : Swift.RawRepresentable {}
+extension InthegametviOS.ITGPlayerState : Swift.Equatable {}
+extension InthegametviOS.ITGPlayerState : Swift.Hashable {}
 extension InthegametviOS.CreativeType : Swift.Equatable {}
 extension InthegametviOS.CreativeType : Swift.Hashable {}
 extension InthegametviOS.CreativeType : Swift.RawRepresentable {}
@@ -436,11 +450,6 @@ extension InthegametviOS.AnalyticsEventType : Swift.RawRepresentable {}
 extension InthegametviOS.AnalyticsParent : Swift.Equatable {}
 extension InthegametviOS.AnalyticsParent : Swift.Hashable {}
 extension InthegametviOS.AnalyticsParent : Swift.RawRepresentable {}
-extension InthegametviOS.ITGClientAppContent : Swift.Equatable {}
-extension InthegametviOS.ITGClientAppContent : Swift.Hashable {}
-extension InthegametviOS.ITGClientAppContent : Swift.RawRepresentable {}
-extension InthegametviOS.ITGPlayerState : Swift.Equatable {}
-extension InthegametviOS.ITGPlayerState : Swift.Hashable {}
 extension InthegametviOS.WebPDecodingError : Swift.Equatable {}
 extension InthegametviOS.WebPDecodingError : Swift.Hashable {}
 extension InthegametviOS.WebPDecodingError : Swift.RawRepresentable {}
