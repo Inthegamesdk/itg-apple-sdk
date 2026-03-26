@@ -39,46 +39,9 @@
             "printedName": "Coordinator",
             "children": [
               {
-                "kind": "Function",
-                "name": "==",
-                "printedName": "==(_:_:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Coordinator",
-                    "printedName": "ItgOverlayViewSwiftUI.ITGOverlayViewSwiftUI<τ_0_0>.Coordinator",
-                    "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Coordinator",
-                    "printedName": "ItgOverlayViewSwiftUI.ITGOverlayViewSwiftUI<τ_0_0>.Coordinator",
-                    "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC2eeoiySbAEyx_G_AGtFZ",
-                "mangledName": "$s21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC2eeoiySbAEyx_G_AGtFZ",
-                "moduleName": "ItgOverlayViewSwiftUI",
-                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
-                "static": true,
-                "declAttributes": [
-                  "Final",
-                  "AccessControl"
-                ],
-                "funcSelfKind": "NonMutating"
-              },
-              {
                 "kind": "Constructor",
                 "name": "init",
-                "printedName": "init(channelSlug:virtualChannels:accountId:environment:foreignId:vars:showLogs:onItgDidLoadChannelInfo:onItgRequestedVideoStateChange:onItgRequestedFocusUpdate:onItgRequestedVideoRectChange:onItgReceivedDeeplink:onItgDidProcessAnalyticEvent:onItgDidUpdateUserState:onItgRequestedVideoSoundLevel:onItgRequestedVideoGravity:onItgWillPresentAd:onItgDidFinishPresentingAd:)",
+                "printedName": "init(channelSlug:virtualChannels:accountId:environment:foreignId:vars:adsMetadata:showLogs:onItgDidLoadChannelInfo:onItgRequestedVideoStateChange:onItgRequestedFocusUpdate:onItgRequestedVideoRectChange:onItgReceivedDeeplink:onItgDidProcessAnalyticEvent:onItgDidUpdateUserState:onItgRequestedVideoSoundLevel:onItgRequestedVideoGravity:onItgWillPresentAd:onItgDidFinishPresentingAd:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -166,6 +129,29 @@
                         "usr": "s:SD"
                       }
                     ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Inthegametv.AdMetadata]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Inthegametv.AdMetadata]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AdMetadata",
+                            "printedName": "Inthegametv.AdMetadata",
+                            "usr": "s:11Inthegametv10AdMetadataV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "hasDefaultArg": true,
                     "usr": "s:Sq"
                   },
                   {
@@ -477,8 +463,8 @@
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC11channelSlug15virtualChannels9accountId11environment07foreignM04vars8showLogs02onA18DidLoadChannelInfo0sA25RequestedVideoStateChange0saX11FocusUpdate0saxY10RectChange0sA16ReceivedDeeplink0saT20ProcessAnalyticEvent0sat10UpdateUserZ00saxY10SoundLevel0saxY7Gravity0sA13WillPresentAd0saT18FinishPresentingAdAEyx_GSS_SaySSGSgSS11Inthegametv14ITGEnvironmentVSSSgSDySSSH_pGSgSbyA_0V4MetaVcSgyA_09ITGPlayerZ0O_SdSgtcySbcySo6CGRectVSg_SdtcySScSgyA_09AnalyticsW0V_A_18AnalyticsEventTypeOtcSgyA_4UserVcSgySfSgcySo07AVLayerY7GravityaSgcyA_10ITGAdEventVcyA28_ctcfc",
-                "mangledName": "$s21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC11channelSlug15virtualChannels9accountId11environment07foreignM04vars8showLogs02onA18DidLoadChannelInfo0sA25RequestedVideoStateChange0saX11FocusUpdate0saxY10RectChange0sA16ReceivedDeeplink0saT20ProcessAnalyticEvent0sat10UpdateUserZ00saxY10SoundLevel0saxY7Gravity0sA13WillPresentAd0saT18FinishPresentingAdAEyx_GSS_SaySSGSgSS11Inthegametv14ITGEnvironmentVSSSgSDySSSH_pGSgSbyA_0V4MetaVcSgyA_09ITGPlayerZ0O_SdSgtcySbcySo6CGRectVSg_SdtcySScSgyA_09AnalyticsW0V_A_18AnalyticsEventTypeOtcSgyA_4UserVcSgySfSgcySo07AVLayerY7GravityaSgcyA_10ITGAdEventVcyA28_ctcfc",
+                "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC11channelSlug15virtualChannels9accountId11environment07foreignM04vars11adsMetadata8showLogs02onA18DidLoadChannelInfo0uA25RequestedVideoStateChange0uaZ11FocusUpdate0uaZ15VideoRectChange0uA16ReceivedDeeplink0uaV20ProcessAnalyticEvent0uaV15UpdateUserState0uaZ15VideoSoundLevel0uaZ12VideoGravity0uA13WillPresentAd0uaV18FinishPresentingAdAEyx_GSS_SaySSGSgSS11Inthegametv14ITGEnvironmentVSSSgSDySSSH_pGSgSayA0_02AdR0VGSgSbyA0_0X4MetaVcSgyA0_14ITGPlayerStateO_SdSgtcySbcySo6CGRectVSg_SdtcySScSgyA0_09AnalyticsY0V_A0_18AnalyticsEventTypeOtcSgyA0_4UserVcSgySfSgcySo19AVLayerVideoGravityaSgcyA0_10ITGAdEventVcyA33_ctcfc",
+                "mangledName": "$s21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11CoordinatorC11channelSlug15virtualChannels9accountId11environment07foreignM04vars11adsMetadata8showLogs02onA18DidLoadChannelInfo0uA25RequestedVideoStateChange0uaZ11FocusUpdate0uaZ15VideoRectChange0uA16ReceivedDeeplink0uaV20ProcessAnalyticEvent0uaV15UpdateUserState0uaZ15VideoSoundLevel0uaZ12VideoGravity0uA13WillPresentAd0uaV18FinishPresentingAdAEyx_GSS_SaySSGSgSS11Inthegametv14ITGEnvironmentVSSSgSDySSSH_pGSgSayA0_02AdR0VGSgSbyA0_0X4MetaVcSgyA0_14ITGPlayerStateO_SdSgtcySbcySo6CGRectVSg_SdtcySScSgyA0_09AnalyticsY0V_A0_18AnalyticsEventTypeOtcSgyA0_4UserVcSgySfSgcySo19AVLayerVideoGravityaSgcyA0_10ITGAdEventVcyA33_ctcfc",
                 "moduleName": "ItgOverlayViewSwiftUI",
                 "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
                 "sugared_genericSig": "<Content where Content : SwiftUI.View>",
@@ -876,20 +862,13 @@
                 "printedName": "ITGOverlayDelegate",
                 "usr": "s:11Inthegametv18ITGOverlayDelegateP",
                 "mangledName": "$s11Inthegametv18ITGOverlayDelegateP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
               }
             ]
           },
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(channelSlug:virtualChannels:accountId:environment:foreignId:vars:showLogs:onOverlayDidLoadChannelInfo:onItgDidLoadChannelInfo:onItgRequestedVideoStateChange:onItgRequestedFocusUpdate:onItgRequestedVideoRectChange:onItgReceivedDeeplink:onItgDidProcessAnalyticEvent:onItgDidUpdateUserState:onItgRequestedVideoSoundLevel:onItgRequestedVideoGravity:onItgWillPresentAd:onItgDidFinishPresentingAd:onItgOverlayCreated:)",
+            "printedName": "init(channelSlug:virtualChannels:accountId:environment:foreignId:vars:adsMetadata:showLogs:onOverlayDidLoadChannelInfo:onItgDidLoadChannelInfo:onItgRequestedVideoStateChange:onItgRequestedFocusUpdate:onItgRequestedVideoRectChange:onItgReceivedDeeplink:onItgDidProcessAnalyticEvent:onItgDidUpdateUserState:onItgRequestedVideoSoundLevel:onItgRequestedVideoGravity:onItgWillPresentAd:onItgDidFinishPresentingAd:onItgOverlayCreated:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -984,6 +963,29 @@
                       }
                     ],
                     "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Inthegametv.AdMetadata]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Inthegametv.AdMetadata]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdMetadata",
+                        "printedName": "Inthegametv.AdMetadata",
+                        "usr": "s:11Inthegametv10AdMetadataV"
+                      }
+                    ],
+                    "usr": "s:Sa"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -1361,8 +1363,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11channelSlug15virtualChannels9accountId11environment07foreignL04vars8showLogs02onB18DidLoadChannelInfo0rastuV00rA25RequestedVideoStateChange0raW11FocusUpdate0rawx4RectZ00rA16ReceivedDeeplink0raS20ProcessAnalyticEvent0ras10UpdateUserY00rawX10SoundLevel0rawX7Gravity0rA13WillPresentAd0raS18FinishPresentingAd0raB7CreatedACyxGSS_SaySSGSgSS11Inthegametv14ITGEnvironmentVSSSgSDySSSH_pGSgSbyA2_cSgyA_0U4MetaVcSgyA_09ITGPlayerY0O_SdSgtcySbcySo6CGRectVSg_SdtcySScSgyA_09AnalyticsV0V_A_18AnalyticsEventTypeOtcSgyA_4UserVcSgySfSgcySo07AVLayerX7GravityaSgcyA_10ITGAdEventVcyA29_cyA_0fC0CcSgtcfc",
-            "mangledName": "$s21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11channelSlug15virtualChannels9accountId11environment07foreignL04vars8showLogs02onB18DidLoadChannelInfo0rastuV00rA25RequestedVideoStateChange0raW11FocusUpdate0rawx4RectZ00rA16ReceivedDeeplink0raS20ProcessAnalyticEvent0ras10UpdateUserY00rawX10SoundLevel0rawX7Gravity0rA13WillPresentAd0raS18FinishPresentingAd0raB7CreatedACyxGSS_SaySSGSgSS11Inthegametv14ITGEnvironmentVSSSgSDySSSH_pGSgSbyA2_cSgyA_0U4MetaVcSgyA_09ITGPlayerY0O_SdSgtcySbcySo6CGRectVSg_SdtcySScSgyA_09AnalyticsV0V_A_18AnalyticsEventTypeOtcSgyA_4UserVcSgySfSgcySo07AVLayerX7GravityaSgcyA_10ITGAdEventVcyA29_cyA_0fC0CcSgtcfc",
+            "usr": "s:21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11channelSlug15virtualChannels9accountId11environment07foreignL04vars11adsMetadata8showLogs02onB18DidLoadChannelInfo0tauvwX00tA25RequestedVideoStateChange0taY11FocusUpdate0tayZ10RectChange0tA16ReceivedDeeplink0taU20ProcessAnalyticEvent0taU15UpdateUserState0tayZ10SoundLevel0tayZ7Gravity0tA13WillPresentAd0taU18FinishPresentingAd0taB7CreatedACyxGSS_SaySSGSgSS11Inthegametv14ITGEnvironmentVSSSgSDySSSH_pGSgSayA0_02AdQ0VGSgSbyA3_cSgyA0_0W4MetaVcSgyA0_14ITGPlayerStateO_SdSgtcySbcySo6CGRectVSg_SdtcySScSgyA0_09AnalyticsX0V_A0_18AnalyticsEventTypeOtcSgyA0_4UserVcSgySfSgcySo07AVLayerZ7GravityaSgcyA0_10ITGAdEventVcyA34_cyA0_0fC0CcSgtcfc",
+            "mangledName": "$s21ItgOverlayViewSwiftUI010ITGOverlaycdE0V11channelSlug15virtualChannels9accountId11environment07foreignL04vars11adsMetadata8showLogs02onB18DidLoadChannelInfo0tauvwX00tA25RequestedVideoStateChange0taY11FocusUpdate0tayZ10RectChange0tA16ReceivedDeeplink0taU20ProcessAnalyticEvent0taU15UpdateUserState0tayZ10SoundLevel0tayZ7Gravity0tA13WillPresentAd0taU18FinishPresentingAd0taB7CreatedACyxGSS_SaySSGSgSS11Inthegametv14ITGEnvironmentVSSSgSDySSSH_pGSgSayA0_02AdQ0VGSgSbyA3_cSgyA0_0W4MetaVcSgyA0_14ITGPlayerStateO_SdSgtcySbcySo6CGRectVSg_SdtcySScSgyA0_09AnalyticsX0V_A0_18AnalyticsEventTypeOtcSgyA0_4UserVcSgySfSgcySo07AVLayerZ7GravityaSgcyA0_10ITGAdEventVcyA34_cyA0_0fC0CcSgtcfc",
             "moduleName": "ItgOverlayViewSwiftUI",
             "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
             "sugared_genericSig": "<Content where Content : SwiftUI.View>",
@@ -1599,14 +1601,14 @@
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGOverlayViewSwiftUI.swift",
       "kind": "BooleanLiteral",
-      "offset": 6021,
+      "offset": 5592,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGOverlayViewSwiftUI.swift",
       "kind": "BooleanLiteral",
-      "offset": 7047,
+      "offset": 6668,
       "length": 5,
       "value": "false"
     }

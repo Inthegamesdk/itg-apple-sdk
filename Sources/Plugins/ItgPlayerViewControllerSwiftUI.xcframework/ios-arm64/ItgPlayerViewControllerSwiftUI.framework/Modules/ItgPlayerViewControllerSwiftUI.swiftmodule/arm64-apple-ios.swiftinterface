@@ -13,15 +13,14 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 @available(iOS 13.0, tvOS 13.0, *)
 @_Concurrency.MainActor @preconcurrency public struct ITGPlayerViewControllerSwiftUI : SwiftUI.UIViewControllerRepresentable {
-  public class Coordinator : Swift.Equatable {
-    public static func == (lhs: ItgPlayerViewControllerSwiftUI.ITGPlayerViewControllerSwiftUI.Coordinator, rhs: ItgPlayerViewControllerSwiftUI.ITGPlayerViewControllerSwiftUI.Coordinator) -> Swift.Bool
+  public class Coordinator {
     #if compiler(>=5.3) && $NonescapableTypes
-    public init(channelSlug: Swift.String, virtualChannels: [Swift.String]? = nil, accountId: Swift.String, environment: InthegametviOS.ITGEnvironment, foreignId: Swift.String? = nil, vars: [Swift.String : any Swift.Hashable]? = nil, showLogs: Swift.Bool, playerAdapter: any ItgPlayerViewController.ITGPlayerAdapter)
+    public init(channelSlug: Swift.String, virtualChannels: [Swift.String]? = nil, accountId: Swift.String, environment: InthegametviOS.ITGEnvironment, foreignId: Swift.String? = nil, vars: [Swift.String : any Swift.Hashable]? = nil, adsMetadata: [InthegametviOS.AdMetadata]? = nil, showLogs: Swift.Bool, playerAdapter: any ItgPlayerViewController.ITGPlayerAdapter)
     #endif
     @objc deinit
   }
   #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency public init(channelSlug: Swift.String, virtualChannels: [Swift.String]? = nil, accountId: Swift.String, environment: InthegametviOS.ITGEnvironment, foreignId: Swift.String? = nil, vars: [Swift.String : any Swift.Hashable]? = nil, showLogs: Swift.Bool = false, playerAdapter: any ItgPlayerViewController.ITGPlayerAdapter, onCreated: ((ItgPlayerViewController.ITGPlayerViewController) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public init(channelSlug: Swift.String, virtualChannels: [Swift.String]? = nil, accountId: Swift.String, environment: InthegametviOS.ITGEnvironment, foreignId: Swift.String? = nil, vars: [Swift.String : any Swift.Hashable]? = nil, adsMetadata: [InthegametviOS.AdMetadata]? = nil, showLogs: Swift.Bool = false, playerAdapter: any ItgPlayerViewController.ITGPlayerAdapter, onCreated: ((ItgPlayerViewController.ITGPlayerViewController) -> Swift.Void)? = nil)
   #endif
   @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: ItgPlayerViewControllerSwiftUI.ITGPlayerViewControllerSwiftUI.Context) -> ItgPlayerViewController.ITGPlayerViewController
   @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> ItgPlayerViewControllerSwiftUI.ITGPlayerViewControllerSwiftUI.Coordinator

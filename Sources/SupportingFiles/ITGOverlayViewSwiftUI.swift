@@ -13,7 +13,7 @@ import AVKit
 @available(iOS 13.0, tvOS 13.0, *)
 public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
     
-    public class Coordinator: ITGOverlayDelegate, Equatable {
+    public class Coordinator: ITGOverlayDelegate {
         
         let overlayView: ITGOverlayView = ITGOverlayView()
         var channelSlug: String
@@ -22,6 +22,7 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
         var environment: ITGEnvironment
         var foreignId: String?
         var vars: [String : any Hashable]?
+        var adsMetadata: [AdMetadata]?
         let showLogs: Bool
         let onItgDidLoadChannelInfo: ((ChannelMeta)->Void)?
         let onItgRequestedVideoStateChange: (ITGPlayerState, TimeInterval?)->Void
@@ -34,23 +35,14 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
         let onItgRequestedVideoGravity: (AVLayerVideoGravity?)->Void
         let onItgWillPresentAd: (ITGAdEvent)->Void
         let onItgDidFinishPresentingAd: (ITGAdEvent)->Void
-        
-        public static func == (lhs: Coordinator, rhs: Coordinator) -> Bool {
-            return lhs.channelSlug == rhs.channelSlug
-            && lhs.virtualChannels == rhs.virtualChannels
-            && lhs.accountId == rhs.accountId
-            && lhs.environment == rhs.environment
-            && lhs.foreignId == rhs.foreignId
-            && lhs.vars?.map({ item in return String(item.key.hashValue) + String(item.value.hashValue) }) == rhs.vars?.map({ item in return String(item.key.hashValue) + String(item.value.hashValue) })
-            && lhs.showLogs == rhs.showLogs
-        }
-        
+               
         public init(channelSlug: String,
                     virtualChannels: [String]?,
                     accountId: String,
                     environment: ITGEnvironment,
                     foreignId: String?,
                     vars: [String : any Hashable]?,
+                    adsMetadata: [AdMetadata]? = nil,
                     showLogs: Bool,
                     onItgDidLoadChannelInfo: ((ChannelMeta) -> Void)?,
                     onItgRequestedVideoStateChange: @escaping (ITGPlayerState, TimeInterval?) -> Void,
@@ -69,6 +61,7 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
             self.environment = environment
             self.foreignId = foreignId
             self.vars = vars
+            self.adsMetadata = adsMetadata
             self.showLogs = showLogs
             self.onItgDidLoadChannelInfo = onItgDidLoadChannelInfo
             self.onItgRequestedVideoStateChange = onItgRequestedVideoStateChange
@@ -135,6 +128,7 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
     var environment: ITGEnvironment
     var foreignId: String? = nil
     var vars: [String : any Hashable]? = nil
+    var adsMetadata: [AdMetadata]?
     var showLogs: Bool = false
     let onItgDidLoadChannelInfo: ((ChannelMeta)->Void)?
     let onItgRequestedVideoStateChange: (ITGPlayerState, TimeInterval?)->Void
@@ -156,6 +150,7 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
                 environment: ITGEnvironment,
                 foreignId: String? = nil,
                 vars: [String : any Hashable]? = nil,
+                adsMetadata: [AdMetadata]? = nil,
                 showLogs: Bool = false,
                 onOverlayDidLoadChannelInfo: ((_: String?) -> Void)? = nil,
                 onItgDidLoadChannelInfo: ((ChannelMeta) -> Void)?,
@@ -176,6 +171,7 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
         self.environment = environment
         self.foreignId = foreignId
         self.vars = vars
+        self.adsMetadata = adsMetadata
         self.showLogs = showLogs
         self.onItgDidLoadChannelInfo = onItgDidLoadChannelInfo
         self.onItgRequestedVideoStateChange = onItgRequestedVideoStateChange
@@ -192,7 +188,7 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
     }
     
     public func makeUIView(context: Context) -> ITGOverlayView {
-        context.coordinator.overlayView.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: context.coordinator, foreignId: foreignId, vars: vars, showLogs: showLogs)
+        context.coordinator.overlayView.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: context.coordinator, foreignId: foreignId, vars: vars, adsMetadata: adsMetadata, showLogs: showLogs)
         onItgOverlayCreated?(context.coordinator.overlayView)
         return context.coordinator.overlayView
     }
@@ -203,14 +199,17 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
             || context.coordinator.accountId != accountId
             || context.coordinator.environment != environment
             || context.coordinator.foreignId != foreignId
+            || context.coordinator.adsMetadata != adsMetadata
+            || context.coordinator.showLogs != showLogs
             || context.coordinator.vars?.map({ item in return String(item.key.hashValue) + String(item.value.hashValue) }) != vars?.map({ item in return String(item.key.hashValue) + String(item.value.hashValue) }) {
-            context.coordinator.overlayView.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: context.coordinator, foreignId: foreignId, vars: vars, showLogs: showLogs)
+            context.coordinator.overlayView.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: context.coordinator, foreignId: foreignId, vars: vars, adsMetadata: adsMetadata, showLogs: showLogs)
             context.coordinator.channelSlug = channelSlug
             context.coordinator.virtualChannels = virtualChannels
             context.coordinator.accountId = accountId
             context.coordinator.environment = environment
             context.coordinator.foreignId = foreignId
             context.coordinator.vars = vars
+            context.coordinator.adsMetadata = adsMetadata
         }
     }
     
@@ -221,6 +220,7 @@ public struct ITGOverlayViewSwiftUI<Content: View>: UIViewRepresentable {
                            environment: environment,
                            foreignId: foreignId,
                            vars: vars,
+                           adsMetadata: adsMetadata,
                            showLogs: showLogs,
                            onItgDidLoadChannelInfo: onItgDidLoadChannelInfo,
                            onItgRequestedVideoStateChange: onItgRequestedVideoStateChange,

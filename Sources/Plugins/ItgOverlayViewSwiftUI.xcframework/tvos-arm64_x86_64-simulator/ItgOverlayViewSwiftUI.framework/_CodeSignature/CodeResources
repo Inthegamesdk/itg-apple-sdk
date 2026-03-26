@@ -6,15 +6,15 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		7aApRWlzN1Ps9JS6DopVRsDLhXE=
+		W86QKTGx81aO9LEi44Ewygq/bi4=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		CgR7ZqH8XRYgM9FOFUqHEItBi1c=
+		6idMjphjlt0yoPkIDv/G+unnWPk=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		EViz6V5H3591W5QI19T99vln4hs=
+		mQK/AaFLWgk8CyOCAi93jun0qz8=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		EViz6V5H3591W5QI19T99vln4hs=
+		mQK/AaFLWgk8CyOCAi93jun0qz8=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		ERH0Qm8Rp3I+kINRUN73sId30pQ=
+		JcbDcTqioTL//4HZ9GoBEVjA3hk=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		CgR7ZqH8XRYgM9FOFUqHEItBi1c=
+		6idMjphjlt0yoPkIDv/G+unnWPk=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		ZFoWg+/Li1x+HTrOUH8K/FRLFbw=
+		Kp/wsw/ep0x7gBrv+RyXOg2iFUs=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		ZFoWg+/Li1x+HTrOUH8K/FRLFbw=
+		Kp/wsw/ep0x7gBrv+RyXOg2iFUs=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		j75UUS4JceDWa2c4U+XRAL+CT+c=
+		WNIKtSFktonrlcG++ihi2KJ4z8M=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,14 +55,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			05+abLKLZlyKRJ4yfe9Sa3BgiwlxPFpxA9ia1/ozSBw=
+			5fmAxhtQ4mWu+XlbHGALzMaupvKkQfOdN9XeQ6nFMIs=
 			</data>
 		</dict>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6WLlSQy8kaXkuLd+WlqvCwy7nkDl0lJ/znnjaZRcZ0A=
+			2pG+CX1HBwbrJKKWeqre2Cr53K+1ZMcDQ5j5ykhwReA=
 			</data>
 		</dict>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
@@ -76,28 +76,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6WLlSQy8kaXkuLd+WlqvCwy7nkDl0lJ/znnjaZRcZ0A=
+			2pG+CX1HBwbrJKKWeqre2Cr53K+1ZMcDQ5j5ykhwReA=
 			</data>
 		</dict>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			06yMOSjFmV7g/GU1MvjB8iYwE8f1cMTveV4R9+bHa3s=
+			4PNw9oQ0b9lR6QFas2zB/LEgLzVQLoXidQglpsJItNo=
 			</data>
 		</dict>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			05+abLKLZlyKRJ4yfe9Sa3BgiwlxPFpxA9ia1/ozSBw=
+			5fmAxhtQ4mWu+XlbHGALzMaupvKkQfOdN9XeQ6nFMIs=
 			</data>
 		</dict>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DT2IxjSZOIr4s4d72wPf5qtBpOlx9ZJbfZ3sB2P4Dd4=
+			HC29LZoUKKidQbjbBAW594S6O9X/UFCHmlNDUDiTQVI=
 			</data>
 		</dict>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
@@ -111,14 +111,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DT2IxjSZOIr4s4d72wPf5qtBpOlx9ZJbfZ3sB2P4Dd4=
+			HC29LZoUKKidQbjbBAW594S6O9X/UFCHmlNDUDiTQVI=
 			</data>
 		</dict>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AYx5chsUGkBPriYBFKs2z/HAEbcYcEGy+5q95CQvDnY=
+			U8hmilFUGFIYRsICG2ZhMRtWj4mwQz2Fw4Kzup2jZXA=
 			</data>
 		</dict>
 	</dict>

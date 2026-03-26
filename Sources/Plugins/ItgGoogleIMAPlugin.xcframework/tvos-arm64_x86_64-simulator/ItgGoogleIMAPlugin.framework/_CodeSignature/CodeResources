@@ -6,15 +6,15 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		EH62SNO/032UbCMp2Q5M3gCyZJg=
+		TpW3pypWiB4qHJl6tare09+9XMs=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		CBwUPYfXgKUm1H7h/aG4ovd2b8g=
+		ESrnZG4Ib8m+d83Umk2sqlP19V4=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		2OO4qfcEVfYXvpJcX2gXSVYeOlc=
+		nLe5Qvrr6DOPdq0j3Tjx6z/cc30=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		2OO4qfcEVfYXvpJcX2gXSVYeOlc=
+		nLe5Qvrr6DOPdq0j3Tjx6z/cc30=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		vaGTnkseqJGxEzuVRf55/6Npdu8=
+		H0Znh6bNycaBFvUET0dv3YI+1o8=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		CBwUPYfXgKUm1H7h/aG4ovd2b8g=
+		ESrnZG4Ib8m+d83Umk2sqlP19V4=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		zx5IYLGJqegxZmH8DfbEncPkAP0=
+		h9gX/KvFL7KgdieORLdmXq6bovI=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		zx5IYLGJqegxZmH8DfbEncPkAP0=
+		h9gX/KvFL7KgdieORLdmXq6bovI=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		Xjy6EUNGRH0cMcZ/VIwfsoBCnYc=
+		7MQmHU7VwlrNxQQhKg7rrL43a6g=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,14 +55,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bp025YiajNbbCnqVSbKu0jdhRpSZOm16V9PGXHWy4CI=
+			ELoVtyZJifog8F7dMeT0MPRc+dnG1aa7rIjuyVmUORQ=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EHTgXKVxu+evOXFY1sUCwpJiyLFVmeHl9rk57AJVmL8=
+			9JJ0vqlq7mqFwP2IqPfy3rbp/HWpJu0N1/JnHTI9QLU=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
@@ -76,28 +76,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EHTgXKVxu+evOXFY1sUCwpJiyLFVmeHl9rk57AJVmL8=
+			9JJ0vqlq7mqFwP2IqPfy3rbp/HWpJu0N1/JnHTI9QLU=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Pi3b3LQWurjURDl/BBLxiKA9ncPfP3nQYUbuJadj1oY=
+			egcBzDCTBVa3xyBusKGrNYUC0cuy/XU+nrfPNti5Vto=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bp025YiajNbbCnqVSbKu0jdhRpSZOm16V9PGXHWy4CI=
+			ELoVtyZJifog8F7dMeT0MPRc+dnG1aa7rIjuyVmUORQ=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JRCQcfi/zWlVGeDb6w4Qt0OY4bnHVTRcTpcs50ASNDQ=
+			qAAUDK1XHZ5QrLbHiHhPa2HTjPq4E2me77GddqbZt9c=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
@@ -111,14 +111,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JRCQcfi/zWlVGeDb6w4Qt0OY4bnHVTRcTpcs50ASNDQ=
+			qAAUDK1XHZ5QrLbHiHhPa2HTjPq4E2me77GddqbZt9c=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U+mCjUc/uW8xLM3/iIbwlQ8EYcUeO/veFSaSMounQss=
+			abmiuY5t6UMkfqywvYF0hhjoxbVEcKgr7mp9Hlp+svA=
 			</data>
 		</dict>
 	</dict>

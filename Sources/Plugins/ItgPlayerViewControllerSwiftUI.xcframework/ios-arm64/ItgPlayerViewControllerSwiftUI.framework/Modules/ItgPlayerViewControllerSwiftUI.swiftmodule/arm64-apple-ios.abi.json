@@ -46,44 +46,9 @@
             "printedName": "Coordinator",
             "children": [
               {
-                "kind": "Function",
-                "name": "==",
-                "printedName": "==(_:_:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Coordinator",
-                    "printedName": "ItgPlayerViewControllerSwiftUI.ITGPlayerViewControllerSwiftUI.Coordinator",
-                    "usr": "s:30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11CoordinatorC"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Coordinator",
-                    "printedName": "ItgPlayerViewControllerSwiftUI.ITGPlayerViewControllerSwiftUI.Coordinator",
-                    "usr": "s:30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11CoordinatorC"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11CoordinatorC2eeoiySbAE_AEtFZ",
-                "mangledName": "$s30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11CoordinatorC2eeoiySbAE_AEtFZ",
-                "moduleName": "ItgPlayerViewControllerSwiftUI",
-                "static": true,
-                "declAttributes": [
-                  "Final",
-                  "AccessControl"
-                ],
-                "funcSelfKind": "NonMutating"
-              },
-              {
                 "kind": "Constructor",
                 "name": "init",
-                "printedName": "init(channelSlug:virtualChannels:accountId:environment:foreignId:vars:showLogs:playerAdapter:)",
+                "printedName": "init(channelSlug:virtualChannels:accountId:environment:foreignId:vars:adsMetadata:showLogs:playerAdapter:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -178,6 +143,29 @@
                   },
                   {
                     "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[InthegametviOS.AdMetadata]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[InthegametviOS.AdMetadata]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AdMetadata",
+                            "printedName": "InthegametviOS.AdMetadata",
+                            "usr": "s:14InthegametviOS10AdMetadataV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
                     "name": "Bool",
                     "printedName": "Swift.Bool",
                     "usr": "s:Sb"
@@ -190,8 +178,8 @@
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11CoordinatorC11channelSlug15virtualChannels9accountId11environment07foreignN04vars8showLogs13playerAdapterAESS_SaySSGSgSS14InthegametviOS14ITGEnvironmentVSSSgSDySSSH_pGSgSb0abcD00gU0_ptcfc",
-                "mangledName": "$s30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11CoordinatorC11channelSlug15virtualChannels9accountId11environment07foreignN04vars8showLogs13playerAdapterAESS_SaySSGSgSS14InthegametviOS14ITGEnvironmentVSSSgSDySSSH_pGSgSb0abcD00gU0_ptcfc",
+                "usr": "s:30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11CoordinatorC11channelSlug15virtualChannels9accountId11environment07foreignN04vars11adsMetadata8showLogs13playerAdapterAESS_SaySSGSgSS14InthegametviOS14ITGEnvironmentVSSSgSDySSSH_pGSgSayAQ02AdS0VGSgSb0abcD00gW0_ptcfc",
+                "mangledName": "$s30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11CoordinatorC11channelSlug15virtualChannels9accountId11environment07foreignN04vars11adsMetadata8showLogs13playerAdapterAESS_SaySSGSgSS14InthegametviOS14ITGEnvironmentVSSSgSDySSSH_pGSgSayAQ02AdS0VGSgSb0abcD00gW0_ptcfc",
                 "moduleName": "ItgPlayerViewControllerSwiftUI",
                 "declAttributes": [
                   "AccessControl"
@@ -220,20 +208,13 @@
                 "printedName": "Escapable",
                 "usr": "s:s9EscapableP",
                 "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
               }
             ]
           },
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(channelSlug:virtualChannels:accountId:environment:foreignId:vars:showLogs:playerAdapter:onCreated:)",
+            "printedName": "init(channelSlug:virtualChannels:accountId:environment:foreignId:vars:adsMetadata:showLogs:playerAdapter:onCreated:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -328,6 +309,29 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[InthegametviOS.AdMetadata]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[InthegametviOS.AdMetadata]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdMetadata",
+                        "printedName": "InthegametviOS.AdMetadata",
+                        "usr": "s:14InthegametviOS10AdMetadataV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "hasDefaultArg": true,
@@ -368,8 +372,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11channelSlug15virtualChannels9accountId11environment07foreignM04vars8showLogs13playerAdapter9onCreatedACSS_SaySSGSgSS14InthegametviOS14ITGEnvironmentVSSSgSDySSSH_pGSgSb0abcD00gT0_pyAU0gcD0CcSgtcfc",
-            "mangledName": "$s30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11channelSlug15virtualChannels9accountId11environment07foreignM04vars8showLogs13playerAdapter9onCreatedACSS_SaySSGSgSS14InthegametviOS14ITGEnvironmentVSSSgSDySSSH_pGSgSb0abcD00gT0_pyAU0gcD0CcSgtcfc",
+            "usr": "s:30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11channelSlug15virtualChannels9accountId11environment07foreignM04vars11adsMetadata8showLogs13playerAdapter9onCreatedACSS_SaySSGSgSS14InthegametviOS14ITGEnvironmentVSSSgSDySSSH_pGSgSayAP02AdR0VGSgSb0abcD00gV0_pyAZ0gcD0CcSgtcfc",
+            "mangledName": "$s30ItgPlayerViewControllerSwiftUI09ITGPlayercdeF0V11channelSlug15virtualChannels9accountId11environment07foreignM04vars11adsMetadata8showLogs13playerAdapter9onCreatedACSS_SaySSGSgSS14InthegametviOS14ITGEnvironmentVSSSgSDySSSH_pGSgSayAP02AdR0VGSgSb0abcD00gV0_pyAZ0gcD0CcSgtcfc",
             "moduleName": "ItgPlayerViewControllerSwiftUI",
             "declAttributes": [
               "Preconcurrency",
@@ -582,14 +586,14 @@
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewControllerSwiftUI.swift",
       "kind": "BooleanLiteral",
-      "offset": 2151,
+      "offset": 1640,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewControllerSwiftUI.swift",
       "kind": "BooleanLiteral",
-      "offset": 2554,
+      "offset": 2093,
       "length": 5,
       "value": "false"
     }

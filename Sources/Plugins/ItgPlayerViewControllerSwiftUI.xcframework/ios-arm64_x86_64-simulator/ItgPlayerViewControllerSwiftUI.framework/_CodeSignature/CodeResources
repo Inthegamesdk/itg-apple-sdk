@@ -6,15 +6,15 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		EI2Mu1nZ7NowSdLyv+AGr4JYNCA=
+		pwjVOLI1Rvz8+wTWEJ0krE7m/Ps=
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		PWjSeljCC/4UbEll71lidfZ1wd4=
+		A8Hgb9+cPuIHgmmHdCv6+r2hqJc=
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		waTQvNLEhpadlX8/ffKX1cGZSsQ=
+		0gfSRnE+SZ2Bke9vPAldcOIrTP4=
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		waTQvNLEhpadlX8/ffKX1cGZSsQ=
+		0gfSRnE+SZ2Bke9vPAldcOIrTP4=
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		BgN8IF3fDFfSnMLerF3TrA7A1VM=
+		/2uYRUZgNZERjmWxoQMSFLGsBWA=
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		PWjSeljCC/4UbEll71lidfZ1wd4=
+		A8Hgb9+cPuIHgmmHdCv6+r2hqJc=
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		yM8YZRHGD5uOrPa+n/yDmOCqTbI=
+		uPj4BO5lRt5J11oN646QSC4d4PU=
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		yM8YZRHGD5uOrPa+n/yDmOCqTbI=
+		uPj4BO5lRt5J11oN646QSC4d4PU=
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ANkEBdefRcrk6pFxle+hlH8a2nY=
+		XvyV4S+pd0p6AfaI8YKmiTzkNgA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,14 +55,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			itDrTlADRvqSnJXKpo2XS9p1gGvOdGvJ5EiYLK6NTHU=
+			Br5OxbswOJc0l9B9feZahOTq2UddXw5VAw3VB0iWikY=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UEU1/DjZNNfc4kEKJZYJUyvCANQY1WRCW+J9ogoeZBY=
+			dKPVYcI5vMOZOQ36g7CaRUJKahIABj8FFGGy9wcowKA=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -76,28 +76,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UEU1/DjZNNfc4kEKJZYJUyvCANQY1WRCW+J9ogoeZBY=
+			dKPVYcI5vMOZOQ36g7CaRUJKahIABj8FFGGy9wcowKA=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aSrSGQe08NIfD6mHBODoY2qUrDHC2+nH97ITsGbumqc=
+			/OQiWCcMPwZBFuNyY2U0ViWdG7OksDeFppSbN3usDMs=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			itDrTlADRvqSnJXKpo2XS9p1gGvOdGvJ5EiYLK6NTHU=
+			Br5OxbswOJc0l9B9feZahOTq2UddXw5VAw3VB0iWikY=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3FkDvsDM7uaruT3z1/3Vw4QWUVCZc9F9+srtEThhYVo=
+			WMWO45GRdzCfyEtU4kcUe7n1wXZzgpQ8ZCQ0uK6H2cg=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -111,14 +111,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3FkDvsDM7uaruT3z1/3Vw4QWUVCZc9F9+srtEThhYVo=
+			WMWO45GRdzCfyEtU4kcUe7n1wXZzgpQ8ZCQ0uK6H2cg=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			odpWwckAlFKk6t4zWpcrpWNd/EHt9U/R+A7cDaxRxFs=
+			C7W3m3wwlcQa/aL3D8/WFiyeoR3IYDF3XzieLeWJgug=
 			</data>
 		</dict>
 	</dict>

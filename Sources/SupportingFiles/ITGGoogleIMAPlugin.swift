@@ -14,16 +14,22 @@ public class ITGGoogleIMAPlugin: NSObject, ITGGoogleIMAPluginProtocol {
     
     private let adsLoader = IMAAdsLoader()
     private var adsManager: IMAAdsManager?
-    private var viewController: UIViewController!
     private weak var delegate: ITGGoogleIMAPluginDelegate?
+    private var savedTime: TimeInterval?
     
     public func requestAd(_ url: String, videoView: UIView, viewController: UIViewController, delegate: ITGGoogleIMAPluginDelegate) {
-        self.viewController = viewController
         self.delegate = delegate
         adsLoader.delegate = self
         let adDisplayContainer = IMAAdDisplayContainer(adContainer: videoView, viewController: viewController)
         let request = IMAAdsRequest(adTagUrl: url, adDisplayContainer: adDisplayContainer, contentPlayhead: nil, userContext: nil)
         adsLoader.requestAds(with: request)
+    }
+    
+    public func close() {
+        adsManager?.destroy()
+        delegate?.requestResume(savedTime)
+        delegate?.addDidFinish()
+        savedTime = nil
     }
     
 }
@@ -57,14 +63,16 @@ extension ITGGoogleIMAPlugin: IMAAdsManagerDelegate {
     
     public func adsManager(_ adsManager: IMAAdsManager, didReceive error: IMAAdError) {
         delegate?.didFailedToLoadAd(error.message)
+        savedTime = nil
     }
     
     public func adsManagerDidRequestContentPause(_ adsManager: IMAAdsManager) {
-        delegate?.requestPause()
+        savedTime = delegate?.requestPause()
     }
     
     public func adsManagerDidRequestContentResume(_ adsManager: IMAAdsManager) {
-        delegate?.requestResume()
+        delegate?.requestResume(savedTime)
+        savedTime = nil
     }
     
 }

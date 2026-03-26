@@ -797,7 +797,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(channelSlug:virtualChannels:accountId:environment:foreignId:vars:playerAdapter:shouldResetOverlayUser:showLogs:)",
+            "printedName": "init(channelSlug:virtualChannels:accountId:environment:foreignId:vars:adsMetadata:playerAdapter:shouldResetOverlayUser:showLogs:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -865,12 +865,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
+                "printedName": "[Swift.String : any Swift.Hashable]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
+                    "printedName": "[Swift.String : any Swift.Hashable]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -880,11 +880,35 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "Hashable",
+                        "printedName": "any Swift.Hashable",
+                        "usr": "s:SH"
                       }
                     ],
                     "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[InthegametviOS.AdMetadata]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[InthegametviOS.AdMetadata]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdMetadata",
+                        "printedName": "InthegametviOS.AdMetadata",
+                        "usr": "s:14InthegametviOS10AdMetadataV"
+                      }
+                    ],
+                    "usr": "s:Sa"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -912,8 +936,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C11channelSlug15virtualChannels9accountId11environment07foreignK04vars13playerAdapter22shouldResetOverlayUser8showLogsACSS_SaySSGSgSS14InthegametviOS14ITGEnvironmentVSSSgSDySSypGSgAA0eP0_pS2btcfc",
-            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C11channelSlug15virtualChannels9accountId11environment07foreignK04vars13playerAdapter22shouldResetOverlayUser8showLogsACSS_SaySSGSgSS14InthegametviOS14ITGEnvironmentVSSSgSDySSypGSgAA0eP0_pS2btcfc",
+            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C11channelSlug15virtualChannels9accountId11environment07foreignK04vars11adsMetadata13playerAdapter22shouldResetOverlayUser8showLogsACSS_SaySSGSgSS14InthegametviOS14ITGEnvironmentVSSSgSDySSSH_pGSgSayAP02AdP0VGSgAA0eR0_pS2btcfc",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C11channelSlug15virtualChannels9accountId11environment07foreignK04vars11adsMetadata13playerAdapter22shouldResetOverlayUser8showLogsACSS_SaySSGSgSS14InthegametviOS14ITGEnvironmentVSSSgSDySSSH_pGSgSayAP02AdP0VGSgAA0eR0_pS2btcfc",
             "moduleName": "ItgPlayerViewController",
             "declAttributes": [
               "Preconcurrency",
@@ -1057,7 +1081,7 @@
           {
             "kind": "Function",
             "name": "reloadChannel",
-            "printedName": "reloadChannel(channelSlug:virtualChannels:accountId:environment:foreignId:vars:playerAdapter:shouldResetOverlayUser:showLogs:)",
+            "printedName": "reloadChannel(channelSlug:virtualChannels:accountId:environment:foreignId:vars:playerAdapter:shouldResetOverlayUser:adsMetadata:showLogs:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1124,12 +1148,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
+                "printedName": "[Swift.String : any Swift.Hashable]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
+                    "printedName": "[Swift.String : any Swift.Hashable]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1139,8 +1163,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "Hashable",
+                        "printedName": "any Swift.Hashable",
+                        "usr": "s:SH"
                       }
                     ],
                     "usr": "s:SD"
@@ -1164,6 +1189,29 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[InthegametviOS.AdMetadata]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[InthegametviOS.AdMetadata]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdMetadata",
+                        "printedName": "InthegametviOS.AdMetadata",
+                        "usr": "s:14InthegametviOS10AdMetadataV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "hasDefaultArg": true,
@@ -1171,8 +1219,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C13reloadChannel11channelSlug15virtualChannels9accountId11environment07foreignM04vars13playerAdapter22shouldResetOverlayUser8showLogsySS_SaySSGSgSS14InthegametviOS14ITGEnvironmentVSSSgSDySSypGSgAA0eR0_pS2btF",
-            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C13reloadChannel11channelSlug15virtualChannels9accountId11environment07foreignM04vars13playerAdapter22shouldResetOverlayUser8showLogsySS_SaySSGSgSS14InthegametviOS14ITGEnvironmentVSSSgSDySSypGSgAA0eR0_pS2btF",
+            "usr": "s:23ItgPlayerViewController09ITGPlayercD0C13reloadChannel11channelSlug15virtualChannels9accountId11environment07foreignM04vars13playerAdapter22shouldResetOverlayUser11adsMetadata8showLogsySS_SaySSGSgSS14InthegametviOS14ITGEnvironmentVSSSgSDySSSH_pGSgAA0eR0_pSbSayAQ02AdX0VGSgSbtF",
+            "mangledName": "$s23ItgPlayerViewController09ITGPlayercD0C13reloadChannel11channelSlug15virtualChannels9accountId11environment07foreignM04vars13playerAdapter22shouldResetOverlayUser11adsMetadata8showLogsySS_SaySSGSgSS14InthegametviOS14ITGEnvironmentVSSSgSDySSSH_pGSgAA0eR0_pSbSayAQ02AdX0VGSgSbtF",
             "moduleName": "ItgPlayerViewController",
             "isOpen": true,
             "declAttributes": [
@@ -3701,70 +3749,70 @@
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2375,
+      "offset": 2461,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2399,
+      "offset": 2485,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4551,
+      "offset": 4685,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4575,
+      "offset": 4743,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14861,
+      "offset": 15120,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14888,
+      "offset": 15147,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14953,
+      "offset": 15212,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14981,
+      "offset": 15240,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15299,
+      "offset": 15558,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15533,
+      "offset": 15792,
       "length": 4,
       "value": "true"
     },

@@ -6,15 +6,15 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		ulDshftzmmF8ubP03qJFCAeYl/Y=
+		Wof8LpzOHby9/3ciHwBsoKNx4Nw=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		23XAfUYCQkNXhj/q4VwPDd2t054=
+		hgyqI7O51HiQpJ9RX0RDHfeU+3w=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		FSDSVmf+ePrEeK0ii2WybZDJFAQ=
+		0QUYeRDwEf0mCHN60hH6aCSQ+94=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		FSDSVmf+ePrEeK0ii2WybZDJFAQ=
+		0QUYeRDwEf0mCHN60hH6aCSQ+94=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		7tTYGyDkYZvq0026xn9YIyyOhs8=
+		eZSTw0W9tUV6WFbEG4/sKlY2suU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,14 +35,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qfe1nNp/xjvMdMc3+JLSyPTf+yV5pQGqWsfLf/3m/qE=
+			yNTqzJUKe3l26Nln6+mIwMmO6ayHYO5D2zeOKTCegSg=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xxP5cZAl0WjnDBlak5ngkucoZOtvts7u++TIsYTDfas=
+			AnkVh1VfZ2SZuCuOmzrZvnQU2uCkAwI1H2ujkm89CS8=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -56,14 +56,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xxP5cZAl0WjnDBlak5ngkucoZOtvts7u++TIsYTDfas=
+			AnkVh1VfZ2SZuCuOmzrZvnQU2uCkAwI1H2ujkm89CS8=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mrJbM0dM/iDZ8AW8TqTO6L1bfTGxNxEnaw0+kIZyAaQ=
+			25yn09sMMbRBdeQbfaCYk89KpaGJanWpcXL+L3yh3Qs=
 			</data>
 		</dict>
 	</dict>

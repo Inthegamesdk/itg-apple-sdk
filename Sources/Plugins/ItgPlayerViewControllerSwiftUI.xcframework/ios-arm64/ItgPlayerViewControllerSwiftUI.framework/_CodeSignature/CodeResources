@@ -6,15 +6,15 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		GW51UppIsr3J+H9V/nqX8aRROd4=
+		Osepf0/9VgQOvDvz+IUmc06Wb9c=
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		PWjSeljCC/4UbEll71lidfZ1wd4=
+		A8Hgb9+cPuIHgmmHdCv6+r2hqJc=
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		31Gxrry4V/SboAvgQWfKJ2yXECE=
+		OWFw82z12YAYCag/zM6/ObZFX90=
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		31Gxrry4V/SboAvgQWfKJ2yXECE=
+		OWFw82z12YAYCag/zM6/ObZFX90=
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ENgX0V3I1v/7F0JVDEHOf6ILNzA=
+		mmClEscvs4mrBY3TJUVFu6ugXCc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,14 +35,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			itDrTlADRvqSnJXKpo2XS9p1gGvOdGvJ5EiYLK6NTHU=
+			Br5OxbswOJc0l9B9feZahOTq2UddXw5VAw3VB0iWikY=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gOFoIPBhV740j3s9yEdnmrBy1TNgIYCJQfRw7lNHSdo=
+			K6W97O8V4KX6gBjHzIWoxnLdIRfmef5Z201xzZrgn88=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -56,14 +56,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gOFoIPBhV740j3s9yEdnmrBy1TNgIYCJQfRw7lNHSdo=
+			K6W97O8V4KX6gBjHzIWoxnLdIRfmef5Z201xzZrgn88=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			j8wXTupAHTJRajw+on2GXKgDPgbu7giIeEP/aEyLN5Q=
+			R/122Qd5YBN5n5ZjBxGuQNSGg/jP9qhb5m1TmOi1WFo=
 			</data>
 		</dict>
 	</dict>

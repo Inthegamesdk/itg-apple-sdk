@@ -11,6 +11,7 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 @objc @_inheritsConvenienceInitializers public class ITGGoogleIMAPlugin : ObjectiveC.NSObject, Inthegametv.ITGGoogleIMAPluginProtocol {
   public func requestAd(_ url: Swift.String, videoView: UIKit.UIView, viewController: UIKit.UIViewController, delegate: any Inthegametv.ITGGoogleIMAPluginDelegate)
+  public func close()
   @objc override dynamic public init()
   @objc deinit
 }

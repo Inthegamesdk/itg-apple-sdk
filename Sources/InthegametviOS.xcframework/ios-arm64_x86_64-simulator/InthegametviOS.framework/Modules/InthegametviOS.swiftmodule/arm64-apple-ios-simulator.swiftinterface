@@ -24,7 +24,10 @@ public struct AdMetadata : Swift.Equatable, Swift.Decodable {
   public init(adTime: Foundation.TimeInterval, adDuration: Foundation.TimeInterval, adId: Swift.String)
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct ITGVideoState : Swift.Equatable {
+public struct ITGVideoState : Swift.Equatable, Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
   public let videoDuration: Foundation.TimeInterval
   public let videoTime: Foundation.TimeInterval
   public let videoStatus: InthegametviOS.ITGPlayerState
@@ -235,8 +238,10 @@ extension InthegametviOS.ITGOverlayView : InthegametviOS.ITGGoogleIMAPluginDeleg
   #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func didFailedToLoadAd(_ error: Swift.String?)
   #endif
-  @_Concurrency.MainActor @preconcurrency public func requestPause()
-  @_Concurrency.MainActor @preconcurrency public func requestResume()
+  @_Concurrency.MainActor @preconcurrency public func requestPause() -> Foundation.TimeInterval
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public func requestResume(_ time: Foundation.TimeInterval?)
+  #endif
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class FocusObservableView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency public var focusChangeObservationBlock: ((UIKit.UIView?) -> Swift.Void)?
@@ -261,13 +266,16 @@ public struct ITGEnvironment : Swift.Equatable {
 }
 public protocol ITGGoogleIMAPluginProtocol : AnyObject {
   func requestAd(_ url: Swift.String, videoView: UIKit.UIView, viewController: UIKit.UIViewController, delegate: any InthegametviOS.ITGGoogleIMAPluginDelegate)
+  func close()
 }
 public protocol ITGGoogleIMAPluginDelegate : AnyObject {
   #if compiler(>=5.3) && $NonescapableTypes
   func didFailedToLoadAd(_ error: Swift.String?)
   #endif
-  func requestPause()
-  func requestResume()
+  func requestPause() -> Foundation.TimeInterval
+  #if compiler(>=5.3) && $NonescapableTypes
+  func requestResume(_ time: Foundation.TimeInterval?)
+  #endif
   func adInfo(_ skippable: Swift.Bool)
   func addDidFinish()
 }

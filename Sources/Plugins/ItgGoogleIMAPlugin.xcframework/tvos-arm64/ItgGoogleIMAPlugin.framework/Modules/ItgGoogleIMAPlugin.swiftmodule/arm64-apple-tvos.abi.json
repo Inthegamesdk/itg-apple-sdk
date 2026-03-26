@@ -75,6 +75,26 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "close",
+            "printedName": "close()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ItgGoogleIMAPlugin09ITGGoogleC0C5closeyyF",
+            "mangledName": "$s18ItgGoogleIMAPlugin09ITGGoogleC0C5closeyyF",
+            "moduleName": "ItgGoogleIMAPlugin",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",

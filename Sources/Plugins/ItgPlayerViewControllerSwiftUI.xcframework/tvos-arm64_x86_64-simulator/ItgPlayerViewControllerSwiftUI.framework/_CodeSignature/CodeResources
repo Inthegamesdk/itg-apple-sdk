@@ -6,15 +6,15 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		xoJ+AIVegXND+u+fN2Uy86eeiIE=
+		pouFThbWVhS1bYE5IOHQqz/Qfac=
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		uT2MEum+ftOgzlZXL/E+fOIwkGk=
+		n7bd1vOOlOLRDLQ8J3N9g4yjCCA=
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		7t+c4aOhAHse7EaGHdKxS7drKNY=
+		FBDqm4ivPUEVUWq5jzXA1Alsn9k=
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		7t+c4aOhAHse7EaGHdKxS7drKNY=
+		FBDqm4ivPUEVUWq5jzXA1Alsn9k=
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		wDVMqYf+sItIFk9LmyxK+uhpouc=
+		zGT9n8uIPZelfaojAd2kNh02ZHU=
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		uT2MEum+ftOgzlZXL/E+fOIwkGk=
+		n7bd1vOOlOLRDLQ8J3N9g4yjCCA=
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		jNPtfYzfF70fJ85BWMgDurJ7V2w=
+		XnWffqmVnJLAfeyOIBa+VchG8AU=
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		jNPtfYzfF70fJ85BWMgDurJ7V2w=
+		XnWffqmVnJLAfeyOIBa+VchG8AU=
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		3oU/3OYdFWzs7y3gV8Vj4AXmCp8=
+		TUGgPU0FW3wG+dugX6+3Z1Wxb1g=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,14 +55,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eHf3diiy5dPgKcrHu8KHQbB07qIIynW+7P1hVPxiknw=
+			V9pwA0XVxq7d76ZCOs5aVltf0VotzdtrE2qAjxILkYE=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cuXBtT+jDa7fzRbmWmcjzFp3il3eDKEImWfaHwPZHTk=
+			Leq3pJLos0tsmQWIjGigGQyFcHm7j63P3/b6yEoLSmQ=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
@@ -76,28 +76,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cuXBtT+jDa7fzRbmWmcjzFp3il3eDKEImWfaHwPZHTk=
+			Leq3pJLos0tsmQWIjGigGQyFcHm7j63P3/b6yEoLSmQ=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8ZZYG/v4Q46TblcYqooc5PW5/Xjx3MRtcPyTIQIbxhU=
+			tcK/3N84PaGPUjaXKbKXwAimcYQSjW0JdTDaWzGsGOI=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eHf3diiy5dPgKcrHu8KHQbB07qIIynW+7P1hVPxiknw=
+			V9pwA0XVxq7d76ZCOs5aVltf0VotzdtrE2qAjxILkYE=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			649XwR9hR8LY+ii972Kryj0vEtA5phQbN3B5FKTjqAs=
+			hULQD0Kg25rQawYTtrd+1inNhQ5wIS07NyKFRSSCn50=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
@@ -111,14 +111,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			649XwR9hR8LY+ii972Kryj0vEtA5phQbN3B5FKTjqAs=
+			hULQD0Kg25rQawYTtrd+1inNhQ5wIS07NyKFRSSCn50=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MmEF1Vx8jzOdx86I4ApdEEjNmqIaur4Poql6wV3e/1k=
+			MDrf/5WXAgEqx1qn+dj5vKkz1at8Ks8hXd0dxjyKdus=
 			</data>
 		</dict>
 	</dict>

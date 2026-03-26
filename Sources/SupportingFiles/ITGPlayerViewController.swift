@@ -55,13 +55,14 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     private var shouldResetOverlayUser: Bool
     private var soundLevel: Float? = nil
     private var vars: [String: Any]? = nil
+    private var adsMetadata: [AdMetadata]?
     private var showLogs: Bool
     private var originalVideoGravity: AVLayerVideoGravity?
 #if os(iOS)
     private var previousOrientationLandscape: Bool?
 #endif
     
-    public init(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, foreignId: String? = nil, vars: [String: Any]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false, showLogs: Bool = false) {
+    public init(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, foreignId: String? = nil, vars: [String: any Hashable]? = nil, adsMetadata: [AdMetadata]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false, showLogs: Bool = false) {
         self.channelSlug = channelSlug
         self.virtualChannels = virtualChannels
         self.accountId = accountId
@@ -70,6 +71,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         self.shouldResetOverlayUser = shouldResetOverlayUser
         self.player = playerAdapter
         self.vars = vars
+        self.adsMetadata = adsMetadata
         self.showLogs = showLogs
         super.init(nibName: nil, bundle: nil)
     }
@@ -120,7 +122,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     }
 #endif
     
-    open func reloadChannel(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, foreignId: String? = nil, vars: [String: Any]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false, showLogs: Bool = false) {
+    open func reloadChannel(channelSlug: String, virtualChannels: [String]? = nil, accountId: String, environment: ITGEnvironment = ITGEnvironment.defaultEnvironment, foreignId: String? = nil, vars: [String: any Hashable]? = nil, playerAdapter: ITGPlayerAdapter, shouldResetOverlayUser: Bool = false, adsMetadata: [AdMetadata]? = nil, showLogs: Bool = false) {
         self.channelSlug = channelSlug
         self.virtualChannels = virtualChannels
         self.accountId = accountId
@@ -129,11 +131,12 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         self.shouldResetOverlayUser = shouldResetOverlayUser
         self.player = playerAdapter
         self.vars = vars
+        self.adsMetadata = adsMetadata
         self.showLogs = showLogs
         if shouldResetOverlayUser {
             overlayView?.resetUser()
         }
-        overlayView?.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: self, foreignId: foreignId, vars: vars, showLogs: showLogs)
+        overlayView?.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: self, foreignId: foreignId, vars: vars, adsMetadata: adsMetadata, showLogs: showLogs)
     }
     
     open func setupPlayer() {
@@ -198,7 +201,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         if shouldResetOverlayUser {
             overlayView?.resetUser()
         }
-        overlayView?.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: self, foreignId: foreignId, vars: vars, showLogs: showLogs)
+        overlayView?.load(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, delegate: self, foreignId: foreignId, vars: vars, adsMetadata: adsMetadata, showLogs: showLogs)
     }
     
     @objc open func closeButtonPressed(_ sender: Any) {

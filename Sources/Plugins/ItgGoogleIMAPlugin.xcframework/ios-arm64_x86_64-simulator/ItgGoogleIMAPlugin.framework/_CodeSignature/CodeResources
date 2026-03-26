@@ -6,15 +6,15 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		G5frGHaNtQrUr+jlWcFXGtyri1o=
+		fcERRnQV6v1MjXtcymadxsBYcXE=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		23XAfUYCQkNXhj/q4VwPDd2t054=
+		hgyqI7O51HiQpJ9RX0RDHfeU+3w=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Um9kswSMk/6MPek18i02JmQb+dA=
+		vIBhtrQtxBiYiauvExeVVJ5wof4=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Um9kswSMk/6MPek18i02JmQb+dA=
+		vIBhtrQtxBiYiauvExeVVJ5wof4=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		nalLMpTPyDdMxH9ZU0i8HWEMYWo=
+		UllgXuPCwExAUqVOzjxpl8zI2m8=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		23XAfUYCQkNXhj/q4VwPDd2t054=
+		hgyqI7O51HiQpJ9RX0RDHfeU+3w=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		fIoHIvClE2+pDDCasBMTypD+Zd4=
+		BgLo54ex6kUqg6moQcm7CeT8nL8=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		fIoHIvClE2+pDDCasBMTypD+Zd4=
+		BgLo54ex6kUqg6moQcm7CeT8nL8=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		EimVk5qIG4NJhgUS7DeO1aYcoL4=
+		Z2Lan5EY+7e4To8fCpzxyCOMm4I=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,14 +55,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qfe1nNp/xjvMdMc3+JLSyPTf+yV5pQGqWsfLf/3m/qE=
+			yNTqzJUKe3l26Nln6+mIwMmO6ayHYO5D2zeOKTCegSg=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kiOrK+ed/Ln5WHPc5mgiqdWRnsEBthFzO9dRup7T3NY=
+			mNkx4IdoXbZtbSHf35FIJkltPmQm0A5mKGbbzfON0Kk=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -76,28 +76,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kiOrK+ed/Ln5WHPc5mgiqdWRnsEBthFzO9dRup7T3NY=
+			mNkx4IdoXbZtbSHf35FIJkltPmQm0A5mKGbbzfON0Kk=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Kf4H67cI7Qk0b2N14fhSVi7oLWNNDuqRkSUhTaqTQro=
+			dG4Ip0W7+JYu5zO4Vr2ROMegzKzY0yvLku2SrBby1lE=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qfe1nNp/xjvMdMc3+JLSyPTf+yV5pQGqWsfLf/3m/qE=
+			yNTqzJUKe3l26Nln6+mIwMmO6ayHYO5D2zeOKTCegSg=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8Z3arGM8tso+0pa7JiLI/+I/dy+8a3iuOmIwsPlBFlg=
+			ZBdXXDPlVAnNbMiiDpDqnnxpHnL/WguVcjmlfJcSoG4=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -111,14 +111,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8Z3arGM8tso+0pa7JiLI/+I/dy+8a3iuOmIwsPlBFlg=
+			ZBdXXDPlVAnNbMiiDpDqnnxpHnL/WguVcjmlfJcSoG4=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E9Mxr3WZ1p5wvJCRsQ9T2FIfHe/R+a4jqYeX85uM98c=
+			VfaNZKKbZLqyeUFK1slNQcQpXdH/r8LyhTHRaPNvV5k=
 			</data>
 		</dict>
 	</dict>
