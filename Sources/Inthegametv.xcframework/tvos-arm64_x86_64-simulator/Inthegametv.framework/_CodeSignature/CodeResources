@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5NUrUS6K+WP7skx0B4+bIAUZS5Q=
+		aHpeYD40ARL4qJJNeYHYssOjdHo=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		EWiM1Hc4cJ8tZIyB15Lc0t8kZLA=
+		epZLN+2JROJ/uV/w7tNBhiz4qPw=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		22SKtKvI9uGm6G3fO52160kXzFU=
+		p8QDBI3RNBupW+mKYsh6u7HejLM=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		EWiM1Hc4cJ8tZIyB15Lc0t8kZLA=
+		epZLN+2JROJ/uV/w7tNBhiz4qPw=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		XdnXaftq3CKHL9UKeeGceg0Mt0o=
+		a0n6yriZxLZY2eU0ZDCW9v9Rirc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -92,7 +92,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HyzyHAecq/7rX402SIMKuI1ngA8ptsM1ifS35AaBSg0=
+			L7jzwAGWNnOSIcMJZEUtVlz/v9TEZvZDU4qd1OIKce8=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
@@ -120,14 +120,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fkZGDaYmufCzsxf0NCD58VHZe325tQ9xJNQZpkfAdxk=
+			nXQVkgVt8cAxxvxt1MHSzT8WBJYGPHwQV74ZHos7WSg=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HyzyHAecq/7rX402SIMKuI1ngA8ptsM1ifS35AaBSg0=
+			L7jzwAGWNnOSIcMJZEUtVlz/v9TEZvZDU4qd1OIKce8=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
@@ -155,7 +155,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nnWgwMHkw2L69b+K+vZbwpypVHiUeI7+bmglKtTzhFI=
+			mhQFXd4Xd0YhO98Go3lTxw0EGYQI5teXpM9dljC/8Ls=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

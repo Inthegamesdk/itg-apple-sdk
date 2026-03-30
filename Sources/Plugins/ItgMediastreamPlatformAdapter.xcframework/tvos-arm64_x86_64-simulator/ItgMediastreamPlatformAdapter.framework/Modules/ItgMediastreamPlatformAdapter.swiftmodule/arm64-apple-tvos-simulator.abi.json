@@ -528,6 +528,58 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "listenTo",
+            "printedName": "listenTo(eventName:action:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29ItgMediastreamPlatformAdapter014ITGMediastreamC12EventManagerP8listenTo9eventName6actionySS_yypSgctF",
+            "mangledName": "$s29ItgMediastreamPlatformAdapter014ITGMediastreamC12EventManagerP8listenTo9eventName6actionySS_yypSgctF",
+            "moduleName": "ItgMediastreamPlatformAdapter",
+            "genericSig": "<τ_0_0 where τ_0_0 : ItgMediastreamPlatformAdapter.ITGMediastreamPlatformEventManager>",
+            "sugared_genericSig": "<Self where Self : ItgMediastreamPlatformAdapter.ITGMediastreamPlatformEventManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",

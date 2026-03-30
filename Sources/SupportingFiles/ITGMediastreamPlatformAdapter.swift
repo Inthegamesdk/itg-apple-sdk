@@ -30,6 +30,7 @@ public protocol ITGMediastreamPlatform {
 public protocol ITGMediastreamPlatformEventManager {
     
     func listenTo(eventName: String, action: @escaping () -> ())
+    func listenTo(eventName: String, action: @escaping (Any?)->())
     
 }
 
@@ -49,14 +50,14 @@ open class ITGMediastreamPlatformAdapter: ITGPlayerAdapter {
     }
     
     open func setup() {
-        eventsManger.listenTo(eventName: "play") { [weak self] in
-            guard self != nil else { return }
-            self!.delegate?.videoPlaying(self!.getCurrentTime())
+        eventsManger.listenTo(eventName: "timeControlStatusChanged") { [weak self] info in
+            guard self != nil, let info = info as? AVPlayer.TimeControlStatus else { return }
+            if info == .playing {
+                self!.delegate?.videoPlaying(self!.getCurrentTime())
+            } else {
+                self!.delegate?.videoPaused(self!.getCurrentTime(), userInitiated: false, isSeeking: false)
+            }
         }
-        eventsManger.listenTo(eventName: "pause", action: { [weak self] in
-            guard self != nil else { return }
-            self!.delegate?.videoPaused(self!.getCurrentTime(), userInitiated: true, isSeeking: false)
-        })
         eventsManger.listenTo(eventName: "seek") { [weak self] in
             guard self != nil else { return }
             if self!.isPlaying() {

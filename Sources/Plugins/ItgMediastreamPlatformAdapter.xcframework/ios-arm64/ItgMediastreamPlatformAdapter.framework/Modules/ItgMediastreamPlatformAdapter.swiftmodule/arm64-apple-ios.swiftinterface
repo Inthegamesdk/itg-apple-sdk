@@ -30,6 +30,9 @@ public protocol ITGMediastreamPlatform {
 }
 public protocol ITGMediastreamPlatformEventManager {
   func listenTo(eventName: Swift.String, action: @escaping () -> ())
+  #if compiler(>=5.3) && $NonescapableTypes
+  func listenTo(eventName: Swift.String, action: @escaping (Any?) -> ())
+  #endif
 }
 open class ITGMediastreamPlatformAdapter : ItgPlayerViewController.ITGPlayerAdapter {
   weak public var delegate: (any ItgPlayerViewController.ITGPlayerAdapterDelegate)?

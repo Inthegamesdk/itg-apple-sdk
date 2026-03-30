@@ -6,15 +6,15 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		MmlRDoZ44yJG2hI9OPtQBJ2vAqE=
+		cV6iKqKEVRhT/BVl5UqOnM8qZIc=
 		</data>
 		<key>Modules/ItgMediastreamPlatformAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		xjXXMUK02rJ63R9jhDhJpqgSwLI=
+		1XIXr6eHPLP3CYpx8aAQI6hyNVk=
 		</data>
 		<key>Modules/ItgMediastreamPlatformAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Dgl5Jtp1nmtKZwHJbiehyd4PuS8=
+		Mnr69Z/byp+lwtJZ4qeNX1f06bE=
 		</data>
 		<key>Modules/ItgMediastreamPlatformAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/ItgMediastreamPlatformAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Dgl5Jtp1nmtKZwHJbiehyd4PuS8=
+		Mnr69Z/byp+lwtJZ4qeNX1f06bE=
 		</data>
 		<key>Modules/ItgMediastreamPlatformAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JnX2UUOa1Nrkr7ODlv64QeVc7YU=
+		HbVKIuLDxuOK7ZvgVS5khm1QEuM=
 		</data>
 		<key>Modules/ItgMediastreamPlatformAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		xjXXMUK02rJ63R9jhDhJpqgSwLI=
+		1XIXr6eHPLP3CYpx8aAQI6hyNVk=
 		</data>
 		<key>Modules/ItgMediastreamPlatformAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		FQ56v+Zmt31e5xambTG0Z1aXdkA=
+		x0GfMvW6qg88yti+gLMyujIgni4=
 		</data>
 		<key>Modules/ItgMediastreamPlatformAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/ItgMediastreamPlatformAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		FQ56v+Zmt31e5xambTG0Z1aXdkA=
+		x0GfMvW6qg88yti+gLMyujIgni4=
 		</data>
 		<key>Modules/ItgMediastreamPlatformAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xR003/7fXtA10xLsLeq4SW58Kus=
+		594iiUSpz2r9AhbFBhVNWl/1xgY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,14 +55,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/cdUIvVKy3bUmpz8IdqkjmQtA9yVLPDVPOgnyjuCK6U=
+			H9ot/Ch+rZvrgDvK69wN1ERhevSKbN/tf4C0PFdUuc0=
 			</data>
 		</dict>
 		<key>Modules/ItgMediastreamPlatformAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cYNSCY1ZzmrbLJQ0XQ8i1pX0JVVA/XYbeqPyoo5K4YM=
+			CnIe0VTymc1vfmz1o0h6tJQm8kecIUAlVL8FuhsS8bw=
 			</data>
 		</dict>
 		<key>Modules/ItgMediastreamPlatformAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -76,28 +76,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cYNSCY1ZzmrbLJQ0XQ8i1pX0JVVA/XYbeqPyoo5K4YM=
+			CnIe0VTymc1vfmz1o0h6tJQm8kecIUAlVL8FuhsS8bw=
 			</data>
 		</dict>
 		<key>Modules/ItgMediastreamPlatformAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xhpUmxfDU0hLWB+klD+XMh9x0/kdtGDdfYGiGUmiiy0=
+			X5SjjZG5kD7xBKIvdvVW3tMHjjJzNJH+iMDtC+27IcQ=
 			</data>
 		</dict>
 		<key>Modules/ItgMediastreamPlatformAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/cdUIvVKy3bUmpz8IdqkjmQtA9yVLPDVPOgnyjuCK6U=
+			H9ot/Ch+rZvrgDvK69wN1ERhevSKbN/tf4C0PFdUuc0=
 			</data>
 		</dict>
 		<key>Modules/ItgMediastreamPlatformAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AzGTLPQHLW8bnp0yuseSmU/r8lU2j7VoAlpcxhe2Lq8=
+			9XQY2sEI8Lq82sZ8pOJbbC9ezzJMaUFgkSNxCIdvO2I=
 			</data>
 		</dict>
 		<key>Modules/ItgMediastreamPlatformAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -111,14 +111,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AzGTLPQHLW8bnp0yuseSmU/r8lU2j7VoAlpcxhe2Lq8=
+			9XQY2sEI8Lq82sZ8pOJbbC9ezzJMaUFgkSNxCIdvO2I=
 			</data>
 		</dict>
 		<key>Modules/ItgMediastreamPlatformAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Ew+Pr2vP/PX5qsvyWwO4Jp8A+eugsoVpPxHQc3vmsA=
+			ZYGKM2A7GuuHExBw4JyQpZiJu4bWVHs/Yj1QCM0dW68=
 			</data>
 		</dict>
 	</dict>
