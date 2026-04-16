@@ -5053,6 +5053,16 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "InthegametviOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -13595,499 +13605,520 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/FlexiMediaConverter.swift",
+      "kind": "Array",
+      "offset": 1815,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/FlexiMediaConverter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5579,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
+      "kind": "Array",
+      "offset": 873,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 2862,
+      "offset": 3738,
       "length": 32,
       "value": "\"{vars.internal.user.foreignId}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 2913,
+      "offset": 3789,
       "length": 25,
       "value": "\"{vars.internal.user.id}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 2962,
+      "offset": 3838,
       "length": 30,
       "value": "\"{vars.internal.video.length}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 3014,
+      "offset": 3890,
       "length": 35,
       "value": "\"{vars.internal.video.currentTime}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 3073,
+      "offset": 3949,
       "length": 30,
       "value": "\"{vars.internal.screen.width}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 3128,
+      "offset": 4004,
       "length": 31,
       "value": "\"{vars.internal.screen.height}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 3183,
+      "offset": 4059,
       "length": 30,
       "value": "\"{vars.internal.channel.name}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 3237,
+      "offset": 4113,
       "length": 30,
       "value": "\"{vars.internal.channel.slug}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 3290,
+      "offset": 4166,
       "length": 29,
       "value": "\"{vars.internal.sdk.version}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 3337,
+      "offset": 4213,
       "length": 23,
       "value": "\"{vars.internal.token}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 3379,
+      "offset": 4255,
       "length": 15,
       "value": "\"{screenWidth}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 3414,
+      "offset": 4290,
       "length": 16,
       "value": "\"{screenHeight}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 3448,
+      "offset": 4324,
       "length": 9,
       "value": "\"{width}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 3476,
+      "offset": 4352,
       "length": 10,
       "value": "\"{height}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 3505,
+      "offset": 4381,
       "length": 10,
       "value": "\"{device}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 3538,
+      "offset": 4414,
       "length": 26,
       "value": "\"{vars.flexi.campaignId} \""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 3588,
+      "offset": 4464,
       "length": 29,
       "value": "\"{vars.internal.orientation}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 5533,
+      "offset": 6409,
       "length": 14,
       "value": "\"split_screen\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "BooleanLiteral",
-      "offset": 11968,
+      "offset": 13046,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 22155,
+      "offset": 23232,
       "length": 4,
       "value": "\"ok\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "Array",
-      "offset": 22264,
+      "offset": 23341,
       "length": 153,
       "value": "[\"16:9\", \"9:16\", \"4:3\", \"2:1\", \"1:1\", \"22:9\", \"9:22\", \"21:9\", \"9:21\", \"20:9\", \"9:20\", \"19:9\", \"9:19\", \"19.5:9\", \"9:19.5\", \"18:9\", \"9:18\", \"17:9\", \"9:17\"]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "Array",
-      "offset": 24123,
+      "offset": 25200,
       "length": 34,
       "value": "[\"SD\", \"HD\", \"FULLHD\", \"4K\", \"8K\"]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "Dictionary",
-      "offset": 24220,
+      "offset": 25297,
       "length": 271,
       "value": "[(\"SD\", \"720x480\"), (\"HD\", \"1280x720\"), (\"FULLHD\", \"1920x1080\"), (\"FHD\", \"1920x1080\"), (\"4K\", \"3840x2160\"), (\"8K\", \"7680x4320\")]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 1439,
+      "offset": 1523,
       "length": 13,
       "value": "\"\\{index\\}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 1474,
+      "offset": 1558,
       "length": 17,
       "value": "\"\\{iteration\\}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 1516,
+      "offset": 1600,
       "length": 36,
       "value": "\"\\{vars\\.external\\.[^\\{\\}]*\\}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 1572,
+      "offset": 1656,
       "length": 46,
       "value": "\"\\{vars\\.internal\\.storage\\.[^\\{\\}]*\\}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 1639,
+      "offset": 1723,
       "length": 32,
       "value": "\"\\{vars\\.data\\.[^\\{\\}]*\\}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 1695,
+      "offset": 1779,
       "length": 36,
       "value": "\"\\{vars\\.internal\\.[^\\{\\}]*\\}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 1753,
+      "offset": 1837,
       "length": 17,
       "value": "\"\\{timestamp\\}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 1794,
+      "offset": 1878,
       "length": 19,
       "value": "\"\\{cachebuster\\}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 1835,
+      "offset": 1919,
       "length": 17,
       "value": "\"\\{userAgent\\}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 1872,
+      "offset": 1956,
       "length": 25,
       "value": "\"\\{vars\\.flexi\\.id\\}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 1920,
+      "offset": 2004,
       "length": 33,
       "value": "\"\\{vars\\.flexi\\.campaignId\\}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 1971,
+      "offset": 2055,
       "length": 36,
       "value": "\"\\{vars\\.[^\\{\\}]*\\{count\\}\\}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 2030,
+      "offset": 2114,
       "length": 25,
       "value": "\"\\{vars\\.[^\\{\\}]*\\}\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2645,
+      "offset": 2729,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "Dictionary",
-      "offset": 2878,
+      "offset": 2962,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "Array",
-      "offset": 3165,
+      "offset": 3249,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "Dictionary",
-      "offset": 3241,
+      "offset": 3325,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "Array",
-      "offset": 3294,
+      "offset": 3378,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "Dictionary",
-      "offset": 3356,
+      "offset": 3440,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "Dictionary",
-      "offset": 3413,
+      "offset": 3497,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "Dictionary",
-      "offset": 3519,
+      "offset": 3603,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3649,
+      "offset": 3733,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3971,
+      "offset": 4055,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "Array",
-      "offset": 4278,
+      "offset": 4362,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10792,
+      "offset": 10862,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10817,
+      "offset": 10887,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 40020,
+      "offset": 39842,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 40043,
+      "offset": 39865,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 55142,
+      "offset": 54664,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 55341,
+      "offset": 54887,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 55525,
+      "offset": 55071,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 56186,
+      "offset": 55719,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 56200,
+      "offset": 55733,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 56725,
+      "offset": 56258,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 56976,
+      "offset": 56509,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 56979,
+      "offset": 56512,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 57238,
+      "offset": 56771,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 57487,
+      "offset": 57020,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 57736,
+      "offset": 57269,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 62398,
+      "offset": 61875,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 62445,
+      "offset": 61922,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 62905,
+      "offset": 62382,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 63158,
+      "offset": 62635,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 63161,
+      "offset": 62638,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 63421,
+      "offset": 62898,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 63671,
+      "offset": 63148,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 63918,
+      "offset": 63395,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 65414,
+      "offset": 64891,
       "length": 5,
       "value": "false"
     },
@@ -14346,14 +14377,14 @@
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Managers\/ITGNetworkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 16706,
+      "offset": 16715,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Managers\/ITGNetworkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 16731,
+      "offset": 16740,
       "length": 4,
       "value": "true"
     },
@@ -16066,6 +16097,41 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Managers\/ITGClocksScheduler.swift",
+      "kind": "Array",
+      "offset": 721,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Managers\/ITGClocksScheduler.swift",
+      "kind": "Array",
+      "offset": 771,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Managers\/ITGClocksScheduler.swift",
+      "kind": "Array",
+      "offset": 824,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Managers\/ITGClocksScheduler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1132,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Managers\/ITGAdsMetadataManager.swift",
+      "kind": "Array",
+      "offset": 181,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/OtherClasses.swift",
       "kind": "FloatLiteral",
       "offset": 466,
@@ -16089,212 +16155,170 @@
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 1104,
+      "offset": 1131,
       "length": 176,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 1156,
+      "offset": 1183,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 1197,
+      "offset": 1224,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 1249,
+      "offset": 1276,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 1279,
+      "offset": 1306,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 1623,
+      "offset": 1650,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1759,
+      "offset": 1786,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1795,
+      "offset": 1822,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 2818,
+      "offset": 2994,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Dictionary",
-      "offset": 2978,
+      "offset": 3154,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 3031,
+      "offset": 3207,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 3193,
+      "offset": 3369,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 3251,
+      "offset": 3427,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 3301,
+      "offset": 3477,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3518,
+      "offset": 3695,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3532,
+      "offset": 3709,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "Array",
-      "offset": 3729,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "Array",
-      "offset": 3779,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "Array",
-      "offset": 3829,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "Array",
-      "offset": 3882,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4186,
+      "offset": 3964,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "Array",
-      "offset": 5553,
+      "offset": 5363,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5771,
+      "offset": 5581,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7248,
+      "offset": 7074,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7787,
+      "offset": 7613,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7812,
+      "offset": 7638,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17872,
+      "offset": 18303,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17896,
+      "offset": 18327,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 32251,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/ITGOverlayView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 43500,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Managers\/ITGUserManager.swift",
@@ -16432,28 +16456,28 @@
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/FlexiModels.swift",
       "kind": "StringLiteral",
-      "offset": 24203,
+      "offset": 24122,
       "length": 23,
       "value": "\"FlexiAutoCloseTrigger\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/FlexiModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 42140,
+      "offset": 41874,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/FlexiModels.swift",
       "kind": "StringLiteral",
-      "offset": 53025,
+      "offset": 52775,
       "length": 18,
       "value": "\"align-horizontal\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/FlexiModels.swift",
       "kind": "StringLiteral",
-      "offset": 53073,
+      "offset": 52823,
       "length": 16,
       "value": "\"align-vertical\""
     },

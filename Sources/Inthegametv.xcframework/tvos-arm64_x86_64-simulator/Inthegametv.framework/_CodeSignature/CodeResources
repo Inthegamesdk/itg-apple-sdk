@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aHpeYD40ARL4qJJNeYHYssOjdHo=
+		dI7WMRHd9ee6gr0EObIPm/P+qFQ=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		epZLN+2JROJ/uV/w7tNBhiz4qPw=
+		WzlRKLyBYe5xcHml3HSNXOFsl1I=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		p8QDBI3RNBupW+mKYsh6u7HejLM=
+		0xrEpqrlsUqw7TzKbkIjyGzAdj4=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		epZLN+2JROJ/uV/w7tNBhiz4qPw=
+		WzlRKLyBYe5xcHml3HSNXOFsl1I=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		a0n6yriZxLZY2eU0ZDCW9v9Rirc=
+		rP8lu4PpdKxVYd/gT95eAzoTjg0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -92,7 +92,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L7jzwAGWNnOSIcMJZEUtVlz/v9TEZvZDU4qd1OIKce8=
+			ybwhAZMw/4cloLmDqrsH4zluTJkw/D/qQKHcX9rGwTE=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
@@ -120,14 +120,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nXQVkgVt8cAxxvxt1MHSzT8WBJYGPHwQV74ZHos7WSg=
+			PMJ530vrOxiWCzaJmqPDhUqznvmVrXhlasxpf/dVdEM=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L7jzwAGWNnOSIcMJZEUtVlz/v9TEZvZDU4qd1OIKce8=
+			ybwhAZMw/4cloLmDqrsH4zluTJkw/D/qQKHcX9rGwTE=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
@@ -155,7 +155,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mhQFXd4Xd0YhO98Go3lTxw0EGYQI5teXpM9dljC/8Ls=
+			a7LAGqCC+b13/qmrBPBcr5yUTd2fqy3iYWef+cFYmCg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
