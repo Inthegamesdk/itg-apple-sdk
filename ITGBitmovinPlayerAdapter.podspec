@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "ITGBitmovinPlayerAdapter"
-    s.version      = "2.7.23"
+    s.version      = "2.7.24"
     s.summary      = "Inthegametv adapter for Bitmovin player"
     s.description  = "Inthegametv adapter for Bitmovin player"
     s.homepage     = "www.inthegame.io"
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.platform = :ios, :tvos
     s.ios.deployment_target  = '14.0'
     s.tvos.deployment_target  = '14.0'
-    s.dependency 'ITGPlayerViewController', '~> 2.7.23'
+    s.dependency 'ITGPlayerViewController', '~> 2.7.24'
     s.dependency 'BitmovinPlayer'
     s.vendored_frameworks = 'Sources/Plugins/ItgBitmovinPlayerAdapter.xcframework'
     s.pod_target_xcconfig = {

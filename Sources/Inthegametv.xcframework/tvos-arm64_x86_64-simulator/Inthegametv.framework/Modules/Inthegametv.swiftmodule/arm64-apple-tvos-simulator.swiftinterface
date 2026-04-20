@@ -7,9 +7,11 @@ import AVKit
 import CommonCrypto
 import CoreGraphics
 import CoreMedia
+import Darwin
 import DeveloperToolsSupport
 import Foundation
 @_exported import Inthegametv
+import MachO
 import Storket
 import Swift
 import SwiftUI
@@ -62,12 +64,14 @@ public enum ITGClientAppContent : Swift.String {
     get
   }
 }
-public enum ITGPlayerState {
+public enum ITGPlayerState : Swift.String {
   case playing
   case paused
-  public static func == (a: Inthegametv.ITGPlayerState, b: Inthegametv.ITGPlayerState) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -120,6 +124,7 @@ public enum AnalyticsEventType : Swift.String, Swift.Codable {
   case error
   case noshow
   case complete
+  case log
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
   #endif
@@ -144,16 +149,15 @@ public enum AnalyticsParent : Swift.String, Swift.Codable {
     get
   }
 }
-public struct AnalyticsInfo : Swift.Codable {
+public struct AnalyticsInfo : Swift.Encodable {
   public let moduleId: Swift.String?
   public let moduleName: Swift.String?
   public let parent: Inthegametv.AnalyticsParent?
   public let parentId: Swift.String?
   public let campaignId: Swift.String?
   public var flexiType: Inthegametv.CreativeType?
-  public var meta: [Swift.String : Swift.String]?
+  public var meta: [Swift.String : Any]?
   public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
 }
 public enum WebPDecodingError : Swift.UInt32, Swift.Error {
   case none
@@ -417,6 +421,9 @@ extension Swift.UnkeyedDecodingContainer {
   public mutating func decode(_ type: Swift.Dictionary<Swift.String, Any>.Type) throws -> Swift.Dictionary<Swift.String, Any>
 }
 extension Swift.KeyedEncodingContainerProtocol where Self.Key == Inthegametv.JSONCodingKeys {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public mutating func encodeIfPresent(_ value: [Swift.String : Any]?, forKey key: Self.Key) throws
+  #endif
   public mutating func encode(_ value: Swift.Dictionary<Swift.String, Any>) throws
 }
 extension Swift.KeyedEncodingContainerProtocol {
@@ -450,6 +457,7 @@ extension Inthegametv.ITGClientAppContent : Swift.Hashable {}
 extension Inthegametv.ITGClientAppContent : Swift.RawRepresentable {}
 extension Inthegametv.ITGPlayerState : Swift.Equatable {}
 extension Inthegametv.ITGPlayerState : Swift.Hashable {}
+extension Inthegametv.ITGPlayerState : Swift.RawRepresentable {}
 extension Inthegametv.CreativeType : Swift.Equatable {}
 extension Inthegametv.CreativeType : Swift.Hashable {}
 extension Inthegametv.CreativeType : Swift.RawRepresentable {}

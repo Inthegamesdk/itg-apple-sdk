@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "Inthegametv"
-    s.version      = "2.7.23"
+    s.version      = "2.7.24"
     s.summary      = "Inthegametv SDK for iOS and tvOS"
     s.description  = "Inthegametv SDK for iOS and tvOS"
     s.homepage     = "www.inthegame.io"
