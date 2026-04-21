@@ -19,7 +19,8 @@ let package = Package(
         .library(name: "ITGOverlayViewSwiftUI", targets: ["ITGOverlayViewSwiftUI"]),
         .library(name: "ITGMediatailorPlugin", targets: ["ITGMediatailorPlugin"]),
         .library(name: "ITGDatazoomPlugin", targets: ["ITGDatazoomPlugin"]),
-        .library(name: "ITGGoogleIMAPlugin", targets: ["ITGGoogleIMAPlugin"])
+        .library(name: "ITGGoogleIMAPlugin", targets: ["ITGGoogleIMAPlugin"]),
+        .library(name: "ITGMediastreamPlatformAdapter", targets: ["ITGMediastreamPlatformAdapter"])
     ],
     targets: [
         .binaryTarget(name: "Inthegametv", path: "Sources/Inthegametv.xcframework"),
@@ -32,6 +33,7 @@ let package = Package(
         .binaryTarget(name: "ITGMediatailorPlugin", path: "Sources/Plugins/ItgMediatailorPlugin.xcframework"),
         .binaryTarget(name: "ITGDatazoomPlugin", path: "Sources/Plugins/ItgDatazoomPlugin.xcframework"),
         .binaryTarget(name: "ITGGoogleIMAPlugin", path: "Sources/Plugins/ItgGoogleIMAPlugin.xcframework"),
-        .binaryTarget(name: "ITGKalturaPlayerAdapter", path: "Sources/Plugins/ItgKalturaPlayerAdapter.xcframework")
+        .binaryTarget(name: "ITGKalturaPlayerAdapter", path: "Sources/Plugins/ItgKalturaPlayerAdapter.xcframework"),
+        .binaryTarget(name: "ITGMediastreamPlatformAdapter", path: "Sources/Plugins/ITGMediastreamPlatformAdapter.xcframework")
     ]
 )

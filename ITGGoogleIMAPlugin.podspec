@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "ITGGoogleIMAPlugin"
-    s.version      = "2.7.24"
+    s.version      = "2.7.25"
     s.summary      = "ITGGoogleIMAPlugin component for integration with Inthegametv SDK"
     s.description  = "ITGGoogleIMAPlugin component for integration with Inthegametv SDK"
     s.homepage     = "www.inthegame.io"
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.platform = :ios, :tvos
     s.ios.deployment_target  = '15.0'
     s.tvos.deployment_target  = '15.0'
-    s.dependency 'Inthegametv', '~> 2.7.24'
+    s.dependency 'Inthegametv', '~> 2.7.25'
     s.vendored_frameworks = 'Sources/Plugins/ItgGoogleIMAPlugin.xcframework'
     s.pod_target_xcconfig = {
         'ENABLE_USER_SCRIPT_SANDBOXING' => 'NO'
