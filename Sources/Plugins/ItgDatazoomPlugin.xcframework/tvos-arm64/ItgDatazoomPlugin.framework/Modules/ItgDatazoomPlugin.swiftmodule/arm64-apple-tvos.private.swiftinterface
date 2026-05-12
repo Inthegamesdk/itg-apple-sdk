@@ -11,7 +11,7 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 @objc public class ITGDatazoomPlugin : MediaTailorSDK.AdObserver {
   weak public var flexiDelegate: Inthegametv.ITGOverlayView?
-  public init(flexiDelegate: Inthegametv.ITGOverlayView)
+  public init(flexiDelegate: Inthegametv.ITGOverlayView, injectImmediately: Swift.Bool = false)
   @objc override dynamic public func onNewNonLinearAds(adData: MediaTailorSDK.NonLinearAdsData)
   @objc deinit
 }

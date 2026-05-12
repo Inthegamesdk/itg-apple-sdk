@@ -345,7 +345,7 @@
           {
             "kind": "Function",
             "name": "startMediaTailor",
-            "printedName": "startMediaTailor(url:interval:)",
+            "printedName": "startMediaTailor(url:interval:injectImmediately:availIdsCachingTime:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -362,12 +362,27 @@
                 "kind": "TypeNominal",
                 "name": "Int",
                 "printedName": "Swift.Int",
+                "hasDefaultArg": true,
                 "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AvailsCacheTime",
+                "printedName": "InthegametviOS.AvailsCacheTime",
+                "hasDefaultArg": true,
+                "usr": "s:14InthegametviOS15AvailsCacheTimeO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:20ItgMediatailorPlugin014ITGMediatailorC0C16startMediaTailor3url8intervalySS_SitF",
-            "mangledName": "$s20ItgMediatailorPlugin014ITGMediatailorC0C16startMediaTailor3url8intervalySS_SitF",
+            "usr": "s:20ItgMediatailorPlugin014ITGMediatailorC0C16startMediaTailor3url8interval17injectImmediately19availIdsCachingTimeySS_SiSb14InthegametviOS011AvailsCacheO0OtF",
+            "mangledName": "$s20ItgMediatailorPlugin014ITGMediatailorC0C16startMediaTailor3url8interval17injectImmediately19availIdsCachingTimeySS_SiSb14InthegametviOS011AvailsCacheO0OtF",
             "moduleName": "ItgMediatailorPlugin",
             "declAttributes": [
               "AccessControl"
@@ -429,6 +444,41 @@
       "offset": 484,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGMediatailorPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 618,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGMediatailorPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 685,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGMediatailorPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1033,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGMediatailorPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1062,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGMediatailorPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1114,
+      "length": 2,
+      "value": "60"
     }
   ]
 }

@@ -6,15 +6,15 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		1yvK6FmQeyYq4q4p4WSULWCQEd0=
+		6jXssnaFMW4q7G8O3AE2lQZ97vI=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		5DgdsYBJvJGQ47w7LR8to/txhaU=
+		D0s4Lz2KC73M6FRNJhS5ukJTpGA=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		aMQk/CmvhRYn5ddtD4FfltRJ5WU=
+		RQMaxnNa0CUhq4I8NXIbBRtRGMs=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		aMQk/CmvhRYn5ddtD4FfltRJ5WU=
+		RQMaxnNa0CUhq4I8NXIbBRtRGMs=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		QPrEnhBCIhRVyAnqovBklp7jUp8=
+		su2pKjp42/uHmwFz016DNndnQyM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,14 +35,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			H5C1ar6sUmHFd0moVQmoduCMACRjwekyCWS24Sh7nGE=
+			jWD7xup6qa4/eNJpjCGf0dseJq52IsnVIjebfiMWjPE=
 			</data>
 		</dict>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SjwiRu/GmEwnKvhfWZhOSVIvTmoC5O4zcI0AakxuNSs=
+			4w/efRoYbUx6t0mC8KkAawUhmXkGUYu3ZEoRBx8hOgQ=
 			</data>
 		</dict>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -56,14 +56,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SjwiRu/GmEwnKvhfWZhOSVIvTmoC5O4zcI0AakxuNSs=
+			4w/efRoYbUx6t0mC8KkAawUhmXkGUYu3ZEoRBx8hOgQ=
 			</data>
 		</dict>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YLHxjwZMc1yJBfWzReGxIeyYQ54aMRQ53+QXACwjfPU=
+			l8pi0XXnBtCdzm8LwJHUzTgK5tETZmtrYwGrcudimnM=
 			</data>
 		</dict>
 	</dict>

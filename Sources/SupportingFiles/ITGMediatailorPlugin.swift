@@ -23,6 +23,8 @@ public class ITGMediatailorPlugin {
     private var processedAvails: [(String, Date)] = []
     private var idTimer: Timer?
     private var notifyDataDelegateOperation: (()->Void)?
+    private var injectImmediately: Bool = false
+    private var availIdsCachingTime: AvailsCacheTime = .time(60)
     
     deinit {
         updateTimer?.invalidate()
@@ -34,11 +36,16 @@ public class ITGMediatailorPlugin {
         self.flexiDelegate = flexiDelegate
     }
     
-    public func startMediaTailor(url: String, interval: Int) {
+    public func startMediaTailor(url: String, interval: Int = 5, injectImmediately: Bool = false, availIdsCachingTime: AvailsCacheTime = .time(60)) {
+        self.injectImmediately = injectImmediately
+        self.availIdsCachingTime = availIdsCachingTime
         updateTimer?.invalidate()
-        idTimer = Timer.scheduledTimer(withTimeInterval: 60, repeats: true, block: { _ in
-            self.processedAvails = self.processedAvails.filter({ abs($0.1.timeIntervalSinceNow) < 60 }) 
-        })
+        idTimer?.invalidate()
+        if case .time(let time) = availIdsCachingTime {
+            idTimer = Timer.scheduledTimer(withTimeInterval: time, repeats: true, block: { [weak self] _ in
+                self?.processedAvails = self?.processedAvails.filter({ abs($0.1.timeIntervalSinceNow) < time }) ?? []
+            })
+        }
         updateTimer = Timer.scheduledTimer(withTimeInterval: TimeInterval(interval), repeats: true, block: { _ in
             if let url = URL(string: url) {
                 URLSession.shared.dataTask(with: URLRequest(url: url)) { [weak self] data, response, error in
@@ -150,11 +157,9 @@ public class ITGMediatailorPlugin {
                 }
             }
             for nonLinearAd in ad["nonLinearAdList"] as? [[String: Any]] ?? [] {
-                if nonLinearAd["staticResourceCreativeType"] as? String == "inthegame_creative" {
-                    if let flexiString = nonLinearAd["staticResource"] as? String {
-                        dispatchGroup.enter()
-                        processFlexis(flexiString, duration: duration, trackingUrls: trackingUrls, errorUrls: errorUrls, completion: completion)
-                    }
+                if let flexiString = nonLinearAd["staticResource"] as? String {
+                    dispatchGroup.enter()
+                    processFlexis(flexiString, duration: duration, trackingUrls: trackingUrls, errorUrls: errorUrls, completion: completion)
                 }
             }
         }
@@ -166,7 +171,11 @@ public class ITGMediatailorPlugin {
                 var flexis: [String] = []
                 let dispatchGroup = DispatchGroup()
                 dispatchGroup.enter()
-                processedAvails.append((availId, Date()))
+                if case .none = availIdsCachingTime {
+                    
+                } else {
+                    processedAvails.append((availId, Date()))
+                }
                 notifyDataDelegateOperation?()
                 notifyDataDelegateOperation = nil
                 let time = avail["startTimeInSeconds"] as? Double ?? 0
@@ -184,7 +193,11 @@ public class ITGMediatailorPlugin {
                     parseAds(ads, time: time, availId: availId, duration: duration, dispatchGroup: dispatchGroup, completion: completion)
                 }
                 dispatchGroup.notify(queue: .main) { [weak self] in
-                    self?.flexiDelegate?.scheduleFlexi(flexis, time: time)
+                    if self?.injectImmediately == true {
+                        self?.flexiDelegate?.scheduleFlexi(flexis, time: 0)
+                    } else {
+                        self?.flexiDelegate?.scheduleFlexi(flexis, time: time)
+                    }
                 }
                 dispatchGroup.leave()
             }

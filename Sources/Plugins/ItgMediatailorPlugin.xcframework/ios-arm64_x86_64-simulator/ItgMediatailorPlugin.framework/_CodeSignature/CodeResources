@@ -6,15 +6,15 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		DEYjn1x5WcUHt4y6rEroyViRGtk=
+		isFHHDMq7KENdvCAHb8xK7OcXvk=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		5DgdsYBJvJGQ47w7LR8to/txhaU=
+		D0s4Lz2KC73M6FRNJhS5ukJTpGA=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		qg/9rEf78d2M1gs/7af6bYamHq0=
+		nImYj8IrB/FDjx76N4sl2VD8Z/8=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qg/9rEf78d2M1gs/7af6bYamHq0=
+		nImYj8IrB/FDjx76N4sl2VD8Z/8=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		BfvrqEyFwIoZyACUefgqPEOqIkM=
+		puOblE7QLPy72XeWZx56htzoLIQ=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		5DgdsYBJvJGQ47w7LR8to/txhaU=
+		D0s4Lz2KC73M6FRNJhS5ukJTpGA=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		cf7nvJXha5QULAs37O1lKCTgsi8=
+		f0thBrcnYpQtGdyK94glhgPTfLU=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		cf7nvJXha5QULAs37O1lKCTgsi8=
+		f0thBrcnYpQtGdyK94glhgPTfLU=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4Anx0x9V1w5Sv5wdhNI5sQeN+x0=
+		9TiD/ONUhDtc4cgszOBDe0oc38A=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,14 +55,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			H5C1ar6sUmHFd0moVQmoduCMACRjwekyCWS24Sh7nGE=
+			jWD7xup6qa4/eNJpjCGf0dseJq52IsnVIjebfiMWjPE=
 			</data>
 		</dict>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UiMjZethFz2AGVmXYuDzSnAgj7KLSg6+3KpsxAksayc=
+			JU/B4CRvSVYEZA9nNif2afCAA4rmf4Tk439sw+p2N2U=
 			</data>
 		</dict>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -76,28 +76,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UiMjZethFz2AGVmXYuDzSnAgj7KLSg6+3KpsxAksayc=
+			JU/B4CRvSVYEZA9nNif2afCAA4rmf4Tk439sw+p2N2U=
 			</data>
 		</dict>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QwhhUh9v2pxNLSgkMQ5AT6zMXO3jUFLHWomes9FrncU=
+			OFQDvTnYQ6ybmon3M7GRqFkpl1o2H3A+nNwb0NX42J8=
 			</data>
 		</dict>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			H5C1ar6sUmHFd0moVQmoduCMACRjwekyCWS24Sh7nGE=
+			jWD7xup6qa4/eNJpjCGf0dseJq52IsnVIjebfiMWjPE=
 			</data>
 		</dict>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cO4l1m/d8eIJdx22+JDdNYzZ4HGXQ+x0MAzCSYBchCo=
+			Kkvg+4vgd+w18UNwnWbWtdb9jCmOmuHRGKF7o8Mmm6Q=
 			</data>
 		</dict>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -111,14 +111,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cO4l1m/d8eIJdx22+JDdNYzZ4HGXQ+x0MAzCSYBchCo=
+			Kkvg+4vgd+w18UNwnWbWtdb9jCmOmuHRGKF7o8Mmm6Q=
 			</data>
 		</dict>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1wLVnPUo7LvZzcSmEN/TfCZjRLBCz0XQm6iwuPwIhjY=
+			XBsndd1s4NpYQ67kOA+lrbksV8qe/6Ai8fI61ZmAGXQ=
 			</data>
 		</dict>
 	</dict>

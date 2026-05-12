@@ -159,6 +159,13 @@ public struct AnalyticsInfo : Swift.Encodable {
   public var meta: [Swift.String : Any]?
   public func encode(to encoder: any Swift.Encoder) throws
 }
+public enum AvailsCacheTime : Swift.Codable {
+  case none
+  case forever
+  case time(Swift.Double)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public enum WebPDecodingError : Swift.UInt32, Swift.Error {
   case none
   case outOfMemory

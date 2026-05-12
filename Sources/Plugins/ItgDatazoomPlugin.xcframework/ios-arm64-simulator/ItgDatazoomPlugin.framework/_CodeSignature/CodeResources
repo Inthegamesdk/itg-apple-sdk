@@ -6,15 +6,15 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		I1OgQ7kgDeTMqsbh2eNLMN/6i7U=
+		5RnJ0+/xE3PkbVjac+Vz/1U8jrc=
 		</data>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		8fIANwzl2kfFzXT4S2kH2PwJ5g4=
+		DdQv7WFbSruWrdv5o82jlQqKi68=
 		</data>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		oXg/z6+pyiXKsOOrc70d5h/ztM0=
+		VT9SwT4Lq3FL+xk3BvyRaqnA0sc=
 		</data>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		oXg/z6+pyiXKsOOrc70d5h/ztM0=
+		VT9SwT4Lq3FL+xk3BvyRaqnA0sc=
 		</data>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IwmhxaZBtDKYAzbZipr5S6M1LWM=
+		+iV02de2FDIPKuUtCkZcKb2PS+o=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,14 +35,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NbAhwTP5dOXlrwp/MzY5zBWBro3kccnLebjibrD/C7k=
+			vdID0Tzh8hQcWevp7KMo0KR5HUrQpwZb98VqvTwORKs=
 			</data>
 		</dict>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			106nT56stpraU7ITgbDqirxRxonrZwBO9/AStO4lkUg=
+			EPWFv/U1Ne8yVUPuqYVBc1hOw5ptlEP/ZPB81zvYc+w=
 			</data>
 		</dict>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -56,14 +56,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			106nT56stpraU7ITgbDqirxRxonrZwBO9/AStO4lkUg=
+			EPWFv/U1Ne8yVUPuqYVBc1hOw5ptlEP/ZPB81zvYc+w=
 			</data>
 		</dict>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F2auUxNH8F/bCQu3HYP1HfVJ9zNaWJpB/+ZRHaE08A0=
+			68h666TYDuWxaZvlMzCmPqRNhzp+B5Y6Gx9eBxPRaYg=
 			</data>
 		</dict>
 	</dict>

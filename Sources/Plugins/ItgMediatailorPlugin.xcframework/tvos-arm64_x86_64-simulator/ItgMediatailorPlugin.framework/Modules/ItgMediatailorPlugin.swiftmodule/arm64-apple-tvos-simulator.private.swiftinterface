@@ -18,6 +18,6 @@ public class ITGMediatailorPlugin {
   #if compiler(>=5.3) && $NonescapableTypes
   public init(dataDelegate: (any ItgMediatailorPlugin.ITGMediatailorPluginDelegate)?, flexiDelegate: Inthegametv.ITGOverlayView)
   #endif
-  public func startMediaTailor(url: Swift.String, interval: Swift.Int)
+  public func startMediaTailor(url: Swift.String, interval: Swift.Int = 5, injectImmediately: Swift.Bool = false, availIdsCachingTime: Inthegametv.AvailsCacheTime = .time(60))
   public func stopMediaTailor()
 }

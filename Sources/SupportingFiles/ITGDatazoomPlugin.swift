@@ -16,8 +16,10 @@ import MediaTailorSDK
 public class ITGDatazoomPlugin: AdObserver {
     
     public weak var flexiDelegate: ITGOverlayView?
+    private var injectImmediately: Bool
     
-    public init(flexiDelegate: ITGOverlayView) {
+    public init(flexiDelegate: ITGOverlayView, injectImmediately: Bool = false) {
+        self.injectImmediately = injectImmediately
         self.flexiDelegate = flexiDelegate
     }
     
@@ -31,7 +33,11 @@ public class ITGDatazoomPlugin: AdObserver {
             trackingErrors = trackingErrors.filter({ removeCDATA(from: $0) != "www.example.com" && removeCDATA(from: $0) != "https://www.example.com" })
             parseAds(ads, time: time, availId: availId, duration: duration, trackingUrls: trackingImpressions as [String], errorUrls: trackingErrors as [String], completion: { [weak self] flexis in
                 if let flexis {
-                    self?.flexiDelegate?.scheduleFlexi(flexis, time: time)
+                    if self?.injectImmediately == true {
+                        self?.flexiDelegate?.scheduleFlexi(flexis, time: 0)
+                    } else {
+                        self?.flexiDelegate?.scheduleFlexi(flexis, time: time)
+                    }
                 }
             })
         }
@@ -39,10 +45,8 @@ public class ITGDatazoomPlugin: AdObserver {
         
     private func parseAds(_ ads: [NonLinearAdsData.NonLinearAd], time: Double, availId: String, duration: Double?, trackingUrls: [String]?, errorUrls: [String]?, completion: @escaping ([String]?)->Void) {
         for ad in ads {
-            if ad.staticResourceCreativeType == "inthegame_creative" {
-                if let flexiString = ad.staticResource {
-                    processFlexis(flexiString, duration: duration, trackingUrls: trackingUrls, errorUrls: errorUrls, completion: completion)
-                }
+            if let flexiString = ad.staticResource {
+                processFlexis(flexiString, duration: duration, trackingUrls: trackingUrls, errorUrls: errorUrls, completion: completion)
             }
         }
     }

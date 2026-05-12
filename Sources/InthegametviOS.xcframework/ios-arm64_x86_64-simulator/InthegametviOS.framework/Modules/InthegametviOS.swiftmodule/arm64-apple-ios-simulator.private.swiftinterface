@@ -153,6 +153,13 @@ public struct AnalyticsInfo : Swift.Encodable {
   public var meta: [Swift.String : Any]?
   public func encode(to encoder: any Swift.Encoder) throws
 }
+public enum AvailsCacheTime : Swift.Codable {
+  case none
+  case forever
+  case time(Swift.Double)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class SpriteImageView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   #if compiler(>=5.3) && $NonescapableTypes

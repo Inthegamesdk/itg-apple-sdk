@@ -136,7 +136,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(flexiDelegate:)",
+            "printedName": "init(flexiDelegate:injectImmediately:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -149,11 +149,18 @@
                 "name": "ITGOverlayView",
                 "printedName": "InthegametviOS.ITGOverlayView",
                 "usr": "c:@M@InthegametviOS@objc(cs)ITGOverlayView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:17ItgDatazoomPlugin011ITGDatazoomC0C13flexiDelegateAC14InthegametviOS14ITGOverlayViewC_tcfc",
-            "mangledName": "$s17ItgDatazoomPlugin011ITGDatazoomC0C13flexiDelegateAC14InthegametviOS14ITGOverlayViewC_tcfc",
+            "usr": "s:17ItgDatazoomPlugin011ITGDatazoomC0C13flexiDelegate17injectImmediatelyAC14InthegametviOS14ITGOverlayViewC_Sbtcfc",
+            "mangledName": "$s17ItgDatazoomPlugin011ITGDatazoomC0C13flexiDelegate17injectImmediatelyAC14InthegametviOS14ITGOverlayViewC_Sbtcfc",
             "moduleName": "ItgDatazoomPlugin",
             "declAttributes": [
               "AccessControl"
@@ -302,5 +309,13 @@
     ],
     "json_format_version": 8
   },
-  "ConstValues": []
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGDatazoomPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 566,
+      "length": 5,
+      "value": "false"
+    }
+  ]
 }
