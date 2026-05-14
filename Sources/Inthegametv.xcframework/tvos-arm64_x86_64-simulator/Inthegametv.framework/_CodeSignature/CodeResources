@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mFWV0yP1O//ajh9yVI3Osr3vYPA=
+		NbRLwGz3LzJ8NZYGSZM6s0gwN70=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		JrepYBxvp/V4vbOV/2yv++2s16k=
+		MRAKgvWVU2RP9FKWy0Y8lfvCtP4=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		SiP0U3uJA3XSz1bL8GPbOc1FNQE=
+		oV2cs513F1wm3hvSP4hKWCcVo4c=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		JrepYBxvp/V4vbOV/2yv++2s16k=
+		MRAKgvWVU2RP9FKWy0Y8lfvCtP4=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		tkNvDcLGi51yjsdy5BZJvwGTNzw=
+		FyGSGnNwBJ9GBT5ui4EdDbeT4IQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -92,7 +92,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UHrhJjxQ0GMN7hGsBeFq3IjZZwuuytCjFKBxVg7Dfrc=
+			ZJKdXK2R7M0Buq8MCnjQKxtsDqsPlRYgHdJeSfTotlE=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
@@ -120,14 +120,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zxLciN+hDNFdiYi76ZuUEq7Hfenzgt4Tya8O2bbG0io=
+			M/BHtaf67aDhfrVYCRIfkOeZiimRvfQ4ZE8ruu5YFIQ=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UHrhJjxQ0GMN7hGsBeFq3IjZZwuuytCjFKBxVg7Dfrc=
+			ZJKdXK2R7M0Buq8MCnjQKxtsDqsPlRYgHdJeSfTotlE=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
@@ -155,7 +155,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3tWw20yo68XsnewUGk5dI8bkecEuSyvP+rvZHR0r4sM=
+			tjy/Zo4DOXo2UZ0h5NnMzHdB/enL1kPv2e01XbEG3MI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
