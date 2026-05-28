@@ -31,7 +31,9 @@ public class StorketService {
   weak public var delegate: (any Storket.StorketDelegate)?
   public init()
   public func configure(url: Swift.String, authKey: Swift.String, start: Foundation.Date, duration: Swift.Double, interval: Swift.Double)
-  public func connect(accountId: Swift.String, channelSlug: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func connect(accountId: Swift.String, channelSlug: Swift.String, storketUrl: Swift.String?)
+  #endif
   public func stop()
   @objc deinit
 }

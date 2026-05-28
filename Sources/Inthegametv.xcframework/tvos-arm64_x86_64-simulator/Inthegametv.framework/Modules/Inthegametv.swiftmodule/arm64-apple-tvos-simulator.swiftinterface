@@ -52,6 +52,7 @@ public struct ITGAdEvent {
   public var adType: Inthegametv.CreativeType
   public var isInteractive: Swift.Bool
   public var flexiObject: [Swift.String : Any]
+  public var source: Inthegametv.FlexiSource
 }
 public enum ITGClientAppContent : Swift.String {
   case ad
@@ -85,6 +86,7 @@ public struct LiveConfig : Swift.Codable {
   public let start: Foundation.Date
   public let duration: Swift.Double
   public let url: Swift.String
+  public let storketUrl: Swift.String?
   public let interval: Swift.Double
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -133,6 +135,7 @@ public enum AnalyticsEventType : Swift.String, Swift.Codable {
     get
   }
 }
+public typealias FlexiSource = Inthegametv.AnalyticsParent
 public enum AnalyticsParent : Swift.String, Swift.Codable {
   case injection
   case app

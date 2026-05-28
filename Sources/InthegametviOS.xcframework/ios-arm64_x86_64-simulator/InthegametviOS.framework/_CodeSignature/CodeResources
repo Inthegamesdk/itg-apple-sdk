@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		kHszde78cmydv7Ps3QUp60b3T3g=
+		37CkJJpiAscw3JBM6nB2TlWaJAM=
 		</data>
 		<key>Headers/Inthegametv.h</key>
 		<data>
@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		t3TAFk8fWiQ/yBGWNyLDjT01eEk=
+		vheNG27oZLiFsAuCVPTPErpyM20=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		rRlFfBic1OKNjKBDVd2SfRGE80A=
+		2M+iCjvUMdDSJNPDgzTDBWhKu4w=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		LThF3SVAUjKwI+l5kYj1/8wudCM=
+		7UqVnDi8nJVt/dKG6nMBqStuyMM=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		LThF3SVAUjKwI+l5kYj1/8wudCM=
+		7UqVnDi8nJVt/dKG6nMBqStuyMM=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		aSoP2Kqj/YwDQcrgtzZnsG/YN+M=
+		/7f4gt1ghNMqgh4F0Fzctk1EDrQ=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		rRlFfBic1OKNjKBDVd2SfRGE80A=
+		2M+iCjvUMdDSJNPDgzTDBWhKu4w=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		u6s5bMZ0V5tWwk+w+/bwCpicwag=
+		yO4ohsESyzQgPibPJmQqDCdDyHA=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		u6s5bMZ0V5tWwk+w+/bwCpicwag=
+		yO4ohsESyzQgPibPJmQqDCdDyHA=
 		</data>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AZmngwl+nsFUBvig+dUlZiLAgTw=
+		9UiWitdEEfTCNsHFVQJi0tgts8w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FHHb48jidZJx7cDlvsuPxkL0MnwJcsyxeQRDr+XqTTg=
+			8PMRIn9zPUhY2N3P9Tuko5WVa+9JDV5EBqk40juZtvQ=
 			</data>
 		</dict>
 		<key>Headers/Inthegametv.h</key>
@@ -92,14 +92,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NsYUvT4MhJ20NQFM2mC3mhkd7SS66G2Ljb2MmCl50A8=
+			GQbQeOpa54ulSFmweXO89HJJuDQgGOBIvjKpyEd0AdI=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R+om+iEVZQQ7TkJhz+lHyya+avW6itk8cEpbSsnGaEM=
+			5P1S5J+Y4FJxZ42X9DeXLgn3F7U+muidLE4cDXOLhZ8=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -113,28 +113,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R+om+iEVZQQ7TkJhz+lHyya+avW6itk8cEpbSsnGaEM=
+			5P1S5J+Y4FJxZ42X9DeXLgn3F7U+muidLE4cDXOLhZ8=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m1BcF+prpUMfA3aEUiU93mGo6ytGu8ojriouCRhRYEM=
+			74odI7KybRsDey90Y4y7Q3/7VEJHUZPrYuQZwIWNIV0=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NsYUvT4MhJ20NQFM2mC3mhkd7SS66G2Ljb2MmCl50A8=
+			GQbQeOpa54ulSFmweXO89HJJuDQgGOBIvjKpyEd0AdI=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3Rcta5GnZsY9YfaFp8K8WTy8kjcdkiTfVlsd/ZTHWHE=
+			lN2YVgMoBrtOHunmiQ67kuQIKSAtuxuY0bXm8flu1hY=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -148,14 +148,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3Rcta5GnZsY9YfaFp8K8WTy8kjcdkiTfVlsd/ZTHWHE=
+			lN2YVgMoBrtOHunmiQ67kuQIKSAtuxuY0bXm8flu1hY=
 			</data>
 		</dict>
 		<key>Modules/InthegametviOS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			P9QYd5iaHCTbvkmFwOPICY3uXxFifmxmrGL+pc2xl3A=
+			xQaQWGlPBiclMrkhgm03U5awlTjo8/yb/SSZGjMuTz0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

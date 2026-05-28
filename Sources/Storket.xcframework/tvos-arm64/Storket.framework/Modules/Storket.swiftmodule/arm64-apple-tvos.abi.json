@@ -1074,7 +1074,7 @@
           {
             "kind": "Function",
             "name": "connect",
-            "printedName": "connect(accountId:channelSlug:)",
+            "printedName": "connect(accountId:channelSlug:storketUrl:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1092,11 +1092,25 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7Storket0A7ServiceC7connect9accountId11channelSlugySS_SStF",
-            "mangledName": "$s7Storket0A7ServiceC7connect9accountId11channelSlugySS_SStF",
+            "usr": "s:7Storket0A7ServiceC7connect9accountId11channelSlug10storketUrlySS_S2SSgtF",
+            "mangledName": "$s7Storket0A7ServiceC7connect9accountId11channelSlug10storketUrlySS_S2SSgtF",
             "moduleName": "Storket",
             "declAttributes": [
               "AccessControl"
