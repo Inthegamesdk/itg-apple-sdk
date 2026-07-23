@@ -14,7 +14,6 @@ let package = Package(
         .library(name: "Inthegametv", targets: ["Inthegametv", "Storket"]),
         .library(name: "ITGPlayerViewController", targets: ["ITGPlayerViewController"]),
         .library(name: "ITGBitmovinPlayerAdapter", targets: ["ITGBitmovinPlayerAdapter"]),
-        .library(name: "ITGKalturaPlayerAdapter", targets: ["ITGKalturaPlayerAdapter"]),
         .library(name: "ITGPlayerViewControllerSwiftUI", targets: ["ITGPlayerViewControllerSwiftUI"]),
         .library(name: "ITGOverlayViewSwiftUI", targets: ["ITGOverlayViewSwiftUI"]),
         .library(name: "ITGMediatailorPlugin", targets: ["ITGMediatailorPlugin"]),
@@ -33,7 +32,6 @@ let package = Package(
         .binaryTarget(name: "ITGMediatailorPlugin", path: "Sources/Plugins/ItgMediatailorPlugin.xcframework"),
         .binaryTarget(name: "ITGDatazoomPlugin", path: "Sources/Plugins/ItgDatazoomPlugin.xcframework"),
         .binaryTarget(name: "ITGGoogleIMAPlugin", path: "Sources/Plugins/ItgGoogleIMAPlugin.xcframework"),
-        .binaryTarget(name: "ITGKalturaPlayerAdapter", path: "Sources/Plugins/ItgKalturaPlayerAdapter.xcframework"),
         .binaryTarget(name: "ITGMediastreamPlatformAdapter", path: "Sources/Plugins/ITGMediastreamPlatformAdapter.xcframework")
     ]
 )
