@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name InthegametviOS
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name InthegametviOS
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import AVFoundation
 import AVKit
 import CommonCrypto
@@ -36,9 +36,7 @@ public struct ITGVideoState : Swift.Equatable, Swift.CustomDebugStringConvertibl
   public let visibleContent: InthegametviOS.ITGClientAppContent
   public let adMetadata: InthegametviOS.AdMetadata?
   public static func == (lhs: InthegametviOS.ITGVideoState, rhs: InthegametviOS.ITGVideoState) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(videoDuration: Foundation.TimeInterval, videoTime: Foundation.TimeInterval, videoStatus: InthegametviOS.ITGPlayerState, visibleContent: InthegametviOS.ITGClientAppContent, adMetadata: InthegametviOS.AdMetadata? = nil)
-  #endif
 }
 public struct ITGAdEvent {
   public var duration: Swift.Double
@@ -51,9 +49,7 @@ public struct ITGAdEvent {
 public enum ITGClientAppContent : Swift.String {
   case ad
   case content
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -62,9 +58,7 @@ public enum ITGClientAppContent : Swift.String {
 public enum ITGPlayerState : Swift.String {
   case playing
   case paused
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -79,8 +73,7 @@ public struct User : Swift.Codable {
 public struct LiveConfig : Swift.Codable {
   public let start: Foundation.Date
   public let duration: Swift.Double
-  public let url: Swift.String
-  public let storketUrl: Swift.String?
+  public let storketUrl: Swift.String
   public let interval: Swift.Double
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -100,9 +93,7 @@ public enum CreativeType : Swift.String, Swift.Codable, Swift.CaseIterable {
   case quiz
   case poll
   case other
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias AllCases = [InthegametviOS.CreativeType]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [InthegametviOS.CreativeType] {
@@ -121,9 +112,7 @@ public enum AnalyticsEventType : Swift.String, Swift.Codable {
   case noshow
   case complete
   case log
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -138,13 +127,32 @@ public enum AnalyticsParent : Swift.String, Swift.Codable {
   case pause
   case absolute
   case flexi
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
+}
+@_hasMissingDesignatedInitializers public class AdChain {
+  public var flexis: [InthegametviOS.AdChainFlexi] {
+    get
+  }
+  public var vasts: [InthegametviOS.AdChainVast] {
+    get
+  }
+  @objc deinit
+}
+public struct AdChainFlexi {
+  public let position: Swift.Int
+  public let id: Swift.String
+  public let name: Swift.String
+  public let json: Swift.String
+}
+public struct AdChainVast {
+  public let position: Swift.Int
+  public let type: Swift.String
+  public let requestUrl: Swift.String
+  public let xml: Swift.String
 }
 public struct AnalyticsInfo : Swift.Encodable {
   public let moduleId: Swift.String?
@@ -154,6 +162,7 @@ public struct AnalyticsInfo : Swift.Encodable {
   public let campaignId: Swift.String?
   public var flexiType: InthegametviOS.CreativeType?
   public var meta: [Swift.String : Any]?
+  public var adChain: InthegametviOS.AdChain
   public func encode(to encoder: any Swift.Encoder) throws
 }
 public enum AvailsCacheTime : Swift.Codable {
@@ -165,20 +174,14 @@ public enum AvailsCacheTime : Swift.Codable {
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class SpriteImageView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class PassthroughView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
-  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 extension UIKit.UIDevice {
@@ -195,22 +198,14 @@ extension InthegametviOS.ITGStorketHelper : Storket.StorketDelegate {
 }
 public protocol ITGOverlayDelegate : AnyObject {
   func itgDidLoadChannelInfo(_ channelMeta: InthegametviOS.ChannelMeta)
-  #if compiler(>=5.3) && $NonescapableTypes
   func itgRequestedVideoStateChange(_ state: InthegametviOS.ITGPlayerState, timeStamp: Foundation.TimeInterval?)
-  #endif
   func itgRequestedFocusUpdate(_ focusRequired: Swift.Bool)
-  #if compiler(>=5.3) && $NonescapableTypes
   func itgRequestedVideoRectChange(_ rect: CoreFoundation.CGRect?, animationTime: Foundation.TimeInterval)
-  #endif
   func itgReceivedDeeplink(_ link: Swift.String)
   func itgDidProcessAnalyticEvent(info: InthegametviOS.AnalyticsInfo, type: InthegametviOS.AnalyticsEventType)
   func itgDidUpdateUserState(_ user: InthegametviOS.User)
-  #if compiler(>=5.3) && $NonescapableTypes
   func itgRequestedVideoSoundLevel(_ soundLevel: Swift.Float?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func itgRequestedVideoGravity(_ videoGravity: AVFoundation.AVLayerVideoGravity?)
-  #endif
   func itgWillPresentAd(event: InthegametviOS.ITGAdEvent)
   func itgDidFinishPresentingAd(event: InthegametviOS.ITGAdEvent)
 }
@@ -222,17 +217,11 @@ public protocol ITGOverlayDelegate : AnyObject {
     @objc get
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToSuperview()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func load(channelSlug: Swift.String, virtualChannels: [Swift.String]? = [], accountId: Swift.String, environment: InthegametviOS.ITGEnvironment = ITGEnvironment.defaultEnvironment, delegate: (any InthegametviOS.ITGOverlayDelegate)?, foreignId: Swift.String?, vars: [Swift.String : Any]? = nil, adsMetadata: [InthegametviOS.AdMetadata]? = nil, showLogs: Swift.Bool = false)
-  #endif
   @_Concurrency.MainActor @preconcurrency public func mute(_ mute: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency public func block(_ block: Swift.Bool, includePauseAd: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency public func resetUser()
@@ -249,21 +238,15 @@ public protocol ITGOverlayDelegate : AnyObject {
 extension InthegametviOS.ITGOverlayView : InthegametviOS.ITGGoogleIMAPluginDelegate {
   @_Concurrency.MainActor @preconcurrency public func addDidFinish()
   @_Concurrency.MainActor @preconcurrency public func adInfo(_ skippable: Swift.Bool)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func didFailedToLoadAd(_ error: Swift.String?)
-  #endif
   @_Concurrency.MainActor @preconcurrency public func requestPause() -> Foundation.TimeInterval
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func requestResume(_ time: Foundation.TimeInterval?)
-  #endif
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class FocusObservableView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency public var focusChangeObservationBlock: ((UIKit.UIView?) -> Swift.Void)?
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 public struct ITGEnvironment : Swift.Equatable {
@@ -283,26 +266,16 @@ public protocol ITGGoogleIMAPluginProtocol : AnyObject {
   func close()
 }
 public protocol ITGGoogleIMAPluginDelegate : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   func didFailedToLoadAd(_ error: Swift.String?)
-  #endif
   func requestPause() -> Foundation.TimeInterval
-  #if compiler(>=5.3) && $NonescapableTypes
   func requestResume(_ time: Foundation.TimeInterval?)
-  #endif
   func adInfo(_ skippable: Swift.Bool)
   func addDidFinish()
 }
 public protocol ITGMediastreamPlatformAdapterDelegate : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   var view: UIKit.UIView! { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   var playerLayer: AVFoundation.AVPlayerLayer? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   var playerViewController: AVKit.AVPlayerViewController? { get }
-  #endif
   var volume: Swift.Int { get set }
   func play()
   func pause()
@@ -314,9 +287,7 @@ public protocol ITGMediastreamPlatformAdapterDelegate : AnyObject {
 }
 public protocol ITGMediastreamPlatformAdapterEventManagerDelagate : AnyObject {
   func listenTo(eventName: Swift.String, action: @escaping () -> ())
-  #if compiler(>=5.3) && $NonescapableTypes
   func listenTo(eventName: Swift.String, action: @escaping (Any?) -> ())
-  #endif
 }
 extension Swift.Decodable {
   public init(data: Foundation.Data, using decoder: Foundation.JSONDecoder = JSONDecoder()) throws
@@ -325,29 +296,21 @@ extension UIKit.UIImage {
   public class func imageWithColor(_ color: UIKit.UIColor) -> UIKit.UIImage
 }
 extension UIKit.UIColor {
-  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init?(hex: Swift.String)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init?(hex: Swift.String, opacity: Swift.Double?)
-  #endif
 }
 extension QuartzCore.CALayer {
   public func deepSublayers() -> [QuartzCore.CALayer]
 }
 extension UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency public func deepSubviews() -> [UIKit.UIView]
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func constraintsFillSuperview(top: CoreFoundation.CGFloat? = 0, bottom: CoreFoundation.CGFloat? = 0, leading: CoreFoundation.CGFloat? = 0, trailing: CoreFoundation.CGFloat? = 0, verticalToSafeArea: Swift.Bool = false, horizontalToSafeArea: Swift.Bool = false)
-  #endif
 }
 public struct JSONCodingKeys : Swift.CodingKey {
   public var stringValue: Swift.String
   public init(stringValue: Swift.String)
   public var intValue: Swift.Int?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(intValue: Swift.Int)
-  #endif
 }
 extension Swift.KeyedDecodingContainer {
   public func decodeFlexiData(_ type: Swift.Dictionary<Swift.String, Any>.Type, forKey key: K) throws -> Swift.Dictionary<Swift.String, Any>
@@ -361,18 +324,12 @@ extension Swift.UnkeyedDecodingContainer {
   public mutating func decode(_ type: Swift.Dictionary<Swift.String, Any>.Type) throws -> Swift.Dictionary<Swift.String, Any>
 }
 extension Swift.KeyedEncodingContainerProtocol where Self.Key == InthegametviOS.JSONCodingKeys {
-  #if compiler(>=5.3) && $NonescapableTypes
   public mutating func encodeIfPresent(_ value: [Swift.String : Any]?, forKey key: Self.Key) throws
-  #endif
   public mutating func encode(_ value: Swift.Dictionary<Swift.String, Any>) throws
 }
 extension Swift.KeyedEncodingContainerProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
   public mutating func encode(_ value: Swift.Dictionary<Swift.String, Any>?, forKey key: Self.Key) throws
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public mutating func encode(_ value: Swift.Array<Any>?, forKey key: Self.Key) throws
-  #endif
 }
 extension Swift.UnkeyedEncodingContainer {
   public mutating func encode(_ value: Swift.Array<Any>) throws
@@ -383,9 +340,7 @@ extension Swift.UnkeyedEncodingContainer {
     @objc get
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func awakeFromNib()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
@@ -393,15 +348,9 @@ extension Swift.UnkeyedEncodingContainer {
   @objc deinit
 }
 extension UIKit.UIImage {
-  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init?(webpData: Foundation.Data, scale: CoreFoundation.CGFloat? = 1.0, width: CoreFoundation.CGFloat? = nil, height: CoreFoundation.CGFloat? = nil, scalingMode: InthegametviOS.WebPScalingMode = .aspectFit)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init?(contentsOfWebPFile url: Foundation.URL, scale: CoreFoundation.CGFloat? = 1.0, width: CoreFoundation.CGFloat? = nil, height: CoreFoundation.CGFloat? = nil, scalingMode: InthegametviOS.WebPScalingMode = .aspectFit)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func webpNamed(_ name: Swift.String, bundle: Foundation.Bundle = Bundle.main) -> UIKit.UIImage?
-  #endif
 }
 public enum WebPDecodingError : Swift.UInt32, Swift.Error {
   case none
@@ -415,9 +364,7 @@ public enum WebPDecodingError : Swift.UInt32, Swift.Error {
   case invalidHeader
   case initConfigFailed
   case imageRenderFailed
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.UInt32)
-  #endif
   public typealias RawValue = Swift.UInt32
   public var rawValue: Swift.UInt32 {
     get
@@ -434,18 +381,10 @@ public enum WebPScalingMode {
   }
 }
 extension CoreGraphics.CGImage {
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func sizeOfWebP(at url: Foundation.URL) -> CoreFoundation.CGSize?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func sizeOfWebP(with data: Foundation.Data) -> CoreFoundation.CGSize?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func webpImage(contentsOfFile url: Foundation.URL, width: CoreFoundation.CGFloat? = nil, height: CoreFoundation.CGFloat? = nil, scalingMode: InthegametviOS.WebPScalingMode = .aspectFit) throws -> CoreGraphics.CGImage
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func webpImage(data: Foundation.Data, width: CoreFoundation.CGFloat? = nil, height: CoreFoundation.CGFloat? = nil, scalingMode: InthegametviOS.WebPScalingMode = .aspectFit) throws -> CoreGraphics.CGImage
-  #endif
 }
 extension Foundation.Data {
   public var isWebP: Swift.Bool {

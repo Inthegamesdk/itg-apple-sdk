@@ -6,27 +6,27 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		G0ylOBIhj8Z9j7lBlP3PajpQFgk=
+		9reFpXCZM8ixU8eJjSHMHAEvtKk=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-tvos.abi.json</key>
 		<data>
-		HLiAkPSbFGslsCnQKs8aNuErFQk=
+		hM4SGASzxzOMQIjY7dU6xMfj7+0=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<data>
-		B3/7DrhePJWlEQQzfEsVjvFqzrA=
+		8LTheF2bKMIVMGtoJStOniJtyjQ=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<data>
-		ez5NL8Xv31faxAfRSOsz7/+q+kU=
+		kjf16sYpVd0A5qnziGBS8qQRtEc=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<data>
-		B3/7DrhePJWlEQQzfEsVjvFqzrA=
+		8LTheF2bKMIVMGtoJStOniJtyjQ=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<data>
-		TVy5U6pvqxB1Ebly6mpbRprpzB4=
+		XqPHUWqJgRAp0Sz9ot9t3VsXVIg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,35 +35,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jLZuROaVzLEBPJpWFCLxTyzbQi96N37enwf8zFNAPhU=
+			mVFjchGXNYDAxwV+nvXbxxz4xCJXm4GGyx4jpjg1Atk=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NFLHM1FB2WO48pLzjjK1R34txJ/Cen/e96AKko4aNUs=
+			P9q/sTXlkgomzeDajxOM30fojHletD5H93mPD87C4i8=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ekz9xWcCExdF4HqV2r42jRwW4cPUERwOgZg0M9gl1Os=
+			Ri21EP2vuxC2wjR0a+QAXnMqK2ST6ziZX02oDd49QTk=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NFLHM1FB2WO48pLzjjK1R34txJ/Cen/e96AKko4aNUs=
+			P9q/sTXlkgomzeDajxOM30fojHletD5H93mPD87C4i8=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nwuVN88DCYyni5gd20nTS5uWygq1PFzFckgdyCVNyy4=
+			eGmZtxS1goybDpXCfTRY/NC259QPZssGSCeH573hSNQ=
 			</data>
 		</dict>
 	</dict>

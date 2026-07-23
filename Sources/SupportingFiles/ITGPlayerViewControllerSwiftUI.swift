@@ -76,7 +76,6 @@ public struct ITGPlayerViewControllerSwiftUI: UIViewControllerRepresentable {
     
     public func makeUIViewController(context: Context) -> ITGPlayerViewController {
         context.coordinator.itgPlayerViewController = ITGPlayerViewController(channelSlug: channelSlug, virtualChannels: virtualChannels, accountId: accountId, environment: environment, foreignId: foreignId, vars: vars, adsMetadata: adsMetadata, playerAdapter: playerAdapter, shouldResetOverlayUser: false, showLogs: showLogs)
-        context.coordinator.itgPlayerViewController?.shouldPlayChannelVideo = false
         onCreated?(context.coordinator.itgPlayerViewController!)
         return context.coordinator.itgPlayerViewController!
     }

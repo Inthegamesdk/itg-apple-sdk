@@ -247,17 +247,17 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
                 "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               },
               {
                 "kind": "Conformance",
@@ -1996,6 +1996,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
             "name": "ITGOverlayDelegate",
             "printedName": "ITGOverlayDelegate",
             "usr": "s:14InthegametviOS18ITGOverlayDelegateP",
@@ -2010,34 +2024,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
             "name": "CVarArg",
             "printedName": "CVarArg",
             "usr": "s:s7CVarArgP",
@@ -2045,17 +2031,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -2066,10 +2052,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -3609,45 +3609,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "ITGPlayerAdapter",
-            "printedName": "ITGPlayerAdapter",
-            "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP",
-            "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -3658,10 +3623,31 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "ITGPlayerAdapter",
+            "printedName": "ITGPlayerAdapter",
+            "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP",
+            "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -3672,10 +3658,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       }
@@ -3736,83 +3736,83 @@
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1445,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1609,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2461,
+      "offset": 1610,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2485,
+      "offset": 2462,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4685,
+      "offset": 2486,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4743,
+      "offset": 4686,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4744,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15120,
+      "offset": 15135,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15147,
+      "offset": 15162,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15212,
+      "offset": 15227,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15240,
+      "offset": 15255,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15558,
+      "offset": 15573,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15792,
+      "offset": 15807,
       "length": 4,
       "value": "true"
     },

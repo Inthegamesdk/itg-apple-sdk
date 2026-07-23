@@ -74,9 +74,8 @@ public class ITGMediatailorPlugin {
                 completion(result)
             })
             for json in array {
-                if let data = try? JSONSerialization.data(withJSONObject: json, options: []) {
+                if let data = try? JSONSerialization.data(withJSONObject: json, options: []), let jsonString = String(data: data, encoding: .utf8) {
                     dispatchGroup.enter()
-                    let jsonString = String(data: data, encoding: .utf8)!
                     processFlexi(jsonString, duration: nil, trackingUrls: trackingUrls, errorUrls: errorUrls) { flexi in
                         if let flexi {
                             result.append(flexi)
@@ -107,7 +106,7 @@ public class ITGMediatailorPlugin {
                     completion(nil)
                 }
             }.resume()
-        } else if let flexiJson = try? JSONSerialization.jsonObject(with: flexiString.data(using: .utf8)!) as? [String: Any], let flexi = decorateFlexi(flexiJson, duration: duration, trackingUrls: trackingUrls, errorUrls: errorUrls) {
+        } else if let flexiData = flexiString.data(using: .utf8), let flexiJson = try? JSONSerialization.jsonObject(with: flexiData) as? [String: Any], let flexi = decorateFlexi(flexiJson, duration: duration, trackingUrls: trackingUrls, errorUrls: errorUrls) {
             completion(flexi)
         } else {
             completion(nil)

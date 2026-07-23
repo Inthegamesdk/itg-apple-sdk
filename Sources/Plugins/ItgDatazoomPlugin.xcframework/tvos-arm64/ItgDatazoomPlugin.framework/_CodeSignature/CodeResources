@@ -6,27 +6,27 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		A/nZdlRPaVMpkls439sKyPLYdAg=
+		Sk/jyu5Lb628XNpiMOxCR87Nm5g=
 		</data>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-tvos.abi.json</key>
 		<data>
-		75uiZC+VOSWIXXvfrU+/Yd112sA=
+		9FlbJuG8U/nUcm8EzCf7zFDLaXQ=
 		</data>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<data>
-		z307sBo2b78nrBpw9vBzpU9ZDiA=
+		l8Qyv1Q4AcsofYb4yV9sPoA0gxk=
 		</data>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<data>
-		Y1pJq61AHSR9h3pYh32fsEIeVSE=
+		S/KOCBdENu2gLTb/YClrKn7er6Y=
 		</data>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<data>
-		z307sBo2b78nrBpw9vBzpU9ZDiA=
+		l8Qyv1Q4AcsofYb4yV9sPoA0gxk=
 		</data>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<data>
-		LrAaDifRNnXDux/LJ8oLaVGIIgY=
+		IHSoagRAXBIm/76WBPWY+5eKj10=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,35 +35,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SpFe0LLRs55yhoL9wqaA2lnf0hlRgduBfvNGRKoarCM=
+			Zj40WGfVq65dp3lqD/qzwnmNEUl/EKDMOeE1cvoKQk8=
 			</data>
 		</dict>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OGn4sESH83qASY/QGj4aW975TTpjJBgwma1P92drGtk=
+			SrRbsdkVx3fgXhZsvRBCF/D5w9wCHKA6gNL3ROSsOck=
 			</data>
 		</dict>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lf272rYCmoNHODstMPbfx4V/naVi0meiY9oiAAwzqE0=
+			7fRaGpn4/Bj9wEb3/CPW75Yg0htiibfP11sc4M2Y2fY=
 			</data>
 		</dict>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OGn4sESH83qASY/QGj4aW975TTpjJBgwma1P92drGtk=
+			SrRbsdkVx3fgXhZsvRBCF/D5w9wCHKA6gNL3ROSsOck=
 			</data>
 		</dict>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vO0PYgtNTUXxGr030KqBrAjuBTQlJooxpIulquQq5wQ=
+			YD2fpr2KlunXE8sw0yvrIBS979UUg3yTkGrFLerMvqA=
 			</data>
 		</dict>
 	</dict>

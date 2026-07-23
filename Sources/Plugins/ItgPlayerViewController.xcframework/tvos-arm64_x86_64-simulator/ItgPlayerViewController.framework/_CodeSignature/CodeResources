@@ -6,47 +6,47 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		/YCKzE8b5kUD5OyYAmelS8MnN7k=
+		JFBu1Qf+SNddR4Zq/QJlBbqG2sw=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		HLiAkPSbFGslsCnQKs8aNuErFQk=
+		hM4SGASzxzOMQIjY7dU6xMfj7+0=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		hyLChPCMncp4uKBAl+JHuYhs/CE=
+		DlAU1Rh5zgubEeZ/6Ghhi9ESaWg=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		hmoqdO3fyNmaoWjBe7uoYZYjRNs=
+		PepIWWTi/UC02eIJQNxN+jNxDz8=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		hyLChPCMncp4uKBAl+JHuYhs/CE=
+		DlAU1Rh5zgubEeZ/6Ghhi9ESaWg=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		IlcYEPbem11OgqT2+QnUgTVsa94=
+		ePGlzkEm1+hI0hso9jTkSMCrCtk=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		HLiAkPSbFGslsCnQKs8aNuErFQk=
+		hM4SGASzxzOMQIjY7dU6xMfj7+0=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		o94bu5C6lvO5D6mIoRbWrSITFG4=
+		De1aL4WBDCUl4Thxp/2sptJINFA=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		MfaTeH5vPswAW4sIv9V/xHCnm8I=
+		t/Os5pOZsZ9Eaatei2VKaH6kp6I=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		o94bu5C6lvO5D6mIoRbWrSITFG4=
+		De1aL4WBDCUl4Thxp/2sptJINFA=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		3aUGCmsp64PN4JzvcxURvsSFssg=
+		Kw3Rj/LohNrumfrH8+M7pa4BbdQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,70 +55,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jLZuROaVzLEBPJpWFCLxTyzbQi96N37enwf8zFNAPhU=
+			mVFjchGXNYDAxwV+nvXbxxz4xCJXm4GGyx4jpjg1Atk=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/vC0Z0IevkFQBobWLbIxHSHtFCePn22hakWia6/h2jU=
+			Nuk+I2FCcHSRmitnsECCzIoxmHusovdI7zbQ+6H8v2A=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A9JXWpKlk6/IbdXe8Ukswdv2ATFoWdFuab4vxpouQyY=
+			qvWWMn9NdwSAcfa8aw53AN7UgzHkIK5TbDHdgC8f4YM=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/vC0Z0IevkFQBobWLbIxHSHtFCePn22hakWia6/h2jU=
+			Nuk+I2FCcHSRmitnsECCzIoxmHusovdI7zbQ+6H8v2A=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TlcZ+qEewkvJGtBP4/o+extL5IUdgKpbDiWSe40/byE=
+			x6n97aNn6n9FyPLsg+1gppTPzheAOvXiiUi3zIQm/nY=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jLZuROaVzLEBPJpWFCLxTyzbQi96N37enwf8zFNAPhU=
+			mVFjchGXNYDAxwV+nvXbxxz4xCJXm4GGyx4jpjg1Atk=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			I/soqoGOWSS6UoZH4kTkjsCXwyrPgg74XPKsX3ZTA8Q=
+			ogdtzPxAGLZqVHFjQ71aFpuU/EeQeyeiZKZ4Yzhbek4=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3ib+yJaeTO0VPUtLbMMwdB/rnR/TO80ytaZwuXuD7fI=
+			upU1dxmxdx230wSv3wdgLIIwTioWIzymrCPCcz3mSoE=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			I/soqoGOWSS6UoZH4kTkjsCXwyrPgg74XPKsX3ZTA8Q=
+			ogdtzPxAGLZqVHFjQ71aFpuU/EeQeyeiZKZ4Yzhbek4=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hp/NRT38t8UdPD5dkHUmg3UBQJReBI5JIVQzFdjN59g=
+			BI8X3v3Yo+qU3maf6MVmdvdI0ax6MiZWfH0sCNGWloo=
 			</data>
 		</dict>
 	</dict>

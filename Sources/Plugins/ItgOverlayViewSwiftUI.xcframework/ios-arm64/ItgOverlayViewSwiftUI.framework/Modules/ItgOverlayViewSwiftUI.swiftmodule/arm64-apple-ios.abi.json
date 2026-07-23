@@ -844,6 +844,13 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "ITGOverlayDelegate",
+                "printedName": "ITGOverlayDelegate",
+                "usr": "s:14InthegametviOS18ITGOverlayDelegateP",
+                "mangledName": "$s14InthegametviOS18ITGOverlayDelegateP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Copyable",
                 "printedName": "Copyable",
                 "usr": "s:s8CopyableP",
@@ -855,13 +862,6 @@
                 "printedName": "Escapable",
                 "usr": "s:s9EscapableP",
                 "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "ITGOverlayDelegate",
-                "printedName": "ITGOverlayDelegate",
-                "usr": "s:14InthegametviOS18ITGOverlayDelegateP",
-                "mangledName": "$s14InthegametviOS18ITGOverlayDelegateP"
               }
             ]
           },

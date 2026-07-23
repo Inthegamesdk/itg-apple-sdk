@@ -6,27 +6,27 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		r9otCeTkVOnIyE9dwwuZW32hWm4=
+		LMakUmWKIamLNSf3WRE14bQoCl0=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		hgyqI7O51HiQpJ9RX0RDHfeU+3w=
+		0QZqf8Ltnss8F4jZvVTC3S+rkt0=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		0QUYeRDwEf0mCHN60hH6aCSQ+94=
+		9B3EhI5Na/+p9Wwm/GbpRiunjvE=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		gWErc08ekfPKaCazOeSXhU8iTwI=
+		N8SWFv8iVVxX9UblunxKAwqShw4=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		0QUYeRDwEf0mCHN60hH6aCSQ+94=
+		9B3EhI5Na/+p9Wwm/GbpRiunjvE=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		eZSTw0W9tUV6WFbEG4/sKlY2suU=
+		xHFDZkwIZdE41Rml68apNYZ4DH0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,35 +35,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yNTqzJUKe3l26Nln6+mIwMmO6ayHYO5D2zeOKTCegSg=
+			HooI793RiwVaZL8T9k59/6qSX7ctXO+TFuK9BL6LQ1c=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AnkVh1VfZ2SZuCuOmzrZvnQU2uCkAwI1H2ujkm89CS8=
+			RW3nYOVFnz7Zg2WBrusbVCf6VmKg9eTlN2SCQOhWyW4=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cZFQDm/6fXMUTN1+J4+s3d17FVsftfbpH/1uKpWMLY8=
+			xvL16bHzUJefDeRGRZknJm7WNTwvxwwjGdCbbJ9Lb08=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AnkVh1VfZ2SZuCuOmzrZvnQU2uCkAwI1H2ujkm89CS8=
+			RW3nYOVFnz7Zg2WBrusbVCf6VmKg9eTlN2SCQOhWyW4=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			25yn09sMMbRBdeQbfaCYk89KpaGJanWpcXL+L3yh3Qs=
+			iKRJhBgfrwufBdKDzd75I9CdCMuH5zSHd9a3qLcxXDI=
 			</data>
 		</dict>
 	</dict>

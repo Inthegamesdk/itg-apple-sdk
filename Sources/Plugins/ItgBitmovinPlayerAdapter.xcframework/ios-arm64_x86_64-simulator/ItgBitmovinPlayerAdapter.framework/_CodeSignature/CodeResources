@@ -6,47 +6,47 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		kkgf8LG3ZfatSTov9rNQ2PBiG9s=
+		V95/+f+LoFv5zx/ZOm2GndmNGkE=
 		</data>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		IxzbaEj6B/j82HZfe0Bnpemof0Q=
+		QfUT1UAdBu4L6RvJkh4q1RbEfnU=
 		</data>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		lLXbRw0Sjds2E7lHWWTO+9PTGqw=
+		dfFpSVgduAMeX+KcgMOyibFbyP0=
 		</data>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		vD0hy/qsB0CzaHR1kbiKU5n8C3A=
+		IrsmumSI0qhtJVYYkddCbu4GyWo=
 		</data>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		lLXbRw0Sjds2E7lHWWTO+9PTGqw=
+		dfFpSVgduAMeX+KcgMOyibFbyP0=
 		</data>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tgCdLNaN6YafgCduVa6w54wiHlI=
+		Y+Gkz8eBrCSYSZcfZFyDkLzbwoA=
 		</data>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		IxzbaEj6B/j82HZfe0Bnpemof0Q=
+		QfUT1UAdBu4L6RvJkh4q1RbEfnU=
 		</data>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		/7dbWPKs6W0cOZRc5xtC66b/lp8=
+		T5gRLtCmN//BXDCw/rWIP1jjj0o=
 		</data>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		TvJfitoSSqPcDeA0iRJsHVyPICo=
+		etEeafA6JNwypjxfIkIsDiwh5iQ=
 		</data>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/7dbWPKs6W0cOZRc5xtC66b/lp8=
+		T5gRLtCmN//BXDCw/rWIP1jjj0o=
 		</data>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		eUkMWbTBPTbFNbOI74L4txxQZGc=
+		W/GxAeUTHrOqHNA2Fbzfqf2XrOo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,70 +55,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3KH9XmevqPLRfMpUfuBTmJqyqS9Yu1Qqq9o3QySUnb0=
+			seYbct7eAf52tk2TmaLXffBgkWzlBiiQH5Q7xliVmaw=
 			</data>
 		</dict>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zCV5mMLVfYYlDf2SD6NdlxnqT8D1n7EApQWr+6bcgSI=
+			AlakqRhBmGX6aXuVom8gvgF8zGu9ZQTCWHSWiH1jBrU=
 			</data>
 		</dict>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			do/ejHLzN0wZWrlBBYEDo7fZ89rBipzTNyo0f5Lwxp0=
+			IitGlEWg6EWwN+K/RcD/cqutGEmZ46A9bZVGOBLX0EI=
 			</data>
 		</dict>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zCV5mMLVfYYlDf2SD6NdlxnqT8D1n7EApQWr+6bcgSI=
+			AlakqRhBmGX6aXuVom8gvgF8zGu9ZQTCWHSWiH1jBrU=
 			</data>
 		</dict>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			j3CAgIt1I2/YlHh/UDf8iguz/8Kkc4fDVNvFgxnu0FQ=
+			zTaRlRG3QKDrTe8Vuli9cdV7R0yzkQPaDLNyEQYdbbs=
 			</data>
 		</dict>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3KH9XmevqPLRfMpUfuBTmJqyqS9Yu1Qqq9o3QySUnb0=
+			seYbct7eAf52tk2TmaLXffBgkWzlBiiQH5Q7xliVmaw=
 			</data>
 		</dict>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q/SMj0U6/FFPcmkP4ch/36JgoEFcn6dDPHMELcBoe7M=
+			VKHLQ+nZyrZbHev9cfCaXpqcUvnuJiabANCqI77L3DQ=
 			</data>
 		</dict>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HOwgpyGhtfd1YtybC1xAFDALdnpsn0iMdPoJ7DA+Ai0=
+			tEXtxWPuJlMN7HlUXWjHDmpW93Vy1nT4G8RZGbG524o=
 			</data>
 		</dict>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q/SMj0U6/FFPcmkP4ch/36JgoEFcn6dDPHMELcBoe7M=
+			VKHLQ+nZyrZbHev9cfCaXpqcUvnuJiabANCqI77L3DQ=
 			</data>
 		</dict>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LjQgtzg93VQRXtHltoa02I7W93lOqYyAGcczD8SjS5I=
+			2wCQ2f9f8GDIQ5Z39ZELjsLatWsSwv3V5cNGlzdSWzY=
 			</data>
 		</dict>
 	</dict>

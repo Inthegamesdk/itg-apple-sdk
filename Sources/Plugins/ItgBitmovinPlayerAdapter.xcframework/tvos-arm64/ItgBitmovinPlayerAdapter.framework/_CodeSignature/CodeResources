@@ -6,27 +6,27 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		JBXNkIBhbOxh8yP5atJIWaGbZqE=
+		3wJx7DYW4ElyqjxmicIWmDuR968=
 		</data>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/arm64-apple-tvos.abi.json</key>
 		<data>
-		ic+gN42bdy7NPgqiA5Y6pEi6iOQ=
+		VF+Esu4Q864Cffg3yY5I8nnHII0=
 		</data>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<data>
-		VoG4g51UMAqaYcjP+AzCfnj9aeA=
+		9HFXiSzCGOkFXVwG0qQooIZikk0=
 		</data>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<data>
-		UmgdbDUy67Gnv8sf0dzHqO+Xr5E=
+		fqp28Ar//eBs5yuDk6hPIDanDUE=
 		</data>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<data>
-		VoG4g51UMAqaYcjP+AzCfnj9aeA=
+		9HFXiSzCGOkFXVwG0qQooIZikk0=
 		</data>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<data>
-		X/gLC3KmxVN7Bh6MCnPWtCa47SU=
+		xAI+tiYkGGITpvCFOgxvIHrhDrs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,35 +35,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zttntkiXKtU5yfVXHo18rWqlD9sr+XlHtK7tISC/nIU=
+			UjHe8+xvU9ce1FpYKvlRuSYDams76eSbWB7B4NKZVpE=
 			</data>
 		</dict>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FiK7M3Eor7Fb1/VG88g/EgbjjxNvgz7Hjt6Z7bvGn1M=
+			XSBwID7eUgL+8GXOkeye5d6URYEW19LOHflkeM1zuHY=
 			</data>
 		</dict>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VrEdZUszz3hfODz8RhsRfT4nI7aAtXKuX838z+VqNms=
+			UVR35rP92zXpZTlh1plbTNnqI+zrdNVNJPLciuzzoSk=
 			</data>
 		</dict>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FiK7M3Eor7Fb1/VG88g/EgbjjxNvgz7Hjt6Z7bvGn1M=
+			XSBwID7eUgL+8GXOkeye5d6URYEW19LOHflkeM1zuHY=
 			</data>
 		</dict>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uRRkclE2zmB5uss0hpot6K/5fRJ6uQuCak6SYc7pA/c=
+			FVHNza2uhJKKw8l4tOyvVvFRFTRnhCdrHmXe793QdZk=
 			</data>
 		</dict>
 	</dict>

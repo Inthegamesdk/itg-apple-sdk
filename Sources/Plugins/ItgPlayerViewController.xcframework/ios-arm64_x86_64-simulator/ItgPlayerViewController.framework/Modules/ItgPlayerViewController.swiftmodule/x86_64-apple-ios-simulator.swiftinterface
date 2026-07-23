@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ItgPlayerViewController
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ItgPlayerViewController
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import AVFoundation
 import AVKit
 import Foundation
@@ -16,9 +16,7 @@ import _SwiftConcurrencyShims
     case always
     case whilePlayerControlsVisible
     case hidden
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
-    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -37,19 +35,13 @@ import _SwiftConcurrencyShims
   @_Concurrency.MainActor @preconcurrency public var closeButtonVisibilityMode: ItgPlayerViewController.ITGPlayerViewController.CloseButtonVisibilityMode
   @_Concurrency.MainActor @preconcurrency public var overlayView: InthegametviOS.ITGOverlayView?
   @_Concurrency.MainActor @preconcurrency public var shouldPlayChannelVideo: Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(channelSlug: Swift.String, virtualChannels: [Swift.String]? = nil, accountId: Swift.String, environment: InthegametviOS.ITGEnvironment = ITGEnvironment.defaultEnvironment, foreignId: Swift.String? = nil, vars: [Swift.String : any Swift.Hashable]? = nil, adsMetadata: [InthegametviOS.AdMetadata]? = nil, playerAdapter: any ItgPlayerViewController.ITGPlayerAdapter, shouldResetOverlayUser: Swift.Bool = false, showLogs: Swift.Bool = false)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewLayoutMarginsDidChange()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency open func reloadChannel(channelSlug: Swift.String, virtualChannels: [Swift.String]? = nil, accountId: Swift.String, environment: InthegametviOS.ITGEnvironment = ITGEnvironment.defaultEnvironment, foreignId: Swift.String? = nil, vars: [Swift.String : any Swift.Hashable]? = nil, playerAdapter: any ItgPlayerViewController.ITGPlayerAdapter, shouldResetOverlayUser: Swift.Bool = false, adsMetadata: [InthegametviOS.AdMetadata]? = nil, showLogs: Swift.Bool = false)
-  #endif
   @_Concurrency.MainActor @preconcurrency open func setupPlayer()
   @_Concurrency.MainActor @preconcurrency open func startVideo(_ url: Foundation.URL)
   @_Concurrency.MainActor @preconcurrency open func setupOverlay()
@@ -62,22 +54,14 @@ import _SwiftConcurrencyShims
   @_Concurrency.MainActor @preconcurrency open func videoControllsVisibilityChanged(_ isVisible: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency open func videoState() -> InthegametviOS.ITGVideoState
   @_Concurrency.MainActor @preconcurrency open func itgDidLoadChannelInfo(_ channelMeta: InthegametviOS.ChannelMeta)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency open func itgRequestedVideoStateChange(_ state: InthegametviOS.ITGPlayerState, timeStamp: Foundation.TimeInterval?)
-  #endif
   @_Concurrency.MainActor @preconcurrency open func itgRequestedFocusUpdate(_ focusRequired: Swift.Bool)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency open func itgRequestedVideoRectChange(_ rect: CoreFoundation.CGRect?, animationTime: Foundation.TimeInterval)
-  #endif
   @_Concurrency.MainActor @preconcurrency open func itgReceivedDeeplink(_ link: Swift.String)
   @_Concurrency.MainActor @preconcurrency open func itgDidProcessAnalyticEvent(info: InthegametviOS.AnalyticsInfo, type: InthegametviOS.AnalyticsEventType)
   @_Concurrency.MainActor @preconcurrency open func itgDidUpdateUserState(_ user: InthegametviOS.User)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency open func itgRequestedVideoSoundLevel(_ soundLevel: Swift.Float?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency open func itgRequestedVideoGravity(_ videoGravity: AVFoundation.AVLayerVideoGravity?)
-  #endif
   @_Concurrency.MainActor @preconcurrency open func itgWillPresentAd(event: InthegametviOS.ITGAdEvent)
   @_Concurrency.MainActor @preconcurrency open func itgDidFinishPresentingAd(event: InthegametviOS.ITGAdEvent)
 }
@@ -87,14 +71,10 @@ public protocol ITGPlayerAdapterDelegate : AnyObject {
   func videoControllsVisibilityChanged(_ isVisible: Swift.Bool)
 }
 public protocol ITGPlayerAdapter : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   var delegate: (any ItgPlayerViewController.ITGPlayerAdapterDelegate)? { get set }
-  #endif
   func setup()
   func startVideo(_ url: Foundation.URL)
-  #if compiler(>=5.3) && $NonescapableTypes
   func getPlayerView() -> UIKit.UIView?
-  #endif
   func getVideoResolution() -> CoreFoundation.CGSize
   func isPlaying() -> Swift.Bool
   func play()
@@ -103,9 +83,7 @@ public protocol ITGPlayerAdapter : AnyObject {
   func getCurrentTime() -> Foundation.TimeInterval
   func getVideoLength() -> Foundation.TimeInterval
   func setVideoGravity(_ videoGravity: AVFoundation.AVLayerVideoGravity)
-  #if compiler(>=5.3) && $NonescapableTypes
   func getVideoGravity() -> AVFoundation.AVLayerVideoGravity?
-  #endif
   func setSoundLevel(_ soundLevel: Swift.Float)
   func getSoundLevel() -> Swift.Float
 }
@@ -115,21 +93,13 @@ public protocol ITGPlayerAdapter : AnyObject {
     get
     set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(_ player: AVFoundation.AVPlayer, playerViewController: AVKit.AVPlayerViewController, delegate: (any ItgPlayerViewController.ITGPlayerAdapterDelegate)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(_ player: AVFoundation.AVPlayer, playerView: UIKit.UIView, delegate: (any ItgPlayerViewController.ITGPlayerAdapterDelegate)? = nil)
-  #endif
   @objc deinit
   open func setup()
-  #if compiler(>=5.3) && $NonescapableTypes
   open func removeObserver(_ player: AVFoundation.AVPlayer?)
-  #endif
   open func registerObservers()
-  #if compiler(>=5.3) && $NonescapableTypes
   open func getPlayerView() -> UIKit.UIView?
-  #endif
   open func getVideoResolution() -> CoreFoundation.CGSize
   open func startVideo(_ url: Foundation.URL)
   open func play()
@@ -139,15 +109,11 @@ public protocol ITGPlayerAdapter : AnyObject {
   open func getCurrentTime() -> Foundation.TimeInterval
   open func getVideoLength() -> Foundation.TimeInterval
   open func setVideoGravity(_ videoGravity: AVFoundation.AVLayerVideoGravity)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getVideoGravity() -> AVFoundation.AVLayerVideoGravity?
-  #endif
   open func setSoundLevel(_ soundLevel: Swift.Float)
   open func getSoundLevel() -> Swift.Float
   @objc open func timeJumped(_ notification: Foundation.NSNotification)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override dynamic open func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
-  #endif
 }
 extension ItgPlayerViewController.ITGPlayerViewController.CloseButtonVisibilityMode : Swift.Equatable {}
 extension ItgPlayerViewController.ITGPlayerViewController.CloseButtonVisibilityMode : Swift.Hashable {}

@@ -43,7 +43,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     public var closeButtonVisibilityMode: CloseButtonVisibilityMode = .whilePlayerControlsVisible
 #endif
     public var overlayView: ITGOverlayView?
-    public var shouldPlayChannelVideo: Bool = true
+    public var shouldPlayChannelVideo: Bool = false
     private var customPreferredFocusEnvironments: [any UIFocusEnvironment]?
     private var player: ITGPlayerAdapter?
     private var controllsVisible: Bool = false
@@ -175,7 +175,6 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
         }
 #endif
         player?.startVideo(url)
-        player?.play()
     }
     
     open func setupOverlay() {
@@ -205,6 +204,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     }
     
     @objc open func closeButtonPressed(_ sender: Any) {
+        _ = overlayView?.close(true)
         if let navigationController {
             navigationController.popViewController(animated: true)
             removePlayer()

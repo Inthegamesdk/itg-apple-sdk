@@ -1130,6 +1130,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "ITGPlayerAdapter",
+            "printedName": "ITGPlayerAdapter",
+            "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP",
+            "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -1141,13 +1148,6 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ITGPlayerAdapter",
-            "printedName": "ITGPlayerAdapter",
-            "usr": "s:23ItgPlayerViewController16ITGPlayerAdapterP",
-            "mangledName": "$s23ItgPlayerViewController16ITGPlayerAdapterP"
           }
         ]
       }

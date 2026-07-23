@@ -6,27 +6,27 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		6IzGVFBZIdyytpHLFZQ1RGi1SB4=
+		MW6J2NVZ44LK/W8Tt8unNAwOWow=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		jrm6WXZT5Pg121UXOLTiMJM8PII=
+		ea4WQoCfpOLORbK066kpGJWFG1Q=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		fuJ3aMHdiu7ZKLqFgMxswZU/epw=
+		mSZpvYPCt6Et5PlEwJUOVWhQtOQ=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		0AVRh9MiO6Crl7tmSChucjpm2/A=
+		SPsBbfJYBtCJOfyiuOkiH4r4f1s=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		fuJ3aMHdiu7ZKLqFgMxswZU/epw=
+		mSZpvYPCt6Et5PlEwJUOVWhQtOQ=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		hMWGWfy7xjHNYQ6EZjwS3aeuZ3o=
+		0OX7+NU7/RLzzF34UCSOFaXKTm8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,35 +35,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aNPlBtzH8stUwz7jlu64Hnx2f/ajnTPvz/XvFCwBB98=
+			K8EiiALuA1Cf98y7IaqnDs5Acs2XqK55dPtKJcM76T0=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bot8wc+9NhX1e7B5EyIxF8HjxzJMRFqCdnzOBU178rU=
+			1EtY2v+fylisXjA1IqSmVlilpIG6uzHE0DCmbrwpU9M=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tQp0kQ6pwMN0A0OhJC6ueraKwj+UAmcC6YVXItHyVks=
+			GrgQqzgrTv8wk4eJ+1W9mbTLEXRJEkfkjdYHS8bUfgw=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bot8wc+9NhX1e7B5EyIxF8HjxzJMRFqCdnzOBU178rU=
+			1EtY2v+fylisXjA1IqSmVlilpIG6uzHE0DCmbrwpU9M=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mi8yziPpgSHWAT9YWC/Oz48Z89BQ+RfNK5jib57wigM=
+			lpT+4Rsfx9ECYU9ZDT4QjG2iCta7oqGV/BPsXCRwSVc=
 			</data>
 		</dict>
 	</dict>

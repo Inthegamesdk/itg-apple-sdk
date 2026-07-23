@@ -6,27 +6,27 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		TBaq6ElC7XVDpO48vT+1mZ6N6HU=
+		4yksyx0JRwN6Gbd9h12MCqihpYQ=
 		</data>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		DdQv7WFbSruWrdv5o82jlQqKi68=
+		RmXsaXBB+onHPPIOPcFhJOFNYPM=
 		</data>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		xIKnHuojCWbUEGori5jgDW2J8Tw=
+		V4q6CZvy3DeTWqfx5Za+PCUFe9k=
 		</data>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		gyrv1VuEQZtAIn/1dkd6Xikj/m0=
+		5+fZcyX5b1dAas7ECw/7pGJgHnE=
 		</data>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		xIKnHuojCWbUEGori5jgDW2J8Tw=
+		V4q6CZvy3DeTWqfx5Za+PCUFe9k=
 		</data>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		xsDSd1uhBmVdjASbQnaFMz0RJmA=
+		uhZ15bBFQ7lsWVfCv2J1Y4UYG5Y=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,35 +35,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vdID0Tzh8hQcWevp7KMo0KR5HUrQpwZb98VqvTwORKs=
+			09he+9GlZOMyR8gnQZ99eV6fP2BOPqZgsIrobWi+m/8=
 			</data>
 		</dict>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BViDHKnTjxXXjOGDKgXzp8bPct7iGjiZ4IyV7peLn9o=
+			4mvko/isnues4Td9BD4Q30ODXZAuA7JdA4iutk2hdS4=
 			</data>
 		</dict>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rLGxgn9GMKqH9LcKVGaVPG+6hYG3woBJyuZ+H050jP8=
+			WJcqQidBSCnwTs7AEj6xvGfbeiLiFslriCxYtSyDfTQ=
 			</data>
 		</dict>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BViDHKnTjxXXjOGDKgXzp8bPct7iGjiZ4IyV7peLn9o=
+			4mvko/isnues4Td9BD4Q30ODXZAuA7JdA4iutk2hdS4=
 			</data>
 		</dict>
 		<key>Modules/ItgDatazoomPlugin.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0co41gJWRCDpbksYMJ+zYOOADdt4E+F2rDsQwpNnlm4=
+			1+10KGd2xiV1ivDHjxrS3474ssiGV4i2HK8ve9dTXNY=
 			</data>
 		</dict>
 	</dict>

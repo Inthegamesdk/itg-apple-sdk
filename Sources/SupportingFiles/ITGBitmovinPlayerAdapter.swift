@@ -58,6 +58,7 @@ open class ITGBitmovinPlayerAdapter: NSObject, @preconcurrency ITGPlayerAdapter 
     
     open func startVideo(_ url: URL) {
         player.load(sourceConfig: SourceConfig(url: url)!)
+        player.play()
     }
     
     open func getPlayerView() -> UIView? {

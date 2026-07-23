@@ -7,5 +7,4 @@ framework module Inthegametv {
 
 module Inthegametv.Swift {
   header "Inthegametv-Swift.h"
-  requires objc
 }

@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ItgBitmovinPlayerAdapter
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ItgBitmovinPlayerAdapter
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import AVKit
 import BitmovinPlayer
 import Foundation
@@ -16,20 +16,12 @@ import _SwiftConcurrencyShims
 @objc @available(iOS 14.0, tvOS 14.0, *)
 open class ITGBitmovinPlayerAdapter : ObjectiveC.NSObject, @preconcurrency ItgPlayerViewController.ITGPlayerAdapter {
   public var delegate: (any ItgPlayerViewController.ITGPlayerAdapterDelegate)?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(_ player: any BitmovinPlayerCore.Player, playerView: BitmovinPlayerCore.PlayerView, delegate: (any ItgPlayerViewController.ITGPlayerAdapterDelegate)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(_ player: any BitmovinPlayerCore.Player, playerView: BitmovinPlayerCore.VideoPlayerView, delegate: (any ItgPlayerViewController.ITGPlayerAdapterDelegate)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(_ player: any BitmovinPlayerCore.Player, playerViewController: AVKit.AVPlayerViewController, delegate: (any ItgPlayerViewController.ITGPlayerAdapterDelegate)? = nil)
-  #endif
   open func setup()
   open func startVideo(_ url: Foundation.URL)
-  #if compiler(>=5.3) && $NonescapableTypes
   open func getPlayerView() -> UIKit.UIView?
-  #endif
   open func getVideoResolution() -> CoreFoundation.CGSize
   open func isPlaying() -> Swift.Bool
   open func play()
@@ -38,9 +30,7 @@ open class ITGBitmovinPlayerAdapter : ObjectiveC.NSObject, @preconcurrency ItgPl
   open func getCurrentTime() -> Foundation.TimeInterval
   open func getVideoLength() -> Foundation.TimeInterval
   open func setVideoGravity(_ videoGravity: AVFoundation.AVLayerVideoGravity)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func getVideoGravity() -> AVFoundation.AVLayerVideoGravity?
-  #endif
   open func setSoundLevel(_ soundLevel: Swift.Float)
   open func getSoundLevel() -> Swift.Float
   @objc deinit

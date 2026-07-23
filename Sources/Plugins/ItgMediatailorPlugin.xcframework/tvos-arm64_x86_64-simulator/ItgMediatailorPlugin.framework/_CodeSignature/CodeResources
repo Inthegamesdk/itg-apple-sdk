@@ -6,7 +6,7 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		UR+tr1s9U63e5WI3ba/qr5GAODI=
+		wSjEmDnpglRwScQYBw2VFTNjxAY=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
@@ -14,19 +14,19 @@
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		U37lr+4R5eAX11nbE8HhwVeKYd8=
+		q+VkyzJzPxC8A0H5oL679QJ7SnI=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		XlV//bnNArPWESMG/cepZUTJMvU=
+		NFFjgwvORHQk+iMGyfgoinjNmaE=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		U37lr+4R5eAX11nbE8HhwVeKYd8=
+		q+VkyzJzPxC8A0H5oL679QJ7SnI=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		I9xdwIjhYSJe3dIZSDH6NtFPZwU=
+		V6s/1HoTNcFbuojIpv2WjXaZHbk=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		FKDoWKHX7NrcdCKDmEZJkdpMoQA=
+		KET/ZwRBM8gOc5bo62E3HUoqWDo=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		7xYBlxAv47Zxs+joqvVhJbawvOc=
+		cMuUjb9Myv8oz/tj5MGw7LF2j5A=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		FKDoWKHX7NrcdCKDmEZJkdpMoQA=
+		KET/ZwRBM8gOc5bo62E3HUoqWDo=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		XomFHIVnOXqzAoqLMj64oxtpQYQ=
+		ijo/GH8dal0LYl8y72V5rZDnxMw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -62,28 +62,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2Cuy+I3XitYBNiX3scnLWhhkqHDqYgHXUBW4ba43VSI=
+			a6jwu3ieZm2oxRtYWZv0Dx23BaVccWjsW8lIDYi3JhI=
 			</data>
 		</dict>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			H7rYLDQ9oqP28fiqn8i4AjlbsCDADG0WjgS000fE5bM=
+			Kk2YGq8DTkqs2n2cbIkKdIKs90xNMby94u+9lrmtSfA=
 			</data>
 		</dict>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2Cuy+I3XitYBNiX3scnLWhhkqHDqYgHXUBW4ba43VSI=
+			a6jwu3ieZm2oxRtYWZv0Dx23BaVccWjsW8lIDYi3JhI=
 			</data>
 		</dict>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sr1lmfC+5RNMbPBV3i78o/KX6sVQY0RZUar9IFUqydU=
+			tFJTEjWBh/9a+ZU1lTC4CyLRv0/A+X6TA8Nj0R+gWxo=
 			</data>
 		</dict>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
@@ -97,28 +97,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kwYXXOL+S3eVXylSS8cmIMAG91qqgHdYxHZ6GV/X8Dc=
+			dVP/HUbm7dIlDB40a4I98beQlruHTTJ1yXH0P3vAVxE=
 			</data>
 		</dict>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yVFKuY00oEbLFwALkShPRFVCgXrfDknCTusddvRShmo=
+			zwdYMWrO30/+HCPS1YG71HOJMtEZFWGVWdeUv1Aricw=
 			</data>
 		</dict>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kwYXXOL+S3eVXylSS8cmIMAG91qqgHdYxHZ6GV/X8Dc=
+			dVP/HUbm7dIlDB40a4I98beQlruHTTJ1yXH0P3vAVxE=
 			</data>
 		</dict>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O4R4+3Cxg5aHQfW1FmK3KE0O6I+N+ZHIVBqL+iKJsDo=
+			hRXCtSo15mZO9Sw9xaWXDKn2pOdYZh2VSSxrBheg7aw=
 			</data>
 		</dict>
 	</dict>

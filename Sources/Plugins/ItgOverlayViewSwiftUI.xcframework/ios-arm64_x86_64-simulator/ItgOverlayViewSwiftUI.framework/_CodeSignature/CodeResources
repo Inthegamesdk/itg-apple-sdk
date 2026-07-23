@@ -6,47 +6,47 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		1l9p24WvN8SSGZSV7N3/3FQrULE=
+		r4Yi76WdQkEykl2volt6MiKcCVU=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		j7pOPXq3GlscP5/bsBSGVTfOKvg=
+		z7Jf+JUoA2nZeHyn6b5SHC9Qz3A=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		QK+ztPiH/gKeN2fXA4n++ya1D4Y=
+		zjz9+Djzmli6eBKxm/RUMcwu8/4=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		GoFWgeF9iXcD265iCafuT6unWoI=
+		u42qjP652ecbq3BJS36sHUuSRy4=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		QK+ztPiH/gKeN2fXA4n++ya1D4Y=
+		zjz9+Djzmli6eBKxm/RUMcwu8/4=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		O9l5B8Gt+6zLtZOLbM8RlSDpQHc=
+		B8Qc87ZnyBJWcr6llblxoM1kvqg=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		j7pOPXq3GlscP5/bsBSGVTfOKvg=
+		z7Jf+JUoA2nZeHyn6b5SHC9Qz3A=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		iA+aHkouRKD5q0VgQhcsNLTBEyw=
+		SjVcUlf7t0vesmEcJsGOs4Q4rkI=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Z3mbx8g3fE5/EBlYLwRje/tUNN0=
+		SQ626JLuqcXDEGn8Cl0hZOZ4stU=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		iA+aHkouRKD5q0VgQhcsNLTBEyw=
+		SjVcUlf7t0vesmEcJsGOs4Q4rkI=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WER/eR4I9TGPa+NuSY1g8Si8/cw=
+		7brW7pQmHXBHMzR8su2lwa14Dc8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,70 +55,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			93ubdAmGi5A99sRPobvKTG41Lp4d1kZSblTunE+uLv4=
+			Y2hYa1IIt3KI76c7gFtvww/Ry1cFG2aAEcVyy0QITtY=
 			</data>
 		</dict>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aOzUfYWmresmb4Rj6NrtYf7VvAgqEV6qBnR9S7D+NV4=
+			XUCVUvwEBHhygLsEPx3fIYqaS6ATr+kXXNcdDUohOx8=
 			</data>
 		</dict>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p7ix4jbNtuOR59KNrBB54XWClhYixHL/pHn1XEI1H9Q=
+			uV2UB0UXSey9MFQAfi6BMkaYx/WzY63267mMy01Ss/I=
 			</data>
 		</dict>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aOzUfYWmresmb4Rj6NrtYf7VvAgqEV6qBnR9S7D+NV4=
+			XUCVUvwEBHhygLsEPx3fIYqaS6ATr+kXXNcdDUohOx8=
 			</data>
 		</dict>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kz+7opbv7I/TAJKTSJKHQzJCbNwb5XIkzUO67SMtgro=
+			ymFQNxPME8iU56iPYfS4rVlFEyl6es/R7/bzXHg9Plc=
 			</data>
 		</dict>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			93ubdAmGi5A99sRPobvKTG41Lp4d1kZSblTunE+uLv4=
+			Y2hYa1IIt3KI76c7gFtvww/Ry1cFG2aAEcVyy0QITtY=
 			</data>
 		</dict>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bfWvcUodYjEN+ms6J8j3JwFbVhF3ljNXUY9ltyKXizo=
+			GUGbymyepsNRRMl4nI4DPxYTnfn/hspikmnE179b540=
 			</data>
 		</dict>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4XwDsLVlIuxwoNOI/eFBS9/SGoyi3ZWTNCFp3sw81kM=
+			/F32Rqc648Rwjy7RL3YDEPAXZ4aVNRFotlHvW+oHlbo=
 			</data>
 		</dict>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bfWvcUodYjEN+ms6J8j3JwFbVhF3ljNXUY9ltyKXizo=
+			GUGbymyepsNRRMl4nI4DPxYTnfn/hspikmnE179b540=
 			</data>
 		</dict>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KqKnA9UP4PS/QOb3PjQMzyjAhM3O+/5J9qU51eTTwMM=
+			9ynBg2QhohyMnCpTd6bd63nhJkMAPBwbHywIZ04G9+0=
 			</data>
 		</dict>
 	</dict>

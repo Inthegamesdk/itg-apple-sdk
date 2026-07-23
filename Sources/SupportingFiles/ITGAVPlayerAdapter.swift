@@ -24,6 +24,8 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
     private var seekTimer: Timer?
     private var isSeeking: Bool = false
     private var timeJumpedTime: TimeInterval?
+    private weak var observedChromelessControlsView: UIView?
+    private weak var observedGlassControlsView: UIView?
     
     public init(_ player: AVPlayer, playerViewController: AVPlayerViewController, delegate: ITGPlayerAdapterDelegate? = nil) {
         self.player = player
@@ -51,10 +53,14 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
         seekTimer?.invalidate()
         seekTimer = nil
         removeObserver(player)
-        if player.currentItem != nil, let playerViewController {
-            playerViewController.children.first(where: { String(describing: type(of: $0)) == "AVMobileChromelessControlsViewController" })?.view.removeObserver(self, forKeyPath: #keyPath(UIView.isHidden))
-            playerViewController.children.first(where: { String(describing: type(of: $0)) == "AVMobileGlassControlsViewController" })?.view.removeObserver(self, forKeyPath: #keyPath(UIView.isHidden))
-        }
+        removeControlsVisibilityObservers()
+    }
+
+    private func removeControlsVisibilityObservers() {
+        observedChromelessControlsView?.removeObserver(self, forKeyPath: #keyPath(UIView.isHidden))
+        observedChromelessControlsView = nil
+        observedGlassControlsView?.removeObserver(self, forKeyPath: #keyPath(UIView.isHidden))
+        observedGlassControlsView = nil
     }
     
     open func setup() {
@@ -86,8 +92,15 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
     }
     
     open func startVideo(_ url: URL) {
-        playerViewController?.children.first(where: { String(describing: type(of: $0)) == "AVMobileChromelessControlsViewController" })?.view.addObserver(self, forKeyPath: #keyPath(UIView.isHidden), options: [.old, .new], context: nil)
-        playerViewController?.children.first(where: { String(describing: type(of: $0)) == "AVMobileGlassControlsViewController" })?.view.addObserver(self, forKeyPath: #keyPath(UIView.isHidden), options: [.old, .new], context: nil)
+        removeControlsVisibilityObservers()
+        if let view = playerViewController?.children.first(where: { String(describing: type(of: $0)) == "AVMobileChromelessControlsViewController" })?.view {
+            view.addObserver(self, forKeyPath: #keyPath(UIView.isHidden), options: [.old, .new], context: nil)
+            observedChromelessControlsView = view
+        }
+        if let view = playerViewController?.children.first(where: { String(describing: type(of: $0)) == "AVMobileGlassControlsViewController" })?.view {
+            view.addObserver(self, forKeyPath: #keyPath(UIView.isHidden), options: [.old, .new], context: nil)
+            observedGlassControlsView = view
+        }
         player.replaceCurrentItem(with: AVPlayerItem(asset: AVAsset(url: url)))
         player.play()
    }

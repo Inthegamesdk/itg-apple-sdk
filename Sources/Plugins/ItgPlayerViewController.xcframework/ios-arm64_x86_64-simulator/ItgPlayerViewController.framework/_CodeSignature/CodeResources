@@ -6,47 +6,47 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		AFQ6VU2e1QcCilFJ1eV81oPyN0E=
+		fbga9H8zBz2wMv8sIwZjT2LzVhk=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		jrm6WXZT5Pg121UXOLTiMJM8PII=
+		ea4WQoCfpOLORbK066kpGJWFG1Q=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		EYvW9SGvP1BV5TrzGCnNlSJBaG8=
+		Rd9ehxiVfxWpoHOucDrYnDcpDj8=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		/9yUpVovno159dmYNJp1dt6Td+g=
+		t6qJHXOz5QIfJB2EOOeFvXGMKUY=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		EYvW9SGvP1BV5TrzGCnNlSJBaG8=
+		Rd9ehxiVfxWpoHOucDrYnDcpDj8=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jxW207yofvzvHWuzf1yKHfDRCzQ=
+		nEKxbc+grhk0nrx2B2LWfc73iUQ=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		jrm6WXZT5Pg121UXOLTiMJM8PII=
+		ea4WQoCfpOLORbK066kpGJWFG1Q=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		WIK3Szf/AuegMIv7mgngbG35fP0=
+		oK0R+V9JASHWgy7IogU30dAMGzA=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Aj0os4FsX3P+AbhNRIx3zAMWbEo=
+		rf2HNF75hy4Xjd5mTbVww7GwbMM=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		WIK3Szf/AuegMIv7mgngbG35fP0=
+		oK0R+V9JASHWgy7IogU30dAMGzA=
 		</data>
 		<key>Modules/ItgPlayerViewController.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ck7Li9zfdQLtCqHE0mFeGOYvNEc=
+		pxdCsSKYqlO/Z4KWIuj9R3RB5PQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,70 +55,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aNPlBtzH8stUwz7jlu64Hnx2f/ajnTPvz/XvFCwBB98=
+			K8EiiALuA1Cf98y7IaqnDs5Acs2XqK55dPtKJcM76T0=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8rqJZZSpKTOQZCv3ZfEwRoZpa/gljLlf0xsrHRxoOC4=
+			sITouuZ+fxGQaMyoS9YcC9I54+Mtk3hyJtcL4tWromw=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ivIJSgHpPpnKn4C+QRSESVFM2mQee2virfCQNfwEGE8=
+			nzAlzwBezkYIzq/h87LAYP++q+w2QBI6xzyJBwVXlnQ=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8rqJZZSpKTOQZCv3ZfEwRoZpa/gljLlf0xsrHRxoOC4=
+			sITouuZ+fxGQaMyoS9YcC9I54+Mtk3hyJtcL4tWromw=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VdUTx9hUBrLreJKEd7n+FyUl0heIprrrhqLb/sE9/KI=
+			AwYjhClEWaV6OnHW0YLk+d0aCGAGNi3wV/W3tVCN1GA=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aNPlBtzH8stUwz7jlu64Hnx2f/ajnTPvz/XvFCwBB98=
+			K8EiiALuA1Cf98y7IaqnDs5Acs2XqK55dPtKJcM76T0=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kwWM8LtHMhfAQt/lItbDVh/tKl5U0ZuwD+Pp7Zd+kGg=
+			3jf93IlAWNonufazhMy0vo7v5mdKGvafgSKSoQApu5U=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PxxZ7mNWU/9fVxQXCazZIWs0T8ONkv3N7wVUGXDdIac=
+			kBzY2t2a1gNu8sEJ/warW07eVkuORwebqjqjt8GA574=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kwWM8LtHMhfAQt/lItbDVh/tKl5U0ZuwD+Pp7Zd+kGg=
+			3jf93IlAWNonufazhMy0vo7v5mdKGvafgSKSoQApu5U=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewController.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IODizQgh5L19FByusjsP7dhoE6RIEhccchr57uJ9aM0=
+			29s216vcTzIHSdjCl8m+SpC8qOanWdDsIALw/zBHiXk=
 			</data>
 		</dict>
 	</dict>

@@ -6,27 +6,27 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		UIvyD/2+YtpqORmtIlbXhukg79c=
+		biq3aiRbOCFZCn5qACt0nevrbEo=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-tvos.abi.json</key>
 		<data>
-		ESrnZG4Ib8m+d83Umk2sqlP19V4=
+		Q/7czN7FCtxD16ADqBMOZgLKVEE=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<data>
-		/NHE7jSmHFbLhwB8ZY29t0n18iE=
+		FlFalNBAVBh91ni5w1J4udD2fDM=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<data>
-		/bBME0AXOphAz5z5JSteFf0fAGI=
+		BqkzjZr+LPA24ydAlaosXDOJNEg=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<data>
-		/NHE7jSmHFbLhwB8ZY29t0n18iE=
+		FlFalNBAVBh91ni5w1J4udD2fDM=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<data>
-		gn/BAt36tPua2Fz843aE1zDXzt4=
+		75BzvOolBmp1AmO0r+IYbP7J4no=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,35 +35,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ELoVtyZJifog8F7dMeT0MPRc+dnG1aa7rIjuyVmUORQ=
+			3yAE8SCpk3hKeBnegybEqg/qGMhUy33Qeha3kQdugWc=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sc+KHkC1T1bori1Z/cdtCtvZr/hH4Sc6FuID2R4IHOU=
+			Ax0Xj8N+w7530vOtJPHp/vw8g2R69/Sxd005E0+RnTU=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			otJHK8pYqFuyFXpnejRFsNFsrEmm5lxP9hOrNMpsYbw=
+			7uZ6JXisGFUouLKXsLCaZDVnoU34YjIBeWNVhqdHjRc=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sc+KHkC1T1bori1Z/cdtCtvZr/hH4Sc6FuID2R4IHOU=
+			Ax0Xj8N+w7530vOtJPHp/vw8g2R69/Sxd005E0+RnTU=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QW8krIWjLV5fcek/IqviZGEaFGdmsSBjMEISI2k+W1U=
+			NyJ2YK+WYIecfLwLBAu9qhfVT2rYTmvbh2eTX5imh00=
 			</data>
 		</dict>
 	</dict>
