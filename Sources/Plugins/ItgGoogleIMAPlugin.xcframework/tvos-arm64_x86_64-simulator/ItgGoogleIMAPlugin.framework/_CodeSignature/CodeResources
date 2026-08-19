@@ -6,7 +6,7 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		1HH1kc6/4grz8+J//IwUm4bSr8E=
+		m67DgwuELmpt0cfQ7JsTKPRovvs=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		wFbDBAbo03ueoBUNCRjCUoWWXCY=
+		kKD+xErcvmpw7lVGODh5JJJAU90=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		rkb8H49EdaX3I+nd4LwkgOilsL8=
+		azMpr84Es2P4JkOT6UwpbBXm5h0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -83,7 +83,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gh+MarXha3UYMM8KDHfALOFZQhOFSaEzaitJGpEoyps=
+			UfnQK91wlYy4j+oc6LVyhJfzwysuIscXtmffE+5b9GQ=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ost5dQlY3YLJgjtqQ/NY48I1JuvlcE6zPXijG2+iNtE=
+			FpGre1Vqex/HQtUmsLpXv4OXRo0Jpky0dBljiet1oaI=
 			</data>
 		</dict>
 	</dict>

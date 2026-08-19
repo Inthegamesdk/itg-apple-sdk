@@ -3955,6 +3955,618 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "AnalyticsError",
+        "printedName": "AnalyticsError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14InthegametviOS14AnalyticsErrorV4codeSivp",
+            "mangledName": "$s14InthegametviOS14AnalyticsErrorV4codeSivp",
+            "moduleName": "InthegametviOS",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14InthegametviOS14AnalyticsErrorV4codeSivg",
+                "mangledName": "$s14InthegametviOS14AnalyticsErrorV4codeSivg",
+                "moduleName": "InthegametviOS",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14InthegametviOS14AnalyticsErrorV7messageSSvp",
+            "mangledName": "$s14InthegametviOS14AnalyticsErrorV7messageSSvp",
+            "moduleName": "InthegametviOS",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14InthegametviOS14AnalyticsErrorV7messageSSvg",
+                "mangledName": "$s14InthegametviOS14AnalyticsErrorV7messageSSvg",
+                "moduleName": "InthegametviOS",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "httpCode",
+            "printedName": "httpCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14InthegametviOS14AnalyticsErrorV8httpCodeSiSgvp",
+            "mangledName": "$s14InthegametviOS14AnalyticsErrorV8httpCodeSiSgvp",
+            "moduleName": "InthegametviOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14InthegametviOS14AnalyticsErrorV8httpCodeSiSgvg",
+                "mangledName": "$s14InthegametviOS14AnalyticsErrorV8httpCodeSiSgvg",
+                "moduleName": "InthegametviOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14InthegametviOS14AnalyticsErrorV8httpCodeSiSgvs",
+                "mangledName": "$s14InthegametviOS14AnalyticsErrorV8httpCodeSiSgvs",
+                "moduleName": "InthegametviOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14InthegametviOS14AnalyticsErrorV8httpCodeSiSgvM",
+                "mangledName": "$s14InthegametviOS14AnalyticsErrorV8httpCodeSiSgvM",
+                "moduleName": "InthegametviOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14InthegametviOS14AnalyticsErrorV3urlSSSgvp",
+            "mangledName": "$s14InthegametviOS14AnalyticsErrorV3urlSSSgvp",
+            "moduleName": "InthegametviOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14InthegametviOS14AnalyticsErrorV3urlSSSgvg",
+                "mangledName": "$s14InthegametviOS14AnalyticsErrorV3urlSSSgvg",
+                "moduleName": "InthegametviOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14InthegametviOS14AnalyticsErrorV3urlSSSgvs",
+                "mangledName": "$s14InthegametviOS14AnalyticsErrorV3urlSSSgvs",
+                "moduleName": "InthegametviOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14InthegametviOS14AnalyticsErrorV3urlSSSgvM",
+                "mangledName": "$s14InthegametviOS14AnalyticsErrorV3urlSSSgvM",
+                "moduleName": "InthegametviOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "activeCreativeId",
+            "printedName": "activeCreativeId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14InthegametviOS14AnalyticsErrorV16activeCreativeIdSSSgvp",
+            "mangledName": "$s14InthegametviOS14AnalyticsErrorV16activeCreativeIdSSSgvp",
+            "moduleName": "InthegametviOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14InthegametviOS14AnalyticsErrorV16activeCreativeIdSSSgvg",
+                "mangledName": "$s14InthegametviOS14AnalyticsErrorV16activeCreativeIdSSSgvg",
+                "moduleName": "InthegametviOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14InthegametviOS14AnalyticsErrorV16activeCreativeIdSSSgvs",
+                "mangledName": "$s14InthegametviOS14AnalyticsErrorV16activeCreativeIdSSSgvs",
+                "moduleName": "InthegametviOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14InthegametviOS14AnalyticsErrorV16activeCreativeIdSSSgvM",
+                "mangledName": "$s14InthegametviOS14AnalyticsErrorV16activeCreativeIdSSSgvM",
+                "moduleName": "InthegametviOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(code:message:httpCode:url:activeCreativeId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsError",
+                "printedName": "InthegametviOS.AnalyticsError",
+                "usr": "s:14InthegametviOS14AnalyticsErrorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14InthegametviOS14AnalyticsErrorV4code7message8httpCode3url16activeCreativeIdACSi_SSSiSgSSSgAJtcfc",
+            "mangledName": "$s14InthegametviOS14AnalyticsErrorV4code7message8httpCode3url16activeCreativeIdACSi_SSSiSgSSSgAJtcfc",
+            "moduleName": "InthegametviOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsError",
+                "printedName": "InthegametviOS.AnalyticsError",
+                "usr": "s:14InthegametviOS14AnalyticsErrorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14InthegametviOS14AnalyticsErrorV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14InthegametviOS14AnalyticsErrorV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "InthegametviOS",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14InthegametviOS14AnalyticsErrorV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s14InthegametviOS14AnalyticsErrorV6encode2toys7Encoder_p_tKF",
+            "moduleName": "InthegametviOS",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14InthegametviOS14AnalyticsErrorV",
+        "mangledName": "$s14InthegametviOS14AnalyticsErrorV",
+        "moduleName": "InthegametviOS",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "AdChain",
         "printedName": "AdChain",
         "children": [
@@ -5162,6 +5774,116 @@
                 "declKind": "Accessor",
                 "usr": "s:14InthegametviOS13AnalyticsInfoV7adChainAA02AdF0CvM",
                 "mangledName": "$s14InthegametviOS13AnalyticsInfoV7adChainAA02AdF0CvM",
+                "moduleName": "InthegametviOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "context",
+            "printedName": "context",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InthegametviOS.AnalyticsError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnalyticsError",
+                    "printedName": "InthegametviOS.AnalyticsError",
+                    "usr": "s:14InthegametviOS14AnalyticsErrorV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14InthegametviOS13AnalyticsInfoV7contextAA0C5ErrorVSgvp",
+            "mangledName": "$s14InthegametviOS13AnalyticsInfoV7contextAA0C5ErrorVSgvp",
+            "moduleName": "InthegametviOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InthegametviOS.AnalyticsError?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnalyticsError",
+                        "printedName": "InthegametviOS.AnalyticsError",
+                        "usr": "s:14InthegametviOS14AnalyticsErrorV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14InthegametviOS13AnalyticsInfoV7contextAA0C5ErrorVSgvg",
+                "mangledName": "$s14InthegametviOS13AnalyticsInfoV7contextAA0C5ErrorVSgvg",
+                "moduleName": "InthegametviOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InthegametviOS.AnalyticsError?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnalyticsError",
+                        "printedName": "InthegametviOS.AnalyticsError",
+                        "usr": "s:14InthegametviOS14AnalyticsErrorV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14InthegametviOS13AnalyticsInfoV7contextAA0C5ErrorVSgvs",
+                "mangledName": "$s14InthegametviOS13AnalyticsInfoV7contextAA0C5ErrorVSgvs",
+                "moduleName": "InthegametviOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14InthegametviOS13AnalyticsInfoV7contextAA0C5ErrorVSgvM",
+                "mangledName": "$s14InthegametviOS13AnalyticsInfoV7contextAA0C5ErrorVSgvM",
                 "moduleName": "InthegametviOS",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -14665,7 +15387,7 @@
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Managers\/ITGAnalyticsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3195,
+      "offset": 3226,
       "length": 5,
       "value": "false"
     },
@@ -14812,42 +15534,42 @@
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "Array",
-      "offset": 25609,
+      "offset": 25944,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "Array",
-      "offset": 25663,
+      "offset": 25998,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 27348,
+      "offset": 27815,
       "length": 4,
       "value": "\"ok\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "Array",
-      "offset": 27457,
+      "offset": 27924,
       "length": 153,
       "value": "[\"16:9\", \"9:16\", \"4:3\", \"2:1\", \"1:1\", \"22:9\", \"9:22\", \"21:9\", \"9:21\", \"20:9\", \"9:20\", \"19:9\", \"9:19\", \"19.5:9\", \"9:19.5\", \"18:9\", \"9:18\", \"17:9\", \"9:17\"]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "Array",
-      "offset": 29316,
+      "offset": 29783,
       "length": 34,
       "value": "[\"SD\", \"HD\", \"FULLHD\", \"4K\", \"8K\"]"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/Models.swift",
       "kind": "Dictionary",
-      "offset": 29413,
+      "offset": 29880,
       "length": 271,
       "value": "[(\"SD\", \"720x480\"), (\"HD\", \"1280x720\"), (\"FULLHD\", \"1920x1080\"), (\"FHD\", \"1920x1080\"), (\"4K\", \"3840x2160\"), (\"8K\", \"7680x4320\")]"
     },
@@ -14973,266 +15695,266 @@
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 43588,
+      "offset": 43631,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 43611,
+      "offset": 43654,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 58473,
+      "offset": 58516,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 58696,
+      "offset": 58739,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 58879,
+      "offset": 58922,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 59393,
+      "offset": 59436,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59645,
+      "offset": 59688,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59659,
+      "offset": 59702,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60178,
+      "offset": 60221,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60439,
+      "offset": 60482,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60442,
+      "offset": 60485,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60711,
+      "offset": 60754,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60970,
+      "offset": 61013,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 61229,
+      "offset": 61272,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 61635,
+      "offset": 61678,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 61725,
+      "offset": 61768,
       "length": 17,
       "value": "\"Content playing\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 61769,
+      "offset": 61812,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 61847,
+      "offset": 61890,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 66569,
+      "offset": 66612,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 66616,
+      "offset": 66659,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 67017,
+      "offset": 67060,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 67124,
+      "offset": 67167,
       "length": 17,
       "value": "\"Content playing\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 67168,
+      "offset": 67211,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 67246,
+      "offset": 67289,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 67310,
+      "offset": 67353,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 67417,
+      "offset": 67460,
       "length": 21,
       "value": "\"Content reached end\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 67465,
+      "offset": 67508,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 67543,
+      "offset": 67586,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 67841,
+      "offset": 67884,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 68105,
+      "offset": 68148,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 68108,
+      "offset": 68151,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 68379,
+      "offset": 68422,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 68640,
+      "offset": 68683,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 68898,
+      "offset": 68941,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "IntegerLiteral",
-      "offset": 69547,
+      "offset": 69590,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "StringLiteral",
-      "offset": 69610,
+      "offset": 69653,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 70485,
+      "offset": 70528,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/Views\/ITGFlexiView.swift",
       "kind": "BooleanLiteral",
-      "offset": 73196,
+      "offset": 73239,
       "length": 5,
       "value": "false"
     },
@@ -17556,7 +18278,7 @@
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/FlexiDataProcessors.swift",
       "kind": "Dictionary",
-      "offset": 321,
+      "offset": 330,
       "length": 3,
       "value": "[]"
     },
@@ -17731,28 +18453,28 @@
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/FlexiModels.swift",
       "kind": "StringLiteral",
-      "offset": 28708,
+      "offset": 28787,
       "length": 23,
       "value": "\"FlexiAutoCloseTrigger\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/FlexiModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 46896,
+      "offset": 46975,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/FlexiModels.swift",
       "kind": "StringLiteral",
-      "offset": 57812,
+      "offset": 57891,
       "length": 18,
       "value": "\"align-horizontal\""
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Inthegametv\/OtherClasses\/FlexiModels.swift",
       "kind": "StringLiteral",
-      "offset": 57860,
+      "offset": 57939,
       "length": 16,
       "value": "\"align-vertical\""
     },

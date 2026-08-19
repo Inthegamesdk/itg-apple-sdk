@@ -139,6 +139,16 @@ public enum AnalyticsParent : Swift.String, Swift.Codable {
     get
   }
 }
+public struct AnalyticsError : Swift.Codable, Swift.Error {
+  public let code: Swift.Int
+  public let message: Swift.String
+  public var httpCode: Swift.Int?
+  public var url: Swift.String?
+  public var activeCreativeId: Swift.String?
+  public init(code: Swift.Int, message: Swift.String, httpCode: Swift.Int? = nil, url: Swift.String? = nil, activeCreativeId: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 @_hasMissingDesignatedInitializers public class AdChain {
   public var flexis: [Inthegametv.AdChainFlexi] {
     get
@@ -169,6 +179,7 @@ public struct AnalyticsInfo : Swift.Encodable {
   public var flexiType: Inthegametv.CreativeType?
   public var meta: [Swift.String : Any]?
   public var adChain: Inthegametv.AdChain
+  public var context: Inthegametv.AnalyticsError?
   public func encode(to encoder: any Swift.Encoder) throws
 }
 public enum AvailsCacheTime : Swift.Codable {

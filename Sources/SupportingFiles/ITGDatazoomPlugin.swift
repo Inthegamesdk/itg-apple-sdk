@@ -154,12 +154,19 @@ public class ITGDatazoomPlugin: AdObserver {
     }
     
     private func isValidUrl(_ string: String) -> Bool {
-        guard !string.contains("..") else { return false }
-        let head     = "((http|https)://)?([(w|W)]{3}+\\.)?"
-        let tail     = "\\.+[A-Za-z]{2,3}+(\\.)?+(/(.)*)?"
-        let urlRegEx = head+"+(.)+"+tail
-        let urlTest = NSPredicate(format:"SELF MATCHES %@", urlRegEx)
-        return urlTest.evaluate(with: string.trimmingCharacters(in: .whitespaces))
+        let trimmed = string.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty, !trimmed.contains("..") else { return false }
+        if let first = trimmed.first, "{[<".contains(first) {
+            return false
+        }
+        guard let url = URL(string: trimmed),
+              let scheme = url.scheme?.lowercased(),
+              scheme == "http" || scheme == "https",
+              let host = url.host,
+              !host.isEmpty else {
+            return false
+        }
+        return true
     }
     
 }

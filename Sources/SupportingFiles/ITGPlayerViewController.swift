@@ -385,7 +385,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     }
     
     open func itgDidProcessAnalyticEvent(info: AnalyticsInfo, type: AnalyticsEventType) {
-        
+        print(info)
     }
     
     open func itgDidUpdateUserState(_ user: User) {

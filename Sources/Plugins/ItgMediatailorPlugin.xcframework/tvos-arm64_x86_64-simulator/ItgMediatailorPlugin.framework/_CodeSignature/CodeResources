@@ -6,7 +6,7 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		wVDQ5pSKYsochLUIxhaRbyVEYVE=
+		v8tWyZowcdJuGZJAm81sMsSOaHg=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		V6s/1HoTNcFbuojIpv2WjXaZHbk=
+		BzBLekI9EJXfWAU5FqhUulk2wzs=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		ijo/GH8dal0LYl8y72V5rZDnxMw=
+		5FL8NDVWbSJ4Hjwrf+vSQV6BfMk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -83,7 +83,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tFJTEjWBh/9a+ZU1lTC4CyLRv0/A+X6TA8Nj0R+gWxo=
+			DQovriIysY/8xoOg8EqWPisE3bFHM8JXG7neWF3EHaA=
 			</data>
 		</dict>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hRXCtSo15mZO9Sw9xaWXDKn2pOdYZh2VSSxrBheg7aw=
+			0/nq1iGPvD73Ohqlled8AkOjieRSCBNwXrd4qYcvT0U=
 			</data>
 		</dict>
 	</dict>
