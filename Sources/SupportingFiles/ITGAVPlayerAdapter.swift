@@ -22,7 +22,7 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
     private var playerViewController: AVPlayerViewController?
     private var playerView: UIView?
     private var seekTimer: Timer?
-    private var isSeeking: Bool = false
+    private var didSeek: Bool = false
     private var timeJumpedTime: TimeInterval?
     private weak var observedChromelessControlsView: UIView?
     private weak var observedGlassControlsView: UIView?
@@ -75,11 +75,13 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
     
     open func removeObserver(_ player: AVPlayer?) {
         player?.removeObserver(self, forKeyPath: #keyPath(AVPlayer.timeControlStatus))
+        player?.removeObserver(self, forKeyPath: #keyPath(AVPlayer.rate))
         NotificationCenter.default.removeObserver(self, name: AVPlayerItem.timeJumpedNotification, object: nil)
     }
     
     open func registerObservers() {
         player?.addObserver(self, forKeyPath: #keyPath(AVPlayer.timeControlStatus), options: [.old, .new], context: nil)
+        player?.addObserver(self, forKeyPath: #keyPath(AVPlayer.rate), options: [.old, .new], context: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(timeJumped), name: AVPlayerItem.timeJumpedNotification, object: nil)
     }
     
@@ -169,26 +171,48 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
     }
     
     
+    open func beginSeek() {
+        didSeek = true
+        armSeekTimer()
+    }
+
+    open func armSeekTimer() {
+        seekTimer?.invalidate()
+        seekTimer = Timer.scheduledTimer(withTimeInterval: 0.4, repeats: false, block: { [weak self] _ in
+            self?.endSeek()
+        })
+    }
+
+    open func endSeek() {
+        seekTimer?.invalidate()
+        seekTimer = nil
+        guard player?.timeControlStatus == .playing else { return }
+        let time = player.currentTime().seconds
+        delegate?.videoPlaying(time)
+        if let timeJumpedTime, time - timeJumpedTime <= 0.1 {
+            armSeekTimer()
+        } else if player.rate == 1 {
+            didSeek = false
+        }
+    }
+
     @objc open func timeJumped(_ notification: NSNotification) {
         if notification.object as? NSObject == player.currentItem {
-            isSeeking = true
+            didSeek = true
             timeJumpedTime = player.currentTime().seconds
-            delegate?.videoPaused(player.currentTime().seconds, userInitiated: false, isSeeking: isSeeking == true)
+            delegate?.videoPaused(player.currentTime().seconds, userInitiated: false, isSeeking: didSeek == true)
             if player.timeControlStatus == .playing {
-                seekTimer?.invalidate()
-                let player = player!
-                seekTimer = Timer.scheduledTimer(withTimeInterval: 0.4, repeats: false, block: { (timer) in
-                    self.seekTimer = nil
-                    if player == self.player, player.timeControlStatus == .playing {
-                        self.delegate?.videoPlaying(player.currentTime().seconds)
-                        self.isSeeking = false
-                    }
-                })
+                beginSeek()
             }
         }
     }
     
     open override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == #keyPath(AVPlayer.rate), let change = change, let newRate = change[NSKeyValueChangeKey.newKey] as? Float {
+            if newRate != 0, newRate != 1 {
+                didSeek = true
+            }
+        }
         if keyPath == #keyPath(AVPlayer.timeControlStatus), let change = change, let newValue = change[NSKeyValueChangeKey.newKey] as? Int, let oldValue = change[NSKeyValueChangeKey.oldKey] as? Int {
             let oldStatus = AVPlayer.TimeControlStatus(rawValue: oldValue)
             let newStatus = AVPlayer.TimeControlStatus(rawValue: newValue)
@@ -197,10 +221,15 @@ open class ITGAVPlayerAdapter: NSObject, ITGPlayerAdapter {
                 DispatchQueue.main.async { [weak self] in
                     guard let player = self?.player else { return }
                     let time = player.currentTime().seconds
-                    self?.delegate?.videoPaused(time, userInitiated: newStatus == .paused, isSeeking: self?.isSeeking == true && self?.timeJumpedTime != time)
-                    if newStatus == .playing {
+                    if newStatus == .paused, player.currentItem?.isPlaybackBufferEmpty == true || player.currentItem?.isPlaybackLikelyToKeepUp == false {
+                        self?.didSeek = true
+                    }
+                    self?.delegate?.videoPaused(time, userInitiated: newStatus == .paused, isSeeking: self?.didSeek == true)
+                    if newStatus == .playing, player.rate == 1 {
                         self?.delegate?.videoPlaying(time)
-                        self?.isSeeking = false
+                        self?.didSeek = false
+                    } else if newStatus == .playing {
+                        self?.delegate?.videoPlaying(time)
                     }
                 }
             }
@@ -217,6 +246,15 @@ extension ITGAVPlayerAdapter: AVPlayerViewControllerDelegate {
     
     open func playerViewController(_ playerViewController: AVPlayerViewController, willTransitionToVisibilityOfTransportBar visible: Bool, with coordinator: AVPlayerViewControllerAnimationCoordinator) {
         delegate?.videoControllsVisibilityChanged(visible)
+    }
+
+    open func playerViewController(_ playerViewController: AVPlayerViewController, timeToSeekAfterUserNavigatedFrom oldTime: CMTime, to targetTime: CMTime) -> CMTime {
+        beginSeek()
+        return targetTime
+    }
+
+    open func playerViewController(_ playerViewController: AVPlayerViewController, willResumePlaybackAfterUserNavigatedFrom oldTime: CMTime, to targetTime: CMTime) {
+        endSeek()
     }
     
 }

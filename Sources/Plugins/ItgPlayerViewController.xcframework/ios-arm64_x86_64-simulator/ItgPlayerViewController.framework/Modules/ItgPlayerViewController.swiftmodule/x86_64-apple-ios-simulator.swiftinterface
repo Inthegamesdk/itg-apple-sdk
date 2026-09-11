@@ -112,6 +112,9 @@ public protocol ITGPlayerAdapter : AnyObject {
   public func getVideoGravity() -> AVFoundation.AVLayerVideoGravity?
   open func setSoundLevel(_ soundLevel: Swift.Float)
   open func getSoundLevel() -> Swift.Float
+  open func beginSeek()
+  open func armSeekTimer()
+  open func endSeek()
   @objc open func timeJumped(_ notification: Foundation.NSNotification)
   @objc override dynamic open func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
 }

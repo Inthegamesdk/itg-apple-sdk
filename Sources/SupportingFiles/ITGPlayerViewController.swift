@@ -325,7 +325,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     }
     
     open func itgDidLoadChannelInfo(_ channelMeta: ChannelMeta) {
-        guard shouldPlayChannelVideo, !channelMeta.streamUrl.isEmpty, let url =  URL(string: channelMeta.streamUrl) else { return }
+        guard shouldPlayChannelVideo, let streamUrl = channelMeta.streamUrl, !streamUrl.isEmpty, let url = URL(string: streamUrl) else { return }
         startVideo(url)
     }
     
@@ -385,7 +385,7 @@ open class ITGPlayerViewController: UIViewController, ITGOverlayDelegate, ITGPla
     }
     
     open func itgDidProcessAnalyticEvent(info: AnalyticsInfo, type: AnalyticsEventType) {
-        print(info)
+        
     }
     
     open func itgDidUpdateUserState(_ user: User) {

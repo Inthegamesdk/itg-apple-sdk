@@ -2935,6 +2935,69 @@
           },
           {
             "kind": "Function",
+            "name": "beginSeek",
+            "printedName": "beginSeek()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC9beginSeekyyF",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC9beginSeekyyF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "armSeekTimer",
+            "printedName": "armSeekTimer()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC12armSeekTimeryyF",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC12armSeekTimeryyF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "endSeek",
+            "printedName": "endSeek()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23ItgPlayerViewController18ITGAVPlayerAdapterC7endSeekyyF",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC7endSeekyyF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "timeJumped",
             "printedName": "timeJumped(_:)",
             "children": [
@@ -3123,6 +3186,93 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "playerViewController",
+            "printedName": "playerViewController(_:timeToSeekAfterUserNavigatedFrom:to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CMTime",
+                "printedName": "CoreMedia.CMTime",
+                "usr": "c:@SA@CMTime"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVPlayerViewController",
+                "printedName": "AVKit.AVPlayerViewController",
+                "usr": "c:objc(cs)AVPlayerViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMTime",
+                "printedName": "CoreMedia.CMTime",
+                "usr": "c:@SA@CMTime"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMTime",
+                "printedName": "CoreMedia.CMTime",
+                "usr": "c:@SA@CMTime"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ItgPlayerViewController@objc(cs)ITGAVPlayerAdapter(im)playerViewController:timeToSeekAfterUserNavigatedFromTime:toTime:",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC06playercD0_32timeToSeekAfterUserNavigatedFrom2toSo6CMTimeaSo08AVPlayercD0C_A2HtF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "objc_name": "playerViewController:timeToSeekAfterUserNavigatedFromTime:toTime:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "playerViewController",
+            "printedName": "playerViewController(_:willResumePlaybackAfterUserNavigatedFrom:to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVPlayerViewController",
+                "printedName": "AVKit.AVPlayerViewController",
+                "usr": "c:objc(cs)AVPlayerViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMTime",
+                "printedName": "CoreMedia.CMTime",
+                "usr": "c:@SA@CMTime"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMTime",
+                "printedName": "CoreMedia.CMTime",
+                "usr": "c:@SA@CMTime"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ItgPlayerViewController@objc(cs)ITGAVPlayerAdapter(im)playerViewController:willResumePlaybackAfterUserNavigatedFromTime:toTime:",
+            "mangledName": "$s23ItgPlayerViewController18ITGAVPlayerAdapterC06playercD0_40willResumePlaybackAfterUserNavigatedFrom2toySo08AVPlayercD0C_So6CMTimeaAJtF",
+            "moduleName": "ItgPlayerViewController",
+            "isOpen": true,
+            "objc_name": "playerViewController:willResumePlaybackAfterUserNavigatedFromTime:toTime:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -3260,49 +3410,49 @@
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15135,
+      "offset": 15149,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15162,
+      "offset": 15176,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15227,
+      "offset": 15241,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15255,
+      "offset": 15269,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15573,
+      "offset": 15587,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGPlayerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15807,
+      "offset": 15821,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daedalus\/Work\/itg-apple-sdk-main\/Inthegametv\/Plugins\/ITGAVPlayerAdapter.swift",
       "kind": "BooleanLiteral",
-      "offset": 546,
+      "offset": 544,
       "length": 5,
       "value": "false"
     }

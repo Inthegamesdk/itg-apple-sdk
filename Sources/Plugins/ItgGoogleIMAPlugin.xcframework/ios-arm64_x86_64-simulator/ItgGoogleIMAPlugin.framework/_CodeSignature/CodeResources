@@ -6,7 +6,7 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		wtFTmHdPr5FrXXZV9AXyviX/oF0=
+		kfouAUAP5IXPWn7VqS36Ct8laGk=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/Z7ruVriqFemu1RZgVxGhHv4+/I=
+		HODBHJelw0EQIpkrfxe4YZWnihs=
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		n5WHx0i8PvGu8TuWFfQ6XIvRI8o=
+		nprztPQ3+6K9E7GiMln08RMCyVA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -83,7 +83,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wJHrIFtSnabfNT/mNXSl243Q2/h93dxKK4mmtNhSBiY=
+			9/8xcdWhrhLfWfvqjJfStRc4Vt3H5mcfmxzcXzat8vI=
 			</data>
 		</dict>
 		<key>Modules/ItgGoogleIMAPlugin.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b/NYZvAxKgMBZ8O/ZXgtAYiofkGtbbmcHoVBranqrb0=
+			6NGrrTGYVNUye3C1rpP3wLUSsnYk68DOBZMToR2Nr7I=
 			</data>
 		</dict>
 	</dict>

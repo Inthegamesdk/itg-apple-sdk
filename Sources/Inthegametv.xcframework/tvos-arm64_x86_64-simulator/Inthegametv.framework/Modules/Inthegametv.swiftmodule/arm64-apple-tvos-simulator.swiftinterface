@@ -86,9 +86,9 @@ public struct LiveConfig : Swift.Codable {
 }
 public struct ChannelMeta : Swift.Codable {
   public let name: Swift.String
-  public let streamUrl: Swift.String
-  public let image: Swift.String
-  public let extraSettings: Swift.String
+  public let streamUrl: Swift.String?
+  public let image: Swift.String?
+  public let extraSettings: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -133,6 +133,7 @@ public enum AnalyticsParent : Swift.String, Swift.Codable {
   case pause
   case absolute
   case flexi
+  case homeScreen
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {

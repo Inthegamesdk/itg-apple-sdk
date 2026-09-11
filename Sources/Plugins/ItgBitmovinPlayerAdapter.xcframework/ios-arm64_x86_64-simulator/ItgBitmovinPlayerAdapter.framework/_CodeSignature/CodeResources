@@ -6,7 +6,7 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		SZYPI6tmdJol8O5lhfT4NEBhgmI=
+		EchmuAje0/ihDYeDd1VjzoVDJ7g=
 		</data>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZWVXkn8HlsKO2HSmi2m5xXfIvlU=
+		9msOM1lbOWLCDwTNSWBlKqWwbJE=
 		</data>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PhuMd6NHeMcOjS3KE92SlJT1xyo=
+		aYv5A27zxq/0rQE0S1vTK1yPfEA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -83,7 +83,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			T4OxRy2Q9GczrHlQCpiRWUfhSx5382vZAZSqe1ssUVg=
+			0qkebi6r29sHxKApcl7LGsKz+L/IhFqwbc1ME0Jj0/o=
 			</data>
 		</dict>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+74Bis9gA+gG3pLwascpXKBq6pwI8n6RTID0Qv/TEJo=
+			BAxtXy2VHhWJHJqGQOiSAhsbmoc+upOs1GuY1bHAc/E=
 			</data>
 		</dict>
 	</dict>

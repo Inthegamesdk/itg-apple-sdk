@@ -6,7 +6,7 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		TLbs6Bu9AwV93TJBeTxWcT82qgU=
+		gfbZQVN6NTAslR+NgWZIYsNW+WI=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		yJf1x7Jz9Vx+9ZypAJLjLD03MWM=
+		jk33yBk9Ea38BCd9iAHNzsljkNg=
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IIc7jdBja7BMH6HK8x91nfUw4+c=
+		niN4CiMYJvFzVY+4VrTuSn1fkUQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -83,7 +83,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cv+XxesHYPz0UY9CRwP8lgIJzcHrIMe75LKMhgLMsKo=
+			x+8OS9C+Y8tPESx8PREg6JoqCuvpbmnTQsZbE1NCyRo=
 			</data>
 		</dict>
 		<key>Modules/ItgOverlayViewSwiftUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xXZCV//2dLVGS66lPzxG4BwoV12atKwQBk+nh/6NNog=
+			3VoQpfQT4ZecbJX5FOb3Mr5oXguNgeyF2hQ7ikT4B2M=
 			</data>
 		</dict>
 	</dict>

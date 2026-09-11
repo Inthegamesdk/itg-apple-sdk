@@ -6,7 +6,7 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		/cl6WxQZ28+58PBinjO0XyZ/otA=
+		IAf5HpVT/Qs6fcrqmGC4xt0s4/w=
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		pUXTmzWXcuFaFzPEZ0z8I+ZQ5nk=
+		/FTTU0qrWW3z+scdCKIyClHLXpA=
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		qC/RZ0+7wNcFzQjnfKgC320Qfpk=
+		otV8UnLSUrykwxplpfgYKHeL9r8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -83,7 +83,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IeWLcAYntSBpwBgT4qGZ8CjydYgS6v4xHFyEW1MNzZQ=
+			1ize+etM7XGe/7jLT4C4iBXqfhQEK6HN94bnvsJf39E=
 			</data>
 		</dict>
 		<key>Modules/ItgPlayerViewControllerSwiftUI.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cgmQ+60/f2doL1PubG/5nMpPbAhCmJM+xsg1HbpQMt4=
+			IQK1OBd/SWh5CMbJvwr93ncl9DvyymRdY3Ad3xOyhK4=
 			</data>
 		</dict>
 	</dict>
