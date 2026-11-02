@@ -6,7 +6,7 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		3ez0zgNC5vFMSmaV7A5AMDGsdMw=
+		yowEWsTR1vOQuRiYyhf1wBwzh4k=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		BilGltTZS4TMPr2tD0mO6TIUL+U=
+		jOB+yU42m8gt1qUZ/aWkFb3askA=
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		V2FmHIczxEtGb8vXKXeybxRCTZo=
+		QpvCLlEq0Ihyw9K6kXGLeRn7ofY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -83,7 +83,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WlVdogRrxHdj92WJ9P7p9nLtM5d1AvpbeHlaxF2JGd4=
+			gjNJAjgAPcNYZOwmqiEfssTSk0exFQF6vRScWV8ioSw=
 			</data>
 		</dict>
 		<key>Modules/ItgMediatailorPlugin.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+h7nV2Jx/l2WP6YAs7ysOB0IQ7DxwVtntvHgzJXRyI8=
+			23uosFgx21VVh7dQ3wecEN+XH9mmFhSn4YxGij6/2Oo=
 			</data>
 		</dict>
 	</dict>

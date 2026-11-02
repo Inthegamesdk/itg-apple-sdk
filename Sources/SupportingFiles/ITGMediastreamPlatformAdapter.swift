@@ -51,24 +51,24 @@ open class ITGMediastreamPlatformAdapter: ITGPlayerAdapter {
     
     open func setup() {
         eventsManger.listenTo(eventName: "timeControlStatusChanged") { [weak self] info in
-            guard self != nil, let info = info as? AVPlayer.TimeControlStatus else { return }
+            guard let self, let info = info as? AVPlayer.TimeControlStatus else { return }
             if info == .playing {
-                self!.delegate?.videoPlaying(self!.getCurrentTime())
+                self.delegate?.videoPlaying(self.getCurrentTime())
             } else {
-                self!.delegate?.videoPaused(self!.getCurrentTime(), userInitiated: false, isSeeking: false)
+                self.delegate?.videoPaused(self.getCurrentTime(), userInitiated: false, isSeeking: false)
             }
         }
         eventsManger.listenTo(eventName: "seek") { [weak self] in
-            guard self != nil else { return }
-            if self!.isPlaying() {
-                self!.delegate?.videoPlaying(self!.getCurrentTime())
+            guard let self else { return }
+            if self.isPlaying() {
+                self.delegate?.videoPlaying(self.getCurrentTime())
             } else {
-                self!.delegate?.videoPaused(self!.getCurrentTime(), userInitiated: false, isSeeking: false)
+                self.delegate?.videoPaused(self.getCurrentTime(), userInitiated: false, isSeeking: false)
             }
         }
         eventsManger.listenTo(eventName: "finish", action: { [weak self] in
-            guard self != nil else { return }
-            self!.delegate?.videoPaused(self!.getCurrentTime(), userInitiated: false, isSeeking: false)
+            guard let self else { return }
+            self.delegate?.videoPaused(self.getCurrentTime(), userInitiated: false, isSeeking: false)
         })
     }
     

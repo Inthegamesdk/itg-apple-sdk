@@ -6,7 +6,7 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		8MKxtCM1H5JTgU8CrKJNGKyXkYU=
+		8pR7AXRGuyjt0hEvSrl6wqyRUhU=
 		</data>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		vqPdpfz/qQGULX3Z3U1V6rjqqMc=
+		s+VZ+667eKWh12KFs51yPfJ6NZk=
 		</data>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		372wUnM/KsZ8h/+lYFG5AmA+K5A=
+		4YWD/ZGxieEr18fywmYrAUOGgzo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -83,7 +83,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fk7+r8r5LVcxuiqVGzqIEawOWbqAGU+fe5tubpqp3yQ=
+			RnR9lA/qKpL7hU2jhh1dboQcqYNYQCqN+zVoQBc+CXw=
 			</data>
 		</dict>
 		<key>Modules/ItgBitmovinPlayerAdapter.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			T/o1sXDUNex4/wzLvTEAKX5nTcKOQAciuqM62uJHA00=
+			ApHq43b+TGM01jizX44gBuq4yZfzSqcEjKY4wqVw0Bg=
 			</data>
 		</dict>
 	</dict>
